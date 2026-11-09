@@ -185,3 +185,29 @@ export function etatCourses(menu: Menu, etat: EtatFrigo, base: Base, date: strin
   const aUtiliser = etat.articles.filter((a) => a.lieu !== 'placard' && a.peremption >= date && !(a.ingredient in b));
   return { lignes, aUtiliser };
 }
+
+// ───────────────────── Idées pour finir les restes ─────────────────────
+
+export type IdeeRestes = { recetteId: string; utilise: string[]; part: number };
+
+/**
+ * Recettes qui finissent le mieux ce qu'il reste (frigo, congélateur, paquets entamés ; hors placard de base) :
+ * nombre d'ingrédients en stock utilisés, puis part du besoin couverte, puis rapidité.
+ */
+export function ideesRestes(etat: EtatFrigo, base: Base, date: string, placard: string[] = [], n = 3): IdeeRestes[] {
+  const stock: Stock = {};
+  for (const a of etat.articles)
+    if (a.peremption >= date && !placard.includes(a.ingredient)) stock[a.ingredient] = (stock[a.ingredient] ?? 0) + a.quantite;
+  if (!Object.keys(stock).length) return [];
+  const idees = base.recettes.map((r) => {
+    const ings = r.ingredients.filter((i) => !i.optionnel && !placard.includes(i.ingredient));
+    const utilises = ings.filter((i) => (stock[i.ingredient] ?? 0) > 0);
+    const part = ings.length ? utilises.length / ings.length : 0;
+    return { recetteId: r.id, utilise: [...new Set(utilises.map((i) => i.ingredient))], part, vitesse: r.temps.total_min };
+  });
+  return idees
+    .filter((x) => x.utilise.length > 0)
+    .sort((a, b) => b.utilise.length - a.utilise.length || b.part - a.part || a.vitesse - b.vitesse)
+    .slice(0, n)
+    .map(({ vitesse: _v, ...x }) => x);
+}

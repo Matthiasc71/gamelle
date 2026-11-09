@@ -213,3 +213,24 @@ describe('frigo', () => {
     for (const i of orphelins) expect(ec.aUtiliser.map((a) => a.ingredient)).toContain(i);
   });
 });
+
+describe('idées pour finir les restes', () => {
+  const base = baseReelle();
+  it('propose d’abord les recettes qui utilisent le plus d’ingrédients en stock', async () => {
+    const { ideesRestes, rejouer } = await import('../../src/domain/frigo');
+    const etat = rejouer(
+      [
+        { type: 'achat', ingredient: 'lentilles-corail', quantite: 500, date: '2026-11-14' },
+        { type: 'achat', ingredient: 'lait-coco', quantite: 400, date: '2026-11-14' },
+        { type: 'achat', ingredient: 'epinards-pousses', quantite: 250, date: '2026-11-14' },
+      ],
+      base,
+    );
+    const idees = ideesRestes(etat, base, '2026-11-15');
+    expect(idees.length).toBeGreaterThan(0);
+    expect(idees[0].utilise.length).toBeGreaterThanOrEqual(idees.at(-1)!.utilise.length);
+    expect(idees[0].utilise.length).toBeGreaterThanOrEqual(2);
+    for (const i of idees) expect(i.utilise.every((x) => ['lentilles-corail', 'lait-coco', 'epinards-pousses'].includes(x))).toBe(true);
+    expect(ideesRestes({ articles: [], boites: [] }, base, '2026-11-15')).toEqual([]);
+  });
+});
