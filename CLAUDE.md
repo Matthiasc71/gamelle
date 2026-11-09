@@ -109,6 +109,13 @@ illustrations au trait avec aplats décalés. Interdits : dégradés violet/bleu
 bordure colorée à gauche, emoji comme icônes, Inter/Roboto/Poppins/Montserrat, icônes pleines, blobs 3D.
 Interface en français, formats français (« 1 010 kcal », « 0,99 € », « lun. 16 »). Cibles tactiles ≥ 44 px.
 
+## Mise en ligne (jalon 6)
+- GitHub Pages : https://matthiasc71.github.io/gamelle/ (dépôt public). `.github/workflows/deploiement.yml` construit
+  avec `BASE=/<dépôt>/` et publie à chaque push sur main (Pages → Source : GitHub Actions, réglage fait à la main).
+- `.github/workflows/donnees-mensuelles.yml` : le 2 du mois, prix + liens + compute + validate + simulation, commit
+  puis `gh workflow run deploiement.yml` (un push du jeton du workflow ne déclenche pas les autres workflows).
+- README : installation iPhone, rappel Raccourcis, sauvegarde, ajout de recettes, prix.
+
 ## Travail
 Commits petits et clairs. Demander avant toute action irréversible (visibilité du dépôt, suppression de données,
 domaine). Si un site est bloqué par le réseau, le dire au lieu de contourner.

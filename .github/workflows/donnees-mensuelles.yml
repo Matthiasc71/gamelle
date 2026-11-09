@@ -1,0 +1,53 @@
+# Une fois par mois : prix (Lidl, Aldi, Open Prices), vérification des liens, recalcul
+# nutrition + coût, validation, simulation. Commit si quelque chose a changé, puis redéploie.
+name: Mise à jour mensuelle des données
+
+on:
+  schedule:
+    - cron: '23 3 2 * *' # le 2 de chaque mois, 3 h 23 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  donnees:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Relevés Open Prices des magasins Lidl
+        continue-on-error: true # une source indisponible : on garde le dernier relevé
+        run: npm run lidl
+      - name: Prix affichés sur aldi.fr
+        continue-on-error: true # une source indisponible : on garde le dernier relevé
+        run: npm run aldi
+      - name: Grille de prix
+        continue-on-error: true # sort en erreur si un ingrédient facultatif n’a pas de prix ; la validation tranche
+        run: npm run prices
+      - name: Vérification des sources
+        run: npm run links
+      - name: Recalcul nutrition et coût par part
+        run: npm run compute
+      - name: Validation (bloque le commit si une recette casse)
+        run: npm run validate
+      - name: Simulation 52 semaines
+        run: npm run simuler
+      - name: Commit et redéploiement
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet; then echo "Rien à mettre à jour."; exit 0; fi
+          git config user.name "gamelle-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data reports
+          git commit -m "Données du mois : prix, liens, nutrition ($(date -u +%Y-%m))"
+          git push
+          # un push fait avec le jeton du workflow ne relance pas les autres workflows : on demande le déploiement
+          gh workflow run deploiement.yml --ref main
