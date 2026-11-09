@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { enregistrerPreferences, enregistrerReglages, useReglages } from '../app/etat';
 import { NOM_EQUIPEMENT } from '../app/presentation';
 import { aller, lien } from '../app/routeur';
-import { EQUIPEMENTS } from '../domain/schema';
+import { EQUIPEMENTS } from '../domain/constantes';
 import { Brin, Chiffre, Illustration } from '../ui/composants';
 import { Icone } from '../ui/Icone';
 
@@ -18,9 +18,10 @@ export default function Accueil() {
 
   return (
     <main className="accueil" aria-labelledby="titre-accueil">
-      <p className="accueil__pages" aria-label={`Écran ${page + 1} sur 3`}>
+      <p className="accueil__pages">
+        <span className="sr-only">Écran {page + 1} sur 3</span>
         {[0, 1, 2].map((i) => (
-          <span key={i} className={i === page ? 'actif' : ''} />
+          <span key={i} className={`accueil__trait ${i === page ? 'actif' : ''}`} aria-hidden="true" />
         ))}
       </p>
 

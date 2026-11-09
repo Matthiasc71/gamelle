@@ -4,7 +4,7 @@ import { exporter, importer } from '../app/db';
 import { enregistrerPreferences, enregistrerReglages, usePreferences, useReglages } from '../app/etat';
 import { NOM_EQUIPEMENT } from '../app/presentation';
 import { aller, lien, retour } from '../app/routeur';
-import { EQUIPEMENTS } from '../domain/schema';
+import { EQUIPEMENTS } from '../domain/constantes';
 import { REGLAGES_DEFAUT, type Reglages as TReglages } from '../domain/types';
 import { annoncer, BoutonIcone, Compteur, Interrupteur, Rubrique } from '../ui/composants';
 import { Icone } from '../ui/Icone';

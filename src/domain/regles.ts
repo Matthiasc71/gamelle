@@ -3,7 +3,8 @@
  * Utilisé par le générateur, par les avertissements d'échange et par les tests.
  */
 import { listeCourses } from './courses';
-import { FAMILLE_PROTEINE, type Recette } from './schema';
+import { FAMILLE_PROTEINE } from './constantes';
+import type { Recette } from './schema';
 import { planifierSession, type Timeline } from './timeline';
 import { jourDe, momentDe, NB_CRENEAUX, type Base, type Cuisson, type Menu, type Reglages, type Stock } from './types';
 

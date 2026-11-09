@@ -3,66 +3,23 @@
  * Validé au build par scripts/validate.ts. Les types TypeScript en sont dérivés.
  */
 import { z } from 'zod';
+import { EQUIPEMENTS, FAMILLE_PROTEINE, ILLUSTRATIONS, PROTEINES, RAYONS } from './constantes';
+
+export { EQUIPEMENTS, FAMILLE_PROTEINE, ILLUSTRATIONS, PROTEINES, RAYONS };
 
 const dateISO = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'date AAAA-MM-JJ attendue');
 const slug = z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'slug en minuscules-avec-tirets');
 
-export const EQUIPEMENTS = ['plaques', 'four', 'micro-ondes', 'rice-cooker'] as const;
 export const Equipement = z.enum(EQUIPEMENTS);
 export type Equipement = z.infer<typeof Equipement>;
 
-export const RAYONS = ['fruits-legumes', 'frais', 'viandes-poissons', 'epicerie', 'surgeles'] as const;
 export const Rayon = z.enum(RAYONS);
 export type Rayon = z.infer<typeof Rayon>;
 
-export const PROTEINES = [
-  'oeufs',
-  'legumineuses',
-  'poulet',
-  'dinde',
-  'porc',
-  'boeuf',
-  'thon',
-  'sardines',
-  'maquereau',
-  'poisson-blanc',
-  'saumon',
-  'tofu',
-  'laitier',
-] as const;
 export const Proteine = z.enum(PROTEINES);
 export type Proteine = z.infer<typeof Proteine>;
 
-/** Familles utilisées pour la règle « au moins 3 familles de protéines par semaine ». */
-export const FAMILLE_PROTEINE: Record<Proteine, string> = {
-  oeufs: 'oeufs',
-  legumineuses: 'legumineuses',
-  poulet: 'volaille',
-  dinde: 'volaille',
-  porc: 'viande',
-  boeuf: 'viande',
-  thon: 'poisson',
-  sardines: 'poisson',
-  maquereau: 'poisson',
-  'poisson-blanc': 'poisson',
-  saumon: 'poisson',
-  tofu: 'soja',
-  laitier: 'laitier',
-};
 
-/** Familles de plats : chaque famille a son illustration botanique (src/ui/illustrations). */
-export const ILLUSTRATIONS = [
-  'curry-bol', // dahl, curry, chili servis avec riz
-  'soupe', // velouté, soupe, minestrone
-  'poelee', // sauté, poêlée, wok
-  'gratin', // plat au four
-  'omelette', // œufs, frittata, shakshuka
-  'salade', // salade composée, bowl froid
-  'wrap', // wraps, tartines, sandwichs
-  'pates', // pâtes, nouilles
-  'ragout', // mijoté, cocotte
-  'poisson', // poisson et légumes
-] as const;
 export const Illustration = z.enum(ILLUSTRATIONS);
 export type Illustration = z.infer<typeof Illustration>;
 

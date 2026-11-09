@@ -3,7 +3,8 @@
  * coût en caisse (paquets entiers achetés) et coût des portions mangées.
  */
 import { achat, prixUnitaire, quantiteEnUniteConditionnement } from './pricing';
-import { RAYONS, type PrixReference, type Rayon, type Recette } from './schema';
+import { RAYONS } from './constantes';
+import type { PrixReference, Rayon, Recette } from './schema';
 import type { Base, Cuisson, Stock } from './types';
 import { euros } from './format';
 

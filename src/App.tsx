@@ -1,17 +1,8 @@
-import { useEffect, useRef, useState } from 'react';
+import { lazy, Suspense, useEffect, useRef, useState } from 'react';
 import { SemaineContexte, usePreferences, useReglages, useSemaines } from './app/etat';
 import { aller, lien, useRoute } from './app/routeur';
-import Accueil from './ecrans/Accueil';
-import Courses from './ecrans/Courses';
-import Cuisine from './ecrans/Cuisine';
-import Echange from './ecrans/Echange';
-import Favoris from './ecrans/Favoris';
-import Frigo from './ecrans/Frigo';
-import Recette from './ecrans/Recette';
-import Reglages from './ecrans/Reglages';
 import Semaine from './ecrans/Semaine';
-import Session from './ecrans/Session';
-import { Annonces } from './ui/composants';
+import { Annonces, Chargement } from './ui/composants';
 import { Icone, type NomIcone } from './ui/Icone';
 
 const ONGLETS: { ecran: string; nom: string; icone: NomIcone }[] = [
@@ -28,17 +19,18 @@ function ongletDe(ecran: string, depuis: string | null) {
   return ecran;
 }
 
-const ECRANS: Record<string, () => React.ReactNode> = {
+// Semaine est l'écran d'ouverture ; les autres se chargent à la demande (tous précachés pour le hors-ligne).
+const ECRANS: Record<string, React.ComponentType> = {
   semaine: Semaine,
-  recette: Recette,
-  courses: Courses,
-  favoris: Favoris,
-  frigo: Frigo,
-  echange: Echange,
-  session: Session,
-  cuisine: Cuisine,
-  reglages: Reglages,
-  accueil: Accueil,
+  recette: lazy(() => import('./ecrans/Recette')),
+  courses: lazy(() => import('./ecrans/Courses')),
+  favoris: lazy(() => import('./ecrans/Favoris')),
+  frigo: lazy(() => import('./ecrans/Frigo')),
+  echange: lazy(() => import('./ecrans/Echange')),
+  session: lazy(() => import('./ecrans/Session')),
+  cuisine: lazy(() => import('./ecrans/Cuisine')),
+  reglages: lazy(() => import('./ecrans/Reglages')),
+  accueil: lazy(() => import('./ecrans/Accueil')),
 };
 
 export default function App() {
@@ -72,7 +64,9 @@ export default function App() {
   return (
     <SemaineContexte.Provider value={{ semaine, choisir }}>
       <div className={`app ${plein ? 'app--plein' : ''}`}>
-        <Ecran key={route.ecran} />
+        <Suspense fallback={<Chargement />}>
+          <Ecran key={route.ecran} />
+        </Suspense>
         {!plein && (
           <nav className="onglets" aria-label="Navigation principale">
             {ONGLETS.map((o) => (
