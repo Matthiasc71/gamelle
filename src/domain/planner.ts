@@ -81,22 +81,33 @@ function placer(unites: Unite[], fixes: Map<number, Unite>, rng: Hasard, ctx: Co
   return { slots, penalite: pen };
 }
 
-/** Poids de tirage d'une recette : moins chère, utilise le stock, favori → plus probable. */
-function poids(r: Recette, ctx: ContexteMenu): number {
+/** Ingrédients achetés d'une recette (hors placard de base et facultatifs) : ce qui fait des paquets. */
+const achetes = (r: Recette, ctx: ContexteMenu) =>
+  r.ingredients.filter((i) => !i.optionnel && !ctx.reglages.placardDeBase.includes(i.ingredient)).map((i) => i.ingredient);
+
+/**
+ * Poids de tirage d'une recette : moins chère, favori → plus probable ; et surtout, elle finit des paquets
+ * déjà ouverts (stock) ou déjà prévus par les plats tirés avant elle (synergie d'ingrédients).
+ */
+function poids(r: Recette, ctx: ContexteMenu, prevus: Set<string>): number {
   const stock = ctx.stock ?? {};
-  const utiliseStock = r.ingredients.filter((i) => !i.optionnel && (stock[i.ingredient] ?? 0) > 0).length;
+  const ings = achetes(r, ctx);
+  const enStock = ings.filter((i) => (stock[i] ?? 0) > 0).length;
+  const partages = ings.filter((i) => prevus.has(i)).length;
+  const nouveaux = ings.length - partages - enStock;
   const favori = ctx.reglages.favorisInclus && ctx.favoris?.includes(r.id) ? 3 : 1;
-  return (favori * (1 + 0.5 * utiliseStock)) / (0.5 + r.cout_par_part_eur) ** 2;
+  return (favori * (1 + 0.5 * enStock) * (1 + 1.2 * partages)) / ((0.5 + r.cout_par_part_eur) ** 2 * (1 + 0.2 * Math.max(0, nouveaux)));
 }
 
-function tirerDistinctes(pool: Recette[], n: number, rng: Hasard, ctx: ContexteMenu, interdites = new Set<string>()): Recette[] | null {
+function tirerDistinctes(pool: Recette[], n: number, rng: Hasard, ctx: ContexteMenu, interdites = new Set<string>(), prevus = new Set<string>()): Recette[] | null {
   const dispo = pool.filter((r) => !interdites.has(r.id));
   if (dispo.length < n) return null;
   const choisies: Recette[] = [];
   const reste = [...dispo];
   for (let k = 0; k < n; k++) {
-    const r = rng.choisir(reste, reste.map((x) => poids(x, ctx)));
+    const r = rng.choisir(reste, reste.map((x) => poids(x, ctx, prevus)));
     choisies.push(r);
+    for (const i of achetes(r, ctx)) prevus.add(i);
     reste.splice(reste.indexOf(r), 1);
   }
   return choisies;
@@ -127,7 +138,8 @@ function essai(p: ParamsGeneration, rng: Hasard, lundi: string, graine: number, 
   const parts = [4, 4, 4];
   // 2 rapides → 12 parts de batch, 3 → 11, 4 → 10 : autant de plats passent à 3 parts
   for (const k of rng.melanger([0, 1, 2]).slice(0, nbRapides - 2)) parts[k] = 3;
-  const batchs = tirerDistinctes(pools.batch, 3, rng, p);
+  const prevus = new Set<string>();
+  const batchs = tirerDistinctes(pools.batch, 3, rng, p, new Set(), prevus);
   if (!batchs) return null;
   // le plat du soir de semaine : le plus court à préparer des trois
   batchs.sort((a, b) => b.temps.total_min - a.temps.total_min);
@@ -139,7 +151,7 @@ function essai(p: ParamsGeneration, rng: Hasard, lundi: string, graine: number, 
     creneau: k < 2 ? null : jourSemaine * 2 + 1,
     parts: parts[k],
   }));
-  const rapides = tirerDistinctes(pools.rapides, nbRapides, rng, p, new Set(batchs.map((b) => b.id)));
+  const rapides = tirerDistinctes(pools.rapides, nbRapides, rng, p, new Set(batchs.map((b) => b.id)), prevus);
   if (!rapides) return null;
   rapides.forEach((r, k) => cuissons.push({ id: `${r.id}@x${k}`, recetteId: r.id, jour: -1, creneau: -1, parts: 1 }));
 
