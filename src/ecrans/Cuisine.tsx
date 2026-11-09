@@ -12,6 +12,18 @@ type Minuteur = { id: number; libelle: string; fin: number; sonne?: boolean };
 
 const CLE_MINUTEURS = 'gamelle.minuteurs';
 
+/** Contexte audio créé au premier tap (iOS n'autorise le son qu'après un geste). */
+let audio: AudioContext | null = null;
+function debloquerSon() {
+  try {
+    const Ctx = window.AudioContext ?? (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+    audio ??= new Ctx();
+    if (audio.state === 'suspended') audio.resume().catch(() => {});
+  } catch {
+    audio = null;
+  }
+}
+
 export default function Cuisine() {
   const { id, params } = useRoute();
   const vue = useSemaineVue();
@@ -49,6 +61,15 @@ export default function Cuisine() {
   const eveil = useEcranAllume();
   const { minuteurs, lancer, arreter, maintenant } = useMinuteurs();
   const touche = useRef<number | null>(null);
+
+  useEffect(() => {
+    const touches = (ev: KeyboardEvent) => {
+      if (ev.key === 'ArrowRight') setI((x) => Math.min((etapes?.length ?? 1) - 1, x + 1));
+      if (ev.key === 'ArrowLeft') setI((x) => Math.max(0, x - 1));
+    };
+    document.addEventListener('keydown', touches);
+    return () => document.removeEventListener('keydown', touches);
+  }, [etapes]);
 
   if (!etapes) return <main className="cuisine" />;
   const e = etapes[Math.min(i, etapes.length - 1)];
@@ -182,7 +203,8 @@ function useEcranAllume(): string | null {
 function useMinuteurs() {
   const [minuteurs, setMinuteurs] = useState<Minuteur[]>(() => {
     try {
-      return JSON.parse(sessionStorage.getItem(CLE_MINUTEURS) ?? '[]') as Minuteur[];
+      // les minuteurs finis depuis plus d'une heure sont oubliés
+      return (JSON.parse(localStorage.getItem(CLE_MINUTEURS) ?? '[]') as Minuteur[]).filter((m) => m.fin > Date.now() - 3600e3);
     } catch {
       return [];
     }
@@ -190,7 +212,7 @@ function useMinuteurs() {
   const [maintenant, setMaintenant] = useState(Date.now());
   useEffect(() => {
     try {
-      sessionStorage.setItem(CLE_MINUTEURS, JSON.stringify(minuteurs));
+      localStorage.setItem(CLE_MINUTEURS, JSON.stringify(minuteurs));
     } catch {
       /* stockage indisponible : les minuteurs restent en mémoire */
     }
@@ -198,7 +220,12 @@ function useMinuteurs() {
   useEffect(() => {
     if (!minuteurs.length) return;
     const t = setInterval(() => setMaintenant(Date.now()), 500);
-    return () => clearInterval(t);
+    const reveil = () => setMaintenant(Date.now());
+    document.addEventListener('visibilitychange', reveil);
+    return () => {
+      clearInterval(t);
+      document.removeEventListener('visibilitychange', reveil);
+    };
   }, [minuteurs.length]);
   useEffect(() => {
     const finis = minuteurs.filter((m) => !m.sonne && m.fin <= maintenant);
@@ -210,6 +237,7 @@ function useMinuteurs() {
     minuteurs,
     maintenant,
     lancer: (libelle: string, secondes: number) => {
+      debloquerSon();
       setMaintenant(Date.now());
       setMinuteurs((ms) => [...ms, { id: Date.now(), libelle, fin: Date.now() + secondes * 1000 }]);
     },
@@ -219,8 +247,9 @@ function useMinuteurs() {
 
 function sonner() {
   try {
-    const Ctx = window.AudioContext ?? (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
-    const ctx = new Ctx();
+    debloquerSon();
+    const ctx = audio;
+    if (!ctx) throw new Error('pas de son');
     [0, 0.35, 0.7].forEach((t) => {
       const o = ctx.createOscillator();
       const g = ctx.createGain();

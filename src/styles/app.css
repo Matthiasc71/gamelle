@@ -2114,14 +2114,14 @@ main:has(> .barre-actions),
   margin: 0 0 12px;
 }
 
-.accueil__pages span {
+.accueil__trait {
   width: 26px;
   height: 4px;
   border-radius: 2px;
   background: var(--filet);
 }
 
-.accueil__pages span.actif {
+.accueil__trait.actif {
   background: var(--encre);
 }
 

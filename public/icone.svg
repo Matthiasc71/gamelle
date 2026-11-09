@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Gamelle</title>
+  <rect width="512" height="512" fill="#F4EEE1"/>
+  <!-- aplats riso, légèrement décalés du trait -->
+  <g transform="translate(10 8)" style="mix-blend-mode:multiply">
+    <ellipse cx="256" cy="300" rx="150" ry="62" fill="#EDB99A"/>
+    <path d="M106 300 C110 390 180 430 256 430 C332 430 402 390 406 300 Z" fill="#8FD3B0"/>
+    <path d="M300 110 C352 96 392 120 404 168 C352 182 312 160 300 110 Z" fill="#A8BBA0"/>
+    <path d="M246 132 C222 92 236 54 272 36 C292 74 282 110 246 132 Z" fill="#DCE5D3"/>
+    <circle cx="214" cy="292" r="18" fill="#F4A6A6"/>
+    <circle cx="300" cy="306" r="12" fill="#F4A6A6"/>
+  </g>
+  <g fill="none" stroke="#24402F" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="256" cy="300" rx="150" ry="62"/>
+    <path d="M106 300 C110 390 180 430 256 430 C332 430 402 390 406 300"/>
+    <path d="M60 292 H106 M406 292 H452"/>
+    <path d="M256 238 C262 180 282 140 300 110"/>
+    <path d="M300 110 C352 96 392 120 404 168 C352 182 312 160 300 110 Z"/>
+    <path d="M300 110 L396 164" stroke-width="5"/>
+    <path d="M262 190 C250 160 248 140 246 132"/>
+    <path d="M246 132 C222 92 236 54 272 36 C292 74 282 110 246 132 Z"/>
+    <path d="M246 132 L270 44" stroke-width="5"/>
+    <circle cx="214" cy="292" r="18" stroke-width="6"/>
+    <circle cx="300" cy="306" r="12" stroke-width="6"/>
+    <path d="M150 360 C190 384 236 392 280 390" stroke-width="5" stroke-dasharray="4 14"/>
+  </g>
+</svg>

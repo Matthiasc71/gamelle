@@ -67,6 +67,13 @@ Cahier des charges complet : `docs/cahier-des-charges.md`. Maquettes de référe
 - `ui/composants.tsx` (Chiffre en double impression, Puce, BoutonPlus tampon, Etiquette, Feuille, annonces),
   `ui/Icone.tsx` (icônes au trait dessinées), `styles/tokens.css` + `styles/app.css`.
 - Captures iPhone 15 : `npx vite build`, `npx vite preview --port 4173`, puis `node scripts/captures.mjs`.
+- Données : module virtuel `virtual:gamelle-donnees` (`scripts/lib/vite-donnees.ts`) validé par Zod au build ;
+  l'app n'embarque pas Zod (constantes dans `domain/constantes.ts`). Écrans en `lazy`, sauf Semaine.
+- PWA : `vite-plugin-pwa` (generateSW, tout précaché, annonce « Recharger » à la mise à jour). Icône dessinée
+  `public/icone.svg` → `node scripts/icones.mjs` (PNG + écrans de lancement iOS listés dans `index.html`).
+  `BASE=/gamelle/` au build pour GitHub Pages. Lighthouse mobile : perf 93, accessibilité 100, bonnes pratiques 100.
+- `npm run e2e` : build + Playwright (Chromium en émulation iPhone ; WebKit absent de la session cloud) :
+  les 2 parcours du cahier des charges, hors ligne, manifeste, axe (a11y), minuteurs du mode cuisine.
 
 ## Commandes
 Dans une session cloud, le `fetch` de Node passe par le proxy seulement avec `export NODE_USE_ENV_PROXY=1`.
@@ -78,7 +85,7 @@ Dans une session cloud, le `fetch` de Node passe par le proxy seulement avec `ex
 - `npm run compute` : recalcule nutrition et coût par part de toutes les recettes.
 - `npm run validate` : schéma, équipement, liens, Ciqual, prix → `reports/`. Doit passer avant tout commit de données.
 - `npm run add-recipe -- <url>` : prépare un brouillon de fiche à montrer à l'utilisateur avant ajout.
-- `npm test` : Vitest.
+- `npm test` : Vitest. `npm run e2e` : tests d'interface.
 
 ## Ajouter des recettes (« ajoute 20 recettes d'hiver », « ajoute cette vidéo TikTok »)
 1. `npm run add-recipe -- <url>` → brouillon dans `.cache/brouillons/`.

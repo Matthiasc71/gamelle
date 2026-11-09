@@ -27,3 +27,5 @@ dist-ssr
 data/ciqual/raw/
 .cache/
 reports/liens-partiel.md
+test-results/
+playwright-report/
