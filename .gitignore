@@ -26,3 +26,4 @@ dist-ssr
 # données brutes
 data/ciqual/raw/
 .cache/
+reports/liens-partiel.md

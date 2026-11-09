@@ -1,0 +1,204 @@
+{
+  "id": "poulet-riz-guerrier",
+  "slug": "poulet-riz-guerrier",
+  "nom": "Poulet laqué aux oignons, riz guerrier",
+  "resume": "Poulet saisi puis laqué au miel, soja et vinaigre, avec beaucoup d'oignons fondants et du riz.",
+  "type": "batch",
+  "portions_base": 3,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 25,
+    "total_min": 30,
+    "actif_min": 20
+  },
+  "equipement": [
+    "rice-cooker",
+    "plaques"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "asiatique",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "poelee",
+  "ingredients": [
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "filet de poulet",
+      "quantite": 450,
+      "unite": "g",
+      "poids_g": 450,
+      "optionnel": false,
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignons",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 450,
+      "optionnel": false,
+      "mesure_affichee": "4 à 5 oignons (450 g)",
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "riz-basmati",
+      "nom_affiche": "riz basmati",
+      "quantite": 210,
+      "unite": "g",
+      "poids_g": 210,
+      "optionnel": false,
+      "ciqual_code": "9119",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 30,
+      "unite": "ml",
+      "poids_g": 27.5,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à soupe",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "miel",
+      "nom_affiche": "miel",
+      "quantite": 15,
+      "unite": "g",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe rase",
+      "ciqual_code": "31008",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "sauce-soja",
+      "nom_affiche": "sauce soja",
+      "quantite": 30,
+      "unite": "ml",
+      "poids_g": 34,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à soupe",
+      "ciqual_code": "11104",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "vinaigre",
+      "nom_affiche": "vinaigre blanc",
+      "quantite": 30,
+      "unite": "ml",
+      "poids_g": 30,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à soupe",
+      "ciqual_code": "11018",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 6,
+      "unite": "pièce",
+      "poids_g": 30,
+      "optionnel": false,
+      "mesure_affichee": "6 gousses",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Lance le riz au rice cooker.",
+      "duree_min": 3,
+      "actif": true,
+      "equipement": "rice-cooker"
+    },
+    {
+      "texte": "Émince les oignons et l'ail, coupe le poulet en morceaux.",
+      "duree_min": 8,
+      "actif": true
+    },
+    {
+      "texte": "Dans une poêle huilée, saisis le poulet 6 minutes puis réserve-le.",
+      "duree_min": 6,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 360
+    },
+    {
+      "texte": "Fais fondre les oignons 6 minutes dans la même poêle, ajoute l'ail 1 minute.",
+      "duree_min": 7,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 420
+    },
+    {
+      "texte": "Remets le poulet, verse miel, soja et vinaigre, et laisse laquer 2 minutes en remuant. Répartis avec le riz dans 3 boîtes.",
+      "duree_min": 4,
+      "actif": true,
+      "equipement": "plaques"
+    }
+  ],
+  "sources": [
+    {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@stefanechop/video/7295848843696983329",
+      "titre": "Recette poulet musculation : riz guerrier",
+      "auteur": "@stefanechop",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@stefanechop",
+        "title": "Ingrédients & Macronutriments➡️ 677 Kcal|Protéines=49g|Glucides=91g|Lipides=13g Ingrédients : 🍗 150g Filet de Poulet (poids cru) 🧅 1-2 Oig",
+        "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-0037-euttp/9e4998df24f5422ea76741e621607167_1698697188~tplv-tiktokx-dmt-logom:tos-useast2a-i-0068-euttp/okjCrGhdAoAQRA8KYBeFEfngIIMfDAIAegDHIx.image?dr=9634&x-expires=1794398400&x-signature=XJM8g17A25QeB2bFOHuYJlD9ZXc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      }
+    }
+  ],
+  "adaptation": "Source pour 1 portion, multipliée par 3. Riz ramené de 100 g à 70 g cru par portion (la source le propose pour réduire les calories). Oignons jaunes à la place des oignons nouveaux, hors saison.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 586,
+    "proteines_g": 43.1,
+    "glucides_g": 70.5,
+    "lipides_g": 12.8,
+    "fibres_g": 4,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.46,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "id": "frittata-petits-pois-carottes",
+  "slug": "frittata-petits-pois-carottes",
+  "nom": "Frittata petits pois, carottes et maïs",
+  "resume": "Une frittata au four bien garnie de légumes, qui se mange chaude ou froide.",
+  "type": "batch",
+  "portions_base": 3,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 25,
+    "total_min": 35,
+    "actif_min": 10
+  },
+  "equipement": [
+    "four"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "italienne",
+  "proteine_principale": "oeufs",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "omelette",
+  "ingredients": [
+    {
+      "ingredient": "oeuf",
+      "nom_affiche": "œufs",
+      "quantite": 9,
+      "unite": "pièce",
+      "poids_g": 495,
+      "optionnel": false,
+      "ciqual_code": "22000",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "petits-pois",
+      "nom_affiche": "petits pois surgelés",
+      "quantite": 210,
+      "unite": "g",
+      "poids_g": 210,
+      "optionnel": false,
+      "ciqual_code": "20084",
+      "rayon": "surgeles",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "carotte",
+      "nom_affiche": "carottes râpées",
+      "quantite": 210,
+      "unite": "g",
+      "poids_g": 210,
+      "optionnel": false,
+      "ciqual_code": "20009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "mais",
+      "nom_affiche": "maïs égoutté",
+      "quantite": 210,
+      "unite": "g",
+      "poids_g": 210,
+      "optionnel": false,
+      "ciqual_code": "20066",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "oignon-rouge",
+      "nom_affiche": "oignon rouge",
+      "quantite": 1.5,
+      "unite": "pièce",
+      "poids_g": 150,
+      "optionnel": false,
+      "ciqual_code": "20238",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "creme-legere-4",
+      "nom_affiche": "crème légère 4 %",
+      "quantite": 90,
+      "unite": "ml",
+      "poids_g": 90,
+      "optionnel": false,
+      "mesure_affichee": "6 c. à soupe",
+      "ciqual_code": "19432",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "emmental-rape",
+      "nom_affiche": "fromage râpé",
+      "quantite": 30,
+      "unite": "g",
+      "poids_g": 30,
+      "optionnel": false,
+      "ciqual_code": "12118",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "cumin",
+      "nom_affiche": "cumin",
+      "quantite": 2,
+      "unite": "g",
+      "poids_g": 2,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11042",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail-poudre",
+      "nom_affiche": "ail en poudre",
+      "quantite": 2,
+      "unite": "g",
+      "poids_g": 2,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11023",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "herbes-provence",
+      "nom_affiche": "herbes de Provence",
+      "quantite": 2,
+      "unite": "g",
+      "poids_g": 2,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11060",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Préchauffe le four à 180 °C. Râpe les carottes et émince l'oignon rouge.",
+      "duree_min": 6,
+      "actif": true
+    },
+    {
+      "texte": "Bats les œufs avec la crème, les épices, les herbes et le fromage. Ajoute tous les légumes, crus ou encore surgelés.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Verse dans 3 moules individuels légèrement huilés (ou un plat) et enfourne 25 minutes, jusqu'à ce que le centre soit pris.",
+      "duree_min": 25,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 1500
+    }
+  ],
+  "sources": [
+    {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@camax.nutrition/video/7543566420874136855",
+      "titre": "Frittata au four – Petits Pois, Carottes, Maïs & Oignon Rouge",
+      "auteur": "@camax.nutrition",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@camax.nutrition",
+        "title": "🥚🌽 Frittata au four – Petits Pois, Carottes, Maïs & Oignon Rouge 💡 Ultra simple, colorée, et ultra savoureuse : une vraie pépite à moins",
+        "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-no1a-p-0037-no/ooFRDEgnISoAmgE2QCgAokFAaso7QFfC5pAfG3~tplv-tiktokx-dmt-logom:tos-no1a-i-0068-no/oI6jcYICeA2ldwIbI1NvINAEGeAwLLAf3FAREI.image?dr=9634&x-expires=1794398400&x-signature=riCjP7Kzq5HUTe3AvsoOimAu9rQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      }
+    }
+  ],
+  "adaptation": "Source pour 1 portion, multipliée par 3, avec l'option « 3e œuf » proposée par la source pour plus de protéines.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 464,
+    "proteines_g": 32.3,
+    "glucides_g": 28.2,
+    "lipides_g": 22.6,
+    "fibres_g": 10.4,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.88,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

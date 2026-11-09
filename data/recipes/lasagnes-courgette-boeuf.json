@@ -1,0 +1,214 @@
+{
+  "id": "lasagnes-courgette-boeuf",
+  "slug": "lasagnes-courgette-boeuf",
+  "nom": "Lasagnes légères courgette et bœuf",
+  "resume": "Des lasagnes montées crues en une fois, avec des lamelles de courgette à la place d'une partie de la pâte.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 25,
+    "cuisson_min": 30,
+    "total_min": 60,
+    "actif_min": 30
+  },
+  "equipement": [
+    "four"
+  ],
+  "saison": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "cuisine": "italienne",
+  "proteine_principale": "boeuf",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "gratin",
+  "ingredients": [
+    {
+      "ingredient": "courgette",
+      "nom_affiche": "courgettes",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 500,
+      "optionnel": false,
+      "ciqual_code": "20020",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "boeuf-hache-5",
+      "nom_affiche": "bœuf haché 5 %",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "6250",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pulpe-tomate",
+      "nom_affiche": "pulpe de tomate",
+      "quantite": 800,
+      "unite": "g",
+      "poids_g": 800,
+      "optionnel": false,
+      "ciqual_code": "20169",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "concentre-tomate",
+      "nom_affiche": "concentré de tomate",
+      "quantite": 30,
+      "unite": "g",
+      "poids_g": 30,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à soupe",
+      "ciqual_code": "20068",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 gousse",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "herbes-provence",
+      "nom_affiche": "herbes de Provence",
+      "quantite": 2,
+      "unite": "g",
+      "poids_g": 2,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11060",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lasagnes",
+      "nom_affiche": "feuilles de lasagnes",
+      "quantite": 8,
+      "unite": "pièce",
+      "poids_g": 144,
+      "optionnel": false,
+      "mesure_affichee": "8 feuilles (environ 144 g)",
+      "ciqual_code": "9810",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ricotta",
+      "nom_affiche": "ricotta",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "19585",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "emmental-rape",
+      "nom_affiche": "fromage râpé",
+      "quantite": 40,
+      "unite": "g",
+      "poids_g": 40,
+      "optionnel": false,
+      "ciqual_code": "12118",
+      "rayon": "frais",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Préchauffe le four à 180 °C. Taille les courgettes en fines lamelles dans la longueur, émince l'oignon et hache l'ail.",
+      "duree_min": 10,
+      "actif": true
+    },
+    {
+      "texte": "Dans un bol, mélange la pulpe de tomate avec le concentré, l'ail, les herbes, du sel et du poivre.",
+      "duree_min": 3,
+      "actif": true
+    },
+    {
+      "texte": "Dans 4 boîtes allant au four (ou un plat) : une couche de courgette, un quart du bœuf cru émietté avec l'oignon, de la sauce, une feuille de lasagne tartinée d'un peu de ricotta. Recommence une seconde couche.",
+      "duree_min": 12,
+      "actif": true
+    },
+    {
+      "texte": "Parsème de fromage râpé et enfourne 30 minutes.",
+      "duree_min": 30,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 1800
+    },
+    {
+      "texte": "Laisse tiédir, ferme les boîtes : 3 au frigo, 1 au congélateur.",
+      "duree_min": 5,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@l.a_diet/video/7493229251546713366",
+      "titre": "Lasagnes légères à la courgette 3 min chrono #4plats1four",
+      "auteur": "@l.a_diet",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@l.a_diet",
+        "title": "Lasagnes légères à la courgette  3min chrono #4plats1four Concept : tout est monté cru (sauf la pâte à lasagne ici) dans les 4 plats → 1 seu",
+        "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-no1a-p-0037-no/oQ3gJLUMgGfPepi3WAAiAh9FQeOtqhsIefgA6A~tplv-tiktokx-dmt-logom:tos-no1a-i-0068-no/oEM3AQYA3gWetWfiegy8PhIeUNAEUMA93fQ6As.image?dr=9634&x-expires=1794398400&x-signature=P1N1GVTRD4EShaZKcu4OPVE6qKI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      }
+    }
+  ],
+  "adaptation": "Le fromage râpé (40 g), facultatif dans la source, est compté. Feuilles de lasagnes pesées à environ 18 g pièce (estimation).",
+  "kcal_annoncees_par_part": 470,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 420,
+    "proteines_g": 35.7,
+    "glucides_g": 40.2,
+    "lipides_g": 11.8,
+    "fibres_g": 6.9,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 4.47,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

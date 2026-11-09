@@ -1,0 +1,193 @@
+{
+  "id": "penne-thon-aubergines",
+  "slug": "penne-thon-aubergines",
+  "nom": "Penne au thon et aubergines",
+  "resume": "Des penne sautées au wok avec des aubergines fondantes, tomates, thon et un fond d'anchois.",
+  "type": "express",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 2,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 15,
+    "total_min": 20,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "italienne",
+  "proteine_principale": "thon",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "pates",
+  "ingredients": [
+    {
+      "ingredient": "pates",
+      "nom_affiche": "penne",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "9810",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "thon-naturel",
+      "nom_affiche": "thon égoutté",
+      "quantite": 190,
+      "unite": "g",
+      "poids_g": 190,
+      "optionnel": false,
+      "ciqual_code": "26039",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "anchois",
+      "nom_affiche": "filets d'anchois",
+      "quantite": 10,
+      "unite": "pièce",
+      "poids_g": 40,
+      "optionnel": false,
+      "mesure_affichee": "10 filets",
+      "ciqual_code": "26000",
+      "rayon": "frais",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "aubergine",
+      "nom_affiche": "aubergines",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 600,
+      "optionnel": false,
+      "ciqual_code": "20053",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomate",
+      "nom_affiche": "tomates bien mûres",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 240,
+      "optionnel": false,
+      "ciqual_code": "20276",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "2 gousses",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 45,
+      "unite": "ml",
+      "poids_g": 41.2,
+      "optionnel": false,
+      "mesure_affichee": "3 c. à soupe",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "capres",
+      "nom_affiche": "câpres",
+      "quantite": 15,
+      "unite": "g",
+      "poids_g": 15,
+      "optionnel": true,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11040",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "basilic",
+      "nom_affiche": "basilic",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": true,
+      "mesure_affichee": "2 branches",
+      "ciqual_code": "11033",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Mets une grande casserole d'eau salée à bouillir. Coupe aubergines et tomates en cubes.",
+      "duree_min": 5,
+      "actif": true
+    },
+    {
+      "texte": "Dans un wok huilé, fais fondre les anchois puis cuire les aubergines 10 minutes en remuant.",
+      "duree_min": 10,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    },
+    {
+      "texte": "En parallèle, cuis les penne 1 minute de moins que le temps du paquet.",
+      "duree_min": 10,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Ajoute dans le wok tomates, ail écrasé, câpres et thon émietté, 3 minutes. Verse les pâtes égouttées, saute 2 minutes à feu vif et ajoute le basilic.",
+      "duree_min": 5,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 300
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/penne-thon-aubergines-au-wok/",
+      "titre": "Penne, Thon & Aubergines au Wok",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "kcal_annoncees_par_part": 486,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 589,
+    "proteines_g": 28.7,
+    "glucides_g": 79.3,
+    "lipides_g": 15.1,
+    "fibres_g": 8.2,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.74,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Écart de 17 % avec les 486 kcal annoncées : le calcul Ciqual compte les 3 c. à soupe d'huile et les 10 filets d'anchois. Valeur Ciqual retenue."
+  }
+}

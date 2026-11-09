@@ -1,0 +1,190 @@
+{
+  "id": "salade-mais-jambon-feta",
+  "slug": "salade-mais-jambon-feta",
+  "nom": "Salade de maïs, jambon et feta",
+  "resume": "Maïs, tomates cerises, poivron, oignon rouge, dés de jambon et feta, vinaigrette moutardée.",
+  "type": "assemblage",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 2,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 15,
+    "cuisson_min": 0,
+    "total_min": 15,
+    "actif_min": 15
+  },
+  "equipement": [],
+  "saison": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "méditerranéenne",
+  "proteine_principale": "porc",
+  "creneaux": [
+    "midi"
+  ],
+  "illustration": "salade",
+  "ingredients": [
+    {
+      "ingredient": "mais",
+      "nom_affiche": "maïs égoutté",
+      "quantite": 300,
+      "unite": "g",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "20066",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "tomates-cerises",
+      "nom_affiche": "tomates cerises",
+      "quantite": 250,
+      "unite": "g",
+      "poids_g": 250,
+      "optionnel": false,
+      "ciqual_code": "20172",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poivron-rouge",
+      "nom_affiche": "poivron rouge",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 150,
+      "optionnel": false,
+      "ciqual_code": "20087",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "feta",
+      "nom_affiche": "feta",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "12066",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "jambon-des",
+      "nom_affiche": "dés de jambon",
+      "quantite": 250,
+      "unite": "g",
+      "poids_g": 250,
+      "optionnel": false,
+      "ciqual_code": "28922",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon-rouge",
+      "nom_affiche": "oignon rouge",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20238",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 60,
+      "unite": "ml",
+      "poids_g": 54.9,
+      "optionnel": false,
+      "mesure_affichee": "4 c. à soupe",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "vinaigre",
+      "nom_affiche": "vinaigre doux",
+      "quantite": 30,
+      "unite": "ml",
+      "poids_g": 30,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à soupe",
+      "ciqual_code": "11018",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "moutarde",
+      "nom_affiche": "moutarde",
+      "quantite": 5,
+      "unite": "g",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11013",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "basilic",
+      "nom_affiche": "basilic",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": true,
+      "mesure_affichee": "½ botte",
+      "ciqual_code": "11033",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cisèle l'oignon, coupe le poivron en dés, les tomates cerises en deux et la feta en cubes.",
+      "duree_min": 10,
+      "actif": true
+    },
+    {
+      "texte": "Dans un grand saladier, mélange maïs égoutté, oignon, poivron, tomates, feta et jambon.",
+      "duree_min": 2,
+      "actif": true
+    },
+    {
+      "texte": "Fouette l'huile, le vinaigre, la moutarde et le basilic ciselé, sale, poivre et verse sur la salade.",
+      "duree_min": 3,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/salade-de-mais-au-jambon/",
+      "titre": "Salade de Maïs au Jambon",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "kcal_annoncees_par_part": 312,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 464,
+    "proteines_g": 22.4,
+    "glucides_g": 22.5,
+    "lipides_g": 30.4,
+    "fibres_g": 5.2,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.7,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Écart avec les 312 kcal annoncées : la vinaigrette (4 c. à soupe d'huile pour 4) et la feta pèsent lourd dans le calcul Ciqual. Valeur Ciqual retenue."
+  }
+}

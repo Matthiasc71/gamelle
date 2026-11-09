@@ -1,0 +1,214 @@
+{
+  "id": "udon-tofu-cremeux",
+  "slug": "udon-tofu-cremeux",
+  "nom": "Udon crémeux au tofu et pak choï",
+  "resume": "Des udon nappés d'une crème de tofu soyeux à l'ail, avec du tofu ferme poêlé façon haché et du pak choï.",
+  "type": "express",
+  "portions_base": 2,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 10,
+    "total_min": 15,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "cuisine": "japonaise",
+  "proteine_principale": "tofu",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "pates",
+  "ingredients": [
+    {
+      "ingredient": "udon",
+      "nom_affiche": "udon frais",
+      "quantite": 300,
+      "unite": "g",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "9811",
+      "rayon": "epicerie",
+      "etat": "cuit"
+    },
+    {
+      "ingredient": "pak-choi",
+      "nom_affiche": "pak choï",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20340",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tofu-soyeux",
+      "nom_affiche": "tofu soyeux",
+      "quantite": 300,
+      "unite": "g",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "20906",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tofu-ferme",
+      "nom_affiche": "tofu ferme",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20904",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 gousse",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "sauce-soja",
+      "nom_affiche": "sauce soja",
+      "quantite": 30,
+      "unite": "ml",
+      "poids_g": 34,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à soupe",
+      "ciqual_code": "11104",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "sauce-huitre",
+      "nom_affiche": "sauce d'huître (végétale)",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 17,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11223",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-sesame",
+      "nom_affiche": "huile de sésame",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 13.7,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "17400",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tahini",
+      "nom_affiche": "purée de sésame (tahini)",
+      "quantite": 15,
+      "unite": "g",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "15203",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "cebette",
+      "nom_affiche": "cébette",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 15,
+      "optionnel": true,
+      "mesure_affichee": "1 cébette",
+      "ciqual_code": "20323",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Écrase le tofu soyeux avec l'ail pressé et un trait de sauce soja, au fouet, jusqu'à obtenir une crème lisse.",
+      "duree_min": 3,
+      "actif": true
+    },
+    {
+      "texte": "Émiette le tofu ferme à la fourchette et fais-le dorer dans une poêle avec l'huile de sésame et le tahini.",
+      "duree_min": 5,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 300
+    },
+    {
+      "texte": "Ajoute la cébette, la sauce soja et la sauce d'huître, mélange 1 minute.",
+      "duree_min": 1,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "En parallèle, plonge les udon et le pak choï 3 minutes dans l'eau bouillante, égoutte, mélange les udon à la crème de tofu et garnis de tofu poêlé et de pak choï.",
+      "duree_min": 4,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 180
+    }
+  ],
+  "sources": [
+    {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@lapetitechefmumu/video/7607522715494337814",
+      "titre": "UDON PROTÉINÉS CRÉMEUX (prêt en 15 min)",
+      "auteur": "@lapetitechefmumu",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@lapetitechefmumu",
+        "title": "UDON PROTÉINÉS CRÉMEUX (prêt en 15 min) 🍜✨ Franchement cette recette c’est une dinguerie : ultra crémeuse, pleine de goût et blindée de pro",
+        "thumbnail_url": "https://p19-common-sign.tiktokcdn-us.com/tos-no1a-p-0037-no/oYTEAYiZbBKN9ZBAipAZTWansBCA5IPv7EEGB~tplv-tiktokx-origin.image?dr=9636&x-expires=1794398400&x-signature=iWaQ12Sl1kLVj04qtC86qZnEdx8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      }
+    }
+  ],
+  "adaptation": "La crème de tofu soyeux se fait au fouet (pas de mixeur). Udon réduits de 400 à 300 g pour 2. Sauce d'huître classique dans le calcul (la source dit « végétale »).",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 616,
+    "proteines_g": 33.7,
+    "glucides_g": 56.2,
+    "lipides_g": 25.6,
+    "fibres_g": 6.3,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 4.98,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

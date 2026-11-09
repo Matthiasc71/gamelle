@@ -1,0 +1,202 @@
+{
+  "id": "salade-lentilles-grecque",
+  "slug": "salade-lentilles-grecque",
+  "nom": "Salade de lentilles à la grecque",
+  "resume": "Lentilles, feta, tomates cerises, concombre, poivron et olives, vinaigrette citron-origan.",
+  "type": "assemblage",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 12,
+    "cuisson_min": 0,
+    "total_min": 12,
+    "actif_min": 12
+  },
+  "equipement": [],
+  "saison": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "grecque",
+  "proteine_principale": "legumineuses",
+  "creneaux": [
+    "midi"
+  ],
+  "illustration": "salade",
+  "ingredients": [
+    {
+      "ingredient": "lentilles-conserve",
+      "nom_affiche": "lentilles au naturel égouttées",
+      "quantite": 500,
+      "unite": "g",
+      "poids_g": 500,
+      "optionnel": false,
+      "ciqual_code": "20360",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "feta",
+      "nom_affiche": "feta",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "12066",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomates-cerises",
+      "nom_affiche": "tomates cerises",
+      "quantite": 250,
+      "unite": "g",
+      "poids_g": 250,
+      "optionnel": false,
+      "ciqual_code": "20172",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "concombre",
+      "nom_affiche": "concombre",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "20019",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poivron-jaune",
+      "nom_affiche": "poivron jaune",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 150,
+      "optionnel": false,
+      "ciqual_code": "20168",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "olives-noires",
+      "nom_affiche": "olives noires",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "13032",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "citron",
+      "nom_affiche": "citron",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 40,
+      "optionnel": false,
+      "mesure_affichee": "jus d'un citron",
+      "ciqual_code": "13009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 45,
+      "unite": "ml",
+      "poids_g": 41.2,
+      "optionnel": false,
+      "mesure_affichee": "3 c. à soupe",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "vinaigre",
+      "nom_affiche": "vinaigre de cidre",
+      "quantite": 45,
+      "unite": "ml",
+      "poids_g": 45,
+      "optionnel": false,
+      "mesure_affichee": "3 c. à soupe",
+      "ciqual_code": "11018",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "moutarde",
+      "nom_affiche": "moutarde",
+      "quantite": 5,
+      "unite": "g",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11013",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "origan",
+      "nom_affiche": "origan séché",
+      "quantite": 1,
+      "unite": "g",
+      "poids_g": 1,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11035",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Rince et égoutte les lentilles. Coupe le poivron en dés, le concombre et la feta en cubes, les tomates cerises en deux.",
+      "duree_min": 8,
+      "actif": true
+    },
+    {
+      "texte": "Prépare la vinaigrette : huile, vinaigre, jus de citron, moutarde, origan, sel et poivre.",
+      "duree_min": 2,
+      "actif": true
+    },
+    {
+      "texte": "Mélange le tout et garde au frais.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/salade-lentilles-grecque/",
+      "titre": "Salade de lentilles à la grecque",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Lentilles en conserve au naturel (500 g égouttés, l'équivalent de 200 g sèches cuites) pour éviter la cuisson. Huile ramenée de 5 à 3 c. à soupe.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 463,
+    "proteines_g": 22.2,
+    "glucides_g": 28.3,
+    "lipides_g": 25.8,
+    "fibres_g": 13.2,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.65,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

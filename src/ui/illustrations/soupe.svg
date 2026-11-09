@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Bol de soupe, illustration">
+  <title>Bol de soupe, illustration</title>
+  <g class="aplats" transform="translate(4 3)" style="mix-blend-mode:multiply">
+    <circle cx="100" cy="100" r="80" fill="#FAF6EC"/>
+    <path d="M152.7 114.0 Q148.5 128.0 139.0 139.5 Q129.4 151.0 114.7 153.3 Q100.0 155.5 85.4 153.0 Q70.9 150.4 60.7 139.5 Q50.4 128.6 47.5 114.3 Q44.6 100.0 47.1 85.5 Q49.7 71.0 61.0 61.5 Q72.3 52.1 86.2 47.2 Q100.0 42.4 113.9 47.2 Q127.8 51.9 138.0 62.1 Q148.2 72.2 152.6 86.1 Q157.0 100.0 152.7 114.0Z" fill="#EDB99A"/>
+    <circle cx="118" cy="122" r="16" fill="#FAF6EC"/>
+    <circle cx="118" cy="122" r="8" fill="#EDB99A"/>
+    <path d="M115.0 64.5 Q127.6 76.6 145.0 75.5 Q132.4 63.4 115.0 64.5Z" fill="#A8BBA0"/>
+    <path d="M137.5 75.7 Q136.6 90.0 146.5 100.3 Q147.4 86.0 137.5 75.7Z" fill="#8FD3B0"/>
+    <path d="M58.9 141.3 Q74.1 136.9 81.1 122.7 Q65.9 127.1 58.9 141.3Z" fill="#A8BBA0"/>
+  </g>
+  <g class="trait" fill="none" stroke="#24402F" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="100" cy="100" r="80"/>
+    <circle cx="100" cy="100" r="70"/>
+    <path d="M152.7 114.0 Q148.5 128.0 139.0 139.5 Q129.4 151.0 114.7 153.3 Q100.0 155.5 85.4 153.0 Q70.9 150.4 60.7 139.5 Q50.4 128.6 47.5 114.3 Q44.6 100.0 47.1 85.5 Q49.7 71.0 61.0 61.5 Q72.3 52.1 86.2 47.2 Q100.0 42.4 113.9 47.2 Q127.8 51.9 138.0 62.1 Q148.2 72.2 152.6 86.1 Q157.0 100.0 152.7 114.0Z" stroke-dasharray="3 3"/>
+    <path d="M60 80 c8 -10 14 10 22 0 s14 10 22 0" stroke-width="1"/>
+    <path d="M67 86 c8 -10 14 10 22 0 s14 10 22 0" stroke-width="1"/>
+    <path d="M74 80 c8 -10 14 10 22 0 s14 10 22 0" stroke-width="1"/>
+    <path d="M81 86 c8 -10 14 10 22 0 s14 10 22 0" stroke-width="1"/>
+    <path d="M88 80 c8 -10 14 10 22 0 s14 10 22 0" stroke-width="1"/>
+    <path d="M95 86 c8 -10 14 10 22 0 s14 10 22 0" stroke-width="1"/>
+    <circle cx="118" cy="122" r="16"/>
+    <circle cx="118" cy="122" r="8"/>
+    <path d="M115.0 64.5 Q127.6 76.6 145.0 75.5 Q132.4 63.4 115.0 64.5Z"/>
+    <path d="M115.0 64.5 L142.0 74.4" stroke-width="0.9"/>
+    <path d="M125.5 68.4 l2.5 4.7" stroke-width="0.8"/>
+    <path d="M133.0 71.1 l2.5 4.7" stroke-width="0.8"/>
+    <path d="M137.5 75.7 Q136.6 90.0 146.5 100.3 Q147.4 86.0 137.5 75.7Z"/>
+    <path d="M137.5 75.7 L145.6 97.8" stroke-width="0.9"/>
+    <path d="M140.7 84.3 l-1.6 4.0" stroke-width="0.8"/>
+    <path d="M142.9 90.5 l-1.6 4.0" stroke-width="0.8"/>
+    <path d="M58.9 141.3 Q74.1 136.9 81.1 122.7 Q65.9 127.1 58.9 141.3Z"/>
+    <path d="M58.9 141.3 L78.9 124.5" stroke-width="0.9"/>
+    <path d="M66.7 134.8 l4.8 0.1" stroke-width="0.8"/>
+    <path d="M72.2 130.1 l4.8 0.1" stroke-width="0.8"/>
+  </g>
+</svg>

@@ -1,0 +1,196 @@
+{
+  "id": "poulet-creme-epinards-tomates-sechees",
+  "slug": "poulet-creme-epinards-tomates-sechees",
+  "nom": "Poulet à la crème, épinards et tomates séchées",
+  "resume": "Escalopes dorées nappées d'une sauce crémeuse aux champignons, épinards, tomates séchées et parmesan.",
+  "type": "express",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 2,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 8,
+    "cuisson_min": 12,
+    "total_min": 20,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    3,
+    4,
+    5,
+    9,
+    10,
+    11
+  ],
+  "cuisine": "italienne",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "poelee",
+  "ingredients": [
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "escalopes de poulet",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 520,
+      "optionnel": false,
+      "mesure_affichee": "4 escalopes (520 g)",
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "champignons",
+      "nom_affiche": "champignons de Paris",
+      "quantite": 150,
+      "unite": "g",
+      "poids_g": 150,
+      "optionnel": false,
+      "ciqual_code": "20056",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "epinards-pousses",
+      "nom_affiche": "pousses d'épinards",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20270",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomates-sechees",
+      "nom_affiche": "tomates séchées égouttées",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "mesure_affichee": "1 petit bocal",
+      "ciqual_code": "20256",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "creme-legere-15",
+      "nom_affiche": "crème légère",
+      "quantite": 300,
+      "unite": "ml",
+      "poids_g": 300,
+      "optionnel": false,
+      "mesure_affichee": "30 cl",
+      "ciqual_code": "19430",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "parmesan",
+      "nom_affiche": "parmesan",
+      "quantite": 30,
+      "unite": "g",
+      "poids_g": 30,
+      "optionnel": false,
+      "ciqual_code": "12120",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "echalote",
+      "nom_affiche": "échalotes",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 60,
+      "optionnel": false,
+      "ciqual_code": "20097",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "2 gousses",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 10,
+      "unite": "ml",
+      "poids_g": 9.2,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à café",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cisèle les échalotes, presse l'ail, émince les champignons.",
+      "duree_min": 6,
+      "actif": true
+    },
+    {
+      "texte": "Dore les escalopes dans une poêle huilée, sale, poivre et réserve.",
+      "duree_min": 6,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 360
+    },
+    {
+      "texte": "Dans la même poêle, fais fondre échalotes et ail, puis ajoute tomates séchées et champignons quelques minutes.",
+      "duree_min": 4,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 240
+    },
+    {
+      "texte": "Ajoute la crème, le parmesan et les épinards, mélange jusqu'à ce que les épinards tombent et nappe le poulet.",
+      "duree_min": 3,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 180
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/poulet-creme-epinards-tomates-sechees/",
+      "titre": "Poulet à la crème, épinards et tomates séchées",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Crème légère à la place de la crème liquide entière. Bocal de tomates séchées estimé à 100 g égouttés.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 406,
+    "proteines_g": 37.8,
+    "glucides_g": 8.3,
+    "lipides_g": 23.4,
+    "fibres_g": 4.1,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.68,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

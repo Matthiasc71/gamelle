@@ -1,0 +1,241 @@
+{
+  "id": "poulet-tikka-masala",
+  "slug": "poulet-tikka-masala",
+  "nom": "Poulet tikka masala",
+  "resume": "Poulet mariné au yaourt et aux épices, mijoté dans une sauce tomate onctueuse, avec des noix de cajou.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 15,
+    "cuisson_min": 30,
+    "total_min": 75,
+    "actif_min": 20
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "indienne",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "curry-bol",
+  "ingredients": [
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "blancs de poulet",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 520,
+      "optionnel": false,
+      "mesure_affichee": "4 blancs (520 g)",
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "yaourt-grec",
+      "nom_affiche": "yaourt à la grecque",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "mesure_affichee": "20 cl",
+      "ciqual_code": "19860",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "curry",
+      "nom_affiche": "curry",
+      "quantite": 6,
+      "unite": "g",
+      "poids_g": 6,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11005",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "cumin",
+      "nom_affiche": "cumin",
+      "quantite": 2,
+      "unite": "g",
+      "poids_g": 2,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11042",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "curcuma",
+      "nom_affiche": "curcuma",
+      "quantite": 2,
+      "unite": "g",
+      "poids_g": 2,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11089",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "noix-cajou",
+      "nom_affiche": "noix de cajou",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "15055",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignons",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 3,
+      "unite": "pièce",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "3 gousses",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "gingembre-frais",
+      "nom_affiche": "gingembre frais",
+      "quantite": 5,
+      "unite": "g",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 cm",
+      "ciqual_code": "11074",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "concentre-tomate",
+      "nom_affiche": "concentré de tomate",
+      "quantite": 30,
+      "unite": "g",
+      "poids_g": 30,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à soupe",
+      "ciqual_code": "20068",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomates-concassees",
+      "nom_affiche": "tomates concassées",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "20137",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lait-coco",
+      "nom_affiche": "lait de coco",
+      "quantite": 200,
+      "unite": "ml",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "18041",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Mélange le yaourt et les épices, enrobes-en le poulet coupé en morceaux et laisse mariner 30 minutes au frais.",
+      "duree_min": 5,
+      "actif": true
+    },
+    {
+      "texte": "Pendant ce temps, hache les noix de cajou, émince les oignons et l'ail, râpe le gingembre.",
+      "duree_min": 8,
+      "actif": true
+    },
+    {
+      "texte": "Dans une sauteuse, dore les oignons, puis ajoute ail, gingembre et concentré 1 minute. Ajoute le poulet et sa marinade et fais-le dorer.",
+      "duree_min": 8,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 480
+    },
+    {
+      "texte": "Verse les tomates et le lait de coco, porte à ébullition puis couvre et laisse mijoter 20 minutes en remuant souvent.",
+      "duree_min": 20,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 1200
+    },
+    {
+      "texte": "Parsème de noix de cajou au moment de servir.",
+      "duree_min": 1,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/poulet-tikka-masala/",
+      "titre": "Poulet Tikka Masala",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Lait de coco à la place de la crème de coco (absente de Ciqual, plus grasse). Garam masala et cardamome remplacés par du curry en poudre.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 513,
+    "proteines_g": 39.5,
+    "glucides_g": 18.6,
+    "lipides_g": 28.8,
+    "fibres_g": 6.1,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.99,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

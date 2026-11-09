@@ -1,0 +1,195 @@
+{
+  "id": "wrap-thon-avocat",
+  "slug": "wrap-thon-avocat",
+  "nom": "Wrap thon, avocat et carotte",
+  "resume": "Une tortilla garnie de thon au fromage blanc citronné, carotte râpée, salade et avocat.",
+  "type": "assemblage",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 8,
+    "cuisson_min": 0,
+    "total_min": 8,
+    "actif_min": 8
+  },
+  "equipement": [],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "française",
+  "proteine_principale": "thon",
+  "creneaux": [
+    "midi"
+  ],
+  "illustration": "wrap",
+  "ingredients": [
+    {
+      "ingredient": "tortilla-ble",
+      "nom_affiche": "galette de blé",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 40,
+      "optionnel": false,
+      "ciqual_code": "7815",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "thon-naturel",
+      "nom_affiche": "thon au naturel",
+      "quantite": 75,
+      "unite": "g",
+      "poids_g": 75,
+      "optionnel": false,
+      "mesure_affichee": "1 petite boîte",
+      "ciqual_code": "26039",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "echalote",
+      "nom_affiche": "échalote",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 30,
+      "optionnel": false,
+      "ciqual_code": "20097",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "fromage-blanc-0",
+      "nom_affiche": "fromage blanc",
+      "quantite": 40,
+      "unite": "g",
+      "poids_g": 40,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à soupe",
+      "ciqual_code": "19644",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "citron",
+      "nom_affiche": "citron",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 20,
+      "optionnel": false,
+      "mesure_affichee": "jus d'½ citron",
+      "ciqual_code": "13009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "carotte",
+      "nom_affiche": "carotte",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "laitue",
+      "nom_affiche": "salade",
+      "quantite": 0.1,
+      "unite": "pièce",
+      "poids_g": 20,
+      "optionnel": false,
+      "mesure_affichee": "1 poignée",
+      "ciqual_code": "20031",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "avocat",
+      "nom_affiche": "avocat",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 70,
+      "optionnel": false,
+      "mesure_affichee": "½ avocat",
+      "ciqual_code": "13004",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ciboulette",
+      "nom_affiche": "ciboulette",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 3,
+      "optionnel": true,
+      "mesure_affichee": "quelques brins",
+      "ciqual_code": "11003",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Mélange le thon avec le fromage blanc, le jus de citron, l'échalote ciselée, la ciboulette, sel et poivre.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Râpe la carotte et tranche l'avocat.",
+      "duree_min": 2,
+      "actif": true
+    },
+    {
+      "texte": "Garnis la galette de salade, du mélange au thon, de carotte et d'avocat, puis roule-la bien serrée.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@salutcestclaire/video/7490208842622438678",
+      "titre": "WRAP SAIN & GOURMAND AU THON",
+      "auteur": "@salutcestclaire",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@salutcestclaire",
+        "title": "WRAP SAIN & GOURMAND AU THON 🌯 Enregistre la recette pour la refaire plus tard 👀 👩🏻‍🍳 INGRÉDIENTS (pour 1 personne) : - 1 galette wrap",
+        "thumbnail_url": "https://p19-common-sign.tiktokcdn-us.com/tos-no1a-p-0037-no/oUUqEviSAdSR7niyCABAIRf6I9zwkBDCAKi8Pr~tplv-tiktokx-dmt-logom:tos-no1a-i-0068-no/oAkKzCI3RABkwMARESDCB9Vy4SiUIfJiLAU6PA.image?dr=9634&x-expires=1794398400&x-signature=P9UYDnAT35aLUfnmaxYhH0OnJKQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      }
+    }
+  ],
+  "adaptation": "« Petite boîte de thon » comptée 75 g égouttés et galette de 40 g (estimations).",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 453,
+    "proteines_g": 29,
+    "glucides_g": 32.3,
+    "lipides_g": 20.8,
+    "fibres_g": 7.6,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 3.01,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

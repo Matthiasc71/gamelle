@@ -1,0 +1,258 @@
+{
+  "id": "curry-boeuf-hache",
+  "slug": "curry-boeuf-hache",
+  "nom": "Curry de bœuf haché, carottes et pommes de terre",
+  "resume": "Un curry doux et rapide au bœuf haché, avec des légumes fondants, servi avec du riz.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 35,
+    "total_min": 45,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques",
+    "rice-cooker"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "indienne",
+  "proteine_principale": "boeuf",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "curry-bol",
+  "ingredients": [
+    {
+      "ingredient": "boeuf-hache-5",
+      "nom_affiche": "bœuf haché 5 %",
+      "quantite": 650,
+      "unite": "g",
+      "poids_g": 650,
+      "optionnel": false,
+      "ciqual_code": "6250",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "coulis-tomate",
+      "nom_affiche": "coulis de tomate",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20260",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "carotte",
+      "nom_affiche": "carottes",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pomme-de-terre",
+      "nom_affiche": "pommes de terre",
+      "quantite": 300,
+      "unite": "g",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "4008",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 gousse",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "sucre-roux",
+      "nom_affiche": "sucre roux",
+      "quantite": 12,
+      "unite": "g",
+      "poids_g": 12,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "31017",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "curry",
+      "nom_affiche": "curry",
+      "quantite": 8,
+      "unite": "g",
+      "poids_g": 8,
+      "optionnel": false,
+      "mesure_affichee": "4 c. à café",
+      "ciqual_code": "11005",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "curcuma",
+      "nom_affiche": "curcuma",
+      "quantite": 2,
+      "unite": "g",
+      "poids_g": 2,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11089",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "farine",
+      "nom_affiche": "farine",
+      "quantite": 8,
+      "unite": "g",
+      "poids_g": 8,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "9435",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 13.7,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "riz-basmati",
+      "nom_affiche": "riz basmati",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "9119",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Lance le riz au rice cooker. Émince l'oignon et l'ail, coupe pommes de terre et carottes en petits dés.",
+      "duree_min": 10,
+      "actif": true,
+      "equipement": "rice-cooker"
+    },
+    {
+      "texte": "Dans une cocotte huilée, fais revenir oignon et ail, puis dore le bœuf en l'émiettant.",
+      "duree_min": 6,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 360
+    },
+    {
+      "texte": "Couvre d'eau à hauteur, mets le couvercle et laisse frémir 10 minutes.",
+      "duree_min": 10,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    },
+    {
+      "texte": "Ajoute pommes de terre et carottes, poursuis 10 minutes à couvert.",
+      "duree_min": 10,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    },
+    {
+      "texte": "Ajoute coulis, sucre, épices et farine. Laisse épaissir 10 minutes à découvert en remuant.",
+      "duree_min": 10,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/curry-de-boeuf-hache/",
+      "titre": "Curry de boeuf haché",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/DP3lMU3jT8h/",
+      "titre": "Menu de batch cooking – Automne #5",
+      "auteur": "@cuisineaddict",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "article-meme-createur",
+      "oembed": {
+        "author_name": "@cuisineaddict",
+        "title": "🌰 Menu de batch cooking – Automne #5 🌰",
+        "thumbnail_url": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/566952487_18532471825050969_3212140645937615026_n.heic?stp=dst-jpg_e35_sh2.08_tt6&_nc_cat=108&ig_cache_key=Mzc0NDYyNTE3OTQ4MjcxOTAwMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=7KCUad3X2isQ7kNvwEJJDjh&_nc_oc=AdouRabprSPyOBC6WMxkSM7UYi0fRQtqW8O0xuChO_BHZ_OVbVGjpEbXEevpIUo2QAE&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&_nc_gid=B0NJzdO_SbjOxNVvGzKzaA&_nc_ss=7c689&oh=00_AQSR-2BfoAhLwF_8ua1jVsqnxzQNTYntgrjx87e_DFVP7w&oe=6AF78D7B"
+      }
+    }
+  ],
+  "adaptation": "Viande hachée à 5 % de matière grasse. Riz basmati inclus (50 g cru par part), comme la source le conseille au service.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 553,
+    "proteines_g": 42.9,
+    "glucides_g": 64.6,
+    "lipides_g": 12,
+    "fibres_g": 6.7,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 4.43,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "id": "riz-poulet-pesto-brocoli",
+  "slug": "riz-poulet-pesto-brocoli",
+  "nom": "Riz au poulet, pesto et brocoli au four",
+  "resume": "Tout cru dans un plat : riz, poulet, brocoli, tomates cerises et pesto cuisent ensemble dans le bouillon.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 15,
+    "cuisson_min": 50,
+    "total_min": 65,
+    "actif_min": 15
+  },
+  "equipement": [
+    "four"
+  ],
+  "saison": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "italienne",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "gratin",
+  "ingredients": [
+    {
+      "ingredient": "riz-long",
+      "nom_affiche": "riz",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "9100",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "blanc de poulet",
+      "quantite": 450,
+      "unite": "g",
+      "poids_g": 450,
+      "optionnel": false,
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pesto",
+      "nom_affiche": "pesto vert",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "11179",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "brocoli-surgele",
+      "nom_affiche": "brocoli haché",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20204",
+      "rayon": "surgeles",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomates-cerises",
+      "nom_affiche": "tomates cerises",
+      "quantite": 300,
+      "unite": "g",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "20172",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "bouillon-volaille",
+      "nom_affiche": "bouillon de volaille",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "1 cube dans 400 ml d'eau",
+      "ciqual_code": "11174",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "parmesan",
+      "nom_affiche": "parmesan râpé",
+      "quantite": 40,
+      "unite": "g",
+      "poids_g": 40,
+      "optionnel": false,
+      "ciqual_code": "12120",
+      "rayon": "frais",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Préchauffe le four à 190 °C. Délaye le cube de bouillon dans 400 ml d'eau chaude.",
+      "duree_min": 3,
+      "actif": true
+    },
+    {
+      "texte": "Coupe le poulet en dés et les tomates cerises en deux. Hache grossièrement le brocoli.",
+      "duree_min": 8,
+      "actif": true
+    },
+    {
+      "texte": "Mets riz, poulet, brocoli, tomates, pesto et bouillon dans un grand plat, mélange bien et couvre de papier aluminium.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Enfourne 45 minutes.",
+      "duree_min": 45,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 2700
+    },
+    {
+      "texte": "Découvre, parsème de parmesan et laisse gratiner 5 minutes.",
+      "duree_min": 5,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 300
+    }
+  ],
+  "sources": [
+    {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@emericmso/video/7696151520055708960",
+      "titre": "Poulet au pesto et riz hyperprotéiné hyper simple (4 portions)",
+      "auteur": "@emericmso",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@emericmso",
+        "title": "Poulet au pesto et riz hyperprotéiné hyper simple Recette (4 portions) : 🍚 200 g de riz 🐔 450 g de blanc de poulet 🧃 50 g de pesto vert",
+        "thumbnail_url": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-0037-euttp/oEAlGIhVMEMLsj8QfOcfDFcnmDOePGQnGUUxTg~tplv-tiktokx-origin.image?dr=9636&x-expires=1794398400&x-signature=rG8dCRpYDBODW8If%2F9WPgC6e9Ko%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      }
+    }
+  ],
+  "adaptation": "Le fromage du gratinage n'est pas chiffré dans la source : 40 g de parmesan au total.",
+  "kcal_annoncees_par_part": 490,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 428,
+    "proteines_g": 36.1,
+    "glucides_g": 45.1,
+    "lipides_g": 10.2,
+    "fibres_g": 3.4,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.53,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

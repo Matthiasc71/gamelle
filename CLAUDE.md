@@ -6,8 +6,12 @@ Cahier des charges complet : `docs/cahier-des-charges.md`. Maquettes de référe
 ## Règles non négociables
 - **Zéro invention.** Jamais de recette, source, auteur, prix ou valeur nutritionnelle inventés. Une estimation est marquée comme telle, avec sa méthode.
 - **Sources vérifiées.** Chaque recette a au moins une source publique (article, TikTok, Instagram), vérifiée :
-  HTTP 200 pour un article, oEmbed pour TikTok (`https://www.tiktok.com/oembed?url=`) et Instagram
-  (`https://graph.facebook.com/v21.0/instagram_oembed?url=`, sans jeton). Lien mort → recette rejetée.
+  HTTP 200 pour un article ; TikTok via la page d'intégration officielle `https://www.tiktok.com/embed/v2/<id>`
+  (l'oEmbed TikTok répond pareil pour n'importe quel identifiant, il ne prouve rien) ; Instagram via l'oEmbed
+  Meta sans jeton puis `/p/<code>/embed/captioned/` (auteur, légende). Lien mort → recette rejetée.
+  Un 429 (limite de débit) n'est pas un lien mort : `npm run links` réessaie puis le classe « à revérifier ».
+  Toujours s'identifier honnêtement (User-Agent « Gamelle/0.1 ») : ne jamais imiter un navigateur ni
+  contourner un blocage anti-robot (Carrefour, Leclerc Drive, Intermarché bloquent : on n'y va pas).
 - **Vidéos.** Une vidéo TikTok ou Instagram n'entre que si les quantités viennent de sa **légende complète**
   ou d'un **article du même créateur** (`quantites_depuis`). On ne devine jamais des grammages vus dans une vidéo.
 - **Calories = Ciqual 2025 (Anses)**, recalculées par `npm run compute`. Ne jamais recopier les kcal d'un blog.
@@ -15,8 +19,11 @@ Cahier des charges complet : `docs/cahier-des-charges.md`. Maquettes de référe
 - **Droit d'auteur.** Étapes reformulées avec nos mots, jamais copiées. Aucune photo de blog, d'Instagram ou de TikTok.
   Les visuels sont des **illustrations SVG dessinées pour l'app** (style herbier/riso), une par famille de plat.
   Toujours créditer la source avec un lien, et écrire « adaptée de » quand on modifie.
-- **Prix (Lyon).** Ordre : Open Prices (médiane 12 mois, Lyon et environs) → prix relevés sur le site d'une enseigne
-  (`site-enseigne`, avec URL et date) → médiane Open Prices France (marquée estimation). Conditionnements réels.
+- **Prix (Lyon).** Ordre (`npm run prices`) : ticket saisi à la main → prix affiché sur aldi.fr pour un produit précis
+  (`npm run aldi`, robots.txt respecté) → médiane Open Prices 12 mois Lyon → médiane Open Prices France (estimation).
+  Aldi passe avant Open Prices car une médiane par catégorie mélange marques et premiers prix (décision du jalon 1,
+  à confirmer par l'utilisateur). Filtres `mots` / `exclure` dans `data/prix-correspondances.json` pour comparer à
+  produit équivalent. Conditionnements réels.
 - **100 % gratuit, local, privé.** Aucune IA ni API payante appelée par l'app, pas de compte, pas de tracking.
   Aucune requête vers un tiers au chargement (sauf au tap sur une vidéo). Polices auto-hébergées.
 - **Équipement autorisé** : plaques (2 feux), four, micro-ondes, rice cooker. Rien d'autre.
@@ -34,8 +41,15 @@ Cahier des charges complet : `docs/cahier-des-charges.md`. Maquettes de référe
 - `data/ciqual-map.json` : catalogue d'ingrédients (code Ciqual, rayon, rangement, conservation).
 - `data/prix-reference.json` : un prix par ingrédient (conditionnement réel, enseigne, URL, date, méthode).
 - `data/ciqual/ciqual-2025.min.json` : généré par `npm run ciqual` (Etalab 2.0, doi:10.57745/RDMHWY).
+  Énergie absente mais macros présentes → recalculée (4P + 4G + 9L + 2F, UE 1169/2011), codes listés dans `kcal_recalculees`.
+- `data/prix-correspondances.json` : pour chaque ingrédient, produit réel, conditionnement, référence Aldi, catégorie Open Prices.
+- `npm run compute` remplit `ciqual_code`, `rayon`, `etat` des ingrédients depuis le catalogue : ne pas les éditer à la main.
+- Mesures : 1 c. à soupe = 15 ml (huile 13,7 g), 1 c. à café = 5 ml, épice en poudre 1 c. à café = 2 g. Liquides en ml.
+- Visuels : illustrations SVG par famille de plat dans `src/ui/illustrations/` (champ `illustration`), `image: null`.
 
 ## Commandes
+Dans une session cloud, le `fetch` de Node passe par le proxy seulement avec `export NODE_USE_ENV_PROXY=1`.
+- `npm run aldi` : relève les prix affichés sur aldi.fr → `data/prix-sources/aldi.json`.
 - `npm run ciqual` : télécharge et convertit Ciqual.
 - `npm run prices` : rafraîchit les prix Open Prices et écrit `reports/prix.md`.
 - `npm run links` : revérifie toutes les sources (met à jour `verifie_le`).

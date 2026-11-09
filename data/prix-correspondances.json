@@ -138,14 +138,19 @@
     }
   },
   "lentilles-conserve": {
-    "produit": "Lentilles cuisinées en conserve, 530 g",
+    "produit": "Lentilles au naturel en conserve, 265 g égouttées",
     "conditionnement": {
-      "quantite": 530,
+      "quantite": 265,
       "unite": "g"
     },
-    "aldi": "4440",
     "open_prices": {
-      "categorie_produit": "en:canned-lentils"
+      "categorie_produit": "en:canned-lentils",
+      "exclure": [
+        "cuisin",
+        "saucisse",
+        "lardons",
+        "prepar"
+      ]
     }
   },
   "haricots-rouges": {

@@ -111,14 +111,15 @@
     "legume": false
   },
   "lentilles-conserve": {
-    "nom": "lentilles en conserve",
-    "ciqual_code": "20510",
-    "ciqual_nom": "Lentille, cuisinée, appertisée, égouttée",
+    "nom": "lentilles au naturel en conserve",
+    "ciqual_code": "20360",
+    "ciqual_nom": "Lentille, bouillie cuite à l'eau (aliment moyen)",
     "rayon": "epicerie",
     "etat": "égoutté",
     "rangement": "placard",
     "conservation_jours": 730,
-    "legume": false
+    "legume": false,
+    "note": "Lentilles cuites au naturel (conserve égouttée), assimilées aux lentilles bouillies cuites à l'eau (Ciqual 20360)."
   },
   "haricots-rouges": {
     "nom": "haricots rouges en conserve",
@@ -580,7 +581,7 @@
     "etat": "cru",
     "rangement": "placard",
     "conservation_jours": 180,
-    "legume": false
+    "legume": true
   },
   "epinards-pousses": {
     "nom": "pousses d'épinards",

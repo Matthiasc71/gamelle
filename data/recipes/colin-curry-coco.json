@@ -1,0 +1,185 @@
+{
+  "id": "colin-curry-coco",
+  "slug": "colin-curry-coco",
+  "nom": "Colin au curry et lait de coco, riz",
+  "resume": "Des morceaux de colin pochés dans une sauce coco au curry avec poivrons et oignon, servis avec du riz.",
+  "type": "express",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 2,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 15,
+    "total_min": 20,
+    "actif_min": 10
+  },
+  "equipement": [
+    "plaques",
+    "rice-cooker"
+  ],
+  "saison": [
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "cuisine": "indienne",
+  "proteine_principale": "poisson-blanc",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "poisson",
+  "ingredients": [
+    {
+      "ingredient": "colin-filet",
+      "nom_affiche": "filets de colin",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 480,
+      "optionnel": false,
+      "mesure_affichee": "4 filets (480 g)",
+      "ciqual_code": "26006",
+      "rayon": "surgeles",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 13.7,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poivron-rouge",
+      "nom_affiche": "poivrons rouges",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "20087",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lait-coco",
+      "nom_affiche": "lait de coco",
+      "quantite": 200,
+      "unite": "ml",
+      "poids_g": 200,
+      "optionnel": false,
+      "mesure_affichee": "20 cl",
+      "ciqual_code": "18041",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "curry",
+      "nom_affiche": "curry",
+      "quantite": 9,
+      "unite": "g",
+      "poids_g": 9,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe et demie",
+      "ciqual_code": "11005",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "riz-basmati",
+      "nom_affiche": "riz basmati",
+      "quantite": 240,
+      "unite": "g",
+      "poids_g": 240,
+      "optionnel": false,
+      "ciqual_code": "9119",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "coriandre",
+      "nom_affiche": "coriandre",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 5,
+      "optionnel": true,
+      "mesure_affichee": "quelques feuilles",
+      "ciqual_code": "11094",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Lance le riz au rice cooker. Émince finement l'oignon et les poivrons.",
+      "duree_min": 6,
+      "actif": true,
+      "equipement": "rice-cooker"
+    },
+    {
+      "texte": "Dans une cocotte huilée, fais revenir oignon et poivrons 5 minutes.",
+      "duree_min": 5,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 300
+    },
+    {
+      "texte": "Ajoute le lait de coco, 20 cl d'eau et le curry, porte à ébullition.",
+      "duree_min": 2,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Ajoute le poisson en morceaux, sale, poivre et laisse frémir 10 minutes en retournant à mi-cuisson.",
+      "duree_min": 10,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://lesdelicesdesylvie.fr/filets-de-colin-au-curry-et-au-lait-de-coco/",
+      "titre": "Filets de colin au curry et au lait de coco",
+      "auteur": "Les délices de Sylvie",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Une seule cuillère d'huile (celle utilisée dans les étapes de la source). Riz basmati compté (60 g cru par part), comme la source le propose. Poids des filets estimé à 120 g.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 470,
+    "proteines_g": 26.2,
+    "glucides_g": 55.9,
+    "lipides_g": 14.8,
+    "fibres_g": 5.1,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.69,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

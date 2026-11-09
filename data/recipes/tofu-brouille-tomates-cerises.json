@@ -1,0 +1,169 @@
+{
+  "id": "tofu-brouille-tomates-cerises",
+  "slug": "tofu-brouille-tomates-cerises",
+  "nom": "Tofu brouillé aux tomates cerises",
+  "resume": "Un brouillé de tofu à l'oignon et au curcuma, avec des tomates cerises poêlées.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 12,
+    "total_min": 17,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "française",
+  "proteine_principale": "tofu",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "omelette",
+  "ingredients": [
+    {
+      "ingredient": "tofu-ferme",
+      "nom_affiche": "tofu",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20904",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomates-cerises",
+      "nom_affiche": "tomates cerises",
+      "quantite": 150,
+      "unite": "g",
+      "poids_g": 150,
+      "optionnel": false,
+      "ciqual_code": "20172",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 gousse",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "curcuma",
+      "nom_affiche": "curcuma",
+      "quantite": 1,
+      "unite": "g",
+      "poids_g": 1,
+      "optionnel": false,
+      "mesure_affichee": "1 pincée",
+      "ciqual_code": "11089",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 13.7,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ciboulette",
+      "nom_affiche": "herbes fraîches",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 5,
+      "optionnel": true,
+      "mesure_affichee": "quelques brins",
+      "ciqual_code": "11003",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Émince l'oignon et l'ail, coupe les tomates cerises en deux, émiette le tofu à la main.",
+      "duree_min": 5,
+      "actif": true
+    },
+    {
+      "texte": "Dans une poêle huilée, fais revenir oignon et ail 3 minutes.",
+      "duree_min": 3,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 180
+    },
+    {
+      "texte": "Ajoute le tofu et fais-le sauter 4 minutes, puis le curcuma et les tomates 5 minutes en remuant.",
+      "duree_min": 9,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 540
+    },
+    {
+      "texte": "Sale, poivre et parsème d'herbes fraîches.",
+      "duree_min": 1,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://www.fourchette-et-bikini.fr/recettes/tofu-brouille-aux-tomates-cerises-rapide-et-vegan-38934.html",
+      "titre": "Tofu brouillé aux tomates cerises rapide et vegan",
+      "auteur": "Fourchette et Bikini",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "La recette prévue pour 2 forme ici un repas complet pour 1. Huile ramenée de 2 cl à 1 c. à soupe. Levure nutritionnelle (facultative) non comptée.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 512,
+    "proteines_g": 30.3,
+    "glucides_g": 21.8,
+    "lipides_g": 31.7,
+    "fibres_g": 4.5,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 4.51,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

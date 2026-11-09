@@ -1,0 +1,173 @@
+{
+  "id": "gratin-dinde-legumes-jaunes",
+  "slug": "gratin-dinde-legumes-jaunes",
+  "nom": "Gratin jaune dinde, maïs et poivron",
+  "resume": "Un gratin monochrome monté cru : dinde, pommes de terre, maïs, poivron et carotte nappés de crème légère au curcuma.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 20,
+    "cuisson_min": 45,
+    "total_min": 65,
+    "actif_min": 20
+  },
+  "equipement": [
+    "four"
+  ],
+  "saison": [
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "cuisine": "française",
+  "proteine_principale": "dinde",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "gratin",
+  "ingredients": [
+    {
+      "ingredient": "pomme-de-terre",
+      "nom_affiche": "petites pommes de terre",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 400,
+      "optionnel": false,
+      "mesure_affichee": "4 petites (environ 400 g)",
+      "ciqual_code": "4008",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "dinde-escalope",
+      "nom_affiche": "filet de dinde",
+      "quantite": 600,
+      "unite": "g",
+      "poids_g": 600,
+      "optionnel": false,
+      "ciqual_code": "36304",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "mais",
+      "nom_affiche": "maïs égoutté",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 570,
+      "optionnel": false,
+      "mesure_affichee": "2 boîtes (570 g égouttés)",
+      "ciqual_code": "20066",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "poivron-jaune",
+      "nom_affiche": "poivrons jaunes",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "20168",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "carotte",
+      "nom_affiche": "carottes",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "creme-legere-4",
+      "nom_affiche": "crème légère 4 %",
+      "quantite": 800,
+      "unite": "ml",
+      "poids_g": 800,
+      "optionnel": false,
+      "ciqual_code": "19432",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "curcuma",
+      "nom_affiche": "curcuma",
+      "quantite": 2,
+      "unite": "g",
+      "poids_g": 2,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11089",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Préchauffe le four à 180 °C. Épluche les pommes de terre et coupe-les en rondelles fines.",
+      "duree_min": 8,
+      "actif": true
+    },
+    {
+      "texte": "Taille la dinde en lamelles, le poivron en dés et la carotte en fines lamelles. Égoutte le maïs.",
+      "duree_min": 10,
+      "actif": true
+    },
+    {
+      "texte": "Répartis pommes de terre, dinde, maïs, poivron et carotte dans 4 plats. Mélange la crème avec le curcuma, sel et poivre, et verse-la dessus.",
+      "duree_min": 5,
+      "actif": true
+    },
+    {
+      "texte": "Couvre et enfourne 45 minutes, jusqu'à ce que les pommes de terre soient tendres.",
+      "duree_min": 45,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 2700
+    }
+  ],
+  "sources": [
+    {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@l.a_diet/video/7498759078387223830",
+      "titre": "2 Gratins monochromes : jaune et blanc ! #4plats1four",
+      "auteur": "@l.a_diet",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@l.a_diet",
+        "title": "2 Gratins monochromes : jaune et blanc ! Version #4plats1four  Aujourd’hui c’était préparation des repas de la semaine ! Moins de charge men",
+        "thumbnail_url": "https://p19-common-sign.tiktokcdn-us.com/tos-no1a-p-0037-no/owoQAE9FjexQQA4fhD0Iod1eyluDIDF9IY3LJp~tplv-tiktokx-dmt-logom:tos-no1a-i-0068-no/o8ACjaBciA5TC8QsAIv1AB5Cr12EISAfw0HMsi.image?dr=9634&x-expires=1794398400&x-signature=Q2Al3l1zMIVTVvrYzcxK%2FS%2Bq5DM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      }
+    }
+  ],
+  "adaptation": "Quantités de la source doublées (2 plats → 4). Crème légère choisie à 4 % de matière grasse (la source dit « crème légère ou végétale »). Carotte orange à la place de la carotte jaune.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 580,
+    "proteines_g": 48.6,
+    "glucides_g": 57.6,
+    "lipides_g": 15.1,
+    "fibres_g": 9.1,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 3.56,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

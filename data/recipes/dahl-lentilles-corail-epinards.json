@@ -1,0 +1,261 @@
+{
+  "id": "dahl-lentilles-corail-epinards",
+  "slug": "dahl-lentilles-corail-epinards",
+  "nom": "Dahl de lentilles corail aux épinards",
+  "resume": "Lentilles corail mijotées avec tomates, lait de coco et épices, finies avec des pousses d'épinards et du citron.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 27,
+    "total_min": 37,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "indienne",
+  "proteine_principale": "legumineuses",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "curry-bol",
+  "ingredients": [
+    {
+      "ingredient": "lentilles-corail",
+      "nom_affiche": "lentilles corail",
+      "quantite": 300,
+      "unite": "g",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "20535",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignons",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "2 gousses",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "gingembre-frais",
+      "nom_affiche": "gingembre frais",
+      "quantite": 10,
+      "unite": "g",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "2 cm",
+      "ciqual_code": "11074",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomates-concassees",
+      "nom_affiche": "tomates concassées",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "20137",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lait-coco",
+      "nom_affiche": "lait de coco",
+      "quantite": 500,
+      "unite": "ml",
+      "poids_g": 500,
+      "optionnel": false,
+      "ciqual_code": "18041",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "bouillon-legumes",
+      "nom_affiche": "bouillon de légumes",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "1 cube dans 500 ml d'eau",
+      "ciqual_code": "11041",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "epinards-pousses",
+      "nom_affiche": "pousses d'épinards",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20270",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 13.7,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "cumin",
+      "nom_affiche": "cumin",
+      "quantite": 2,
+      "unite": "g",
+      "poids_g": 2,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11042",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "curcuma",
+      "nom_affiche": "curcuma",
+      "quantite": 4,
+      "unite": "g",
+      "poids_g": 4,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à café",
+      "ciqual_code": "11089",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "curry",
+      "nom_affiche": "curry",
+      "quantite": 4,
+      "unite": "g",
+      "poids_g": 4,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à café",
+      "ciqual_code": "11005",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "citron",
+      "nom_affiche": "citron",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 40,
+      "optionnel": false,
+      "mesure_affichee": "jus d'un citron",
+      "ciqual_code": "13009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Rince les lentilles. Émince les oignons, presse l'ail et râpe le gingembre.",
+      "duree_min": 8,
+      "actif": true
+    },
+    {
+      "texte": "Dans une grande sauteuse huilée, fais fondre les oignons 5 minutes, puis ajoute ail, gingembre et épices 1 minute.",
+      "duree_min": 6,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 360
+    },
+    {
+      "texte": "Ajoute lentilles, tomates, lait de coco et bouillon. Laisse mijoter 20 minutes en remuant de temps en temps.",
+      "duree_min": 20,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 1200
+    },
+    {
+      "texte": "Hors du feu, ajoute les épinards et le jus de citron, mélange jusqu'à ce qu'ils tombent.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/dahl-lentilles-corail/",
+      "titre": "Dahl de lentilles corail",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/DUX6_CtjRol/",
+      "titre": "Menu de batch cooking – Hiver #8",
+      "auteur": "@cuisineaddict",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "article-meme-createur",
+      "oembed": {
+        "author_name": "@cuisineaddict",
+        "title": "☃️ Menu de batch cooking – Hiver #8 ☃️",
+        "thumbnail_url": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/627688115_18555707536050969_889272742498219303_n.heic?stp=dst-jpg_e35_sh2.08_tt6&_nc_cat=107&ig_cache_key=MzgyNTA2ODU0NTQzMjk2NDE2OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=O2Wqzy6QJOsQ7kNvwFjKYRJ&_nc_oc=AdptiDA_t85T6F5X0doR7_TWetAwIvDerfTx3v1ORPedk7WYREj_FIOOeeFFvoCOxA4&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_gid=X9uQsDu9ykwcWvZxhRxV2g&_nc_ss=7c689&oh=00_AQQ8J7gOOmEIybXpjpnpL9SQZAsBKERHZMK9JbQwtkcwBA&oe=6AF78AEB"
+      }
+    }
+  ],
+  "adaptation": "Huile d'olive à la place du ghee (proposé par la source). Garam masala, coriandre moulue et graines de moutarde remplacés par du curry en poudre.",
+  "kcal_annoncees_par_part": 378,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 597,
+    "proteines_g": 26.3,
+    "glucides_g": 47.3,
+    "lipides_g": 29.5,
+    "fibres_g": 17.5,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.93,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Écart avec les 378 kcal annoncées : les 50 cl de lait de coco (199 kcal/100 g selon Ciqual) apportent à eux seuls environ 250 kcal par part. Valeur Ciqual retenue."
+  }
+}

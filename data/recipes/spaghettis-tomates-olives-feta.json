@@ -1,0 +1,190 @@
+{
+  "id": "spaghettis-tomates-olives-feta",
+  "slug": "spaghettis-tomates-olives-feta",
+  "nom": "Spaghettis tomates, olives et feta",
+  "resume": "Des spaghettis jetés dans une poêlée minute de tomates, feta, olives et origan.",
+  "type": "express",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 2,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 8,
+    "cuisson_min": 12,
+    "total_min": 20,
+    "actif_min": 12
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "méditerranéenne",
+  "proteine_principale": "laitier",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "pates",
+  "ingredients": [
+    {
+      "ingredient": "pates",
+      "nom_affiche": "spaghettis",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "9810",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomate",
+      "nom_affiche": "tomates",
+      "quantite": 3,
+      "unite": "pièce",
+      "poids_g": 360,
+      "optionnel": false,
+      "ciqual_code": "20276",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon-rouge",
+      "nom_affiche": "oignon nouveau ou rouge",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "20238",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 3,
+      "unite": "pièce",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "3 gousses",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "feta",
+      "nom_affiche": "feta",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "12066",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "olives-noires",
+      "nom_affiche": "olives",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "13032",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "origan",
+      "nom_affiche": "origan",
+      "quantite": 2,
+      "unite": "g",
+      "poids_g": 2,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11035",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 20,
+      "unite": "ml",
+      "poids_g": 18.3,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe + un filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "capres",
+      "nom_affiche": "câpres",
+      "quantite": 15,
+      "unite": "g",
+      "poids_g": 15,
+      "optionnel": true,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11040",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Mets l'eau des pâtes à bouillir. Coupe tomates et feta en petits cubes, cisèle l'oignon, presse l'ail.",
+      "duree_min": 8,
+      "actif": true
+    },
+    {
+      "texte": "Dans un saladier, mélange tomates, oignon, ail, feta, olives, câpres, origan et l'huile.",
+      "duree_min": 2,
+      "actif": true
+    },
+    {
+      "texte": "Cuis les spaghettis 1 minute de moins que le temps du paquet.",
+      "duree_min": 9,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Réchauffe la préparation 2 minutes dans une sauteuse, ajoute les pâtes égouttées et mélange 1 minute sur le feu.",
+      "duree_min": 3,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 180
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/spaghettis-tomates-cerises-olives-feta/",
+      "titre": "Spaghettis aux tomates, olives et feta",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Oignon rouge si pas d'oignon nouveau. Huile de la source non chiffrée : 20 ml au total.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 616,
+    "proteines_g": 20.8,
+    "glucides_g": 77.5,
+    "lipides_g": 22.9,
+    "fibres_g": 6.2,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.76,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

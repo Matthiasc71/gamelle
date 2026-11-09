@@ -1,0 +1,165 @@
+{
+  "id": "salade-haricots-rouges-thon",
+  "slug": "salade-haricots-rouges-thon",
+  "nom": "Salade haricots rouges, thon et crudités",
+  "resume": "Haricots rouges, thon, concombre, tomates cerises et oignon rouge, juste assaisonnés.",
+  "type": "assemblage",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 8,
+    "cuisson_min": 0,
+    "total_min": 8,
+    "actif_min": 8
+  },
+  "equipement": [],
+  "saison": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "française",
+  "proteine_principale": "thon",
+  "creneaux": [
+    "midi"
+  ],
+  "illustration": "salade",
+  "ingredients": [
+    {
+      "ingredient": "haricots-rouges",
+      "nom_affiche": "haricots rouges égouttés",
+      "quantite": 240,
+      "unite": "g",
+      "poids_g": 240,
+      "optionnel": false,
+      "ciqual_code": "20524",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "concombre",
+      "nom_affiche": "concombre",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 150,
+      "optionnel": false,
+      "mesure_affichee": "½ concombre",
+      "ciqual_code": "20019",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomates-cerises",
+      "nom_affiche": "tomates cerises",
+      "quantite": 80,
+      "unite": "g",
+      "poids_g": 80,
+      "optionnel": false,
+      "mesure_affichee": "quelques-unes",
+      "ciqual_code": "20172",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon-rouge",
+      "nom_affiche": "oignon rouge",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 50,
+      "optionnel": false,
+      "mesure_affichee": "½ oignon",
+      "ciqual_code": "20238",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "thon-naturel",
+      "nom_affiche": "thon au naturel",
+      "quantite": 112,
+      "unite": "g",
+      "poids_g": 112,
+      "optionnel": false,
+      "mesure_affichee": "1 boîte",
+      "ciqual_code": "26039",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "vinaigre",
+      "nom_affiche": "vinaigre",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11018",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Rince et égoutte les haricots rouges.",
+      "duree_min": 2,
+      "actif": true
+    },
+    {
+      "texte": "Coupe le concombre en cubes, les tomates cerises en quartiers et l'oignon en lamelles.",
+      "duree_min": 5,
+      "actif": true
+    },
+    {
+      "texte": "Ajoute le thon, assaisonne de sel, poivre, vinaigre et huile, et mélange.",
+      "duree_min": 1,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@cuisinedefadila/video/7505733500012678422",
+      "titre": "Salade aux haricots rouges et crudités",
+      "auteur": "@cuisinedefadila",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@cuisinedefadila",
+        "title": "Envie d’une salade colorée et pleine de saveurs ? Découvrez notre salade aux haricots rouges et crudités , un mélange frais, croquant et nou",
+        "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-no1a-p-0037-no/o07xVLOZaEuwuYn1AsBEiBEIJDBiPCbpa4BmE~tplv-tiktokx-origin.image?dr=9636&x-expires=1794398400&x-signature=dmODRKQ%2FQf2ZyOmEhIpiwRAlvh8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      }
+    }
+  ],
+  "adaptation": "Nombre de portions non précisé par la source : compté comme un repas pour 1. « Quelques tomates cerises » comptées 80 g, « filet d'huile » 1 c. à café.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 532,
+    "proteines_g": 52.7,
+    "glucides_g": 43,
+    "lipides_g": 11.9,
+    "fibres_g": 19.8,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 3.99,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

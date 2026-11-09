@@ -1,0 +1,176 @@
+{
+  "id": "one-pan-poulet-legumes",
+  "slug": "one-pan-poulet-legumes",
+  "nom": "One pan de poulet, pommes de terre et haricots verts",
+  "resume": "Poulet, petites pommes de terre, courgette et haricots verts rôtis ensemble sur une plaque, au citron.",
+  "type": "batch",
+  "portions_base": 3,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 40,
+    "total_min": 50,
+    "actif_min": 10
+  },
+  "equipement": [
+    "four"
+  ],
+  "saison": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "cuisine": "française",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "poelee",
+  "ingredients": [
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "escalopes de poulet",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 520,
+      "optionnel": false,
+      "mesure_affichee": "4 escalopes (520 g)",
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pomme-de-terre",
+      "nom_affiche": "petites pommes de terre (grenaille)",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "4008",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "courgette",
+      "nom_affiche": "courgette",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 250,
+      "optionnel": false,
+      "ciqual_code": "20020",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "haricots-verts",
+      "nom_affiche": "haricots verts surgelés",
+      "quantite": 500,
+      "unite": "g",
+      "poids_g": 500,
+      "optionnel": false,
+      "ciqual_code": "20070",
+      "rayon": "surgeles",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "citron",
+      "nom_affiche": "citron",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 40,
+      "optionnel": false,
+      "mesure_affichee": "1 citron en quartiers",
+      "ciqual_code": "13009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "2 gousses",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "herbes-provence",
+      "nom_affiche": "herbes de Provence",
+      "quantite": 2,
+      "unite": "g",
+      "poids_g": 2,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11060",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 30,
+      "unite": "ml",
+      "poids_g": 27.5,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à soupe",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Préchauffe le four à 180 °C. Coupe le poulet en gros morceaux, les pommes de terre en deux, la courgette en rondelles et le citron en quartiers.",
+      "duree_min": 8,
+      "actif": true
+    },
+    {
+      "texte": "Étale le tout sur la plaque avec les haricots et l'ail écrasé, arrose d'huile, ajoute herbes, sel et poivre.",
+      "duree_min": 3,
+      "actif": true
+    },
+    {
+      "texte": "Enfourne 35 à 40 minutes en remuant à mi-cuisson, jusqu'à ce que les pommes de terre soient tendres.",
+      "duree_min": 40,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 2400
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/one-pan-poulet-legumes/",
+      "titre": "One pan de poulet aux légumes",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Haricots verts surgelés et herbes de Provence (avec romarin) à la place des frais. Cuisson portée à 35–40 min, comme le suggère l'échange dans les commentaires. Recette pour 4 servie en 3 parts. Huile de la source non chiffrée : 2 c. à soupe.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 458,
+    "proteines_g": 47.6,
+    "glucides_g": 32,
+    "lipides_g": 12.6,
+    "fibres_g": 8.6,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.92,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

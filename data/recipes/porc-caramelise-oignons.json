@@ -1,0 +1,237 @@
+{
+  "id": "porc-caramelise-oignons",
+  "slug": "porc-caramelise-oignons",
+  "nom": "Porc caramélisé aux oignons et riz",
+  "resume": "Filet mignon en lanières mijoté avec beaucoup d'oignons, soja, balsamique et miel.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 40,
+    "total_min": 50,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques",
+    "rice-cooker"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "asiatique",
+  "proteine_principale": "porc",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "poelee",
+  "ingredients": [
+    {
+      "ingredient": "porc-filet-mignon",
+      "nom_affiche": "filet mignon de porc",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 450,
+      "optionnel": false,
+      "mesure_affichee": "1 filet (environ 450 g)",
+      "ciqual_code": "28204",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignons",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "2 gousses",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "bouillon-volaille",
+      "nom_affiche": "bouillon de volaille",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "1 cube",
+      "ciqual_code": "11174",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "vinaigre-balsamique",
+      "nom_affiche": "vinaigre balsamique",
+      "quantite": 45,
+      "unite": "ml",
+      "poids_g": 47,
+      "optionnel": false,
+      "mesure_affichee": "3 c. à soupe",
+      "ciqual_code": "11091",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "sauce-soja",
+      "nom_affiche": "sauce soja",
+      "quantite": 75,
+      "unite": "ml",
+      "poids_g": 86,
+      "optionnel": false,
+      "mesure_affichee": "5 c. à soupe",
+      "ciqual_code": "11104",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "miel",
+      "nom_affiche": "miel",
+      "quantite": 20,
+      "unite": "g",
+      "poids_g": 20,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "31008",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "gingembre-poudre",
+      "nom_affiche": "gingembre moulu",
+      "quantite": 2,
+      "unite": "g",
+      "poids_g": 2,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11006",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-sesame",
+      "nom_affiche": "huile de sésame",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 13.7,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "17400",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "riz-basmati",
+      "nom_affiche": "riz basmati",
+      "quantite": 230,
+      "unite": "g",
+      "poids_g": 230,
+      "optionnel": false,
+      "ciqual_code": "9119",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Émince les oignons, presse l'ail et coupe le filet mignon en lanières.",
+      "duree_min": 8,
+      "actif": true
+    },
+    {
+      "texte": "Dans une cocotte avec l'huile de sésame, saisis la viande sur toutes les faces, sale, poivre et réserve.",
+      "duree_min": 6,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 360
+    },
+    {
+      "texte": "Fais revenir oignons et ail 2 minutes, puis ajoute le cube émietté, le balsamique, la sauce soja, le miel et le gingembre.",
+      "duree_min": 4,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Remets la viande, couvre d'eau à hauteur et laisse mijoter 25 minutes à couvert. Lance le riz au rice cooker.",
+      "duree_min": 25,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 1500
+    },
+    {
+      "texte": "Retire le couvercle et laisse réduire 5 minutes, jusqu'à ce que la sauce nappe.",
+      "duree_min": 5,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 300
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/porc-caramelise-oignon-cookeo/",
+      "titre": "Porc caramélisé aux oignons au Cookeo",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/DVOUc_7jRxO/",
+      "titre": "Menu de batch cooking – Hiver 11",
+      "auteur": "@cuisineaddict",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "article-meme-createur",
+      "oembed": {
+        "author_name": "@cuisineaddict",
+        "title": "Menu de batch cooking – Hiver 11",
+        "thumbnail_url": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/642505563_18565675183050969_7824238627450412337_n.heic?stp=dst-jpg_e35_sh2.08_tt6&_nc_cat=104&ig_cache_key=Mzg0MTA5NjcyNzg4NTg1NTM0Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=2MozTKr2mAUQ7kNvwGneoKs&_nc_oc=AdpSMEY-yZaoGZt3mMbpAiro_2dNw4ra5AjkevLM3_HOLNiE0PsX6zlyv4yX3b-x2oE&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_gid=_uXS8nI5yRIB-84oBAZb7w&_nc_ss=7c689&oh=00_AQTZZ6A-h3Y55aXbzV4DTwXaRvhObYVOHQZSN6isjsUd5Q&oe=6AF7A8D9"
+      }
+    }
+  ],
+  "adaptation": "Cuisson en cocotte sur le feu (25 min à couvert puis 5 min de réduction) au lieu du Cookeo (10 min sous pression). Poids du filet mignon estimé à 450 g.",
+  "kcal_annoncees_par_part": 532,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 455,
+    "proteines_g": 31.2,
+    "glucides_g": 59.6,
+    "lipides_g": 9.3,
+    "fibres_g": 2.8,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.19,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Écart de 17 % avec les 532 kcal annoncées : la source ne donne pas le poids du filet mignon (estimé à 450 g). Valeur Ciqual retenue."
+  }
+}

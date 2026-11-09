@@ -1,0 +1,259 @@
+{
+  "id": "chili-con-carne",
+  "slug": "chili-con-carne",
+  "nom": "Chili con carne et riz",
+  "resume": "Le chili mijoté au bœuf, haricots rouges, maïs et poivron, servi avec du riz basmati.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 15,
+    "cuisson_min": 60,
+    "total_min": 75,
+    "actif_min": 20
+  },
+  "equipement": [
+    "plaques",
+    "rice-cooker"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "mexicaine",
+  "proteine_principale": "boeuf",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "ragout",
+  "ingredients": [
+    {
+      "ingredient": "oignon-rouge",
+      "nom_affiche": "oignon rouge",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20238",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 3,
+      "unite": "pièce",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "3 gousses",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "boeuf-hache-5",
+      "nom_affiche": "bœuf haché 5 %",
+      "quantite": 500,
+      "unite": "g",
+      "poids_g": 500,
+      "optionnel": false,
+      "ciqual_code": "6250",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "mais",
+      "nom_affiche": "maïs égoutté",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20066",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "haricots-rouges",
+      "nom_affiche": "haricots rouges égouttés",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "20524",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "tomates-concassees",
+      "nom_affiche": "tomates concassées",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "20137",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "concentre-tomate",
+      "nom_affiche": "concentré de tomate",
+      "quantite": 60,
+      "unite": "g",
+      "poids_g": 60,
+      "optionnel": false,
+      "mesure_affichee": "4 c. à soupe",
+      "ciqual_code": "20068",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poivron-rouge",
+      "nom_affiche": "poivron",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 150,
+      "optionnel": false,
+      "ciqual_code": "20087",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "paprika",
+      "nom_affiche": "paprika",
+      "quantite": 4,
+      "unite": "g",
+      "poids_g": 4,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à café",
+      "ciqual_code": "11049",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "cumin",
+      "nom_affiche": "cumin",
+      "quantite": 1,
+      "unite": "g",
+      "poids_g": 1,
+      "optionnel": false,
+      "mesure_affichee": "½ c. à café",
+      "ciqual_code": "11042",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "sauce-soja",
+      "nom_affiche": "sauce soja",
+      "quantite": 30,
+      "unite": "ml",
+      "poids_g": 34,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à soupe",
+      "ciqual_code": "11104",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "bouillon-legumes",
+      "nom_affiche": "bouillon de légumes",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "1 cube",
+      "ciqual_code": "11041",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "riz-basmati",
+      "nom_affiche": "riz basmati",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "9119",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Taille le poivron en lanières, hache finement l'oignon et l'ail. Rince haricots et maïs.",
+      "duree_min": 10,
+      "actif": true
+    },
+    {
+      "texte": "Dans une cocotte avec un filet d'huile, fais revenir oignon et ail, puis dore la viande et le poivron quelques minutes.",
+      "duree_min": 8,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 480
+    },
+    {
+      "texte": "Ajoute tout le reste (sauf le riz) avec un verre d'eau. Couvre et laisse mijoter 1 heure à feu doux en remuant de temps en temps.",
+      "duree_min": 60,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 3600
+    },
+    {
+      "texte": "Lance le riz au rice cooker 25 minutes avant la fin.",
+      "duree_min": 2,
+      "actif": true,
+      "equipement": "rice-cooker"
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/chili-con-carne/",
+      "titre": "Chili con Carne",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Version casserole donnée par la source (au lieu du robot). Viande à 5 %, sauce soja à la place de la Worcestershire, piment frais facultatif non compté, riz inclus (50 g cru par part).",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 586,
+    "proteines_g": 44,
+    "glucides_g": 72.9,
+    "lipides_g": 10.1,
+    "fibres_g": 14.1,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 4.68,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

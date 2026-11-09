@@ -1,0 +1,232 @@
+{
+  "id": "chakchouka-feta",
+  "slug": "chakchouka-feta",
+  "nom": "Chakchouka à la feta",
+  "resume": "Des œufs pochés dans une sauce tomate aux épices, avec un peu de feta et du pain pour saucer.",
+  "type": "express",
+  "portions_base": 2,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 15,
+    "total_min": 20,
+    "actif_min": 10
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "maghrébine",
+  "proteine_principale": "oeufs",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "omelette",
+  "ingredients": [
+    {
+      "ingredient": "pulpe-tomate",
+      "nom_affiche": "pulpe de tomate",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "20169",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oeuf",
+      "nom_affiche": "œufs",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 220,
+      "optionnel": false,
+      "ciqual_code": "22000",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "gros oignon",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 150,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 gousse",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "cumin",
+      "nom_affiche": "cumin",
+      "quantite": 1,
+      "unite": "g",
+      "poids_g": 1,
+      "optionnel": false,
+      "mesure_affichee": "½ c. à café",
+      "ciqual_code": "11042",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "paprika",
+      "nom_affiche": "paprika",
+      "quantite": 1,
+      "unite": "g",
+      "poids_g": 1,
+      "optionnel": false,
+      "mesure_affichee": "½ c. à café",
+      "ciqual_code": "11049",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "curcuma",
+      "nom_affiche": "curcuma",
+      "quantite": 1,
+      "unite": "g",
+      "poids_g": 1,
+      "optionnel": false,
+      "mesure_affichee": "½ c. à café",
+      "ciqual_code": "11089",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "feta",
+      "nom_affiche": "feta",
+      "quantite": 30,
+      "unite": "g",
+      "poids_g": 30,
+      "optionnel": false,
+      "ciqual_code": "12066",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 13.7,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pain-complet",
+      "nom_affiche": "pain complet",
+      "quantite": 120,
+      "unite": "g",
+      "poids_g": 120,
+      "optionnel": false,
+      "mesure_affichee": "2 tranches par personne",
+      "ciqual_code": "7110",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "persil",
+      "nom_affiche": "herbes fraîches",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": true,
+      "mesure_affichee": "quelques brins",
+      "ciqual_code": "11014",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Émince finement l'oignon et hache l'ail.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Dans une poêle huilée, dore l'oignon et l'ail 3 minutes, ajoute les épices 1 minute.",
+      "duree_min": 4,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 240
+    },
+    {
+      "texte": "Verse la tomate, sale et laisse mijoter 7 minutes à feu doux.",
+      "duree_min": 7,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 420
+    },
+    {
+      "texte": "Creuse 4 puits, casse-y les œufs, couvre et laisse cuire 4 à 5 minutes : blanc pris, jaune coulant. Ajoute la feta émiettée et les herbes, sers avec le pain.",
+      "duree_min": 5,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 300
+    }
+  ],
+  "sources": [
+    {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@salutcestclaire/video/7606016653641469206",
+      "titre": "CHAKCHOUKA",
+      "auteur": "@salutcestclaire",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@salutcestclaire",
+        "title": "CHAKCHOUKA 🍅 Grande fan de chakchouka que je suis, je me devais de vous partager ma meilleure version après pleeeeein de tests. Facile, rap",
+        "thumbnail_url": "https://p19-common-sign.tiktokcdn-us.com/tos-no1a-p-0037-no/oExGdNQYrfwZF3QeRH9FfTABM8AcXWuq7GomfA~tplv-tiktokx-dmt-logom:tos-no1a-i-0068-no/oE4JfADNKfEW9FGrmlZdfAQRAIDbKr1QAA4fEy.image?dr=9634&x-expires=1794398400&x-signature=fDQr%2B5LewtDItEA26BGsA6lOAdM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      }
+    }
+  ],
+  "adaptation": "Mijotage réduit à 7 minutes pour rester sous 20 minutes. Servie avec 60 g de pain complet par personne pour un repas complet. Huile de la source (« un bon filet ») : 1 c. à soupe.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 481,
+    "proteines_g": 25.1,
+    "glucides_g": 37.8,
+    "lipides_g": 23.5,
+    "fibres_g": 9.8,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.62,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

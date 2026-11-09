@@ -1,0 +1,199 @@
+{
+  "id": "riz-poulet-sauce-tomate",
+  "slug": "riz-poulet-sauce-tomate",
+  "nom": "Riz, poulet et sauce tomate crémeuse",
+  "resume": "La boîte meal prep classique : riz, poulet doré, carotte, sauce tomate à la crème légère et un peu de comté.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 25,
+    "total_min": 30,
+    "actif_min": 20
+  },
+  "equipement": [
+    "rice-cooker",
+    "plaques"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "française",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "curry-bol",
+  "ingredients": [
+    {
+      "ingredient": "riz-long",
+      "nom_affiche": "riz",
+      "quantite": 280,
+      "unite": "g",
+      "poids_g": 280,
+      "optionnel": false,
+      "ciqual_code": "9100",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "blanc de poulet",
+      "quantite": 560,
+      "unite": "g",
+      "poids_g": 560,
+      "optionnel": false,
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "coulis-tomate",
+      "nom_affiche": "sauce tomate",
+      "quantite": 120,
+      "unite": "g",
+      "poids_g": 120,
+      "optionnel": false,
+      "ciqual_code": "20260",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "creme-legere-4",
+      "nom_affiche": "crème légère 4 %",
+      "quantite": 200,
+      "unite": "ml",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "19432",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "comte-rape",
+      "nom_affiche": "comté râpé",
+      "quantite": 80,
+      "unite": "g",
+      "poids_g": 80,
+      "optionnel": false,
+      "ciqual_code": "12110",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "carotte",
+      "nom_affiche": "carottes",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "20009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 20,
+      "unite": "ml",
+      "poids_g": 18.3,
+      "optionnel": false,
+      "mesure_affichee": "4 c. à café",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "paprika",
+      "nom_affiche": "paprika",
+      "quantite": 4,
+      "unite": "g",
+      "poids_g": 4,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à café",
+      "ciqual_code": "11049",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Lance le riz au rice cooker avec la quantité d'eau indiquée sur le paquet.",
+      "duree_min": 3,
+      "actif": true,
+      "equipement": "rice-cooker"
+    },
+    {
+      "texte": "Pendant la cuisson du riz, coupe le poulet en dés et les carottes en petits morceaux.",
+      "duree_min": 8,
+      "actif": true
+    },
+    {
+      "texte": "Dans une poêle huilée, fais revenir les carottes 5 minutes, puis le poulet 7 minutes avec le paprika.",
+      "duree_min": 12,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 720
+    },
+    {
+      "texte": "Ajoute la sauce tomate et la crème, laisse mijoter 3 minutes.",
+      "duree_min": 3,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 180
+    },
+    {
+      "texte": "Répartis riz et poulet en sauce dans 4 boîtes et parsème de comté.",
+      "duree_min": 4,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@matthieu_fitjf/video/7346652545411992864",
+      "titre": "Meal prep - riz tomate poulet",
+      "auteur": "@matthieu_fitjf",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@matthieu_fitjf",
+        "title": "Meal prep - riz tomate poulet :  ⚠️ Quantité pour une portion, à ajuster selon le nombre de portions souhaitées  Macros : G 87 - L 19 - P 47",
+        "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-0037-euttp/f32afb25d3414fb1938c418dc076dd82_1710525852~tplv-tiktokx-dmt-logom:tos-useast2a-i-0068-euttp/oE2X2kAmEEmTdIADIjlE0DZC9IB3PzAfQAeFDR.image?dr=9634&x-expires=1794398400&x-signature=3eHDc%2BgLek4WiO0NCmJa74M2A%2Fk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      }
+    }
+  ],
+  "adaptation": "Source pour 1 portion, multipliée par 4. Riz réduit de 100 g à 70 g cru par portion (la source donne 700 kcal) et crème légère prise à 4 %.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 607,
+    "proteines_g": 46.3,
+    "glucides_g": 64.1,
+    "lipides_g": 16.9,
+    "fibres_g": 5.1,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.32,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

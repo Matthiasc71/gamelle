@@ -1,0 +1,186 @@
+{
+  "id": "salade-thon-pois-chiches",
+  "slug": "salade-thon-pois-chiches",
+  "nom": "Salade thon, pois chiches et crudités",
+  "resume": "Pois chiches, thon, concombre, carottes râpées et oignon rouge, vinaigrette balsamique-moutarde.",
+  "type": "assemblage",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 0,
+    "total_min": 10,
+    "actif_min": 10
+  },
+  "equipement": [],
+  "saison": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "méditerranéenne",
+  "proteine_principale": "thon",
+  "creneaux": [
+    "midi"
+  ],
+  "illustration": "salade",
+  "ingredients": [
+    {
+      "ingredient": "pois-chiches",
+      "nom_affiche": "pois chiches égouttés",
+      "quantite": 150,
+      "unite": "g",
+      "poids_g": 150,
+      "optionnel": false,
+      "ciqual_code": "20532",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "thon-naturel",
+      "nom_affiche": "thon au naturel",
+      "quantite": 80,
+      "unite": "g",
+      "poids_g": 80,
+      "optionnel": false,
+      "ciqual_code": "26039",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "concombre",
+      "nom_affiche": "concombre",
+      "quantite": 150,
+      "unite": "g",
+      "poids_g": 150,
+      "optionnel": false,
+      "ciqual_code": "20019",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "carotte",
+      "nom_affiche": "carottes",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon-rouge",
+      "nom_affiche": "oignon rouge",
+      "quantite": 15,
+      "unite": "g",
+      "poids_g": 15,
+      "optionnel": false,
+      "ciqual_code": "20238",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "moutarde",
+      "nom_affiche": "moutarde",
+      "quantite": 3,
+      "unite": "g",
+      "poids_g": 3,
+      "optionnel": false,
+      "mesure_affichee": "½ c. à café",
+      "ciqual_code": "11013",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "vinaigre-balsamique",
+      "nom_affiche": "vinaigre balsamique",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 16,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11091",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "paprika",
+      "nom_affiche": "paprika",
+      "quantite": 1,
+      "unite": "g",
+      "poids_g": 1,
+      "optionnel": false,
+      "mesure_affichee": "1 pincée",
+      "ciqual_code": "11049",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Rince et égoutte les pois chiches, mélange-les avec l'huile, le paprika et du sel.",
+      "duree_min": 2,
+      "actif": true
+    },
+    {
+      "texte": "Coupe le concombre en cubes, émince l'oignon rouge, râpe les carottes et ajoute le thon émietté.",
+      "duree_min": 6,
+      "actif": true
+    },
+    {
+      "texte": "Mélange moutarde et vinaigre balsamique, sale, poivre et verse sur la salade.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@laviedunefitmum/video/7233000125042412826",
+      "titre": "Salade protéinée au thon et aux pois chiches grillés",
+      "auteur": "@laviedunefitmum",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@laviedunefitmum",
+        "title": "Salade protéinée au thon et aux pois chiches grillés 🥗 📊345kcal l’assiette  G29,5g - L10g - P30,4g 📊 Pour 1 personne : -100g de pois chic",
+        "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-0037-aiso/26342b8f56ff42f38eaf07335fc45de8_1684064089~tplv-tiktokx-origin.image?dr=9636&x-expires=1794398400&x-signature=kfVXCmpJJGKMKpEyFTsz6uGCaWc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      }
+    }
+  ],
+  "adaptation": "Pois chiches non grillés (pas de cuisson) et portés de 100 à 150 g pour atteindre un vrai repas.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 422,
+    "proteines_g": 34,
+    "glucides_g": 36,
+    "lipides_g": 12.8,
+    "fibres_g": 12.7,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.51,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

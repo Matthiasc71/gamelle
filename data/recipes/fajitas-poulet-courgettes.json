@@ -1,0 +1,215 @@
+{
+  "id": "fajitas-poulet-courgettes",
+  "slug": "fajitas-poulet-courgettes",
+  "nom": "Fajitas de poulet et courgettes",
+  "resume": "Une poêlée de poulet, courgettes, maïs et tomates aux épices douces, à rouler dans des tortillas.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 15,
+    "cuisson_min": 15,
+    "total_min": 30,
+    "actif_min": 25
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "mexicaine",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "wrap",
+  "ingredients": [
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "escalopes de poulet",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 520,
+      "optionnel": false,
+      "mesure_affichee": "4 escalopes (520 g)",
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "courgette",
+      "nom_affiche": "courgettes",
+      "quantite": 600,
+      "unite": "g",
+      "poids_g": 600,
+      "optionnel": false,
+      "ciqual_code": "20020",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "mais",
+      "nom_affiche": "maïs égoutté",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20066",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "tomate",
+      "nom_affiche": "tomates",
+      "quantite": 300,
+      "unite": "g",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "20276",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "cheddar-rape",
+      "nom_affiche": "cheddar râpé",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "12726",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tortilla-ble",
+      "nom_affiche": "tortillas de blé",
+      "quantite": 8,
+      "unite": "pièce",
+      "poids_g": 320,
+      "optionnel": false,
+      "mesure_affichee": "8 tortillas (320 g)",
+      "ciqual_code": "7815",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "petit oignon",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 60,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "2 gousses",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "paprika",
+      "nom_affiche": "paprika",
+      "quantite": 2,
+      "unite": "g",
+      "poids_g": 2,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11049",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "cumin",
+      "nom_affiche": "cumin",
+      "quantite": 1,
+      "unite": "g",
+      "poids_g": 1,
+      "optionnel": false,
+      "mesure_affichee": "½ c. à café",
+      "ciqual_code": "11042",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 13.7,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Coupe le poulet en lanières, les courgettes en demi-rondelles et les tomates en dés. Émince l'oignon et presse l'ail.",
+      "duree_min": 12,
+      "actif": true
+    },
+    {
+      "texte": "Dans une sauteuse huilée, dore l'oignon et l'ail, puis le poulet avec paprika, cumin, sel et poivre, à feu vif.",
+      "duree_min": 8,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 480
+    },
+    {
+      "texte": "Ajoute courgettes, maïs et tomates, et laisse cuire 5 minutes en remuant.",
+      "duree_min": 5,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 300
+    },
+    {
+      "texte": "Range la garniture en boîtes. Au moment de manger, réchauffe-la et roule-la dans 2 tortillas avec le cheddar.",
+      "duree_min": 3,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/fajitas-au-poulet-et-courgettes/",
+      "titre": "Fajitas de poulet et courgette",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Tortillas de blé standard (la source utilise du blé complet ; Ciqual n'a que la version standard).",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 555,
+    "proteines_g": 43.2,
+    "glucides_g": 53.9,
+    "lipides_g": 16.7,
+    "fibres_g": 5.9,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 3.91,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "id": "galette-thon-oeufs-crudites",
+  "slug": "galette-thon-oeufs-crudites",
+  "nom": "Galette thon-œufs et crudités",
+  "resume": "Une galette poêlée très protéinée à base de thon et d'œufs, servie avec carottes râpées, salade et pain.",
+  "type": "express",
+  "portions_base": 2,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 8,
+    "total_min": 18,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "française",
+  "proteine_principale": "thon",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "omelette",
+  "ingredients": [
+    {
+      "ingredient": "thon-naturel",
+      "nom_affiche": "thon au naturel égoutté",
+      "quantite": 280,
+      "unite": "g",
+      "poids_g": 280,
+      "optionnel": false,
+      "mesure_affichee": "2 boîtes",
+      "ciqual_code": "26039",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "oeuf",
+      "nom_affiche": "œufs",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 110,
+      "optionnel": false,
+      "ciqual_code": "22000",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "creme-legere-15",
+      "nom_affiche": "crème légère",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "19430",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "curry",
+      "nom_affiche": "curry",
+      "quantite": 1,
+      "unite": "g",
+      "poids_g": 1,
+      "optionnel": false,
+      "mesure_affichee": "½ c. à café",
+      "ciqual_code": "11005",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "carotte",
+      "nom_affiche": "carottes râpées",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "laitue",
+      "nom_affiche": "salade",
+      "quantite": 0.25,
+      "unite": "pièce",
+      "poids_g": 80,
+      "optionnel": false,
+      "mesure_affichee": "2 poignées",
+      "ciqual_code": "20031",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "vinaigre",
+      "nom_affiche": "vinaigre",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11018",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pain-complet",
+      "nom_affiche": "pain complet",
+      "quantite": 120,
+      "unite": "g",
+      "poids_g": 120,
+      "optionnel": false,
+      "mesure_affichee": "2 tranches par personne",
+      "ciqual_code": "7110",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Écrase le thon à la fourchette avec les œufs battus, la crème, le curry, sel et poivre, jusqu'à obtenir une pâte homogène.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Verse dans une poêle antiadhésive huilée et laisse cuire 4 minutes à feu moyen.",
+      "duree_min": 4,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 240
+    },
+    {
+      "texte": "Retourne délicatement et poursuis 3 à 4 minutes jusqu'à ce que ce soit bien doré.",
+      "duree_min": 4,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 240
+    },
+    {
+      "texte": "Pendant la cuisson, râpe les carottes et assaisonne-les avec la salade et le vinaigre. Sers la galette avec les crudités et le pain.",
+      "duree_min": 5,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@healthy_et_gourmandises/video/7568433100418551062",
+      "titre": "Recette protéinée express au thon",
+      "auteur": "@healthy_et_gourmandises",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@healthy_et_gourmandises",
+        "title": "🎥 Recette protéinée express au thon 🐟 (celle qui a tout déclenché en 2022 !) Rien ne va dans cette vidéo : le titre, le balai à côté du fr",
+        "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-no1a-p-0037-no/owoFh7DEFnz0C8QUER0wABREK0JQQkDfgpH5eE~tplv-tiktokx-origin.image?dr=9636&x-expires=1794398400&x-signature=HXKR%2B6FlyX%2Bp8M6y0rWAvULswuc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      }
+    }
+  ],
+  "adaptation": "Le thon et les œufs sont écrasés à la fourchette (pas de mixeur). Partagée en 2 repas et servie avec carottes râpées, salade et pain complet pour un repas complet.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 492,
+    "proteines_g": 51.4,
+    "glucides_g": 30.8,
+    "lipides_g": 16,
+    "fibres_g": 8.1,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.76,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

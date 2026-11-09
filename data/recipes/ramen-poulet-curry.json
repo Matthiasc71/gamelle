@@ -1,0 +1,230 @@
+{
+  "id": "ramen-poulet-curry",
+  "slug": "ramen-poulet-curry",
+  "nom": "Ramen au poulet, brocoli et curry coco",
+  "resume": "Nouilles, poulet mariné au citron vert et légumes croquants dans un bouillon coco au curry.",
+  "type": "express",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 2,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 15,
+    "total_min": 20,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "japonaise",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "soupe",
+  "ingredients": [
+    {
+      "ingredient": "nouilles-oeufs",
+      "nom_affiche": "nouilles ramen",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "9863",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "escalopes de poulet",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 520,
+      "optionnel": false,
+      "mesure_affichee": "4 escalopes (520 g)",
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "carotte",
+      "nom_affiche": "carotte",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "brocoli-surgele",
+      "nom_affiche": "brocoli",
+      "quantite": 300,
+      "unite": "g",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "20204",
+      "rayon": "surgeles",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lait-coco",
+      "nom_affiche": "lait de coco",
+      "quantite": 100,
+      "unite": "ml",
+      "poids_g": 100,
+      "optionnel": false,
+      "mesure_affichee": "10 cl",
+      "ciqual_code": "18041",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "curry",
+      "nom_affiche": "curry",
+      "quantite": 6,
+      "unite": "g",
+      "poids_g": 6,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11005",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "citron-vert",
+      "nom_affiche": "citron vert",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 25,
+      "optionnel": false,
+      "mesure_affichee": "jus d'un citron vert",
+      "ciqual_code": "13067",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-sesame",
+      "nom_affiche": "huile de sésame",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 13.7,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "17400",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "sauce-soja",
+      "nom_affiche": "sauce soja",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 17,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11104",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Coupe le poulet en cubes et fais-le mariner avec le jus de citron vert, l'huile de sésame et la sauce soja.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Émince l'oignon, coupe la carotte en bâtonnets et sépare le brocoli en fleurettes.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Cuis les nouilles selon le paquet, égoutte et rince-les.",
+      "duree_min": 5,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 300
+    },
+    {
+      "texte": "Dans un wok huilé, fais revenir l'oignon, puis le poulet avec sa marinade jusqu'à ce qu'il soit cuit. Ajoute carotte et brocoli 1 minute, puis le curry 2 minutes.",
+      "duree_min": 9,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 540
+    },
+    {
+      "texte": "Verse le lait de coco et 30 cl d'eau, ajoute les nouilles, mélange et sers bien chaud.",
+      "duree_min": 2,
+      "actif": true,
+      "equipement": "plaques"
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/ramen-poulet/",
+      "titre": "Ramen au poulet",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Lait de coco à la place de la crème de coco, curry en poudre à la place de la pâte de curry vert (absentes de Ciqual).",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 465,
+    "proteines_g": 40,
+    "glucides_g": 40.9,
+    "lipides_g": 13.6,
+    "fibres_g": 6.5,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.43,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}
