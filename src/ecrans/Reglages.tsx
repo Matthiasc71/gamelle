@@ -49,7 +49,7 @@ export default function Reglages() {
   const [exclusQ, setExclusQ] = useState('');
   if (!r || !prefs) return null;
   const maj = (p: Partial<TReglages>) => enregistrerReglages(p);
-  const norm = (s: string) => s.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
+  const norm = (s: string) => s.toLowerCase().replace(/œ/g, 'oe').replace(/æ/g, 'ae').normalize('NFD').replace(/\p{Diacritic}/gu, '');
   const propositions = exclusQ
     ? Object.entries(BASE.catalogue)
         .filter(([id, c]) => !r.exclus.includes(id) && norm(c.nom).includes(norm(exclusQ)))

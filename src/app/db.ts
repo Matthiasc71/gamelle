@@ -7,10 +7,12 @@
  * - coches : articles cochés dans la liste de courses ;
  * - evenements : journal du frigo (achats, cuisine, repas mangés, corrections) ;
  * - prix : prix de paquet corrigés à la main ;
- * - echanges : historique des échanges et remplacements (pour « Annuler »).
+ * - echanges : historique des échanges et remplacements (pour « Annuler ») ;
+ * - mesRecettes : recettes ajoutées à la main (calculées sur le téléphone).
  */
 import Dexie, { type Table } from 'dexie';
 import type { Evenement } from '../domain/frigo';
+import type { Recette } from '../domain/schema';
 import type { Menu } from '../domain/types';
 
 export type MenuStocke = {
@@ -47,6 +49,7 @@ class GamelleDB extends Dexie {
   evenements!: Table<EvenementStocke, number>;
   prix!: Table<PrixCorrige, string>;
   echanges!: Table<Echange, number>;
+  mesRecettes!: Table<Recette, string>;
 
   constructor() {
     super('gamelle');
@@ -59,12 +62,13 @@ class GamelleDB extends Dexie {
       prix: 'ingredient',
       echanges: '++id, semaine',
     });
+    this.version(2).stores({ mesRecettes: 'id' });
   }
 }
 
 export const db = new GamelleDB();
 
-export const TABLES = ['kv', 'favoris', 'menus', 'coches', 'evenements', 'prix', 'echanges'] as const;
+export const TABLES = ['kv', 'favoris', 'menus', 'coches', 'evenements', 'prix', 'echanges', 'mesRecettes'] as const;
 
 /** Sauvegarde complète en JSON (Réglages → Exporter). */
 export async function exporter(): Promise<string> {

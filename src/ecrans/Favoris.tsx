@@ -9,9 +9,9 @@ import { annoncer, BoutonPlus, Brin, Illustration, Interrupteur, Rubrique } from
 import { Icone } from '../ui/Icone';
 
 type Tri = 'nom' | 'kcal' | 'prix' | 'temps';
-type Filtre = 'tous' | Recette['type'];
+type Filtre = 'tous' | 'saison' | Recette['type'];
 
-const sansAccents = (s: string) => s.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
+const sansAccents = (s: string) => s.toLowerCase().replace(/œ/g, 'oe').replace(/æ/g, 'ae').normalize('NFD').replace(/\p{Diacritic}/gu, '');
 
 export default function Favoris() {
   const favoris = useFavoris();
@@ -23,7 +23,7 @@ export default function Favoris() {
   const liste = useMemo(() => {
     const mots = sansAccents(q).split(/\s+/).filter(Boolean);
     const ok = (r: Recette) =>
-      (filtre === 'tous' || r.type === filtre) &&
+      (filtre === 'tous' || (filtre === 'saison' ? r.saison.includes(new Date().getMonth() + 1) : r.type === filtre)) &&
       mots.every((m) => sansAccents(`${r.nom} ${r.cuisine} ${r.ingredients.map((i) => i.nom_affiche).join(' ')}`).includes(m));
     const cle: Record<Tri, (r: Recette) => number | string> = {
       nom: (r) => r.nom,
@@ -50,6 +50,9 @@ export default function Favoris() {
         <h1 id="titre-favoris" className="titre-page">
           Recettes gardées
         </h1>
+        <a className="btn btn--contour btn--petit" href={lien('nouvelle')}>
+          <Icone nom="plus" taille={18} /> Ajouter ma recette
+        </a>
       </header>
 
       <Interrupteur
@@ -75,9 +78,9 @@ export default function Favoris() {
         </label>
       </div>
       <div className="segments segments--petits" role="group" aria-label="Type de recette">
-        {(['tous', 'batch', 'express', 'assemblage'] as const).map((f) => (
+        {(['tous', 'saison', 'batch', 'express', 'assemblage'] as const).map((f) => (
           <button key={f} aria-pressed={filtre === f} onClick={() => setFiltre(f)}>
-            {f === 'tous' ? 'Toutes' : TYPE_RECETTE[f]}
+            {f === 'tous' ? 'Toutes' : f === 'saison' ? 'De saison' : TYPE_RECETTE[f]}
           </button>
         ))}
       </div>

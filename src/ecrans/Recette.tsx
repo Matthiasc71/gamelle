@@ -1,6 +1,6 @@
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useMemo, useState } from 'react';
-import { BASE, PLANCHE } from '../app/base';
+import { BASE, estPerso, PLANCHE, retirerRecettePerso } from '../app/base';
 import { db } from '../app/db';
 import {
   appliquerMenu,
@@ -72,7 +72,7 @@ function FicheRecette({ r, semaine: semaineParam, creneau }: { r: TRecette; sema
           />
         </div>
         <Illustration nom={r.illustration} taille={250} className="fiche__illus" />
-        <Etiquette numero={PLANCHE[r.id]} nom={nomCourt(r)} />
+        <Etiquette numero={PLANCHE[r.id] ?? 0} nom={nomCourt(r)} />
       </div>
 
       <div className="fiche__corps">
@@ -85,6 +85,12 @@ function FicheRecette({ r, semaine: semaineParam, creneau }: { r: TRecette; sema
           <Puce>{euros(r.cout_par_part_eur)} / part</Puce>
           <Puce icone="horloge">{r.temps.total_min} min</Puce>
           {r.type === 'batch' ? <Puce variante="rose">×{r.portions_base} boîtes</Puce> : <Puce variante="sauge">{r.type === 'express' ? 'Express' : 'Sans cuisson'}</Puce>}
+          {r.saison.length < 12 && r.saison.includes(new Date().getMonth() + 1) && (
+            <Puce variante="menthe" icone="feuille">
+              De saison
+            </Puce>
+          )}
+          {estPerso(r.id) && <Puce variante="tirets">Ma recette</Puce>}
         </div>
         <p className="fiche__ciqual">
           <Icone nom="cercleCoche" taille={18} />
@@ -100,6 +106,24 @@ function FicheRecette({ r, semaine: semaineParam, creneau }: { r: TRecette; sema
           ))}
         </div>
         {r.adaptation && <p className="fiche__adaptation">Adaptée : {r.adaptation}</p>}
+        {estPerso(r.id) && (
+          <p className="fiche__adaptation">
+            Recette ajoutée sur ce téléphone : lien non vérifié par Gamelle.{' '}
+            <button
+              className="lien-bouton"
+              onClick={async () => {
+                if (!confirm('Supprimer cette recette de ton téléphone ?')) return;
+                await db.mesRecettes.delete(r.id);
+                await db.favoris.delete(r.id);
+                retirerRecettePerso(r.id);
+                annoncer('Recette supprimée.');
+                aller(lien('favoris'), true);
+              }}
+            >
+              Supprimer ma recette
+            </button>
+          </p>
+        )}
 
         {menu && details.length > 0 && (
           <section aria-labelledby="dans-semaine">

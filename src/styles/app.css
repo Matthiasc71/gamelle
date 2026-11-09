@@ -2214,3 +2214,50 @@ main:has(> .barre-actions),
     stroke-dashoffset: 0;
   }
 }
+
+/* ───────────── Ma recette ───────────── */
+
+.champ-texte {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: var(--trait) solid var(--encre);
+  background: var(--papier-clair);
+  font-size: 16px;
+}
+
+textarea.champ-texte {
+  resize: vertical;
+  line-height: 1.4;
+}
+
+.lignes-saisie {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.ligne-saisie {
+  display: grid;
+  grid-template-columns: 1fr 76px 86px 44px;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 0;
+  border-top: 1px dashed var(--filet);
+}
+
+.ligne-saisie__nom {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.ligne-saisie input {
+  width: 100%;
+  text-align: right;
+}
+
+.tete-simple > .btn {
+  margin-bottom: 10px;
+}

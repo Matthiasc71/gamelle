@@ -14,6 +14,7 @@ const ONGLETS: { ecran: string; nom: string; icone: NomIcone }[] = [
 
 /** Onglet actif pour chaque écran (la fiche recette et les réglages dépendent de Semaine ou Favoris). */
 function ongletDe(ecran: string, depuis: string | null) {
+  if (ecran === 'nouvelle') return 'favoris';
   if (ecran === 'recette' || ecran === 'echange') return depuis === 'favoris' || ecran === 'echange' ? 'favoris' : 'semaine';
   if (ecran === 'reglages' || ecran === 'session') return 'semaine';
   return ecran;
@@ -31,6 +32,7 @@ const ECRANS: Record<string, React.ComponentType> = {
   cuisine: lazy(() => import('./ecrans/Cuisine')),
   reglages: lazy(() => import('./ecrans/Reglages')),
   accueil: lazy(() => import('./ecrans/Accueil')),
+  nouvelle: lazy(() => import('./ecrans/NouvelleRecette')),
 };
 
 export default function App() {

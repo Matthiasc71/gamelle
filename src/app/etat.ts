@@ -10,7 +10,7 @@ import { genererMenu, recettesDuMenu, type ParamsGeneration } from '../domain/pl
 import type { ContexteMenu } from '../domain/regles';
 import { empreinte } from '../domain/rng';
 import { REGLAGES_DEFAUT, type Cuisson, type Menu, type Reglages } from '../domain/types';
-import { BASE } from './base';
+import { BASE, estPerso } from './base';
 import { db, type EvenementStocke, type Origine } from './db';
 
 // ───────────────────────────── Horloge ─────────────────────────────
@@ -197,7 +197,7 @@ function calculer(params: Omit<ParamsGeneration, 'base'>): Promise<Menu> {
   const id = ++compteur;
   return new Promise((ok, ko) => {
     attentes.set(id, (r) => (r.menu ? ok(r.menu) : ko(new Error(r.erreur))));
-    worker!.postMessage({ id, params });
+    worker!.postMessage({ id, params, perso: BASE.recettes.filter((r) => estPerso(r.id)) });
   });
 }
 

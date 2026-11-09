@@ -199,7 +199,7 @@ function Ajout({ fermer }: { fermer: () => void }) {
   const [choix, setChoix] = useState<string | null>(null);
   const [quantite, setQuantite] = useState('');
   const [lieu, setLieu] = useState<Lieu>('frigo');
-  const norm = (s: string) => s.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
+  const norm = (s: string) => s.toLowerCase().replace(/œ/g, 'oe').replace(/æ/g, 'ae').normalize('NFD').replace(/\p{Diacritic}/gu, '');
   const resultats = Object.entries(BASE.catalogue)
     .filter(([, c]) => norm(c.nom).includes(norm(q)))
     .sort((a, b) => a[1].nom.localeCompare(b[1].nom, 'fr'))

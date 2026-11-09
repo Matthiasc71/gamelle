@@ -32,7 +32,10 @@ export function donnees(racine: string): Plugin {
         Object.entries(CiqualMap.parse(lire(join(dossier, 'ciqual-map.json')))).map(([k, { ciqual_nom: _n, note: _no, ...c }]) => [k, c]),
       );
       const prix = GrillePrix.parse(lire(join(dossier, 'prix-reference.json')));
-      const json = JSON.stringify({ recettes, catalogue, prix });
+      // lignes Ciqual des seuls ingrédients du catalogue : calcul des recettes ajoutées sur le téléphone
+      const table = lire(join(dossier, 'ciqual/ciqual-2025.min.json')).aliments as Record<string, unknown[]>;
+      const ciqual = Object.fromEntries(Object.values(catalogue).map((c) => [c.ciqual_code, table[c.ciqual_code]]));
+      const json = JSON.stringify({ recettes, catalogue, prix, ciqual });
       return `export default JSON.parse(${JSON.stringify(json)});`;
     },
   };

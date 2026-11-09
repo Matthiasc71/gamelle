@@ -35,7 +35,7 @@ export function Illustration({ nom, taille = 56, className = '' }: { nom: NomIll
 export function Etiquette({ numero, nom }: { numero: number; nom: string }) {
   return (
     <div className="etiquette">
-      <span className="etiquette__planche">Planche n° {numero}</span>
+      <span className="etiquette__planche">{numero ? `Planche n° ${numero}` : "Ma planche"}</span>
       <span className="etiquette__nom">{nom}</span>
     </div>
   );
