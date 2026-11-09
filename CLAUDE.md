@@ -57,6 +57,17 @@ Cahier des charges complet : `docs/cahier-des-charges.md`. Maquettes de référe
 - Budget : avec 41 recettes, ~34 € en caisse / semaine en moyenne (31/52 dans le budget, ~27 € mangés). Priorité de la base :
   recettes à moins de 2 € la part, qui réutilisent les mêmes paquets.
 
+## Interface (src/app, src/ui, src/ecrans)
+- `app/base.ts` : recettes, catalogue et prix lus au build (validés par Zod au démarrage).
+- `app/db.ts` : Dexie (kv, favoris, menus, coches, evenements du frigo, prix corrigés, echanges), export/import JSON.
+- `app/etat.ts` : hooks (`useMenu`, `useContexte`, `useFrigo`…) et actions. Le menu est généré dans un worker
+  (`generateur.worker.ts`) puis gardé par semaine ; un échange ou remplacement l'enregistre avec « Annuler ».
+  Courses : le stock compté exclut les achats cochés de la semaine (sinon les lignes disparaîtraient).
+- Routeur par ancre (`#/recette/<id>?s=<semaine>&c=<créneau>`), `?date=AAAA-MM-JJ` fige la date (démos, captures).
+- `ui/composants.tsx` (Chiffre en double impression, Puce, BoutonPlus tampon, Etiquette, Feuille, annonces),
+  `ui/Icone.tsx` (icônes au trait dessinées), `styles/tokens.css` + `styles/app.css`.
+- Captures iPhone 15 : `npx vite build`, `npx vite preview --port 4173`, puis `node scripts/captures.mjs`.
+
 ## Commandes
 Dans une session cloud, le `fetch` de Node passe par le proxy seulement avec `export NODE_USE_ENV_PROXY=1`.
 - `npm run lidl` : relevés Open Prices des magasins Lidl → `data/prix-sources/lidl.json`.

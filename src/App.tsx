@@ -1,8 +1,90 @@
+import { useEffect, useRef, useState } from 'react';
+import { SemaineContexte, usePreferences, useReglages, useSemaines } from './app/etat';
+import { aller, lien, useRoute } from './app/routeur';
+import Accueil from './ecrans/Accueil';
+import Courses from './ecrans/Courses';
+import Cuisine from './ecrans/Cuisine';
+import Echange from './ecrans/Echange';
+import Favoris from './ecrans/Favoris';
+import Frigo from './ecrans/Frigo';
+import Recette from './ecrans/Recette';
+import Reglages from './ecrans/Reglages';
+import Semaine from './ecrans/Semaine';
+import Session from './ecrans/Session';
+import { Annonces } from './ui/composants';
+import { Icone, type NomIcone } from './ui/Icone';
+
+const ONGLETS: { ecran: string; nom: string; icone: NomIcone }[] = [
+  { ecran: 'semaine', nom: 'Semaine', icone: 'semaine' },
+  { ecran: 'courses', nom: 'Courses', icone: 'courses' },
+  { ecran: 'favoris', nom: 'Favoris', icone: 'favoris' },
+  { ecran: 'frigo', nom: 'Frigo', icone: 'frigo' },
+];
+
+/** Onglet actif pour chaque écran (la fiche recette et les réglages dépendent de Semaine ou Favoris). */
+function ongletDe(ecran: string, depuis: string | null) {
+  if (ecran === 'recette' || ecran === 'echange') return depuis === 'favoris' || ecran === 'echange' ? 'favoris' : 'semaine';
+  if (ecran === 'reglages' || ecran === 'session') return 'semaine';
+  return ecran;
+}
+
+const ECRANS: Record<string, () => React.ReactNode> = {
+  semaine: Semaine,
+  recette: Recette,
+  courses: Courses,
+  favoris: Favoris,
+  frigo: Frigo,
+  echange: Echange,
+  session: Session,
+  cuisine: Cuisine,
+  reglages: Reglages,
+  accueil: Accueil,
+};
+
 export default function App() {
+  const route = useRoute();
+  const prefs = usePreferences();
+  const reglages = useReglages();
+  const { courante } = useSemaines(reglages);
+  const [semaine, choisir] = useState(courante);
+
+  // L'accueil s'affiche une fois, au premier lancement (vérifié une seule fois par session).
+  const accueilVerifie = useRef(false);
+  useEffect(() => {
+    if (!prefs || accueilVerifie.current) return;
+    accueilVerifie.current = true;
+    if (!prefs.accueilFait && route.ecran !== 'accueil') aller(lien('accueil'), true);
+  }, [prefs, route.ecran]);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('sans-grain', prefs ? !prefs.grain : false);
+  }, [prefs]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [route.ecran, route.id]);
+
+  if (!prefs) return null;
+  const Ecran = ECRANS[route.ecran] ?? Semaine;
+  const plein = route.ecran === 'cuisine' || route.ecran === 'accueil';
+  const actif = ongletDe(route.ecran, route.params.get('depuis'));
+
   return (
-    <main>
-      <h1>Gamelle</h1>
-      <p>Jalon 1 : données. Les écrans arrivent au jalon 3.</p>
-    </main>
-  )
+    <SemaineContexte.Provider value={{ semaine, choisir }}>
+      <div className={`app ${plein ? 'app--plein' : ''}`}>
+        <Ecran key={route.ecran} />
+        {!plein && (
+          <nav className="onglets" aria-label="Navigation principale">
+            {ONGLETS.map((o) => (
+              <a key={o.ecran} href={lien(o.ecran)} className="onglet" aria-current={actif === o.ecran ? 'page' : undefined}>
+                <Icone nom={o.icone} taille={24} />
+                <span>{o.nom}</span>
+              </a>
+            ))}
+          </nav>
+        )}
+        <Annonces />
+      </div>
+    </SemaineContexte.Provider>
+  );
 }

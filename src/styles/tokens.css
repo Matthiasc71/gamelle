@@ -1,0 +1,34 @@
+/* Jetons du design « Herbier imprimé en risographie » (cahier des charges, section 8). */
+:root {
+  --papier: #f4eee1;
+  --papier-clair: #faf6ec;
+  --encre: #24402f;
+  --encre-douce: #4f5e53;
+  --sauge: #a8bba0;
+  --sauge-pale: #dce5d3;
+  --menthe: #8fd3b0;
+  --rose: #f4a6a6;
+  --abricot: #edb99a;
+
+  --filet: rgba(36, 64, 47, 0.42);
+  --filet-fort: rgba(36, 64, 47, 0.75);
+
+  --serif: 'Young Serif', Georgia, serif;
+  --display: 'Bricolage Grotesque', 'Schibsted Grotesk', sans-serif;
+  --texte: 'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif;
+
+  --r-carte: 18px;
+  --r-bouton: 14px;
+  --r-puce: 999px;
+  --trait: 1.5px;
+  --decalage: 3px;
+
+  --gouttiere: 20px;
+  --haut: env(safe-area-inset-top, 0px);
+  --bas: env(safe-area-inset-bottom, 0px);
+  --barre: calc(64px + var(--bas));
+
+  /* Trames de points (halftone) pour les bandeaux */
+  --trame-encre: radial-gradient(rgba(36, 64, 47, 0.28) 0.9px, transparent 1.2px) 0 0 / 7px 7px;
+  --trame-menthe: radial-gradient(var(--menthe) 1.1px, transparent 1.4px) 0 0 / 6px 6px;
+}
