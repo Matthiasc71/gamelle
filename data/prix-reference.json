@@ -1,1 +1,1291 @@
-{}
+{
+  "ail": {
+    "produit": "Ail, filet 100 g",
+    "conditionnement": {
+      "quantite": 100,
+      "unite": "g"
+    },
+    "prix_eur": 1.69,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/ail-5005892.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Ail 100G"
+  },
+  "ail-poudre": {
+    "produit": "Ail en poudre, 50 g",
+    "conditionnement": {
+      "quantite": 50,
+      "unite": "g"
+    },
+    "prix_eur": 4.61,
+    "enseigne": "médiane toutes enseignes, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "3 relevés Open Prices sur 12 mois ; 92,22 €/kg"
+  },
+  "anchois": {
+    "produit": "Filets d'anchois marinés, 100 g",
+    "conditionnement": {
+      "quantite": 100,
+      "unite": "g"
+    },
+    "prix_eur": 1.99,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/filets-danchois-marines-6806.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "FILETS D'ANCHOIS MARINÉS 100 g"
+  },
+  "aubergine": {
+    "produit": "Aubergine (au détail)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 300,
+    "prix_eur": 0.77,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "3 relevés Open Prices sur 12 mois ; 0,77 €/pièce"
+  },
+  "avocat": {
+    "produit": "Avocat (à la pièce)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 140,
+    "prix_eur": 1.14,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "4 relevés Open Prices sur 12 mois ; 1,14 €/pièce"
+  },
+  "boeuf-hache-5": {
+    "produit": "Bœuf haché 5 % MG, barquette 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "prix_eur": 11.5,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "5 relevés Open Prices sur 12 mois ; 23,00 €/kg"
+  },
+  "bouillon-legumes": {
+    "produit": "Bouillon de légumes, 12 cubes de 10 g",
+    "conditionnement": {
+      "quantite": 120,
+      "unite": "g"
+    },
+    "prix_eur": 2.15,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "119 relevés Open Prices sur 12 mois ; 17,92 €/kg"
+  },
+  "bouillon-volaille": {
+    "produit": "Bouillon de volaille, 12 cubes de 10 g",
+    "conditionnement": {
+      "quantite": 120,
+      "unite": "g"
+    },
+    "prix_eur": 2.13,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "119 relevés Open Prices sur 12 mois ; 17,77 €/kg"
+  },
+  "brocoli-surgele": {
+    "produit": "Brocolis en fleurettes surgelés, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "prix_eur": 2.19,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/brocolis-en-fleurettes-1643.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Brocolis en fleurettes 1KG"
+  },
+  "carotte": {
+    "produit": "Carottes, sachet 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "prix_eur": 1.96,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "6 relevés Open Prices sur 12 mois ; 1,96 €/kg"
+  },
+  "celeri-branche": {
+    "produit": "Céleri branche, pied",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 500,
+    "prix_eur": 2.14,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 8 relevés Open Prices France sur 12 mois ; 2,14 €/pièce"
+  },
+  "champignons": {
+    "produit": "Champignons de Paris, barquette 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "prix_eur": 3,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 9 relevés Open Prices France sur 12 mois ; 5,99 €/kg"
+  },
+  "chapelure": {
+    "produit": "Chapelure, 400 g",
+    "conditionnement": {
+      "quantite": 400,
+      "unite": "g"
+    },
+    "prix_eur": 0.85,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/chapelure-1707.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "CHAPELURE 400G"
+  },
+  "cheddar-rape": {
+    "produit": "Cheddar râpé, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "prix_eur": 2.39,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/cheddar-rape-7929.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "CHEDDAR RÃPÉ 200 g"
+  },
+  "chou-rave": {
+    "produit": "Chou-rave (à la pièce)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 400,
+    "prix_eur": 1.9,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 5 relevés Open Prices France sur 12 mois ; 1,90 €/pièce"
+  },
+  "ciboulette": {
+    "produit": "Ciboulette, botte",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 25,
+    "prix_eur": 1.95,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 3 relevés Open Prices France sur 12 mois ; 1,95 €/pièce"
+  },
+  "citron": {
+    "produit": "Citron jaune (à la pièce)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 120,
+    "prix_eur": 0.5,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "6 relevés Open Prices sur 12 mois ; 0,50 €/pièce"
+  },
+  "citron-vert": {
+    "produit": "Citron vert (à la pièce)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 70,
+    "prix_eur": 1.4,
+    "enseigne": "médiane toutes enseignes, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "2 relevés Open Prices sur 12 mois ; 1,40 €/pièce"
+  },
+  "colin-filet": {
+    "produit": "Filets de colin d'Alaska surgelés, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "prix_eur": 5.85,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/filets-de-colin-dalaska-5329.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "FILETS DE COLIN D'ALASKA 1KG"
+  },
+  "comte-rape": {
+    "produit": "Comté AOP râpé, 150 g",
+    "conditionnement": {
+      "quantite": 150,
+      "unite": "g"
+    },
+    "prix_eur": 2.25,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/comte-aop-rape-6419.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "COMTÉ AOP RÂPÉ 150G"
+  },
+  "concentre-tomate": {
+    "produit": "Double concentré de tomates, 140 g",
+    "conditionnement": {
+      "quantite": 140,
+      "unite": "g"
+    },
+    "prix_eur": 0.99,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/double-concentre-de-tomates-5011922.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "DOUBLE CONCENTRÉ DE TOMATES 140G"
+  },
+  "concombre": {
+    "produit": "Concombre (à la pièce)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 300,
+    "prix_eur": 1.32,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "4 relevés Open Prices sur 12 mois ; 1,31 €/pièce"
+  },
+  "coriandre": {
+    "produit": "Coriandre, botte",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 30,
+    "prix_eur": 1.95,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 3 relevés Open Prices France sur 12 mois ; 1,95 €/pièce"
+  },
+  "coulis-tomate": {
+    "produit": "Purée de tomates (coulis), 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "prix_eur": 0.49,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/puree-de-tomates-4325.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "PURÉE DE TOMATES 500G"
+  },
+  "courgette": {
+    "produit": "Courgette (au détail)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 250,
+    "prix_eur": 0.8,
+    "enseigne": "médiane toutes enseignes, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "3 relevés Open Prices sur 12 mois ; 0,80 €/pièce"
+  },
+  "creme-legere-15": {
+    "produit": "Crème fraîche épaisse légère, 20 cl",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "ml"
+    },
+    "prix_eur": 0.65,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/creme-fraiche-epaisse-legere-5019249.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "CRÈME FRAÎCHE ÉPAISSE LÉGÈRE 20CL"
+  },
+  "creme-legere-4": {
+    "produit": "Spécialité de crème légère 4 %, 20 cl",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "ml"
+    },
+    "prix_eur": 0.89,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 71 relevés Open Prices France sur 12 mois ; 4,47 €/L"
+  },
+  "cumin": {
+    "produit": "Cumin moulu, 40 g",
+    "conditionnement": {
+      "quantite": 40,
+      "unite": "g"
+    },
+    "prix_eur": 3.18,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "16 relevés Open Prices sur 12 mois ; 79,46 €/kg"
+  },
+  "curcuma": {
+    "produit": "Curcuma, 40 g",
+    "conditionnement": {
+      "quantite": 40,
+      "unite": "g"
+    },
+    "prix_eur": 1.64,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "8 relevés Open Prices sur 12 mois ; 41,10 €/kg"
+  },
+  "curry": {
+    "produit": "Curry en poudre, 45 g",
+    "conditionnement": {
+      "quantite": 45,
+      "unite": "g"
+    },
+    "prix_eur": 2.86,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "12 relevés Open Prices sur 12 mois ; 63,54 €/kg"
+  },
+  "dinde-escalope": {
+    "produit": "Escalopes de dinde, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "prix_eur": 4.99,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/escalope-de-dinde-5010284.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Escalope de dinde 500G"
+  },
+  "echalote": {
+    "produit": "Échalotes, filet 250 g",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "prix_eur": 1.25,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 8 relevés Open Prices France sur 12 mois ; 4,99 €/kg"
+  },
+  "emmental-rape": {
+    "produit": "Emmental râpé, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "prix_eur": 1.65,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/emmental-rape-francais-6536.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Emmental râpé français 200G"
+  },
+  "epinards-pousses": {
+    "produit": "Épinards frais (pousses), au kilo",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "prix_eur": 1.65,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 9 relevés Open Prices France sur 12 mois ; 6,60 €/kg"
+  },
+  "epinards-surgeles": {
+    "produit": "Épinards en branches surgelés, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "prix_eur": 2.25,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 29 relevés Open Prices France sur 12 mois ; 2,25 €/kg"
+  },
+  "farine": {
+    "produit": "Farine de blé T65, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "prix_eur": 0.65,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/farine-0510.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "FARINE 1KG"
+  },
+  "fecule-mais": {
+    "produit": "Fécule de maïs, 400 g",
+    "conditionnement": {
+      "quantite": 400,
+      "unite": "g"
+    },
+    "prix_eur": 1.55,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 11 relevés Open Prices France sur 12 mois ; 3,87 €/kg"
+  },
+  "feta": {
+    "produit": "Feta AOP, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "prix_eur": 2.45,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/feta-aop-1673.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Féta AOP 200G"
+  },
+  "fromage-blanc-0": {
+    "produit": "Fromage blanc 0 %, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "prix_eur": 1.79,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/fromage-blanc-6555.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Fromage blanc 1 Kg"
+  },
+  "fromage-frais-allege": {
+    "produit": "Fromage frais allégé, 150 g",
+    "conditionnement": {
+      "quantite": 150,
+      "unite": "g"
+    },
+    "prix_eur": 2.19,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "9 relevés Open Prices sur 12 mois ; 14,60 €/kg"
+  },
+  "gingembre-frais": {
+    "produit": "Gingembre frais, au kilo",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "prix_eur": 4.99,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "3 relevés Open Prices sur 12 mois ; 4,99 €/kg"
+  },
+  "gingembre-poudre": {
+    "produit": "Gingembre moulu, 35 g",
+    "conditionnement": {
+      "quantite": 35,
+      "unite": "g"
+    },
+    "prix_eur": 2.87,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "135 relevés Open Prices sur 12 mois ; 82,00 €/kg"
+  },
+  "haricots-blancs": {
+    "produit": "Haricots blancs en conserve, 250 g égouttés",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "prix_eur": 1.37,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "6 relevés Open Prices sur 12 mois ; 5,48 €/kg"
+  },
+  "haricots-rouges": {
+    "produit": "Haricots rouges en conserve, 250 g égouttés",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "prix_eur": 0.79,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/haricots-rouges-7518.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Haricots rouges 250G"
+  },
+  "haricots-verts": {
+    "produit": "Haricots verts extra fins surgelés, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "prix_eur": 1.85,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/haricots-verts-extra-fins-1646.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Haricots verts extra fins 1KG"
+  },
+  "herbes-provence": {
+    "produit": "Herbes de Provence, 20 g",
+    "conditionnement": {
+      "quantite": 20,
+      "unite": "g"
+    },
+    "prix_eur": 1.92,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "12 relevés Open Prices sur 12 mois ; 96,00 €/kg"
+  },
+  "huile-olive": {
+    "produit": "Huile d'olive vierge extra, 50 cl",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "ml"
+    },
+    "prix_eur": 5.29,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/huile-dolive-extra-premium-5000354.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Huile d'olive extra premium 500ML"
+  },
+  "huile-sesame": {
+    "produit": "Huile de sésame, 25 cl",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "ml"
+    },
+    "prix_eur": 4.46,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "5 relevés Open Prices sur 12 mois ; 17,84 €/L"
+  },
+  "jambon-des": {
+    "produit": "Dés de jambon, 2 × 75 g",
+    "conditionnement": {
+      "quantite": 150,
+      "unite": "g"
+    },
+    "prix_eur": 1.53,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 48 relevés Open Prices France sur 12 mois ; 10,18 €/kg"
+  },
+  "lait-coco": {
+    "produit": "Lait de coco, 40 cl",
+    "conditionnement": {
+      "quantite": 400,
+      "unite": "ml"
+    },
+    "prix_eur": 1.49,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/lait-de-coco-5002342.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "LAIT DE COCO 400ML"
+  },
+  "lait-concentre": {
+    "produit": "Lait concentré non sucré, 410 g",
+    "conditionnement": {
+      "quantite": 410,
+      "unite": "g"
+    },
+    "prix_eur": 3.13,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "17 relevés Open Prices sur 12 mois ; 7,63 €/kg"
+  },
+  "lait-demi": {
+    "produit": "Lait demi-écrémé UHT, 1 L",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "ml"
+    },
+    "prix_eur": 0.96,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/lait-uht-demi-ecreme-0600.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Lait UHT demi-écrémé 1L"
+  },
+  "laitue": {
+    "produit": "Laitue (à la pièce)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 300,
+    "prix_eur": 1.29,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "3 relevés Open Prices sur 12 mois ; 1,29 €/pièce"
+  },
+  "lasagnes": {
+    "produit": "Feuilles de lasagnes, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "prix_eur": 1.29,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/lasagne-1902.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "LASAGNE 500G"
+  },
+  "lentilles-conserve": {
+    "produit": "Lentilles cuisinées en conserve, 530 g",
+    "conditionnement": {
+      "quantite": 530,
+      "unite": "g"
+    },
+    "prix_eur": 1.15,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/lentilles-preparees-4440.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Lentilles préparées 530G"
+  },
+  "lentilles-corail": {
+    "produit": "Lentilles corail, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "prix_eur": 0.99,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/pois-casses-ou-lentilles-corail-5017554.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Pois cassés ou Lentilles corail 500G"
+  },
+  "mais": {
+    "produit": "Maïs doux en conserve, 285 g égoutté",
+    "conditionnement": {
+      "quantite": 285,
+      "unite": "g"
+    },
+    "prix_eur": 0.85,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/mais-croquant-4335.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Maïs croquant 285G"
+  },
+  "miel": {
+    "produit": "Miel, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "prix_eur": 8.7,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "53 relevés Open Prices sur 12 mois ; 17,40 €/kg"
+  },
+  "moutarde": {
+    "produit": "Moutarde de Dijon, 370 g",
+    "conditionnement": {
+      "quantite": 370,
+      "unite": "g"
+    },
+    "prix_eur": 3.02,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "46 relevés Open Prices sur 12 mois ; 8,17 €/kg"
+  },
+  "mozzarella": {
+    "produit": "Mozzarella, 125 g",
+    "conditionnement": {
+      "quantite": 125,
+      "unite": "g"
+    },
+    "prix_eur": 0.69,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/mozzarella-6565.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Mozzarella 125G"
+  },
+  "noix-cajou": {
+    "produit": "Noix de cajou nature, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "prix_eur": 4.81,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "6 relevés Open Prices sur 12 mois ; 24,04 €/kg"
+  },
+  "nouilles-oeufs": {
+    "produit": "Nouilles façon asiatique, 250 g",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "prix_eur": 1.19,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/nouilles-facon-asiatique-1990.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "NOUILLES FAÇON ASIATIQUE 250G"
+  },
+  "oeuf": {
+    "produit": "Œufs plein air, boîte de 12",
+    "conditionnement": {
+      "quantite": 12,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 55,
+    "prix_eur": 3.39,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/12-oeufs-de-poules-elevees-en-plein-air-5004790.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "12 oeufs de poules élevées en plein air La boite"
+  },
+  "oignon": {
+    "produit": "Oignons jaunes, filet 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "prix_eur": 2.19,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "3 relevés Open Prices sur 12 mois ; 2,19 €/kg"
+  },
+  "oignon-rouge": {
+    "produit": "Oignons rouges, filet 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "prix_eur": 1.55,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 16 relevés Open Prices France sur 12 mois ; 3,09 €/kg"
+  },
+  "olives-noires": {
+    "produit": "Olives noires en saumure, 150 g égouttées",
+    "conditionnement": {
+      "quantite": 150,
+      "unite": "g"
+    },
+    "prix_eur": 2.23,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "18 relevés Open Prices sur 12 mois ; 14,86 €/kg"
+  },
+  "origan": {
+    "produit": "Origan séché, 15 g",
+    "conditionnement": {
+      "quantite": 15,
+      "unite": "g"
+    },
+    "prix_eur": 1.93,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "6 relevés Open Prices sur 12 mois ; 128,72 €/kg"
+  },
+  "pain-complet": {
+    "produit": "Pain complet tranché, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "prix_eur": 2.46,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "17 relevés Open Prices sur 12 mois ; 4,92 €/kg"
+  },
+  "pak-choi": {
+    "produit": "Pak choï, au kilo",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "prix_eur": 4.79,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 3 relevés Open Prices France sur 12 mois ; 4,79 €/kg"
+  },
+  "paprika": {
+    "produit": "Paprika, 45 g",
+    "conditionnement": {
+      "quantite": 45,
+      "unite": "g"
+    },
+    "prix_eur": 3.55,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "10 relevés Open Prices sur 12 mois ; 78,85 €/kg"
+  },
+  "parmesan": {
+    "produit": "Parmesan, 125 g",
+    "conditionnement": {
+      "quantite": 125,
+      "unite": "g"
+    },
+    "prix_eur": 2.99,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/copeaux-parmesan-125g-5017542.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "COPEAUX PARMESAN 125G 125 G"
+  },
+  "pates": {
+    "produit": "Penne ou spaghetti, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "prix_eur": 0.55,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/penne-5006294.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "PENNE 500G"
+  },
+  "persil": {
+    "produit": "Persil plat, botte",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 30,
+    "prix_eur": 1.95,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 3 relevés Open Prices France sur 12 mois ; 1,95 €/pièce"
+  },
+  "pesto": {
+    "produit": "Pesto vert, 190 g",
+    "conditionnement": {
+      "quantite": 190,
+      "unite": "g"
+    },
+    "prix_eur": 1.29,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/sauces-pesto-190g-2924.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "SAUCES PESTO 190G 190g"
+  },
+  "petits-pois": {
+    "produit": "Petits pois extra fins surgelés, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "prix_eur": 1.89,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/petits-pois-extra-fins-1861.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Petits pois extra fins 1KG"
+  },
+  "poireau": {
+    "produit": "Poireaux, botte de 3",
+    "conditionnement": {
+      "quantite": 3,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 200,
+    "prix_eur": 1.7,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "4 relevés Open Prices sur 12 mois ; 0,57 €/pièce"
+  },
+  "pois-chiches": {
+    "produit": "Pois chiches en conserve, 265 g égouttés",
+    "conditionnement": {
+      "quantite": 265,
+      "unite": "g"
+    },
+    "prix_eur": 0.59,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/pois-chiches-6758.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Pois chiches 265G"
+  },
+  "poivron-jaune": {
+    "produit": "Poivron jaune (au détail)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 180,
+    "prix_eur": 0.81,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 9 relevés Open Prices France sur 12 mois ; 0,81 €/pièce"
+  },
+  "poivron-rouge": {
+    "produit": "Poivron rouge (au détail)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 180,
+    "prix_eur": 0.9,
+    "enseigne": "médiane toutes enseignes, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "3 relevés Open Prices sur 12 mois ; 0,90 €/pièce"
+  },
+  "pomme-de-terre": {
+    "produit": "Pommes de terre, filet 2 kg",
+    "conditionnement": {
+      "quantite": 2000,
+      "unite": "g"
+    },
+    "prix_eur": 4.58,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "3 relevés Open Prices sur 12 mois ; 2,29 €/kg"
+  },
+  "porc-filet-mignon": {
+    "produit": "Filet mignon de porc, environ 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "prix_eur": 4.98,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 3 relevés Open Prices France sur 12 mois ; 9,97 €/kg"
+  },
+  "poulet-filet": {
+    "produit": "Filets de poulet, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "prix_eur": 9.49,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/filets-de-poulet-1359.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Filets de poulet 1KG"
+  },
+  "pulpe-tomate": {
+    "produit": "Pulpe de tomates, 400 g",
+    "conditionnement": {
+      "quantite": 400,
+      "unite": "g"
+    },
+    "prix_eur": 2.39,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "6 relevés Open Prices sur 12 mois ; 5,98 €/kg"
+  },
+  "ricotta": {
+    "produit": "Ricotta, 250 g",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "prix_eur": 2.2,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 19 relevés Open Prices France sur 12 mois ; 8,80 €/kg"
+  },
+  "riz-basmati": {
+    "produit": "Riz basmati, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "prix_eur": 1.95,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/riz-basmati-1962.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "RIZ BASMATI 1KG"
+  },
+  "riz-long": {
+    "produit": "Riz long grain, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "prix_eur": 1.65,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/riz-long-grain-7925.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "RIZ LONG GRAIN 1KG"
+  },
+  "sauce-huitre": {
+    "produit": "Sauce d'huître, 25 cl",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "ml"
+    },
+    "prix_eur": 3.62,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "5 relevés Open Prices sur 12 mois ; 14,50 €/L"
+  },
+  "sauce-soja": {
+    "produit": "Sauce soja salée, 25 cl",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "ml"
+    },
+    "prix_eur": 4.87,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "45 relevés Open Prices sur 12 mois ; 19,48 €/L"
+  },
+  "sucre-roux": {
+    "produit": "Sucre roux, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "prix_eur": 5.4,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "5 relevés Open Prices sur 12 mois ; 5,40 €/kg"
+  },
+  "tahini": {
+    "produit": "Purée de sésame (tahini), 250 g",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "prix_eur": 6.19,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "4 relevés Open Prices sur 12 mois ; 24,76 €/kg"
+  },
+  "thon-naturel": {
+    "produit": "Thon au naturel, boîte 150 g (112 g égoutté)",
+    "conditionnement": {
+      "quantite": 112,
+      "unite": "g"
+    },
+    "prix_eur": 1.39,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/thon-au-naturel-5016920.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Thon au naturel 150G"
+  },
+  "tofu-ferme": {
+    "produit": "Tofu nature ferme, 400 g",
+    "conditionnement": {
+      "quantite": 400,
+      "unite": "g"
+    },
+    "prix_eur": 4.42,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "11 relevés Open Prices sur 12 mois ; 11,04 €/kg"
+  },
+  "tofu-soyeux": {
+    "produit": "Tofu soyeux, 300 g",
+    "conditionnement": {
+      "quantite": 300,
+      "unite": "g"
+    },
+    "prix_eur": 2.25,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 4 relevés Open Prices France sur 12 mois ; 7,50 €/kg"
+  },
+  "tomate": {
+    "produit": "Tomates rondes, au kilo",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "prix_eur": 4.99,
+    "enseigne": "médiane toutes enseignes, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "6 relevés Open Prices sur 12 mois ; 4,99 €/kg"
+  },
+  "tomates-cerises": {
+    "produit": "Tomates cerises, barquette 250 g",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "prix_eur": 2.99,
+    "enseigne": "médiane toutes enseignes, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "3 relevés Open Prices sur 12 mois ; 11,96 €/kg"
+  },
+  "tomates-concassees": {
+    "produit": "Tomates concassées en conserve, 400 g",
+    "conditionnement": {
+      "quantite": 400,
+      "unite": "g"
+    },
+    "prix_eur": 1.88,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "6 relevés Open Prices sur 12 mois ; 4,71 €/kg"
+  },
+  "tomates-sechees": {
+    "produit": "Tomates séchées à l'huile, bocal 280 g (égoutté 180 g)",
+    "conditionnement": {
+      "quantite": 180,
+      "unite": "g"
+    },
+    "prix_eur": 3.53,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "3 relevés Open Prices sur 12 mois ; 19,61 €/kg"
+  },
+  "tortilla-ble": {
+    "produit": "Tortillas de blé, 8 × 40 g",
+    "conditionnement": {
+      "quantite": 320,
+      "unite": "g"
+    },
+    "prix_eur": 5.68,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "3 relevés Open Prices sur 12 mois ; 17,74 €/kg"
+  },
+  "udon": {
+    "produit": "Udon frais précuits, 2 × 200 g",
+    "conditionnement": {
+      "quantite": 400,
+      "unite": "g"
+    },
+    "prix_eur": 4.03,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 7 relevés Open Prices France sur 12 mois ; 10,07 €/kg"
+  },
+  "vin-rouge": {
+    "produit": "Vin rouge, 75 cl",
+    "conditionnement": {
+      "quantite": 750,
+      "unite": "ml"
+    },
+    "prix_eur": 9.26,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "6 relevés Open Prices sur 12 mois ; 12,34 €/L"
+  },
+  "vinaigre": {
+    "produit": "Vinaigre blanc ou de cidre, 1 L",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "ml"
+    },
+    "prix_eur": 1.09,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "17 relevés Open Prices sur 12 mois ; 1,09 €/L"
+  },
+  "vinaigre-balsamique": {
+    "produit": "Vinaigre balsamique, 50 cl",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "ml"
+    },
+    "prix_eur": 3.99,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "27 relevés Open Prices sur 12 mois ; 7,98 €/L"
+  },
+  "yaourt-grec": {
+    "produit": "Yaourt à la grecque nature, 600 g",
+    "conditionnement": {
+      "quantite": 600,
+      "unite": "g"
+    },
+    "prix_eur": 1.29,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/yaourt-a-la-grecque-nature-6704.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Yaourt à la grecque nature 600 g"
+  }
+}

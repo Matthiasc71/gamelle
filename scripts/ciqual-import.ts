@@ -86,6 +86,7 @@ async function main() {
   /** code → [nom, groupe, kcal, prot, gluc, lip, fibres] (pour 100 g ; null = valeur absente de Ciqual) */
   const out: Record<string, [string, string, ...(number | null)[]]> = {};
   let manquants = 0;
+  const recalculees: string[] = [];
   for (let r = 2; r <= ws.rowCount; r++) {
     const row = ws.getRow(r).values as unknown[];
     const code = norm(row[idx.code]);
@@ -98,6 +99,13 @@ async function main() {
       }
       return Math.round(p.v * 100) / 100;
     });
+    // Énergie absente mais macronutriments présents : on la recalcule avec les coefficients
+    // du règlement UE 1169/2011 (ceux de la colonne kcal de Ciqual) et on le signale.
+    const [kcal, p, g, l, f] = vals;
+    if (kcal === null && p !== null && g !== null && l !== null) {
+      vals[0] = Math.round(4 * p + 4 * g + 9 * l + 2 * (f ?? 0));
+      recalculees.push(code);
+    }
     out[code] = [norm(row[idx.nom]), norm(row[idx.groupe]), ...vals];
   }
   writeFileSync(
@@ -108,10 +116,14 @@ async function main() {
       licence: 'Etalab 2.0',
       version: '2025-11-03',
       colonnes: ['nom', 'groupe', 'kcal', 'proteines_g', 'glucides_g', 'lipides_g', 'fibres_g'],
+      /** Codes dont l'énergie absente de Ciqual a été recalculée : 4×P + 4×G + 9×L + 2×fibres (UE 1169/2011). */
+      kcal_recalculees: recalculees,
       aliments: out,
     }),
   );
-  console.log(`${Object.keys(out).length} aliments écrits dans ${OUT} (${manquants} valeurs absentes, stockées à null)`);
+  console.log(
+    `${Object.keys(out).length} aliments écrits dans ${OUT} (${manquants} valeurs absentes ; énergie recalculée pour ${recalculees.length})`,
+  );
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {

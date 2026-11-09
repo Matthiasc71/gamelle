@@ -3,10 +3,13 @@
  *
  * Pour chaque ingrédient de data/prix-correspondances.json, dans l'ordre de priorité :
  *   1. prix saisi à la main (ticket de caisse)                      → methode "ticket"
- *   2. Open Prices, médiane 12 mois, Lyon (25 km), enseignes discount
+ *   2. prix affiché sur aldi.fr pour un produit précis (instantané data/prix-sources/aldi.json,
+ *      hors promo) : prix réel d'un premier prix en magasin discount  → "site-enseigne"
+ *   3. Open Prices, médiane 12 mois, Lyon (25 km), enseignes de la grande distribution
  *      d'abord, au moins 3 relevés                                   → "open-prices-lyon"
- *   3. prix affiché sur aldi.fr (instantané data/prix-sources/aldi.json, hors promo) → "site-enseigne"
  *   4. Open Prices, médiane 12 mois, France, au moins 3 relevés       → "open-prices-france"
+ * Pourquoi Aldi avant Open Prices : une médiane par catégorie mélange marques nationales et
+ * premiers prix (ex. sauce soja à 20 €/L) ; elle reste affichée dans le rapport comme contrôle.
  * Open Prices : https://prices.openfoodfacts.org (licence ODbL).
  *
  * Usage : npm run prices            (utilise le cache .cache/open-prices de moins de 7 jours)
@@ -37,6 +40,10 @@ export const Correspondance = z.object({
       category_tag: z.string().optional(),
       /** Produit emballé : catégorie Open Food Facts, ex. "en:red-lentils". */
       categorie_produit: z.string().optional(),
+      /** Le nom du produit doit contenir l'un de ces mots (sans accents, minuscules). */
+      mots: z.array(z.string()).optional(),
+      /** Le nom du produit ne doit contenir aucun de ces mots. */
+      exclure: z.array(z.string()).optional(),
     })
     .optional(),
   manuel: z
@@ -50,7 +57,7 @@ type PrixOP = {
   price_per?: 'KILOGRAM' | 'UNIT' | null;
   price_is_discounted?: boolean;
   date: string;
-  product?: { product_quantity?: number | null; product_quantity_unit?: string | null } | null;
+  product?: { product_name?: string | null; product_quantity?: number | null; product_quantity_unit?: string | null } | null;
   location?: { osm_name?: string | null; osm_brand?: string | null } | null;
 };
 
@@ -104,8 +111,25 @@ async function releves(query: string, local: boolean, frais: boolean): Promise<P
 
 type Estimation = { n: number; parUnite: number; discount: boolean };
 
+const sansAccents = (x: string) => x.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+
+/** Garde les relevés comparables : nom compatible et paquet de taille voisine (×0,4 à ×2,5). */
+export function comparables(items: PrixOP[], c: Correspondance): PrixOP[] {
+  const { mots, exclure } = c.open_prices ?? {};
+  const q = c.conditionnement.quantite;
+  return items.filter((p) => {
+    if (p.price_is_discounted) return false;
+    const nom = sansAccents(p.product?.product_name ?? '');
+    if (p.product && mots?.length && !mots.some((m) => nom.includes(sansAccents(m)))) return false;
+    if (p.product && exclure?.some((m) => nom.includes(sansAccents(m)))) return false;
+    const pq = p.product?.product_quantity;
+    if (p.product && pq && c.conditionnement.unite !== 'pièce' && (pq < q * 0.4 || pq > q * 2.5)) return false;
+    return true;
+  });
+}
+
 function estimer(items: PrixOP[], c: Correspondance): Estimation | null {
-  const ok = items.filter((p) => !p.price_is_discounted);
+  const ok = comparables(items, c);
   const conv = (xs: PrixOP[]) => xs.map((p) => prixParUnite(p, c)).filter((x): x is number => x !== null && x > 0);
   const disc = conv(ok.filter((p) => ENSEIGNES_DISCOUNT.test(`${p.location?.osm_brand ?? ''} ${p.location?.osm_name ?? ''}`)));
   const tous = conv(ok);
@@ -153,6 +177,8 @@ async function main() {
     let choix: PrixReference | null = null;
     if (c.manuel) {
       choix = { ...base, prix_eur: c.manuel.prix_eur, enseigne: c.manuel.enseigne, url: c.manuel.url, releve_le: c.manuel.releve_le, methode: 'ticket' };
+    } else if (aldiOk) {
+      choix = { ...base, prix_eur: aldiOk.prix_eur, enseigne: 'Aldi', url: aldiOk.url, releve_le: aldi.releve_le, methode: 'site-enseigne', note: `${aldiOk.nom} ${aldiOk.unite_vente}` };
     } else if (lyon) {
       choix = {
         ...base,
@@ -162,8 +188,6 @@ async function main() {
         methode: 'open-prices-lyon',
         note: `${lyon.n} relevés Open Prices sur 12 mois ; ${eur(parRef(lyon.parUnite, c.conditionnement.unite))}/${unitTxt(c.conditionnement.unite)}`,
       };
-    } else if (aldiOk) {
-      choix = { ...base, prix_eur: aldiOk.prix_eur, enseigne: 'Aldi', url: aldiOk.url, releve_le: aldi.releve_le, methode: 'site-enseigne', note: `${aldiOk.nom} ${aldiOk.unite_vente}` };
     } else if (fr) {
       choix = {
         ...base,

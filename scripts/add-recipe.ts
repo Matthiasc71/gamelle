@@ -52,6 +52,7 @@ async function preparer(url: string) {
   let legende = '';
   let kcal: string | undefined;
   let portions: string | undefined;
+  let temps: string | undefined;
   if (type === 'article' && v.html) {
     const ld = extraireJsonLd(v.html);
     nom = ld?.nom || titrePage(v.html);
@@ -60,6 +61,7 @@ async function preparer(url: string) {
     etapesOriginales = ld?.etapes ?? [];
     kcal = ld?.kcal;
     portions = ld?.portions;
+    temps = ld?.temps_total;
     if (!ld) console.log('Pas de recette JSON-LD sur la page : lire la page et saisir les ingrédients à la main.');
   } else if (v.oembed) {
     nom = v.oembed.title.split('\n')[0].slice(0, 80);
@@ -69,7 +71,7 @@ async function preparer(url: string) {
     console.log('Vidéo : les quantités doivent figurer dans la légende ou dans un article du même créateur.');
   }
 
-  console.log(`Nom : ${nom}\nAuteur : ${auteur}\nPortions : ${portions ?? '?'}\nKcal annoncées : ${kcal ?? '—'}`);
+  console.log(`Nom : ${nom}\nAuteur : ${auteur}\nPortions : ${portions ?? '?'}\nTemps total : ${temps || '?'}\nKcal annoncées : ${kcal ?? '—'}`);
   const lignes = ingredients.map((ing) => {
     const sugg = suggererCiqual(ing, table);
     const dansCatalogue = Object.entries(catalogue).find(([, c]) => sugg[0] && sansAccents(ing).includes(sansAccents(c.nom)));

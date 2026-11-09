@@ -8,7 +8,7 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { ecartKcal, nutritionParPart, SEUIL_ECART_KCAL } from '../src/domain/nutrition';
 import { coutParPart } from '../src/domain/pricing';
-import type { IngredientRecette, PrixReference } from '../src/domain/schema';
+import { CiqualMap, type IngredientRecette, type PrixReference } from '../src/domain/schema';
 import { aujourdhui, ecrireJson, lireJson, recettesBrutes, ROOT, tableCiqual } from './lib/data';
 
 const table = tableCiqual();
@@ -17,8 +17,19 @@ const lignes: string[] = [];
 const alertes: string[] = [];
 let erreurs = 0;
 
+const catalogue = CiqualMap.parse(lireJson('data/ciqual-map.json'));
+
 for (const { fichier, data } of recettesBrutes()) {
   const ings = data.ingredients as IngredientRecette[];
+  // Code Ciqual, rayon et état viennent du catalogue : une seule source de vérité.
+  for (const ing of ings) {
+    const c = catalogue[ing.ingredient];
+    if (!c) continue; // signalé par validate
+    ing.ciqual_code = c.ciqual_code;
+    ing.rayon = c.rayon;
+    ing.etat = c.etat;
+    ing.optionnel ??= false;
+  }
   const portions = data.portions_base as number;
   const verifs = (data.verifications ?? {}) as Record<string, unknown>;
   try {

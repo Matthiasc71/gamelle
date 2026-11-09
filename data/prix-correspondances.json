@@ -1,1 +1,1177 @@
-{}
+{
+  "boeuf-hache-5": {
+    "produit": "Bœuf haché 5 % MG, barquette 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:ground-meats",
+      "mots": [
+        "5%",
+        "5 %"
+      ]
+    }
+  },
+  "poulet-filet": {
+    "produit": "Filets de poulet, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "aldi": "1359",
+    "open_prices": {
+      "categorie_produit": "en:chicken-breasts"
+    }
+  },
+  "dinde-escalope": {
+    "produit": "Escalopes de dinde, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "aldi": "5010284",
+    "open_prices": {
+      "categorie_produit": "en:turkey-cutlets"
+    }
+  },
+  "porc-filet-mignon": {
+    "produit": "Filet mignon de porc, environ 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:pork",
+      "mots": [
+        "filet mignon"
+      ]
+    }
+  },
+  "colin-filet": {
+    "produit": "Filets de colin d'Alaska surgelés, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "aldi": "5329",
+    "open_prices": {
+      "categorie_produit": "en:alaska-pollock-fillets"
+    }
+  },
+  "thon-naturel": {
+    "produit": "Thon au naturel, boîte 150 g (112 g égoutté)",
+    "conditionnement": {
+      "quantite": 112,
+      "unite": "g"
+    },
+    "aldi": "5016920",
+    "open_prices": {
+      "categorie_produit": "en:canned-tunas"
+    }
+  },
+  "oeuf": {
+    "produit": "Œufs plein air, boîte de 12",
+    "conditionnement": {
+      "quantite": 12,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 55,
+    "aldi": "5004790",
+    "open_prices": {
+      "categorie_produit": "en:eggs"
+    }
+  },
+  "tofu-ferme": {
+    "produit": "Tofu nature ferme, 400 g",
+    "conditionnement": {
+      "quantite": 400,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "xx:tofu",
+      "mots": [
+        "tofu"
+      ],
+      "exclure": [
+        "fume",
+        "saucisse",
+        "pane",
+        "soyeux",
+        "marine"
+      ]
+    }
+  },
+  "tofu-soyeux": {
+    "produit": "Tofu soyeux, 300 g",
+    "conditionnement": {
+      "quantite": 300,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "xx:tofu",
+      "mots": [
+        "soyeux",
+        "silken"
+      ]
+    }
+  },
+  "jambon-des": {
+    "produit": "Dés de jambon, 2 × 75 g",
+    "conditionnement": {
+      "quantite": 150,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:diced-ham"
+    }
+  },
+  "lentilles-corail": {
+    "produit": "Lentilles corail, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "aldi": "5017554",
+    "open_prices": {
+      "categorie_produit": "en:red-lentils"
+    }
+  },
+  "lentilles-conserve": {
+    "produit": "Lentilles cuisinées en conserve, 530 g",
+    "conditionnement": {
+      "quantite": 530,
+      "unite": "g"
+    },
+    "aldi": "4440",
+    "open_prices": {
+      "categorie_produit": "en:canned-lentils"
+    }
+  },
+  "haricots-rouges": {
+    "produit": "Haricots rouges en conserve, 250 g égouttés",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "aldi": "7518",
+    "open_prices": {
+      "categorie_produit": "en:canned-red-kidney-beans"
+    }
+  },
+  "haricots-blancs": {
+    "produit": "Haricots blancs en conserve, 250 g égouttés",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:white-beans"
+    }
+  },
+  "pois-chiches": {
+    "produit": "Pois chiches en conserve, 265 g égouttés",
+    "conditionnement": {
+      "quantite": 265,
+      "unite": "g"
+    },
+    "aldi": "6758",
+    "open_prices": {
+      "categorie_produit": "en:canned-chickpeas"
+    }
+  },
+  "feta": {
+    "produit": "Feta AOP, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "aldi": "1673",
+    "open_prices": {
+      "categorie_produit": "en:feta"
+    }
+  },
+  "comte-rape": {
+    "produit": "Comté AOP râpé, 150 g",
+    "conditionnement": {
+      "quantite": 150,
+      "unite": "g"
+    },
+    "aldi": "6419",
+    "open_prices": {
+      "categorie_produit": "en:comte"
+    }
+  },
+  "parmesan": {
+    "produit": "Parmesan, 125 g",
+    "conditionnement": {
+      "quantite": 125,
+      "unite": "g"
+    },
+    "aldi": "5017542",
+    "open_prices": {
+      "categorie_produit": "en:parmigiano-reggiano"
+    }
+  },
+  "ricotta": {
+    "produit": "Ricotta, 250 g",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:ricotta"
+    }
+  },
+  "cheddar-rape": {
+    "produit": "Cheddar râpé, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "aldi": "7929",
+    "open_prices": {
+      "categorie_produit": "en:cheddar"
+    }
+  },
+  "emmental-rape": {
+    "produit": "Emmental râpé, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "aldi": "6536",
+    "open_prices": {
+      "categorie_produit": "en:grated-emmental"
+    }
+  },
+  "mozzarella": {
+    "produit": "Mozzarella, 125 g",
+    "conditionnement": {
+      "quantite": 125,
+      "unite": "g"
+    },
+    "aldi": "6565",
+    "open_prices": {
+      "categorie_produit": "en:mozzarella"
+    }
+  },
+  "creme-legere-4": {
+    "produit": "Spécialité de crème légère 4 %, 20 cl",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "ml"
+    },
+    "open_prices": {
+      "categorie_produit": "fr:cremes-legeres"
+    }
+  },
+  "creme-legere-15": {
+    "produit": "Crème fraîche épaisse légère, 20 cl",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "ml"
+    },
+    "aldi": "5019249",
+    "open_prices": {
+      "categorie_produit": "fr:cremes-legeres"
+    }
+  },
+  "lait-demi": {
+    "produit": "Lait demi-écrémé UHT, 1 L",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "ml"
+    },
+    "aldi": "0600",
+    "open_prices": {
+      "categorie_produit": "en:semi-skimmed-milks"
+    }
+  },
+  "lait-concentre": {
+    "produit": "Lait concentré non sucré, 410 g",
+    "conditionnement": {
+      "quantite": 410,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:evaporated-milks"
+    }
+  },
+  "yaourt-grec": {
+    "produit": "Yaourt à la grecque nature, 600 g",
+    "conditionnement": {
+      "quantite": 600,
+      "unite": "g"
+    },
+    "aldi": "6704",
+    "open_prices": {
+      "categorie_produit": "en:greek-style-yogurts"
+    }
+  },
+  "fromage-blanc-0": {
+    "produit": "Fromage blanc 0 %, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:fresh-cheeses"
+    },
+    "aldi": "6555"
+  },
+  "fromage-frais-allege": {
+    "produit": "Fromage frais allégé, 150 g",
+    "conditionnement": {
+      "quantite": 150,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:cream-cheeses"
+    }
+  },
+  "riz-basmati": {
+    "produit": "Riz basmati, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "aldi": "1962",
+    "open_prices": {
+      "categorie_produit": "en:basmati-rices"
+    }
+  },
+  "riz-long": {
+    "produit": "Riz long grain, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "aldi": "7925",
+    "open_prices": {
+      "categorie_produit": "en:long-grain-rices"
+    }
+  },
+  "pates": {
+    "produit": "Penne ou spaghetti, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "aldi": "5006294",
+    "open_prices": {
+      "categorie_produit": "en:dry-pastas"
+    }
+  },
+  "lasagnes": {
+    "produit": "Feuilles de lasagnes, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "aldi": "1902",
+    "open_prices": {
+      "categorie_produit": "en:lasagna-sheets"
+    }
+  },
+  "nouilles-oeufs": {
+    "produit": "Nouilles façon asiatique, 250 g",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "aldi": "1990",
+    "open_prices": {
+      "categorie_produit": "en:egg-noodles"
+    }
+  },
+  "udon": {
+    "produit": "Udon frais précuits, 2 × 200 g",
+    "conditionnement": {
+      "quantite": 400,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:udon"
+    }
+  },
+  "tortilla-ble": {
+    "produit": "Tortillas de blé, 8 × 40 g",
+    "conditionnement": {
+      "quantite": 320,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:wraps",
+      "mots": [
+        "tortilla",
+        "wrap"
+      ],
+      "exclure": [
+        "poulet",
+        "thon",
+        "jambon",
+        "saumon",
+        "fromage",
+        "sandwich",
+        "kebab",
+        "falafel",
+        "chips"
+      ]
+    }
+  },
+  "pain-complet": {
+    "produit": "Pain complet tranché, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:wholemeal-breads"
+    }
+  },
+  "pomme-de-terre": {
+    "produit": "Pommes de terre, filet 2 kg",
+    "conditionnement": {
+      "quantite": 2000,
+      "unite": "g"
+    },
+    "open_prices": {
+      "category_tag": "en:potatoes"
+    }
+  },
+  "chapelure": {
+    "produit": "Chapelure, 400 g",
+    "conditionnement": {
+      "quantite": 400,
+      "unite": "g"
+    },
+    "aldi": "1707",
+    "open_prices": {
+      "categorie_produit": "en:breadcrumbs"
+    }
+  },
+  "farine": {
+    "produit": "Farine de blé T65, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "aldi": "0510",
+    "open_prices": {
+      "categorie_produit": "en:wheat-flours"
+    }
+  },
+  "fecule-mais": {
+    "produit": "Fécule de maïs, 400 g",
+    "conditionnement": {
+      "quantite": 400,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:corn-starch"
+    }
+  },
+  "oignon": {
+    "produit": "Oignons jaunes, filet 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "open_prices": {
+      "category_tag": "en:yellow-onions"
+    }
+  },
+  "oignon-rouge": {
+    "produit": "Oignons rouges, filet 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "open_prices": {
+      "category_tag": "en:red-onions"
+    }
+  },
+  "ail": {
+    "produit": "Ail, filet 100 g",
+    "conditionnement": {
+      "quantite": 100,
+      "unite": "g"
+    },
+    "aldi": "5005892",
+    "open_prices": {
+      "category_tag": "en:garlic"
+    }
+  },
+  "echalote": {
+    "produit": "Échalotes, filet 250 g",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "open_prices": {
+      "category_tag": "en:shallots"
+    }
+  },
+  "cebette": {
+    "produit": "Cébettes (oignons nouveaux), botte",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 100,
+    "open_prices": {
+      "category_tag": "en:spring-onions"
+    }
+  },
+  "carotte": {
+    "produit": "Carottes, sachet 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "open_prices": {
+      "category_tag": "en:carrots"
+    }
+  },
+  "courgette": {
+    "produit": "Courgette (au détail)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 250,
+    "open_prices": {
+      "category_tag": "en:zucchini"
+    }
+  },
+  "poivron-rouge": {
+    "produit": "Poivron rouge (au détail)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 180,
+    "open_prices": {
+      "category_tag": "en:red-bell-peppers"
+    }
+  },
+  "poivron-jaune": {
+    "produit": "Poivron jaune (au détail)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 180,
+    "open_prices": {
+      "category_tag": "en:peppers"
+    }
+  },
+  "tomate": {
+    "produit": "Tomates rondes, au kilo",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "open_prices": {
+      "category_tag": "en:tomatoes"
+    }
+  },
+  "tomates-cerises": {
+    "produit": "Tomates cerises, barquette 250 g",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "open_prices": {
+      "category_tag": "en:cherry-tomatoes"
+    }
+  },
+  "tomates-concassees": {
+    "produit": "Tomates concassées en conserve, 400 g",
+    "conditionnement": {
+      "quantite": 400,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:canned-tomatoes",
+      "mots": [
+        "concass",
+        "pelee",
+        "pelees",
+        "morceaux",
+        "en des"
+      ]
+    }
+  },
+  "pulpe-tomate": {
+    "produit": "Pulpe de tomates, 400 g",
+    "conditionnement": {
+      "quantite": 400,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:tomato-pulps",
+      "mots": [
+        "pulpe"
+      ]
+    }
+  },
+  "concentre-tomate": {
+    "produit": "Double concentré de tomates, 140 g",
+    "conditionnement": {
+      "quantite": 140,
+      "unite": "g"
+    },
+    "aldi": "5011922",
+    "open_prices": {
+      "categorie_produit": "en:tomato-pastes"
+    }
+  },
+  "coulis-tomate": {
+    "produit": "Purée de tomates (coulis), 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "aldi": "4325",
+    "open_prices": {
+      "categorie_produit": "en:tomato-purees"
+    }
+  },
+  "tomates-sechees": {
+    "produit": "Tomates séchées à l'huile, bocal 280 g (égoutté 180 g)",
+    "conditionnement": {
+      "quantite": 180,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:dried-tomatoes"
+    }
+  },
+  "epinards-pousses": {
+    "produit": "Épinards frais (pousses), au kilo",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "open_prices": {
+      "category_tag": "en:spinachs"
+    }
+  },
+  "epinards-surgeles": {
+    "produit": "Épinards en branches surgelés, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:frozen-spinachs"
+    }
+  },
+  "brocoli-surgele": {
+    "produit": "Brocolis en fleurettes surgelés, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "aldi": "1643",
+    "open_prices": {
+      "categorie_produit": "en:frozen-broccoli"
+    }
+  },
+  "champignons": {
+    "produit": "Champignons de Paris, barquette 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "open_prices": {
+      "category_tag": "en:mushrooms"
+    }
+  },
+  "poireau": {
+    "produit": "Poireaux, botte de 3",
+    "conditionnement": {
+      "quantite": 3,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 200,
+    "open_prices": {
+      "category_tag": "en:leeks"
+    }
+  },
+  "celeri-branche": {
+    "produit": "Céleri branche, pied",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 500,
+    "open_prices": {
+      "category_tag": "en:celery"
+    }
+  },
+  "mais": {
+    "produit": "Maïs doux en conserve, 285 g égoutté",
+    "conditionnement": {
+      "quantite": 285,
+      "unite": "g"
+    },
+    "aldi": "4335",
+    "open_prices": {
+      "categorie_produit": "en:canned-sweet-corn"
+    }
+  },
+  "petits-pois": {
+    "produit": "Petits pois extra fins surgelés, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "aldi": "1861",
+    "open_prices": {
+      "categorie_produit": "en:frozen-peas"
+    }
+  },
+  "haricots-verts": {
+    "produit": "Haricots verts extra fins surgelés, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "aldi": "1646",
+    "open_prices": {
+      "categorie_produit": "en:frozen-green-beans"
+    }
+  },
+  "concombre": {
+    "produit": "Concombre (à la pièce)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 300,
+    "open_prices": {
+      "category_tag": "en:cucumbers"
+    }
+  },
+  "aubergine": {
+    "produit": "Aubergine (au détail)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 300,
+    "open_prices": {
+      "category_tag": "en:aubergines"
+    }
+  },
+  "pak-choi": {
+    "produit": "Pak choï, au kilo",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "open_prices": {
+      "category_tag": "en:bok-choy"
+    }
+  },
+  "chou-rave": {
+    "produit": "Chou-rave (à la pièce)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 400,
+    "open_prices": {
+      "category_tag": "en:kohlrabi"
+    }
+  },
+  "laitue": {
+    "produit": "Laitue (à la pièce)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 300,
+    "open_prices": {
+      "category_tag": "en:lettuces"
+    }
+  },
+  "avocat": {
+    "produit": "Avocat (à la pièce)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 140,
+    "open_prices": {
+      "category_tag": "en:avocados"
+    }
+  },
+  "citron": {
+    "produit": "Citron jaune (à la pièce)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 120,
+    "open_prices": {
+      "category_tag": "en:lemons"
+    }
+  },
+  "citron-vert": {
+    "produit": "Citron vert (à la pièce)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 70,
+    "open_prices": {
+      "category_tag": "en:limes"
+    }
+  },
+  "huile-olive": {
+    "produit": "Huile d'olive vierge extra, 50 cl",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "ml"
+    },
+    "aldi": "5000354",
+    "open_prices": {
+      "categorie_produit": "en:extra-virgin-olive-oils"
+    }
+  },
+  "huile-sesame": {
+    "produit": "Huile de sésame, 25 cl",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "ml"
+    },
+    "open_prices": {
+      "categorie_produit": "en:sesame-oils"
+    }
+  },
+  "lait-coco": {
+    "produit": "Lait de coco, 40 cl",
+    "conditionnement": {
+      "quantite": 400,
+      "unite": "ml"
+    },
+    "aldi": "5002342",
+    "open_prices": {
+      "categorie_produit": "en:coconut-milks"
+    }
+  },
+  "pesto": {
+    "produit": "Pesto vert, 190 g",
+    "conditionnement": {
+      "quantite": 190,
+      "unite": "g"
+    },
+    "aldi": "2924",
+    "open_prices": {
+      "categorie_produit": "en:pesto"
+    }
+  },
+  "sauce-soja": {
+    "produit": "Sauce soja salée, 25 cl",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "ml"
+    },
+    "open_prices": {
+      "categorie_produit": "en:soy-sauces",
+      "mots": [
+        "soja",
+        "soy"
+      ],
+      "exclure": [
+        "sucr",
+        "sweet"
+      ]
+    }
+  },
+  "sauce-huitre": {
+    "produit": "Sauce d'huître, 25 cl",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "ml"
+    },
+    "open_prices": {
+      "categorie_produit": "en:oyster-sauces"
+    }
+  },
+  "miel": {
+    "produit": "Miel, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:honeys"
+    }
+  },
+  "sucre-roux": {
+    "produit": "Sucre roux, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:brown-sugars"
+    }
+  },
+  "vinaigre": {
+    "produit": "Vinaigre blanc ou de cidre, 1 L",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "ml"
+    },
+    "open_prices": {
+      "categorie_produit": "en:vinegars",
+      "mots": [
+        "vinaigre blanc",
+        "vinaigre d'alcool",
+        "vinaigre de cidre",
+        "vinaigre cristal"
+      ]
+    }
+  },
+  "vinaigre-balsamique": {
+    "produit": "Vinaigre balsamique, 50 cl",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "ml"
+    },
+    "open_prices": {
+      "categorie_produit": "en:balsamic-vinegars"
+    }
+  },
+  "moutarde": {
+    "produit": "Moutarde de Dijon, 370 g",
+    "conditionnement": {
+      "quantite": 370,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:dijon-mustards"
+    }
+  },
+  "bouillon-legumes": {
+    "produit": "Bouillon de légumes, 12 cubes de 10 g",
+    "conditionnement": {
+      "quantite": 120,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:bouillon-cubes"
+    }
+  },
+  "bouillon-volaille": {
+    "produit": "Bouillon de volaille, 12 cubes de 10 g",
+    "conditionnement": {
+      "quantite": 120,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:bouillon-cubes"
+    }
+  },
+  "curry": {
+    "produit": "Curry en poudre, 45 g",
+    "conditionnement": {
+      "quantite": 45,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:curry-powders"
+    }
+  },
+  "cumin": {
+    "produit": "Cumin moulu, 40 g",
+    "conditionnement": {
+      "quantite": 40,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:cumin"
+    }
+  },
+  "paprika": {
+    "produit": "Paprika, 45 g",
+    "conditionnement": {
+      "quantite": 45,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:paprika"
+    }
+  },
+  "curcuma": {
+    "produit": "Curcuma, 40 g",
+    "conditionnement": {
+      "quantite": 40,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:turmeric"
+    }
+  },
+  "gingembre-poudre": {
+    "produit": "Gingembre moulu, 35 g",
+    "conditionnement": {
+      "quantite": 35,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:spices"
+    }
+  },
+  "gingembre-frais": {
+    "produit": "Gingembre frais, au kilo",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "open_prices": {
+      "category_tag": "en:ginger"
+    }
+  },
+  "herbes-provence": {
+    "produit": "Herbes de Provence, 20 g",
+    "conditionnement": {
+      "quantite": 20,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:herbes-de-provence"
+    }
+  },
+  "origan": {
+    "produit": "Origan séché, 15 g",
+    "conditionnement": {
+      "quantite": 15,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:oregano"
+    }
+  },
+  "ail-poudre": {
+    "produit": "Ail en poudre, 50 g",
+    "conditionnement": {
+      "quantite": 50,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:garlic-powder"
+    }
+  },
+  "persil": {
+    "produit": "Persil plat, botte",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 30,
+    "open_prices": {
+      "category_tag": "en:parsley"
+    }
+  },
+  "basilic": {
+    "produit": "Basilic, botte",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 25,
+    "open_prices": {
+      "category_tag": "en:basil"
+    }
+  },
+  "coriandre": {
+    "produit": "Coriandre, botte",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 30,
+    "open_prices": {
+      "category_tag": "en:coriander-leaves"
+    }
+  },
+  "ciboulette": {
+    "produit": "Ciboulette, botte",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 25,
+    "open_prices": {
+      "category_tag": "en:chives"
+    }
+  },
+  "capres": {
+    "produit": "Câpres, 70 g égouttés",
+    "conditionnement": {
+      "quantite": 70,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:capers"
+    }
+  },
+  "anchois": {
+    "produit": "Filets d'anchois marinés, 100 g",
+    "conditionnement": {
+      "quantite": 100,
+      "unite": "g"
+    },
+    "aldi": "6806",
+    "open_prices": {
+      "categorie_produit": "en:anchovies"
+    }
+  },
+  "olives-noires": {
+    "produit": "Olives noires en saumure, 150 g égouttées",
+    "conditionnement": {
+      "quantite": 150,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:black-olives"
+    }
+  },
+  "noix-cajou": {
+    "produit": "Noix de cajou nature, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:cashew-nuts"
+    }
+  },
+  "tahini": {
+    "produit": "Purée de sésame (tahini), 250 g",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:tahini"
+    }
+  },
+  "vin-rouge": {
+    "produit": "Vin rouge, 75 cl",
+    "conditionnement": {
+      "quantite": 750,
+      "unite": "ml"
+    },
+    "open_prices": {
+      "categorie_produit": "en:red-wines"
+    }
+  }
+}

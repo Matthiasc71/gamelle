@@ -200,6 +200,8 @@ export const IngredientCatalogue = z.object({
   /** Libellé Ciqual, recopié pour relecture humaine (vérifié par validate). */
   ciqual_nom: z.string(),
   rayon: Rayon,
+  /** État dans lequel l'ingrédient est pesé dans les recettes (correspond à la ligne Ciqual). */
+  etat: z.enum(['cru', 'cuit', 'égoutté']).default('cru'),
   /** Où il se range une fois acheté. */
   rangement: z.enum(['frigo', 'congelateur', 'placard']),
   /** Durée de conservation après achat, paquet ouvert compris (jours). */
