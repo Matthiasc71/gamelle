@@ -15,7 +15,8 @@
     "compute": "tsx scripts/compute.ts",
     "validate": "tsx scripts/validate.ts",
     "add-recipe": "tsx scripts/add-recipe.ts",
-    "typecheck": "tsc -b"
+    "typecheck": "tsc -b",
+    "aldi": "tsx scripts/aldi-catalogue.ts"
   },
   "dependencies": {
     "dexie": "^4.4.7",

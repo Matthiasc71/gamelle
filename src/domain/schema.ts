@@ -204,6 +204,8 @@ export const IngredientCatalogue = z.object({
   rangement: z.enum(['frigo', 'congelateur', 'placard']),
   /** Durée de conservation après achat, paquet ouvert compris (jours). */
   conservation_jours: z.number().int().positive(),
+  /** Compte comme légume pour la règle « au moins une portion (80 g) de légumes par repas ». */
+  legume: z.boolean().default(false),
   note: z.string().optional(),
 });
 export type IngredientCatalogue = z.infer<typeof IngredientCatalogue>;
