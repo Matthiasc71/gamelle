@@ -1,0 +1,233 @@
+{
+  "id": "enchiladas-boeuf-poivrons",
+  "slug": "enchiladas-boeuf-poivrons",
+  "nom": "Enchiladas au bœuf haché et poivrons",
+  "resume": "Tortillas garnies de bœuf haché, poivrons et tomate épicés au cumin et au paprika, gratinées au cheddar.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 30,
+    "total_min": 40,
+    "actif_min": 20
+  },
+  "equipement": [
+    "plaques",
+    "four"
+  ],
+  "saison": [
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "cuisine": "mexicaine",
+  "proteine_principale": "boeuf",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "wrap",
+  "ingredients": [
+    {
+      "ingredient": "boeuf-hache-5",
+      "nom_affiche": "bœuf haché",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "6250",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poivron-rouge",
+      "nom_affiche": "poivrons rouges",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 360,
+      "optionnel": false,
+      "ciqual_code": "20087",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poivron-vert",
+      "nom_affiche": "poivrons verts",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "20085",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomate",
+      "nom_affiche": "tomates",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "20276",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "concentre-tomate",
+      "nom_affiche": "concentré de tomates",
+      "quantite": 70,
+      "unite": "g",
+      "poids_g": 70,
+      "optionnel": false,
+      "mesure_affichee": "1 petite boîte",
+      "ciqual_code": "20068",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "cumin",
+      "nom_affiche": "cumin",
+      "quantite": 1,
+      "unite": "g",
+      "poids_g": 1,
+      "optionnel": false,
+      "mesure_affichee": "½ c. à café",
+      "ciqual_code": "11042",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "paprika",
+      "nom_affiche": "paprika",
+      "quantite": 2,
+      "unite": "g",
+      "poids_g": 2,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11049",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail-poudre",
+      "nom_affiche": "ail semoule",
+      "quantite": 2,
+      "unite": "g",
+      "poids_g": 2,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11023",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 10,
+      "unite": "ml",
+      "poids_g": 9.2,
+      "optionnel": false,
+      "mesure_affichee": "un filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tortilla-ble",
+      "nom_affiche": "tortillas de blé complet",
+      "quantite": 8,
+      "unite": "pièce",
+      "poids_g": 320,
+      "optionnel": false,
+      "mesure_affichee": "8 tortillas (environ 320 g)",
+      "ciqual_code": "7815",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "cheddar-rape",
+      "nom_affiche": "cheddar râpé",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "12726",
+      "rayon": "frais",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Taille les poivrons en lanières et les tomates en gros cubes.",
+      "duree_min": 8,
+      "actif": true
+    },
+    {
+      "texte": "Dans une sauteuse huilée, fais griller la viande 5 minutes, ajoute les poivrons et poursuis 3 minutes.",
+      "duree_min": 8,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 480
+    },
+    {
+      "texte": "Ajoute tomates, concentré et épices, sale, poivre et laisse mijoter 10 minutes à feu doux. Préchauffe le four à 180 °C.",
+      "duree_min": 10,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    },
+    {
+      "texte": "Garnis et roule les tortillas, range-les dans un plat, couvre de cheddar et enfourne 15 minutes.",
+      "duree_min": 18,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 900
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/enchiladas-au-boeuf-hache-et-poivrons/",
+      "titre": "Enchiladas au boeuf haché et poivrons",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/Ddq4pD2DTwb/",
+      "titre": "Menu de batch cooking d’automne (enchiladas, quiche sans pâte, aubergines)",
+      "auteur": "@cuisineaddict",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "article-meme-createur",
+      "oembed": {
+        "author_name": "@cuisineaddict",
+        "title": "🍂 On passe officiellement en mode automne avec ce nouveau menu de Batch Cooking !",
+        "thumbnail_url": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/797841846_18627381742050969_5268080142118955839_n.heic?stp=dst-jpg_e35_sh2.08_tt6&_nc_cat=107&ig_cache_key=Mzk5MzI1MTkzNTMzMzc5OTA2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=QSz0h-cGMIEQ7kNvwHKX8vI&_nc_oc=AdrVtEqTOtb6SBuplJ1XM0hYnGk3st8wcGBtd1zCHcvfLTG-osCn0WDR_K6n8oAiwlk&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_gid=LeIDw7Flf2kWE5KEiXwnhQ&_nc_ss=7c689&oh=00_AQR8F4FitdAFWj7xXEOVp_0FjnOb3zG-AuVPvBfmdSxCjg&oe=6AF7C71A"
+      }
+    }
+  ],
+  "adaptation": "Tortillas pesées à 40 g pièce et huile (« un filet ») comptée 2 c. à café : estimations. Tabasco facultatif.",
+  "kcal_annoncees_par_part": 431,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 543,
+    "proteines_g": 34.4,
+    "glucides_g": 57.7,
+    "lipides_g": 17.8,
+    "fibres_g": 9.6,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 4.56,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

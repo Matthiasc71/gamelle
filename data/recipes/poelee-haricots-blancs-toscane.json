@@ -1,0 +1,198 @@
+{
+  "id": "poelee-haricots-blancs-toscane",
+  "slug": "poelee-haricots-blancs-toscane",
+  "nom": "Poêlée de haricots blancs à la toscane",
+  "resume": "Haricots blancs, pak choï, tomates fraîches et séchées, liés au parmesan fondu.",
+  "type": "batch",
+  "portions_base": 3,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 22,
+    "total_min": 32,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "cuisine": "italienne",
+  "proteine_principale": "legumineuses",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "poelee",
+  "ingredients": [
+    {
+      "ingredient": "pak-choi",
+      "nom_affiche": "pak choï",
+      "quantite": 500,
+      "unite": "g",
+      "poids_g": 500,
+      "optionnel": false,
+      "mesure_affichee": "2 pieds",
+      "ciqual_code": "20340",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomate",
+      "nom_affiche": "tomates",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 240,
+      "optionnel": false,
+      "ciqual_code": "20276",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon jaune",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "2 gousses",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "parmesan",
+      "nom_affiche": "parmesan râpé",
+      "quantite": 90,
+      "unite": "g",
+      "poids_g": 90,
+      "optionnel": false,
+      "ciqual_code": "12120",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomates-sechees",
+      "nom_affiche": "tomates séchées",
+      "quantite": 180,
+      "unite": "g",
+      "poids_g": 180,
+      "optionnel": false,
+      "mesure_affichee": "1 bocal",
+      "ciqual_code": "20256",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "haricots-blancs",
+      "nom_affiche": "haricots blancs égouttés",
+      "quantite": 330,
+      "unite": "g",
+      "poids_g": 330,
+      "optionnel": false,
+      "mesure_affichee": "1 boîte de 550 ml",
+      "ciqual_code": "20511",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile des tomates séchées",
+      "quantite": 30,
+      "unite": "ml",
+      "poids_g": 27.5,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à soupe",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cisèle l'oignon, presse l'ail, coupe le pak choï en tronçons (feuilles hachées), les tomates en dés et les tomates séchées en morceaux. Rince et égoutte les haricots.",
+      "duree_min": 10,
+      "actif": true
+    },
+    {
+      "texte": "Chauffe 2 c. à soupe d'huile des tomates séchées dans une sauteuse, ajoute pak choï, oignon, ail et tomates séchées et laisse cuire 5 minutes en remuant.",
+      "duree_min": 5,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 300
+    },
+    {
+      "texte": "Ajoute les dés de tomate et les haricots et laisse cuire encore 15 minutes en remuant.",
+      "duree_min": 15,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 900
+    },
+    {
+      "texte": "Ajoute le parmesan, mélange et laisse fondre 2 minutes.",
+      "duree_min": 2,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 120
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/poelee-haricots-blancs-toscane/",
+      "titre": "Poêlée de haricots blancs à la Toscane",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/C8KYeqyIrnR/",
+      "titre": "Menu de batch cooking semaine 25 (juin 2024)",
+      "auteur": "@cuisineaddict",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "article-meme-createur",
+      "oembed": {
+        "author_name": "@cuisineaddict",
+        "title": "MENU DE BATCH COOKING SEMAINE 25 - JUIN 2024",
+        "thumbnail_url": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/669477342_18109509286842523_3833837825332657371_n.webp?_nc_cat=106&ig_cache_key=MzM4OTYyOTMxNzY0NzU5Mzk1MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=7Z8DgkI4Tb0Q7kNvwH2xnpM&_nc_oc=AdoN1I-I0LVT1wPDx17YoSeXD6XJJaTAp8oBgydp5UubPYr85pw3aXyAVYAzzgziETc&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&_nc_gid=-PE6UjMmrN1lXn0rFNeNJA&_nc_ss=7c689&oh=00_AQRLDTNKL3_2ydqu9b90Xu9F8Y_R3Ogm3DoHpVtThR85TQ&oe=6AF7DD91"
+      }
+    }
+  ],
+  "adaptation": "La recette pour 4 est servie en 3 parts. Bocal de tomates séchées compté 180 g, boîte de haricots 330 g égouttés, pak choï 250 g pièce (estimations).",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 465,
+    "proteines_g": 22.3,
+    "glucides_g": 24.6,
+    "lipides_g": 27.7,
+    "fibres_g": 14.4,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 3.81,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

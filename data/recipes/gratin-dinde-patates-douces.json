@@ -1,0 +1,198 @@
+{
+  "id": "gratin-dinde-patates-douces",
+  "slug": "gratin-dinde-patates-douces",
+  "nom": "Gratin de dinde aux patates douces",
+  "resume": "Patates douces rôties au paprika fumé, dés de dinde saisis et cheddar fondu.",
+  "type": "batch",
+  "portions_base": 3,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 50,
+    "total_min": 60,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques",
+    "four"
+  ],
+  "saison": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cuisine": "française",
+  "proteine_principale": "dinde",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "gratin",
+  "ingredients": [
+    {
+      "ingredient": "dinde-escalope",
+      "nom_affiche": "filet de dinde",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "36304",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "patate-douce",
+      "nom_affiche": "patates douces",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "4101",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pak-choi",
+      "nom_affiche": "pak choï",
+      "quantite": 250,
+      "unite": "g",
+      "poids_g": 250,
+      "optionnel": true,
+      "mesure_affichee": "1 pied",
+      "ciqual_code": "20340",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "cheddar-rape",
+      "nom_affiche": "cheddar râpé",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "12726",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon jaune",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "2 gousses",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "bouillon-legumes",
+      "nom_affiche": "bouillon cube",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "1 cube",
+      "ciqual_code": "11041",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 13.7,
+      "optionnel": false,
+      "mesure_affichee": "un filet + un filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "paprika",
+      "nom_affiche": "paprika fumé",
+      "quantite": 2,
+      "unite": "g",
+      "poids_g": 2,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11049",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Préchauffe le four à 180 °C. Émince l'oignon, presse l'ail, coupe les patates douces en dés et le pak choï en lanières.",
+      "duree_min": 10,
+      "actif": true
+    },
+    {
+      "texte": "Mets-les dans un plat, arrose d'huile, sale, poivre, saupoudre de paprika (et de cumin si tu veux), émiette le bouillon, ajoute 15 cl d'eau, couvre et enfourne 20 minutes.",
+      "duree_min": 20,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 1200
+    },
+    {
+      "texte": "Pendant ce temps, coupe la dinde en dés et colore-la vivement dans une poêle huilée, sans la cuire à cœur. Ajoute-la aux légumes.",
+      "duree_min": 6,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 300
+    },
+    {
+      "texte": "Parsème de cheddar et enfourne encore 20 à 25 minutes.",
+      "duree_min": 23,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 1380
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/gratin-de-dinde-aux-patates-douces/",
+      "titre": "Gratin de dinde aux patates douces",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "La recette pour 4 est servie en 3 parts. Huile comptée 1 c. à soupe en tout (estimation). Pak choï facultatif dans la source.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 455,
+    "proteines_g": 42.9,
+    "glucides_g": 26.9,
+    "lipides_g": 18.3,
+    "fibres_g": 5,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.41,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

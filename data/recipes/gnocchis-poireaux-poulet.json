@@ -1,0 +1,185 @@
+{
+  "id": "gnocchis-poireaux-poulet",
+  "slug": "gnocchis-poireaux-poulet",
+  "nom": "Gnocchis gratinés aux poireaux et poulet",
+  "resume": "Poulet doré et poireaux fondus, gnocchis cuits dans le bouillon, un peu de crème et de mozzarella, passés au four.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 30,
+    "total_min": 40,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques",
+    "four"
+  ],
+  "saison": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cuisine": "française",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "gratin",
+  "ingredients": [
+    {
+      "ingredient": "gnocchis",
+      "nom_affiche": "gnocchis",
+      "quantite": 500,
+      "unite": "g",
+      "poids_g": 500,
+      "optionnel": false,
+      "ciqual_code": "26264",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "escalopes de poulet",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poireau",
+      "nom_affiche": "poireaux",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "20039",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 gousse",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "bouillon-volaille",
+      "nom_affiche": "bouillon cube",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "1 cube",
+      "ciqual_code": "11174",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "creme-liquide",
+      "nom_affiche": "crème liquide",
+      "quantite": 150,
+      "unite": "ml",
+      "poids_g": 150,
+      "optionnel": false,
+      "mesure_affichee": "15 cl",
+      "ciqual_code": "19417",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "mozzarella",
+      "nom_affiche": "mozzarella râpée",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "19590",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 10,
+      "unite": "ml",
+      "poids_g": 9.2,
+      "optionnel": false,
+      "mesure_affichee": "un filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Préchauffe le four à 180 °C. Fends les poireaux en quatre, rince-les et émince-les (blanc et vert). Coupe le poulet en dés de 2 cm.",
+      "duree_min": 8,
+      "actif": true
+    },
+    {
+      "texte": "Fais dorer le poulet dans un filet d'huile, ajoute poireaux et ail pressé, sale, poivre et laisse cuire 5 minutes en remuant.",
+      "duree_min": 10,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    },
+    {
+      "texte": "Émiette le bouillon dessus, verse 30 cl d'eau, ajoute les gnocchis, mélange et transvase dans un plat.",
+      "duree_min": 3,
+      "actif": true
+    },
+    {
+      "texte": "Ajoute la crème, couvre de fromage et enfourne 20 minutes.",
+      "duree_min": 20,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 1200
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/gnocchis-aux-poireaux-et-poulet/",
+      "titre": "Gnocchis aux poireaux et poulet",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Huile (« un filet ») comptée 2 c. à café (estimation).",
+  "kcal_annoncees_par_part": 444,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 554,
+    "proteines_g": 36.1,
+    "glucides_g": 50.5,
+    "lipides_g": 21.8,
+    "fibres_g": 4.6,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.86,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

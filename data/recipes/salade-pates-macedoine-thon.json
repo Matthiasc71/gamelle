@@ -1,0 +1,151 @@
+{
+  "id": "salade-pates-macedoine-thon",
+  "slug": "salade-pates-macedoine-thon",
+  "nom": "Salade de pâtes à la macédoine et au thon",
+  "resume": "Pâtes froides, thon, macédoine de légumes et poivrons grillés, liés à la mayonnaise.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 10,
+    "total_min": 15,
+    "actif_min": 5
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "française",
+  "proteine_principale": "thon",
+  "creneaux": [
+    "midi"
+  ],
+  "illustration": "salade",
+  "ingredients": [
+    {
+      "ingredient": "pates",
+      "nom_affiche": "pâtes courtes",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "9810",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "thon-naturel",
+      "nom_affiche": "thon au naturel égoutté",
+      "quantite": 280,
+      "unite": "g",
+      "poids_g": 280,
+      "optionnel": false,
+      "mesure_affichee": "1 grosse boîte",
+      "ciqual_code": "26039",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "macedoine",
+      "nom_affiche": "macédoine de légumes égouttée",
+      "quantite": 300,
+      "unite": "g",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "20051",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "poivrons-grilles",
+      "nom_affiche": "poivrons marinés égouttés",
+      "quantite": 180,
+      "unite": "g",
+      "poids_g": 180,
+      "optionnel": false,
+      "mesure_affichee": "1 petit bocal",
+      "ciqual_code": "20275",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "mayonnaise",
+      "nom_affiche": "mayonnaise",
+      "quantite": 45,
+      "unite": "g",
+      "poids_g": 45,
+      "optionnel": false,
+      "mesure_affichee": "3 c. à soupe",
+      "ciqual_code": "11054",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "un trait",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cuis les pâtes le temps indiqué, rafraîchis-les à l'eau froide et égoutte.",
+      "duree_min": 11,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Dans un saladier, mélange le thon émietté, la macédoine et les poivrons égouttés avec la mayonnaise et un trait d'huile.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Ajoute les pâtes, mélange, rectifie l'assaisonnement et garde au frais.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/salade-pates-macedoine-thon/",
+      "titre": "Salade de pâtes à la macédoine et au thon",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "« 1 grosse boîte » de thon comptée 280 g égouttés et le petit bocal de poivrons 180 g égouttés (estimations).",
+  "kcal_annoncees_par_part": 464,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 594,
+    "proteines_g": 33.1,
+    "glucides_g": 79.3,
+    "lipides_g": 14.2,
+    "fibres_g": 5.9,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.81,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

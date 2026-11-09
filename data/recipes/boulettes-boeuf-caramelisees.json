@@ -1,0 +1,255 @@
+{
+  "id": "boulettes-boeuf-caramelisees",
+  "slug": "boulettes-boeuf-caramelisees",
+  "nom": "Boulettes de bœuf caramélisées et légumes rôtis",
+  "resume": "Boulettes de bœuf enrobées d'une sauce barbecue, érable et moutarde, rôties avec champignons, oignon rouge et haricots verts.",
+  "type": "batch",
+  "portions_base": 3,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 15,
+    "cuisson_min": 25,
+    "total_min": 40,
+    "actif_min": 20
+  },
+  "equipement": [
+    "four"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "américaine",
+  "proteine_principale": "boeuf",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "poelee",
+  "ingredients": [
+    {
+      "ingredient": "boeuf-hache-5",
+      "nom_affiche": "viande hachée",
+      "quantite": 500,
+      "unite": "g",
+      "poids_g": 500,
+      "optionnel": false,
+      "ciqual_code": "6250",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "chapelure",
+      "nom_affiche": "chapelure",
+      "quantite": 45,
+      "unite": "g",
+      "poids_g": 45,
+      "optionnel": false,
+      "mesure_affichee": "3 c. à soupe",
+      "ciqual_code": "7500",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "echalote",
+      "nom_affiche": "échalote",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 30,
+      "optionnel": false,
+      "ciqual_code": "20097",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 gousse",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oeuf",
+      "nom_affiche": "œuf",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 55,
+      "optionnel": false,
+      "ciqual_code": "22000",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "herbes-provence",
+      "nom_affiche": "herbes séchées",
+      "quantite": 1,
+      "unite": "g",
+      "poids_g": 1,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11060",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "sauce-barbecue",
+      "nom_affiche": "sauce barbecue",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "11100",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "sirop-erable",
+      "nom_affiche": "sirop d'érable",
+      "quantite": 40,
+      "unite": "g",
+      "poids_g": 40,
+      "optionnel": false,
+      "ciqual_code": "31034",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "moutarde",
+      "nom_affiche": "moutarde à l'ancienne",
+      "quantite": 15,
+      "unite": "g",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11013",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "champignons",
+      "nom_affiche": "champignons de Paris",
+      "quantite": 250,
+      "unite": "g",
+      "poids_g": 250,
+      "optionnel": false,
+      "ciqual_code": "20056",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon-rouge",
+      "nom_affiche": "oignon rouge",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20238",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "haricots-verts",
+      "nom_affiche": "haricots verts",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20070",
+      "rayon": "surgeles",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 10,
+      "unite": "ml",
+      "poids_g": 9.2,
+      "optionnel": false,
+      "mesure_affichee": "un filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Préchauffe le four à 180 °C. Coupe les champignons en quatre, l'oignon en fines tranches, cisèle l'échalote et presse l'ail.",
+      "duree_min": 8,
+      "actif": true
+    },
+    {
+      "texte": "Mélange la viande, la chapelure, l'échalote, l'ail, l'œuf et les herbes, sale et poivre bien, puis forme des boulettes d'environ 30 g.",
+      "duree_min": 10,
+      "actif": true
+    },
+    {
+      "texte": "Mélange sauce barbecue, sirop d'érable et moutarde, roules-y les boulettes et pose-les sur une plaque avec les légumes autour. Arrose d'un filet d'huile.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Enfourne 20 à 25 minutes.",
+      "duree_min": 23,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 1380
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/boulettes-de-boeuf-caramelisees/",
+      "titre": "Boulettes de boeuf caramélisées",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/C3F7n0oIzF8/",
+      "titre": "Menu de batch cooking semaine 7 (février 2024)",
+      "auteur": "@cuisineaddict",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "article-meme-createur",
+      "oembed": {
+        "author_name": "@cuisineaddict",
+        "title": "MENU DE BATCH COOKING SEMAINE 7 - FÉVRIER 2024",
+        "thumbnail_url": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/654381427_18096688541058773_8325828687341208547_n.webp?_nc_cat=108&ig_cache_key=MzI5ODMwNDUxMjg2OTIyNTExMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=lFTtmrWrMfIQ7kNvwHEoWhn&_nc_oc=AdqcZjOtXeIutqfqUN-akKHSFM91eSJoX0pmOq9V8lbmI3CjIxLLMJ53sH6779dZYoA&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&_nc_gid=rb1qhxOzh9JVAENUcoOdBA&_nc_ss=7c689&oh=00_AQSAmIYuHSnZECY0pFUHM2t65w1XlU-idzOuGtBf8b3CWA&oe=6AF7CEAD"
+      }
+    }
+  ],
+  "adaptation": "La source donne 25 boulettes sans nombre de parts : comptées ici en 3 repas. Huile comptée 2 c. à café (estimation).",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 474,
+    "proteines_g": 44.5,
+    "glucides_g": 39.1,
+    "lipides_g": 14.2,
+    "fibres_g": 5.1,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 4.27,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "id": "boeuf-hache-coreenne",
+  "slug": "boeuf-hache-coreenne",
+  "nom": "Bœuf haché à la coréenne, riz et courgettes",
+  "resume": "Bœuf haché caramélisé dans une sauce soja, sucre, ail et gingembre, avec du riz et des courgettes à la vapeur.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 20,
+    "total_min": 30,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques",
+    "rice-cooker"
+  ],
+  "saison": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "cuisine": "coréenne",
+  "proteine_principale": "boeuf",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "poelee",
+  "ingredients": [
+    {
+      "ingredient": "boeuf-hache-5",
+      "nom_affiche": "bœuf haché",
+      "quantite": 500,
+      "unite": "g",
+      "poids_g": 500,
+      "optionnel": false,
+      "ciqual_code": "6250",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon jaune",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 3,
+      "unite": "pièce",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "3 gousses",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "gingembre-frais",
+      "nom_affiche": "gingembre frais",
+      "quantite": 8,
+      "unite": "g",
+      "poids_g": 8,
+      "optionnel": false,
+      "mesure_affichee": "1,5 cm",
+      "ciqual_code": "11074",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "sauce-soja",
+      "nom_affiche": "sauce soja",
+      "quantite": 60,
+      "unite": "ml",
+      "poids_g": 60,
+      "optionnel": false,
+      "mesure_affichee": "6 cl",
+      "ciqual_code": "11104",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "sucre-roux",
+      "nom_affiche": "cassonade",
+      "quantite": 25,
+      "unite": "g",
+      "poids_g": 25,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à soupe",
+      "ciqual_code": "31017",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-sesame",
+      "nom_affiche": "huile de sésame",
+      "quantite": 10,
+      "unite": "ml",
+      "poids_g": 9.2,
+      "optionnel": false,
+      "mesure_affichee": "un filet",
+      "ciqual_code": "17400",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "riz-basmati",
+      "nom_affiche": "riz basmati",
+      "quantite": 320,
+      "unite": "g",
+      "poids_g": 320,
+      "optionnel": false,
+      "ciqual_code": "9119",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "courgette",
+      "nom_affiche": "courgettes",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "20020",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Lance le riz au rice cooker.",
+      "duree_min": 25,
+      "actif": false,
+      "equipement": "rice-cooker"
+    },
+    {
+      "texte": "Émince l'oignon, presse l'ail, râpe le gingembre et mélange-les avec la sauce soja et la cassonade (plus un peu de pâte de piment si tu aimes).",
+      "duree_min": 6,
+      "actif": true
+    },
+    {
+      "texte": "Fais cuire la viande dans une sauteuse avec un filet d'huile de sésame, ajoute la sauce et laisse mijoter à feu très doux.",
+      "duree_min": 10,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    },
+    {
+      "texte": "Coupe les courgettes et cuis-les à la vapeur (ou au micro-ondes, couvertes) quelques minutes.",
+      "duree_min": 8,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 420
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/boeuf-hache-a-la-coreenne/",
+      "titre": "Boeuf haché à la coréenne",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Huile de sésame (« un filet ») comptée 2 c. à café et cassonade 12,5 g la cuillère (estimations).",
+  "kcal_annoncees_par_part": 504,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 526,
+    "proteines_g": 35.8,
+    "glucides_g": 73.6,
+    "lipides_g": 9.1,
+    "fibres_g": 2.7,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.94,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

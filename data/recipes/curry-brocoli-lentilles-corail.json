@@ -1,0 +1,166 @@
+{
+  "id": "curry-brocoli-lentilles-corail",
+  "slug": "curry-brocoli-lentilles-corail",
+  "nom": "Curry de brocoli aux lentilles corail",
+  "resume": "Lentilles corail, brocoli et carottes mijotés au lait de coco et à la pâte de curry rouge.",
+  "type": "batch",
+  "portions_base": 3,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 25,
+    "total_min": 35,
+    "actif_min": 12
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cuisine": "indienne",
+  "proteine_principale": "legumineuses",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "curry-bol",
+  "ingredients": [
+    {
+      "ingredient": "brocoli",
+      "nom_affiche": "brocoli",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "20057",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "carotte",
+      "nom_affiche": "carottes",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lentilles-corail",
+      "nom_affiche": "lentilles corail",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20535",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lait-coco",
+      "nom_affiche": "lait de coco",
+      "quantite": 200,
+      "unite": "ml",
+      "poids_g": 200,
+      "optionnel": false,
+      "mesure_affichee": "20 cl",
+      "ciqual_code": "18041",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "bouillon-legumes",
+      "nom_affiche": "bouillon de légumes",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "1 cube dans 20 cl d'eau",
+      "ciqual_code": "11041",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon jaune",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pate-curry",
+      "nom_affiche": "pâte de curry rouge",
+      "quantite": 15,
+      "unite": "g",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11005",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Émince l'oignon, coupe les carottes en demi-rondelles et le brocoli en fleurettes.",
+      "duree_min": 8,
+      "actif": true
+    },
+    {
+      "texte": "Fais revenir l'oignon dans une sauteuse, puis ajoute la pâte de curry et les carottes et laisse cuire 2 minutes.",
+      "duree_min": 4,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 240
+    },
+    {
+      "texte": "Ajoute le brocoli, les lentilles, le lait de coco et le bouillon. Couvre et laisse mijoter à feu moyen 15 à 20 minutes, jusqu'à ce que le brocoli soit tendre.",
+      "duree_min": 18,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 1080
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/curry-de-brocoli-aux-lentilles-corail/",
+      "titre": "Curry de brocoli aux lentilles corail",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "La recette pour 4 est servie en 3 parts pour atteindre 20 g de protéines par repas. Le riz d'accompagnement n'est pas compté.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 452,
+    "proteines_g": 25.6,
+    "glucides_g": 42.2,
+    "lipides_g": 15.4,
+    "fibres_g": 19.4,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.27,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

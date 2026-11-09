@@ -1,0 +1,167 @@
+{
+  "id": "salade-boulgour-automnale",
+  "slug": "salade-boulgour-automnale",
+  "nom": "Salade de boulgour, lentilles, butternut et feta",
+  "resume": "Boulgour, lentilles vertes cuites avec des dés de butternut, feta et roquette.",
+  "type": "batch",
+  "portions_base": 3,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 25,
+    "total_min": 30,
+    "actif_min": 8
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "méditerranéenne",
+  "proteine_principale": "legumineuses",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "salade",
+  "ingredients": [
+    {
+      "ingredient": "boulgour",
+      "nom_affiche": "boulgour",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "9690",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lentilles-vertes",
+      "nom_affiche": "lentilles vertes",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20585",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "butternut",
+      "nom_affiche": "courge butternut en dés",
+      "quantite": 300,
+      "unite": "g",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "20138",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "feta",
+      "nom_affiche": "feta",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "12066",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "roquette",
+      "nom_affiche": "roquette",
+      "quantite": 40,
+      "unite": "g",
+      "poids_g": 40,
+      "optionnel": false,
+      "mesure_affichee": "2 poignées",
+      "ciqual_code": "20217",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 13.7,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Porte deux casseroles d'eau salée à ébullition et coupe la courge en dés d'1 cm.",
+      "duree_min": 5,
+      "actif": true
+    },
+    {
+      "texte": "Cuis le boulgour selon le paquet, et les lentilles avec les dés de courge 25 minutes.",
+      "duree_min": 25,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 1500
+    },
+    {
+      "texte": "Pendant ce temps, coupe la feta en petits dés.",
+      "duree_min": 2,
+      "actif": true
+    },
+    {
+      "texte": "Égoutte, mélange tout avec la roquette, sale, poivre et assaisonne d'huile.",
+      "duree_min": 3,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/salade-boulgour-automnale-rapide-vege/",
+      "titre": "Salade de Boulgour Automnale",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/DQ_oNZOjThJ/",
+      "titre": "Menu de batch cooking d’automne (poulet crème-ail-parmesan, chakchouka, boulgour)",
+      "auteur": "@cuisineaddict",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "article-meme-createur",
+      "oembed": {
+        "author_name": "@cuisineaddict",
+        "title": "🌰 Menu de batch cooking – Automne #9 🌰",
+        "thumbnail_url": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/574471653_18534763654050969_147727711887391371_n.heic?stp=dst-jpg_e35_sh2.08_tt6&_nc_cat=103&ig_cache_key=Mzc1Mzk5OTI4NTUxMjY2ODA3Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=djMenMuq0NMQ7kNvwEJCJR8&_nc_oc=AdooZa4kQa5sZ8w1EltJW9kip72UFx1aphiQ67MX2nyKZtYzmqQ4zT5JMq6YAUPy1-U&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_gid=SFdMQ3ne59koDnaU_hQbzA&_nc_ss=7c689&oh=00_AQQTGxVqoeWbgcPw1qMWvPj4n1wPfAOjwwtmopRQutyDSg&oe=6AF7DCE8"
+      }
+    }
+  ],
+  "adaptation": "La recette pour 4 est servie en 3 parts. Huile d'olive à la place de l'huile de pépins de courge, comptée 1 c. à soupe ; roquette 40 g (estimations).",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 605,
+    "proteines_g": 27.6,
+    "glucides_g": 64.7,
+    "lipides_g": 22.5,
+    "fibres_g": 14.8,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.75,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

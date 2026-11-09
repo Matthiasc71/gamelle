@@ -1,0 +1,183 @@
+{
+  "id": "gratin-poireaux-bacon",
+  "slug": "gratin-poireaux-bacon",
+  "nom": "Gratin de poireaux au bacon",
+  "resume": "Poireaux fondus et dés de bacon sous un appareil œufs-crème au fromage fondu, gratinés.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 35,
+    "total_min": 45,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques",
+    "four"
+  ],
+  "saison": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cuisine": "française",
+  "proteine_principale": "porc",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "gratin",
+  "ingredients": [
+    {
+      "ingredient": "poireau",
+      "nom_affiche": "poireaux",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 800,
+      "optionnel": false,
+      "ciqual_code": "20039",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "bacon-des",
+      "nom_affiche": "dés de bacon",
+      "quantite": 300,
+      "unite": "g",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "28727",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon jaune",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oeuf",
+      "nom_affiche": "œufs",
+      "quantite": 3,
+      "unite": "pièce",
+      "poids_g": 165,
+      "optionnel": false,
+      "ciqual_code": "22000",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "creme-legere-15",
+      "nom_affiche": "crème légère",
+      "quantite": 400,
+      "unite": "ml",
+      "poids_g": 400,
+      "optionnel": false,
+      "mesure_affichee": "40 cl",
+      "ciqual_code": "19430",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "fromage-fondu",
+      "nom_affiche": "fromage fondu (type crème de brie)",
+      "quantite": 150,
+      "unite": "g",
+      "poids_g": 150,
+      "optionnel": false,
+      "ciqual_code": "12300",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "emmental-rape",
+      "nom_affiche": "fromage râpé",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "12118",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 10,
+      "unite": "ml",
+      "poids_g": 9.2,
+      "optionnel": false,
+      "mesure_affichee": "un filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cisèle l'oignon, lave les poireaux et émince-les finement.",
+      "duree_min": 8,
+      "actif": true
+    },
+    {
+      "texte": "Fais revenir oignon et poireaux dans un filet d'huile à feu moyen jusqu'à ce qu'ils soient bien fondus. Sale, poivre et ajoute le bacon en fin de cuisson. Préchauffe le four à 180 °C.",
+      "duree_min": 15,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 900
+    },
+    {
+      "texte": "Bats les œufs avec la crème et le fromage fondu, sale et poivre.",
+      "duree_min": 3,
+      "actif": true
+    },
+    {
+      "texte": "Verse les poireaux dans le plat, couvre d'appareil et de fromage râpé, et enfourne 20 minutes.",
+      "duree_min": 20,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 1200
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/gratin-de-poireaux-au-bacon/",
+      "titre": "Gratin de poireaux au bacon",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Crème légère à 15 % (la source utilise une crème végétale), fromage fondu à la place de la crème de brie (proposé par la source). Huile comptée 2 c. à café (estimation).",
+  "kcal_annoncees_par_part": 474,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 565,
+    "proteines_g": 37.4,
+    "glucides_g": 17.6,
+    "lipides_g": 37.1,
+    "fibres_g": 5.5,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.51,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

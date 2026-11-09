@@ -62,6 +62,18 @@
     "methode": "lidl",
     "note": "1 relevé Open Prices en magasin Lidl (12 mois) ; 0,99 €/pièce"
   },
+  "bacon-des": {
+    "produit": "Dés de bacon, 2 × 75 g",
+    "conditionnement": {
+      "quantite": 150,
+      "unite": "g"
+    },
+    "prix_eur": 1.83,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 17 relevés Open Prices France sur 12 mois ; 12,20 €/kg"
+  },
   "baguette": {
     "produit": "Baguette, 250 g",
     "conditionnement": {
@@ -73,6 +85,18 @@
     "releve_le": "2026-11-09",
     "methode": "open-prices-lyon",
     "note": "12 relevés Open Prices sur 12 mois ; 5,92 €/kg"
+  },
+  "beurre": {
+    "produit": "Beurre doux, 250 g",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "prix_eur": 2.88,
+    "enseigne": "Lidl",
+    "releve_le": "2026-11-09",
+    "methode": "lidl",
+    "note": "3 relevés Open Prices en magasin Lidl (12 mois) ; 11,52 €/kg"
   },
   "blanc-dinde": {
     "produit": "Blanc de dinde, 4 tranches (120 g)",
@@ -122,6 +146,31 @@
     "methode": "open-prices-lyon",
     "note": "119 relevés Open Prices sur 12 mois ; 17,77 €/kg"
   },
+  "boulgour": {
+    "produit": "Boulgour, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "prix_eur": 2.56,
+    "enseigne": "Lidl",
+    "releve_le": "2026-11-09",
+    "methode": "lidl",
+    "note": "1 relevé Open Prices en magasin Lidl (12 mois) ; 5,12 €/kg"
+  },
+  "brocoli": {
+    "produit": "Brocoli (à la pièce)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 400,
+    "prix_eur": 1.29,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "3 relevés Open Prices sur 12 mois ; 1,29 €/pièce"
+  },
   "brocoli-surgele": {
     "produit": "Brocolis en fleurettes surgelés, 1 kg",
     "conditionnement": {
@@ -134,6 +183,31 @@
     "releve_le": "2026-11-09",
     "methode": "site-enseigne",
     "note": "Brocolis en fleurettes 1KG"
+  },
+  "butternut": {
+    "produit": "Courge butternut (à la pièce)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 1000,
+    "prix_eur": 2.69,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 3 relevés Open Prices France sur 12 mois ; 2,69 €/pièce"
+  },
+  "cacahuetes": {
+    "produit": "Cacahuètes grillées, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "prix_eur": 0.68,
+    "enseigne": "Lidl",
+    "releve_le": "2026-11-09",
+    "methode": "lidl",
+    "note": "5 relevés Open Prices en magasin Lidl (12 mois) ; 3,40 €/kg"
   },
   "carotte": {
     "produit": "Carottes, sachet 1 kg",
@@ -197,6 +271,19 @@
     "releve_le": "2026-11-09",
     "methode": "site-enseigne",
     "note": "CHEDDAR RÃPÉ 200 g"
+  },
+  "chorizo": {
+    "produit": "Chorizo doux, 225 g",
+    "conditionnement": {
+      "quantite": 225,
+      "unite": "g"
+    },
+    "prix_eur": 1.89,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/chorizo-qualite-superieure-1307.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "CHORIZO QUALITÉ SUPÉRIEURE 225 g"
   },
   "chou-rave": {
     "produit": "Chou-rave (à la pièce)",
@@ -478,6 +565,18 @@
     "methode": "site-enseigne",
     "note": "Emmental râpé français 200G"
   },
+  "endive": {
+    "produit": "Endives, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "prix_eur": 2.99,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 6 relevés Open Prices France sur 12 mois ; 2,98 €/kg"
+  },
   "epinards-pousses": {
     "produit": "Épinards frais (pousses), au kilo",
     "conditionnement": {
@@ -553,6 +652,18 @@
     "methode": "site-enseigne",
     "note": "Fromage blanc 1 Kg"
   },
+  "fromage-fondu": {
+    "produit": "Fromage fondu, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "prix_eur": 1.56,
+    "enseigne": "Lidl",
+    "releve_le": "2026-11-09",
+    "methode": "lidl",
+    "note": "1 relevé Open Prices en magasin Lidl (12 mois) ; 7,80 €/kg"
+  },
   "fromage-frais": {
     "produit": "Fromage frais à tartiner, 150 g",
     "conditionnement": {
@@ -600,6 +711,31 @@
     "releve_le": "2026-11-09",
     "methode": "lidl",
     "note": "1 relevé Open Prices en magasin Lidl (12 mois) ; 18,44 €/kg"
+  },
+  "gnocchis": {
+    "produit": "Gnocchis à poêler, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "prix_eur": 2.79,
+    "enseigne": "Lidl",
+    "releve_le": "2026-11-09",
+    "methode": "lidl",
+    "note": "3 relevés Open Prices en magasin Lidl (12 mois) ; 5,58 €/kg"
+  },
+  "grenade": {
+    "produit": "Grenade (à la pièce)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 200,
+    "prix_eur": 0.99,
+    "enseigne": "Lidl",
+    "releve_le": "2026-11-09",
+    "methode": "lidl",
+    "note": "1 relevé Open Prices en magasin Lidl (12 mois) ; 0,99 €/pièce"
   },
   "haricots-blancs": {
     "produit": "Haricots blancs en conserve, 250 g égouttés",
@@ -674,6 +810,18 @@
     "methode": "open-prices-lyon",
     "note": "5 relevés Open Prices sur 12 mois ; 17,84 €/L"
   },
+  "jambon-blanc": {
+    "produit": "Jambon blanc découenné, 4 tranches (180 g)",
+    "conditionnement": {
+      "quantite": 180,
+      "unite": "g"
+    },
+    "prix_eur": 2.38,
+    "enseigne": "Lidl",
+    "releve_le": "2026-11-09",
+    "methode": "lidl",
+    "note": "1 relevé Open Prices en magasin Lidl (12 mois) ; 13,21 €/kg"
+  },
   "jambon-des": {
     "produit": "Dés de jambon, 2 × 75 g",
     "conditionnement": {
@@ -737,6 +885,19 @@
     "methode": "lidl",
     "note": "2 relevés Open Prices en magasin Lidl (12 mois) ; 0,89 €/pièce"
   },
+  "lardons": {
+    "produit": "Lardons fumés, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "prix_eur": 1.79,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/lardons-fumes-6735.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Lardons fumés 200g"
+  },
   "lasagnes": {
     "produit": "Feuilles de lasagnes, 500 g",
     "conditionnement": {
@@ -773,6 +934,32 @@
     "releve_le": "2026-11-09",
     "methode": "lidl",
     "note": "1 relevé Open Prices en magasin Lidl (12 mois) ; 3,44 €/kg"
+  },
+  "lentilles-vertes": {
+    "produit": "Lentilles vertes, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "prix_eur": 1.59,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/lentilles-vertes-ou-haricots-blancs-5017553.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "LENTILLES VERTES OU HARICOTS BLANCS L'unité"
+  },
+  "macedoine": {
+    "produit": "Macédoine de légumes, 530 g (400 g égouttés)",
+    "conditionnement": {
+      "quantite": 400,
+      "unite": "g"
+    },
+    "prix_eur": 1.09,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/macedoine-de-legumes-4306.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Macédoine de légumes 530G"
   },
   "mais": {
     "produit": "Maïs doux en conserve, 285 g égoutté",
@@ -1008,6 +1195,30 @@
     "methode": "site-enseigne",
     "note": "COPEAUX PARMESAN 125G 125 G"
   },
+  "patate-douce": {
+    "produit": "Patate douce, au kilo",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "prix_eur": 2.79,
+    "enseigne": "Lidl",
+    "releve_le": "2026-11-09",
+    "methode": "lidl",
+    "note": "3 relevés Open Prices en magasin Lidl (12 mois) ; 2,79 €/kg"
+  },
+  "pate-curry": {
+    "produit": "Pâte de curry rouge, 50 g",
+    "conditionnement": {
+      "quantite": 50,
+      "unite": "g"
+    },
+    "prix_eur": 1.12,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "15 relevés Open Prices sur 12 mois ; 22,30 €/kg"
+  },
   "pates": {
     "produit": "Penne ou spaghetti, 500 g",
     "conditionnement": {
@@ -1059,6 +1270,18 @@
     "releve_le": "2026-11-09",
     "methode": "site-enseigne",
     "note": "Petits pois extra fins 1KG"
+  },
+  "pignons": {
+    "produit": "Pignons de pin, 70 g",
+    "conditionnement": {
+      "quantite": 70,
+      "unite": "g"
+    },
+    "prix_eur": 5.73,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 9 relevés Open Prices France sur 12 mois ; 81,80 €/kg"
   },
   "poireau": {
     "produit": "Poireaux, botte de 3",
@@ -1112,6 +1335,31 @@
     "methode": "open-prices-lyon",
     "note": "3 relevés Open Prices sur 12 mois ; 0,90 €/pièce"
   },
+  "poivron-vert": {
+    "produit": "Poivron vert (à la pièce)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 150,
+    "prix_eur": 0.67,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 9 relevés Open Prices France sur 12 mois ; 0,67 €/pièce"
+  },
+  "poivrons-grilles": {
+    "produit": "Poivrons grillés marinés, bocal 280 g (180 g égouttés)",
+    "conditionnement": {
+      "quantite": 180,
+      "unite": "g"
+    },
+    "prix_eur": 3.05,
+    "enseigne": "médiane toutes enseignes, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "4 relevés Open Prices sur 12 mois ; 16,93 €/kg"
+  },
   "pomme-de-terre": {
     "produit": "Pommes de terre, filet 2 kg",
     "conditionnement": {
@@ -1136,6 +1384,18 @@
     "methode": "open-prices-france",
     "note": "Estimation : 3 relevés Open Prices France sur 12 mois ; 9,97 €/kg"
   },
+  "poulet-cuit": {
+    "produit": "Émincés de poulet rôti, 150 g",
+    "conditionnement": {
+      "quantite": 150,
+      "unite": "g"
+    },
+    "prix_eur": 1.3,
+    "enseigne": "Lidl",
+    "releve_le": "2026-11-09",
+    "methode": "lidl",
+    "note": "2 relevés Open Prices en magasin Lidl (12 mois) ; 8,64 €/kg"
+  },
   "poulet-filet": {
     "produit": "Filets de poulet, 1 kg",
     "conditionnement": {
@@ -1159,6 +1419,18 @@
     "releve_le": "2026-11-09",
     "methode": "open-prices-lyon",
     "note": "6 relevés Open Prices sur 12 mois ; 5,98 €/kg"
+  },
+  "quinoa": {
+    "produit": "Quinoa, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "prix_eur": 2.56,
+    "enseigne": "Lidl",
+    "releve_le": "2026-11-09",
+    "methode": "lidl",
+    "note": "1 relevé Open Prices en magasin Lidl (12 mois) ; 5,12 €/kg"
   },
   "ricotta": {
     "produit": "Ricotta, 250 g",
@@ -1198,6 +1470,30 @@
     "methode": "site-enseigne",
     "note": "RIZ LONG GRAIN 1KG"
   },
+  "roquette": {
+    "produit": "Roquette, sachet 125 g",
+    "conditionnement": {
+      "quantite": 125,
+      "unite": "g"
+    },
+    "prix_eur": 1.59,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 10 relevés Open Prices France sur 12 mois ; 12,72 €/kg"
+  },
+  "sauce-barbecue": {
+    "produit": "Sauce barbecue, 300 g",
+    "conditionnement": {
+      "quantite": 300,
+      "unite": "g"
+    },
+    "prix_eur": 1.99,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "19 relevés Open Prices sur 12 mois ; 6,62 €/kg"
+  },
   "sauce-huitre": {
     "produit": "Sauce d'huître, 25 cl",
     "conditionnement": {
@@ -1221,6 +1517,30 @@
     "releve_le": "2026-11-09",
     "methode": "open-prices-lyon",
     "note": "45 relevés Open Prices sur 12 mois ; 19,48 €/L"
+  },
+  "saucisse-montbeliard": {
+    "produit": "Saucisses de Montbéliard, 2 × 150 g",
+    "conditionnement": {
+      "quantite": 300,
+      "unite": "g"
+    },
+    "prix_eur": 5.53,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 10 relevés Open Prices France sur 12 mois ; 18,42 €/kg"
+  },
+  "sirop-erable": {
+    "produit": "Sirop d’érable, 250 ml (330 g)",
+    "conditionnement": {
+      "quantite": 330,
+      "unite": "g"
+    },
+    "prix_eur": 6.99,
+    "enseigne": "médiane toutes enseignes, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "3 relevés Open Prices sur 12 mois ; 21,18 €/kg"
   },
   "sucre-roux": {
     "produit": "Sucre roux, 1 kg",

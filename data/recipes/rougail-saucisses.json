@@ -1,0 +1,189 @@
+{
+  "id": "rougail-saucisses",
+  "slug": "rougail-saucisses",
+  "nom": "Rougail saucisses",
+  "resume": "Saucisses fumées dorées puis mijotées dans une sauce tomate à l'oignon, à l'ail et au gingembre.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 35,
+    "total_min": 45,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "réunionnaise",
+  "proteine_principale": "porc",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "ragout",
+  "ingredients": [
+    {
+      "ingredient": "saucisse-montbeliard",
+      "nom_affiche": "saucisses fumées (Montbéliard)",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 600,
+      "optionnel": false,
+      "mesure_affichee": "4 saucisses",
+      "ciqual_code": "30105",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomates-concassees",
+      "nom_affiche": "tomates pelées en conserve",
+      "quantite": 800,
+      "unite": "g",
+      "poids_g": 800,
+      "optionnel": false,
+      "ciqual_code": "20137",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignons jaunes",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 3,
+      "unite": "pièce",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "3 gousses",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "gingembre-frais",
+      "nom_affiche": "gingembre frais",
+      "quantite": 10,
+      "unite": "g",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "2 cm",
+      "ciqual_code": "11074",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "persil",
+      "nom_affiche": "persil plat",
+      "quantite": 0.2,
+      "unite": "pièce",
+      "poids_g": 6,
+      "optionnel": true,
+      "mesure_affichee": "2 brins",
+      "ciqual_code": "11014",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cisèle les oignons, presse l'ail et râpe le gingembre.",
+      "duree_min": 6,
+      "actif": true
+    },
+    {
+      "texte": "Pique les saucisses et cuis-les 10 minutes à l'eau bouillante, puis coupe-les en rondelles.",
+      "duree_min": 11,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    },
+    {
+      "texte": "Fais dorer les rondelles 5 minutes dans une sauteuse et réserve-les. À leur place, fais revenir oignons, ail et gingembre quelques minutes.",
+      "duree_min": 8,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 300
+    },
+    {
+      "texte": "Ajoute les tomates (et un peu de piment si tu aimes), sale, poivre et laisse cuire 10 minutes à couvert.",
+      "duree_min": 10,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    },
+    {
+      "texte": "Découvre, remets les saucisses et laisse encore 10 minutes. Sers avec du riz et le persil.",
+      "duree_min": 10,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/rougail-saucisses/",
+      "titre": "Rougail saucisse",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/CyTdI8hIw8b/",
+      "titre": "Menu de batch cooking – Automne 4 (octobre, semaine 42)",
+      "auteur": "@cuisineaddict",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "article-meme-createur",
+      "oembed": {
+        "author_name": "@cuisineaddict",
+        "title": "MENU DE BATCH COOKING – AUTOMNE 4 – OCTOBRE SEMAINE 42 ➡️ Pense à l'enregistrer pour le retrouver facilement !",
+        "thumbnail_url": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/649878594_17949009047964667_3546254250465789447_n.webp?_nc_cat=110&ig_cache_key=MzIxMjAzOTEwNTYyODE5NDM0Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=K4Q8apeFiOYQ7kNvwHPbeDd&_nc_oc=Adr8OR0AjglDtsMtO4SWXmGEZrUb9BbdWURKfNL-U7ZU4GZnPIvL0Ec4fl9D0eMaAos&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_gid=ao6NInBUg1TcjJJHFqCXZg&_nc_ss=7c689&oh=00_AQRXp5c-MFu2Q1oSMOGWOeteCTNVWKtNy56RpcJD3wf1sg&oe=6AF7C197"
+      }
+    }
+  ],
+  "adaptation": "Saucisses de Montbéliard pesées à 150 g pièce (estimation). Thym et piment facultatifs, non comptés. Riz d'accompagnement non compté.",
+  "kcal_annoncees_par_part": 414,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 551,
+    "proteines_g": 28.3,
+    "glucides_g": 12.8,
+    "lipides_g": 41.8,
+    "fibres_g": 4.9,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 3.91,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

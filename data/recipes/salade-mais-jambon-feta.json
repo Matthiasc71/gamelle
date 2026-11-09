@@ -168,6 +168,19 @@
       "titre": "Salade de Maïs au Jambon",
       "auteur": "Sandra Thomann (Cuisine Addict)",
       "verifie_le": "2026-11-09"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/C-af2iAILdI/",
+      "titre": "Menu de batch cooking semaine 33 (août 2024)",
+      "auteur": "@cuisineaddict",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "article-meme-createur",
+      "oembed": {
+        "author_name": "@cuisineaddict",
+        "title": "MENU DE BATCH COOKING SEMAINE 33 - AOÛT 2024",
+        "thumbnail_url": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/656272250_18090887210131831_826326897635863315_n.webp?_nc_cat=101&ig_cache_key=MzQzMDEzODI3MjEyNzUyODM2Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=mteQRRRobh0Q7kNvwEgAPwm&_nc_oc=AdpTpNpSpZYR7SvsjMk4Ve9LLOHK_7dSB00AviMsJSJyueLK1S3rS6G16RtSThEYV98&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&_nc_gid=dxSRsTIIzuCQqomJbbJ8aQ&_nc_ss=7c689&oh=00_AQQbTGRs-vPaRhD0gYGCQP00V0_Eby7mLCi0qOEoOzJsMQ&oe=6AF7D0FC"
+      }
     }
   ],
   "kcal_annoncees_par_part": 312,

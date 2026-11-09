@@ -1,0 +1,216 @@
+{
+  "id": "quiche-sans-pate-courgettes-tomates",
+  "slug": "quiche-sans-pate-courgettes-tomates",
+  "nom": "Quiche sans pâte courgettes, tomates et mozzarella",
+  "resume": "Courgettes poêlées et dés de tomate sous un appareil œufs-lait-farine à la mozzarella et au parmesan.",
+  "type": "batch",
+  "portions_base": 3,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 15,
+    "cuisson_min": 45,
+    "total_min": 60,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques",
+    "four"
+  ],
+  "saison": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "française",
+  "proteine_principale": "oeufs",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "gratin",
+  "ingredients": [
+    {
+      "ingredient": "courgette",
+      "nom_affiche": "courgettes",
+      "quantite": 450,
+      "unite": "g",
+      "poids_g": 450,
+      "optionnel": false,
+      "ciqual_code": "20020",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomate",
+      "nom_affiche": "tomates",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20276",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 gousse",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oeuf",
+      "nom_affiche": "œufs",
+      "quantite": 3,
+      "unite": "pièce",
+      "poids_g": 165,
+      "optionnel": false,
+      "ciqual_code": "22000",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lait-demi",
+      "nom_affiche": "lait",
+      "quantite": 500,
+      "unite": "ml",
+      "poids_g": 515,
+      "optionnel": false,
+      "mesure_affichee": "50 cl",
+      "ciqual_code": "19041",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "farine",
+      "nom_affiche": "farine",
+      "quantite": 130,
+      "unite": "g",
+      "poids_g": 130,
+      "optionnel": false,
+      "ciqual_code": "9435",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "mozzarella",
+      "nom_affiche": "mozzarella râpée",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "19590",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "parmesan",
+      "nom_affiche": "parmesan râpé",
+      "quantite": 30,
+      "unite": "g",
+      "poids_g": 30,
+      "optionnel": false,
+      "ciqual_code": "12120",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "origan",
+      "nom_affiche": "origan séché",
+      "quantite": 1,
+      "unite": "g",
+      "poids_g": 1,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11035",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 10,
+      "unite": "ml",
+      "poids_g": 9.2,
+      "optionnel": false,
+      "mesure_affichee": "un filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Préchauffe le four à 180 °C et graisse un moule d'environ 24 cm. Coupe courgettes et tomates en petits dés.",
+      "duree_min": 8,
+      "actif": true
+    },
+    {
+      "texte": "Fais revenir les courgettes avec l'ail pressé 5 minutes dans une poêle huilée.",
+      "duree_min": 5,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 300
+    },
+    {
+      "texte": "Dans un saladier, fouette la farine avec les œufs puis le lait jusqu'à ce que ce soit lisse. Sale, poivre, ajoute l'origan et les fromages.",
+      "duree_min": 5,
+      "actif": true
+    },
+    {
+      "texte": "Mets les courgettes puis les tomates dans le moule, verse l'appareil et enfourne 40 minutes.",
+      "duree_min": 40,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 2400
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/quiche-sans-pate-aux-courgettes-et-tomates/",
+      "titre": "Quiche sans pâte aux courgettes et tomates",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/Ddq4pD2DTwb/",
+      "titre": "Menu de batch cooking d’automne (enchiladas, quiche sans pâte, aubergines)",
+      "auteur": "@cuisineaddict",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "article-meme-createur",
+      "oembed": {
+        "author_name": "@cuisineaddict",
+        "title": "🍂 On passe officiellement en mode automne avec ce nouveau menu de Batch Cooking !",
+        "thumbnail_url": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/797841846_18627381742050969_5268080142118955839_n.heic?stp=dst-jpg_e35_sh2.08_tt6&_nc_cat=107&ig_cache_key=Mzk5MzI1MTkzNTMzMzc5OTA2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=QSz0h-cGMIEQ7kNvwHKX8vI&_nc_oc=AdrVtEqTOtb6SBuplJ1XM0hYnGk3st8wcGBtd1zCHcvfLTG-osCn0WDR_K6n8oAiwlk&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_gid=JFSN1mSetTRfuKcfeq--cg&_nc_ss=7c689&oh=00_AQQPtF7x1La2Uj16w3Hve33OjIrgN4egowwHLyuYXcAejQ&oe=6AF7C71A"
+      }
+    }
+  ],
+  "adaptation": "La recette pour 4 est servie en 3 parts (protéines d'un repas). Huile (« un filet ») comptée 2 c. à café (estimation).",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 493,
+    "proteines_g": 28.2,
+    "glucides_g": 45.3,
+    "lipides_g": 21.2,
+    "fibres_g": 3.9,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.66,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

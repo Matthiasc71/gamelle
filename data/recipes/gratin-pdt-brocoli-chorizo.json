@@ -1,0 +1,164 @@
+{
+  "id": "gratin-pdt-brocoli-chorizo",
+  "slug": "gratin-pdt-brocoli-chorizo",
+  "nom": "Gratin de pommes de terre, brocoli et chorizo",
+  "resume": "Pommes de terre et brocoli précuits, chorizo en demi-rondelles, un peu de crème et de parmesan, gratinés au four.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 45,
+    "total_min": 55,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques",
+    "four"
+  ],
+  "saison": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "cuisine": "française",
+  "proteine_principale": "porc",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "gratin",
+  "ingredients": [
+    {
+      "ingredient": "pomme-de-terre",
+      "nom_affiche": "pommes de terre",
+      "quantite": 800,
+      "unite": "g",
+      "poids_g": 800,
+      "optionnel": false,
+      "ciqual_code": "4008",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "brocoli",
+      "nom_affiche": "brocoli",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "20057",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "chorizo",
+      "nom_affiche": "chorizo",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 225,
+      "optionnel": false,
+      "mesure_affichee": "1 chorizo (environ 225 g)",
+      "ciqual_code": "30316",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "creme-liquide",
+      "nom_affiche": "crème liquide",
+      "quantite": 200,
+      "unite": "ml",
+      "poids_g": 200,
+      "optionnel": false,
+      "mesure_affichee": "20 cl",
+      "ciqual_code": "19417",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "parmesan",
+      "nom_affiche": "parmesan râpé",
+      "quantite": 40,
+      "unite": "g",
+      "poids_g": 40,
+      "optionnel": false,
+      "ciqual_code": "12120",
+      "rayon": "frais",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Épluche les pommes de terre et cuis-les une vingtaine de minutes à l'eau bouillante salée : tendres, mais encore fermes. Sors-les à l'écumoire.",
+      "duree_min": 22,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 1200
+    },
+    {
+      "texte": "Dans la même eau, cuis les fleurettes de brocoli 10 minutes, puis égoutte. Préchauffe le four à 180 °C.",
+      "duree_min": 10,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    },
+    {
+      "texte": "Coupe le chorizo en demi-rondelles et les pommes de terre en rondelles. Range le tout avec le brocoli dans un plat, sale, poivre et arrose de crème.",
+      "duree_min": 5,
+      "actif": true
+    },
+    {
+      "texte": "Parsème de parmesan et enfourne 15 minutes.",
+      "duree_min": 15,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 900
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/gratin-pomme-de-terre-brocoli-chorizo/",
+      "titre": "Gratin de pommes de terre au brocoli et chorizo",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/DQtmnpajarm/",
+      "titre": "Menu de batch cooking – Automne #8",
+      "auteur": "@cuisineaddict",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "article-meme-createur",
+      "oembed": {
+        "author_name": "@cuisineaddict",
+        "title": "🍂 Menu de batch cooking – Automne #8 🍂",
+        "thumbnail_url": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/572483642_18534763417050969_2904155283866887861_n.heic?stp=dst-jpg_e35_sh2.08_tt6&_nc_cat=100&ig_cache_key=Mzc1Mzk5ODE2MDIzOTY1NTIwOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=ugdytw9dlLcQ7kNvwFc9hfe&_nc_oc=Adq0aeahZYNKL4F0GnalbQT7h_L8OlhbT-1kfi0FWQYYmn1L35vNZjqza66_Ch5d8U4&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_gid=CbxllSb8n49LSX3S7uVwHw&_nc_ss=7c689&oh=00_AQQ_yZfnh3DKSTnW2UQZa-0_wEhkIk_9yugxFWWbQ6Hc8g&oe=6AF7BC65"
+      }
+    }
+  ],
+  "adaptation": "Chorizo pesé à 225 g (estimation : « 1 chorizo »). Crème liquide de vache (la source utilise une crème de cajou).",
+  "kcal_annoncees_par_part": 313,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 646,
+    "proteines_g": 22.9,
+    "glucides_g": 37.6,
+    "lipides_g": 42.2,
+    "fibres_g": 7.3,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.93,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

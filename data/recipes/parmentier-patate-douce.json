@@ -1,0 +1,186 @@
+{
+  "id": "parmentier-patate-douce",
+  "slug": "parmentier-patate-douce",
+  "nom": "Parmentier de patates douces",
+  "resume": "Bœuf haché à l'oignon et au concentré de tomate sous une purée de patates douces, gratinée.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 15,
+    "cuisson_min": 40,
+    "total_min": 55,
+    "actif_min": 20
+  },
+  "equipement": [
+    "plaques",
+    "four"
+  ],
+  "saison": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cuisine": "française",
+  "proteine_principale": "boeuf",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "gratin",
+  "ingredients": [
+    {
+      "ingredient": "patate-douce",
+      "nom_affiche": "patates douces",
+      "quantite": 800,
+      "unite": "g",
+      "poids_g": 800,
+      "optionnel": false,
+      "ciqual_code": "4101",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "boeuf-hache-5",
+      "nom_affiche": "viande hachée",
+      "quantite": 500,
+      "unite": "g",
+      "poids_g": 500,
+      "optionnel": false,
+      "ciqual_code": "6250",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "creme-liquide",
+      "nom_affiche": "crème liquide",
+      "quantite": 100,
+      "unite": "ml",
+      "poids_g": 100,
+      "optionnel": false,
+      "mesure_affichee": "10 cl",
+      "ciqual_code": "19417",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "emmental-rape",
+      "nom_affiche": "fromage râpé",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "12118",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "concentre-tomate",
+      "nom_affiche": "concentré de tomates",
+      "quantite": 70,
+      "unite": "g",
+      "poids_g": 70,
+      "optionnel": false,
+      "ciqual_code": "20068",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon jaune",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "un peu",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "beurre",
+      "nom_affiche": "beurre",
+      "quantite": 10,
+      "unite": "g",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "une noix",
+      "ciqual_code": "16400",
+      "rayon": "frais",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Épluche les patates douces, coupe-les en cubes et cuis-les une quinzaine de minutes à l'eau bouillante.",
+      "duree_min": 18,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 900
+    },
+    {
+      "texte": "Égoutte et écrase-les en purée avec la crème, le beurre, une pincée de muscade, du sel et du poivre.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Cisèle l'oignon, fais-le revenir dans un peu d'huile, ajoute la viande et laisse cuire en remuant, puis ajoute le concentré. Préchauffe le four à 180 °C.",
+      "duree_min": 10,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    },
+    {
+      "texte": "Verse la viande dans un plat, recouvre de purée et de fromage râpé, et enfourne 20 minutes.",
+      "duree_min": 20,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 1200
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/parmentier-a-la-patate-douce/",
+      "titre": "Parmentier de patates douces",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Beurre (« une noix ») compté 10 g et huile 1 c. à café (estimations).",
+  "kcal_annoncees_par_part": 478,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 546,
+    "proteines_g": 39,
+    "glucides_g": 40.2,
+    "lipides_g": 23.9,
+    "fibres_g": 7.2,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 3.33,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

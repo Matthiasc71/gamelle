@@ -1,0 +1,176 @@
+{
+  "id": "endives-au-jambon",
+  "slug": "endives-au-jambon",
+  "nom": "Endives au jambon",
+  "resume": "Le grand classique : endives cuites roulées dans du jambon, nappées de béchamel et gratinées.",
+  "type": "batch",
+  "portions_base": 3,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 45,
+    "total_min": 55,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques",
+    "four"
+  ],
+  "saison": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cuisine": "française",
+  "proteine_principale": "porc",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "gratin",
+  "ingredients": [
+    {
+      "ingredient": "endive",
+      "nom_affiche": "endives",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 600,
+      "optionnel": false,
+      "mesure_affichee": "4 endives",
+      "ciqual_code": "20026",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "jambon-blanc",
+      "nom_affiche": "jambon blanc",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 180,
+      "optionnel": false,
+      "mesure_affichee": "4 tranches",
+      "ciqual_code": "28902",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "emmental-rape",
+      "nom_affiche": "fromage râpé",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "12118",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lait-demi",
+      "nom_affiche": "lait",
+      "quantite": 500,
+      "unite": "ml",
+      "poids_g": 515,
+      "optionnel": false,
+      "mesure_affichee": "50 cl",
+      "ciqual_code": "19041",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "farine",
+      "nom_affiche": "farine",
+      "quantite": 40,
+      "unite": "g",
+      "poids_g": 40,
+      "optionnel": false,
+      "ciqual_code": "9435",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "beurre",
+      "nom_affiche": "beurre",
+      "quantite": 40,
+      "unite": "g",
+      "poids_g": 40,
+      "optionnel": false,
+      "ciqual_code": "16400",
+      "rayon": "frais",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Préchauffe le four à 180 °C. Retire le pied et le cœur des endives et cuis-les 20 minutes à l'eau frémissante : elles doivent rester un peu fermes. Égoutte-les bien.",
+      "duree_min": 20,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 1200
+    },
+    {
+      "texte": "Béchamel : fais fondre le beurre, ajoute la farine et remue 1 minute, puis verse le lait en fouettant jusqu'à ce que ça épaississe. Sale, poivre, ajoute un peu de muscade si tu en as.",
+      "duree_min": 7,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 420
+    },
+    {
+      "texte": "Verse un tiers de la béchamel dans le plat, roule chaque endive dans une tranche de jambon et range-les dessus. Couvre du reste de sauce et du fromage.",
+      "duree_min": 5,
+      "actif": true
+    },
+    {
+      "texte": "Enfourne 20 minutes.",
+      "duree_min": 20,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 1200
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/endives-au-jambon/",
+      "titre": "Endives au jambon",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/DW8R-vPjXfj/",
+      "titre": "Menu de batch cooking – Printemps 4",
+      "auteur": "@cuisineaddict",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "article-meme-createur",
+      "oembed": {
+        "author_name": "@cuisineaddict",
+        "title": "🌿 Menu de batch cooking – Printemps 4 🌿",
+        "thumbnail_url": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/669939792_18576790144050969_4454684218839178509_n.heic?stp=dst-jpg_e35_sh2.08_tt6&_nc_cat=100&ig_cache_key=Mzg3MjA0ODIxMzM2OTExMjQxNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=2jG7h5HbSA8Q7kNvwGhJYPv&_nc_oc=Adonw65vrzKerfihc2NyHLbO9oanM66YE0CHP116wwZLvQvYicAOyiOe4Hua2YV5714&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_gid=4voAgdaGGzMwfPhWS6CX9A&_nc_ss=7c689&oh=00_AQQzphfjNBdVYgjMakJiKnpeQTA1wWFqcKJLM1-E6UkBIQ&oe=6AF7E005"
+      }
+    }
+  ],
+  "adaptation": "La recette pour 4 est servie en 3 parts (calories et protéines d'un repas complet). Muscade facultative.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 393,
+    "proteines_g": 26.7,
+    "glucides_g": 24.4,
+    "lipides_g": 21.2,
+    "fibres_g": 2.7,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.85,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

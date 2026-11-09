@@ -1,0 +1,188 @@
+{
+  "id": "one-pan-poulet-miel-moutarde",
+  "slug": "one-pan-poulet-miel-moutarde",
+  "nom": "One pan de poulet au miel et à la moutarde",
+  "resume": "Escalopes de poulet laquées miel-moutarde-soja, rôties sur une plaque avec butternut, carottes, brocoli et oignon rouge.",
+  "type": "batch",
+  "portions_base": 3,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 15,
+    "cuisson_min": 35,
+    "total_min": 50,
+    "actif_min": 15
+  },
+  "equipement": [
+    "four"
+  ],
+  "saison": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2
+  ],
+  "cuisine": "française",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "poelee",
+  "ingredients": [
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "escalopes de poulet",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 560,
+      "optionnel": false,
+      "mesure_affichee": "4 escalopes (environ 560 g)",
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "butternut",
+      "nom_affiche": "courge butternut en dés",
+      "quantite": 300,
+      "unite": "g",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "20138",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "carotte",
+      "nom_affiche": "carottes",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "brocoli",
+      "nom_affiche": "petit brocoli",
+      "quantite": 0.75,
+      "unite": "pièce",
+      "poids_g": 300,
+      "optionnel": false,
+      "mesure_affichee": "1 petit",
+      "ciqual_code": "20057",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon-rouge",
+      "nom_affiche": "oignon rouge",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20238",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "miel",
+      "nom_affiche": "miel",
+      "quantite": 60,
+      "unite": "g",
+      "poids_g": 60,
+      "optionnel": false,
+      "mesure_affichee": "3 c. à soupe",
+      "ciqual_code": "31008",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "moutarde",
+      "nom_affiche": "moutarde à l'ancienne",
+      "quantite": 15,
+      "unite": "g",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11013",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "sauce-soja",
+      "nom_affiche": "sauce soja",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11104",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 45,
+      "unite": "ml",
+      "poids_g": 41.2,
+      "optionnel": false,
+      "mesure_affichee": "un bon filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Préchauffe le four à 180 °C. Coupe les carottes en rondelles, le brocoli en fleurettes, l'oignon en lamelles. Entaille les escalopes dans la largeur sans aller jusqu'au bout.",
+      "duree_min": 12,
+      "actif": true
+    },
+    {
+      "texte": "Étale les légumes et la courge sur une plaque, sale, poivre et arrose d'huile. Pose le poulet dessus et nappe-le du mélange moutarde, soja et miel.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Enfourne 30 à 35 minutes en surveillant la cuisson.",
+      "duree_min": 33,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 1980
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/one-pan-de-poulet-au-miel-et-a-la-moutarde/",
+      "titre": "One pan de poulet au miel et à la moutarde",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "La recette pour 4 est servie en 3 parts. Escalopes pesées à 140 g et huile (« généreusement ») comptée 3 c. à soupe (estimations).",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 499,
+    "proteines_g": 49.4,
+    "glucides_g": 29.6,
+    "lipides_g": 17.9,
+    "fibres_g": 7.4,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 3.55,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

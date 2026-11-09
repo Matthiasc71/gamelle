@@ -1,0 +1,181 @@
+{
+  "id": "gratin-aubergines-ricotta",
+  "slug": "gratin-aubergines-ricotta",
+  "nom": "Gratin d'aubergines à la ricotta",
+  "resume": "Aubergines rôties en couches avec une sauce tomate à l'origan et une crème de ricotta aux œufs et au parmesan.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 15,
+    "cuisson_min": 55,
+    "total_min": 70,
+    "actif_min": 15
+  },
+  "equipement": [
+    "four"
+  ],
+  "saison": [
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "cuisine": "italienne",
+  "proteine_principale": "laitier",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "gratin",
+  "ingredients": [
+    {
+      "ingredient": "aubergine",
+      "nom_affiche": "aubergines",
+      "quantite": 1000,
+      "unite": "g",
+      "poids_g": 1000,
+      "optionnel": false,
+      "ciqual_code": "20053",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomates-concassees",
+      "nom_affiche": "tomates concassées",
+      "quantite": 800,
+      "unite": "g",
+      "poids_g": 800,
+      "optionnel": false,
+      "ciqual_code": "20137",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ricotta",
+      "nom_affiche": "ricotta",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "19585",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oeuf",
+      "nom_affiche": "œufs",
+      "quantite": 3,
+      "unite": "pièce",
+      "poids_g": 165,
+      "optionnel": false,
+      "ciqual_code": "22000",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "parmesan",
+      "nom_affiche": "parmesan râpé",
+      "quantite": 80,
+      "unite": "g",
+      "poids_g": 80,
+      "optionnel": false,
+      "ciqual_code": "12120",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "basilic",
+      "nom_affiche": "basilic",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 15,
+      "optionnel": true,
+      "mesure_affichee": "½ bouquet",
+      "ciqual_code": "11033",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "origan",
+      "nom_affiche": "origan séché",
+      "quantite": 1,
+      "unite": "g",
+      "poids_g": 1,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11035",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 45,
+      "unite": "ml",
+      "poids_g": 41.2,
+      "optionnel": false,
+      "mesure_affichee": "un bon filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Préchauffe le four à 200 °C. Coupe les aubergines en tranches d'un demi-centimètre, étale-les sur une plaque, arrose d'huile, sale, poivre et enfourne 25 minutes.",
+      "duree_min": 28,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 1500
+    },
+    {
+      "texte": "Pendant ce temps, mélange les tomates avec l'origan et le basilic ciselé. Dans un autre bol, mélange la ricotta, les œufs battus et presque tout le parmesan.",
+      "duree_min": 6,
+      "actif": true
+    },
+    {
+      "texte": "Baisse le four à 180 °C. Dans un plat, alterne aubergines, sauce tomate et ricotta, deux fois, puis finis par le reste de parmesan.",
+      "duree_min": 6,
+      "actif": true
+    },
+    {
+      "texte": "Enfourne 30 minutes.",
+      "duree_min": 30,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 1800
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/gratin-aubergines-ricotta/",
+      "titre": "Gratin d’aubergines à la ricotta",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Huile (« généreusement ») comptée 3 c. à soupe (estimation). Parmesan : 80 g, quantité de la liste d'ingrédients.",
+  "kcal_annoncees_par_part": 438,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 479,
+    "proteines_g": 23.7,
+    "glucides_g": 17.5,
+    "lipides_g": 32.2,
+    "fibres_g": 11.4,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 3.3,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

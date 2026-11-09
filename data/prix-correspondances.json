@@ -1326,5 +1326,335 @@
         "0%"
       ]
     }
+  },
+  "chorizo": {
+    "produit": "Chorizo doux, 225 g",
+    "conditionnement": {
+      "quantite": 225,
+      "unite": "g"
+    },
+    "aldi": "1307",
+    "open_prices": {
+      "categorie_produit": "en:chorizos",
+      "exclure": [
+        "tranches",
+        "tranché",
+        "émincé"
+      ]
+    }
+  },
+  "brocoli": {
+    "produit": "Brocoli (à la pièce)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 400,
+    "open_prices": {
+      "category_tag": "en:broccoli"
+    }
+  },
+  "lardons": {
+    "produit": "Lardons fumés, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "aldi": "6735",
+    "open_prices": {
+      "categorie_produit": "en:lardons",
+      "mots": [
+        "fum"
+      ],
+      "exclure": [
+        "allumettes de volaille",
+        "volaille",
+        "poulet"
+      ]
+    }
+  },
+  "saucisse-montbeliard": {
+    "produit": "Saucisses de Montbéliard, 2 × 150 g",
+    "conditionnement": {
+      "quantite": 300,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:montbeliard-sausages"
+    }
+  },
+  "endive": {
+    "produit": "Endives, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "open_prices": {
+      "category_tag": "en:endives"
+    }
+  },
+  "beurre": {
+    "produit": "Beurre doux, 250 g",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "aldi": "6572",
+    "open_prices": {
+      "categorie_produit": "en:butters",
+      "exclure": [
+        "demi-sel",
+        "salé",
+        "sale",
+        "allégé",
+        "leger",
+        "léger"
+      ]
+    }
+  },
+  "quinoa": {
+    "produit": "Quinoa, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:quinoa"
+    }
+  },
+  "grenade": {
+    "produit": "Grenade (à la pièce)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 200,
+    "open_prices": {
+      "category_tag": "en:pomegranates"
+    }
+  },
+  "poivron-vert": {
+    "produit": "Poivron vert (à la pièce)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 150,
+    "open_prices": {
+      "category_tag": "en:peppers"
+    }
+  },
+  "pate-curry": {
+    "produit": "Pâte de curry rouge, 50 g",
+    "conditionnement": {
+      "quantite": 50,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:curry-pastes"
+    }
+  },
+  "jambon-blanc": {
+    "produit": "Jambon blanc découenné, 4 tranches (180 g)",
+    "conditionnement": {
+      "quantite": 180,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:white-hams"
+    }
+  },
+  "gnocchis": {
+    "produit": "Gnocchis à poêler, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:gnocchi",
+      "exclure": [
+        "farci",
+        "fromage",
+        "semoule"
+      ]
+    }
+  },
+  "macedoine": {
+    "produit": "Macédoine de légumes, 530 g (400 g égouttés)",
+    "conditionnement": {
+      "quantite": 400,
+      "unite": "g"
+    },
+    "aldi": "4306",
+    "open_prices": {
+      "categorie_produit": "en:mixed-vegetables",
+      "mots": [
+        "macédoine",
+        "macedoine"
+      ]
+    }
+  },
+  "poivrons-grilles": {
+    "produit": "Poivrons grillés marinés, bocal 280 g (180 g égouttés)",
+    "conditionnement": {
+      "quantite": 180,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:grilled-peppers"
+    }
+  },
+  "fromage-fondu": {
+    "produit": "Fromage fondu, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "aldi": "5006047",
+    "open_prices": {
+      "categorie_produit": "en:processed-cheeses"
+    }
+  },
+  "patate-douce": {
+    "produit": "Patate douce, au kilo",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "open_prices": {
+      "category_tag": "en:sweet-potatoes"
+    }
+  },
+  "cacahuetes": {
+    "produit": "Cacahuètes grillées, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:peanuts",
+      "exclure": [
+        "beurre",
+        "enrobé",
+        "enrobées",
+        "chocolat",
+        "caramel"
+      ]
+    }
+  },
+  "poulet-cuit": {
+    "produit": "Émincés de poulet rôti, 150 g",
+    "conditionnement": {
+      "quantite": 150,
+      "unite": "g"
+    },
+    "aldi": "0360",
+    "open_prices": {
+      "categorie_produit": "en:cooked-chicken"
+    }
+  },
+  "pignons": {
+    "produit": "Pignons de pin, 70 g",
+    "conditionnement": {
+      "quantite": 70,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:pine-nuts"
+    }
+  },
+  "butternut": {
+    "produit": "Courge butternut (à la pièce)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 1000,
+    "open_prices": {
+      "category_tag": "en:butternut-squashes"
+    }
+  },
+  "boulgour": {
+    "produit": "Boulgour, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:bulgur"
+    }
+  },
+  "sauce-barbecue": {
+    "produit": "Sauce barbecue, 300 g",
+    "conditionnement": {
+      "quantite": 300,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:barbecue-sauces"
+    }
+  },
+  "sirop-erable": {
+    "produit": "Sirop d’érable, 250 ml (330 g)",
+    "conditionnement": {
+      "quantite": 330,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:maple-syrups"
+    }
+  },
+  "lentilles-vertes": {
+    "produit": "Lentilles vertes, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "aldi": "5017553",
+    "open_prices": {
+      "categorie_produit": "en:green-lentils",
+      "exclure": [
+        "cuite",
+        "cuisinée",
+        "conserve",
+        "préparée"
+      ]
+    }
+  },
+  "roquette": {
+    "produit": "Roquette, sachet 125 g",
+    "conditionnement": {
+      "quantite": 125,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:rocket"
+    }
+  },
+  "bacon-des": {
+    "produit": "Dés de bacon, 2 × 75 g",
+    "conditionnement": {
+      "quantite": 150,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:bacon",
+      "mots": [
+        "dés",
+        "des de bacon",
+        "allumettes",
+        "cubes"
+      ]
+    }
+  },
+  "graines-pavot": {
+    "produit": "Graines de pavot, 50 g",
+    "conditionnement": {
+      "quantite": 50,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:poppy-seeds"
+    }
   }
 }

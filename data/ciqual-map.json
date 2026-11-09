@@ -1200,5 +1200,284 @@
     "rangement": "frigo",
     "conservation_jours": 10,
     "legume": false
+  },
+  "chorizo": {
+    "nom": "chorizo doux",
+    "ciqual_code": "30316",
+    "ciqual_nom": "Chorizo supérieur, doux ou fort, type saucisse sèche",
+    "rayon": "viandes-poissons",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 30,
+    "legume": false
+  },
+  "brocoli": {
+    "nom": "brocoli frais",
+    "ciqual_code": "20057",
+    "ciqual_nom": "Brocoli, cru",
+    "rayon": "fruits-legumes",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 5,
+    "legume": true,
+    "note": "Pièce de 400 g environ (estimation)."
+  },
+  "lardons": {
+    "nom": "lardons fumés",
+    "ciqual_code": "28502",
+    "ciqual_nom": "Poitrine de porc en salaison, fumée, crue",
+    "rayon": "viandes-poissons",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 10,
+    "legume": false,
+    "note": "Lardons : poitrine de porc fumée crue (Ciqual)."
+  },
+  "saucisse-montbeliard": {
+    "nom": "saucisse de Montbéliard",
+    "ciqual_code": "30105",
+    "ciqual_nom": "Saucisse de Montbéliard, à cuire",
+    "rayon": "viandes-poissons",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 10,
+    "legume": false,
+    "note": "Une saucisse pèse environ 150 g (estimation)."
+  },
+  "endive": {
+    "nom": "endive",
+    "ciqual_code": "20026",
+    "ciqual_nom": "Endive, crue",
+    "rayon": "fruits-legumes",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 7,
+    "legume": true,
+    "note": "Une endive pèse environ 150 g (estimation)."
+  },
+  "beurre": {
+    "nom": "beurre doux",
+    "ciqual_code": "16400",
+    "ciqual_nom": "Beurre à 80% MG minimum, doux",
+    "rayon": "frais",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 60,
+    "legume": false
+  },
+  "quinoa": {
+    "nom": "quinoa",
+    "ciqual_code": "9340",
+    "ciqual_nom": "Quinoa, cru",
+    "rayon": "epicerie",
+    "etat": "cru",
+    "rangement": "placard",
+    "conservation_jours": 365,
+    "legume": false
+  },
+  "grenade": {
+    "nom": "grenade",
+    "ciqual_code": "13018",
+    "ciqual_nom": "Grenade, chair sans peau, avec pépins, crue",
+    "rayon": "fruits-legumes",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 14,
+    "legume": false,
+    "note": "Grains d’une grenade : environ 200 g (estimation)."
+  },
+  "poivron-vert": {
+    "nom": "poivron vert",
+    "ciqual_code": "20085",
+    "ciqual_nom": "Poivron vert, cru",
+    "rayon": "fruits-legumes",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 7,
+    "legume": true
+  },
+  "pate-curry": {
+    "nom": "pâte de curry rouge",
+    "ciqual_code": "11005",
+    "ciqual_nom": "Curry, poudre",
+    "rayon": "epicerie",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 60,
+    "legume": false,
+    "note": "Absente de Ciqual : approchée par le curry en poudre (estimation, faibles quantités)."
+  },
+  "jambon-blanc": {
+    "nom": "jambon blanc (tranches)",
+    "ciqual_code": "28902",
+    "ciqual_nom": "Jambon cuit, supérieur, découenné",
+    "rayon": "viandes-poissons",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 7,
+    "legume": false,
+    "note": "Une tranche pèse environ 45 g (estimation)."
+  },
+  "gnocchis": {
+    "nom": "gnocchis de pomme de terre",
+    "ciqual_code": "26264",
+    "ciqual_nom": "Gnocchi à la pomme de terre, à cuire",
+    "rayon": "frais",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 30,
+    "legume": false
+  },
+  "macedoine": {
+    "nom": "macédoine de légumes en conserve",
+    "ciqual_code": "20051",
+    "ciqual_nom": "Macédoine de légumes, appertisée, égouttée",
+    "rayon": "epicerie",
+    "etat": "égoutté",
+    "rangement": "placard",
+    "conservation_jours": 730,
+    "legume": true
+  },
+  "poivrons-grilles": {
+    "nom": "poivrons grillés en bocal",
+    "ciqual_code": "20275",
+    "ciqual_nom": "Poivron rouge, appertisé, égoutté",
+    "rayon": "epicerie",
+    "etat": "égoutté",
+    "rangement": "placard",
+    "conservation_jours": 365,
+    "legume": true,
+    "note": "Un petit bocal : environ 180 g égouttés (estimation)."
+  },
+  "fromage-fondu": {
+    "nom": "fromage fondu",
+    "ciqual_code": "12300",
+    "ciqual_nom": "Fromage fondu en tranchettes",
+    "rayon": "frais",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 30,
+    "legume": false
+  },
+  "patate-douce": {
+    "nom": "patate douce",
+    "ciqual_code": "4101",
+    "ciqual_nom": "Patate douce, crue",
+    "rayon": "fruits-legumes",
+    "etat": "cru",
+    "rangement": "placard",
+    "conservation_jours": 21,
+    "legume": true
+  },
+  "cacahuetes": {
+    "nom": "cacahuètes grillées non salées",
+    "ciqual_code": "15053",
+    "ciqual_nom": "Cacahuète, grillée, sans sel ajouté",
+    "rayon": "epicerie",
+    "etat": "cru",
+    "rangement": "placard",
+    "conservation_jours": 180,
+    "legume": false
+  },
+  "poulet-cuit": {
+    "nom": "dés de poulet rôti",
+    "ciqual_code": "36005",
+    "ciqual_nom": "Poulet, viande et peau rôties cuites au four",
+    "rayon": "viandes-poissons",
+    "etat": "cuit",
+    "rangement": "frigo",
+    "conservation_jours": 4,
+    "legume": false
+  },
+  "pignons": {
+    "nom": "pignons de pin",
+    "ciqual_code": "15025",
+    "ciqual_nom": "Pignon de pin",
+    "rayon": "epicerie",
+    "etat": "cru",
+    "rangement": "placard",
+    "conservation_jours": 180,
+    "legume": false
+  },
+  "butternut": {
+    "nom": "courge butternut",
+    "ciqual_code": "20138",
+    "ciqual_nom": "Courge butternut (doubeurre), chair sans peau, crue",
+    "rayon": "fruits-legumes",
+    "etat": "cru",
+    "rangement": "placard",
+    "conservation_jours": 30,
+    "legume": true,
+    "note": "Une butternut pèse environ 1 kg, chair ~ 80 % (estimation)."
+  },
+  "boulgour": {
+    "nom": "boulgour",
+    "ciqual_code": "9690",
+    "ciqual_nom": "Boulgour de blé, cru",
+    "rayon": "epicerie",
+    "etat": "cru",
+    "rangement": "placard",
+    "conservation_jours": 365,
+    "legume": false
+  },
+  "sauce-barbecue": {
+    "nom": "sauce barbecue",
+    "ciqual_code": "11100",
+    "ciqual_nom": "Sauce barbecue, préemballée",
+    "rayon": "epicerie",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 90,
+    "legume": false
+  },
+  "sirop-erable": {
+    "nom": "sirop d’érable",
+    "ciqual_code": "31034",
+    "ciqual_nom": "Sirop d'érable",
+    "rayon": "epicerie",
+    "etat": "cru",
+    "rangement": "placard",
+    "conservation_jours": 365,
+    "legume": false
+  },
+  "lentilles-vertes": {
+    "nom": "lentilles vertes sèches",
+    "ciqual_code": "20585",
+    "ciqual_nom": "Lentille verte, sèche",
+    "rayon": "epicerie",
+    "etat": "cru",
+    "rangement": "placard",
+    "conservation_jours": 365,
+    "legume": false
+  },
+  "roquette": {
+    "nom": "roquette",
+    "ciqual_code": "20217",
+    "ciqual_nom": "Roquette, crue",
+    "rayon": "fruits-legumes",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 4,
+    "legume": true
+  },
+  "bacon-des": {
+    "nom": "dés de bacon",
+    "ciqual_code": "28727",
+    "ciqual_nom": "Filet de bacon",
+    "rayon": "viandes-poissons",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 10,
+    "legume": false
+  },
+  "graines-pavot": {
+    "nom": "graines de pavot",
+    "ciqual_code": "11061",
+    "ciqual_nom": "Pavot, graine",
+    "rayon": "epicerie",
+    "etat": "cru",
+    "rangement": "placard",
+    "conservation_jours": 365,
+    "legume": false
   }
 }
