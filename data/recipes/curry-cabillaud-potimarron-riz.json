@@ -1,0 +1,192 @@
+{
+  "id": "curry-cabillaud-potimarron-riz",
+  "slug": "curry-cabillaud-potimarron-riz",
+  "nom": "Curry de cabillaud, potimarron et riz",
+  "resume": "Dés de potimarron mijotés puis cabillaud poché au lait de coco et à la pâte de curry, sur du riz.",
+  "type": "batch",
+  "portions_base": 3,
+  "conservation": {
+    "frigo_jours": 2,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 26,
+    "total_min": 31,
+    "actif_min": 10
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    9,
+    10,
+    11,
+    12,
+    1
+  ],
+  "cuisine": "indienne",
+  "proteine_principale": "poisson-blanc",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "poisson",
+  "ingredients": [
+    {
+      "ingredient": "cabillaud",
+      "nom_affiche": "filets de cabillaud",
+      "quantite": 3,
+      "unite": "pièce",
+      "poids_g": 390,
+      "optionnel": false,
+      "mesure_affichee": "3 filets",
+      "ciqual_code": "26043",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lait-coco",
+      "nom_affiche": "lait de coco",
+      "quantite": 240,
+      "unite": "ml",
+      "poids_g": 240,
+      "optionnel": false,
+      "mesure_affichee": "24 cl",
+      "ciqual_code": "18041",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "potimarron",
+      "nom_affiche": "potimarron",
+      "quantite": 0.75,
+      "unite": "pièce",
+      "poids_g": 720,
+      "optionnel": false,
+      "mesure_affichee": "¾ de potimarron",
+      "ciqual_code": "20132",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pate-curry",
+      "nom_affiche": "pâte de curry jaune",
+      "quantite": 15,
+      "unite": "g",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "3 c. à café",
+      "ciqual_code": "11005",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "riz-basmati",
+      "nom_affiche": "riz",
+      "quantite": 210,
+      "unite": "g",
+      "poids_g": 210,
+      "optionnel": false,
+      "ciqual_code": "9119",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "persil",
+      "nom_affiche": "persil",
+      "quantite": 0.3,
+      "unite": "pièce",
+      "poids_g": 9,
+      "optionnel": true,
+      "mesure_affichee": "quelques feuilles",
+      "ciqual_code": "11014",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 10,
+      "unite": "ml",
+      "poids_g": 9.2,
+      "optionnel": false,
+      "mesure_affichee": "un filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cuis le riz à l'eau salée le temps du paquet.",
+      "duree_min": 12,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Coupe le potimarron en deux, vide-le et coupe-le en gros dés.",
+      "duree_min": 5,
+      "actif": true
+    },
+    {
+      "texte": "Fais revenir le potimarron 3 minutes dans une casserole huilée, ajoute 30 cl d'eau, couvre et laisse cuire 15 minutes.",
+      "duree_min": 18,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 900
+    },
+    {
+      "texte": "Pendant ce temps, coupe le poisson en morceaux. Ajoute-le avec la pâte de curry et le lait de coco, sale, poivre et laisse cuire 6 à 8 minutes à couvert.",
+      "duree_min": 8,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 420
+    },
+    {
+      "texte": "Sers sur le riz avec un peu de persil.",
+      "duree_min": 1,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/curry-de-cabillaud-potimarron-et-riz-8v0lb0cpctpufsm10hvp",
+      "titre": "Curry de cabillaud, potimarron & riz",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    },
+    {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@jow_france/video/7431946613402111265",
+      "titre": "Série lunchbox d'automne, épisode 3 : curry de cabillaud et potimarron",
+      "auteur": "@jow_france",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@jow_france",
+        "title": "Série lunchbox d’automne - Épisode 3 🥡 Nouvelle recette automnale débloquée 😱 Quantités pour 1 :  - 1 filet de cabillaud frais - 80ml de lai",
+        "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-0037-euttp/oEIje6IjTISfa9GqEgeOLHAeCgIlBa8ZGyROlI~tplv-tiktokx-origin.image?dr=9636&x-expires=1794434400&x-signature=1Px%2FbxkbTidtrO4EQG8dOzzMcVQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      }
+    }
+  ],
+  "adaptation": "Recette pour 1 multipliée par 3 pour en faire un batch, à manger dans les 2 jours. Filet de cabillaud 130 g et ¼ de potimarron 240 g de chair (estimations).",
+  "kcal_annoncees_par_part": 535,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 601,
+    "proteines_g": 33.1,
+    "glucides_g": 65.9,
+    "lipides_g": 21,
+    "fibres_g": 8.2,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 3.58,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

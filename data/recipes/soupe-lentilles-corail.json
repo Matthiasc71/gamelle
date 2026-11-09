@@ -1,0 +1,241 @@
+{
+  "id": "soupe-lentilles-corail",
+  "slug": "soupe-lentilles-corail",
+  "nom": "Soupe de lentilles corail aux légumes",
+  "resume": "Une soupe épaisse de lentilles corail, oignons, carottes et céleri, parfumée au curry et au cumin.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 15,
+    "cuisson_min": 70,
+    "total_min": 85,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cuisine": "orientale",
+  "proteine_principale": "legumineuses",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "soupe",
+  "ingredients": [
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignons",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "carotte",
+      "nom_affiche": "carottes",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 3,
+      "unite": "pièce",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "3 gousses",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "celeri-branche",
+      "nom_affiche": "céleri branche",
+      "quantite": 0.16,
+      "unite": "pièce",
+      "poids_g": 80,
+      "optionnel": false,
+      "mesure_affichee": "2 branches",
+      "ciqual_code": "20023",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "curry",
+      "nom_affiche": "curry",
+      "quantite": 3,
+      "unite": "g",
+      "poids_g": 3,
+      "optionnel": false,
+      "mesure_affichee": "1 ½ c. à café",
+      "ciqual_code": "11005",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "cumin",
+      "nom_affiche": "cumin",
+      "quantite": 3,
+      "unite": "g",
+      "poids_g": 3,
+      "optionnel": false,
+      "mesure_affichee": "1 ½ c. à café",
+      "ciqual_code": "11042",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "concentre-tomate",
+      "nom_affiche": "concentré de tomates",
+      "quantite": 45,
+      "unite": "g",
+      "poids_g": 45,
+      "optionnel": false,
+      "mesure_affichee": "3 c. à soupe",
+      "ciqual_code": "20068",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "fecule-mais",
+      "nom_affiche": "fécule de maïs",
+      "quantite": 3,
+      "unite": "g",
+      "poids_g": 3,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "9510",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lentilles-corail",
+      "nom_affiche": "lentilles corail",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "20535",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "coriandre",
+      "nom_affiche": "coriandre et persil",
+      "quantite": 0.2,
+      "unite": "pièce",
+      "poids_g": 5,
+      "optionnel": true,
+      "mesure_affichee": "quelques brins",
+      "ciqual_code": "11094",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "citron",
+      "nom_affiche": "citron",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 20,
+      "optionnel": true,
+      "mesure_affichee": "½ citron",
+      "ciqual_code": "13009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 10,
+      "unite": "ml",
+      "poids_g": 9.2,
+      "optionnel": false,
+      "mesure_affichee": "un filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Coupe les légumes en petits morceaux, hache les oignons et l'ail.",
+      "duree_min": 12,
+      "actif": true
+    },
+    {
+      "texte": "Fais-les revenir dans un filet d'huile, sale, poivre et ajoute les épices et le concentré.",
+      "duree_min": 5,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 300
+    },
+    {
+      "texte": "Baisse le feu, verse 1,5 l d'eau et la fécule délayée dans un peu d'eau, et laisse mijoter 1 heure à feu doux.",
+      "duree_min": 60,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 3600
+    },
+    {
+      "texte": "Ajoute les lentilles et cuis encore 6 à 7 minutes. Sers avec les herbes hachées et un peu de citron.",
+      "duree_min": 8,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 420
+    }
+  ],
+  "sources": [
+    {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@louloukitchen_/video/7183682932287098118",
+      "titre": "Soupe de lentilles corail",
+      "auteur": "@louloukitchen_",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@louloukitchen_",
+        "title": "SOUPE DE LENTILLE corail 🧡 Se conserve 3 jours au frigo  Ingrédients pour une soupe pour 4/5 personnes :  2 oignons  2 carotte  3 gousses d’",
+        "thumbnail_url": "https://p19-common-sign.tiktokcdn-us.com/tos-maliva-p-0068/8c88c21333ab4899b6264a81e95bfc3d_1672581528~tplv-tiktokx-origin.image?dr=9636&x-expires=1794434400&x-signature=2WyImJAqCAhyY8FVufCJ7Q02Qp0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      }
+    }
+  ],
+  "adaptation": "La source annonce 4 à 5 personnes : comptée en 4 parts. Céleri compté 40 g la branche (estimation).",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 410,
+    "proteines_g": 29.7,
+    "glucides_g": 54.7,
+    "lipides_g": 3.9,
+    "fibres_g": 19.3,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 0.87,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

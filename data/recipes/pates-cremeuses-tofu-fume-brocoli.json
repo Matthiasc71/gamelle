@@ -1,0 +1,173 @@
+{
+  "id": "pates-cremeuses-tofu-fume-brocoli",
+  "slug": "pates-cremeuses-tofu-fume-brocoli",
+  "nom": "Pâtes crémeuses au tofu fumé et brocoli",
+  "resume": "Des pâtes avec du tofu fumé et du brocoli dorés à la sauce soja, nappés d'une crème légère.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 15,
+    "total_min": 25,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cuisine": "française",
+  "proteine_principale": "tofu",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "pates",
+  "ingredients": [
+    {
+      "ingredient": "brocoli",
+      "nom_affiche": "brocoli",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "20057",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon jaune",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "creme-legere-4",
+      "nom_affiche": "crème légère",
+      "quantite": 300,
+      "unite": "ml",
+      "poids_g": 300,
+      "optionnel": false,
+      "mesure_affichee": "30 cl",
+      "ciqual_code": "19432",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tofu-fume",
+      "nom_affiche": "tofu fumé",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "20912",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pates",
+      "nom_affiche": "pâtes sèches",
+      "quantite": 350,
+      "unite": "g",
+      "poids_g": 350,
+      "optionnel": false,
+      "ciqual_code": "9810",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "sauce-soja",
+      "nom_affiche": "sauce soja salée",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11104",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "un peu",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cuis les pâtes dans une grande casserole d'eau bouillante le temps du paquet.",
+      "duree_min": 11,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Pendant ce temps, détaille le brocoli en fleurettes, cisèle l'oignon et coupe le tofu en cubes.",
+      "duree_min": 6,
+      "actif": true
+    },
+    {
+      "texte": "Fais dorer l'oignon dans une poêle huilée, ajoute tofu et brocoli, arrose de sauce soja et laisse dorer 5 minutes en remuant.",
+      "duree_min": 8,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 300
+    },
+    {
+      "texte": "Verse la crème, rectifie l'assaisonnement, laisse réduire à feu doux et mélange avec les pâtes.",
+      "duree_min": 4,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 240
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/pates-cremeuses-tofu-fume-brocolis/",
+      "titre": "Pâtes crémeuses au tofu fumé et brocolis",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Crème légère à 4 % (la source utilise un mélange de crèmes végétales) et pâtes de blé. Huile comptée 1 c. à café (estimation).",
+  "kcal_annoncees_par_part": 573,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 592,
+    "proteines_g": 31.1,
+    "glucides_g": 73.7,
+    "lipides_g": 16.3,
+    "fibres_g": 5.9,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.62,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

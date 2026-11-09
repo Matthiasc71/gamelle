@@ -1,0 +1,167 @@
+{
+  "id": "dahl-lentilles-vertes-patate-douce",
+  "slug": "dahl-lentilles-vertes-patate-douce",
+  "nom": "Dahl de lentilles vertes et patates douces",
+  "resume": "Lentilles vertes, patate douce et carotte mijotées au lait de coco et au curry.",
+  "type": "batch",
+  "portions_base": 3,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 60,
+    "total_min": 70,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "cuisine": "indienne",
+  "proteine_principale": "legumineuses",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "curry-bol",
+  "ingredients": [
+    {
+      "ingredient": "lentilles-vertes",
+      "nom_affiche": "lentilles vertes",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20585",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "patate-douce",
+      "nom_affiche": "patates douces",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "4101",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "carotte",
+      "nom_affiche": "carotte",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon jaune",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lait-coco",
+      "nom_affiche": "lait de coco",
+      "quantite": 300,
+      "unite": "ml",
+      "poids_g": 300,
+      "optionnel": false,
+      "mesure_affichee": "30 cl",
+      "ciqual_code": "18041",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "curry",
+      "nom_affiche": "curry et garam masala",
+      "quantite": 4,
+      "unite": "g",
+      "poids_g": 4,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café de chaque",
+      "ciqual_code": "11005",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 10,
+      "unite": "ml",
+      "poids_g": 9.2,
+      "optionnel": false,
+      "mesure_affichee": "un peu",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cuis les lentilles 20 minutes à l'eau non salée et égoutte. Pendant ce temps, coupe patate douce et carotte en petits cubes et émince l'oignon.",
+      "duree_min": 20,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 1200
+    },
+    {
+      "texte": "Dans une sauteuse huilée, fais revenir l'oignon, ajoute patate douce et carotte et laisse cuire 10 minutes en remuant.",
+      "duree_min": 10,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    },
+    {
+      "texte": "Ajoute les épices (et 2 bâtons de cannelle si tu en as), les lentilles et le lait de coco, sale bien, couvre d'un peu d'eau et laisse cuire 30 minutes à couvert sur feu doux.",
+      "duree_min": 30,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 1800
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/dahl-de-lentilles-vertes-et-patate-douce/",
+      "titre": "Dahl de lentilles vertes et patates douces",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "La recette pour 4 est servie en 3 parts. Garam masala absent de Ciqual : compté comme du curry en poudre (2 g). Cannelle en bâton non comptée.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 580,
+    "proteines_g": 21.6,
+    "glucides_g": 60.6,
+    "lipides_g": 24,
+    "fibres_g": 17.9,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.22,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

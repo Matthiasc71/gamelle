@@ -1,0 +1,186 @@
+{
+  "id": "butternut-gorgonzola-lentilles-quinoa",
+  "slug": "butternut-gorgonzola-lentilles-quinoa",
+  "nom": "Butternut rôtie au gorgonzola, lentilles et quinoa",
+  "resume": "Tranches de butternut rôties à l'oignon rouge, gratinées au gorgonzola, avec une salade de lentilles et quinoa citronnée.",
+  "type": "batch",
+  "portions_base": 3,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 15,
+    "cuisson_min": 30,
+    "total_min": 45,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques",
+    "four"
+  ],
+  "saison": [
+    9,
+    10,
+    11,
+    12,
+    1
+  ],
+  "cuisine": "française",
+  "proteine_principale": "legumineuses",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "salade",
+  "ingredients": [
+    {
+      "ingredient": "lentilles-vertes",
+      "nom_affiche": "lentilles vertes",
+      "quantite": 150,
+      "unite": "g",
+      "poids_g": 150,
+      "optionnel": false,
+      "ciqual_code": "20585",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "quinoa",
+      "nom_affiche": "quinoa",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "9340",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "butternut",
+      "nom_affiche": "courge butternut",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 800,
+      "optionnel": false,
+      "mesure_affichee": "1 courge",
+      "ciqual_code": "20138",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "gorgonzola",
+      "nom_affiche": "gorgonzola",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "12524",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon-rouge",
+      "nom_affiche": "oignon rouge",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 50,
+      "optionnel": false,
+      "mesure_affichee": "½ oignon",
+      "ciqual_code": "20238",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "citron",
+      "nom_affiche": "citron jaune",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 40,
+      "optionnel": false,
+      "mesure_affichee": "zeste et jus",
+      "ciqual_code": "13009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 gousse",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 60,
+      "unite": "ml",
+      "poids_g": 54.9,
+      "optionnel": false,
+      "mesure_affichee": "3 c. à soupe + de quoi rôtir",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cuis les lentilles 15 minutes dans un grand volume d'eau non salée, ajoute le quinoa et poursuis 10 minutes. Rince à l'eau froide et égoutte.",
+      "duree_min": 25,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 1500
+    },
+    {
+      "texte": "Préchauffe le four à 180 °C. Épépine la courge, coupe-la en tranches de 5 mm et étale-la avec l'oignon émincé sur une plaque. Arrose d'huile, sale, poivre et enfourne 25 minutes.",
+      "duree_min": 30,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 1500
+    },
+    {
+      "texte": "Ajoute le gorgonzola en morceaux sur la courge et repasse 5 minutes au four.",
+      "duree_min": 5,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 300
+    },
+    {
+      "texte": "Assaisonne lentilles et quinoa avec le zeste et le jus du citron, l'ail pressé, 3 c. à soupe d'huile, sel et poivre, et sers avec la courge.",
+      "duree_min": 4,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/butternut-gorgonzola-lentilles-quinoa/",
+      "titre": "Butternut rôtie au bleu & salade de lentilles et quinoa",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "La recette pour 4 est servie en 3 parts. Chair de la courge comptée 800 g ; huile pour rôtir comptée 1 c. à soupe (estimations).",
+  "kcal_annoncees_par_part": 418,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 646,
+    "proteines_g": 26.5,
+    "glucides_g": 57.5,
+    "lipides_g": 30.5,
+    "fibres_g": 16.4,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.08,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

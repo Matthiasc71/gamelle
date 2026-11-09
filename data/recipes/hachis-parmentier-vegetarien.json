@@ -1,0 +1,222 @@
+{
+  "id": "hachis-parmentier-vegetarien",
+  "slug": "hachis-parmentier-vegetarien",
+  "nom": "Hachis parmentier végétarien aux lentilles",
+  "resume": "Lentilles vertes, carottes et poivrons sous une purée de patates douces à l'œuf, gratinée.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 20,
+    "cuisson_min": 50,
+    "total_min": 70,
+    "actif_min": 25
+  },
+  "equipement": [
+    "plaques",
+    "four"
+  ],
+  "saison": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "cuisine": "française",
+  "proteine_principale": "legumineuses",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "gratin",
+  "ingredients": [
+    {
+      "ingredient": "patate-douce",
+      "nom_affiche": "patates douces",
+      "quantite": 750,
+      "unite": "g",
+      "poids_g": 750,
+      "optionnel": false,
+      "ciqual_code": "4101",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lentilles-vertes",
+      "nom_affiche": "lentilles vertes",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20585",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "carotte",
+      "nom_affiche": "carottes",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poivrons-grilles",
+      "nom_affiche": "poivrons marinés égouttés",
+      "quantite": 90,
+      "unite": "g",
+      "poids_g": 90,
+      "optionnel": false,
+      "mesure_affichee": "½ bocal",
+      "ciqual_code": "20275",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "oeuf",
+      "nom_affiche": "œuf",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 55,
+      "optionnel": false,
+      "ciqual_code": "22000",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "creme-liquide",
+      "nom_affiche": "crème liquide",
+      "quantite": 200,
+      "unite": "ml",
+      "poids_g": 200,
+      "optionnel": false,
+      "mesure_affichee": "20 cl",
+      "ciqual_code": "19417",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "emmental-rape",
+      "nom_affiche": "fromage râpé",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "12118",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignons jaunes",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 gousse",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "farine",
+      "nom_affiche": "farine",
+      "quantite": 10,
+      "unite": "g",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "9435",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 10,
+      "unite": "ml",
+      "poids_g": 9.2,
+      "optionnel": false,
+      "mesure_affichee": "un peu",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cuis les lentilles 20 à 25 minutes à l'eau non salée et égoutte. Pendant ce temps, coupe les carottes en dés, cisèle les oignons et presse l'ail.",
+      "duree_min": 25,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 1350
+    },
+    {
+      "texte": "Cuis les patates douces en cubes 15 à 20 minutes à l'eau, écrase-les et ajoute l'œuf, 3 c. à soupe de crème, sel et poivre. Préchauffe le four à 180 °C.",
+      "duree_min": 20,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 1080
+    },
+    {
+      "texte": "Dans une sauteuse huilée, fais revenir oignons et ail, ajoute carottes et poivrons, laisse cuire 10 minutes, puis ajoute les lentilles et la farine.",
+      "duree_min": 12,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    },
+    {
+      "texte": "Verse les lentilles dans un plat, arrose du reste de crème, couvre de purée et de fromage râpé, et enfourne 20 minutes.",
+      "duree_min": 22,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 1200
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/hachis-parmentier-vegetarien/",
+      "titre": "Hachis parmentier végétarien",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Demi-bocal de poivrons compté 90 g et huile 2 c. à café (estimations).",
+  "kcal_annoncees_par_part": 552,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 645,
+    "proteines_g": 26.7,
+    "glucides_g": 65,
+    "lipides_g": 27.2,
+    "fibres_g": 16.6,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.19,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

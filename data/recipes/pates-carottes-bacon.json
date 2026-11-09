@@ -1,0 +1,143 @@
+{
+  "id": "pates-carottes-bacon",
+  "slug": "pates-carottes-bacon",
+  "nom": "Pâtes aux carottes et au bacon, crème légère",
+  "resume": "Rondelles de carottes poêlées avec du bacon et une crème à 4 %, sur des pâtes : moins d'un euro le repas.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 15,
+    "total_min": 25,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "française",
+  "proteine_principale": "porc",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "pates",
+  "ingredients": [
+    {
+      "ingredient": "pates",
+      "nom_affiche": "pâtes sèches",
+      "quantite": 500,
+      "unite": "g",
+      "poids_g": 500,
+      "optionnel": false,
+      "ciqual_code": "9810",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "carotte",
+      "nom_affiche": "carottes",
+      "quantite": 500,
+      "unite": "g",
+      "poids_g": 500,
+      "optionnel": false,
+      "ciqual_code": "20009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "bacon-des",
+      "nom_affiche": "bacon en tranches",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "28727",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "creme-legere-4",
+      "nom_affiche": "crème légère 4 %",
+      "quantite": 125,
+      "unite": "ml",
+      "poids_g": 125,
+      "optionnel": false,
+      "mesure_affichee": "½ pot de 25 cl",
+      "ciqual_code": "19432",
+      "rayon": "frais",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cuis les pâtes dans une casserole d'eau bouillante salée.",
+      "duree_min": 11,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Pendant ce temps, épluche les carottes, coupe-les en fines rondelles et fais-les revenir à la poêle jusqu'à la cuisson voulue.",
+      "duree_min": 12,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    },
+    {
+      "texte": "Coupe le bacon en petits morceaux, ajoute-le aux carottes, puis la crème une fois le bacon cuit. Sale, poivre et sers sur les pâtes.",
+      "duree_min": 4,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 180
+    }
+  ],
+  "sources": [
+    {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@laviedunefitmum/video/7214796846311492869",
+      "titre": "5 repas équilibrés pour moins de 5 € : pâtes carottes bacon",
+      "auteur": "@laviedunefitmum",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@laviedunefitmum",
+        "title": "👉🏼 5 repas équilibrées pour moins de 5€ ! Ici j’en ai eu pour 4,20€ soit 0,84€ le repas !  Ingrédients: -500g de pâtes crus 👉🏼 0,67€ -500g d",
+        "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-p-0068/a194d5d5074840338d151464c56f6134_1679825806~tplv-tiktokx-origin.image?dr=9636&x-expires=1794434400&x-signature=XcTEpMs22QDwOHm0fKD1yU4%2BUbQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      }
+    }
+  ],
+  "adaptation": "La source annonce 5 repas ; servis ici en 4 parts pour atteindre 20 g de protéines et rester sous J+3 au frigo.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 575,
+    "proteines_g": 28.5,
+    "glucides_g": 99.1,
+    "lipides_g": 5.2,
+    "fibres_g": 7.3,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.07,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

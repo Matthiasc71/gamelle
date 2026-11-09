@@ -1761,5 +1761,86 @@
     "open_prices": {
       "categorie_produit": "en:couscous"
     }
+  },
+  "tofu-fume": {
+    "produit": "Tofu fumé, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:smoked-tofu"
+    }
+  },
+  "gorgonzola": {
+    "produit": "Gorgonzola AOP, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "aldi": "6436",
+    "open_prices": {
+      "categorie_produit": "en:blue-cheeses",
+      "mots": [
+        "gorgonzola"
+      ]
+    }
+  },
+  "cabillaud": {
+    "produit": "Dos de cabillaud, 4 × 135 g",
+    "conditionnement": {
+      "quantite": 540,
+      "unite": "g"
+    },
+    "aldi": "9855",
+    "open_prices": {
+      "categorie_produit": "en:cod-fillets"
+    }
+  },
+  "potimarron": {
+    "produit": "Potimarron (à la pièce)",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 1200,
+    "open_prices": {
+      "category_tag": "en:pumpkins"
+    }
+  },
+  "chevre-frais": {
+    "produit": "Fromage de chèvre frais, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "aldi": "6517",
+    "open_prices": {
+      "categorie_produit": "en:goat-cheeses",
+      "mots": [
+        "frais"
+      ]
+    }
+  },
+  "menthe": {
+    "produit": "Menthe fraîche, bouquet",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 30,
+    "open_prices": {
+      "category_tag": "en:mint"
+    }
+  },
+  "vin-blanc": {
+    "produit": "Vin blanc sec, 75 cl",
+    "conditionnement": {
+      "quantite": 750,
+      "unite": "ml"
+    },
+    "open_prices": {
+      "categorie_produit": "en:white-wines"
+    }
   }
 }

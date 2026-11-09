@@ -1,0 +1,208 @@
+{
+  "id": "risotto-coquillettes-poulet-poireaux-chevre",
+  "slug": "risotto-coquillettes-poulet-poireaux-chevre",
+  "nom": "Risotto de coquillettes, poulet, poireaux et chèvre",
+  "resume": "Coquillettes cuites comme un risotto avec les poireaux, du poulet grillé et du chèvre frais fondu.",
+  "type": "batch",
+  "portions_base": 3,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 22,
+    "total_min": 32,
+    "actif_min": 20
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cuisine": "française",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "pates",
+  "ingredients": [
+    {
+      "ingredient": "pates",
+      "nom_affiche": "coquillettes",
+      "quantite": 240,
+      "unite": "g",
+      "poids_g": 240,
+      "optionnel": false,
+      "ciqual_code": "9810",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poireau",
+      "nom_affiche": "blancs de poireaux",
+      "quantite": 450,
+      "unite": "g",
+      "poids_g": 450,
+      "optionnel": false,
+      "ciqual_code": "20039",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "escalopes de poulet",
+      "quantite": 3,
+      "unite": "pièce",
+      "poids_g": 450,
+      "optionnel": false,
+      "mesure_affichee": "3 escalopes",
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "chevre-frais",
+      "nom_affiche": "chèvre frais",
+      "quantite": 90,
+      "unite": "g",
+      "poids_g": 90,
+      "optionnel": false,
+      "ciqual_code": "12805",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "bouillon-legumes",
+      "nom_affiche": "bouillon de légumes",
+      "quantite": 0.75,
+      "unite": "pièce",
+      "poids_g": 7.5,
+      "optionnel": false,
+      "mesure_affichee": "¾ de cube",
+      "ciqual_code": "11041",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "echalote",
+      "nom_affiche": "échalote",
+      "quantite": 1.5,
+      "unite": "pièce",
+      "poids_g": 45,
+      "optionnel": false,
+      "mesure_affichee": "1 ½ échalote",
+      "ciqual_code": "20097",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "vin-blanc",
+      "nom_affiche": "vin blanc",
+      "quantite": 60,
+      "unite": "ml",
+      "poids_g": 60,
+      "optionnel": true,
+      "mesure_affichee": "6 cl",
+      "ciqual_code": "5215",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 13.7,
+      "optionnel": false,
+      "mesure_affichee": "deux filets",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Coupe le poulet en petits morceaux et fais-le dorer 2 à 3 minutes par face dans une poêle huilée. Réserve.",
+      "duree_min": 6,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 300
+    },
+    {
+      "texte": "Pendant ce temps, émince l'échalote et le blanc des poireaux, et rince-les bien.",
+      "duree_min": 6,
+      "actif": true
+    },
+    {
+      "texte": "Dans une cocotte huilée, fais revenir l'échalote 2 minutes, ajoute les coquillettes et laisse-les dorer 2 minutes en remuant. Verse le vin blanc si tu en mets et laisse absorber.",
+      "duree_min": 5,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 240
+    },
+    {
+      "texte": "Ajoute les poireaux et le bouillon (environ 75 cl d'eau) petit à petit, en attendant qu'il soit absorbé, jusqu'à ce que les pâtes soient cuites.",
+      "duree_min": 14,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 840
+    },
+    {
+      "texte": "Ajoute le poulet 2 minutes, puis hors du feu le chèvre frais. Mélange jusqu'à ce qu'il fonde, sale et poivre.",
+      "duree_min": 3,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 120
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/risotto-de-coquillettes-poireaux-poulet-et-chevre-8sd7hdwmdpea4oqn16nr",
+      "titre": "Risotto de coquillettes poireaux, poulet & chèvre",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    },
+    {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@jow_france/video/7428898380174183712",
+      "titre": "Série lunchbox d'automne, épisode 1 : risotto de coquillettes",
+      "auteur": "@jow_france",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@jow_france",
+        "title": "Série lunchbox d’automne - Épisode 1 🥡 Ce risotto de coquillettes fera des envieux au bureau 👀 Quantités pour 1 : - 80g de pâtes (coquillett",
+        "thumbnail_url": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-0037-euttp/38d73c511a124793abd2aba6bf4973ba_1729675218~tplv-tiktokx-origin.image?dr=9636&x-expires=1794434400&x-signature=HuUfBsdqkCBVGGtdCkmR8CCJ8S0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      }
+    }
+  ],
+  "adaptation": "Recette pour 1 multipliée par 3 pour en faire un batch. Escalope comptée 150 g (estimation). Vin blanc facultatif, non compté.",
+  "kcal_annoncees_par_part": 615,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 617,
+    "proteines_g": 51.1,
+    "glucides_g": 68.2,
+    "lipides_g": 13.5,
+    "fibres_g": 5.4,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.68,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

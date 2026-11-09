@@ -155,7 +155,12 @@
       "titre": "Lunchbox de printemps : salade poulet, petits pois & tzatziki",
       "auteur": "@jow_france",
       "verifie_le": "2026-11-09",
-      "quantites_depuis": "legende"
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@jow_france",
+        "title": "Une lunchbox de printemps colorée et fraîche : tout ce qu’on aime 💚 Ingrédients pour 1 lunchbox : - 1 escalope de poulet - 80g de petits poi",
+        "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-no1a-p-0037-no/ocZF2N1jDIDoF4mqAeFDIajHuDfdPpLIECAKIe~tplv-tiktokx-dmt-logom:tos-no1a-i-0068-no/oIDiY2ToEhwCSMfBO4rBvCLIaiAiAAjwAgzzIE.image?dr=9634&x-expires=1794434400&x-signature=bcp9MWZbP3XXo75aNBAnGp4IfDw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      }
     }
   ],
   "adaptation": "Escalope comptée 150 g, ce qui correspond aux protéines annoncées par Jow (estimation). Salade comptée 40 g.",

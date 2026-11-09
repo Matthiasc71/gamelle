@@ -7,12 +7,12 @@ enseignes discount d'abord, au moins 3 relevés. Lidl : 539 relevés Open Prices
 | Méthode | Ingrédients |
 |---|---|
 | Ticket (saisie manuelle) | 0 |
-| Lidl (relevés en magasin) | 43 |
-| Open Prices Lyon | 41 |
-| Site enseigne (Aldi) | 38 |
+| Lidl (relevés en magasin) | 44 |
+| Open Prices Lyon | 43 |
+| Site enseigne (Aldi) | 41 |
 | Open Prices France (estimation) | 25 |
-| **Sans prix** | **5** |
-| Total | 152 |
+| **Sans prix** | **6** |
+| Total | 159 |
 
 Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de relevés).
 
@@ -36,6 +36,7 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | brocoli | Brocoli (à la pièce) | — | 1,29 € (3) | — | — | **1,29 €** · open-prices-lyon |
 | brocoli-surgele | Brocolis en fleurettes surgelés, 1 kg | — | — | 2,19 € | — | **2,19 €** · site-enseigne |
 | butternut | Courge butternut (à la pièce) | — | — | — | 2,69 € (3) | **2,69 €** · open-prices-france |
+| cabillaud | Dos de cabillaud, 4 × 135 g | — | 20,42 € (3) | 9,99 € | — | **9,99 €** · site-enseigne |
 | cacahuetes | Cacahuètes grillées, 200 g | 3,40 € (5) | 9,14 € (8) | — | — | **0,68 €** · lidl |
 | capres | Câpres, 70 g égouttés | — | — | — | — | **aucun prix** |
 | carotte | Carottes, sachet 1 kg | 1,47 € (2) | 1,96 € (6) | — | — | **1,48 €** · lidl |
@@ -44,6 +45,7 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | champignons | Champignons de Paris, barquette 500 g | 7,16 € (2) | — | — | 5,99 € (9) | **3,58 €** · lidl |
 | chapelure | Chapelure, 400 g | — | — | 0,85 € | — | **0,85 €** · site-enseigne |
 | cheddar-rape | Cheddar râpé, 200 g | — | — | 2,39 € | — | **2,39 €** · site-enseigne |
+| chevre-frais | Fromage de chèvre frais, 200 g | — | — | 1,89 € | 15,95 € (7) | **1,89 €** · site-enseigne |
 | chorizo | Chorizo doux, 225 g | — | — | 1,89 € | 8,44 € (57) | **1,89 €** · site-enseigne |
 | chou-rave | Chou-rave (à la pièce) | — | — | — | 1,90 € (5) | **1,90 €** · open-prices-france |
 | ciboulette | Ciboulette, botte | — | — | — | 1,95 € (3) | **1,95 €** · open-prices-france |
@@ -83,6 +85,7 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | gingembre-frais | Gingembre frais, au kilo | 4,95 € (1) | 4,99 € (3) | — | — | **4,95 €** · lidl |
 | gingembre-poudre | Gingembre moulu, 35 g | 18,44 € (1) | 82,00 € (135) | — | — | **0,65 €** · lidl |
 | gnocchis | Gnocchis à poêler, 500 g | 5,58 € (3) | 7,63 € (15) | — | — | **2,79 €** · lidl |
+| gorgonzola | Gorgonzola AOP, 200 g | — | — | 2,85 € | — | **2,85 €** · site-enseigne |
 | graines-pavot | Graines de pavot, 50 g | — | — | — | — | **aucun prix** |
 | grenade | Grenade (à la pièce) | 0,99 € (1) | — | — | 2,29 € (6) | **0,99 €** · lidl |
 | haricots-blancs | Haricots blancs en conserve, 250 g égouttés | — | 5,48 € (6) | — | — | **1,37 €** · open-prices-lyon |
@@ -105,6 +108,7 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | macedoine | Macédoine de légumes, 530 g (400 g égouttés) | — | 3,32 € (4) | 1,09 € | — | **1,09 €** · site-enseigne |
 | mais | Maïs doux en conserve, 285 g égoutté | — | 8,76 € (6) | 0,85 € | — | **0,85 €** · site-enseigne |
 | mayonnaise | Mayonnaise, 465 g | 4,24 € (1) | 7,78 € (64) | 1,69 € | — | **1,97 €** · lidl |
+| menthe | Menthe fraîche, bouquet | — | — | — | — | **aucun prix** |
 | miel | Miel, 500 g | — | 17,40 € (53) | — | — | **8,70 €** · open-prices-lyon |
 | moutarde | Moutarde de Dijon, 370 g | — | 8,17 € (46) | — | — | **3,02 €** · open-prices-lyon |
 | mozzarella | Mozzarella, 125 g | 7,66 € (4) | — | 0,69 € | 8,32 € (99) | **0,96 €** · lidl |
@@ -137,6 +141,7 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | poivrons-grilles | Poivrons grillés marinés, bocal 280 g (180 g égouttés) | — | 16,93 € (4) | — | — | **3,05 €** · open-prices-lyon |
 | pomme-de-terre | Pommes de terre, filet 2 kg | 1,55 € (10) | 2,29 € (3) | — | — | **3,11 €** · lidl |
 | porc-filet-mignon | Filet mignon de porc, environ 500 g | — | — | — | 9,97 € (3) | **4,98 €** · open-prices-france |
+| potimarron | Potimarron (à la pièce) | 2,39 € (1) | — | — | 2,86 € (4) | **2,39 €** · lidl |
 | poulet-cuit | Émincés de poulet rôti, 150 g | 8,64 € (2) | 13,93 € (3) | 2,05 € | — | **1,30 €** · lidl |
 | poulet-filet | Filets de poulet, 1 kg | 11,54 € (2) | — | 9,49 € | 13,65 € (8) | **11,54 €** · lidl |
 | pulpe-tomate | Pulpe de tomates, 400 g | — | 5,98 € (6) | — | — | **2,39 €** · open-prices-lyon |
@@ -157,6 +162,7 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | tahini | Purée de sésame (tahini), 250 g | — | 24,76 € (4) | — | — | **6,19 €** · open-prices-lyon |
 | thon-naturel | Thon au naturel, boîte 150 g (112 g égoutté) | 9,68 € (3) | 19,09 € (25) | 1,39 € | — | **1,08 €** · lidl |
 | tofu-ferme | Tofu nature ferme, 400 g | — | 11,04 € (11) | — | — | **4,42 €** · open-prices-lyon |
+| tofu-fume | Tofu fumé, 200 g | — | 17,13 € (4) | — | — | **3,43 €** · open-prices-lyon |
 | tofu-soyeux | Tofu soyeux, 300 g | — | — | — | 7,50 € (4) | **2,25 €** · open-prices-france |
 | tomate | Tomates rondes, au kilo | 3,39 € (2) | 4,99 € (6) | — | — | **3,39 €** · lidl |
 | tomates-cerises | Tomates cerises, barquette 250 g | — | 11,96 € (3) | — | — | **2,99 €** · open-prices-lyon |
@@ -166,6 +172,7 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | tzatziki | Tzatziki, 200 g | — | 13,89 € (5) | — | — | **2,78 €** · open-prices-lyon |
 | udon | Udon frais précuits, 2 × 200 g | — | — | — | 10,07 € (7) | **4,03 €** · open-prices-france |
 | vermicelles-riz | Nouilles (vermicelles) de riz, 250 g | — | 10,08 € (3) | — | — | **2,52 €** · open-prices-lyon |
+| vin-blanc | Vin blanc sec, 75 cl | — | 9,93 € (8) | — | — | **7,45 €** · open-prices-lyon |
 | vin-rouge | Vin rouge, 75 cl | — | 12,34 € (6) | — | — | **9,26 €** · open-prices-lyon |
 | vinaigre | Vinaigre blanc ou de cidre, 1 L | — | 1,09 € (17) | — | — | **1,09 €** · open-prices-lyon |
 | vinaigre-balsamique | Vinaigre balsamique, 50 cl | — | 7,98 € (27) | — | — | **3,99 €** · open-prices-lyon |

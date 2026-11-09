@@ -1561,5 +1561,77 @@
     "rangement": "placard",
     "conservation_jours": 730,
     "legume": false
+  },
+  "tofu-fume": {
+    "nom": "tofu fumé",
+    "ciqual_code": "20912",
+    "ciqual_nom": "Tofu fumé, préemballé",
+    "rayon": "frais",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 20,
+    "legume": false
+  },
+  "gorgonzola": {
+    "nom": "gorgonzola",
+    "ciqual_code": "12524",
+    "ciqual_nom": "Gorgonzola",
+    "rayon": "frais",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 20,
+    "legume": false
+  },
+  "cabillaud": {
+    "nom": "dos de cabillaud",
+    "ciqual_code": "26043",
+    "ciqual_nom": "Cabillaud, cru",
+    "rayon": "viandes-poissons",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 2,
+    "legume": false,
+    "note": "Un filet pèse environ 130 g (estimation)."
+  },
+  "potimarron": {
+    "nom": "potimarron",
+    "ciqual_code": "20132",
+    "ciqual_nom": "Potimarron, chair sans peau, cru",
+    "rayon": "fruits-legumes",
+    "etat": "cru",
+    "rangement": "placard",
+    "conservation_jours": 60,
+    "legume": true,
+    "note": "Un potimarron pèse environ 1,2 kg, chair ~ 80 % (estimation)."
+  },
+  "chevre-frais": {
+    "nom": "fromage de chèvre frais",
+    "ciqual_code": "12805",
+    "ciqual_nom": "Fromage de chèvre frais, type palet, crottin ou bûchette",
+    "rayon": "frais",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 14,
+    "legume": false
+  },
+  "menthe": {
+    "nom": "menthe fraîche",
+    "ciqual_code": "11027",
+    "ciqual_nom": "Menthe, fraîche",
+    "rayon": "fruits-legumes",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 5,
+    "legume": false
+  },
+  "vin-blanc": {
+    "nom": "vin blanc sec",
+    "ciqual_code": "5215",
+    "ciqual_nom": "Vin blanc sec",
+    "rayon": "epicerie",
+    "etat": "cru",
+    "rangement": "placard",
+    "conservation_jours": 30,
+    "legume": false
   }
 }
