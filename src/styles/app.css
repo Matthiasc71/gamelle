@@ -1162,7 +1162,7 @@ button {
   position: fixed;
   inset: 0;
   z-index: 50;
-  background: rgba(36, 64, 47, 0.32);
+  background: var(--voile);
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -2446,4 +2446,254 @@ textarea.champ-texte {
 .filtres button[aria-pressed='true'] {
   background: var(--encre);
   color: var(--papier-clair);
+}
+
+/* ───────────── Ce midi / ce soir ───────────── */
+
+.ce-repas {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 12px;
+  margin: 0 0 14px;
+  padding: 12px 14px;
+  border-radius: var(--r-carte);
+  border: var(--trait) solid var(--encre);
+  background: var(--papier-clair);
+}
+
+.ce-repas__plat {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.ce-repas__texte {
+  display: grid;
+  gap: 1px;
+  min-width: 0;
+}
+
+.ce-repas__texte strong {
+  font: 400 18px/1.2 var(--serif);
+}
+
+.ce-repas__texte small {
+  font-size: 13px;
+  color: var(--encre-douce);
+}
+
+.ce-repas__rappel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  padding-top: 8px;
+  border-top: 1px dashed var(--filet);
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+/* ───────────── Idées avec les restes ───────────── */
+
+.idees {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.idee {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 60px;
+  padding: 6px 0;
+  border-top: 1px dashed var(--filet);
+  text-decoration: none;
+}
+
+.idee__texte {
+  display: grid;
+  gap: 1px;
+  min-width: 0;
+}
+
+.idee__texte strong {
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.idee__texte small {
+  font-size: 13px;
+  color: var(--encre-douce);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ───────────── Historique ───────────── */
+
+.semaine__actions {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.historique {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.historique__semaine {
+  padding: 14px 0;
+  border-top: 1px dashed var(--filet-fort);
+}
+
+.historique__plats {
+  display: flex;
+  gap: 4px;
+  margin: 8px 0 6px;
+}
+
+.historique__noms {
+  margin: 0;
+  font-size: 14px;
+  color: var(--encre-douce);
+}
+
+.historique__semaine .rangee-boutons .btn {
+  flex: 1;
+}
+
+/* ───────────── Mode nuit (ajustements) ───────────── */
+
+:root[data-theme='sombre'] .puce--rose, :root[data-theme='sombre'] .puce--menthe, :root[data-theme='sombre'] .plus--actif, :root[data-theme='sombre'] .repas__fait, :root[data-theme='sombre'] .case-action--fait, :root[data-theme='sombre'] .article__case input:checked + .article__boite, :root[data-theme='sombre'] .echeance--vite, :root[data-theme='sombre'] .bandeau-batch, :root[data-theme='sombre'] .etapes__num, :root[data-theme='sombre'] .cuisine__num, :root[data-theme='sombre'] .creneau[aria-pressed='true'], :root[data-theme='sombre'] .compat__item--ko, :root[data-theme='sombre'] .minuteur--fini, :root[data-theme='sombre'] .totaux__case--alerte small, :root[data-theme='sombre'] .jour--aujourdhui .jour__num, :root[data-theme='sombre'] .onglet[aria-current='page'] span, :root[data-theme='sombre'] .avert {
+  color: var(--sur-couleur);
+}
+
+:root[data-theme='sombre'] .bandeau-batch__voir {
+  color: var(--sur-couleur); border-color: var(--sur-couleur); background: rgba(250, 246, 236, 0.45);
+}
+
+:root[data-theme='sombre'] .case-action--fait, :root[data-theme='sombre'] .creneau[aria-pressed='true'] {
+  border-color: var(--sur-couleur);
+}
+
+:root[data-theme='sombre'] .chiffre__rose {
+  mix-blend-mode: normal; opacity: 0.45;
+}
+
+:root[data-theme='sombre'] .couloir__bloc {
+  mix-blend-mode: normal; opacity: 0.85;
+}
+
+:root[data-theme='sombre']::after {
+  mix-blend-mode: soft-light; opacity: 0.12;
+}
+
+:root[data-theme='sombre'] .illus {
+  filter: brightness(0.9);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='clair']) .puce--rose, :root:not([data-theme='clair']) .puce--menthe, :root:not([data-theme='clair']) .plus--actif, :root:not([data-theme='clair']) .repas__fait, :root:not([data-theme='clair']) .case-action--fait, :root:not([data-theme='clair']) .article__case input:checked + .article__boite, :root:not([data-theme='clair']) .echeance--vite, :root:not([data-theme='clair']) .bandeau-batch, :root:not([data-theme='clair']) .etapes__num, :root:not([data-theme='clair']) .cuisine__num, :root:not([data-theme='clair']) .creneau[aria-pressed='true'], :root:not([data-theme='clair']) .compat__item--ko, :root:not([data-theme='clair']) .minuteur--fini, :root:not([data-theme='clair']) .totaux__case--alerte small, :root:not([data-theme='clair']) .jour--aujourdhui .jour__num, :root:not([data-theme='clair']) .onglet[aria-current='page'] span, :root:not([data-theme='clair']) .avert {
+    color: var(--sur-couleur);
+  }
+  
+  :root:not([data-theme='clair']) .bandeau-batch__voir {
+    color: var(--sur-couleur); border-color: var(--sur-couleur); background: rgba(250, 246, 236, 0.45);
+  }
+  
+  :root:not([data-theme='clair']) .case-action--fait, :root:not([data-theme='clair']) .creneau[aria-pressed='true'] {
+    border-color: var(--sur-couleur);
+  }
+  
+  :root:not([data-theme='clair']) .chiffre__rose {
+    mix-blend-mode: normal; opacity: 0.45;
+  }
+  
+  :root:not([data-theme='clair']) .couloir__bloc {
+    mix-blend-mode: normal; opacity: 0.85;
+  }
+  
+  :root:not([data-theme='clair'])::after {
+    mix-blend-mode: soft-light; opacity: 0.12;
+  }
+  
+  :root:not([data-theme='clair']) .illus {
+    filter: brightness(0.9);
+  }
+}
+
+/* ───────────── Réglages repliés ───────────── */
+
+.groupe-replie {
+  border-top: 1px dashed var(--filet-fort);
+  padding: 0;
+}
+
+.groupe-replie:last-of-type {
+  border-bottom: 1px dashed var(--filet-fort);
+}
+
+.groupe-replie > summary {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.groupe-replie > summary::-webkit-details-marker {
+  display: none;
+}
+
+.groupe-replie > summary span {
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 16.5px;
+}
+
+.groupe-replie > summary small {
+  margin-left: auto;
+  font-size: 13.5px;
+  color: var(--encre-douce);
+  text-align: right;
+}
+
+.groupe-replie > summary::after {
+  content: '+';
+  font: 700 18px/1 var(--display);
+  width: 18px;
+  text-align: center;
+}
+
+.groupe-replie[open] > summary::after {
+  content: '−';
+}
+
+.groupe-replie[open] {
+  padding-bottom: 14px;
+}
+
+/* Onglet actif en mode nuit : surligneur plein, encre sombre lisible sur toute la hauteur */
+:root[data-theme='sombre'] .onglet[aria-current='page'] span {
+  background: var(--rose);
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='clair']) .onglet[aria-current='page'] span {
+    background: var(--rose);
+    border-radius: 4px;
+    padding: 2px 5px;
+  }
 }

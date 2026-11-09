@@ -2,11 +2,11 @@ import { useRef, useState } from 'react';
 import { BASE, PRIX_RELEVES_LE } from '../app/base';
 import { exporter, importer } from '../app/db';
 import { enregistrerPreferences, enregistrerReglages, usePreferences, useReglages } from '../app/etat';
-import { NOM_EQUIPEMENT } from '../app/presentation';
+import { NOM_EQUIPEMENT, nombre } from '../app/presentation';
 import { aller, lien, retour } from '../app/routeur';
 import { EQUIPEMENTS } from '../domain/constantes';
 import { REGLAGES_DEFAUT, type Reglages as TReglages } from '../domain/types';
-import { annoncer, BoutonIcone, Compteur, Interrupteur, Rubrique } from '../ui/composants';
+import { annoncer, BoutonIcone, Compteur, Interrupteur } from '../ui/composants';
 import { Icone } from '../ui/Icone';
 
 const JOURS = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
@@ -67,16 +67,22 @@ export default function Reglages() {
       </h1>
       <p className="texte-doux petit">Les changements s’appliquent aux prochains menus. Tout reste sur ce téléphone.</p>
 
-      <section aria-labelledby="r-calories" className="groupe">
-        <Rubrique id="r-calories">Calories et protéines</Rubrique>
+      <details className="groupe groupe-replie">
+        <summary>
+          <span>Calories et protéines</span>
+          <small>{`${nombre(r.kcalJour[0])}–${nombre(r.kcalJour[1])} kcal`}</small>
+        </summary>
         <Fourchette label="Déjeuner + dîner, par jour" valeur={r.kcalJour} min={600} max={2500} unite="kcal" onChange={(v) => maj({ kcalJour: v })} />
         <Fourchette label="Par repas" valeur={r.kcalRepas} min={250} max={1200} unite="kcal" onChange={(v) => maj({ kcalRepas: v })} />
         <ChampNombre label="kcal libres (petit-déj, en-cas)" valeur={r.kcalLibres} min={0} max={1500} unite="kcal" onChange={(v) => maj({ kcalLibres: v })} />
         <ChampNombre label="Protéines par repas, au moins" valeur={r.protRepasMin} min={0} max={80} unite="g" onChange={(v) => maj({ protRepasMin: v })} />
-      </section>
+      </details>
 
-      <section aria-labelledby="r-budget" className="groupe">
-        <Rubrique id="r-budget">Budget et repas</Rubrique>
+      <details className="groupe groupe-replie">
+        <summary>
+          <span>Budget et repas</span>
+          <small>{`${r.budget[0]}–${r.budget[1]} € · ${r.personnes} pers.`}</small>
+        </summary>
         <Fourchette label="Budget courses par semaine" valeur={r.budget} min={10} max={200} unite="€" onChange={(v) => maj({ budget: v, budgetCible: Math.min(Math.max(r.budgetCible, v[0]), v[1]) })} />
         <ChampNombre label="Budget visé" valeur={r.budgetCible} min={r.budget[0]} max={r.budget[1]} unite="€" onChange={(v) => maj({ budgetCible: v })} />
         <div className="champ">
@@ -84,10 +90,13 @@ export default function Reglages() {
           <Compteur valeur={r.personnes} min={1} max={6} label="Nombre de personnes" onChange={(v) => maj({ personnes: v })} />
         </div>
         <p className="texte-doux petit">Repas planifiés : déjeuner et dîner, 7 jours (14 repas). Ville : Lyon (prix Lidl, Aldi et Open Prices).</p>
-      </section>
+      </details>
 
-      <section aria-labelledby="r-cuisine" className="groupe">
-        <Rubrique id="r-cuisine">Cuisine</Rubrique>
+      <details className="groupe groupe-replie">
+        <summary>
+          <span>Cuisine</span>
+          <small>{`${r.equipement.length} appareils${r.exclus.length ? ` · ${r.exclus.length} exclus` : ''}`}</small>
+        </summary>
         <fieldset className="cases">
           <legend>Équipement</legend>
           {EQUIPEMENTS.map((e) => (
@@ -137,10 +146,13 @@ export default function Reglages() {
             ))}
           </ul>
         )}
-      </section>
+      </details>
 
-      <section aria-labelledby="r-menu" className="groupe">
-        <Rubrique id="r-menu">Menu</Rubrique>
+      <details className="groupe groupe-replie">
+        <summary>
+          <span>Menu</span>
+          <small>{`le ${JOURS[r.jourDeblocage]} à ${r.heureDeblocage} h`}</small>
+        </summary>
         <label className="champ">
           <span>Menu suivant débloqué le</span>
           <span className="champ__saisie">
@@ -161,7 +173,6 @@ export default function Reglages() {
           </span>
         </label>
         <Interrupteur label="Inclure mes favoris" aide="1 à 2 favoris par semaine dans les prochains menus." actif={r.favorisInclus} onChange={(v) => maj({ favorisInclus: v })} />
-        <Interrupteur label="Grain du papier" aide="Texture imprimée sur tout l’écran." actif={prefs.grain} onChange={(v) => enregistrerPreferences({ grain: v })} />
         <button
           className="lien-bouton"
           onClick={async () => {
@@ -171,10 +182,31 @@ export default function Reglages() {
         >
           Remettre les réglages par défaut
         </button>
-      </section>
+      </details>
 
-      <section aria-labelledby="r-sauvegarde" className="groupe">
-        <Rubrique id="r-sauvegarde">Sauvegarde</Rubrique>
+      <details className="groupe groupe-replie">
+        <summary>
+          <span>Affichage</span>
+          <small>{prefs.theme === 'auto' ? 'thème automatique' : prefs.theme === 'sombre' ? 'mode nuit' : 'mode jour'}</small>
+        </summary>
+        <div className="champ">
+          <span>Thème</span>
+        </div>
+        <div className="segments segments--petits" role="group" aria-label="Thème">
+          {(['auto', 'clair', 'sombre'] as const).map((t) => (
+            <button key={t} aria-pressed={prefs.theme === t} onClick={() => enregistrerPreferences({ theme: t })}>
+              {t === 'auto' ? 'Auto' : t === 'clair' ? 'Jour' : 'Nuit'}
+            </button>
+          ))}
+        </div>
+        <Interrupteur label="Grain du papier" actif={prefs.grain} onChange={(v) => enregistrerPreferences({ grain: v })} />
+      </details>
+
+      <details className="groupe groupe-replie">
+        <summary>
+          <span>Sauvegarde</span>
+          <small>Exporter, restaurer</small>
+        </summary>
         <p className="texte-doux petit">Favoris, menus, coches, frigo et réglages dans un fichier JSON, à garder dans Fichiers ou iCloud Drive.</p>
         <div className="rangee-boutons">
           <button
@@ -212,10 +244,13 @@ export default function Reglages() {
             }}
           />
         </div>
-      </section>
+      </details>
 
-      <section aria-labelledby="r-credits" className="groupe credits">
-        <Rubrique id="r-credits">Crédits et sources</Rubrique>
+      <details className="groupe credits groupe-replie">
+        <summary>
+          <span>Crédits et sources</span>
+          <small>Ciqual, prix</small>
+        </summary>
         <ul>
           <li>
             {BASE.recettes.length} recettes adaptées de sources publiques vérifiées, créditées sur chaque fiche. Étapes reformulées par Gamelle.
@@ -244,7 +279,7 @@ export default function Reglages() {
         >
           Revoir l’accueil
         </button>
-      </section>
+      </details>
     </main>
   );
 }

@@ -3,7 +3,8 @@ import { BASE } from '../app/base';
 import { aujourdhui, corrigerFrigo, useFrigo, useReglages } from '../app/etat';
 import { majuscule, nombre } from '../app/presentation';
 import { ecartJours, versDate } from '../domain/dates';
-import { aUtiliserVite, type Article, type Boite, type Lieu } from '../domain/frigo';
+import { aUtiliserVite, ideesRestes, type Article, type Boite, type Lieu } from '../domain/frigo';
+import { lien } from '../app/routeur';
 import { annoncer, Chargement, Feuille, Illustration, Rubrique } from '../ui/composants';
 import { Icone } from '../ui/Icone';
 
@@ -55,6 +56,7 @@ export default function Frigo() {
 
   if (!etat || !parLieu || !reglages) return <Chargement />;
   const vite = aUtiliserVite(etat, auj);
+  const idees = ideesRestes(etat, BASE, auj, reglages.placardDeBase);
   const vide = !etat.articles.length && !etat.boites.length;
 
   return (
@@ -72,6 +74,28 @@ export default function Frigo() {
         <p className="vide">
           Vide pour l’instant. Les articles cochés dans les courses et les plats cuisinés arrivent ici tout seuls.
         </p>
+      )}
+
+      {idees.length > 0 && (
+        <section aria-labelledby="idees">
+          <Rubrique id="idees">Avec ce qu’il te reste</Rubrique>
+          <ul className="idees">
+            {idees.map((i) => {
+              const r = BASE.parId[i.recetteId];
+              return (
+                <li key={i.recetteId}>
+                  <a className="idee" href={lien('recette', r.id, { depuis: 'favoris' })}>
+                    <Illustration nom={r.illustration} taille={44} />
+                    <span className="idee__texte">
+                      <strong>{r.nom}</strong>
+                      <small>{majuscule(i.utilise.map((x) => BASE.catalogue[x]?.nom ?? x).join(', '))}</small>
+                    </span>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
       )}
 
       {(vite.articles.length > 0 || vite.boites.length > 0) && (

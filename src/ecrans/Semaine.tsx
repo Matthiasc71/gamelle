@@ -2,10 +2,10 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { useMemo } from 'react';
 import { BASE } from '../app/base';
 import { db } from '../app/db';
-import { annulerEchange, aujourdhui, regenerer, useContexte, useEvenements, useMenu, useReglages, useSemaines, useSemaineVue } from '../app/etat';
+import { annulerEchange, aujourdhui, maintenant, regenerer, useContexte, useEvenements, useMenu, useReglages, useSemaines, useSemaineVue } from '../app/etat';
 import { badge, MOMENT, nombre } from '../app/presentation';
 import { lien } from '../app/routeur';
-import { ajouterJours, libelleJour, libelleSemaine, lundiDeSemaine, versDate } from '../domain/dates';
+import { ajouterJours, ecartJours, libelleJour, libelleSemaine, lundiDeSemaine, versDate } from '../domain/dates';
 import { euros } from '../domain/format';
 import { coutsMenu, detailsRepas, sessionDimanche, type DetailRepas } from '../domain/regles';
 import type { Menu, Reglages } from '../domain/types';
@@ -27,7 +27,10 @@ export default function Semaine() {
         <Brin className="semaine__brin" />
         <div className="semaine__barre">
           <p className="kicker">Gamelle · semaine {numero}</p>
-          <BoutonIcone icone="reglages" label="Réglages" href={lien('reglages')} variante="nu" />
+          <span className="semaine__actions">
+            <BoutonIcone icone="horloge" label="Historique" href={lien('historique')} variante="nu" />
+            <BoutonIcone icone="reglages" label="Réglages" href={lien('reglages')} variante="nu" />
+          </span>
         </div>
         <h1 id="titre-semaine" className="titre-page">
           {libelleSemaine(lundiDeSemaine(semaine))}
@@ -75,6 +78,8 @@ function ContenuSemaine({ menu, reglages, anciensReglages }: { menu: Menu; regla
 
   return (
     <>
+      <CeRepas details={details} menu={menu} auj={auj} />
+
       {anciensReglages && (
         <div className="note">
           <p>Ce menu a été composé avant tes derniers réglages.</p>
@@ -184,5 +189,39 @@ function LigneRepas({ d, semaine, mange, cuisine }: { d: DetailRepas; semaine: s
         </span>
       )}
     </a>
+  );
+}
+
+/** Le repas du moment (midi avant 14 h, soir ensuite) et les boîtes à sortir du congélateur pour demain. */
+function CeRepas({ details, menu, auj }: { details: DetailRepas[]; menu: Menu; auj: string }) {
+  const j = ecartJours(menu.lundi, auj);
+  if (j < 0 || j > 6) return null;
+  const moment = maintenant().getHours() < 14 ? 'midi' : 'soir';
+  const d = details.find((x) => x.jour === j && x.moment === moment);
+  const aSortir = details.filter((x) => x.jour === j + 1 && x.statut === 'congele');
+  if (!d) return null;
+  const r = d.recette;
+  const aCuisiner = d.statut === 'cuisine' || d.statut === 'express' || d.statut === 'assemblage';
+  return (
+    <section className="ce-repas" aria-label={moment === 'midi' ? 'Ce midi' : 'Ce soir'}>
+      <a className="ce-repas__plat" href={lien('recette', r.id, { s: menu.semaine, c: d.creneau })}>
+        <Illustration nom={r.illustration} taille={56} />
+        <span className="ce-repas__texte">
+          <span className="kicker">{moment === 'midi' ? 'Ce midi' : 'Ce soir'}</span>
+          <strong>{r.nom}</strong>
+          <small>{d.statut === 'congele' ? 'boîte du congélateur' : badge(d)}</small>
+        </span>
+      </a>
+      {aCuisiner && (
+        <a className="btn btn--plein btn--petit" href={lien('cuisine', r.id, { parts: d.cuisson.parts })}>
+          Cuisiner
+        </a>
+      )}
+      {aSortir.length > 0 && (
+        <p className="ce-repas__rappel">
+          <Icone nom="flocon" taille={16} /> À sortir ce soir : {aSortir.map((x) => x.recette.nom).join(', ')}
+        </p>
+      )}
+    </section>
   );
 }

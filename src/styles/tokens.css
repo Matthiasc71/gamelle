@@ -30,5 +30,45 @@
 
   /* Trames de points (halftone) pour les bandeaux */
   --trame-encre: radial-gradient(rgba(36, 64, 47, 0.28) 0.9px, transparent 1.2px) 0 0 / 7px 7px;
+  /* encre posée sur les aplats colorés (menthe, rose, abricot) : sombre dans les deux modes */
+  --sur-couleur: #24402f;
+  --voile: rgba(36, 64, 47, 0.32);
   --trame-menthe: radial-gradient(var(--menthe) 1.1px, transparent 1.4px) 0 0 / 6px 6px;
+}
+
+/* Mode nuit : même herbier, imprimé sur papier sombre. « Auto » suit le réglage de l'iPhone. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='clair']) {
+    --papier: #17201a;
+    --papier-clair: #1f2b23;
+    --encre: #ece6d6;
+    --encre-douce: #b4baaa;
+    --sauge: #6f8668;
+    --sauge-pale: #2a3a2e;
+    --menthe: #7cc4a0;
+    --rose: #e79a9a;
+    --abricot: #d9a585;
+    --filet: rgba(236, 230, 214, 0.28);
+    --filet-fort: rgba(236, 230, 214, 0.5);
+    --trame-encre: radial-gradient(rgba(36, 64, 47, 0.35) 0.9px, transparent 1.2px) 0 0 / 7px 7px;
+    --voile: rgba(0, 0, 0, 0.55);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='sombre'] {
+  --papier: #17201a;
+  --papier-clair: #1f2b23;
+  --encre: #ece6d6;
+  --encre-douce: #b4baaa;
+  --sauge: #6f8668;
+  --sauge-pale: #2a3a2e;
+  --menthe: #7cc4a0;
+  --rose: #e79a9a;
+  --abricot: #d9a585;
+  --filet: rgba(236, 230, 214, 0.28);
+  --filet-fort: rgba(236, 230, 214, 0.5);
+  --trame-encre: radial-gradient(rgba(36, 64, 47, 0.35) 0.9px, transparent 1.2px) 0 0 / 7px 7px;
+  --voile: rgba(0, 0, 0, 0.55);
+  color-scheme: dark;
 }

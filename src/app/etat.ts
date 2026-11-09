@@ -28,8 +28,9 @@ export const aujourdhui = () => aujourdhuiLocal(maintenant());
 
 // ───────────────────────────── Réglages et préférences ─────────────────────────────
 
-export type Preferences = { grain: boolean; accueilFait: boolean };
-const PREFS_DEFAUT: Preferences = { grain: true, accueilFait: false };
+export type Theme = 'auto' | 'clair' | 'sombre';
+export type Preferences = { grain: boolean; accueilFait: boolean; theme: Theme };
+const PREFS_DEFAUT: Preferences = { grain: true, accueilFait: false, theme: 'auto' };
 
 export function useReglages(): Reglages | undefined {
   return useLiveQuery(async () => {

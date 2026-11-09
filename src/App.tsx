@@ -16,7 +16,7 @@ const ONGLETS: { ecran: string; nom: string; icone: NomIcone }[] = [
 function ongletDe(ecran: string, depuis: string | null) {
   if (ecran === 'nouvelle') return 'favoris';
   if (ecran === 'recette' || ecran === 'echange') return depuis === 'favoris' || ecran === 'echange' ? 'favoris' : 'semaine';
-  if (ecran === 'reglages' || ecran === 'session') return 'semaine';
+  if (ecran === 'reglages' || ecran === 'session' || ecran === 'historique') return 'semaine';
   return ecran;
 }
 
@@ -33,6 +33,7 @@ const ECRANS: Record<string, React.ComponentType> = {
   reglages: lazy(() => import('./ecrans/Reglages')),
   accueil: lazy(() => import('./ecrans/Accueil')),
   nouvelle: lazy(() => import('./ecrans/NouvelleRecette')),
+  historique: lazy(() => import('./ecrans/Historique')),
 };
 
 export default function App() {
@@ -51,7 +52,17 @@ export default function App() {
   }, [prefs, route.ecran]);
 
   useEffect(() => {
-    document.documentElement.classList.toggle('sans-grain', prefs ? !prefs.grain : false);
+    const html = document.documentElement;
+    html.classList.toggle('sans-grain', prefs ? !prefs.grain : false);
+    // thème : « auto » suit le réglage de l'iPhone, sinon on force jour ou nuit
+    if (!prefs || prefs.theme === 'auto') delete html.dataset.theme;
+    else html.dataset.theme = prefs.theme;
+    // barre d'état : chaque balise garde sa couleur en « auto », sinon les deux prennent la couleur forcée
+    document.querySelectorAll('meta[name="theme-color"]').forEach((m) => {
+      const pourSombre = m.getAttribute('media')?.includes('dark');
+      const sombre = prefs?.theme === 'sombre' || (prefs?.theme !== 'clair' && pourSombre);
+      m.setAttribute('content', sombre ? '#17201A' : '#F4EEE1');
+    });
   }, [prefs]);
 
   useEffect(() => {

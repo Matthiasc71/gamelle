@@ -54,9 +54,10 @@ Cahier des charges complet : `docs/cahier-des-charges.md`. Maquettes de référe
 - `courses.ts` (paquets, stock, placard de base, prix corrigés), `timeline.ts` (session batch en parallèle),
   `remplacement.ts` (3 alternatives), `echange.ts` (favori → créneaux, avertissements), `frigo.ts` (événements).
 - `npm run simuler` : 52 semaines avec stock et historique → `reports/simulation.md`.
-- Budget (simulé avec 83 recettes), ~35,5 € en caisse / semaine en moyenne (24/52 dans le budget, ~25 € mangés) : plus de
-  variété = plus de paquets différents. Priorité de la base : recettes à moins de 2 € la part, qui réutilisent les mêmes paquets.
-
+- Budget (simulé avec 92 recettes, `npm run simuler -- 52 2026-W47`) : ~32,1 € en caisse / semaine en moyenne, 39/52 dans le budget.
+  Le tirage favorise les recettes qui partagent les paquets déjà prévus ou en stock (`poids` : ×(1 + 1,2·partagés),
+  ÷(1 + 0,2·nouveaux)). Priorité de la base : recettes à moins de 2 € la part, qui réutilisent les mêmes paquets.
+- `frigo.ts` : `ideesRestes` propose les recettes qui finissent le mieux le stock (hors placard de base).
 ## Interface (src/app, src/ui, src/ecrans)
 - `app/base.ts` : recettes, catalogue et prix lus au build (validés par Zod au démarrage).
 - `app/db.ts` : Dexie (kv, favoris, menus, coches, evenements du frigo, prix corrigés, echanges, mesRecettes), export/import JSON.
@@ -65,6 +66,10 @@ Cahier des charges complet : `docs/cahier-des-charges.md`. Maquettes de référe
 - `app/etat.ts` : hooks (`useMenu`, `useContexte`, `useFrigo`…) et actions. Le menu est généré dans un worker
   (`generateur.worker.ts`) puis gardé par semaine ; un échange ou remplacement l'enregistre avec « Annuler ».
   Courses : le stock compté exclut les achats cochés de la semaine (sinon les lignes disparaîtraient).
+- Semaine : carte « Ce midi / Ce soir » (repas du moment, rappel « À sortir ce soir » pour le congélateur).
+  `#/historique` : semaines passées (Dexie), « Refaire la semaine prochaine » (annulable). Réglages en sections repliées.
+- Mode nuit : préférence `theme` (auto / clair / sombre) → `html[data-theme]`, jetons sombres dans `tokens.css`
+  (auto = `prefers-color-scheme`). Les aplats colorés gardent une encre sombre fixe (`--sur-couleur`).
 - Routeur par ancre (`#/recette/<id>?s=<semaine>&c=<créneau>`), `?date=AAAA-MM-JJ` fige la date (démos, captures).
 - `ui/composants.tsx` (Chiffre en double impression, Puce, BoutonPlus tampon, Etiquette, Feuille, annonces),
   `ui/Icone.tsx` (icônes au trait dessinées), `styles/tokens.css` + `styles/app.css`.
