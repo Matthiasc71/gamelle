@@ -1,0 +1,168 @@
+{
+  "id": "tagliatelles-poulet-champignons",
+  "slug": "tagliatelles-poulet-champignons",
+  "nom": "Tagliatelles au poulet et champignons",
+  "resume": "Tagliatelles avec une poêlée d'oignon, champignons et lamelles de poulet, liée à la crème fraîche.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 4,
+    "cuisson_min": 11,
+    "total_min": 15,
+    "actif_min": 10
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "française",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "pates",
+  "ingredients": [
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "escalope de poulet",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 150,
+      "optionnel": false,
+      "mesure_affichee": "1 escalope",
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pates",
+      "nom_affiche": "tagliatelles sèches",
+      "quantite": 70,
+      "unite": "g",
+      "poids_g": 70,
+      "optionnel": false,
+      "ciqual_code": "9810",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "champignons",
+      "nom_affiche": "champignons de Paris",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20056",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "creme-fraiche",
+      "nom_affiche": "crème fraîche",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "19410",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon jaune",
+      "quantite": 0.25,
+      "unite": "pièce",
+      "poids_g": 25,
+      "optionnel": false,
+      "mesure_affichee": "¼ d'oignon",
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "beurre",
+      "nom_affiche": "beurre",
+      "quantite": 5,
+      "unite": "g",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "une noisette",
+      "ciqual_code": "16400",
+      "rayon": "frais",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Émince l'oignon, coupe les champignons en quartiers et le poulet en tranches.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Fais revenir l'oignon 2 à 3 minutes dans le beurre, à feu moyen.",
+      "duree_min": 3,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 180
+    },
+    {
+      "texte": "Pendant ce temps, cuis les pâtes dans l'eau salée ; garde une petite louche d'eau de cuisson avant d'égoutter.",
+      "duree_min": 10,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Ajoute champignons et poulet à l'oignon, sale, poivre et fais revenir 4 à 5 minutes. Baisse le feu, ajoute la crème et l'eau de cuisson, mélange avec les pâtes.",
+      "duree_min": 6,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 300
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/tagliatelle-au-poulet-et-champignons-8ju1hxnl70ggkcdw1djl",
+      "titre": "Tagliatelle au poulet & champignons",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Escalope comptée 150 g, ce qui correspond aux protéines annoncées par Jow (estimation). Beurre (« une noisette ») compté 5 g.",
+  "kcal_annoncees_par_part": 534,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 531,
+    "proteines_g": 46.3,
+    "glucides_g": 54.5,
+    "lipides_g": 12.5,
+    "fibres_g": 3.7,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.71,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

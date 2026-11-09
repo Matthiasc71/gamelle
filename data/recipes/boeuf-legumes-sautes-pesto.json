@@ -1,0 +1,166 @@
+{
+  "id": "boeuf-legumes-sautes-pesto",
+  "slug": "boeuf-legumes-sautes-pesto",
+  "nom": "Bœuf et légumes sautés au pesto",
+  "resume": "Courgette, poivron et tomates cerises sautés à feu vif, un steak saisi, le tout lié au pesto.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 14,
+    "total_min": 19,
+    "actif_min": 12
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "italienne",
+  "proteine_principale": "boeuf",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "poelee",
+  "ingredients": [
+    {
+      "ingredient": "boeuf-steak",
+      "nom_affiche": "steak de bœuf",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 125,
+      "optionnel": false,
+      "mesure_affichee": "1 steak",
+      "ciqual_code": "6201",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pesto",
+      "nom_affiche": "pesto",
+      "quantite": 15,
+      "unite": "g",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11179",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomates-cerises",
+      "nom_affiche": "tomates cerises",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20172",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "courgette",
+      "nom_affiche": "courgette",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20020",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poivron-rouge",
+      "nom_affiche": "poivron rouge",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 90,
+      "optionnel": false,
+      "mesure_affichee": "½ poivron",
+      "ciqual_code": "20087",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 0.25,
+      "unite": "pièce",
+      "poids_g": 1,
+      "optionnel": false,
+      "mesure_affichee": "¼ de gousse",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 10,
+      "unite": "ml",
+      "poids_g": 9.2,
+      "optionnel": false,
+      "mesure_affichee": "deux filets",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Coupe la courgette en demi-rondelles de 5 mm et le poivron en gros cubes.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Fais revenir les légumes 10 minutes à feu fort dans une poêle huilée avec l'ail râpé, sel et poivre, en remuant.",
+      "duree_min": 10,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    },
+    {
+      "texte": "Ajoute le steak avec un filet d'huile et saisis-le 2 minutes de chaque côté. Coupe le feu et mélange avec le pesto.",
+      "duree_min": 5,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 240
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/boeuf-et-legumes-sautes-au-pesto-8bw935va2chxjqy310do",
+      "titre": "Bœuf & légumes sautés au pesto",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Steak pesé 125 g et huile 2 c. à café (estimations).",
+  "kcal_annoncees_par_part": 437,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 504,
+    "proteines_g": 27.5,
+    "glucides_g": 14,
+    "lipides_g": 36.8,
+    "fibres_g": 5.5,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 4.66,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

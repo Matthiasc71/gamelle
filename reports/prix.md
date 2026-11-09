@@ -7,12 +7,12 @@ enseignes discount d'abord, au moins 3 relevés. Lidl : 539 relevés Open Prices
 | Méthode | Ingrédients |
 |---|---|
 | Ticket (saisie manuelle) | 0 |
-| Lidl (relevés en magasin) | 42 |
-| Open Prices Lyon | 38 |
-| Site enseigne (Aldi) | 35 |
-| Open Prices France (estimation) | 24 |
-| **Sans prix** | **6** |
-| Total | 145 |
+| Lidl (relevés en magasin) | 43 |
+| Open Prices Lyon | 41 |
+| Site enseigne (Aldi) | 38 |
+| Open Prices France (estimation) | 25 |
+| **Sans prix** | **5** |
+| Total | 152 |
 
 Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de relevés).
 
@@ -29,6 +29,7 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | beurre | Beurre doux, 250 g | 11,52 € (3) | 13,42 € (16) | 2,35 € | — | **2,88 €** · lidl |
 | blanc-dinde | Blanc de dinde, 4 tranches (120 g) | — | — | — | 20,08 € (4) | **2,41 €** · open-prices-france |
 | boeuf-hache-5 | Bœuf haché 5 % MG, barquette 500 g | 16,27 € (1) | 23,00 € (5) | — | — | **8,13 €** · lidl |
+| boeuf-steak | Steaks de bœuf, 2 × 125 g | — | — | — | 20,39 € (21) | **5,10 €** · open-prices-france |
 | bouillon-legumes | Bouillon de légumes, 12 cubes de 10 g | — | 17,77 € (119) | — | — | **2,13 €** · open-prices-lyon |
 | bouillon-volaille | Bouillon de volaille, 12 cubes de 10 g | — | 17,77 € (119) | — | — | **2,13 €** · open-prices-lyon |
 | boulgour | Boulgour, 500 g | 5,12 € (1) | 10,82 € (7) | — | — | **2,56 €** · lidl |
@@ -61,6 +62,8 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | creme-legere-4 | Spécialité de crème légère 4 %, 20 cl | — | — | — | 4,47 € (71) | **0,89 €** · open-prices-france |
 | creme-liquide | Crème liquide entière, 20 cl | — | 11,73 € (4) | — | — | **2,35 €** · open-prices-lyon |
 | cresson | Cresson, botte | — | — | — | — | **aucun prix** |
+| crevettes-cuites | Crevettes cuites décortiquées, 200 g | — | — | 3,59 € | 25,32 € (10) | **3,59 €** · site-enseigne |
+| croutons | Croûtons nature, 90 g | — | 16,14 € (31) | — | — | **1,45 €** · open-prices-lyon |
 | cumin | Cumin moulu, 40 g | 18,44 € (1) | 79,46 € (16) | — | — | **0,74 €** · lidl |
 | curcuma | Curcuma, 40 g | — | 41,10 € (8) | — | — | **1,64 €** · open-prices-lyon |
 | curry | Curry en poudre, 45 g | — | 63,54 € (12) | — | — | **2,86 €** · open-prices-lyon |
@@ -113,7 +116,6 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | olives-noires | Olives noires en saumure, 150 g égouttées | 6,60 € (1) | 14,86 € (18) | — | — | **0,99 €** · lidl |
 | olives-vertes | Olives vertes dénoyautées, 200 g | — | 13,93 € (63) | 1,99 € | — | **1,99 €** · site-enseigne |
 | origan | Origan séché, 15 g | — | 128,72 € (6) | — | — | **1,93 €** · open-prices-lyon |
-| orzo | Orzo, 500 g | — | — | — | — | **aucun prix** |
 | pain-complet | Pain complet tranché, 500 g | 3,47 € (4) | 4,92 € (17) | — | — | **1,74 €** · lidl |
 | pain-de-mie-complet | Pain de mie complet, 500 g | 2,13 € (1) | 4,92 € (8) | — | — | **1,07 €** · lidl |
 | pain-pita | Pains pita, 6 × 60 g | — | 5,72 € (3) | — | — | **2,06 €** · open-prices-lyon |
@@ -146,7 +148,10 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | sauce-barbecue | Sauce barbecue, 300 g | — | 6,62 € (19) | — | — | **1,99 €** · open-prices-lyon |
 | sauce-huitre | Sauce d'huître, 25 cl | — | 14,50 € (5) | — | — | **3,62 €** · open-prices-lyon |
 | sauce-soja | Sauce soja salée, 25 cl | — | 19,48 € (45) | — | — | **4,87 €** · open-prices-lyon |
+| sauce-soja-sucree | Sauce soja sucrée, 150 ml | — | 17,62 € (17) | 0,99 € | — | **0,99 €** · site-enseigne |
 | saucisse-montbeliard | Saucisses de Montbéliard, 2 × 150 g | — | — | — | 18,42 € (10) | **5,53 €** · open-prices-france |
+| saumon | Pavés de saumon, 2 × 125 g | 22,98 € (1) | 26,64 € (3) | — | — | **5,75 €** · lidl |
+| semoule | Couscous moyen, 1 kg | — | — | 1,05 € | — | **1,05 €** · site-enseigne |
 | sirop-erable | Sirop d’érable, 250 ml (330 g) | — | 21,18 € (3) | — | — | **6,99 €** · open-prices-lyon |
 | sucre-roux | Sucre roux, 1 kg | — | 5,40 € (5) | — | — | **5,40 €** · open-prices-lyon |
 | tahini | Purée de sésame (tahini), 250 g | — | 24,76 € (4) | — | — | **6,19 €** · open-prices-lyon |
@@ -158,7 +163,9 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | tomates-concassees | Tomates concassées en conserve, 400 g | — | 4,71 € (6) | — | — | **1,88 €** · open-prices-lyon |
 | tomates-sechees | Tomates séchées à l'huile, bocal 280 g (égoutté 180 g) | — | 19,61 € (3) | — | — | **3,53 €** · open-prices-lyon |
 | tortilla-ble | Tortillas de blé, 8 × 40 g | — | 17,74 € (3) | — | — | **5,68 €** · open-prices-lyon |
+| tzatziki | Tzatziki, 200 g | — | 13,89 € (5) | — | — | **2,78 €** · open-prices-lyon |
 | udon | Udon frais précuits, 2 × 200 g | — | — | — | 10,07 € (7) | **4,03 €** · open-prices-france |
+| vermicelles-riz | Nouilles (vermicelles) de riz, 250 g | — | 10,08 € (3) | — | — | **2,52 €** · open-prices-lyon |
 | vin-rouge | Vin rouge, 75 cl | — | 12,34 € (6) | — | — | **9,26 €** · open-prices-lyon |
 | vinaigre | Vinaigre blanc ou de cidre, 1 L | — | 1,09 € (17) | — | — | **1,09 €** · open-prices-lyon |
 | vinaigre-balsamique | Vinaigre balsamique, 50 cl | — | 7,98 € (27) | — | — | **3,99 €** · open-prices-lyon |

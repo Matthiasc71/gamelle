@@ -1,0 +1,150 @@
+{
+  "id": "sandwich-poulet-laitue-tomate-sechee",
+  "slug": "sandwich-poulet-laitue-tomate-sechee",
+  "nom": "Sandwich poulet, laitue et tomates séchées",
+  "resume": "Pain de mie à la moutarde à l'ancienne et à la mayonnaise, poulet cuit émincé, tomates séchées et laitue.",
+  "type": "assemblage",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 3,
+    "cuisson_min": 0,
+    "total_min": 3,
+    "actif_min": 3
+  },
+  "equipement": [],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "française",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi"
+  ],
+  "illustration": "wrap",
+  "ingredients": [
+    {
+      "ingredient": "pain-de-mie-complet",
+      "nom_affiche": "pain de mie",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 50,
+      "optionnel": false,
+      "mesure_affichee": "2 tranches",
+      "ciqual_code": "7111",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poulet-cuit",
+      "nom_affiche": "poulet cuit émincé",
+      "quantite": 60,
+      "unite": "g",
+      "poids_g": 60,
+      "optionnel": false,
+      "ciqual_code": "36005",
+      "rayon": "viandes-poissons",
+      "etat": "cuit"
+    },
+    {
+      "ingredient": "mayonnaise",
+      "nom_affiche": "mayonnaise",
+      "quantite": 15,
+      "unite": "g",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11054",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "moutarde",
+      "nom_affiche": "moutarde à l'ancienne",
+      "quantite": 5,
+      "unite": "g",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11013",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "laitue",
+      "nom_affiche": "laitue iceberg",
+      "quantite": 0.25,
+      "unite": "pièce",
+      "poids_g": 75,
+      "optionnel": false,
+      "mesure_affichee": "¼ de laitue",
+      "ciqual_code": "20031",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomates-sechees",
+      "nom_affiche": "tomates séchées",
+      "quantite": 25,
+      "unite": "g",
+      "poids_g": 25,
+      "optionnel": false,
+      "ciqual_code": "20256",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Tartine les deux tranches de moutarde, et l'une d'elles de mayonnaise.",
+      "duree_min": 1,
+      "actif": true
+    },
+    {
+      "texte": "Garnis de poulet, tomates séchées et laitue, referme et coupe en deux.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/sandwich-poulet-laitue-et-tomate-sechee-8sto1rzc1u0w2lme16kp",
+      "titre": "Sandwich poulet, laitue & tomate séchée",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Pain de mie complet. Tranches pesées 25 g et ¼ de laitue 75 g (estimations).",
+  "kcal_annoncees_par_part": 555,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 419,
+    "proteines_g": 23.8,
+    "glucides_g": 24.5,
+    "lipides_g": 23.2,
+    "fibres_g": 6,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.44,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

@@ -1656,5 +1656,110 @@
     "open_prices": {
       "categorie_produit": "en:poppy-seeds"
     }
+  },
+  "croutons": {
+    "produit": "Croûtons nature, 90 g",
+    "conditionnement": {
+      "quantite": 90,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:croutons",
+      "exclure": [
+        "ail",
+        "fromage",
+        "oignon"
+      ]
+    }
+  },
+  "tzatziki": {
+    "produit": "Tzatziki, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:tzatzikis"
+    }
+  },
+  "sauce-soja-sucree": {
+    "produit": "Sauce soja sucrée, 150 ml",
+    "conditionnement": {
+      "quantite": 150,
+      "unite": "ml"
+    },
+    "aldi": "5013297",
+    "open_prices": {
+      "categorie_produit": "en:soy-sauces",
+      "mots": [
+        "sucrée",
+        "sucree",
+        "sweet"
+      ]
+    }
+  },
+  "boeuf-steak": {
+    "produit": "Steaks de bœuf, 2 × 125 g",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:beef-steaks",
+      "exclure": [
+        "haché",
+        "hache",
+        "hachés",
+        "haches"
+      ]
+    }
+  },
+  "saumon": {
+    "produit": "Pavés de saumon, 2 × 125 g",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:salmon-fillets",
+      "exclure": [
+        "fumé",
+        "fume",
+        "mariné",
+        "marine"
+      ]
+    }
+  },
+  "crevettes-cuites": {
+    "produit": "Crevettes cuites décortiquées, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "aldi": "5013179",
+    "open_prices": {
+      "categorie_produit": "en:cooked-shrimps"
+    }
+  },
+  "vermicelles-riz": {
+    "produit": "Nouilles (vermicelles) de riz, 250 g",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:rice-vermicelli"
+    }
+  },
+  "semoule": {
+    "produit": "Couscous moyen, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "aldi": "1933",
+    "open_prices": {
+      "categorie_produit": "en:couscous"
+    }
   }
 }

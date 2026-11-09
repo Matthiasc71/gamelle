@@ -1,0 +1,152 @@
+{
+  "id": "salade-saumon-mais-tomate",
+  "slug": "salade-saumon-mais-tomate",
+  "nom": "Salade de saumon, maïs et tomate",
+  "resume": "Un pavé de saumon poêlé émietté sur une salade de tomates, maïs et roquette.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 4,
+    "cuisson_min": 4,
+    "total_min": 8,
+    "actif_min": 8
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "française",
+  "proteine_principale": "saumon",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "poisson",
+  "ingredients": [
+    {
+      "ingredient": "saumon",
+      "nom_affiche": "pavé de saumon",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 125,
+      "optionnel": false,
+      "mesure_affichee": "1 pavé",
+      "ciqual_code": "26036",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "mais",
+      "nom_affiche": "maïs en conserve",
+      "quantite": 150,
+      "unite": "g",
+      "poids_g": 150,
+      "optionnel": false,
+      "ciqual_code": "20066",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "tomate",
+      "nom_affiche": "tomate",
+      "quantite": 150,
+      "unite": "g",
+      "poids_g": 150,
+      "optionnel": false,
+      "ciqual_code": "20276",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "roquette",
+      "nom_affiche": "roquette",
+      "quantite": 20,
+      "unite": "g",
+      "poids_g": 20,
+      "optionnel": false,
+      "mesure_affichee": "1 poignée",
+      "ciqual_code": "20217",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 10,
+      "unite": "ml",
+      "poids_g": 9.2,
+      "optionnel": false,
+      "mesure_affichee": "deux filets",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "vinaigre",
+      "nom_affiche": "vinaigre",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "un filet",
+      "ciqual_code": "11018",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cuis le saumon 4 minutes à feu vif dans une poêle huilée, en le retournant à mi-cuisson.",
+      "duree_min": 4,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 240
+    },
+    {
+      "texte": "Pendant ce temps, coupe la tomate en quartiers, égoutte le maïs et mélange-les avec la roquette, un filet d'huile, de vinaigre, sel et poivre.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Émiette le saumon sur la salade.",
+      "duree_min": 1,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/salade-saumon-mais-et-tomate-8bw9dkza2chxjqy310hu",
+      "titre": "Salade saumon, maïs & tomate",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Pavé pesé 125 g, huile 2 c. à café et vinaigre 1 c. à café (estimations).",
+  "kcal_annoncees_par_part": 425,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 514,
+    "proteines_g": 30.9,
+    "glucides_g": 33,
+    "lipides_g": 27.7,
+    "fibres_g": 6.6,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 4.19,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

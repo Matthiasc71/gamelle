@@ -1,0 +1,159 @@
+{
+  "id": "tuna-bowl",
+  "slug": "tuna-bowl",
+  "nom": "Tuna bowl, patate douce et brocoli",
+  "resume": "Riz, thon, patate douce et brocoli cuits à l'eau, sauce soja sucrée.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 12,
+    "total_min": 14,
+    "actif_min": 6
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cuisine": "japonaise",
+  "proteine_principale": "thon",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "salade",
+  "ingredients": [
+    {
+      "ingredient": "riz-basmati",
+      "nom_affiche": "riz",
+      "quantite": 70,
+      "unite": "g",
+      "poids_g": 70,
+      "optionnel": false,
+      "ciqual_code": "9119",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "thon-naturel",
+      "nom_affiche": "thon en conserve égoutté",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "26039",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "brocoli",
+      "nom_affiche": "brocoli",
+      "quantite": 0.2,
+      "unite": "pièce",
+      "poids_g": 80,
+      "optionnel": false,
+      "mesure_affichee": "80 g",
+      "ciqual_code": "20057",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "patate-douce",
+      "nom_affiche": "patate douce",
+      "quantite": 80,
+      "unite": "g",
+      "poids_g": 80,
+      "optionnel": false,
+      "ciqual_code": "4101",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "sauce-soja-sucree",
+      "nom_affiche": "sauce soja sucrée",
+      "quantite": 30,
+      "unite": "ml",
+      "poids_g": 30,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à soupe",
+      "ciqual_code": "11216",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "un filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cuis le riz dans l'eau salée le temps du paquet.",
+      "duree_min": 12,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Épluche la patate douce et coupe-la en cubes de 2 cm, détache les fleurettes du brocoli.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Dans une autre casserole d'eau bouillante salée, cuis la patate douce 3 minutes, ajoute le brocoli et prolonge 5 minutes. Égoutte.",
+      "duree_min": 8,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 480
+    },
+    {
+      "texte": "Sers le riz avec les légumes et le thon, un filet d'huile et la sauce soja sucrée.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/tuna-bowl-8ey9ixrxjgwgk8x11c6f",
+      "titre": "Tuna bowl",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "kcal_annoncees_par_part": 413,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 500,
+    "proteines_g": 22.8,
+    "glucides_g": 82.1,
+    "lipides_g": 7.4,
+    "fibres_g": 5.2,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.35,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

@@ -122,6 +122,18 @@
     "methode": "lidl",
     "note": "1 relevé Open Prices en magasin Lidl (12 mois) ; 16,27 €/kg"
   },
+  "boeuf-steak": {
+    "produit": "Steaks de bœuf, 2 × 125 g",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "prix_eur": 5.1,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 21 relevés Open Prices France sur 12 mois ; 20,39 €/kg"
+  },
   "bouillon-legumes": {
     "produit": "Bouillon de légumes, 12 cubes de 10 g",
     "conditionnement": {
@@ -490,6 +502,31 @@
     "releve_le": "2026-11-09",
     "methode": "open-prices-lyon",
     "note": "4 relevés Open Prices sur 12 mois ; 11,73 €/L"
+  },
+  "crevettes-cuites": {
+    "produit": "Crevettes cuites décortiquées, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "prix_eur": 3.59,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/crevettes-nordiques-decortiquees-cuites-5013179.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Crevettes nordiques décortiquées cuites 200G"
+  },
+  "croutons": {
+    "produit": "Croûtons nature, 90 g",
+    "conditionnement": {
+      "quantite": 90,
+      "unite": "g"
+    },
+    "prix_eur": 1.45,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "31 relevés Open Prices sur 12 mois ; 16,14 €/kg"
   },
   "cumin": {
     "produit": "Cumin moulu, 40 g",
@@ -1518,6 +1555,19 @@
     "methode": "open-prices-lyon",
     "note": "45 relevés Open Prices sur 12 mois ; 19,48 €/L"
   },
+  "sauce-soja-sucree": {
+    "produit": "Sauce soja sucrée, 150 ml",
+    "conditionnement": {
+      "quantite": 150,
+      "unite": "ml"
+    },
+    "prix_eur": 0.99,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/sauce-soja-sucree-5013297.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "SAUCE SOJA SUCRÉE 150ML"
+  },
   "saucisse-montbeliard": {
     "produit": "Saucisses de Montbéliard, 2 × 150 g",
     "conditionnement": {
@@ -1529,6 +1579,31 @@
     "releve_le": "2026-11-09",
     "methode": "open-prices-france",
     "note": "Estimation : 10 relevés Open Prices France sur 12 mois ; 18,42 €/kg"
+  },
+  "saumon": {
+    "produit": "Pavés de saumon, 2 × 125 g",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "prix_eur": 5.75,
+    "enseigne": "Lidl",
+    "releve_le": "2026-11-09",
+    "methode": "lidl",
+    "note": "1 relevé Open Prices en magasin Lidl (12 mois) ; 22,98 €/kg"
+  },
+  "semoule": {
+    "produit": "Couscous moyen, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "prix_eur": 1.05,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/couscous-moyen-1933.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "COUSCOUS MOYEN 1KG"
   },
   "sirop-erable": {
     "produit": "Sirop d’érable, 250 ml (330 g)",
@@ -1662,6 +1737,18 @@
     "methode": "open-prices-lyon",
     "note": "3 relevés Open Prices sur 12 mois ; 17,74 €/kg"
   },
+  "tzatziki": {
+    "produit": "Tzatziki, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "prix_eur": 2.78,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "5 relevés Open Prices sur 12 mois ; 13,89 €/kg"
+  },
   "udon": {
     "produit": "Udon frais précuits, 2 × 200 g",
     "conditionnement": {
@@ -1673,6 +1760,18 @@
     "releve_le": "2026-11-09",
     "methode": "open-prices-france",
     "note": "Estimation : 7 relevés Open Prices France sur 12 mois ; 10,07 €/kg"
+  },
+  "vermicelles-riz": {
+    "produit": "Nouilles (vermicelles) de riz, 250 g",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "prix_eur": 2.52,
+    "enseigne": "médiane toutes enseignes, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "3 relevés Open Prices sur 12 mois ; 10,08 €/kg"
   },
   "vin-rouge": {
     "produit": "Vin rouge, 75 cl",

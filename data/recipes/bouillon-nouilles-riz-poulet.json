@@ -1,0 +1,185 @@
+{
+  "id": "bouillon-nouilles-riz-poulet",
+  "slug": "bouillon-nouilles-riz-poulet",
+  "nom": "Bouillon de nouilles de riz au poulet et légumes",
+  "resume": "Nouilles de riz, poulet effiloché, champignons, carotte en rubans et petits pois dans un bouillon au soja.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 14,
+    "total_min": 19,
+    "actif_min": 10
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cuisine": "asiatique",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "soupe",
+  "ingredients": [
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "escalope de poulet",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 150,
+      "optionnel": false,
+      "mesure_affichee": "1 escalope",
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "vermicelles-riz",
+      "nom_affiche": "nouilles de riz",
+      "quantite": 80,
+      "unite": "g",
+      "poids_g": 80,
+      "optionnel": false,
+      "ciqual_code": "9900",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "champignons",
+      "nom_affiche": "champignons",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "20056",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "carotte",
+      "nom_affiche": "carotte",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "20009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "petits-pois",
+      "nom_affiche": "petits pois surgelés",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "20084",
+      "rayon": "surgeles",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "sauce-soja",
+      "nom_affiche": "sauce soja salée",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11104",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "bouillon-volaille",
+      "nom_affiche": "bouillon de volaille",
+      "quantite": 0.25,
+      "unite": "pièce",
+      "poids_g": 2.5,
+      "optionnel": false,
+      "mesure_affichee": "¼ de cube",
+      "ciqual_code": "11174",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "un filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Fais dorer le poulet 2 minutes à feu vif dans une poêle huilée, retourne-le et cuis encore 8 minutes à feu moyen. Sale et poivre.",
+      "duree_min": 10,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    },
+    {
+      "texte": "Pendant ce temps, cuis les nouilles de riz selon le paquet, émince les champignons et taille la carotte en rubans à l'économe.",
+      "duree_min": 6,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Porte 20 cl d'eau à ébullition avec le bouillon et la sauce soja, ajoute les petits pois.",
+      "duree_min": 3,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 180
+    },
+    {
+      "texte": "Dans un bol, mets les nouilles, le poulet effiloché, la carotte et les champignons, puis verse le bouillon.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/bouillon-nouilles-de-riz-poulet-et-legumes-8v43eqvdctpufsm30hnu",
+      "titre": "Bouillon nouilles de riz, poulet & légumes",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Escalope comptée 150 g, ce qui correspond aux protéines annoncées par Jow (estimation).",
+  "kcal_annoncees_par_part": 529,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 574,
+    "proteines_g": 46.9,
+    "glucides_g": 73.3,
+    "lipides_g": 8.4,
+    "fibres_g": 6.3,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 3.45,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

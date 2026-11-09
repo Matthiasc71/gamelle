@@ -1,0 +1,175 @@
+{
+  "id": "pates-pesto-poulet-poireaux",
+  "slug": "pates-pesto-poulet-poireaux",
+  "nom": "Pâtes au pesto, poulet et poireaux",
+  "resume": "Spaghettis avec poulet doré, poireau et champignons fondus à couvert, liés au pesto.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 14,
+    "total_min": 19,
+    "actif_min": 10
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cuisine": "italienne",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "pates",
+  "ingredients": [
+    {
+      "ingredient": "pates",
+      "nom_affiche": "spaghettis",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "9810",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "aiguillettes de poulet",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "mesure_affichee": "2 aiguillettes",
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pesto",
+      "nom_affiche": "pesto",
+      "quantite": 15,
+      "unite": "g",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11179",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poireau",
+      "nom_affiche": "poireau",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20039",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "champignons",
+      "nom_affiche": "champignons",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20056",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 0.25,
+      "unite": "pièce",
+      "poids_g": 1,
+      "optionnel": false,
+      "mesure_affichee": "¼ de gousse",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "un filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Émince le poireau et rince-le bien, coupe les champignons en lamelles et le poulet en morceaux.",
+      "duree_min": 5,
+      "actif": true
+    },
+    {
+      "texte": "Fais dorer le poulet 2 minutes par face dans une poêle huilée, puis réserve.",
+      "duree_min": 4,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 240
+    },
+    {
+      "texte": "Dans la même poêle, fais revenir l'ail râpé 30 secondes, ajoute poireau et champignons, sale, poivre, couvre et laisse 10 minutes en remuant de temps en temps.",
+      "duree_min": 10,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    },
+    {
+      "texte": "Pendant ce temps, cuis les pâtes. Égoutte-les et mélange-les avec les légumes, le poulet et le pesto.",
+      "duree_min": 10,
+      "actif": false,
+      "equipement": "plaques"
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/pates-au-pesto-poulet-et-poireaux-97sj2z5m7uaib4to18vh",
+      "titre": "Pâtes au pesto, poulet & poireaux",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Aiguillettes pesées 50 g pièce (estimation).",
+  "kcal_annoncees_par_part": 611,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 623,
+    "proteines_g": 39.7,
+    "glucides_g": 80.3,
+    "lipides_g": 13.7,
+    "fibres_g": 6.1,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.43,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

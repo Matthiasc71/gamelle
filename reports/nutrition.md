@@ -5,6 +5,8 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 
 ## Alertes
 
+- **bowl-poulet-quinoa-tzatziki** : la source annonce 516 kcal/part, Ciqual donne 634 (écart 19 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
+- bowl-poulet-quinoa-tzatziki : fibres absentes de Ciqual pour Tzatziki à base de yaourt, préemballé : comptées 0
 - **dahl-lentilles-corail-epinards** : la source annonce 378 kcal/part, Ciqual donne 597 (écart 37 %). Vérifié : Écart avec les 378 kcal annoncées : les 50 cl de lait de coco (199 kcal/100 g selon Ciqual) apportent à eux seuls environ 250 kcal par part. Valeur Ciqual retenue.
 - **enchiladas-boeuf-poivrons** : la source annonce 431 kcal/part, Ciqual donne 543 (écart 21 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
 - **gnocchis-poireaux-poulet** : la source annonce 444 kcal/part, Ciqual donne 554 (écart 20 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
@@ -17,6 +19,10 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 - **salade-aubergines-poulet-quinoa** : la source annonce 426 kcal/part, Ciqual donne 525 (écart 19 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
 - **salade-mais-jambon-feta** : la source annonce 312 kcal/part, Ciqual donne 464 (écart 33 %). Vérifié : Écart avec les 312 kcal annoncées : la vinaigrette (4 c. à soupe d'huile pour 4) et la feta pèsent lourd dans le calcul Ciqual. Valeur Ciqual retenue.
 - **salade-pates-macedoine-thon** : la source annonce 464 kcal/part, Ciqual donne 594 (écart 22 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
+- salade-poulet-petits-pois-tzatziki : fibres absentes de Ciqual pour Tzatziki à base de yaourt, préemballé : comptées 0
+- **salade-saumon-mais-tomate** : la source annonce 425 kcal/part, Ciqual donne 514 (écart 17 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
+- **sandwich-poulet-laitue-tomate-sechee** : la source annonce 555 kcal/part, Ciqual donne 419 (écart 32 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
+- **tuna-bowl** : la source annonce 413 kcal/part, Ciqual donne 500 (écart 17 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
 
 ## Détail
 
@@ -24,7 +30,11 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 |---|---|---|---|---|---|---|---|
 | assiette-oeufs-avocat-crudites | 1 | 591 | 28.2 | 39.3 | 31.4 | 14.2 | — |
 | boeuf-hache-coreenne | 4 | 526 | 35.8 | 73.6 | 9.1 | 2.7 | 504 (4 %) |
+| boeuf-legumes-sautes-pesto | 1 | 504 | 27.5 | 14 | 36.8 | 5.5 | 437 (13 %) |
+| bouillon-nouilles-riz-poulet | 1 | 574 | 46.9 | 73.3 | 8.4 | 6.3 | 529 (8 %) |
 | boulettes-boeuf-caramelisees | 3 | 474 | 44.5 | 39.1 | 14.2 | 5.1 | — |
+| bowl-pois-chiches-champignons-oeuf | 1 | 535 | 23 | 66 | 17.7 | 8 | 481 (10 %) |
+| bowl-poulet-quinoa-tzatziki | 1 | 634 | 51.7 | 50.5 | 22.4 | 8.1 | 516 (19 %) |
 | burritos-boeuf-mais | 4 | 410 | 28.5 | 41.5 | 13.5 | 4.5 | 430 (5 %) |
 | chakchouka-feta | 2 | 481 | 25.1 | 37.8 | 23.5 | 9.8 | — |
 | chili-con-carne | 4 | 586 | 44 | 72.9 | 10.1 | 14.1 | — |
@@ -48,10 +58,13 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 | gratin-poulet-brocoli | 3 | 503 | 58.9 | 21.1 | 17.8 | 9.1 | — |
 | lasagnes-courgette-boeuf | 4 | 420 | 35.7 | 40.2 | 11.8 | 6.9 | 470 (12 %) |
 | nouilles-sautees-legumes-oeufs | 4 | 512 | 21.6 | 58.6 | 18 | 10.5 | 513 (0 %) |
+| omelette-epinards-feta-avocat | 1 | 511 | 21.8 | 0.9 | 45.1 | 4.8 | 555 (9 %) |
 | one-pan-poulet-legumes | 3 | 458 | 47.6 | 32 | 12.6 | 8.6 | — |
 | one-pan-poulet-miel-moutarde | 3 | 499 | 49.4 | 29.6 | 17.9 | 7.4 | — |
 | parmentier-patate-douce | 4 | 546 | 39 | 40.2 | 23.9 | 7.2 | 478 (12 %) |
+| pates-pesto-poulet-poireaux | 1 | 623 | 39.7 | 80.3 | 13.7 | 6.1 | 611 (2 %) |
 | pates-thon-creme-tomate | 4 | 623 | 33.6 | 82.8 | 15.6 | 5.9 | — |
+| pates-tomates-crevettes | 1 | 531 | 33.8 | 77.7 | 7.4 | 6 | 457 (14 %) |
 | penne-thon-aubergines | 4 | 589 | 28.7 | 79.3 | 15.1 | 8.2 | 486 (17 %) |
 | poelee-haricots-blancs-toscane | 3 | 465 | 22.3 | 24.6 | 27.7 | 14.4 | — |
 | poelee-pois-chiches-oeuf | 1 | 580 | 26.7 | 54.9 | 24.9 | 13.5 | — |
@@ -72,14 +85,20 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 | salade-lentilles-grecque | 4 | 463 | 22.2 | 28.3 | 25.8 | 13.2 | — |
 | salade-mais-jambon-feta | 4 | 464 | 22.4 | 22.5 | 30.4 | 5.2 | 312 (33 %) |
 | salade-pates-macedoine-thon | 4 | 594 | 33.1 | 79.3 | 14.2 | 5.9 | 464 (22 %) |
+| salade-poulet-avocat-lard | 1 | 504 | 43.6 | 6.3 | 32.1 | 4.6 | 496 (2 %) |
+| salade-poulet-petits-pois-tzatziki | 1 | 472 | 48.2 | 24.4 | 18 | 6.5 | 417 (12 %) |
 | salade-riz-thon-tomate | 1 | 539 | 34.4 | 53.4 | 19.8 | 4.9 | — |
+| salade-saumon-mais-tomate | 1 | 514 | 30.9 | 33 | 27.7 | 6.6 | 425 (17 %) |
 | salade-thon-pois-chiches | 1 | 422 | 34 | 36 | 12.8 | 12.7 | — |
+| sandwich-poulet-laitue-tomate-sechee | 1 | 419 | 23.8 | 24.5 | 23.2 | 6 | 555 (32 %) |
 | sandwich-thon-concombre-baguette | 2 | 580 | 27.6 | 76.8 | 16.1 | 5.7 | — |
 | sandwich-thon-fromage-frais | 1 | 632 | 38.1 | 47.6 | 28.8 | 10.1 | — |
 | sandwich-thon-joe | 1 | 523 | 40.6 | 34.6 | 22.2 | 9.5 | — |
 | sandwich-thon-oeufs-crudites | 2 | 501 | 29.3 | 43.2 | 22.1 | 4.9 | — |
 | spaghettis-tomates-olives-feta | 4 | 616 | 20.8 | 77.5 | 22.9 | 6.2 | — |
+| tagliatelles-poulet-champignons | 1 | 531 | 46.3 | 54.5 | 12.5 | 3.7 | 534 (1 %) |
 | tartines-oeufs-mollets-dinde-comte | 1 | 482 | 37.4 | 31.8 | 21.2 | 5.8 | — |
 | tofu-brouille-tomates-cerises | 1 | 512 | 30.3 | 21.8 | 31.7 | 4.5 | — |
+| tuna-bowl | 1 | 500 | 22.8 | 82.1 | 7.4 | 5.2 | 413 (17 %) |
 | udon-tofu-cremeux | 2 | 616 | 33.7 | 56.2 | 25.6 | 6.3 | — |
 | wrap-thon-avocat | 1 | 453 | 29 | 32.3 | 20.8 | 7.6 | — |

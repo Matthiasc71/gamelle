@@ -1,0 +1,177 @@
+{
+  "id": "bowl-pois-chiches-champignons-oeuf",
+  "slug": "bowl-pois-chiches-champignons-oeuf",
+  "nom": "Bowl pois chiches, champignons et œuf mollet",
+  "resume": "Semoule, pois chiches, champignons poêlés à l'ail, roquette et un œuf mollet.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 4,
+    "cuisson_min": 12,
+    "total_min": 16,
+    "actif_min": 10
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "méditerranéenne",
+  "proteine_principale": "oeufs",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "salade",
+  "ingredients": [
+    {
+      "ingredient": "pois-chiches",
+      "nom_affiche": "pois chiches égouttés",
+      "quantite": 60,
+      "unite": "g",
+      "poids_g": 60,
+      "optionnel": false,
+      "ciqual_code": "20532",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "oeuf",
+      "nom_affiche": "œuf",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 55,
+      "optionnel": false,
+      "ciqual_code": "22000",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "semoule",
+      "nom_affiche": "semoule",
+      "quantite": 75,
+      "unite": "g",
+      "poids_g": 75,
+      "optionnel": false,
+      "ciqual_code": "9681",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "champignons",
+      "nom_affiche": "champignons de Paris",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20056",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 0.25,
+      "unite": "pièce",
+      "poids_g": 1,
+      "optionnel": false,
+      "mesure_affichee": "¼ de gousse",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "roquette",
+      "nom_affiche": "roquette",
+      "quantite": 20,
+      "unite": "g",
+      "poids_g": 20,
+      "optionnel": false,
+      "mesure_affichee": "1 poignée",
+      "ciqual_code": "20217",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 10,
+      "unite": "ml",
+      "poids_g": 9.2,
+      "optionnel": false,
+      "mesure_affichee": "deux filets",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cuis l'œuf 6 minutes à l'eau bouillante, refroidis-le à l'eau froide et écale-le.",
+      "duree_min": 7,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 360
+    },
+    {
+      "texte": "Pendant ce temps, émince les champignons et fais-les revenir 4 à 5 minutes dans une poêle huilée. Sale, poivre et râpe l'ail dessus.",
+      "duree_min": 6,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 300
+    },
+    {
+      "texte": "Mélange la semoule avec un filet d'huile, sel et poivre, couvre du même volume d'eau bouillante et laisse gonfler 5 minutes.",
+      "duree_min": 6,
+      "actif": false
+    },
+    {
+      "texte": "Dresse la semoule avec les pois chiches, les champignons, la roquette et l'œuf coupé en deux.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/bowl-pois-chiches-champignons-et-oeuf-mollet-8wm758eo590w02zb17pl",
+      "titre": "Bowl pois-chiches, champignons & œuf mollet",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Huile comptée 2 c. à café et roquette 20 g (estimations).",
+  "kcal_annoncees_par_part": 481,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 535,
+    "proteines_g": 23,
+    "glucides_g": 66,
+    "lipides_g": 17.7,
+    "fibres_g": 8,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.58,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

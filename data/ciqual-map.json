@@ -1479,5 +1479,87 @@
     "rangement": "placard",
     "conservation_jours": 365,
     "legume": false
+  },
+  "croutons": {
+    "nom": "croûtons nature",
+    "ciqual_code": "7432",
+    "ciqual_nom": "Croûton nature, préemballé",
+    "rayon": "epicerie",
+    "etat": "cru",
+    "rangement": "placard",
+    "conservation_jours": 180,
+    "legume": false
+  },
+  "tzatziki": {
+    "nom": "tzatziki",
+    "ciqual_code": "19863",
+    "ciqual_nom": "Tzatziki à base de yaourt, préemballé",
+    "rayon": "frais",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 7,
+    "legume": false
+  },
+  "sauce-soja-sucree": {
+    "nom": "sauce soja sucrée",
+    "ciqual_code": "11216",
+    "ciqual_nom": "Sauce soja sucrée, préemballée",
+    "rayon": "epicerie",
+    "etat": "cru",
+    "rangement": "placard",
+    "conservation_jours": 365,
+    "legume": false
+  },
+  "boeuf-steak": {
+    "nom": "steak de bœuf",
+    "ciqual_code": "6201",
+    "ciqual_nom": "Boeuf, steak ou bifteck cru",
+    "rayon": "viandes-poissons",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 3,
+    "legume": false,
+    "note": "Un steak pèse environ 125 g (estimation)."
+  },
+  "saumon": {
+    "nom": "pavé de saumon",
+    "ciqual_code": "26036",
+    "ciqual_nom": "Saumon, élevage, cru",
+    "rayon": "viandes-poissons",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 2,
+    "legume": false,
+    "note": "Un pavé pèse environ 125 g (estimation)."
+  },
+  "crevettes-cuites": {
+    "nom": "crevettes cuites décortiquées",
+    "ciqual_code": "10007",
+    "ciqual_nom": "Crevette, cuite",
+    "rayon": "viandes-poissons",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 3,
+    "legume": false
+  },
+  "vermicelles-riz": {
+    "nom": "nouilles de riz",
+    "ciqual_code": "9900",
+    "ciqual_nom": "Vermicelles de riz sèches, crues",
+    "rayon": "epicerie",
+    "etat": "cru",
+    "rangement": "placard",
+    "conservation_jours": 730,
+    "legume": false
+  },
+  "semoule": {
+    "nom": "semoule de couscous",
+    "ciqual_code": "9681",
+    "ciqual_nom": "Graine de couscous (semoule de blé dur précuite), à cuire",
+    "rayon": "epicerie",
+    "etat": "cru",
+    "rangement": "placard",
+    "conservation_jours": 730,
+    "legume": false
   }
 }

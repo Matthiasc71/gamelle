@@ -1,0 +1,179 @@
+{
+  "id": "salade-poulet-petits-pois-tzatziki",
+  "slug": "salade-poulet-petits-pois-tzatziki",
+  "nom": "Salade poulet, petits pois et tzatziki",
+  "resume": "Une lunchbox fraîche : poulet doré tranché, petits pois, salade, croûtons, parmesan et sauce tzatziki.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 4,
+    "cuisson_min": 10,
+    "total_min": 14,
+    "actif_min": 10
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "méditerranéenne",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "salade",
+  "ingredients": [
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "escalope de poulet",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 150,
+      "optionnel": false,
+      "mesure_affichee": "1 escalope",
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "petits-pois",
+      "nom_affiche": "petits pois surgelés",
+      "quantite": 80,
+      "unite": "g",
+      "poids_g": 80,
+      "optionnel": false,
+      "ciqual_code": "20084",
+      "rayon": "surgeles",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "laitue",
+      "nom_affiche": "salade (feuille de chêne)",
+      "quantite": 0.13,
+      "unite": "pièce",
+      "poids_g": 40,
+      "optionnel": false,
+      "mesure_affichee": "2 poignées",
+      "ciqual_code": "20031",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "croutons",
+      "nom_affiche": "croûtons",
+      "quantite": 25,
+      "unite": "g",
+      "poids_g": 25,
+      "optionnel": false,
+      "ciqual_code": "7432",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "parmesan",
+      "nom_affiche": "copeaux de parmesan",
+      "quantite": 15,
+      "unite": "g",
+      "poids_g": 15,
+      "optionnel": false,
+      "ciqual_code": "12120",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tzatziki",
+      "nom_affiche": "tzatziki",
+      "quantite": 15,
+      "unite": "g",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "19863",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "un filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Fais dorer le poulet 4 à 5 minutes de chaque côté dans une poêle huilée, à feu moyen. Sale et poivre.",
+      "duree_min": 10,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 540
+    },
+    {
+      "texte": "Pendant ce temps, verse de l'eau bouillante sur les petits pois et laisse-les 4 à 5 minutes avant d'égoutter.",
+      "duree_min": 5,
+      "actif": false
+    },
+    {
+      "texte": "Détends le tzatziki avec 1 c. à soupe d'eau et tranche le poulet.",
+      "duree_min": 2,
+      "actif": true
+    },
+    {
+      "texte": "Dans une assiette creuse : salade, poulet, petits pois, croûtons, sauce et copeaux de parmesan.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/salade-poulet-petits-pois-et-tzatziki-8xrra6td374w030f168t",
+      "titre": "Salade poulet, petits pois & tzatziki",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    },
+    {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@jow_france/video/7491978247672974614",
+      "titre": "Lunchbox de printemps : salade poulet, petits pois & tzatziki",
+      "auteur": "@jow_france",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "legende"
+    }
+  ],
+  "adaptation": "Escalope comptée 150 g, ce qui correspond aux protéines annoncées par Jow (estimation). Salade comptée 40 g.",
+  "kcal_annoncees_par_part": 417,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 472,
+    "proteines_g": 48.2,
+    "glucides_g": 24.4,
+    "lipides_g": 18,
+    "fibres_g": 6.5,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 3.02,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

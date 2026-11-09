@@ -1,0 +1,173 @@
+{
+  "id": "bowl-poulet-quinoa-tzatziki",
+  "slug": "bowl-poulet-quinoa-tzatziki",
+  "nom": "Bowl poulet, quinoa, courgette et tzatziki",
+  "resume": "Quinoa, courgette poêlée à l'ail, poulet doré, roquette et une bonne cuillère de tzatziki.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 4,
+    "cuisson_min": 12,
+    "total_min": 16,
+    "actif_min": 10
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "cuisine": "grecque",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "salade",
+  "ingredients": [
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "escalope de poulet",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 150,
+      "optionnel": false,
+      "mesure_affichee": "1 escalope",
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "quinoa",
+      "nom_affiche": "quinoa",
+      "quantite": 75,
+      "unite": "g",
+      "poids_g": 75,
+      "optionnel": false,
+      "ciqual_code": "9340",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "courgette",
+      "nom_affiche": "courgette",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 250,
+      "optionnel": false,
+      "ciqual_code": "20020",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 0.25,
+      "unite": "pièce",
+      "poids_g": 1,
+      "optionnel": false,
+      "mesure_affichee": "¼ de gousse",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "roquette",
+      "nom_affiche": "roquette",
+      "quantite": 20,
+      "unite": "g",
+      "poids_g": 20,
+      "optionnel": false,
+      "mesure_affichee": "1 poignée",
+      "ciqual_code": "20217",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tzatziki",
+      "nom_affiche": "tzatziki",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "19863",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 10,
+      "unite": "ml",
+      "poids_g": 9.2,
+      "optionnel": false,
+      "mesure_affichee": "deux filets",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cuis le quinoa selon le paquet.",
+      "duree_min": 12,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Pendant ce temps, coupe la courgette en morceaux et fais-la revenir 2 à 3 minutes dans une poêle huilée avec l'ail râpé. Sale et poivre.",
+      "duree_min": 4,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 180
+    },
+    {
+      "texte": "Ajoute le poulet dans la poêle et dore-le 4 à 5 minutes de chaque côté.",
+      "duree_min": 9,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 540
+    },
+    {
+      "texte": "Dresse quinoa, courgette, poulet, tzatziki et roquette, avec un filet d'huile.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/bowl-poulet-quinoa-et-tzatziki-8t1x81us2errlycn080j",
+      "titre": "Bowl poulet, quinoa & tzatziki",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Escalope comptée 150 g, ce qui correspond aux protéines annoncées par Jow (estimation). Huile comptée 2 c. à café.",
+  "kcal_annoncees_par_part": 516,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 634,
+    "proteines_g": 51.7,
+    "glucides_g": 50.5,
+    "lipides_g": 22.4,
+    "fibres_g": 8.1,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 3.8,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

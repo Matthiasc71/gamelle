@@ -1,0 +1,173 @@
+{
+  "id": "salade-poulet-avocat-lard",
+  "slug": "salade-poulet-avocat-lard",
+  "nom": "Salade poulet, avocat et lard grillé",
+  "resume": "Poulet doré, tranches de lard grillées, tomate, avocat et salade, vinaigre balsamique.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 12,
+    "total_min": 17,
+    "actif_min": 12
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "française",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "salade",
+  "ingredients": [
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "escalope de poulet",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 150,
+      "optionnel": false,
+      "mesure_affichee": "1 escalope",
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomate",
+      "nom_affiche": "tomate",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 120,
+      "optionnel": false,
+      "ciqual_code": "20276",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "avocat",
+      "nom_affiche": "avocat",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 70,
+      "optionnel": false,
+      "mesure_affichee": "½ avocat",
+      "ciqual_code": "13004",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "laitue",
+      "nom_affiche": "mélange de salades",
+      "quantite": 0.13,
+      "unite": "pièce",
+      "poids_g": 40,
+      "optionnel": false,
+      "mesure_affichee": "2 poignées",
+      "ciqual_code": "20031",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lardons",
+      "nom_affiche": "lard fumé en tranches",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 40,
+      "optionnel": false,
+      "mesure_affichee": "2 tranches",
+      "ciqual_code": "28502",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "vinaigre-balsamique",
+      "nom_affiche": "vinaigre balsamique",
+      "quantite": 8,
+      "unite": "ml",
+      "poids_g": 8,
+      "optionnel": false,
+      "mesure_affichee": "½ c. à soupe",
+      "ciqual_code": "11091",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "un filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Fais dorer le poulet 2 minutes à feu vif dans une poêle huilée, retourne-le et cuis 8 minutes à feu moyen. Sale et poivre.",
+      "duree_min": 10,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    },
+    {
+      "texte": "Pendant ce temps, coupe la tomate en quartiers et l'avocat en lamelles.",
+      "duree_min": 3,
+      "actif": true
+    },
+    {
+      "texte": "Sors le poulet et fais griller les tranches de lard 2 minutes à feu vif dans la même poêle.",
+      "duree_min": 2,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 120
+    },
+    {
+      "texte": "Dresse la salade avec tomate, avocat, poulet tranché et lard, et arrose de vinaigre balsamique.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/salade-poulet-avocat-et-lard-8hpeack22jgwkdve0m6c",
+      "titre": "Salade poulet, avocat & lard",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Escalope comptée 150 g, ce qui correspond aux protéines annoncées par Jow (estimation). Tranches de lard comptées 20 g et salade 40 g (estimations).",
+  "kcal_annoncees_par_part": 496,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 504,
+    "proteines_g": 43.6,
+    "glucides_g": 6.3,
+    "lipides_g": 32.1,
+    "fibres_g": 4.6,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 3.22,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}
