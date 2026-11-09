@@ -1,0 +1,176 @@
+{
+  "id": "pates-thon-creme-tomate",
+  "slug": "pates-thon-creme-tomate",
+  "nom": "Pâtes au thon, crème et tomate",
+  "resume": "Des pâtes nappées d'une sauce tomate au thon, adoucie d'un trait de crème.",
+  "type": "express",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 2,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 12,
+    "total_min": 17,
+    "actif_min": 10
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "italienne",
+  "proteine_principale": "thon",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "pates",
+  "ingredients": [
+    {
+      "ingredient": "pates",
+      "nom_affiche": "penne",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "9810",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "thon-naturel",
+      "nom_affiche": "thon au naturel égoutté",
+      "quantite": 280,
+      "unite": "g",
+      "poids_g": 280,
+      "optionnel": false,
+      "ciqual_code": "26039",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "coulis-tomate",
+      "nom_affiche": "sauce tomate",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "20260",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "creme-liquide",
+      "nom_affiche": "crème liquide",
+      "quantite": 100,
+      "unite": "ml",
+      "poids_g": 100,
+      "optionnel": false,
+      "mesure_affichee": "10 cl",
+      "ciqual_code": "19417",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 13.7,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "parmesan",
+      "nom_affiche": "parmesan",
+      "quantite": 20,
+      "unite": "g",
+      "poids_g": 20,
+      "optionnel": true,
+      "mesure_affichee": "un peu",
+      "ciqual_code": "12120",
+      "rayon": "frais",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Mets l'eau des pâtes à bouillir et cuis les penne le temps indiqué.",
+      "duree_min": 12,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Pendant ce temps, émince l'oignon et fais-le suer à feu doux dans l'huile, sans le colorer.",
+      "duree_min": 5,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 300
+    },
+    {
+      "texte": "Ajoute la sauce tomate et le thon, sale, poivre et laisse mijoter pendant la cuisson des pâtes.",
+      "duree_min": 5,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Hors du feu, ajoute la crème, mélange avec les pâtes égouttées et sers, avec un peu de fromage si tu veux.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine.journaldesfemmes.fr/recette/3129858-pates-au-thon-creme-et-tomate-a-l-italienne-la-recette-rapide",
+      "titre": "Pâtes au thon, crème et tomate à l'italienne",
+      "auteur": "Journal des Femmes Cuisine",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Huile de la source (« un filet ») comptée 1 c. à soupe. Fromage facultatif non compté.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 623,
+    "proteines_g": 33.6,
+    "glucides_g": 82.8,
+    "lipides_g": 15.6,
+    "fibres_g": 5.9,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.28,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

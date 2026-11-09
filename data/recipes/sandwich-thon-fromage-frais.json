@@ -1,0 +1,158 @@
+{
+  "id": "sandwich-thon-fromage-frais",
+  "slug": "sandwich-thon-fromage-frais",
+  "nom": "Sandwich toasté thon et fromage frais",
+  "resume": "Deux sandwichs de pain de mie complet garnis de thon au fromage frais et tomates séchées, dorés à la poêle.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 5,
+    "total_min": 10,
+    "actif_min": 10
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "française",
+  "proteine_principale": "thon",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "wrap",
+  "ingredients": [
+    {
+      "ingredient": "pain-de-mie-complet",
+      "nom_affiche": "pain de mie complet",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "mesure_affichee": "4 tranches",
+      "ciqual_code": "7111",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "thon-naturel",
+      "nom_affiche": "thon",
+      "quantite": 90,
+      "unite": "g",
+      "poids_g": 90,
+      "optionnel": false,
+      "ciqual_code": "26039",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "fromage-frais",
+      "nom_affiche": "fromage frais (type St Môret)",
+      "quantite": 65,
+      "unite": "g",
+      "poids_g": 65,
+      "optionnel": false,
+      "ciqual_code": "12068",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomates-sechees",
+      "nom_affiche": "tomates séchées",
+      "quantite": 40,
+      "unite": "g",
+      "poids_g": 40,
+      "optionnel": false,
+      "ciqual_code": "20256",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "laitue",
+      "nom_affiche": "salade",
+      "quantite": 0.15,
+      "unite": "pièce",
+      "poids_g": 40,
+      "optionnel": false,
+      "mesure_affichee": "quelques feuilles",
+      "ciqual_code": "20031",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 2.5,
+      "unite": "ml",
+      "poids_g": 2.3,
+      "optionnel": false,
+      "mesure_affichee": "un peu",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Égoutte et émiette le thon, hache les tomates séchées et mélange-les avec le fromage frais.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Tartine 2 tranches de pain, ajoute la salade et referme avec les 2 autres.",
+      "duree_min": 2,
+      "actif": true
+    },
+    {
+      "texte": "Dore les sandwichs 2 minutes de chaque côté dans une poêle à peine huilée.",
+      "duree_min": 4,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 240
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://recettehealthy.com/sandwich-thon-fromage/",
+      "titre": "Sandwich au thon et fromage frais",
+      "auteur": "Anaelle (Mes recettes Healthy)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Les 2 sandwichs de la recette forment un repas. Salade comptée 40 g et huile ½ c. à café (estimations).",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 632,
+    "proteines_g": 38.1,
+    "glucides_g": 47.6,
+    "lipides_g": 28.8,
+    "fibres_g": 10.1,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.46,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

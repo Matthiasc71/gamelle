@@ -62,6 +62,30 @@
     "methode": "lidl",
     "note": "1 relevé Open Prices en magasin Lidl (12 mois) ; 0,99 €/pièce"
   },
+  "baguette": {
+    "produit": "Baguette, 250 g",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "prix_eur": 1.48,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "12 relevés Open Prices sur 12 mois ; 5,92 €/kg"
+  },
+  "blanc-dinde": {
+    "produit": "Blanc de dinde, 4 tranches (120 g)",
+    "conditionnement": {
+      "quantite": 120,
+      "unite": "g"
+    },
+    "prix_eur": 2.41,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 4 relevés Open Prices France sur 12 mois ; 20,08 €/kg"
+  },
   "boeuf-hache-5": {
     "produit": "Bœuf haché 5 % MG, barquette 500 g",
     "conditionnement": {
@@ -291,6 +315,19 @@
     "methode": "open-prices-france",
     "note": "Estimation : 3 relevés Open Prices France sur 12 mois ; 1,95 €/pièce"
   },
+  "cornichons": {
+    "produit": "Cornichons, 360 g",
+    "conditionnement": {
+      "quantite": 360,
+      "unite": "g"
+    },
+    "prix_eur": 1.59,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/cornichons-aux-vinaigre-5020944.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Cornichons aux vinaigre 360G"
+  },
   "coulis-tomate": {
     "produit": "Purée de tomates (coulis), 500 g",
     "conditionnement": {
@@ -317,6 +354,19 @@
     "methode": "lidl",
     "note": "1 relevé Open Prices en magasin Lidl (12 mois) ; 0,62 €/pièce"
   },
+  "creme-fraiche": {
+    "produit": "Crème fraîche épaisse, 50 cl",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "ml"
+    },
+    "prix_eur": 1.85,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/creme-fraiche-epaisse-6549.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Crème fraîche épaisse 50 cl"
+  },
   "creme-legere-15": {
     "produit": "Crème fraîche épaisse légère, 20 cl",
     "conditionnement": {
@@ -341,6 +391,18 @@
     "releve_le": "2026-11-09",
     "methode": "open-prices-france",
     "note": "Estimation : 71 relevés Open Prices France sur 12 mois ; 4,47 €/L"
+  },
+  "creme-liquide": {
+    "produit": "Crème liquide entière, 20 cl",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "ml"
+    },
+    "prix_eur": 2.35,
+    "enseigne": "médiane toutes enseignes, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "4 relevés Open Prices sur 12 mois ; 11,73 €/L"
   },
   "cumin": {
     "produit": "Cumin moulu, 40 g",
@@ -490,6 +552,18 @@
     "releve_le": "2026-11-09",
     "methode": "site-enseigne",
     "note": "Fromage blanc 1 Kg"
+  },
+  "fromage-frais": {
+    "produit": "Fromage frais à tartiner, 150 g",
+    "conditionnement": {
+      "quantite": 150,
+      "unite": "g"
+    },
+    "prix_eur": 1.01,
+    "enseigne": "Lidl",
+    "releve_le": "2026-11-09",
+    "methode": "lidl",
+    "note": "2 relevés Open Prices en magasin Lidl (12 mois) ; 6,76 €/kg"
   },
   "fromage-frais-allege": {
     "produit": "Fromage frais allégé, 150 g",
@@ -713,6 +787,18 @@
     "methode": "site-enseigne",
     "note": "Maïs croquant 285G"
   },
+  "mayonnaise": {
+    "produit": "Mayonnaise, 465 g",
+    "conditionnement": {
+      "quantite": 465,
+      "unite": "g"
+    },
+    "prix_eur": 1.97,
+    "enseigne": "Lidl",
+    "releve_le": "2026-11-09",
+    "methode": "lidl",
+    "note": "1 relevé Open Prices en magasin Lidl (12 mois) ; 4,24 €/kg"
+  },
   "miel": {
     "produit": "Miel, 500 g",
     "conditionnement": {
@@ -824,6 +910,19 @@
     "methode": "lidl",
     "note": "1 relevé Open Prices en magasin Lidl (12 mois) ; 6,60 €/kg"
   },
+  "olives-vertes": {
+    "produit": "Olives vertes dénoyautées, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "prix_eur": 1.99,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/olives-vertes-denoyautees-5012293.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "OLIVES VERTES DENOYAUTÉES 200G"
+  },
   "origan": {
     "produit": "Origan séché, 15 g",
     "conditionnement": {
@@ -847,6 +946,30 @@
     "releve_le": "2026-11-09",
     "methode": "lidl",
     "note": "4 relevés Open Prices en magasin Lidl (12 mois) ; 3,47 €/kg"
+  },
+  "pain-de-mie-complet": {
+    "produit": "Pain de mie complet, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "prix_eur": 1.07,
+    "enseigne": "Lidl",
+    "releve_le": "2026-11-09",
+    "methode": "lidl",
+    "note": "1 relevé Open Prices en magasin Lidl (12 mois) ; 2,13 €/kg"
+  },
+  "pain-pita": {
+    "produit": "Pains pita, 6 × 60 g",
+    "conditionnement": {
+      "quantite": 360,
+      "unite": "g"
+    },
+    "prix_eur": 2.06,
+    "enseigne": "médiane enseignes discount, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "3 relevés Open Prices sur 12 mois ; 5,72 €/kg"
   },
   "pak-choi": {
     "produit": "Pak choï, au kilo",

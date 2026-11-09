@@ -1,0 +1,189 @@
+{
+  "id": "burritos-boeuf-mais",
+  "slug": "burritos-boeuf-mais",
+  "nom": "Burritos au bœuf, maïs et tomate",
+  "resume": "Bœuf haché mijoté avec tomates, maïs et paprika, roulé dans des galettes de blé.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 15,
+    "cuisson_min": 15,
+    "total_min": 30,
+    "actif_min": 25
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "mexicaine",
+  "proteine_principale": "boeuf",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "wrap",
+  "ingredients": [
+    {
+      "ingredient": "tortilla-ble",
+      "nom_affiche": "galettes de blé",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 240,
+      "optionnel": false,
+      "mesure_affichee": "4 grandes galettes (environ 240 g)",
+      "ciqual_code": "7815",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "boeuf-hache-5",
+      "nom_affiche": "viande hachée maigre",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "6250",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "mais",
+      "nom_affiche": "maïs égoutté",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20066",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "tomate",
+      "nom_affiche": "tomates",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 240,
+      "optionnel": false,
+      "ciqual_code": "20276",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pulpe-tomate",
+      "nom_affiche": "pulpe de tomate",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "mesure_affichee": "10 cl",
+      "ciqual_code": "20169",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "paprika",
+      "nom_affiche": "paprika",
+      "quantite": 6,
+      "unite": "g",
+      "poids_g": 6,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11049",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 13.7,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Émince l'oignon et coupe les tomates en petits dés.",
+      "duree_min": 8,
+      "actif": true
+    },
+    {
+      "texte": "Dans une poêle huilée, fais revenir l'oignon et la viande jusqu'à ce qu'elle soit dorée.",
+      "duree_min": 7,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 420
+    },
+    {
+      "texte": "Ajoute la pulpe, les dés de tomate, le maïs et le paprika, sale, poivre et laisse mijoter 10 minutes en remuant.",
+      "duree_min": 10,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    },
+    {
+      "texte": "Range la garniture en boîtes. Au moment de manger, réchauffe-la, répartis-la au centre d'une galette et roule-la.",
+      "duree_min": 3,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://www.fourchette-et-bikini.fr/recettes/sandwich-burritos-a-la-mexicaine-14796.html",
+      "titre": "Sandwich burritos à la mexicaine",
+      "auteur": "Fourchette et Bikini",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Galettes de blé grandes, pesées à 60 g pièce (estimation, non précisé par la source). Viande hachée à 5 %.",
+  "kcal_annoncees_par_part": 430,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 410,
+    "proteines_g": 28.5,
+    "glucides_g": 41.5,
+    "lipides_g": 13.5,
+    "fibres_g": 4.5,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 3.34,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "id": "gratin-pates-thon",
+  "slug": "gratin-pates-thon",
+  "nom": "Gratin de pâtes au thon et à la tomate",
+  "resume": "Pâtes, thon, tomates et lait concentré mélangés, couverts de mozzarella et gratinés au four.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 15,
+    "cuisson_min": 30,
+    "total_min": 45,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques",
+    "four"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "française",
+  "proteine_principale": "thon",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "gratin",
+  "ingredients": [
+    {
+      "ingredient": "pates",
+      "nom_affiche": "pâtes sèches",
+      "quantite": 300,
+      "unite": "g",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "9810",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "thon-naturel",
+      "nom_affiche": "thon au naturel égoutté",
+      "quantite": 280,
+      "unite": "g",
+      "poids_g": 280,
+      "optionnel": false,
+      "mesure_affichee": "1 grosse boîte",
+      "ciqual_code": "26039",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "tomates-concassees",
+      "nom_affiche": "tomates concassées",
+      "quantite": 300,
+      "unite": "g",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "20137",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lait-concentre",
+      "nom_affiche": "lait concentré non sucré",
+      "quantite": 200,
+      "unite": "ml",
+      "poids_g": 206,
+      "optionnel": false,
+      "mesure_affichee": "20 cl",
+      "ciqual_code": "19026",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "mozzarella",
+      "nom_affiche": "mozzarella",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 125,
+      "optionnel": false,
+      "mesure_affichee": "1 boule",
+      "ciqual_code": "19590",
+      "rayon": "frais",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Préchauffe le four à 180 °C. Cuis les pâtes selon le paquet, rafraîchis-les et égoutte.",
+      "duree_min": 12,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    },
+    {
+      "texte": "Pendant ce temps, cisèle finement l'oignon.",
+      "duree_min": 3,
+      "actif": true
+    },
+    {
+      "texte": "Dans un saladier, mélange pâtes, thon émietté, tomates, lait concentré et oignon ; sale, poivre et verse dans un plat.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Couvre de tranches de mozzarella et enfourne 25 à 30 minutes.",
+      "duree_min": 28,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 1680
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/gratin-de-pates-au-thon/",
+      "titre": "Gratin de pâtes au Thon",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "kcal_annoncees_par_part": 432,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 531,
+    "proteines_g": 37.1,
+    "glucides_g": 63.8,
+    "lipides_g": 12.9,
+    "fibres_g": 4.8,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.81,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

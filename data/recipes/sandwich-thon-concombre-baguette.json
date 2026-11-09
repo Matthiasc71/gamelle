@@ -1,0 +1,189 @@
+{
+  "id": "sandwich-thon-concombre-baguette",
+  "slug": "sandwich-thon-concombre-baguette",
+  "nom": "Sandwich baguette thon, fromage frais et concombre",
+  "resume": "Une baguette tartinée de fromage frais, garnie de thon citronné à l'échalote et de rubans de concombre.",
+  "type": "assemblage",
+  "portions_base": 2,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 0,
+    "total_min": 10,
+    "actif_min": 10
+  },
+  "equipement": [],
+  "saison": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "française",
+  "proteine_principale": "thon",
+  "creneaux": [
+    "midi"
+  ],
+  "illustration": "wrap",
+  "ingredients": [
+    {
+      "ingredient": "baguette",
+      "nom_affiche": "baguette",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 250,
+      "optionnel": false,
+      "ciqual_code": "7007",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "thon-naturel",
+      "nom_affiche": "thon",
+      "quantite": 112,
+      "unite": "g",
+      "poids_g": 112,
+      "optionnel": false,
+      "mesure_affichee": "1 boîte",
+      "ciqual_code": "26039",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "fromage-frais",
+      "nom_affiche": "fromage frais",
+      "quantite": 40,
+      "unite": "g",
+      "poids_g": 40,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à soupe",
+      "ciqual_code": "12068",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "echalote",
+      "nom_affiche": "échalote ciselée",
+      "quantite": 10,
+      "unite": "g",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "20097",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "citron",
+      "nom_affiche": "citron",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 20,
+      "optionnel": false,
+      "mesure_affichee": "jus d'½ citron",
+      "ciqual_code": "13009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 10,
+      "unite": "ml",
+      "poids_g": 9.2,
+      "optionnel": false,
+      "mesure_affichee": "2 filets",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "mayonnaise",
+      "nom_affiche": "mayonnaise",
+      "quantite": 10,
+      "unite": "g",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "un léger filet",
+      "ciqual_code": "11054",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "concombre",
+      "nom_affiche": "concombre",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "20019",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "persil",
+      "nom_affiche": "persil",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 3,
+      "optionnel": true,
+      "mesure_affichee": "1 c. à soupe ciselé",
+      "ciqual_code": "11014",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Ouvre la baguette en deux et tartine une moitié de fromage frais.",
+      "duree_min": 2,
+      "actif": true
+    },
+    {
+      "texte": "Mélange le thon avec l'échalote, le persil, la moitié du jus de citron et un filet d'huile, puis étale-le sur le pain avec un filet de mayonnaise.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Taille le concombre en rubans à l'économe, assaisonne-les du reste de citron et d'huile, pose-les sur le thon, referme et coupe en 2 sandwichs.",
+      "duree_min": 4,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/reel/DaX_Sb8Nm8W/",
+      "titre": "Sandwich thon & concombre",
+      "auteur": "@fabulouskitchen__",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@fabulouskitchen__",
+        "title": "Sandwich thon & concombre 🥒",
+        "thumbnail_url": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/732933579_18050960039612543_3482442180227559296_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=101&ig_cache_key=MzkzMzg5MTE0MzQxMzQyNzk5MDE4MDUwOTYwMDM2NjEyNTQz.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMyJ9&_nc_ohc=8BHJ3asUgJsQ7kNvwF4IT5R&_nc_oc=AdoRQtm2DjSCJlrIeN840xvmQjadcj1tPGUzjoIQsqDbpJWZjhZRnczTr583XUqlIqc&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&_nc_gid=g1y5PSo3_MSr3o-3TE_0Yg&_nc_ss=7c689&oh=00_AQRPaz2x5m_sKGgh5x1fbSUXYnAIazjANaVG4tysqBmwpA&oe=6AF7D679"
+      }
+    }
+  ],
+  "adaptation": "Nombre de parts non précisé : une baguette pour 2 sandwichs. Mayonnaise (« un léger filet ») comptée 10 g, huile 2 c. à café (estimations).",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 580,
+    "proteines_g": 27.6,
+    "glucides_g": 76.8,
+    "lipides_g": 16.1,
+    "fibres_g": 5.7,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.34,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "id": "sandwich-thon-joe",
+  "slug": "sandwich-thon-joe",
+  "nom": "Sandwich au thon, avocat et tomate",
+  "resume": "Pain complet garni d'une tartinade de thon à la moutarde et au citron, tomate, avocat et oignon rouge.",
+  "type": "assemblage",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 0,
+    "total_min": 10,
+    "actif_min": 10
+  },
+  "equipement": [],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "française",
+  "proteine_principale": "thon",
+  "creneaux": [
+    "midi"
+  ],
+  "illustration": "wrap",
+  "ingredients": [
+    {
+      "ingredient": "thon-naturel",
+      "nom_affiche": "thon au naturel égoutté",
+      "quantite": 120,
+      "unite": "g",
+      "poids_g": 120,
+      "optionnel": false,
+      "ciqual_code": "26039",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "pain-complet",
+      "nom_affiche": "pain complet",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 70,
+      "optionnel": false,
+      "mesure_affichee": "2 tranches",
+      "ciqual_code": "7110",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "avocat",
+      "nom_affiche": "avocat",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 70,
+      "optionnel": false,
+      "mesure_affichee": "½ avocat",
+      "ciqual_code": "13004",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomate",
+      "nom_affiche": "tomate",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 120,
+      "optionnel": false,
+      "ciqual_code": "20276",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon-rouge",
+      "nom_affiche": "oignon rouge",
+      "quantite": 0.25,
+      "unite": "pièce",
+      "poids_g": 25,
+      "optionnel": false,
+      "mesure_affichee": "¼ d'oignon",
+      "ciqual_code": "20238",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "citron",
+      "nom_affiche": "jus de citron",
+      "quantite": 0.05,
+      "unite": "pièce",
+      "poids_g": 2,
+      "optionnel": false,
+      "mesure_affichee": "2 ml",
+      "ciqual_code": "13009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "moutarde",
+      "nom_affiche": "moutarde",
+      "quantite": 5,
+      "unite": "g",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11013",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 1,
+      "unite": "ml",
+      "poids_g": 0.9,
+      "optionnel": false,
+      "mesure_affichee": "1 ml",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "cresson",
+      "nom_affiche": "cresson",
+      "quantite": 0.2,
+      "unite": "pièce",
+      "poids_g": 20,
+      "optionnel": true,
+      "mesure_affichee": "1 poignée",
+      "ciqual_code": "20022",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Émince l'oignon rouge, tranche l'avocat et la tomate, rince le cresson.",
+      "duree_min": 5,
+      "actif": true
+    },
+    {
+      "texte": "Écrase le thon à la fourchette avec la moutarde, le jus de citron, l'huile, sel et poivre.",
+      "duree_min": 3,
+      "actif": true
+    },
+    {
+      "texte": "Tartine une tranche de pain, ajoute tomate, avocat, oignon et cresson, puis referme.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://www.fourchette-et-bikini.fr/recettes/sandwich-au-thon-facon-joe-and-the-juice-healthy-38981.html",
+      "titre": "Sandwich au thon façon Joe and The Juice healthy",
+      "auteur": "Fourchette et Bikini",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Pain non toasté (pas de grille-pain dans l'équipement). Cresson facultatif.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 523,
+    "proteines_g": 40.6,
+    "glucides_g": 34.6,
+    "lipides_g": 22.2,
+    "fibres_g": 9.5,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.42,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

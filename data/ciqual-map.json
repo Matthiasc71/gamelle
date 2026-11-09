@@ -1085,5 +1085,120 @@
     "rangement": "placard",
     "conservation_jours": 365,
     "legume": false
+  },
+  "pain-de-mie-complet": {
+    "nom": "pain de mie complet",
+    "ciqual_code": "7111",
+    "ciqual_nom": "Pain de mie complet, préemballé",
+    "rayon": "epicerie",
+    "etat": "cru",
+    "rangement": "placard",
+    "conservation_jours": 7,
+    "legume": false,
+    "note": "Une tranche : 25 g, estimation."
+  },
+  "baguette": {
+    "nom": "baguette",
+    "ciqual_code": "7007",
+    "ciqual_nom": "Pain de tradition française (par ex. : baguette, boule…)",
+    "rayon": "epicerie",
+    "etat": "cru",
+    "rangement": "placard",
+    "conservation_jours": 2,
+    "legume": false,
+    "note": "Une baguette : 250 g, estimation."
+  },
+  "pain-pita": {
+    "nom": "pain pita",
+    "ciqual_code": "7180",
+    "ciqual_nom": "Pain pita",
+    "rayon": "epicerie",
+    "etat": "cru",
+    "rangement": "placard",
+    "conservation_jours": 7,
+    "legume": false,
+    "note": "Un pain pita : 60 g, estimation."
+  },
+  "blanc-dinde": {
+    "nom": "blanc de dinde en tranches",
+    "ciqual_code": "28964",
+    "ciqual_nom": "Jambon de dinde ou blanc de dinde en tranche",
+    "rayon": "frais",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 5,
+    "legume": false,
+    "note": "Une tranche : 30 g, estimation."
+  },
+  "mayonnaise": {
+    "nom": "mayonnaise",
+    "ciqual_code": "11054",
+    "ciqual_nom": "Mayonnaise (70% MG min.), préemballée",
+    "rayon": "epicerie",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 60,
+    "legume": false
+  },
+  "creme-fraiche": {
+    "nom": "crème fraîche épaisse 30 %",
+    "ciqual_code": "19410",
+    "ciqual_nom": "Crème 30% MG, épaisse, rayon frais",
+    "rayon": "frais",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 10,
+    "legume": false
+  },
+  "creme-liquide": {
+    "nom": "crème liquide 30 %",
+    "ciqual_code": "19417",
+    "ciqual_nom": "Crème 30% MG, fluide, UHT",
+    "rayon": "frais",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 10,
+    "legume": false
+  },
+  "olives-vertes": {
+    "nom": "olives vertes",
+    "ciqual_code": "13033",
+    "ciqual_nom": "Olive verte, en saumure, égouttée",
+    "rayon": "epicerie",
+    "etat": "égoutté",
+    "rangement": "placard",
+    "conservation_jours": 365,
+    "legume": false
+  },
+  "cornichons": {
+    "nom": "cornichons",
+    "ciqual_code": "11004",
+    "ciqual_nom": "Cornichon, au vinaigre",
+    "rayon": "epicerie",
+    "etat": "égoutté",
+    "rangement": "placard",
+    "conservation_jours": 365,
+    "legume": false,
+    "note": "Un cornichon : 6 g, estimation."
+  },
+  "cresson": {
+    "nom": "cresson",
+    "ciqual_code": "20022",
+    "ciqual_nom": "Cresson de fontaine, cru",
+    "rayon": "fruits-legumes",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 3,
+    "legume": true
+  },
+  "fromage-frais": {
+    "nom": "fromage frais à tartiner",
+    "ciqual_code": "12068",
+    "ciqual_nom": "Fromage frais ou spécialité fromagère non affinée, nature, à tartiner, en barquette, non allégée en matière grasse",
+    "rayon": "frais",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 10,
+    "legume": false
   }
 }

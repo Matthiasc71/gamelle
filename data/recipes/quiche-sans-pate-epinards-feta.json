@@ -1,0 +1,203 @@
+{
+  "id": "quiche-sans-pate-epinards-feta",
+  "slug": "quiche-sans-pate-epinards-feta",
+  "nom": "Quiche sans pâte épinards, champignons et feta",
+  "resume": "Épinards et champignons sous un appareil aux œufs, feta et parmesan, cuits au four sans pâte.",
+  "type": "batch",
+  "portions_base": 3,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 15,
+    "cuisson_min": 30,
+    "total_min": 50,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques",
+    "four",
+    "micro-ondes"
+  ],
+  "saison": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "cuisine": "française",
+  "proteine_principale": "oeufs",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "gratin",
+  "ingredients": [
+    {
+      "ingredient": "champignons",
+      "nom_affiche": "champignons de Paris",
+      "quantite": 350,
+      "unite": "g",
+      "poids_g": 350,
+      "optionnel": false,
+      "ciqual_code": "20056",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "epinards-surgeles",
+      "nom_affiche": "épinards hachés surgelés",
+      "quantite": 500,
+      "unite": "g",
+      "poids_g": 500,
+      "optionnel": false,
+      "ciqual_code": "20083",
+      "rayon": "surgeles",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "feta",
+      "nom_affiche": "feta",
+      "quantite": 80,
+      "unite": "g",
+      "poids_g": 80,
+      "optionnel": false,
+      "ciqual_code": "12066",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oeuf",
+      "nom_affiche": "œufs",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 220,
+      "optionnel": false,
+      "ciqual_code": "22000",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lait-demi",
+      "nom_affiche": "lait",
+      "quantite": 250,
+      "unite": "ml",
+      "poids_g": 258,
+      "optionnel": false,
+      "mesure_affichee": "25 cl",
+      "ciqual_code": "19041",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "parmesan",
+      "nom_affiche": "parmesan râpé",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "12120",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "mozzarella",
+      "nom_affiche": "mozzarella râpée",
+      "quantite": 60,
+      "unite": "g",
+      "poids_g": 60,
+      "optionnel": false,
+      "ciqual_code": "19590",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 gousse",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Fais décongeler les épinards (au micro-ondes) et presse-les pour retirer un maximum d'eau. Préchauffe le four à 180 °C.",
+      "duree_min": 8,
+      "actif": true,
+      "equipement": "micro-ondes"
+    },
+    {
+      "texte": "Émince les champignons et fais-les revenir avec l'ail pressé dans une poêle bien chaude, jusqu'à ce qu'ils aient rendu leur eau.",
+      "duree_min": 8,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 480
+    },
+    {
+      "texte": "Étale les épinards dans un plat, puis les champignons et la feta émiettée.",
+      "duree_min": 3,
+      "actif": true
+    },
+    {
+      "texte": "Bats les œufs avec le lait et le parmesan, sale, poivre, verse dans le plat et parsème de mozzarella.",
+      "duree_min": 3,
+      "actif": true
+    },
+    {
+      "texte": "Enfourne 30 minutes.",
+      "duree_min": 30,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 1800
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/quiche-sans-pate-epinards-champignons-feta/",
+      "titre": "Quiche sans pâte aux épinards, champignons et feta",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "La recette pour 4 est servie en 3 parts, pour un repas complet. Épinards décongelés au micro-ondes.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 420,
+    "proteines_g": 33,
+    "glucides_g": 8.9,
+    "lipides_g": 26.6,
+    "fibres_g": 6.2,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.59,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

@@ -1178,5 +1178,153 @@
     "open_prices": {
       "categorie_produit": "en:red-wines"
     }
+  },
+  "pain-de-mie-complet": {
+    "produit": "Pain de mie complet, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:sliced-breads",
+      "mots": [
+        "complet"
+      ],
+      "exclure": [
+        "sans croute",
+        "brioch"
+      ]
+    }
+  },
+  "baguette": {
+    "produit": "Baguette, 250 g",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:baguettes"
+    }
+  },
+  "pain-pita": {
+    "produit": "Pains pita, 6 × 60 g",
+    "conditionnement": {
+      "quantite": 360,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:pitas"
+    }
+  },
+  "blanc-dinde": {
+    "produit": "Blanc de dinde, 4 tranches (120 g)",
+    "conditionnement": {
+      "quantite": 120,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:turkey-breasts",
+      "mots": [
+        "dinde"
+      ]
+    }
+  },
+  "mayonnaise": {
+    "produit": "Mayonnaise, 465 g",
+    "conditionnement": {
+      "quantite": 465,
+      "unite": "g"
+    },
+    "aldi": "0816",
+    "open_prices": {
+      "categorie_produit": "en:mayonnaises",
+      "exclure": [
+        "allege",
+        "light"
+      ]
+    }
+  },
+  "creme-fraiche": {
+    "produit": "Crème fraîche épaisse, 50 cl",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "ml"
+    },
+    "aldi": "6549",
+    "open_prices": {
+      "categorie_produit": "fr:cremes-fraiches"
+    }
+  },
+  "creme-liquide": {
+    "produit": "Crème liquide entière, 20 cl",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "ml"
+    },
+    "open_prices": {
+      "categorie_produit": "en:creams",
+      "mots": [
+        "liquide",
+        "fluide"
+      ],
+      "exclure": [
+        "legere",
+        "light",
+        "4%",
+        "12%",
+        "15%",
+        "soja",
+        "coco",
+        "avoine"
+      ]
+    }
+  },
+  "olives-vertes": {
+    "produit": "Olives vertes dénoyautées, 200 g",
+    "conditionnement": {
+      "quantite": 200,
+      "unite": "g"
+    },
+    "aldi": "5012293",
+    "open_prices": {
+      "categorie_produit": "en:green-olives"
+    }
+  },
+  "cornichons": {
+    "produit": "Cornichons, 360 g",
+    "conditionnement": {
+      "quantite": 360,
+      "unite": "g"
+    },
+    "aldi": "5020944",
+    "open_prices": {
+      "categorie_produit": "en:pickled-gherkins"
+    }
+  },
+  "cresson": {
+    "produit": "Cresson, botte",
+    "conditionnement": {
+      "quantite": 1,
+      "unite": "pièce"
+    },
+    "poids_piece_g": 100,
+    "open_prices": {
+      "category_tag": "en:watercress"
+    }
+  },
+  "fromage-frais": {
+    "produit": "Fromage frais à tartiner, 150 g",
+    "conditionnement": {
+      "quantite": 150,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:cream-cheeses",
+      "exclure": [
+        "allege",
+        "light",
+        "0%"
+      ]
+    }
   }
 }

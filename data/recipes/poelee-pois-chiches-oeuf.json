@@ -1,0 +1,189 @@
+{
+  "id": "poelee-pois-chiches-oeuf",
+  "slug": "poelee-pois-chiches-oeuf",
+  "nom": "Poêlée de pois chiches, épinards et œuf au plat",
+  "resume": "Pois chiches et épinards sautés au paprika, un œuf au plat, de la feta et un pain pita.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 10,
+    "total_min": 15,
+    "actif_min": 12
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "méditerranéenne",
+  "proteine_principale": "legumineuses",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "omelette",
+  "ingredients": [
+    {
+      "ingredient": "pois-chiches",
+      "nom_affiche": "pois chiches égouttés",
+      "quantite": 150,
+      "unite": "g",
+      "poids_g": 150,
+      "optionnel": false,
+      "ciqual_code": "20532",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "epinards-pousses",
+      "nom_affiche": "épinards frais",
+      "quantite": 60,
+      "unite": "g",
+      "poids_g": 60,
+      "optionnel": false,
+      "mesure_affichee": "2 poignées",
+      "ciqual_code": "20270",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oeuf",
+      "nom_affiche": "œuf",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 55,
+      "optionnel": false,
+      "ciqual_code": "22000",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pain-pita",
+      "nom_affiche": "pain pita",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 60,
+      "optionnel": false,
+      "ciqual_code": "7180",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon-rouge",
+      "nom_affiche": "oignon rouge",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "20238",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "feta",
+      "nom_affiche": "feta",
+      "quantite": 20,
+      "unite": "g",
+      "poids_g": 20,
+      "optionnel": false,
+      "ciqual_code": "12066",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "paprika",
+      "nom_affiche": "paprika",
+      "quantite": 1,
+      "unite": "g",
+      "poids_g": 1,
+      "optionnel": false,
+      "mesure_affichee": "1 pincée",
+      "ciqual_code": "11049",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 10,
+      "unite": "ml",
+      "poids_g": 9.2,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à café",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Égoutte les pois chiches et émince finement l'oignon.",
+      "duree_min": 3,
+      "actif": true
+    },
+    {
+      "texte": "Dans une poêle huilée, fais revenir l'oignon avec le paprika 2 à 3 minutes.",
+      "duree_min": 3,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 180
+    },
+    {
+      "texte": "Ajoute pois chiches et épinards avec un fond d'eau, et remue 2 minutes. Sale, poivre et réserve.",
+      "duree_min": 2,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 120
+    },
+    {
+      "texte": "Dans la même poêle, cuis l'œuf au plat, pose-le sur les légumes, émiette la feta et sers avec le pain pita.",
+      "duree_min": 4,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 240
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/poelee-de-pois-chiches-et-oeuf-au-plat-82hnbdjc8nrk00ua06bv",
+      "titre": "Poêlée de pois chiches & œuf au plat",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "« 2 poignées » d'épinards comptées 60 g et un filet d'huile 2 c. à café (estimations).",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 580,
+    "proteines_g": 26.7,
+    "glucides_g": 54.9,
+    "lipides_g": 24.9,
+    "fibres_g": 13.5,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.88,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

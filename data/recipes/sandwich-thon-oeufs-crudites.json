@@ -1,0 +1,199 @@
+{
+  "id": "sandwich-thon-oeufs-crudites",
+  "slug": "sandwich-thon-oeufs-crudites",
+  "nom": "Sandwich thon, œufs durs et crudités",
+  "resume": "Une demi-baguette garnie de thon, œufs durs, concombre, tomates cerises, oignon rouge et cornichons.",
+  "type": "express",
+  "portions_base": 2,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 8,
+    "cuisson_min": 10,
+    "total_min": 18,
+    "actif_min": 10
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "cuisine": "française",
+  "proteine_principale": "thon",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "wrap",
+  "ingredients": [
+    {
+      "ingredient": "baguette",
+      "nom_affiche": "baguette tradition",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 125,
+      "optionnel": false,
+      "mesure_affichee": "½ baguette",
+      "ciqual_code": "7007",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oeuf",
+      "nom_affiche": "œufs",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 110,
+      "optionnel": false,
+      "ciqual_code": "22000",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "thon-naturel",
+      "nom_affiche": "thon",
+      "quantite": 112,
+      "unite": "g",
+      "poids_g": 112,
+      "optionnel": false,
+      "mesure_affichee": "1 boîte",
+      "ciqual_code": "26039",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "oignon-rouge",
+      "nom_affiche": "oignon rouge",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20238",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "concombre",
+      "nom_affiche": "concombre",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 150,
+      "optionnel": false,
+      "mesure_affichee": "½ concombre",
+      "ciqual_code": "20019",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomates-cerises",
+      "nom_affiche": "tomates cerises",
+      "quantite": 6,
+      "unite": "pièce",
+      "poids_g": 72,
+      "optionnel": false,
+      "mesure_affichee": "6 (environ 72 g)",
+      "ciqual_code": "20172",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "cornichons",
+      "nom_affiche": "cornichons",
+      "quantite": 6,
+      "unite": "pièce",
+      "poids_g": 36,
+      "optionnel": false,
+      "ciqual_code": "11004",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "mayonnaise",
+      "nom_affiche": "mayonnaise",
+      "quantite": 30,
+      "unite": "g",
+      "poids_g": 30,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à soupe",
+      "ciqual_code": "11054",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "creme-fraiche",
+      "nom_affiche": "crème fraîche",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "19410",
+      "rayon": "frais",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Fais durcir les œufs 9 minutes dans l'eau bouillante, puis refroidis-les sous l'eau froide.",
+      "duree_min": 10,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 540
+    },
+    {
+      "texte": "Pendant ce temps, émince l'oignon rouge, coupe le concombre en rondelles, les tomates cerises et les cornichons en deux.",
+      "duree_min": 6,
+      "actif": true
+    },
+    {
+      "texte": "Mélange le thon émietté avec la mayonnaise et la crème fraîche.",
+      "duree_min": 2,
+      "actif": true
+    },
+    {
+      "texte": "Coupe la demi-baguette en deux sandwichs, garnis-les de thon, d'œuf en rondelles et de crudités.",
+      "duree_min": 3,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@lespetitsplatsdenass/video/7494367554299874582",
+      "titre": "Sandwich thon crudités",
+      "auteur": "@lespetitsplatsdenass",
+      "verifie_le": "2026-11-09",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@lespetitsplatsdenass",
+        "title": "#CapCut Sandwich thon crudités 🥙🥙🥙🥙 Une recette express facile et rapide à faire !!! 🤤🤤 1/2 baguette tradition 🥖 2 œufs durs 🥚 1 boîte de th",
+        "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-no1a-p-0037-no/oQIxFC5ivUX1xBBAPZHEICB8BVbaYAZClUiAa~tplv-tiktokx-origin.image?dr=9636&x-expires=1794409200&x-signature=EQGPKzX2pHNd8ssNc9AX9v6oJl0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      }
+    }
+  ],
+  "adaptation": "Nombre de parts non précisé par la source : la demi-baguette fait 2 sandwichs. Tomates cerises et cornichons pesés en estimation.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 501,
+    "proteines_g": 29.3,
+    "glucides_g": 43.2,
+    "lipides_g": 22.1,
+    "fibres_g": 4.9,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.27,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

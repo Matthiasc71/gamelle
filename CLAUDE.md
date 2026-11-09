@@ -54,7 +54,7 @@ Cahier des charges complet : `docs/cahier-des-charges.md`. Maquettes de référe
 - `courses.ts` (paquets, stock, placard de base, prix corrigés), `timeline.ts` (session batch en parallèle),
   `remplacement.ts` (3 alternatives), `echange.ts` (favori → créneaux, avertissements), `frigo.ts` (événements).
 - `npm run simuler` : 52 semaines avec stock et historique → `reports/simulation.md`.
-- Budget : avec 30 recettes, ~41 € en caisse / semaine en moyenne (5/52 dans le budget). Priorité de la base :
+- Budget : avec 41 recettes, ~34 € en caisse / semaine en moyenne (31/52 dans le budget, ~27 € mangés). Priorité de la base :
   recettes à moins de 2 € la part, qui réutilisent les mêmes paquets.
 
 ## Commandes
