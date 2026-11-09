@@ -1,11 +1,11 @@
 import { useMemo, useState } from 'react';
 import { BASE } from '../app/base';
-import { basculerFavori, enregistrerReglages, useFavoris, useReglages } from '../app/etat';
+import { basculerFavori, useFavoris, useReglages } from '../app/etat';
 import { TYPE_RECETTE } from '../app/presentation';
 import { lien } from '../app/routeur';
 import { euros, kcal } from '../domain/format';
 import type { Recette } from '../domain/schema';
-import { annoncer, BoutonPlus, Brin, Illustration, Interrupteur, Rubrique } from '../ui/composants';
+import { annoncer, BoutonPlus, Illustration, Rubrique } from '../ui/composants';
 import { Icone } from '../ui/Icone';
 
 type Tri = 'nom' | 'kcal' | 'prix' | 'temps';
@@ -44,40 +44,31 @@ export default function Favoris() {
 
   return (
     <main className="ecran" aria-labelledby="titre-favoris">
-      <header className="tete-simple">
-        <Brin className="tete-simple__brin" />
-        <p className="kicker">Favoris · {favoris.size} gardée{favoris.size > 1 ? 's' : ''}</p>
+      <header className="tete-ligne">
         <h1 id="titre-favoris" className="titre-page">
-          Recettes gardées
+          Recettes
         </h1>
-        <a className="btn btn--contour btn--petit" href={lien('nouvelle')}>
-          <Icone nom="plus" taille={18} /> Ajouter ma recette
+        <a className="bouton-icone bouton-icone--plein" href={lien('nouvelle')} aria-label="Ajouter ma recette">
+          <Icone nom="plus" />
         </a>
       </header>
-
-      <Interrupteur
-        label="Inclure mes favoris dans les prochains menus"
-        aide="1 à 2 favoris par semaine, même s’ils ont été servis récemment."
-        actif={reglages.favorisInclus}
-        onChange={(v) => enregistrerReglages({ favorisInclus: v })}
-      />
 
       <div className="recherche">
         <label className="champ-recherche">
           <Icone nom="chercher" taille={18} />
-          <input type="search" placeholder="Chercher un plat, un ingrédient…" value={q} onChange={(e) => setQ(e.target.value)} aria-label="Chercher une recette" />
+          <input type="search" placeholder="Plat, ingrédient…" value={q} onChange={(e) => setQ(e.target.value)} aria-label="Chercher une recette" />
         </label>
         <label className="select">
           <span className="sr-only">Trier par</span>
           <select value={tri} onChange={(e) => setTri(e.target.value as Tri)}>
             <option value="nom">Nom</option>
             <option value="kcal">Calories</option>
-            <option value="prix">Prix par part</option>
+            <option value="prix">Prix</option>
             <option value="temps">Temps</option>
           </select>
         </label>
       </div>
-      <div className="segments segments--petits" role="group" aria-label="Type de recette">
+      <div className="filtres" role="group" aria-label="Type de recette">
         {(['tous', 'saison', 'batch', 'express', 'assemblage'] as const).map((f) => (
           <button key={f} aria-pressed={filtre === f} onClick={() => setFiltre(f)}>
             {f === 'tous' ? 'Toutes' : f === 'saison' ? 'De saison' : TYPE_RECETTE[f]}

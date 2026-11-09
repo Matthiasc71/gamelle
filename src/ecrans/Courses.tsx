@@ -13,6 +13,16 @@ import type { Menu } from '../domain/types';
 import { annoncer, Chargement, Chiffre, Feuille, Interrupteur, Rubrique } from '../ui/composants';
 import { Icone } from '../ui/Icone';
 
+/** « Carottes, sachet 1 kg » → « Carottes » ; « Brocoli (à la pièce) » → « Brocoli ». */
+const nomProduit = (p: string) => p.split(/,| \(/)[0].trim();
+
+/** « 3 pièces », « 2 × 500 g », « 1 kg ». */
+function quantiteAchat(l: LigneCourses) {
+  const u = BASE.prix[l.ingredient]?.conditionnement;
+  if (u?.unite === 'pièce' && u.quantite === 1) return `${l.paquets} pièce${l.paquets > 1 ? 's' : ''}`;
+  return `${l.paquets > 1 ? `${l.paquets} × ` : ''}${l.conditionnement}`;
+}
+
 const METHODE: Record<PrixReference['methode'], string> = {
   ticket: 'ticket de caisse',
   lidl: 'relevé en magasin Lidl (Open Prices)',
@@ -80,23 +90,21 @@ function Liste({ menu }: { menu: Menu }) {
     <>
       <section className="courses__total">
         <Chiffre taille="l">{euros(liste.totalCaisse)}</Chiffre>
-        <p>
-          à la caisse · {euros(reste)} restent à acheter
-          <br />
-          <span className="texte-doux">dont {euros(liste.totalUtilise)} mangés cette semaine, le reste des paquets passe à la suivante</span>
+        <p className="texte-doux">
+          {aAcheter.filter((l) => coches.has(l.ingredient)).length}/{aAcheter.length} articles · {euros(reste)} à acheter
         </p>
       </section>
-      <div className="rangee-boutons">
+      <div className="rangee-boutons rangee-boutons--serree">
         <button className="btn btn--plein" onClick={partager}>
-          <Icone nom="partager" taille={18} /> Partager
+          <Icone nom="partager" taille={18} /> Partager la liste
         </button>
-        <button className="btn btn--contour" onClick={copier}>
-          <Icone nom="copier" taille={18} /> Copier
+        <button className="bouton-icone" onClick={copier} aria-label="Copier la liste">
+          <Icone nom="copier" />
         </button>
       </div>
 
       {coches.size > 0 && aAcheter.some((l) => !coches.has(l.ingredient)) && aUtiliser.length > 0 && (
-        <p className="note">Courses déjà faites et menu modifié : les articles non cochés sont à racheter.</p>
+        <p className="note">Menu modifié : les articles non cochés sont à racheter.</p>
       )}
 
       {liste.parRayon.map((g) => (
@@ -108,7 +116,6 @@ function Liste({ menu }: { menu: Menu }) {
                 key={l.ingredient}
                 l={l}
                 coche={coches.has(l.ingredient)}
-                pour={recettesPour(l.ingredient)}
                 basculer={(v) => cocher(menu.semaine, l.ingredient, l.paquets * BASE.prix[l.ingredient].conditionnement.quantite, v)}
                 ouvrir={() => setDetail(l)}
               />
@@ -162,14 +169,14 @@ function Liste({ menu }: { menu: Menu }) {
         </section>
       )}
 
-      <Feuille titre={detail?.produit ?? ''} ouverte={!!detail} fermer={() => setDetail(null)}>
-        {detail && <DetailLigne l={detail} semaine={menu.semaine} fermer={() => setDetail(null)} />}
+      <Feuille titre={detail ? nomProduit(detail.produit) : ''} ouverte={!!detail} fermer={() => setDetail(null)}>
+        {detail && <DetailLigne l={detail} pour={recettesPour(detail.ingredient)} semaine={menu.semaine} fermer={() => setDetail(null)} />}
       </Feuille>
     </>
   );
 }
 
-function LigneArticle({ l, coche, pour, basculer, ouvrir }: { l: LigneCourses; coche: boolean; pour: string[]; basculer: (v: boolean) => void; ouvrir: () => void }) {
+function LigneArticle({ l, coche, basculer, ouvrir }: { l: LigneCourses; coche: boolean; basculer: (v: boolean) => void; ouvrir: () => void }) {
   return (
     <li className={`article ${coche ? 'article--coche' : ''}`}>
       <label className="article__case">
@@ -179,31 +186,31 @@ function LigneArticle({ l, coche, pour, basculer, ouvrir }: { l: LigneCourses; c
         </span>
         <span className="article__texte">
           <span className="article__nom">
-            {l.produit}
+            {nomProduit(l.produit)}
             <svg className="crayon" viewBox="0 0 100 8" preserveAspectRatio="none" aria-hidden="true">
               <path d="M1 5 C20 3 35 6 52 4 S82 3 99 5" pathLength="1" />
             </svg>
           </span>
           <span className="article__detail">
-            {l.paquets > 1 ? `${l.paquets} × ` : ''}
-            {l.conditionnement}
-            {pour.length > 0 && ` · ${pour.join(', ')}`}
+            {quantiteAchat(l)}
           </span>
         </span>
       </label>
-      <button className="article__prix" onClick={ouvrir} aria-label={`Détails et prix : ${l.produit}`}>
+      <button className="article__prix" onClick={ouvrir} aria-label={`Détails et prix : ${nomProduit(l.produit)}`}>
         <span>{l.sansPrix ? '—' : euros(l.coutCaisse)}</span>
-        {(l.prixEstime || l.prixCorrige) && <small>{l.prixCorrige ? 'corrigé' : 'estimé'}</small>}
+        {l.prixCorrige && <small>corrigé</small>}
       </button>
     </li>
   );
 }
 
-function DetailLigne({ l, semaine, fermer }: { l: LigneCourses; semaine: string; fermer: () => void }) {
+function DetailLigne({ l, pour, semaine, fermer }: { l: LigneCourses; pour: string[]; semaine: string; fermer: () => void }) {
   const p = BASE.prix[l.ingredient];
   const [saisie, setSaisie] = useState(nombre(l.prixPaquet, 2));
   return (
     <div className="detail-ligne">
+      <p className="texte-doux petit">{l.produit}</p>
+      {pour.length > 0 && <p>Pour : {pour.join(', ')}</p>}
       <p>
         Besoin : {nombre(l.besoin, 0)} {p?.conditionnement.unite === 'pièce' ? 'pièce(s)' : p?.conditionnement.unite} · paquet de{' '}
         {p ? libelleConditionnement(p) : '?'}

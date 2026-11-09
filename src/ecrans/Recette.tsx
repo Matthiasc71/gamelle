@@ -90,22 +90,29 @@ function FicheRecette({ r, semaine: semaineParam, creneau }: { r: TRecette; sema
               De saison
             </Puce>
           )}
+          {r.type === 'batch' && (
+            <Puce icone={r.conservation.congelable ? 'flocon' : undefined}>
+              Frigo {frigoJours(r)} j{r.conservation.congelable ? ' · congèle' : ''}
+            </Puce>
+          )}
           {estPerso(r.id) && <Puce variante="tirets">Ma recette</Puce>}
         </div>
-        <p className="fiche__ciqual">
-          <Icone nom="cercleCoche" taille={18} />
-          <span>
-            Calories recalculées avec la table Ciqual 2025 (Anses) · prot. {Math.round(n.proteines_g)} g · gluc. {Math.round(n.glucides_g)} g · lip.{' '}
-            {Math.round(n.lipides_g)} g · fibres {Math.round(n.fibres_g)} g
-          </span>
+        <p className="fiche__macros">
+          Prot. <strong>{Math.round(n.proteines_g)} g</strong> · Gluc. {Math.round(n.glucides_g)} g · Lip. {Math.round(n.lipides_g)} g
+          <span className="texte-doux"> · Ciqual</span>
         </p>
 
-        <div className="sources">
+        <ul className="sources" aria-label={r.adaptation ? 'Adaptée de' : 'Source'}>
           {r.sources.map((s) => (
-            <CarteSource key={s.url} s={s} adaptee={!!r.adaptation} />
+            <CarteSource key={s.url} s={s} />
           ))}
-        </div>
-        {r.adaptation && <p className="fiche__adaptation">Adaptée : {r.adaptation}</p>}
+        </ul>
+        {r.adaptation && (
+          <details className="replie">
+            <summary>Adaptée de la source</summary>
+            <p>{r.adaptation}</p>
+          </details>
+        )}
         {estPerso(r.id) && (
           <p className="fiche__adaptation">
             Recette ajoutée sur ce téléphone : lien non vérifié par Gamelle.{' '}
@@ -130,25 +137,14 @@ function FicheRecette({ r, semaine: semaineParam, creneau }: { r: TRecette; sema
             <Rubrique id="dans-semaine">Dans ta semaine</Rubrique>
             <div className="puces">
               {details.map((d) => (
-                <Puce key={d.creneau} variante={d.statut === 'congele' ? 'tirets' : 'sauge'}>
+                <Puce key={d.creneau} variante={d.statut === 'congele' ? 'tirets' : 'sauge'} icone={d.statut === 'congele' ? 'flocon' : undefined}>
                   {libelleJour(menu.lundi, d.jour)} {d.moment}
-                  {d.statut === 'congele' ? ' · congelée' : ''}
                 </Puce>
               ))}
             </div>
             {ici && reglages && <ActionsRepas menu={menu} creneau={ici.creneau} reglages={reglages} />}
           </section>
         )}
-
-        <section aria-labelledby="conservation">
-          <Rubrique id="conservation">Conservation</Rubrique>
-          <p className="texte-doux">
-            {r.type === 'batch' || r.conservation.frigo_jours > 0
-              ? `Au frigo ${frigoJours(r)} jour${frigoJours(r) > 1 ? 's' : ''} maximum après la cuisson. `
-              : 'À manger tout de suite. '}
-            {r.conservation.congelable ? 'Se congèle : sors la boîte du congélateur la veille.' : 'Ne se congèle pas.'}
-          </p>
-        </section>
 
         <section aria-labelledby="ingredients">
           <div className="rubrique-ligne">
@@ -169,7 +165,6 @@ function FicheRecette({ r, semaine: semaineParam, creneau }: { r: TRecette; sema
               );
             })}
           </ul>
-          <p className="texte-doux petit">Prix des quantités utilisées, d’après la grille de prix (Lyon). Le sel et le poivre ne sont pas comptés.</p>
         </section>
 
         <section aria-labelledby="etapes">
@@ -190,7 +185,6 @@ function FicheRecette({ r, semaine: semaineParam, creneau }: { r: TRecette; sema
               </li>
             ))}
           </ol>
-          <p className="texte-doux petit">Étapes reformulées par Gamelle. Recette originale : voir les sources ci-dessus.</p>
         </section>
       </div>
 
@@ -223,18 +217,17 @@ function ActionsRepas({ menu, creneau, reglages }: { menu: Menu; creneau: number
   const d = detailsRepas(menu, BASE).find((x) => x.creneau === creneau)!;
   const cuisine = evs.some((e) => e.semaine === menu.semaine && e.origine === 'cuisine' && e.cle === d.cuisson.id);
   const mange = evs.some((e) => e.semaine === menu.semaine && e.origine === 'mange' && e.cle === String(creneau));
-  const quand = d.cuisson.jour < 0 ? 'dimanche' : libelleJour(menu.lundi, d.cuisson.jour);
   return (
     <div className="actions-repas">
       {!d.cuisson.stock && (
         <button className={`case-action ${cuisine ? 'case-action--fait' : ''}`} aria-pressed={cuisine} onClick={() => marquerCuisine(menu, d.cuisson, reglages, !cuisine)}>
           <Icone nom={cuisine ? 'coche' : 'feu'} taille={20} />
-          {cuisine ? `Cuisiné (${quand})` : `J’ai cuisiné ce plat (${quand})`}
+          Cuisiné{d.cuisson.jour < 0 ? ' dim.' : ''}
         </button>
       )}
       <button className={`case-action ${mange ? 'case-action--fait' : ''}`} aria-pressed={mange} onClick={() => marquerMange(menu.semaine, creneau, d.cuisson.id, !mange)}>
         <Icone nom={mange ? 'coche' : 'boite'} taille={20} />
-        {mange ? 'Repas mangé' : 'J’ai mangé ce repas'}
+        Mangé
       </button>
     </div>
   );
@@ -292,27 +285,31 @@ function lecteur(s: Source): string | null {
   return null;
 }
 
-function CarteSource({ s, adaptee }: { s: Source; adaptee: boolean }) {
+function CarteSource({ s }: { s: Source }) {
   const [lancee, setLancee] = useState(false);
   const embed = lecteur(s);
   const reseau = s.type === 'tiktok' ? 'TikTok' : s.type === 'instagram' ? 'Instagram' : (() => {
     try {
       return new URL(s.url).hostname.replace(/^www\./, '');
     } catch {
-      return 'article';
+      return 'Article';
     }
   })();
   return (
-    <article className={`source source--${s.type}`}>
-      <p className="kicker">
-        {adaptee ? 'Adaptée de · ' : 'Source · '}
-        {reseau}
-      </p>
-      <p className="source__titre">{s.titre}</p>
-      <p className="texte-doux petit">
-        {s.auteur} · lien vérifié le {new Date(s.verifie_le).toLocaleDateString('fr-FR')}
-      </p>
-      {lancee && embed ? (
+    <li className="source">
+      <div className="source__ligne">
+        <Icone nom={s.type === 'article' ? 'article' : 'lecture'} taille={20} />
+        <a className="source__texte" href={s.url} target="_blank" rel="noopener noreferrer">
+          <strong>{reseau}</strong>
+          <small>{s.auteur}</small>
+        </a>
+        {embed && !lancee && (
+          <button className="btn btn--contour btn--petit" onClick={() => setLancee(true)} aria-label={`Voir la vidéo ${reseau} ici`}>
+            Voir
+          </button>
+        )}
+      </div>
+      {lancee && embed && (
         <iframe
           className={`source__lecteur source__lecteur--${s.type}`}
           src={embed}
@@ -321,19 +318,7 @@ function CarteSource({ s, adaptee }: { s: Source; adaptee: boolean }) {
           loading="lazy"
           referrerPolicy="strict-origin-when-cross-origin"
         />
-      ) : null}
-      <div className="source__boutons">
-        {embed && !lancee && (
-          <button className="btn btn--contour btn--petit" onClick={() => setLancee(true)}>
-            <Icone nom="lecture" taille={16} /> {NOM_SOURCE[s.type]}
-          </button>
-        )}
-        <a className="btn btn--contour btn--petit" href={s.url} target="_blank" rel="noopener noreferrer">
-          <Icone nom={s.type === 'article' ? 'article' : 'envoyer'} taille={16} /> {s.type === 'article' ? NOM_SOURCE.article : `Ouvrir ${reseau}`}
-        </a>
-      </div>
-      {embed && !lancee && <p className="texte-doux petit">Le lecteur {reseau} ne se charge qu’au tap.</p>}
-    </article>
+      )}
+    </li>
   );
 }
-

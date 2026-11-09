@@ -35,7 +35,7 @@ html::after {
   z-index: 100;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='g'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.14  0 0 0 0 0.25  0 0 0 0 0.18  0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23g)'/></svg>");
   mix-blend-mode: multiply;
-  opacity: 0.16;
+  opacity: 0.09;
 }
 
 html.sans-grain::after {
@@ -148,6 +148,7 @@ button {
 
 .chiffre__rose {
   color: var(--rose);
+  opacity: 0.75;
   transform: translate(var(--decalage), calc(var(--decalage) * 0.8));
   mix-blend-mode: multiply;
 }
@@ -163,7 +164,12 @@ button {
 
 .chiffre--m {
   font-size: 23px;
-  --decalage: 2px;
+  --decalage: 1.5px;
+}
+
+.chiffre--m .chiffre__rose,
+.chiffre--s .chiffre__rose {
+  opacity: 0.55;
 }
 
 .chiffre--l {
@@ -1032,7 +1038,6 @@ button {
 .ingredients__prix {
   flex: none;
   color: var(--encre-douce);
-  font-variant-numeric: tabular-nums;
 }
 
 .etapes {
@@ -2260,4 +2265,185 @@ textarea.champ-texte {
 
 .tete-simple > .btn {
   margin-bottom: 10px;
+}
+
+/* ───────────── Sobriété ───────────── */
+
+.totaux__case small {
+  font-size: 12px;
+  margin-top: -6px;
+}
+
+.totaux__case--alerte small {
+  display: inline-block;
+  justify-self: start;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: var(--rose);
+  color: var(--encre);
+  font-weight: 700;
+}
+
+.replie {
+  margin: 4px 0 14px;
+  border-top: 1px dashed var(--filet);
+  border-bottom: 1px dashed var(--filet);
+}
+
+.replie summary {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  list-style: none;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+
+.replie summary::-webkit-details-marker {
+  display: none;
+}
+
+.replie summary::after {
+  content: '+';
+  margin-left: auto;
+  font: 700 18px/1 var(--display);
+}
+
+.replie[open] summary::after {
+  content: '−';
+}
+
+.replie ul,
+.replie p {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: var(--encre-douce);
+}
+
+.replie ul {
+  padding-left: 18px;
+}
+
+.jour--aujourdhui .jour__date .kicker {
+  color: var(--encre);
+}
+
+.jour--aujourdhui .jour__num {
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin-left: -6px;
+  border-radius: 50%;
+  background: var(--menthe);
+}
+
+.fiche__macros {
+  margin: 4px 0 14px;
+  font-size: 14.5px;
+}
+
+.sources {
+  list-style: none;
+  margin: 0 0 6px;
+  padding: 0;
+  display: block;
+}
+
+.source {
+  padding: 0;
+  border: 0;
+  border-top: 1px dashed var(--filet);
+  border-radius: 0;
+  background: none;
+}
+
+.source:last-child {
+  border-bottom: 1px dashed var(--filet);
+}
+
+.source__ligne {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 56px;
+}
+
+.source__texte {
+  flex: 1;
+  min-width: 0;
+  display: grid;
+  text-decoration: none;
+}
+
+.source__texte strong {
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-underline-offset: 4px;
+}
+
+.source__texte small {
+  font-size: 13px;
+  color: var(--encre-douce);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.actions-repas {
+  grid-template-columns: 1fr 1fr;
+}
+
+.case-action {
+  justify-content: center;
+}
+
+.rangee-boutons--serree {
+  flex-wrap: nowrap;
+}
+
+.rangee-boutons--serree .bouton-icone {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--r-bouton);
+}
+
+.tete-ligne {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.filtres {
+  display: flex;
+  gap: 6px;
+  margin: 0 calc(var(--gouttiere) * -1) 6px;
+  padding: 2px var(--gouttiere) 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.filtres::-webkit-scrollbar {
+  display: none;
+}
+
+.filtres button {
+  flex: none;
+  min-height: 40px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: var(--trait) solid var(--encre);
+  background: transparent;
+  font-weight: 600;
+  font-size: 14.5px;
+}
+
+.filtres button[aria-pressed='true'] {
+  background: var(--encre);
+  color: var(--papier-clair);
 }

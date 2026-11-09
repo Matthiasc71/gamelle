@@ -63,6 +63,9 @@ test('Favoris → mettre un favori dans ma semaine → tout se met à jour → a
   await ouvrir(page);
   const avant = await repasDe(page);
   const totalAvant = await page.locator('.totaux__case').nth(1).innerText();
+  await page.getByRole('link', { name: 'Courses' }).click();
+  const coursesAvant = await page.locator('.article__nom').allInnerTexts();
+  await page.getByRole('link', { name: 'Semaine' }).click();
 
   // garder une recette express qui n'est pas au menu
   await page.getByRole('link', { name: 'Favoris' }).click();
@@ -96,8 +99,7 @@ test('Favoris → mettre un favori dans ma semaine → tout se met à jour → a
   expect(totalApres).not.toBe(totalAvant);
 
   await page.getByRole('link', { name: 'Courses' }).click();
-  const debut = nom.split(/,| et | aux | au /)[0];
-  await expect(page.locator('.article__detail', { hasText: debut }).first()).toBeVisible();
+  await expect.poll(() => page.locator('.article__nom').allInnerTexts()).not.toEqual(coursesAvant);
   await page.getByRole('link', { name: 'Frigo' }).click();
   await expect(page.locator('.vide')).toBeVisible(); // courses pas encore faites : frigo inchangé
 

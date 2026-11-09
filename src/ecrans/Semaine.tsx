@@ -2,11 +2,11 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { useMemo } from 'react';
 import { BASE } from '../app/base';
 import { db } from '../app/db';
-import { annulerEchange, regenerer, useContexte, useEvenements, useMenu, useReglages, useSemaines, useSemaineVue } from '../app/etat';
+import { annulerEchange, aujourdhui, regenerer, useContexte, useEvenements, useMenu, useReglages, useSemaines, useSemaineVue } from '../app/etat';
 import { badge, MOMENT, nombre } from '../app/presentation';
 import { lien } from '../app/routeur';
 import { ajouterJours, libelleJour, libelleSemaine, lundiDeSemaine, versDate } from '../domain/dates';
-import { euros, kcal } from '../domain/format';
+import { euros } from '../domain/format';
 import { coutsMenu, detailsRepas, sessionDimanche, type DetailRepas } from '../domain/regles';
 import type { Menu, Reglages } from '../domain/types';
 import { annoncer, BoutonIcone, Brin, Chargement, Chiffre, Illustration } from '../ui/composants';
@@ -69,15 +69,9 @@ function ContenuSemaine({ menu, reglages, anciensReglages }: { menu: Menu; regla
   const cuisines = new Set((evs ?? []).filter((e) => e.semaine === menu.semaine && e.origine === 'cuisine').map((e) => e.cle));
 
   const dimanche = menu.cuissons.filter((c) => c.jour < 0 && !c.stock);
-  const resumeBatch = dimanche
-    .map((c) => {
-      const ds = details.filter((d) => d.cuisson.id === c.id);
-      const frigo = ds.filter((d) => d.statut === 'boite').length;
-      const congel = ds.filter((d) => d.statut === 'congele').length;
-      const nom = c.recetteId && BASE.parId[c.recetteId].nom.split(/,| et | aux | au /)[0];
-      return `${nom} ×${c.parts} : ${frigo} au frigo${congel ? `, ${congel} au congélateur` : ''}`;
-    })
-    .join(' · ');
+  const boites = dimanche.reduce((s, c) => s + c.parts, 0);
+  const auj = aujourdhui();
+  const horsBudget = !!couts && couts.totalCaisse > reglages.budget[1];
 
   return (
     <>
@@ -93,49 +87,47 @@ function ContenuSemaine({ menu, reglages, anciensReglages }: { menu: Menu; regla
       <section className="totaux" aria-label="Totaux de la semaine">
         <div className="totaux__case">
           <Chiffre taille="m">{nombre(kcalMoyen)}</Chiffre>
-          <span>kcal / jour planifiées</span>
+          <span>kcal / jour</span>
+          <small>+{reglages.kcalLibres} libres</small>
         </div>
-        <div className="totaux__case">
+        <div className={`totaux__case ${horsBudget ? 'totaux__case--alerte' : ''}`}>
           <Chiffre taille="m">{couts ? euros(couts.totalCaisse) : '…'}</Chiffre>
           <span>de courses</span>
+          {horsBudget && <small>budget {reglages.budget[1]} €</small>}
         </div>
         <div className="totaux__case">
           <Chiffre taille="m">{couts ? euros(couts.totalUtilise / 14 / reglages.personnes) : '…'}</Chiffre>
           <span>par repas</span>
         </div>
       </section>
-      <p className="reste">
-        Il te reste ~{reglages.kcalLibres} kcal par jour pour le petit-déj et les en-cas.
-        {couts && couts.totalCaisse > reglages.budget[1] && <> Courses au-dessus de ton budget de {reglages.budget[1]} €.</>}
-      </p>
 
       {dimanche.length > 0 && (
         <a className="bandeau-batch" href={lien('session', undefined, { s: menu.semaine })}>
           <Icone nom="boite" taille={30} />
           <span className="bandeau-batch__texte">
-            <strong>
-              {libelleJour(menu.lundi, -1).replace('dim.', 'Dimanche')} · {session.duree} min de batch
-            </strong>
-            <span>{resumeBatch}</span>
+            <strong>Batch dimanche · {session.duree} min</strong>
+            <span>
+              {dimanche.length} plats · {boites} boîtes
+            </span>
           </span>
           <span className="bandeau-batch__voir">Voir</span>
         </a>
       )}
 
       {menu.relachements.length > 0 && (
-        <div className="note note--tirets">
-          <p className="kicker">Assoupli cette semaine</p>
+        <details className="replie">
+          <summary>Menu assoupli cette semaine ({menu.relachements.length})</summary>
           <ul>
             {menu.relachements.map((r) => (
               <li key={r}>{r}</li>
             ))}
           </ul>
-        </div>
+        </details>
       )}
 
       {dernierEchange && Date.now() - Date.parse(dernierEchange.quand) < 2 * 864e5 && (
         <div className="note note--tirets note--ligne">
-          <span>Dernier changement : {dernierEchange.libelle}</span>
+          <span>{dernierEchange.libelle}</span>
           <button
             className="lien-bouton"
             onClick={async () => {
@@ -152,11 +144,11 @@ function ContenuSemaine({ menu, reglages, anciensReglages }: { menu: Menu; regla
         {[...Array(7).keys()].map((j) => {
           const date = versDate(ajouterJours(menu.lundi, j));
           const ds = details.filter((d) => d.jour === j);
-          const cout = ds.reduce((s, d) => s + d.recette.cout_par_part_eur, 0);
+          const estAuj = ajouterJours(menu.lundi, j) === auj;
           return (
-            <li className="jour" key={j}>
+            <li className={`jour ${estAuj ? 'jour--aujourdhui' : ''}`} key={j} aria-current={estAuj ? 'date' : undefined}>
               <div className="jour__date" aria-hidden="true">
-                <span className="kicker">{JOURS_LONGS[j]}</span>
+                <span className="kicker">{estAuj ? 'Auj.' : JOURS_LONGS[j]}</span>
                 <span className="jour__num">{date.getUTCDate()}</span>
               </div>
               <div className="jour__repas">
@@ -164,9 +156,6 @@ function ContenuSemaine({ menu, reglages, anciensReglages }: { menu: Menu; regla
                 {ds.map((d) => (
                   <LigneRepas key={d.creneau} d={d} semaine={menu.semaine} mange={manges.has(d.creneau)} cuisine={cuisines.has(d.cuisson.id)} />
                 ))}
-                <p className="jour__total">
-                  {kcal(kcalJours[j])} · {euros(cout)}
-                </p>
               </div>
             </li>
           );
@@ -186,8 +175,7 @@ function LigneRepas({ d, semaine, mange, cuisine }: { d: DetailRepas; semaine: s
       <span className="repas__texte">
         <span className="repas__nom">{r.nom}</span>
         <span className="repas__detail">
-          {MOMENT[d.moment]} · {kcal(r.nutrition_par_part.kcal)} · {badge(d)}
-          {d.statut === 'congele' && ' · à sortir la veille'}
+          {MOMENT[d.moment]} · {nombre(r.nutrition_par_part.kcal)} kcal · {d.statut === 'congele' ? 'congelée, à sortir la veille' : badge(d)}
         </span>
       </span>
       {(mange || (cuisine && d.statut === 'cuisine')) && (

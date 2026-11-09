@@ -2,10 +2,9 @@ import { useMemo, useState } from 'react';
 import { BASE } from '../app/base';
 import { aujourdhui, corrigerFrigo, useFrigo, useReglages } from '../app/etat';
 import { majuscule, nombre } from '../app/presentation';
-import { lien } from '../app/routeur';
 import { ecartJours, versDate } from '../domain/dates';
 import { aUtiliserVite, type Article, type Boite, type Lieu } from '../domain/frigo';
-import { annoncer, Brin, Chargement, Feuille, Illustration, Rubrique } from '../ui/composants';
+import { annoncer, Chargement, Feuille, Illustration, Rubrique } from '../ui/composants';
 import { Icone } from '../ui/Icone';
 
 const LIEUX: { id: Lieu; nom: string }[] = [
@@ -60,21 +59,18 @@ export default function Frigo() {
 
   return (
     <main className="ecran" aria-labelledby="titre-frigo">
-      <header className="tete-simple">
-        <Brin className="tete-simple__brin" />
-        <p className="kicker">Inventaire · mis à jour tout seul</p>
+      <header className="tete-ligne">
         <h1 id="titre-frigo" className="titre-page">
-          Mon frigo
+          Frigo
         </h1>
+        <button className="bouton-icone bouton-icone--plein" onClick={() => setAjout(true)} aria-label="Ajouter un article">
+          <Icone nom="plus" />
+        </button>
       </header>
-      <button className="btn btn--contour" onClick={() => setAjout(true)}>
-        <Icone nom="plus" taille={18} /> Ajouter un article
-      </button>
 
       {vide && (
         <p className="vide">
-          Rien pour l’instant. Coche les articles dans la liste de courses : ils arrivent ici avec la quantité du paquet. Les plats cuisinés
-          y apparaissent en boîtes, avec leur date limite (J+3 au frigo).
+          Vide pour l’instant. Les articles cochés dans les courses et les plats cuisinés arrivent ici tout seuls.
         </p>
       )}
 
@@ -123,8 +119,7 @@ export default function Frigo() {
         ))}
 
       <p className="texte-doux petit">
-        Placard de base ({reglages.placardDeBase.length} ingrédients : huile, épices, bouillons…) supposé toujours présent.{' '}
-        <a href={lien('reglages')}>Réglages</a>
+        Huile, épices et bouillons : toujours supposés au placard.
       </p>
 
       <Feuille titre="Ajouter au frigo" ouverte={ajout} fermer={() => setAjout(false)}>
