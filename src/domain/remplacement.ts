@@ -41,7 +41,11 @@ export function remplacerRepas(menu: Menu, creneau: number, recetteId: string): 
   return ajouterCuisson(m, c, [creneau]);
 }
 
-const cle = (v: Violation) => `${v.code}|${v.message}`;
+/**
+ * Une règle déjà enfreinte avant le changement n'est pas un nouvel avertissement, même si son
+ * message change (montant du budget, kcal) : on compare la règle et les créneaux concernés.
+ */
+const cle = (v: Violation) => (v.creneaux?.length ? `${v.code}|${[...v.creneaux].sort((a, b) => a - b).join(',')}` : v.code);
 
 /** Violations présentes dans `apres` et absentes de `avant`. */
 export function nouvellesViolations(avant: Violation[], apres: Violation[]): Violation[] {
