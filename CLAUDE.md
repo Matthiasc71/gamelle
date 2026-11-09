@@ -54,12 +54,14 @@ Cahier des charges complet : `docs/cahier-des-charges.md`. Maquettes de référe
 - `courses.ts` (paquets, stock, placard de base, prix corrigés), `timeline.ts` (session batch en parallèle),
   `remplacement.ts` (3 alternatives), `echange.ts` (favori → créneaux, avertissements), `frigo.ts` (événements).
 - `npm run simuler` : 52 semaines avec stock et historique → `reports/simulation.md`.
-- Budget : avec 41 recettes, ~34 € en caisse / semaine en moyenne (31/52 dans le budget, ~27 € mangés). Priorité de la base :
-  recettes à moins de 2 € la part, qui réutilisent les mêmes paquets.
+- Budget : avec 83 recettes, ~35,5 € en caisse / semaine en moyenne (24/52 dans le budget, ~25 € mangés) : plus de
+  variété = plus de paquets différents. Priorité de la base : recettes à moins de 2 € la part, qui réutilisent les mêmes paquets.
 
 ## Interface (src/app, src/ui, src/ecrans)
 - `app/base.ts` : recettes, catalogue et prix lus au build (validés par Zod au démarrage).
-- `app/db.ts` : Dexie (kv, favoris, menus, coches, evenements du frigo, prix corrigés, echanges), export/import JSON.
+- `app/db.ts` : Dexie (kv, favoris, menus, coches, evenements du frigo, prix corrigés, echanges, mesRecettes), export/import JSON.
+- Recettes perso (`#/nouvelle`, id `perso-…`) : calculées sur le téléphone (lignes Ciqual du catalogue embarquées dans
+  `virtual:gamelle-donnees`), ajoutées à `BASE` au démarrage (`main.tsx`) et envoyées au worker avec chaque génération.
 - `app/etat.ts` : hooks (`useMenu`, `useContexte`, `useFrigo`…) et actions. Le menu est généré dans un worker
   (`generateur.worker.ts`) puis gardé par semaine ; un échange ou remplacement l'enregistre avec « Annuler ».
   Courses : le stock compté exclut les achats cochés de la semaine (sinon les lignes disparaîtraient).
@@ -86,6 +88,12 @@ Dans une session cloud, le `fetch` de Node passe par le proxy seulement avec `ex
 - `npm run validate` : schéma, équipement, liens, Ciqual, prix → `reports/`. Doit passer avant tout commit de données.
 - `npm run add-recipe -- <url>` : prépare un brouillon de fiche à montrer à l'utilisateur avant ajout.
 - `npm test` : Vitest. `npm run e2e` : tests d'interface.
+
+## Sources de recettes qui marchent
+- Cuisine Addict (cuisine-addict.com, JSON-LD avec kcal et protéines) + ses posts Instagram de menus de batch cooking
+  ou « La recette du jour » (@cuisineaddict) → `quantites_depuis: article-meme-createur`.
+- Jow (jow.fr, JSON-LD par portion) + vidéos TikTok @jow_france (lunchbox : quantités dans la légende).
+- Tri rapide d'une liste d'URL par kcal/protéines annoncées : `.cache/tri.mjs` (outil local, non versionné).
 
 ## Ajouter des recettes (« ajoute 20 recettes d'hiver », « ajoute cette vidéo TikTok »)
 1. `npm run add-recipe -- <url>` → brouillon dans `.cache/brouillons/`.
