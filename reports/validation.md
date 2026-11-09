@@ -1,18 +1,18 @@
 # Validation de la base (2026-11-09)
 
-83 recettes valides, 0 erreurs, 6 avertissements.
+92 recettes valides, 0 erreurs, 6 avertissements.
 
 ## Répartition
 
 | | Nombre | Part | Objectif |
 |---|---|---|---|
-| Batch | 47 | 57 % | ~50 % |
-| Express | 28 | 34 % | ~35 % |
-| Assemblage | 8 | 10 % | ~15 % |
-| Avec TikTok / Instagram | 40 | 48 % | ≥ 40 % |
+| Batch | 47 | 51 % | ~50 % |
+| Express | 34 | 37 % | ~35 % |
+| Assemblage | 11 | 12 % | ~15 % |
+| Avec TikTok / Instagram | 40 | 43 % | ≥ 40 % |
 
-Familles de protéines : oeufs 9, viande 18, volaille 22, legumineuses 11, poisson 18, laitier 2, soja 3.
-Cuisines : américaine, asiatique, coréenne, française, grecque, indienne, italienne, japonaise, maghrébine, mexicaine, méditerranéenne, orientale, réunionnaise.
+Familles de protéines : oeufs 10, viande 19, volaille 22, legumineuses 12, poisson 24, laitier 2, soja 3.
+Cuisines : américaine, asiatique, coréenne, française, grecque, indienne, italienne, japonaise, maghrébine, mexicaine, méditerranéenne, orientale, provençale, réunionnaise.
 
 ## Erreurs
 

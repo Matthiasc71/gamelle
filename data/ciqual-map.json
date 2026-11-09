@@ -1633,5 +1633,58 @@
     "rangement": "placard",
     "conservation_jours": 30,
     "legume": false
+  },
+  "sardines": {
+    "nom": "sardines à l’huile (égouttées)",
+    "ciqual_code": "26034",
+    "ciqual_nom": "Sardine, à l'huile, appertisée, égouttée",
+    "rayon": "epicerie",
+    "etat": "égoutté",
+    "rangement": "placard",
+    "conservation_jours": 730,
+    "legume": false
+  },
+  "radis": {
+    "nom": "radis",
+    "ciqual_code": "20045",
+    "ciqual_nom": "Radis rouge, cru",
+    "rayon": "fruits-legumes",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 5,
+    "legume": true
+  },
+  "pain-campagne": {
+    "nom": "pain de campagne",
+    "ciqual_code": "7100",
+    "ciqual_nom": "Pain de campagne",
+    "rayon": "epicerie",
+    "etat": "cru",
+    "rangement": "placard",
+    "conservation_jours": 4,
+    "legume": false,
+    "note": "Une tranche pèse environ 40 g (estimation)."
+  },
+  "saumon-fume": {
+    "nom": "saumon fumé",
+    "ciqual_code": "26037",
+    "ciqual_nom": "Saumon fumé",
+    "rayon": "frais",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 10,
+    "legume": false,
+    "note": "Une tranche pèse environ 25 g (estimation)."
+  },
+  "jambon-cru": {
+    "nom": "jambon cru",
+    "ciqual_code": "28812",
+    "ciqual_nom": "Jambon sec",
+    "rayon": "frais",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 21,
+    "legume": false,
+    "note": "Une tranche pèse environ 20 g (estimation)."
   }
 }

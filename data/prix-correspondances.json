@@ -1842,5 +1842,61 @@
     "open_prices": {
       "categorie_produit": "en:white-wines"
     }
+  },
+  "sardines": {
+    "produit": "Sardines à l’huile, 135 g (100 g égouttés)",
+    "conditionnement": {
+      "quantite": 100,
+      "unite": "g"
+    },
+    "aldi": "7581",
+    "open_prices": {
+      "categorie_produit": "en:sardines-in-oil"
+    }
+  },
+  "radis": {
+    "produit": "Radis, botte (250 g)",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "open_prices": {
+      "category_tag": "en:radishes"
+    }
+  },
+  "pain-campagne": {
+    "produit": "Pain de campagne tranché, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:breads",
+      "mots": [
+        "campagne"
+      ]
+    }
+  },
+  "saumon-fume": {
+    "produit": "Saumon fumé, 4 tranches (100 g)",
+    "conditionnement": {
+      "quantite": 100,
+      "unite": "g"
+    },
+    "aldi": "5025280",
+    "open_prices": {
+      "categorie_produit": "en:smoked-salmons"
+    }
+  },
+  "jambon-cru": {
+    "produit": "Jambon cru fumé, 150 g",
+    "conditionnement": {
+      "quantite": 150,
+      "unite": "g"
+    },
+    "aldi": "6745",
+    "open_prices": {
+      "categorie_produit": "en:cured-hams"
+    }
   }
 }

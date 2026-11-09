@@ -1,0 +1,148 @@
+{
+  "id": "salade-boulgour-brocoli-oeuf",
+  "slug": "salade-boulgour-brocoli-oeuf",
+  "nom": "Salade de boulgour, brocoli et œuf mollet",
+  "resume": "Boulgour, brocoli, tomates séchées, roquette, chèvre frais et un œuf mollet.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 3,
+    "cuisson_min": 12,
+    "total_min": 15,
+    "actif_min": 6
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cuisine": "méditerranéenne",
+  "proteine_principale": "oeufs",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "salade",
+  "ingredients": [
+    {
+      "ingredient": "boulgour",
+      "nom_affiche": "boulgour",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "9690",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oeuf",
+      "nom_affiche": "œuf",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 55,
+      "optionnel": false,
+      "ciqual_code": "22000",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "brocoli",
+      "nom_affiche": "brocoli",
+      "quantite": 0.25,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "mesure_affichee": "100 g",
+      "ciqual_code": "20057",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "roquette",
+      "nom_affiche": "roquette",
+      "quantite": 20,
+      "unite": "g",
+      "poids_g": 20,
+      "optionnel": false,
+      "mesure_affichee": "1 poignée",
+      "ciqual_code": "20217",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomates-sechees",
+      "nom_affiche": "tomates séchées",
+      "quantite": 30,
+      "unite": "g",
+      "poids_g": 30,
+      "optionnel": false,
+      "ciqual_code": "20256",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "chevre-frais",
+      "nom_affiche": "chèvre frais",
+      "quantite": 40,
+      "unite": "g",
+      "poids_g": 40,
+      "optionnel": false,
+      "ciqual_code": "12805",
+      "rayon": "frais",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Porte trois casseroles d'eau salée à ébullition : cuis le boulgour le temps du paquet, les fleurettes de brocoli 7 minutes et l'œuf 7 minutes (puis refroidis-le).",
+      "duree_min": 12,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 420
+    },
+    {
+      "texte": "Égoutte, écale l'œuf et sers boulgour, brocoli, roquette, tomates séchées et chèvre émietté, avec l'œuf coupé en deux.",
+      "duree_min": 3,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/salade-boulgour-brocolis-et-oeuf-mollet-8mjblkh5gg5f03500u8q",
+      "titre": "Salade boulgour, brocolis & œuf mollet",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Plaques limitées à 2 feux : brocoli et œuf peuvent cuire dans la même casserole. Poignée de salade comptée 20 g (estimation).",
+  "kcal_annoncees_par_part": 474,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 420,
+    "proteines_g": 22.6,
+    "glucides_g": 38.9,
+    "lipides_g": 16.6,
+    "fibres_g": 9.9,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.08,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

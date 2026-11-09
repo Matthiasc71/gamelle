@@ -1,0 +1,171 @@
+{
+  "id": "tartine-thon-radis-concombre",
+  "slug": "tartine-thon-radis-concombre",
+  "nom": "Tartine thon, fromage frais, radis et concombre",
+  "resume": "Une grande tartine de pain de campagne au fromage frais et au thon, avec radis, concombre, feta et salade.",
+  "type": "assemblage",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 7,
+    "cuisson_min": 0,
+    "total_min": 7,
+    "actif_min": 7
+  },
+  "equipement": [],
+  "saison": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "française",
+  "proteine_principale": "thon",
+  "creneaux": [
+    "midi"
+  ],
+  "illustration": "wrap",
+  "ingredients": [
+    {
+      "ingredient": "pain-campagne",
+      "nom_affiche": "pain de campagne",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 40,
+      "optionnel": false,
+      "mesure_affichee": "1 tranche",
+      "ciqual_code": "7100",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "fromage-frais",
+      "nom_affiche": "fromage frais",
+      "quantite": 30,
+      "unite": "g",
+      "poids_g": 30,
+      "optionnel": false,
+      "ciqual_code": "12068",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "thon-naturel",
+      "nom_affiche": "thon",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "26039",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "radis",
+      "nom_affiche": "radis",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "20045",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "concombre",
+      "nom_affiche": "concombre",
+      "quantite": 0.25,
+      "unite": "pièce",
+      "poids_g": 75,
+      "optionnel": false,
+      "mesure_affichee": "¼ de concombre",
+      "ciqual_code": "20019",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "laitue",
+      "nom_affiche": "salade",
+      "quantite": 0.07,
+      "unite": "pièce",
+      "poids_g": 20,
+      "optionnel": false,
+      "mesure_affichee": "1 poignée",
+      "ciqual_code": "20031",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "feta",
+      "nom_affiche": "feta",
+      "quantite": 30,
+      "unite": "g",
+      "poids_g": 30,
+      "optionnel": false,
+      "ciqual_code": "12066",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "un filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Coupe les radis et le concombre en fines rondelles.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Écrase le thon avec le fromage frais et tartine-en le pain.",
+      "duree_min": 2,
+      "actif": true
+    },
+    {
+      "texte": "Ajoute concombre, radis, feta émiettée et salade, un filet d'huile, sel et poivre.",
+      "duree_min": 1,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/tartine-thon-fromage-frais-radis-et-salade-8sx65a9jkro0ma680ycq",
+      "titre": "Tartine thon, fromage frais, radis & salade",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Thon au naturel à la place du thon à l'ail ; pain non toasté. Poignée de salade comptée 20 g (estimation).",
+  "kcal_annoncees_par_part": 383,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 388,
+    "proteines_g": 24.1,
+    "glucides_g": 24.3,
+    "lipides_g": 20.8,
+    "fibres_g": 3.1,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.03,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

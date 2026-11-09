@@ -898,6 +898,19 @@
     "methode": "lidl",
     "note": "1 relevé Open Prices en magasin Lidl (12 mois) ; 13,21 €/kg"
   },
+  "jambon-cru": {
+    "produit": "Jambon cru fumé, 150 g",
+    "conditionnement": {
+      "quantite": 150,
+      "unite": "g"
+    },
+    "prix_eur": 1.55,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/jambon-cru-fume-6745.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "Jambon cru fumé 150G"
+  },
   "jambon-des": {
     "produit": "Dés de jambon, 2 × 75 g",
     "conditionnement": {
@@ -1197,6 +1210,18 @@
     "releve_le": "2026-11-09",
     "methode": "open-prices-lyon",
     "note": "6 relevés Open Prices sur 12 mois ; 128,72 €/kg"
+  },
+  "pain-campagne": {
+    "produit": "Pain de campagne tranché, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "prix_eur": 4.28,
+    "enseigne": "médiane toutes enseignes, Lyon",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-lyon",
+    "note": "4 relevés Open Prices sur 12 mois ; 8,56 €/kg"
   },
   "pain-complet": {
     "produit": "Pain complet tranché, 500 g",
@@ -1521,6 +1546,18 @@
     "methode": "lidl",
     "note": "1 relevé Open Prices en magasin Lidl (12 mois) ; 5,12 €/kg"
   },
+  "radis": {
+    "produit": "Radis, botte (250 g)",
+    "conditionnement": {
+      "quantite": 250,
+      "unite": "g"
+    },
+    "prix_eur": 0.75,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-09",
+    "methode": "open-prices-france",
+    "note": "Estimation : 5 relevés Open Prices France sur 12 mois ; 2,98 €/kg"
+  },
   "ricotta": {
     "produit": "Ricotta, 250 g",
     "conditionnement": {
@@ -1570,6 +1607,19 @@
     "releve_le": "2026-11-09",
     "methode": "open-prices-france",
     "note": "Estimation : 10 relevés Open Prices France sur 12 mois ; 12,72 €/kg"
+  },
+  "sardines": {
+    "produit": "Sardines à l’huile, 135 g (100 g égouttés)",
+    "conditionnement": {
+      "quantite": 100,
+      "unite": "g"
+    },
+    "prix_eur": 1.29,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/sardines-a-lhuile-de-tournesol-7581.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "SARDINES À L'HUILE  DE TOURNESOL 135G"
   },
   "sauce-barbecue": {
     "produit": "Sauce barbecue, 300 g",
@@ -1643,6 +1693,19 @@
     "releve_le": "2026-11-09",
     "methode": "lidl",
     "note": "1 relevé Open Prices en magasin Lidl (12 mois) ; 22,98 €/kg"
+  },
+  "saumon-fume": {
+    "produit": "Saumon fumé, 4 tranches (100 g)",
+    "conditionnement": {
+      "quantite": 100,
+      "unite": "g"
+    },
+    "prix_eur": 2.49,
+    "enseigne": "Aldi",
+    "url": "https://www.aldi.fr/fiches-produits/saumon-fume-5025280.html",
+    "releve_le": "2026-11-09",
+    "methode": "site-enseigne",
+    "note": "SAUMON FUMÉ 100g"
   },
   "semoule": {
     "produit": "Couscous moyen, 1 kg",

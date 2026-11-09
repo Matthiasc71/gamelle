@@ -1,0 +1,160 @@
+{
+  "id": "salade-pates-thon-haricots-verts",
+  "slug": "salade-pates-thon-haricots-verts",
+  "nom": "Salade de pâtes, thon et haricots verts",
+  "resume": "Pâtes, haricots verts, thon, oignon rouge et olives vertes, vinaigrette au citron.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 10,
+    "total_min": 15,
+    "actif_min": 8
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "française",
+  "proteine_principale": "thon",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "pates",
+  "ingredients": [
+    {
+      "ingredient": "thon-naturel",
+      "nom_affiche": "thon",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "26039",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "pates",
+      "nom_affiche": "pâtes",
+      "quantite": 80,
+      "unite": "g",
+      "poids_g": 80,
+      "optionnel": false,
+      "ciqual_code": "9810",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "haricots-verts",
+      "nom_affiche": "haricots verts",
+      "quantite": 125,
+      "unite": "g",
+      "poids_g": 125,
+      "optionnel": false,
+      "ciqual_code": "20070",
+      "rayon": "surgeles",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon-rouge",
+      "nom_affiche": "oignon rouge",
+      "quantite": 0.25,
+      "unite": "pièce",
+      "poids_g": 25,
+      "optionnel": false,
+      "mesure_affichee": "¼ d'oignon",
+      "ciqual_code": "20238",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "olives-vertes",
+      "nom_affiche": "olives vertes",
+      "quantite": 40,
+      "unite": "g",
+      "poids_g": 40,
+      "optionnel": false,
+      "ciqual_code": "13033",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "citron",
+      "nom_affiche": "citron",
+      "quantite": 0.25,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "1 quartier",
+      "ciqual_code": "13009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 13.7,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cuis les pâtes dans l'eau salée et, en même temps, les haricots 5 minutes dans une autre casserole. Égoutte.",
+      "duree_min": 10,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Émince l'oignon, émiette le thon, coupe les olives en deux et mélange citron, huile, sel et poivre.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Réunis le tout et mélange.",
+      "duree_min": 1,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/salade-pates-thon-et-haricots-8mwb7y9nm4vqepxp166x",
+      "titre": "Salade pâtes, thon & haricots",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "kcal_annoncees_par_part": 435,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 604,
+    "proteines_g": 26.1,
+    "glucides_g": 65.9,
+    "lipides_g": 24,
+    "fibres_g": 7.7,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.49,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

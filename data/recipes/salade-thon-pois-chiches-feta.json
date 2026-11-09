@@ -1,0 +1,165 @@
+{
+  "id": "salade-thon-pois-chiches-feta",
+  "slug": "salade-thon-pois-chiches-feta",
+  "nom": "Salade de thon, pois chiches, feta et olives",
+  "resume": "Thon, pois chiches, tomates cerises, feta, olives noires, oignon rouge et roquette, sans cuisson.",
+  "type": "assemblage",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 8,
+    "cuisson_min": 0,
+    "total_min": 8,
+    "actif_min": 8
+  },
+  "equipement": [],
+  "saison": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "méditerranéenne",
+  "proteine_principale": "thon",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "salade",
+  "ingredients": [
+    {
+      "ingredient": "thon-naturel",
+      "nom_affiche": "thon au naturel",
+      "quantite": 80,
+      "unite": "g",
+      "poids_g": 80,
+      "optionnel": false,
+      "ciqual_code": "26039",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "pois-chiches",
+      "nom_affiche": "pois chiches égouttés",
+      "quantite": 70,
+      "unite": "g",
+      "poids_g": 70,
+      "optionnel": false,
+      "ciqual_code": "20532",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "tomates-cerises",
+      "nom_affiche": "tomates cerises",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20172",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "feta",
+      "nom_affiche": "feta",
+      "quantite": 40,
+      "unite": "g",
+      "poids_g": 40,
+      "optionnel": false,
+      "ciqual_code": "12066",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "olives-noires",
+      "nom_affiche": "olives noires",
+      "quantite": 30,
+      "unite": "g",
+      "poids_g": 30,
+      "optionnel": false,
+      "ciqual_code": "13032",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "oignon-rouge",
+      "nom_affiche": "oignon rouge",
+      "quantite": 0.17,
+      "unite": "pièce",
+      "poids_g": 17,
+      "optionnel": false,
+      "mesure_affichee": "⅙ d'oignon",
+      "ciqual_code": "20238",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "roquette",
+      "nom_affiche": "roquette",
+      "quantite": 20,
+      "unite": "g",
+      "poids_g": 20,
+      "optionnel": false,
+      "mesure_affichee": "1 poignée",
+      "ciqual_code": "20217",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "un filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Émince finement l'oignon rouge, coupe les olives et les tomates cerises en deux.",
+      "duree_min": 5,
+      "actif": true
+    },
+    {
+      "texte": "Dans une assiette, réunis pois chiches, thon égoutté, olives, feta, roquette, tomates et oignon. Sale, poivre, arrose d'huile et mélange.",
+      "duree_min": 3,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/salade-de-thon-et-pois-chiches-8spd3kgnba011urd0k4w",
+      "titre": "Salade de thon & pois chiches",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Poignée de salade comptée 20 g (estimation). Huile comptée 1 c. à café.",
+  "kcal_annoncees_par_part": 434,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 450,
+    "proteines_g": 34.7,
+    "glucides_g": 17.7,
+    "lipides_g": 25,
+    "fibres_g": 7.7,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 3.15,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

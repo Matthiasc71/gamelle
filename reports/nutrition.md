@@ -20,7 +20,10 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 - **salade-aubergines-poulet-quinoa** : la source annonce 426 kcal/part, Ciqual donne 525 (écart 19 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
 - **salade-mais-jambon-feta** : la source annonce 312 kcal/part, Ciqual donne 464 (écart 33 %). Vérifié : Écart avec les 312 kcal annoncées : la vinaigrette (4 c. à soupe d'huile pour 4) et la feta pèsent lourd dans le calcul Ciqual. Valeur Ciqual retenue.
 - **salade-pates-macedoine-thon** : la source annonce 464 kcal/part, Ciqual donne 594 (écart 22 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
+- **salade-pates-provencale-thon** : la source annonce 425 kcal/part, Ciqual donne 587 (écart 28 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
+- **salade-pates-thon-haricots-verts** : la source annonce 435 kcal/part, Ciqual donne 604 (écart 28 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
 - salade-poulet-petits-pois-tzatziki : fibres absentes de Ciqual pour Tzatziki à base de yaourt, préemballé : comptées 0
+- **salade-riz-mais-thon-poivron** : la source annonce 424 kcal/part, Ciqual donne 573 (écart 26 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
 - **salade-saumon-mais-tomate** : la source annonce 425 kcal/part, Ciqual donne 514 (écart 17 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
 - **sandwich-poulet-laitue-tomate-sechee** : la source annonce 555 kcal/part, Ciqual donne 419 (écart 32 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
 - **tuna-bowl** : la source annonce 413 kcal/part, Ciqual donne 500 (écart 17 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
@@ -90,14 +93,21 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 | rougail-saucisses | 4 | 551 | 28.3 | 12.8 | 41.8 | 4.9 | 414 (25 %) |
 | salade-aubergines-poulet-quinoa | 4 | 525 | 30.4 | 39.9 | 23.3 | 14.6 | 426 (19 %) |
 | salade-boulgour-automnale | 3 | 605 | 27.6 | 64.7 | 22.5 | 14.8 | — |
+| salade-boulgour-brocoli-oeuf | 1 | 420 | 22.6 | 38.9 | 16.6 | 9.9 | 474 (13 %) |
 | salade-haricots-rouges-thon | 1 | 532 | 52.7 | 43 | 11.9 | 19.8 | — |
 | salade-lentilles-grecque | 4 | 463 | 22.2 | 28.3 | 25.8 | 13.2 | — |
 | salade-mais-jambon-feta | 4 | 464 | 22.4 | 22.5 | 30.4 | 5.2 | 312 (33 %) |
 | salade-pates-macedoine-thon | 4 | 594 | 33.1 | 79.3 | 14.2 | 5.9 | 464 (22 %) |
+| salade-pates-pesto-jambon-cru | 1 | 487 | 23.6 | 67.8 | 12 | 4.4 | 530 (9 %) |
+| salade-pates-provencale-thon | 1 | 587 | 27 | 76.4 | 17.7 | 4.4 | 425 (28 %) |
+| salade-pates-thon-haricots-verts | 1 | 604 | 26.1 | 65.9 | 24 | 7.7 | 435 (28 %) |
+| salade-pois-chiches-haricots-verts-quinoa | 1 | 459 | 21 | 48 | 17.6 | 9.7 | 473 (3 %) |
 | salade-poulet-avocat-lard | 1 | 504 | 43.6 | 6.3 | 32.1 | 4.6 | 496 (2 %) |
 | salade-poulet-petits-pois-tzatziki | 1 | 472 | 48.2 | 24.4 | 18 | 6.5 | 417 (12 %) |
+| salade-riz-mais-thon-poivron | 1 | 573 | 25.8 | 53.9 | 27 | 5.6 | 424 (26 %) |
 | salade-riz-thon-tomate | 1 | 539 | 34.4 | 53.4 | 19.8 | 4.9 | — |
 | salade-saumon-mais-tomate | 1 | 514 | 30.9 | 33 | 27.7 | 6.6 | 425 (17 %) |
+| salade-thon-pois-chiches-feta | 1 | 450 | 34.7 | 17.7 | 25 | 7.7 | 434 (4 %) |
 | salade-thon-pois-chiches | 1 | 422 | 34 | 36 | 12.8 | 12.7 | — |
 | sandwich-poulet-laitue-tomate-sechee | 1 | 419 | 23.8 | 24.5 | 23.2 | 6 | 555 (32 %) |
 | sandwich-thon-concombre-baguette | 2 | 580 | 27.6 | 76.8 | 16.1 | 5.7 | — |
@@ -107,7 +117,9 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 | soupe-lentilles-corail | 4 | 410 | 29.7 | 54.7 | 3.9 | 19.3 | — |
 | spaghettis-tomates-olives-feta | 4 | 616 | 20.8 | 77.5 | 22.9 | 6.2 | — |
 | tagliatelles-poulet-champignons | 1 | 531 | 46.3 | 54.5 | 12.5 | 3.7 | 534 (1 %) |
+| tartine-thon-radis-concombre | 1 | 388 | 24.1 | 24.3 | 20.8 | 3.1 | 383 (1 %) |
 | tartines-oeufs-mollets-dinde-comte | 1 | 482 | 37.4 | 31.8 | 21.2 | 5.8 | — |
+| tartines-sardines-concombre-radis | 1 | 425 | 21.4 | 45.4 | 16.5 | 5.1 | 423 (0 %) |
 | tofu-brouille-tomates-cerises | 1 | 512 | 30.3 | 21.8 | 31.7 | 4.5 | — |
 | tuna-bowl | 1 | 500 | 22.8 | 82.1 | 7.4 | 5.2 | 413 (17 %) |
 | udon-tofu-cremeux | 2 | 616 | 33.7 | 56.2 | 25.6 | 6.3 | — |

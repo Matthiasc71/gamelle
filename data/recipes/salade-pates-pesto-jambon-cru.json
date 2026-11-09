@@ -1,0 +1,138 @@
+{
+  "id": "salade-pates-pesto-jambon-cru",
+  "slug": "salade-pates-pesto-jambon-cru",
+  "nom": "Salade de pâtes au pesto, tomates et jambon cru",
+  "resume": "Penne au pesto avec tomates cerises et concombre, et du jambon cru déchiré.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 10,
+    "total_min": 15,
+    "actif_min": 7
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "italienne",
+  "proteine_principale": "porc",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "pates",
+  "ingredients": [
+    {
+      "ingredient": "pates",
+      "nom_affiche": "penne",
+      "quantite": 80,
+      "unite": "g",
+      "poids_g": 80,
+      "optionnel": false,
+      "ciqual_code": "9810",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomates-cerises",
+      "nom_affiche": "tomates cerises",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20172",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "concombre",
+      "nom_affiche": "concombre",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20019",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "jambon-cru",
+      "nom_affiche": "jambon cru",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 40,
+      "optionnel": false,
+      "mesure_affichee": "2 tranches",
+      "ciqual_code": "28812",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pesto",
+      "nom_affiche": "pesto",
+      "quantite": 15,
+      "unite": "g",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11179",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cuis les pâtes dans l'eau salée le temps du paquet, égoutte.",
+      "duree_min": 10,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Pendant ce temps, coupe les tomates cerises en deux et le concombre en dés.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Mélange pâtes, légumes et pesto, et ajoute le jambon déchiré par-dessus.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/salade-de-pates-au-pesto-et-jambon-94bw4mnjkrtphjwi02ic",
+      "titre": "Salade de pâtes au pesto & jambon",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Tranches de jambon cru pesées 20 g (estimation).",
+  "kcal_annoncees_par_part": 530,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 487,
+    "proteines_g": 23.6,
+    "glucides_g": 67.8,
+    "lipides_g": 12,
+    "fibres_g": 4.4,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.3,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "id": "salade-riz-mais-thon-poivron",
+  "slug": "salade-riz-mais-thon-poivron",
+  "nom": "Salade de riz, maïs, thon, poivron et feta",
+  "resume": "Riz, maïs, thon, dés de poivron, roquette et feta émiettée.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 12,
+    "total_min": 13,
+    "actif_min": 5
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "méditerranéenne",
+  "proteine_principale": "thon",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "salade",
+  "ingredients": [
+    {
+      "ingredient": "riz-long",
+      "nom_affiche": "riz",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "9100",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "thon-naturel",
+      "nom_affiche": "thon",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "26039",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "mais",
+      "nom_affiche": "maïs",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "20066",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "poivron-rouge",
+      "nom_affiche": "poivron",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 90,
+      "optionnel": false,
+      "mesure_affichee": "½ poivron",
+      "ciqual_code": "20087",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "feta",
+      "nom_affiche": "feta",
+      "quantite": 40,
+      "unite": "g",
+      "poids_g": 40,
+      "optionnel": false,
+      "ciqual_code": "12066",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "roquette",
+      "nom_affiche": "roquette",
+      "quantite": 20,
+      "unite": "g",
+      "poids_g": 20,
+      "optionnel": false,
+      "mesure_affichee": "1 poignée",
+      "ciqual_code": "20217",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 13.7,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "vinaigre",
+      "nom_affiche": "vinaigre",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11018",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cuis le riz dans l'eau salée le temps du paquet, égoutte.",
+      "duree_min": 12,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Pendant ce temps, coupe le poivron en petits cubes et égoutte maïs et thon.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Mélange riz, maïs, thon, poivron, roquette et feta émiettée avec la vinaigrette.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/salade-de-riz-mais-thon-et-poivron-8n9rftsf16v8i9yu1dfc",
+      "titre": "Salade de riz, maïs, thon & poivron",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Vinaigrette au choix dans la source : comptée 1 c. à soupe d'huile et 1 c. à café de vinaigre. Poignée de salade comptée 20 g (estimation).",
+  "kcal_annoncees_par_part": 424,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 573,
+    "proteines_g": 25.8,
+    "glucides_g": 53.9,
+    "lipides_g": 27,
+    "fibres_g": 5.6,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.06,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

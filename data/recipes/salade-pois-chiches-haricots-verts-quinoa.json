@@ -1,0 +1,150 @@
+{
+  "id": "salade-pois-chiches-haricots-verts-quinoa",
+  "slug": "salade-pois-chiches-haricots-verts-quinoa",
+  "nom": "Salade de quinoa, haricots verts, pois chiches et feta",
+  "resume": "Quinoa, haricots verts croquants, pois chiches et feta émiettée, au citron.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 3,
+    "cuisson_min": 12,
+    "total_min": 13,
+    "actif_min": 5
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "méditerranéenne",
+  "proteine_principale": "legumineuses",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "salade",
+  "ingredients": [
+    {
+      "ingredient": "haricots-verts",
+      "nom_affiche": "haricots verts",
+      "quantite": 80,
+      "unite": "g",
+      "poids_g": 80,
+      "optionnel": false,
+      "ciqual_code": "20070",
+      "rayon": "surgeles",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "feta",
+      "nom_affiche": "feta",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "12066",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "quinoa",
+      "nom_affiche": "quinoa",
+      "quantite": 60,
+      "unite": "g",
+      "poids_g": 60,
+      "optionnel": false,
+      "ciqual_code": "9340",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pois-chiches",
+      "nom_affiche": "pois chiches égouttés",
+      "quantite": 60,
+      "unite": "g",
+      "poids_g": 60,
+      "optionnel": false,
+      "ciqual_code": "20532",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "citron",
+      "nom_affiche": "citron",
+      "quantite": 0.25,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "1 quartier",
+      "ciqual_code": "13009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ciboulette",
+      "nom_affiche": "ciboulette",
+      "quantite": 0.1,
+      "unite": "pièce",
+      "poids_g": 3,
+      "optionnel": true,
+      "mesure_affichee": "quelques brins",
+      "ciqual_code": "11003",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cuis le quinoa le temps du paquet.",
+      "duree_min": 12,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "En parallèle, cuis les haricots verts 6 minutes à l'eau bouillante et plonge-les dans l'eau froide.",
+      "duree_min": 7,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 360
+    },
+    {
+      "texte": "Sers le quinoa avec les haricots, les pois chiches rincés, la feta émiettée, un trait de citron et la ciboulette.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/salade-de-pois-chiches-et-haricots-verts-84y25kw14ho2k0ol1dqz",
+      "titre": "Salade de pois chiches & haricots verts",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "kcal_annoncees_par_part": 473,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 459,
+    "proteines_g": 21,
+    "glucides_g": 48,
+    "lipides_g": 17.6,
+    "fibres_g": 9.7,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.29,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

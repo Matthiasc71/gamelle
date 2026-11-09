@@ -1,0 +1,153 @@
+{
+  "id": "tartines-sardines-concombre-radis",
+  "slug": "tartines-sardines-concombre-radis",
+  "nom": "Tartines aux sardines, concombre et radis",
+  "resume": "Pain de campagne tartiné de fromage frais, sardines, concombre, radis et oignon rouge.",
+  "type": "assemblage",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 0,
+    "total_min": 10,
+    "actif_min": 10
+  },
+  "equipement": [],
+  "saison": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "française",
+  "proteine_principale": "sardines",
+  "creneaux": [
+    "midi"
+  ],
+  "illustration": "wrap",
+  "ingredients": [
+    {
+      "ingredient": "pain-campagne",
+      "nom_affiche": "pain de campagne",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 80,
+      "optionnel": false,
+      "mesure_affichee": "2 tranches",
+      "ciqual_code": "7100",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "sardines",
+      "nom_affiche": "sardines en boîte, égouttées",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "26034",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "fromage-frais",
+      "nom_affiche": "fromage frais",
+      "quantite": 40,
+      "unite": "g",
+      "poids_g": 40,
+      "optionnel": false,
+      "ciqual_code": "12068",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "radis",
+      "nom_affiche": "radis",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "20045",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "concombre",
+      "nom_affiche": "concombre",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "20019",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon-rouge",
+      "nom_affiche": "oignon rouge",
+      "quantite": 30,
+      "unite": "g",
+      "poids_g": 30,
+      "optionnel": false,
+      "ciqual_code": "20238",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ciboulette",
+      "nom_affiche": "ciboulette",
+      "quantite": 0.1,
+      "unite": "pièce",
+      "poids_g": 3,
+      "optionnel": true,
+      "mesure_affichee": "2 brins",
+      "ciqual_code": "11003",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Coupe le concombre en fines demi-lunes, les radis en rondelles et l'oignon rouge en lamelles.",
+      "duree_min": 6,
+      "actif": true
+    },
+    {
+      "texte": "Tartine le pain de fromage frais, ajoute concombre, radis et oignon, puis les sardines. Poivre et parsème de ciboulette.",
+      "duree_min": 4,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/tartines-aux-sardines-concombre-et-radis-94wzd6hk3f9vbib608s2",
+      "titre": "Tartines aux sardines, concombre & radis",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Pain non toasté (pas de grille-pain dans l'équipement). Tranches de pain pesées 40 g (estimation).",
+  "kcal_annoncees_par_part": 423,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 425,
+    "proteines_g": 21.4,
+    "glucides_g": 45.4,
+    "lipides_g": 16.5,
+    "fibres_g": 5.1,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.06,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

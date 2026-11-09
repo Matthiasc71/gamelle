@@ -1,0 +1,163 @@
+{
+  "id": "salade-pates-provencale-thon",
+  "slug": "salade-pates-provencale-thon",
+  "nom": "Salade de pâtes provençale au thon",
+  "resume": "Penne, thon, poivrons grillés et roquette, vinaigrette balsamique aux herbes de Provence.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 3,
+    "cuisson_min": 10,
+    "total_min": 13,
+    "actif_min": 5
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "cuisine": "provençale",
+  "proteine_principale": "thon",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "pates",
+  "ingredients": [
+    {
+      "ingredient": "pates",
+      "nom_affiche": "penne",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "9810",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "thon-naturel",
+      "nom_affiche": "thon au naturel",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "26039",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "poivrons-grilles",
+      "nom_affiche": "poivrons grillés",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "20275",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "roquette",
+      "nom_affiche": "roquette",
+      "quantite": 40,
+      "unite": "g",
+      "poids_g": 40,
+      "optionnel": false,
+      "mesure_affichee": "2 poignées",
+      "ciqual_code": "20217",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "vinaigre-balsamique",
+      "nom_affiche": "vinaigre balsamique",
+      "quantite": 3,
+      "unite": "ml",
+      "poids_g": 3,
+      "optionnel": false,
+      "mesure_affichee": "½ c. à café",
+      "ciqual_code": "11091",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "herbes-provence",
+      "nom_affiche": "herbes de Provence",
+      "quantite": 0.5,
+      "unite": "g",
+      "poids_g": 0.5,
+      "optionnel": false,
+      "mesure_affichee": "1 pincée",
+      "ciqual_code": "11060",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 13.7,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cuis les pâtes dans l'eau salée le temps du paquet et égoutte.",
+      "duree_min": 10,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Pendant ce temps, mélange le vinaigre et l'huile, sale et poivre.",
+      "duree_min": 1,
+      "actif": true
+    },
+    {
+      "texte": "Mélange pâtes, thon émietté, poivrons et roquette, assaisonne d'herbes et de vinaigrette.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/salade-de-pates-provencale-au-thon-94nhdcvsjnk58sez06l5",
+      "titre": "Salade de pâtes provençale au thon",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-09"
+    }
+  ],
+  "adaptation": "Poignée de salade comptée 20 g (estimation).",
+  "kcal_annoncees_par_part": 425,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 587,
+    "proteines_g": 27,
+    "glucides_g": 76.4,
+    "lipides_g": 17.7,
+    "fibres_g": 4.4,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.13,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}
