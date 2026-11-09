@@ -199,7 +199,7 @@
     "fibres_g": 10.4,
     "methode": "ciqual-2025"
   },
-  "cout_par_part_eur": 1.88,
+  "cout_par_part_eur": 1.7,
   "verifications": {
     "source_ok": true,
     "nutrition_ok": true,

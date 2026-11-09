@@ -3,11 +3,13 @@
  *
  * Pour chaque ingrédient de data/prix-correspondances.json, dans l'ordre de priorité :
  *   1. prix saisi à la main (ticket de caisse)                      → methode "ticket"
- *   2. prix affiché sur aldi.fr pour un produit précis (instantané data/prix-sources/aldi.json,
+ *   2. prix Lidl : médiane des relevés Open Prices faits dans les magasins Lidl de France
+ *      (data/prix-sources/lidl.json, npm run lidl), au moins 1 relevé → "lidl"
+ *   3. prix affiché sur aldi.fr pour un produit précis (instantané data/prix-sources/aldi.json,
  *      hors promo) : prix réel d'un premier prix en magasin discount  → "site-enseigne"
- *   3. Open Prices, médiane 12 mois, Lyon (25 km), enseignes de la grande distribution
+ *   4. Open Prices, médiane 12 mois, Lyon (25 km), enseignes de la grande distribution
  *      d'abord, au moins 3 relevés                                   → "open-prices-lyon"
- *   4. Open Prices, médiane 12 mois, France, au moins 3 relevés       → "open-prices-france"
+ *   5. Open Prices, médiane 12 mois, France, au moins 3 relevés       → "open-prices-france"
  * Pourquoi Aldi avant Open Prices : une médiane par catégorie mélange marques nationales et
  * premiers prix (ex. sauce soja à 20 €/L) ; elle reste affichée dans le rapport comme contrôle.
  * Open Prices : https://prices.openfoodfacts.org (licence ODbL).
@@ -22,6 +24,7 @@ import { z } from 'zod';
 import { GrillePrix, Unite, type PrixReference } from '../src/domain/schema';
 import { getJson, pause } from './lib/http';
 import type { ProduitAldi } from './aldi-catalogue';
+import type { ReleveLidl } from './lidl-prix';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const CACHE = join(ROOT, '.cache/open-prices');
@@ -141,6 +144,30 @@ function estimer(items: PrixOP[], c: Correspondance): Estimation | null {
   return { n: xs.length, parUnite: mediane(xs), discount: choix.discount };
 }
 
+/** Relevés Lidl correspondant à un ingrédient (même catégorie Open Food Facts ou même catégorie vrac). */
+export function relevesLidl(rel: ReleveLidl[], c: Correspondance): PrixOP[] {
+  const op = c.open_prices ?? {};
+  return rel
+    .filter((r) =>
+      op.category_tag ? r.categorie_vrac === op.category_tag : !!op.categorie_produit && !!r.categories?.includes(op.categorie_produit),
+    )
+    .map((r) => ({
+      price: r.prix,
+      price_per: r.par ?? null,
+      price_is_discounted: r.remise,
+      date: r.date,
+      product: r.nom || r.quantite ? { product_name: r.nom, product_quantity: r.quantite, product_quantity_unit: r.unite } : null,
+    }));
+}
+
+function estimerLidl(rel: ReleveLidl[], c: Correspondance): Estimation | null {
+  const xs = comparables(relevesLidl(rel, c), c)
+    .map((p) => prixParUnite(p, c))
+    .filter((x): x is number => x !== null && x > 0);
+  if (!xs.length) return null;
+  return { n: xs.length, parUnite: mediane(xs), discount: true };
+}
+
 const eur = (n: number) => n.toFixed(2).replace('.', ',') + ' €';
 const unitTxt = (u: string) => (u === 'g' ? 'kg' : u === 'ml' ? 'L' : 'pièce');
 const parRef = (parUnite: number, u: string) => (u === 'pièce' ? parUnite : parUnite * 1000);
@@ -155,11 +182,16 @@ async function main() {
     produits: ProduitAldi[];
   };
   const aldiParId = new Map(aldi.produits.map((p) => [p.id, p]));
+  const lidl = JSON.parse(readFileSync(join(ROOT, 'data/prix-sources/lidl.json'), 'utf8')) as {
+    releve_le: string;
+    magasins: number;
+    releves: ReleveLidl[];
+  };
   const today = new Date().toISOString().slice(0, 10);
 
   const grille: Record<string, PrixReference> = {};
   const lignes: string[] = [];
-  const compte = { ticket: 0, 'open-prices-lyon': 0, 'site-enseigne': 0, 'open-prices-france': 0, aucun: 0 };
+  const compte = { ticket: 0, lidl: 0, 'open-prices-lyon': 0, 'site-enseigne': 0, 'open-prices-france': 0, aucun: 0 };
 
   for (const [id, c] of Object.entries(corr).sort(([a], [b]) => a.localeCompare(b))) {
     const q = c.open_prices?.category_tag
@@ -169,6 +201,7 @@ async function main() {
         : null;
     const lyon = q ? estimer(await releves(q, true, frais), c) : null;
     const fr = q && !lyon ? estimer(await releves(q, false, frais), c) : null;
+    const li = estimerLidl(lidl.releves, c);
     const a = c.aldi ? aldiParId.get(c.aldi) : undefined;
     const aldiOk = a && !a.promo ? a : undefined;
     const base = { produit: c.produit, conditionnement: c.conditionnement, poids_piece_g: c.poids_piece_g };
@@ -177,6 +210,15 @@ async function main() {
     let choix: PrixReference | null = null;
     if (c.manuel) {
       choix = { ...base, prix_eur: c.manuel.prix_eur, enseigne: c.manuel.enseigne, url: c.manuel.url, releve_le: c.manuel.releve_le, methode: 'ticket' };
+    } else if (li) {
+      choix = {
+        ...base,
+        prix_eur: Math.round(li.parUnite * qte * 100) / 100,
+        enseigne: 'Lidl',
+        releve_le: lidl.releve_le,
+        methode: 'lidl',
+        note: `${li.n} relevé${li.n > 1 ? 's' : ''} Open Prices en magasin Lidl (12 mois) ; ${eur(parRef(li.parUnite, c.conditionnement.unite))}/${unitTxt(c.conditionnement.unite)}`,
+      };
     } else if (aldiOk) {
       choix = { ...base, prix_eur: aldiOk.prix_eur, enseigne: 'Aldi', url: aldiOk.url, releve_le: aldi.releve_le, methode: 'site-enseigne', note: `${aldiOk.nom} ${aldiOk.unite_vente}` };
     } else if (lyon) {
@@ -205,7 +247,7 @@ async function main() {
 
     const fmt = (e: Estimation | null) => (e ? `${eur(parRef(e.parUnite, c.conditionnement.unite))} (${e.n})` : '—');
     lignes.push(
-      `| ${id} | ${c.produit} | ${fmt(lyon)} | ${a ? `${eur(a.prix_eur)}${a.promo ? ' (promo, ignoré)' : ''}` : '—'} | ${fmt(fr)} | ${choix ? `**${eur(choix.prix_eur)}** · ${choix.methode}` : '**aucun prix**'} |`,
+      `| ${id} | ${c.produit} | ${fmt(li)} | ${fmt(lyon)} | ${a ? `${eur(a.prix_eur)}${a.promo ? ' (promo, ignoré)' : ''}` : '—'} | ${fmt(fr)} | ${choix ? `**${eur(choix.prix_eur)}** · ${choix.methode}` : '**aucun prix**'} |`,
     );
   }
 
@@ -218,24 +260,26 @@ async function main() {
     `# Rapport de couverture des prix (${today})
 
 Ville : Lyon (rayon ${LYON.radius_km} km). Open Prices : médiane des 12 derniers mois, prix non remisés,
-enseignes discount d'abord, au moins ${MIN_RELEVES} relevés. Aldi : prix affichés sur aldi.fr le ${aldi.releve_le}.
+enseignes discount d'abord, au moins ${MIN_RELEVES} relevés. Lidl : ${lidl.releves.length} relevés Open Prices dans
+${lidl.magasins} magasins Lidl de France (lidl.fr ne publie pas ses prix alimentaires). Aldi : prix affichés sur aldi.fr le ${aldi.releve_le}.
 
 | Méthode | Ingrédients |
 |---|---|
 | Ticket (saisie manuelle) | ${compte.ticket} |
+| Lidl (relevés en magasin) | ${compte.lidl} |
 | Open Prices Lyon | ${compte['open-prices-lyon']} |
 | Site enseigne (Aldi) | ${compte['site-enseigne']} |
 | Open Prices France (estimation) | ${compte['open-prices-france']} |
 | **Sans prix** | **${compte.aucun}** |
 | Total | ${total} |
 
-Colonnes Lyon et France : prix au kg, au litre ou à la pièce (nombre de relevés).
+Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de relevés).
 
-| Ingrédient | Conditionnement | Open Prices Lyon | Aldi (paquet) | Open Prices France | Retenu (paquet) |
-|---|---|---|---|---|---|
+| Ingrédient | Conditionnement | Lidl | Open Prices Lyon | Aldi (paquet) | Open Prices France | Retenu (paquet) |
+|---|---|---|---|---|---|---|
 ${lignes.join('\n')}
 
-Sources : Open Prices / Open Food Facts (ODbL) ; aldi.fr.
+Sources : Open Prices / Open Food Facts (ODbL), dont les relevés en magasin Lidl ; aldi.fr.
 `,
   );
   console.log(`Prix : ${total - compte.aucun}/${total} ingrédients couverts →`, compte);

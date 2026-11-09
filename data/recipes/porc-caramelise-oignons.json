@@ -162,6 +162,13 @@
   ],
   "etapes": [
     {
+      "texte": "Lance le riz au rice cooker avec la quantité d'eau indiquée sur le paquet : il cuit seul pendant la suite.",
+      "duree_min": 25,
+      "actif": false,
+      "equipement": "rice-cooker",
+      "en_fond": true
+    },
+    {
       "texte": "Émince les oignons, presse l'ail et coupe le filet mignon en lanières.",
       "duree_min": 8,
       "actif": true
@@ -180,7 +187,7 @@
       "equipement": "plaques"
     },
     {
-      "texte": "Remets la viande, couvre d'eau à hauteur et laisse mijoter 25 minutes à couvert. Lance le riz au rice cooker.",
+      "texte": "Remets la viande, couvre d'eau à hauteur et laisse mijoter 25 minutes à couvert.",
       "duree_min": 25,
       "actif": false,
       "equipement": "plaques",
@@ -227,7 +234,7 @@
     "fibres_g": 2.8,
     "methode": "ciqual-2025"
   },
-  "cout_par_part_eur": 2.19,
+  "cout_par_part_eur": 2.21,
   "verifications": {
     "source_ok": true,
     "nutrition_ok": true,

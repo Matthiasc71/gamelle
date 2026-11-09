@@ -98,6 +98,8 @@ export const Etape = z.object({
   duree_min: z.number().positive(),
   /** true si l'étape occupe les mains (couper, remuer) ; false si ça cuit tout seul. */
   actif: z.boolean(),
+  /** Tourne en fond (riz au rice cooker…) : l'étape suivante peut commencer tout de suite. */
+  en_fond: z.boolean().optional(),
 });
 export type Etape = z.infer<typeof Etape>;
 
@@ -223,7 +225,7 @@ export const PrixReference = z.object({
   enseigne: z.string(),
   url: z.string().url().optional(),
   releve_le: dateISO,
-  methode: z.enum(['site-enseigne', 'open-prices-lyon', 'open-prices-france', 'ticket']),
+  methode: z.enum(['ticket', 'lidl', 'site-enseigne', 'open-prices-lyon', 'open-prices-france']),
   note: z.string().optional(),
 });
 export type PrixReference = z.infer<typeof PrixReference>;
