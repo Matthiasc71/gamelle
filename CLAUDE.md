@@ -73,7 +73,7 @@ Cahier des charges complet : `docs/cahier-des-charges.md`. Maquettes de référe
   l'app n'embarque pas Zod (constantes dans `domain/constantes.ts`). Écrans en `lazy`, sauf Semaine.
 - PWA : `vite-plugin-pwa` (generateSW, tout précaché, annonce « Recharger » à la mise à jour). Icône dessinée
   `public/icone.svg` → `node scripts/icones.mjs` (PNG + écrans de lancement iOS listés dans `index.html`).
-  `BASE=/gamelle/` au build pour GitHub Pages. Lighthouse mobile : perf 93, accessibilité 100, bonnes pratiques 100.
+  `BASE=/gamelle/` au build pour GitHub Pages. Lighthouse mobile (92 recettes, build Pages) : perf 96, accessibilité 100, bonnes pratiques 100.
 - `npm run e2e` : build + Playwright (Chromium en émulation iPhone ; WebKit absent de la session cloud) :
   les 2 parcours du cahier des charges, hors ligne, manifeste, axe (a11y), minuteurs du mode cuisine.
 
@@ -111,7 +111,7 @@ Interface en français, formats français (« 1 010 kcal », « 0,99 € », « 
 
 ## Mise en ligne (jalon 6)
 - GitHub Pages : https://matthiasc71.github.io/gamelle/ (dépôt public). `.github/workflows/deploiement.yml` construit
-  avec `BASE=/<dépôt>/` et publie à chaque push sur main (Pages → Source : GitHub Actions, réglage fait à la main).
+  avec `BASE=/<dépôt>/` et publie à chaque push sur main (Pages → Source : GitHub Actions, activé). En ligne depuis le 9 novembre 2026.
 - `.github/workflows/donnees-mensuelles.yml` : le 2 du mois, prix + liens + compute + validate + simulation, commit
   puis `gh workflow run deploiement.yml` (un push du jeton du workflow ne déclenche pas les autres workflows).
 - README : installation iPhone, rappel Raccourcis, sauvegarde, ajout de recettes, prix.
