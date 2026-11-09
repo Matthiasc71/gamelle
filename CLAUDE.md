@@ -19,11 +19,11 @@ Cahier des charges complet : `docs/cahier-des-charges.md`. Maquettes de référe
 - **Droit d'auteur.** Étapes reformulées avec nos mots, jamais copiées. Aucune photo de blog, d'Instagram ou de TikTok.
   Les visuels sont des **illustrations SVG dessinées pour l'app** (style herbier/riso), une par famille de plat.
   Toujours créditer la source avec un lien, et écrire « adaptée de » quand on modifie.
-- **Prix (Lyon).** Ordre (`npm run prices`) : ticket saisi à la main → prix affiché sur aldi.fr pour un produit précis
-  (`npm run aldi`, robots.txt respecté) → médiane Open Prices 12 mois Lyon → médiane Open Prices France (estimation).
-  Aldi passe avant Open Prices car une médiane par catégorie mélange marques et premiers prix (décision du jalon 1,
-  à confirmer par l'utilisateur). Filtres `mots` / `exclure` dans `data/prix-correspondances.json` pour comparer à
-  produit équivalent. Conditionnements réels.
+- **Prix (Lyon).** Ordre (`npm run prices`, choix de l'utilisateur : « prends les prix Lidl ») : ticket saisi à la main
+  → **Lidl** (relevés Open Prices faits dans les magasins Lidl de France, `npm run lidl` ; lidl.fr ne publie pas ses
+  prix alimentaires et interdit sa recherche aux robots) → prix affiché sur aldi.fr (`npm run aldi`)
+  → médiane Open Prices 12 mois Lyon → médiane Open Prices France (estimation). Filtres `mots` / `exclure`
+  dans `data/prix-correspondances.json` pour comparer à produit équivalent. Conditionnements réels.
 - **100 % gratuit, local, privé.** Aucune IA ni API payante appelée par l'app, pas de compte, pas de tracking.
   Aucune requête vers un tiers au chargement (sauf au tap sur une vidéo). Polices auto-hébergées.
 - **Équipement autorisé** : plaques (2 feux), four, micro-ondes, rice cooker. Rien d'autre.
@@ -47,8 +47,19 @@ Cahier des charges complet : `docs/cahier-des-charges.md`. Maquettes de référe
 - Mesures : 1 c. à soupe = 15 ml (huile 13,7 g), 1 c. à café = 5 ml, épice en poudre 1 c. à café = 2 g. Liquides en ml.
 - Visuels : illustrations SVG par famille de plat dans `src/ui/illustrations/` (champ `illustration`), `image: null`.
 
+## Moteur (src/domain, TypeScript pur, testé)
+- `planner.ts` : menu déterministe (graine = semaine ISO + réglages) : 2 batchs le dimanche + 1 batch un soir de
+  semaine (3–4 parts) + 2 à 4 express/assemblages. Assouplit saison puis historique puis budget en le disant
+  (`menu.relachements`). Règles dans `regles.ts` (`verifierMenu`, dures vs souples).
+- `courses.ts` (paquets, stock, placard de base, prix corrigés), `timeline.ts` (session batch en parallèle),
+  `remplacement.ts` (3 alternatives), `echange.ts` (favori → créneaux, avertissements), `frigo.ts` (événements).
+- `npm run simuler` : 52 semaines avec stock et historique → `reports/simulation.md`.
+- Budget : avec 30 recettes, ~41 € en caisse / semaine en moyenne (5/52 dans le budget). Priorité de la base :
+  recettes à moins de 2 € la part, qui réutilisent les mêmes paquets.
+
 ## Commandes
 Dans une session cloud, le `fetch` de Node passe par le proxy seulement avec `export NODE_USE_ENV_PROXY=1`.
+- `npm run lidl` : relevés Open Prices des magasins Lidl → `data/prix-sources/lidl.json`.
 - `npm run aldi` : relève les prix affichés sur aldi.fr → `data/prix-sources/aldi.json`.
 - `npm run ciqual` : télécharge et convertit Ciqual.
 - `npm run prices` : rafraîchit les prix Open Prices et écrit `reports/prix.md`.
