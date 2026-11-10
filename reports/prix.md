@@ -7,12 +7,12 @@ enseignes discount d'abord, au moins 3 relevés. Lidl : 539 relevés Open Prices
 | Méthode | Ingrédients |
 |---|---|
 | Ticket (saisie manuelle) | 0 |
-| Lidl (relevés en magasin) | 47 |
-| Open Prices Lyon | 45 |
-| Site enseigne (Aldi) | 46 |
-| Open Prices France (estimation) | 26 |
-| **Sans prix** | **7** |
-| Total | 171 |
+| Lidl (relevés en magasin) | 45 |
+| Open Prices Lyon | 44 |
+| Site enseigne (Aldi) | 45 |
+| Open Prices France (estimation) | 27 |
+| **Sans prix** | **6** |
+| Total | 167 |
 
 Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de relevés).
 
@@ -49,7 +49,6 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | chorizo | Chorizo doux, 225 g | — | — | 1,89 € | 8,44 € (57) | **1,89 €** · site-enseigne |
 | chou-rave | Chou-rave (à la pièce) | — | — | — | 1,90 € (5) | **1,90 €** · open-prices-france |
 | ciboulette | Ciboulette, botte | — | — | — | 1,95 € (3) | **1,95 €** · open-prices-france |
-| cidre-brut | Cidre brut, 75 cl | — | 4,56 € (3) | — | — | **3,42 €** · open-prices-lyon |
 | citron | Citron jaune (à la pièce) | 0,37 € (4) | 0,50 € (6) | — | — | **0,37 €** · lidl |
 | citron-vert | Citron vert (à la pièce) | 1,79 € (1) | 1,40 € (2) | — | — | **1,79 €** · lidl |
 | colin-filet | Filets de colin d'Alaska surgelés, 1 kg | — | — | 5,85 € | — | **5,85 €** · site-enseigne |
@@ -67,7 +66,6 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | cresson | Cresson, botte | — | — | — | — | **aucun prix** |
 | crevettes-cuites | Crevettes cuites décortiquées, 200 g | — | — | 3,59 € | 25,32 € (10) | **3,59 €** · site-enseigne |
 | croutons | Croûtons nature, 90 g | — | 16,14 € (31) | — | — | **1,45 €** · open-prices-lyon |
-| cuisse-poulet | Cuisses de poulet surgelées, 2 kg | — | — | 7,99 € | 4,14 € (4) | **7,99 €** · site-enseigne |
 | cumin | Cumin moulu, 40 g | 18,44 € (1) | 79,46 € (16) | — | — | **0,74 €** · lidl |
 | curcuma | Curcuma, 40 g | — | 41,10 € (8) | — | — | **1,64 €** · open-prices-lyon |
 | curry | Curry en poudre, 45 g | — | 63,54 € (12) | — | — | **2,86 €** · open-prices-lyon |
@@ -123,9 +121,7 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | oignon-rouge | Oignons rouges, filet 500 g | 1,99 € (3) | — | — | 3,09 € (16) | **1,00 €** · lidl |
 | olives-noires | Olives noires en saumure, 150 g égouttées | 6,60 € (1) | 14,86 € (18) | — | — | **0,99 €** · lidl |
 | olives-vertes | Olives vertes dénoyautées, 200 g | — | 13,93 € (63) | 1,99 € | — | **1,99 €** · site-enseigne |
-| orange | Oranges, filet 2 kg | 1,65 € (3) | 2,79 € (12) | — | — | **3,30 €** · lidl |
 | origan | Origan séché, 15 g | — | 128,72 € (6) | — | — | **1,93 €** · open-prices-lyon |
-| orzo | Orzo, 500 g | — | — | — | — | **aucun prix** |
 | pain-campagne | Pain de campagne tranché, 500 g | — | 8,56 € (4) | — | — | **4,28 €** · open-prices-lyon |
 | pain-complet | Pain complet tranché, 500 g | 3,47 € (4) | 4,92 € (17) | — | — | **1,74 €** · lidl |
 | pain-de-mie-complet | Pain de mie complet, 500 g | 2,13 € (1) | 4,92 € (8) | — | — | **1,07 €** · lidl |
@@ -136,6 +132,7 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | patate-douce | Patate douce, au kilo | 2,79 € (3) | 2,89 € (3) | — | — | **2,79 €** · lidl |
 | pate-curry | Pâte de curry rouge, 50 g | — | 22,30 € (15) | — | — | **1,12 €** · open-prices-lyon |
 | pates | Penne ou spaghetti, 500 g | — | 3,96 € (48) | 0,55 € | — | **0,55 €** · site-enseigne |
+| pdt-rissolees | Pommes rissolées surgelées, 450 g | — | — | — | 3,39 € (4) | **1,53 €** · open-prices-france |
 | persil | Persil plat, botte | — | — | — | 1,95 € (3) | **1,95 €** · open-prices-france |
 | pesto | Pesto vert, 190 g | — | — | 1,29 € | — | **1,29 €** · site-enseigne |
 | petits-pois | Petits pois extra fins surgelés, 1 kg | — | — | 1,89 € | — | **1,89 €** · site-enseigne |
@@ -147,7 +144,6 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | poivron-rouge | Poivron rouge (au détail) | — | 0,90 € (3) | — | — | **0,90 €** · open-prices-lyon |
 | poivron-vert | Poivron vert (à la pièce) | — | — | — | 0,67 € (9) | **0,67 €** · open-prices-france |
 | poivrons-grilles | Poivrons grillés marinés, bocal 280 g (180 g égouttés) | — | 16,93 € (4) | — | — | **3,05 €** · open-prices-lyon |
-| pomme | Pommes, sachet 1 kg | 1,99 € (7) | — | — | 2,98 € (40) | **1,99 €** · lidl |
 | pomme-de-terre | Pommes de terre, filet 2 kg | 1,55 € (10) | 2,29 € (3) | — | — | **3,11 €** · lidl |
 | porc-filet-mignon | Filet mignon de porc, environ 500 g | — | — | — | 9,97 € (3) | **4,98 €** · open-prices-france |
 | potimarron | Potimarron (à la pièce) | 2,39 € (1) | — | — | 2,86 € (4) | **2,39 €** · lidl |

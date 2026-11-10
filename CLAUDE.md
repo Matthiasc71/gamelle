@@ -55,7 +55,10 @@ Cahier des charges complet : `docs/cahier-des-charges.md`. Maquettes de référe
   `remplacement.ts` (3 alternatives), `echange.ts` (favori → créneaux, avertissements), `frigo.ts` (événements).
 - `npm run simuler` : 52 semaines avec stock et historique → `reports/simulation.md`.
 - Budget (simulé avec 98 recettes, `npm run simuler -- 52 2026-W47`) : ~31,5 € en caisse / semaine en moyenne, 45/52 dans le budget.
-  Simulation à graine unique, donc bruitée : tester chaque ajout de recette (retirer celles qui font monter la moyenne).
+  Une simulation dépend beaucoup de la semaine de départ : tester un ajout sur 3 départs en parallèle,
+  `npx tsx scripts/simuler.ts 52 <semaine> --essai [--sans id1,id2]` (2026-W47, 2027-W10, 2027-W24), et ne garder
+  que les recettes neutres ou qui font baisser la moyenne. Avec / sans les 6 recettes d'hiver : 31,87 € / 31,81 €.
+- Avis (`ctx.avis`) : « aime » ×2 au tirage, « bof » exclu du menu et des remplacements.
   Le tirage favorise les recettes qui partagent les paquets déjà prévus ou en stock (`poids` : ×(1 + 1,2·partagés),
   ÷(1 + 0,2·nouveaux)). Priorité de la base : recettes à moins de 2 € la part, qui réutilisent les mêmes paquets.
 - `frigo.ts` : `ideesRestes` propose les recettes qui finissent le mieux le stock (hors placard de base).
@@ -69,6 +72,11 @@ Cahier des charges complet : `docs/cahier-des-charges.md`. Maquettes de référe
   Courses : le stock compté exclut les achats cochés de la semaine (sinon les lignes disparaîtraient).
 - Semaine : carte « Ce midi / Ce soir » (repas du moment, rappel « À sortir ce soir » pour le congélateur).
   `#/historique` : semaines passées (Dexie), « Refaire la semaine prochaine » (annulable). Réglages en sections repliées.
+- Semaine : toucher le total des courses → « Viser un budget » (`viserBudget`, 500 essais, ne remplace jamais par plus cher,
+  annulable). Carte du repas : conseils de service d'une boîte (généraux, pas de temps inventés), « Marquer mangé ».
+- Fiche : « J'en reveux / Pas pour moi » (table Dexie `avis`). Courses : ticket de caisse (table `tickets`) ; la moyenne
+  payé / estimé (0,5–1,5) affiche « ≈ X € d'après tes tickets » sous le total. Favoris : base groupée par type, « Voir plus ».
+- Ornements : `Fleuron` (fin d'écran), `Tampon` (« Panier complet », classe `.tampon-encre`), icônes soleil / lune / cœur / bof / ticket.
 - Courses : les articles cochés descendent dans « Dans le panier » (replié). Fiche : un tap barre un ingrédient prêt (état local).
   Session : noms courts des plats (`nomCourt`).
 - Mode nuit : préférence `theme` (auto / clair / sombre) → `html[data-theme]`, jetons sombres dans `tokens.css`

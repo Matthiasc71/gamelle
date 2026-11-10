@@ -4,6 +4,8 @@
  *
  *   npm run simuler            (52 semaines depuis la semaine prochaine)
  *   npm run simuler -- 12 2026-W47
+ *   npm run simuler -- 52 2026-W47 --essai --sans id1,id2   (sans écrire le rapport, base privée de ces recettes :
+ *   pour tester l'effet d'une recette sur le budget, depuis plusieurs semaines de départ)
  */
 import { readdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -13,9 +15,16 @@ import { creerBase, REGLAGES_DEFAUT } from '../src/domain/types';
 import { aujourdhui, lireJson, ROOT } from './lib/data';
 import { simuler } from './lib/simulation';
 
-const n = Number(process.argv[2] ?? 52);
-const depart = process.argv[3] ?? semaineIso(ajouterJours(aujourdhui(), 7)).cle;
-const recettes = readdirSync(join(ROOT, 'data/recipes')).map((f) => Recette.parse(lireJson(`data/recipes/${f}`)));
+const args = process.argv.slice(2);
+const essai = args.includes('--essai');
+const iSans = args.indexOf('--sans');
+const sans = new Set(iSans >= 0 ? args[iSans + 1].split(',') : []);
+const positionnels = args.filter((a, i) => !a.startsWith('--') && (iSans < 0 || i !== iSans + 1));
+const n = Number(positionnels[0] ?? 52);
+const depart = positionnels[1] ?? semaineIso(ajouterJours(aujourdhui(), 7)).cle;
+const recettes = readdirSync(join(ROOT, 'data/recipes'))
+  .map((f) => Recette.parse(lireJson(`data/recipes/${f}`)))
+  .filter((r) => !sans.has(r.id));
 const base = creerBase(recettes, lireJson('data/ciqual-map.json'), lireJson('data/prix-reference.json'));
 const t0 = Date.now();
 const semaines = simuler(base, REGLAGES_DEFAUT, depart, n);
@@ -24,6 +33,11 @@ const moy = (xs: number[]) => xs.reduce((s, x) => s + x, 0) / xs.length;
 const caisses = semaines.map((s) => s.caisse);
 const regime = caisses.slice(Math.min(4, caisses.length - 1));
 const dansBudget = semaines.filter((s) => s.caisse <= REGLAGES_DEFAUT.budget[1]).length;
+
+if (essai) {
+  console.log(`${depart} · ${recettes.length} recettes · moyenne ${eur(moy(caisses))} · dans le budget ${dansBudget}/${n}`);
+  process.exit(0);
+}
 
 writeFileSync(
   join(ROOT, 'reports/simulation.md'),
