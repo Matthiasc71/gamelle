@@ -1,15 +1,15 @@
 import { useLiveQuery } from 'dexie-react-hooks';
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { BASE } from '../app/base';
 import { db } from '../app/db';
-import { annulerEchange, aujourdhui, maintenant, regenerer, useContexte, useEvenements, useMenu, useReglages, useSemaines, useSemaineVue } from '../app/etat';
+import { annulerEchange, aujourdhui, maintenant, marquerMange, regenerer, useContexte, useEvenements, useMenu, useReglages, useSemaines, useSemaineVue, useTickets, viserBudget } from '../app/etat';
 import { badge, MOMENT, nombre } from '../app/presentation';
 import { lien } from '../app/routeur';
 import { ajouterJours, ecartJours, libelleJour, libelleSemaine, lundiDeSemaine, versDate } from '../domain/dates';
 import { euros } from '../domain/format';
 import { coutsMenu, detailsRepas, sessionDimanche, type DetailRepas } from '../domain/regles';
 import type { Menu, Reglages } from '../domain/types';
-import { annoncer, BoutonIcone, Brin, Chargement, Chiffre, Illustration } from '../ui/composants';
+import { annoncer, BoutonIcone, Brin, Chargement, Chiffre, Feuille, Fleuron, Illustration } from '../ui/composants';
 import { Icone } from '../ui/Icone';
 
 const JOURS_LONGS = ['LUN', 'MAR', 'MER', 'JEU', 'VEN', 'SAM', 'DIM'];
@@ -75,10 +75,12 @@ function ContenuSemaine({ menu, reglages, anciensReglages }: { menu: Menu; regla
   const boites = dimanche.reduce((s, c) => s + c.parts, 0);
   const auj = aujourdhui();
   const horsBudget = !!couts && couts.totalCaisse > reglages.budget[1];
+  const tickets = useTickets();
+  const [budgetOuvert, setBudgetOuvert] = useState(false);
 
   return (
     <>
-      <CeRepas details={details} menu={menu} auj={auj} />
+      <CeRepas details={details} menu={menu} auj={auj} manges={manges} />
 
       {anciensReglages && (
         <div className="note">
@@ -95,16 +97,27 @@ function ContenuSemaine({ menu, reglages, anciensReglages }: { menu: Menu; regla
           <span>kcal / jour</span>
           <small>+{reglages.kcalLibres} libres</small>
         </div>
-        <div className={`totaux__case ${horsBudget ? 'totaux__case--alerte' : ''}`}>
+        <div className={`totaux__case totaux__case--bouton ${horsBudget ? 'totaux__case--alerte' : ''}`}>
           <Chiffre taille="m">{couts ? euros(couts.totalCaisse) : '…'}</Chiffre>
-          <span>de courses</span>
-          {horsBudget && <small>budget {reglages.budget[1]} €</small>}
+          <span className="totaux__libelle">
+            de courses <Icone nom="crayon" taille={13} />
+          </span>
+          {horsBudget ? (
+            <small>budget {reglages.budget[1]} €</small>
+          ) : tickets?.ratio && couts ? (
+            <small className="totaux__ticket">≈ {euros(couts.totalCaisse * tickets.ratio)} d’après tes tickets</small>
+          ) : null}
+          <button type="button" className="totaux__toucher" onClick={() => setBudgetOuvert(true)} aria-label="Viser un autre budget de courses" />
         </div>
         <div className="totaux__case">
           <Chiffre taille="m">{couts ? euros(couts.totalUtilise / 14 / reglages.personnes) : '…'}</Chiffre>
           <span>par repas</span>
         </div>
       </section>
+
+      <Feuille titre="Viser un budget" ouverte={budgetOuvert} fermer={() => setBudgetOuvert(false)}>
+        {budgetOuvert && couts && <ViserBudget menu={menu} reglages={reglages} actuel={couts.totalCaisse} fermer={() => setBudgetOuvert(false)} />}
+      </Feuille>
 
       {dimanche.length > 0 && (
         <a className="bandeau-batch" href={lien('session', undefined, { s: menu.semaine })}>
@@ -166,6 +179,7 @@ function ContenuSemaine({ menu, reglages, anciensReglages }: { menu: Menu; regla
           );
         })}
       </ol>
+      <Fleuron />
     </>
   );
 }
@@ -192,8 +206,8 @@ function LigneRepas({ d, semaine, mange, cuisine }: { d: DetailRepas; semaine: s
   );
 }
 
-/** Le repas du moment (midi avant 14 h, soir ensuite) et les boîtes à sortir du congélateur pour demain. */
-function CeRepas({ details, menu, auj }: { details: DetailRepas[]; menu: Menu; auj: string }) {
+/** Le repas du moment (midi avant 14 h, soir ensuite), comment le servir, et les boîtes à sortir du congélateur pour demain. */
+function CeRepas({ details, menu, auj, manges }: { details: DetailRepas[]; menu: Menu; auj: string; manges: Set<number> }) {
   const j = ecartJours(menu.lundi, auj);
   if (j < 0 || j > 6) return null;
   const moment = maintenant().getHours() < 14 ? 'midi' : 'soir';
@@ -202,26 +216,93 @@ function CeRepas({ details, menu, auj }: { details: DetailRepas[]; menu: Menu; a
   if (!d) return null;
   const r = d.recette;
   const aCuisiner = d.statut === 'cuisine' || d.statut === 'express' || d.statut === 'assemblage';
+  const mange = manges.has(d.creneau);
   return (
     <section className="ce-repas" aria-label={moment === 'midi' ? 'Ce midi' : 'Ce soir'}>
       <a className="ce-repas__plat" href={lien('recette', r.id, { s: menu.semaine, c: d.creneau })}>
         <Illustration nom={r.illustration} taille={56} />
         <span className="ce-repas__texte">
-          <span className="kicker">{moment === 'midi' ? 'Ce midi' : 'Ce soir'}</span>
+          <span className="kicker">
+            <Icone nom={moment === 'midi' ? 'soleil' : 'lune'} taille={14} /> {moment === 'midi' ? 'Ce midi' : 'Ce soir'}
+          </span>
           <strong>{r.nom}</strong>
           <small>{d.statut === 'congele' ? 'boîte du congélateur' : badge(d)}</small>
         </span>
       </a>
-      {aCuisiner && (
-        <a className="btn btn--plein btn--petit" href={lien('cuisine', r.id, { parts: d.cuisson.parts })}>
-          Cuisiner
-        </a>
-      )}
+      {!aCuisiner && !mange && <p className="ce-repas__conseil">{conseilBoite(d)}</p>}
+      <div className="ce-repas__actions">
+        {aCuisiner && !mange && (
+          <a className="btn btn--plein btn--petit" href={lien('cuisine', r.id, { parts: d.cuisson.parts })}>
+            Cuisiner
+          </a>
+        )}
+        <button
+          className={`btn btn--petit ${mange ? 'btn--fait' : 'btn--contour'}`}
+          aria-pressed={mange}
+          onClick={async () => {
+            await marquerMange(menu.semaine, d.creneau, d.cuisson.id, !mange);
+            if (!mange) annoncer('Bon appétit ! Donne ton avis sur la fiche si tu veux le revoir (ou pas).');
+          }}
+        >
+          <Icone nom="coche" taille={16} /> {mange ? 'Mangé' : 'Marquer mangé'}
+        </button>
+      </div>
       {aSortir.length > 0 && (
         <p className="ce-repas__rappel">
           <Icone nom="flocon" taille={16} /> À sortir ce soir : {aSortir.map((x) => x.recette.nom).join(', ')}
         </p>
       )}
     </section>
+  );
+}
+
+/** Conseils de service d'une boîte : conseils d'usage généraux, pas des temps tirés de la recette. */
+function conseilBoite(d: DetailRepas): string {
+  const froid = d.recette.illustration === 'salade' || d.recette.illustration === 'wrap';
+  if (froid) return 'Se mange froid : sors la boîte du frigo un peu avant.';
+  if (d.statut === 'congele')
+    return 'Décongelée au frigo depuis hier soir ? Sinon, programme décongélation du micro-ondes, puis réchauffe jusqu’à ce que ce soit bien chaud à cœur.';
+  return 'Au micro-ondes, couvercle entrouvert : réchauffe en remuant à mi-chemin, jusqu’à ce que ce soit bien chaud à cœur.';
+}
+
+/** Feuille « Viser un budget » : refait le menu de la semaine pour un plafond donné (annulable). */
+function ViserBudget({ menu, reglages, actuel, fermer }: { menu: Menu; reglages: Reglages; actuel: number; fermer: () => void }) {
+  const [vise, setVise] = useState(() => Math.max(20, Math.min(reglages.budget[1], Math.floor(actuel) - 2)));
+  const [enCours, setEnCours] = useState(false);
+  const activite = useLiveQuery(async () => (await db.coches.where('semaine').equals(menu.semaine).count()) + (await db.evenements.where('semaine').equals(menu.semaine).count()), [menu.semaine]);
+  return (
+    <div className="viser">
+      <p className="texte-doux">
+        Aujourd’hui : <strong>{euros(actuel)}</strong> en caisse. Je refais le menu de cette semaine en privilégiant les recettes qui partagent leurs paquets. Tes réglages ne changent pas.
+      </p>
+      <label className="viser__curseur">
+        <span>
+          Viser <Chiffre taille="s">{`${vise} €`}</Chiffre>
+        </span>
+        <input type="range" min={20} max={45} step={1} value={vise} onChange={(e) => setVise(Number(e.target.value))} aria-label="Budget visé en euros" />
+      </label>
+      {!!activite && <p className="note">Tu as déjà coché des courses ou cuisiné cette semaine : la liste va changer.</p>}
+      <button
+        className="btn btn--plein"
+        disabled={enCours}
+        onClick={async () => {
+          setEnCours(true);
+          try {
+            const res = await viserBudget(menu.semaine, reglages, vise);
+            fermer();
+            if (res.garde)
+              annoncer(`Je n’ai pas trouvé moins cher que ${euros(res.cout)} cette semaine : ce sont surtout des paquets entiers (riz, épices, conserves) qui resteront pour les suivantes. Menu inchangé.`);
+            else if (res.cout > vise) annoncer(`Le plus proche : ${euros(res.cout)} (au lieu de ${euros(res.avant ?? 0)}). Les paquets entiers servent les semaines suivantes.`);
+            else annoncer(`Menu refait : ${euros(res.cout)} en caisse.`);
+          } catch (e) {
+            annoncer(`Impossible : ${(e as Error).message}`);
+          } finally {
+            setEnCours(false);
+          }
+        }}
+      >
+        {enCours ? 'Je cherche…' : `Refaire le menu pour ${vise} €`}
+      </button>
+    </div>
   );
 }

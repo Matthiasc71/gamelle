@@ -2,7 +2,7 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { useMemo, useState } from 'react';
 import { BASE } from '../app/base';
 import { db } from '../app/db';
-import { cocher, corrigerPrix, declarerDejaAuFrigo, useContexte, useEvenements, useMenu, useReglages, useSemaineVue } from '../app/etat';
+import { cocher, corrigerPrix, declarerDejaAuFrigo, enregistrerTicket, useContexte, useEvenements, useMenu, useReglages, useSemaineVue, useTickets } from '../app/etat';
 import { majuscule, nombre } from '../app/presentation';
 import { libelleConditionnement, NOMS_RAYONS, texteListe, type LigneCourses } from '../domain/courses';
 import { libelleSemaine } from '../domain/dates';
@@ -10,7 +10,7 @@ import { euros } from '../domain/format';
 import { coutsMenu } from '../domain/regles';
 import type { PrixReference } from '../domain/schema';
 import type { Menu } from '../domain/types';
-import { annoncer, Chargement, Chiffre, Feuille, Interrupteur, Rubrique } from '../ui/composants';
+import { annoncer, Chargement, Chiffre, Feuille, Fleuron, Interrupteur, Rubrique, Tampon } from '../ui/composants';
 import { Icone } from '../ui/Icone';
 
 /** « Carottes, sachet 1 kg » → « Carottes » ; « Brocoli (à la pièce) » → « Brocoli ». */
@@ -129,7 +129,7 @@ function Liste({ menu }: { menu: Menu }) {
       })}
 
       {aAcheter.length > 0 && aAcheter.every((l) => coches.has(l.ingredient)) && (
-        <p className="courses__fini">Tout est dans le panier.</p>
+        <Tampon>Panier complet</Tampon>
       )}
 
       {aAcheter.some((l) => coches.has(l.ingredient)) && (
@@ -149,6 +149,10 @@ function Liste({ menu }: { menu: Menu }) {
               ))}
           </ul>
         </details>
+      )}
+
+      {aAcheter.some((l) => coches.has(l.ingredient)) && (
+        <TicketCaisse semaine={menu.semaine} estime={aAcheter.filter((l) => coches.has(l.ingredient)).reduce((x, l) => x + l.coutCaisse, 0)} />
       )}
 
       {aUtiliser.length > 0 && (
@@ -196,10 +200,63 @@ function Liste({ menu }: { menu: Menu }) {
         </section>
       )}
 
+      <Fleuron />
+
       <Feuille titre={detail ? nomProduit(detail.produit) : ''} ouverte={!!detail} fermer={() => setDetail(null)}>
         {detail && <DetailLigne l={detail} pour={recettesPour(detail.ingredient)} semaine={menu.semaine} fermer={() => setDetail(null)} />}
       </Feuille>
     </>
+  );
+}
+
+/** Total payé en caisse, saisi à la main : comparé à l'estimation des articles cochés. */
+function TicketCaisse({ semaine, estime }: { semaine: string; estime: number }) {
+  const tickets = useTickets();
+  const actuel = tickets?.tous.find((t) => t.semaine === semaine);
+  const [saisie, setSaisie] = useState('');
+  const [edition, setEdition] = useState(false);
+  if (!tickets) return null;
+  const ecart = actuel ? (actuel.paye - actuel.estime) / actuel.estime : 0;
+  return (
+    <section className="ticket" aria-labelledby="ticket">
+      <Rubrique id="ticket">Ticket de caisse</Rubrique>
+      {actuel && !edition ? (
+        <p className="ticket__resultat">
+          <Icone nom="ticket" taille={20} />
+          <span>
+            Payé <strong>{euros(actuel.paye)}</strong> pour {euros(actuel.estime)} estimés
+            {Math.abs(ecart) >= 0.005 && ` (${ecart > 0 ? '+' : '−'}${Math.round(Math.abs(ecart) * 100)} %)`}.
+            {tickets.ratio && <span className="texte-doux petit"> Les totaux de la semaine en tiennent compte (moyenne de tes tickets).</span>}
+          </span>
+          <button className="lien-bouton" onClick={() => { setSaisie(String(actuel.paye).replace('.', ',')); setEdition(true); }}>
+            Modifier
+          </button>
+        </p>
+      ) : (
+        <form
+          className="ticket__saisie"
+          onSubmit={async (e) => {
+            e.preventDefault();
+            const v = Number(saisie.replace(',', '.').replace(/[^0-9.]/g, ''));
+            if (!v || v <= 0) return annoncer('Indique le total du ticket, par exemple 32,40.');
+            await enregistrerTicket(semaine, v, Math.round(estime * 100) / 100);
+            setEdition(false);
+            annoncer('Ticket enregistré.');
+          }}
+        >
+          <label>
+            <span className="texte-doux petit">Total payé pour les {euros(estime)} cochés</span>
+            <span className="ticket__champ">
+              <input inputMode="decimal" placeholder="0,00" value={saisie} onChange={(e) => setSaisie(e.target.value)} aria-label="Total payé en euros" />
+              <span aria-hidden="true">€</span>
+            </span>
+          </label>
+          <button className="btn btn--contour btn--petit" type="submit">
+            Enregistrer
+          </button>
+        </form>
+      )}
+    </section>
   );
 }
 

@@ -5,7 +5,7 @@ import { majuscule, nombre } from '../app/presentation';
 import { ecartJours, versDate } from '../domain/dates';
 import { aUtiliserVite, ideesRestes, type Article, type Boite, type Lieu } from '../domain/frigo';
 import { lien } from '../app/routeur';
-import { annoncer, Chargement, Feuille, Illustration, Rubrique } from '../ui/composants';
+import { annoncer, Chargement, Feuille, Fleuron, Illustration, Rubrique } from '../ui/composants';
 import { Icone } from '../ui/Icone';
 
 const LIEUX: { id: Lieu; nom: string }[] = [
@@ -149,6 +149,7 @@ export default function Frigo() {
       <Feuille titre="Ajouter au frigo" ouverte={ajout} fermer={() => setAjout(false)}>
         <Ajout fermer={() => setAjout(false)} />
       </Feuille>
+      <Fleuron />
     </main>
   );
 }

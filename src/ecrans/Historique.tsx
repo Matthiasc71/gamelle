@@ -6,7 +6,7 @@ import { aller, lien, retour } from '../app/routeur';
 import { libelleSemaine, lundiDeSemaine } from '../domain/dates';
 import { recettesDuMenu } from '../domain/planner';
 import type { Menu } from '../domain/types';
-import { annoncer, BoutonIcone, Illustration } from '../ui/composants';
+import { annoncer, BoutonIcone, Fleuron, Illustration } from '../ui/composants';
 
 /** Copie un menu passé sur une autre semaine (mêmes plats, mêmes créneaux). */
 async function refaire(menu: Menu, cible: string) {
@@ -74,6 +74,7 @@ export default function Historique() {
           );
         })}
       </ul>
+      <Fleuron />
     </main>
   );
 }

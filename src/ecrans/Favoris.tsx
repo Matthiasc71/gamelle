@@ -1,11 +1,11 @@
 import { useMemo, useState } from 'react';
 import { BASE } from '../app/base';
-import { basculerFavori, useFavoris, useReglages } from '../app/etat';
+import { basculerFavori, useAvis, useFavoris, useReglages } from '../app/etat';
 import { TYPE_RECETTE } from '../app/presentation';
 import { lien } from '../app/routeur';
 import { euros, kcal } from '../domain/format';
 import type { Recette } from '../domain/schema';
-import { annoncer, BoutonPlus, Illustration, Rubrique } from '../ui/composants';
+import { annoncer, BoutonPlus, Fleuron, Illustration, Rubrique } from '../ui/composants';
 import { Icone } from '../ui/Icone';
 
 type Tri = 'nom' | 'kcal' | 'prix' | 'temps';
@@ -16,6 +16,7 @@ const sansAccents = (s: string) => s.toLowerCase().replace(/œ/g, 'oe').replace(
 export default function Favoris() {
   const favoris = useFavoris();
   const reglages = useReglages();
+  const avis = useAvis();
   const [q, setQ] = useState('');
   const [tri, setTri] = useState<Tri>('nom');
   const [filtre, setFiltre] = useState<Filtre>('tous');
@@ -38,7 +39,7 @@ export default function Favoris() {
     });
   }, [q, tri, filtre]);
 
-  if (!favoris || !reglages) return null;
+  if (!favoris || !reglages || !avis) return null;
   const gardees = liste.filter((r) => favoris.has(r.id));
   const autres = liste.filter((r) => !favoris.has(r.id));
 
@@ -79,7 +80,7 @@ export default function Favoris() {
       <section aria-labelledby="mes-favoris">
         <Rubrique id="mes-favoris">Mes favoris</Rubrique>
         {gardees.length ? (
-          <Grille recettes={gardees} favoris={favoris} />
+          <Grille recettes={gardees} favoris={favoris} avis={avis} />
         ) : (
           <p className="vide">
             {favoris.size ? 'Aucun favori ne correspond à ta recherche.' : 'Touche + sur une recette pour la garder ici, puis touche-la pour la mettre dans ta semaine.'}
@@ -89,17 +90,48 @@ export default function Favoris() {
 
       <section aria-labelledby="toute-la-base">
         <Rubrique id="toute-la-base">Toute la base · {autres.length}</Rubrique>
-        <Grille recettes={autres} favoris={favoris} />
+        {filtre === 'tous' && !q.trim() ? (
+          (['batch', 'express', 'assemblage'] as const).map((t) => (
+            <Groupe key={t} titre={TYPE_RECETTE[t]} recettes={autres.filter((r) => r.type === t)} favoris={favoris} avis={avis} pas={6} />
+          ))
+        ) : autres.length ? (
+          <Groupe recettes={autres} favoris={favoris} avis={avis} pas={12} key={`${filtre}|${q}`} />
+        ) : (
+          <p className="vide">Aucune recette ne correspond.</p>
+        )}
       </section>
+      <Fleuron />
     </main>
   );
 }
 
-function Grille({ recettes, favoris }: { recettes: Recette[]; favoris: Set<string> }) {
+/** Un groupe de cartes montré par paquets (« Voir les N autres »). */
+function Groupe({ titre, recettes, favoris, avis, pas }: { titre?: string; recettes: Recette[]; favoris: Set<string>; avis: Record<string, 'aime' | 'bof'>; pas: number }) {
+  const [n, setN] = useState(pas);
+  if (!recettes.length) return null;
+  const reste = recettes.length - n;
+  return (
+    <div className="groupe-recettes">
+      {titre && (
+        <h3 className="groupe-recettes__titre">
+          <Icone nom="feuille" taille={16} /> {titre} <span className="texte-doux">· {recettes.length}</span>
+        </h3>
+      )}
+      <Grille recettes={recettes.slice(0, n)} favoris={favoris} avis={avis} />
+      {reste > 0 && (
+        <button className="btn btn--contour btn--petit voir-plus" onClick={() => setN((x) => x + pas * 2)}>
+          Voir {reste > pas * 2 ? `${pas * 2} de plus` : `les ${reste} autres`}
+        </button>
+      )}
+    </div>
+  );
+}
+
+function Grille({ recettes, favoris, avis }: { recettes: Recette[]; favoris: Set<string>; avis: Record<string, 'aime' | 'bof'> }) {
   return (
     <ul className="grille">
       {recettes.map((r) => (
-        <li key={r.id} className="carte-recette">
+        <li key={r.id} className={`carte-recette ${avis[r.id] === 'bof' ? 'carte-recette--bof' : ''}`}>
           <a href={lien('recette', r.id, { depuis: 'favoris' })} className="carte-recette__lien">
             <span className="carte-recette__illus">
               <Illustration nom={r.illustration} taille={96} />
@@ -108,6 +140,11 @@ function Grille({ recettes, favoris }: { recettes: Recette[]; favoris: Set<strin
             <span className="carte-recette__detail">
               {kcal(r.nutrition_par_part.kcal)} · {euros(r.cout_par_part_eur)} · {r.temps.total_min} min
             </span>
+            {avis[r.id] && (
+              <span className={`carte-recette__avis carte-recette__avis--${avis[r.id]}`}>
+                <Icone nom={avis[r.id] === 'aime' ? 'coeur' : 'bof'} taille={13} /> {avis[r.id] === 'aime' ? 'J’en reveux' : 'Pas pour moi'}
+              </span>
+            )}
           </a>
           <span className="carte-recette__plus">
             <BoutonPlus

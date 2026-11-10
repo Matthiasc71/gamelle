@@ -68,6 +68,37 @@ export function Brin({ className = '' }: { className?: string }) {
   );
 }
 
+/** Fleuron d'imprimeur : petit brin couché avec aplats décalés, pour finir une page ou séparer. */
+export function Fleuron({ className = '' }: { className?: string }) {
+  return (
+    <svg className={`fleuron ${className}`} viewBox="0 0 140 28" aria-hidden="true" focusable="false">
+      <g style={{ mixBlendMode: 'multiply' }}>
+        <path d="M70 14 C60 4 48 4 40 10 C48 18 60 20 70 14Z" fill="var(--sauge-pale)" transform="translate(2 2)" />
+        <path d="M70 14 C80 4 92 4 100 10 C92 18 80 20 70 14Z" fill="var(--rose)" transform="translate(2 2)" />
+      </g>
+      <g fill="none" stroke="var(--encre)" strokeWidth="1.2" strokeLinecap="round">
+        <path d="M70 14 C60 4 48 4 40 10 C48 18 60 20 70 14ZM70 14 C80 4 92 4 100 10 C92 18 80 20 70 14Z" />
+        <path d="M44 11 L70 14 L96 11" strokeWidth="0.8" />
+        <path d="M8 14h22M110 14h22" strokeDasharray="2 4" />
+      </g>
+      <g fill="var(--encre)">
+        <circle cx="70" cy="14" r="2" />
+        <circle cx="34" cy="14" r="1.2" />
+        <circle cx="106" cy="14" r="1.2" />
+      </g>
+    </svg>
+  );
+}
+
+/** Tampon encré légèrement penché (« Panier complet »). */
+export function Tampon({ children }: { children: ReactNode }) {
+  return (
+    <p className="tampon-encre" role="status">
+      <span>{children}</span>
+    </p>
+  );
+}
+
 /** Bouton + rond à l'encre : effet tampon au tap et petit tampon « gardée ! ». */
 export function BoutonPlus({ actif, onBasculer, nom, clair = false }: { actif: boolean; onBasculer: () => void; nom: string; clair?: boolean }) {
   const [tampon, setTampon] = useState(0);

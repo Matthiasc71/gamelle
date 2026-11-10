@@ -2743,7 +2743,234 @@ textarea.champ-texte {
 .panier[open] > summary::after {
   content: '−';
 }
-.courses__fini {
-  margin: 18px 0;
-  font: 400 22px/1.2 var(--serif);
+
+/* ───────────── Lot 7 : budget visé, conseils, avis, ticket, groupes, ornements ───────────── */
+
+.totaux__case--bouton {
+  position: relative;
+}
+.totaux__toucher {
+  position: absolute;
+  inset: -8px 0;
+  min-height: 44px;
+  border: 0;
+  border-radius: 10px;
+  background: none;
+  cursor: pointer;
+}
+.totaux__toucher:focus-visible {
+  outline: 2px solid var(--encre);
+}
+.totaux__libelle .icone {
+  vertical-align: -1px;
+  opacity: 0.7;
+}
+.totaux__ticket {
+  color: var(--encre-douce);
+}
+
+.viser {
+  display: grid;
+  gap: 16px;
+}
+.viser__curseur {
+  display: grid;
+  gap: 10px;
+}
+.viser__curseur > span {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-weight: 700;
+}
+.viser__curseur input[type='range'] {
+  width: 100%;
+  min-height: 44px;
+  accent-color: var(--encre);
+}
+
+.ce-repas__conseil {
+  flex-basis: 100%;
+  margin: 0;
+  padding-top: 8px;
+  border-top: 1px dashed var(--filet);
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--encre-douce);
+}
+.ce-repas__actions {
+  display: flex;
+  gap: 8px;
+  flex-basis: 100%;
+  justify-content: flex-end;
+}
+.ce-repas__actions .btn {
+  min-height: 44px;
+  gap: 6px;
+}
+.ce-repas .kicker .icone {
+  vertical-align: -2px;
+}
+.btn--fait {
+  background: var(--menthe);
+  color: var(--sur-couleur);
+  border: var(--trait) solid var(--encre);
+}
+
+.avis {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 14px 0 6px;
+}
+.avis__bouton {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1.5px dashed var(--filet-fort);
+  border-radius: var(--r-bouton);
+  background: none;
+  color: var(--encre);
+  font: 600 14.5px/1 var(--texte);
+  cursor: pointer;
+}
+.avis__bouton--aime {
+  border-style: solid;
+  border-color: var(--encre);
+  background: var(--rose);
+  color: var(--sur-couleur);
+}
+.avis__bouton--bof {
+  border-style: solid;
+  border-color: var(--encre);
+  background: var(--sauge-pale);
+}
+
+.ticket__saisie {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  margin: 8px 0 4px;
+}
+.ticket__saisie label {
+  flex: 1;
+  display: grid;
+  gap: 6px;
+}
+.ticket__champ {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 1.5px dashed var(--filet-fort);
+  font: 800 22px/1 var(--display);
+}
+.ticket__champ input {
+  width: 100%;
+  min-height: 44px;
+  border: 0;
+  background: none;
+  color: var(--encre);
+  font: inherit;
+}
+.ticket__champ input:focus-visible {
+  outline: 2px solid var(--encre);
+  outline-offset: 2px;
+}
+.ticket__resultat {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 8px 0;
+  line-height: 1.4;
+}
+.ticket__resultat .lien-bouton {
+  margin-left: auto;
+  flex: none;
+}
+
+.groupe-recettes {
+  margin-bottom: 18px;
+}
+.groupe-recettes__titre {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 18px 0 10px;
+  font: 400 19px/1.2 var(--serif);
+}
+.voir-plus {
+  width: 100%;
+  margin-top: 12px;
+}
+.carte-recette--bof {
+  opacity: 0.55;
+}
+.carte-recette__avis {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.carte-recette__avis--aime {
+  color: var(--encre);
+}
+
+.fleuron {
+  display: block;
+  width: 140px;
+  height: 28px;
+  margin: 26px auto 8px;
+}
+
+.tampon-encre {
+  display: flex;
+  justify-content: center;
+  margin: 22px 0 8px;
+}
+.tampon-encre span {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2.5px solid var(--rose);
+  outline: 1px solid var(--rose);
+  outline-offset: 3px;
+  border-radius: 6px;
+  color: var(--encre);
+  font: 800 17px/1 var(--display);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transform: rotate(-4deg);
+  animation: tampon-encre 260ms cubic-bezier(0.3, 1.6, 0.5, 1);
+}
+@keyframes tampon-encre {
+  from {
+    transform: rotate(-4deg) scale(1.4);
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tampon-encre span {
+    animation: none;
+  }
+}
+
+.ce-repas .kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.totaux__libelle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+.ticket__resultat > .icone,
+.ticket__resultat > svg {
+  flex: none;
+  margin-top: 2px;
 }

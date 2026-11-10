@@ -6,8 +6,10 @@ import {
   appliquerMenu,
   annulerEchange,
   basculerFavori,
+  donnerAvis,
   marquerCuisine,
   marquerMange,
+  useAvis,
   useContexte,
   useEvenements,
   useFavoris,
@@ -154,6 +156,8 @@ function FicheRecette({ r, semaine: semaineParam, creneau }: { r: TRecette; sema
           </section>
         )}
 
+        <AvisRecette id={r.id} />
+
         <section aria-labelledby="ingredients">
           <div className="rubrique-ligne">
             <Rubrique id="ingredients">Ingrédients · {portions} part{portions > 1 ? 's' : ''}</Rubrique>
@@ -226,6 +230,25 @@ function FicheRecette({ r, semaine: semaineParam, creneau }: { r: TRecette; sema
         </Feuille>
       )}
     </main>
+  );
+}
+
+/** « J'en reveux » (revient plus souvent) / « Pas pour moi » (n'est plus proposé). */
+function AvisRecette({ id }: { id: string }) {
+  const avis = useAvis()?.[id];
+  const choisir = async (a: 'aime' | 'bof') => {
+    const n = await donnerAvis(id, a);
+    annoncer(n === 'aime' ? 'Noté : elle reviendra plus souvent.' : n === 'bof' ? 'Noté : elle ne sera plus proposée.' : 'Avis retiré.');
+  };
+  return (
+    <div className="avis" role="group" aria-label="Ton avis sur cette recette">
+      <button className={`avis__bouton ${avis === 'aime' ? 'avis__bouton--aime' : ''}`} aria-pressed={avis === 'aime'} onClick={() => choisir('aime')}>
+        <Icone nom="coeur" taille={18} /> J’en reveux
+      </button>
+      <button className={`avis__bouton ${avis === 'bof' ? 'avis__bouton--bof' : ''}`} aria-pressed={avis === 'bof'} onClick={() => choisir('bof')}>
+        <Icone nom="bof" taille={18} /> Pas pour moi
+      </button>
+    </div>
   );
 }
 
