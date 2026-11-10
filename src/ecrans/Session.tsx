@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { BASE } from '../app/base';
 import { useMenu, useReglages, useSemaineVue } from '../app/etat';
-import { NOM_EQUIPEMENT } from '../app/presentation';
+import { NOM_EQUIPEMENT, nomCourt } from '../app/presentation';
 import { lien, retour, useRoute } from '../app/routeur';
 import { libelleJour } from '../domain/dates';
 import { detailsRepas, sessionDimanche } from '../domain/regles';
@@ -76,7 +76,7 @@ function Contenu({ menu }: { menu: Menu }) {
                 <span className="timeline__minute">{Math.round(e.debut)}′</span>
                 <span className="timeline__pastille" style={{ background: teinte(e.recetteId) }} aria-hidden="true" />
                 <div>
-                  <p className="kicker">{BASE.parId[e.recetteId].nom}</p>
+                  <p className="kicker">{nomCourt(BASE.parId[e.recetteId])}</p>
                   <p>{e.texte}</p>
                   <p className="etapes__meta">
                     {Math.round(e.fin - e.debut)} min{e.equipement ? ` · ${NOM_EQUIPEMENT[e.equipement]}` : ''}

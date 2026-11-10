@@ -40,9 +40,14 @@ test('semaine → recette → + favoris → remplacer → courses → cocher →
   const premier = page.locator('.article').first();
   const produit = await premier.locator('.article__nom').innerText();
   await premier.locator('.article__case').click();
-  await expect(premier.locator('input[type=checkbox]')).toBeChecked();
+  // l'article coché descend dans « Dans le panier », replié
+  const panier = page.locator('details.panier');
+  await expect(panier.locator('summary')).toContainText('Dans le panier · 1');
+  await expect(page.locator('.article').first().locator('.article__nom')).not.toHaveText(produit);
   await page.reload();
-  await expect(page.locator('.article').first().locator('input[type=checkbox]')).toBeChecked();
+  await panier.locator('summary').click();
+  await expect(panier.locator('.article__nom')).toHaveText([produit]);
+  await expect(panier.locator('input[type=checkbox]')).toBeChecked();
 
   // partager : une ligne par article non coché, total à la fin
   await page.getByRole('button', { name: 'Partager' }).click();
@@ -69,7 +74,7 @@ test('Favoris → mettre un favori dans ma semaine → tout se met à jour → a
 
   // garder une recette express qui n'est pas au menu
   await page.getByRole('link', { name: 'Favoris' }).click();
-  await page.getByRole('button', { name: 'Express' }).click();
+  await page.getByRole('button', { name: 'Express', exact: true }).click();
   const cartes = page.locator('section[aria-labelledby="toute-la-base"] .carte-recette');
   let nom = '';
   for (let i = 0; i < (await cartes.count()); i++) {

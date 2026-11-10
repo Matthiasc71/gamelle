@@ -1020,11 +1020,30 @@ button {
 }
 
 .ingredients li {
+  border-top: 1px dashed var(--filet);
+}
+
+.ingredients__ligne {
+  width: 100%;
+  min-height: 44px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 12px;
   padding: 10px 0;
-  border-top: 1px dashed var(--filet);
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.ingredients__ligne--pret > span:first-child {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--rose);
+  color: var(--encre-douce);
 }
 
 .ingredients li:last-child {
@@ -2696,4 +2715,35 @@ textarea.champ-texte {
     border-radius: 4px;
     padding: 2px 5px;
   }
+}
+
+/* ───────────── Courses : dans le panier ───────────── */
+.panier > summary {
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  list-style: none;
+  font: 700 12px/1 var(--texte);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--encre-douce);
+  border-top: 1px dashed var(--filet-fort);
+}
+.panier > summary::-webkit-details-marker {
+  display: none;
+}
+.panier > summary::after {
+  content: '+';
+  margin-left: auto;
+  font: 700 18px/1 var(--display);
+  color: var(--encre);
+}
+.panier[open] > summary::after {
+  content: '−';
+}
+.courses__fini {
+  margin: 18px 0;
+  font: 400 22px/1.2 var(--serif);
 }

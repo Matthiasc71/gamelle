@@ -69,6 +69,8 @@ Cahier des charges complet : `docs/cahier-des-charges.md`. Maquettes de référe
   Courses : le stock compté exclut les achats cochés de la semaine (sinon les lignes disparaîtraient).
 - Semaine : carte « Ce midi / Ce soir » (repas du moment, rappel « À sortir ce soir » pour le congélateur).
   `#/historique` : semaines passées (Dexie), « Refaire la semaine prochaine » (annulable). Réglages en sections repliées.
+- Courses : les articles cochés descendent dans « Dans le panier » (replié). Fiche : un tap barre un ingrédient prêt (état local).
+  Session : noms courts des plats (`nomCourt`).
 - Mode nuit : préférence `theme` (auto / clair / sombre) → `html[data-theme]`, jetons sombres dans `tokens.css`
   (auto = `prefers-color-scheme`). Les aplats colorés gardent une encre sombre fixe (`--sur-couleur`).
 - Routeur par ancre (`#/recette/<id>?s=<semaine>&c=<créneau>`), `?date=AAAA-MM-JJ` fige la date (démos, captures).

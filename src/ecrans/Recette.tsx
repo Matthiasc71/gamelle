@@ -54,6 +54,14 @@ function FicheRecette({ r, semaine: semaineParam, creneau }: { r: TRecette; sema
   const [portions, setPortions] = useState(ici?.parts ?? r.portions_base);
   const facteur = portions / r.portions_base;
   const [remplacer, setRemplacer] = useState(false);
+  const [prets, setPrets] = useState<Set<string>>(() => new Set());
+  const basculerPret = (cle: string) =>
+    setPrets((x) => {
+      const n = new Set(x);
+      if (n.has(cle)) n.delete(cle);
+      else n.add(cle);
+      return n;
+    });
   const garde = favoris?.has(r.id) ?? false;
   const n = r.nutrition_par_part;
 
@@ -154,17 +162,26 @@ function FicheRecette({ r, semaine: semaineParam, creneau }: { r: TRecette; sema
           <ul className="ingredients">
             {r.ingredients.map((ing) => {
               const c = coutIngredient(ing, facteur, prixCorriges);
+              const cle = ing.ingredient + ing.nom_affiche;
               return (
-                <li key={ing.ingredient + ing.nom_affiche}>
-                  <span>
-                    <strong>{quantite(ing, facteur)}</strong> {ing.nom_affiche}
-                    {ing.optionnel && <em> (facultatif)</em>}
-                  </span>
-                  <span className="ingredients__prix">{c === null ? '—' : euros(c)}</span>
+                <li key={cle}>
+                  <button
+                    type="button"
+                    className={`ingredients__ligne ${prets.has(cle) ? 'ingredients__ligne--pret' : ''}`}
+                    aria-pressed={prets.has(cle)}
+                    onClick={() => basculerPret(cle)}
+                  >
+                    <span>
+                      <strong>{quantite(ing, facteur)}</strong> {ing.nom_affiche}
+                      {ing.optionnel && <em> (facultatif)</em>}
+                    </span>
+                    <span className="ingredients__prix">{c === null ? '—' : euros(c)}</span>
+                  </button>
                 </li>
               );
             })}
           </ul>
+          <p className="texte-doux petit">Touche un ingrédient pour le barrer quand il est prêt.</p>
         </section>
 
         <section aria-labelledby="etapes">

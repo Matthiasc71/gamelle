@@ -107,22 +107,49 @@ function Liste({ menu }: { menu: Menu }) {
         <p className="note">Menu modifié : les articles non cochés sont à racheter.</p>
       )}
 
-      {liste.parRayon.map((g) => (
-        <section key={g.rayon} aria-labelledby={`rayon-${g.rayon}`}>
-          <Rubrique id={`rayon-${g.rayon}`}>{NOMS_RAYONS[g.rayon]}</Rubrique>
+      {liste.parRayon.map((g) => {
+        const restants = g.lignes.filter((l) => !coches.has(l.ingredient));
+        if (!restants.length) return null;
+        return (
+          <section key={g.rayon} aria-labelledby={`rayon-${g.rayon}`}>
+            <Rubrique id={`rayon-${g.rayon}`}>{NOMS_RAYONS[g.rayon]}</Rubrique>
+            <ul className="lignes-courses">
+              {restants.map((l) => (
+                <LigneArticle
+                  key={l.ingredient}
+                  l={l}
+                  coche={false}
+                  basculer={(v) => cocher(menu.semaine, l.ingredient, l.paquets * BASE.prix[l.ingredient].conditionnement.quantite, v)}
+                  ouvrir={() => setDetail(l)}
+                />
+              ))}
+            </ul>
+          </section>
+        );
+      })}
+
+      {aAcheter.length > 0 && aAcheter.every((l) => coches.has(l.ingredient)) && (
+        <p className="courses__fini">Tout est dans le panier.</p>
+      )}
+
+      {aAcheter.some((l) => coches.has(l.ingredient)) && (
+        <details className="panier">
+          <summary>Dans le panier · {aAcheter.filter((l) => coches.has(l.ingredient)).length}</summary>
           <ul className="lignes-courses">
-            {g.lignes.map((l) => (
-              <LigneArticle
-                key={l.ingredient}
-                l={l}
-                coche={coches.has(l.ingredient)}
-                basculer={(v) => cocher(menu.semaine, l.ingredient, l.paquets * BASE.prix[l.ingredient].conditionnement.quantite, v)}
-                ouvrir={() => setDetail(l)}
-              />
-            ))}
+            {aAcheter
+              .filter((l) => coches.has(l.ingredient))
+              .map((l) => (
+                <LigneArticle
+                  key={l.ingredient}
+                  l={l}
+                  coche
+                  basculer={(v) => cocher(menu.semaine, l.ingredient, l.paquets * BASE.prix[l.ingredient].conditionnement.quantite, v)}
+                  ouvrir={() => setDetail(l)}
+                />
+              ))}
           </ul>
-        </section>
-      ))}
+        </details>
+      )}
 
       {aUtiliser.length > 0 && (
         <section aria-labelledby="a-utiliser">
