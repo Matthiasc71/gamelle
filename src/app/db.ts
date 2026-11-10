@@ -8,7 +8,9 @@
  * - evenements : journal du frigo (achats, cuisine, repas mangés, corrections) ;
  * - prix : prix de paquet corrigés à la main ;
  * - echanges : historique des échanges et remplacements (pour « Annuler ») ;
- * - mesRecettes : recettes ajoutées à la main (calculées sur le téléphone).
+ * - mesRecettes : recettes ajoutées à la main (calculées sur le téléphone) ;
+ * - avis : « j'en reveux » / « pas pour moi » sur une recette (pèse sur les prochains menus) ;
+ * - tickets : total payé en caisse, saisi à la main, et estimation de l'app à ce moment-là.
  */
 import Dexie, { type Table } from 'dexie';
 import type { Evenement } from '../domain/frigo';
@@ -39,6 +41,8 @@ export type EvenementStocke = {
 export type Coche = { cle: string; semaine: string; ingredient: string };
 export type Favori = { id: string; ajoute_le: string };
 export type PrixCorrige = { ingredient: string; prix: number };
+export type Avis = { id: string; avis: 'aime' | 'bof'; quand: string };
+export type Ticket = { semaine: string; paye: number; estime: number; quand: string };
 export type Echange = { id?: number; semaine: string; quand: string; libelle: string; avant: Menu; apres: Menu };
 
 class GamelleDB extends Dexie {
@@ -50,6 +54,8 @@ class GamelleDB extends Dexie {
   prix!: Table<PrixCorrige, string>;
   echanges!: Table<Echange, number>;
   mesRecettes!: Table<Recette, string>;
+  avis!: Table<Avis, string>;
+  tickets!: Table<Ticket, string>;
 
   constructor() {
     super('gamelle');
@@ -63,12 +69,13 @@ class GamelleDB extends Dexie {
       echanges: '++id, semaine',
     });
     this.version(2).stores({ mesRecettes: 'id' });
+    this.version(3).stores({ avis: 'id', tickets: 'semaine' });
   }
 }
 
 export const db = new GamelleDB();
 
-export const TABLES = ['kv', 'favoris', 'menus', 'coches', 'evenements', 'prix', 'echanges', 'mesRecettes'] as const;
+export const TABLES = ['kv', 'favoris', 'menus', 'coches', 'evenements', 'prix', 'echanges', 'mesRecettes', 'avis', 'tickets'] as const;
 
 /** Sauvegarde complète en JSON (Réglages → Exporter). */
 export async function exporter(): Promise<string> {

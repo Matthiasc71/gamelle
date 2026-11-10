@@ -19,6 +19,8 @@ export type ContexteMenu = {
   stock?: Stock;
   prixCorriges?: Record<string, number>;
   favoris?: string[];
+  /** Avis sur les recettes : « aime » revient plus souvent, « bof » n'est plus proposé. */
+  avis?: Record<string, 'aime' | 'bof'>;
 };
 
 export type StatutRepas = 'cuisine' | 'boite' | 'congele' | 'express' | 'assemblage';

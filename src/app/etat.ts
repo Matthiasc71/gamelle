@@ -7,7 +7,7 @@ import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { ajouterJours, aujourdhuiLocal, lundiDeSemaine, semaineIso, semaineSuivante, semainesVisibles } from '../domain/dates';
 import { evenementCuisson, FRIGO_VIDE, rejouer, stockDisponible, type EtatFrigo, type Evenement } from '../domain/frigo';
 import { genererMenu, recettesDuMenu, type ParamsGeneration } from '../domain/planner';
-import type { ContexteMenu } from '../domain/regles';
+import { coutsMenu, type ContexteMenu } from '../domain/regles';
 import { empreinte } from '../domain/rng';
 import { REGLAGES_DEFAUT, type Cuisson, type Menu, type Reglages } from '../domain/types';
 import { BASE, estPerso } from './base';
@@ -69,6 +69,35 @@ export async function basculerFavori(id: string): Promise<boolean> {
   }
   await db.favoris.put({ id, ajoute_le: new Date().toISOString() });
   return true;
+}
+
+export function useAvis(): Record<string, 'aime' | 'bof'> | undefined {
+  return useLiveQuery(async () => Object.fromEntries((await db.avis.toArray()).map((a) => [a.id, a.avis])), []);
+}
+
+/** Donne (ou retire, si c'est le même) un avis sur une recette. */
+export async function donnerAvis(id: string, avis: 'aime' | 'bof'): Promise<'aime' | 'bof' | null> {
+  const avant = await db.avis.get(id);
+  if (avant?.avis === avis) {
+    await db.avis.delete(id);
+    return null;
+  }
+  await db.avis.put({ id, avis, quand: new Date().toISOString() });
+  return avis;
+}
+
+/** Tickets de caisse saisis : écart moyen entre ce que l'app estimait et ce qui a été payé. */
+export function useTickets() {
+  return useLiveQuery(async () => {
+    const tous = await db.tickets.toArray();
+    const ok = tous.filter((t) => t.estime > 0 && t.paye > 0);
+    const ratio = ok.length ? ok.reduce((s, t) => s + t.paye / t.estime, 0) / ok.length : null;
+    return { tous, ratio: ratio && ratio > 0.5 && ratio < 1.5 ? ratio : null };
+  }, []);
+}
+
+export async function enregistrerTicket(semaine: string, paye: number, estime: number) {
+  await db.tickets.put({ semaine, paye, estime, quand: new Date().toISOString() });
 }
 
 export function usePrixCorriges(): Record<string, number> | undefined {
@@ -214,11 +243,12 @@ async function historiqueAvant(semaine: string, n: number): Promise<string[][]> 
 
 /** Contexte complet du moteur pour une semaine (stock, historique, favoris, prix corrigés). */
 export async function contexteMenu(semaine: string, reglages: Reglages): Promise<ContexteMenu> {
-  const [evs, historique, favoris, prix] = await Promise.all([
+  const [evs, historique, favoris, prix, avis] = await Promise.all([
     db.evenements.orderBy('id').toArray(),
     historiqueAvant(semaine, reglages.historiqueSemaines),
     db.favoris.toArray(),
     db.prix.toArray(),
+    db.avis.toArray(),
   ]);
   return {
     base: BASE,
@@ -227,6 +257,7 @@ export async function contexteMenu(semaine: string, reglages: Reglages): Promise
     stock: stockPourCourses(evs, semaine),
     favoris: favoris.map((f) => f.id),
     prixCorriges: Object.fromEntries(prix.map((p) => [p.ingredient, p.prix])),
+    avis: Object.fromEntries(avis.map((a) => [a.id, a.avis])),
   };
 }
 
@@ -276,11 +307,12 @@ export function useContexte(semaine: string, reglages?: Reglages): ContexteMenu 
   const evs = useEvenements();
   const prix = usePrixCorriges();
   const favoris = useFavoris();
+  const avis = useAvis();
   const historique = useLiveQuery(async () => (reglages ? historiqueAvant(semaine, reglages.historiqueSemaines) : undefined), [semaine, reglages?.historiqueSemaines]);
   return useMemo(() => {
-    if (!reglages || !evs || !prix || !favoris || !historique) return undefined;
-    return { base: BASE, reglages, historique, stock: stockPourCourses(evs, semaine), prixCorriges: prix, favoris: [...favoris] };
-  }, [reglages, evs, prix, favoris, historique, semaine]);
+    if (!reglages || !evs || !prix || !favoris || !historique || !avis) return undefined;
+    return { base: BASE, reglages, historique, stock: stockPourCourses(evs, semaine), prixCorriges: prix, favoris: [...favoris], avis };
+  }, [reglages, evs, prix, favoris, historique, semaine, avis]);
 }
 
 /** Applique un nouveau menu (échange, remplacement) et l'inscrit dans l'historique pour « Annuler ». */
@@ -301,6 +333,25 @@ export async function annulerEchange(id: number) {
     await db.menus.put({ ...m!, menu: e.avant, modifie: autres > 1 });
     await db.echanges.delete(id);
   });
+}
+
+/**
+ * Refait le menu d'une semaine en visant un budget précis (sans toucher aux réglages des autres semaines).
+ * Le menu obtenu est marqué « modifié » et reste annulable.
+ */
+export async function viserBudget(semaine: string, reglages: Reglages, vise: number): Promise<{ menu: Menu; cout: number; avant: number | null; garde: boolean }> {
+  const avant = await db.menus.get(semaine);
+  const r: Reglages = { ...reglages, budgetCible: vise, budget: [Math.min(reglages.budget[0], vise), vise] };
+  const ctx = await contexteMenu(semaine, r);
+  const { base: _b, ...params } = ctx;
+  const menu = await calculer({ ...params, semaine, essais: 500 });
+  const cout = coutsMenu(menu, ctx).totalCaisse;
+  const coutAvant = avant ? coutsMenu(avant.menu, ctx).totalCaisse : null;
+  // la recherche est aléatoire : on ne remplace jamais un menu par un plus cher
+  if (avant && coutAvant !== null && cout >= coutAvant - 0.01) return { menu: avant.menu, cout: coutAvant, avant: coutAvant, garde: true };
+  if (avant) await appliquerMenu(avant.menu, menu, `Menu refait pour viser ${vise} €`);
+  else await db.menus.put({ semaine, menu, cle: cleReglages(reglages), modifie: true, genere_le: new Date().toISOString() });
+  return { menu, cout, avant: coutAvant, garde: false };
 }
 
 /** Régénère un menu de zéro (le menu actuel reste annulable). */

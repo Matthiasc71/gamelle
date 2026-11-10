@@ -95,7 +95,7 @@ function poids(r: Recette, ctx: ContexteMenu, prevus: Set<string>): number {
   const enStock = ings.filter((i) => (stock[i] ?? 0) > 0).length;
   const partages = ings.filter((i) => prevus.has(i)).length;
   const nouveaux = ings.length - partages - enStock;
-  const favori = ctx.reglages.favorisInclus && ctx.favoris?.includes(r.id) ? 3 : 1;
+  const favori = (ctx.reglages.favorisInclus && ctx.favoris?.includes(r.id) ? 3 : 1) * (ctx.avis?.[r.id] === 'aime' ? 2 : 1);
   return (favori * (1 + 0.5 * enStock) * (1 + 1.2 * partages)) / ((0.5 + r.cout_par_part_eur) ** 2 * (1 + 0.2 * Math.max(0, nouveaux)));
 }
 
@@ -196,7 +196,8 @@ export function genererMenu(p: ParamsGeneration): Menu {
       r.equipement.every((e) => g.equipement.includes(e)) &&
       !r.ingredients.some((i) => !i.optionnel && g.exclus.includes(i.ingredient)) &&
       r.nutrition_par_part.kcal >= g.kcalRepas[0] && r.nutrition_par_part.kcal <= g.kcalRepas[1] &&
-      r.nutrition_par_part.proteines_g >= g.protRepasMin,
+      r.nutrition_par_part.proteines_g >= g.protRepasMin &&
+      p.avis?.[r.id] !== 'bof',
   );
 
   let meilleur = null as Resultat | null;

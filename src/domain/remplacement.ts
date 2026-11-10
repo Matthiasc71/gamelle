@@ -86,6 +86,7 @@ export function alternatives(menu: Menu, creneau: number, ctx: ContexteMenu, n =
       r.creneaux.includes(moment) &&
       Math.abs(r.nutrition_par_part.kcal - kcal0) <= kcal0 * 0.1 &&
       r.equipement.every((e) => ctx.reglages.equipement.includes(e)) &&
+      ctx.avis?.[r.id] !== 'bof' &&
       !r.ingredients.some((i) => !i.optionnel && ctx.reglages.exclus.includes(i.ingredient)),
   );
   const notes = candidats.map((r) => {

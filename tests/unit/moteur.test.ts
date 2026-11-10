@@ -64,6 +64,14 @@ describe('générateur de menu', () => {
     for (const r of m2.repas) expect(base.parId[r.recetteId].ingredients.map((i) => i.ingredient)).not.toContain('poulet-filet');
   });
 
+  it('n’écarte plus une recette « pas pour moi » et garde les autres règles', () => {
+    const ids = [...new Set(menu.repas.map((r) => r.recetteId))];
+    const avis = Object.fromEntries(ids.map((id) => [id, 'bof' as const]));
+    const m = genererMenu({ ...ctx, avis, semaine: SEMAINE });
+    structureOk(m);
+    for (const r of m.repas) expect(ids).not.toContain(r.recetteId);
+  });
+
   it('écarte les recettes des 3 dernières semaines quand la base le permet, et le dit sinon', () => {
     const historique = [menu.repas.map((r) => r.recetteId)];
     const m = genererMenu({ ...ctx, historique, semaine: '2026-W48' });
