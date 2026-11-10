@@ -1,0 +1,136 @@
+{
+  "id": "tagliatelles-poireaux-carbonara",
+  "slug": "tagliatelles-poireaux-carbonara",
+  "nom": "Tagliatelles de poireaux façon carbonara",
+  "resume": "Des lanières de poireau à la place des pâtes, avec lardons, œufs et parmesan.",
+  "type": "express",
+  "portions_base": 2,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 8,
+    "cuisson_min": 12,
+    "total_min": 20,
+    "actif_min": 20
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cuisine": "italienne",
+  "proteine_principale": "porc",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "pates",
+  "ingredients": [
+    {
+      "ingredient": "poireau",
+      "nom_affiche": "blancs de poireaux",
+      "quantite": 3,
+      "unite": "pièce",
+      "poids_g": 450,
+      "optionnel": false,
+      "mesure_affichee": "3 blancs",
+      "ciqual_code": "20039",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lardons",
+      "nom_affiche": "lardons",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "28502",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "parmesan",
+      "nom_affiche": "parmesan râpé",
+      "quantite": 80,
+      "unite": "g",
+      "poids_g": 80,
+      "optionnel": false,
+      "ciqual_code": "12120",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oeuf",
+      "nom_affiche": "œufs",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 110,
+      "optionnel": false,
+      "mesure_affichee": "2 œufs",
+      "ciqual_code": "22000",
+      "rayon": "frais",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Coupe les blancs de poireaux en tronçons, puis en fines lanières dans la longueur, comme des tagliatelles. Lave-les.",
+      "duree_min": 6,
+      "actif": true
+    },
+    {
+      "texte": "Fais dorer les lardons à sec dans une grande poêle, puis ajoute les lanières de poireau et laisse-les fondre 8 minutes en remuant.",
+      "duree_min": 10,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Bats les œufs avec le parmesan et du poivre. Hors du feu, verse sur les poireaux et mélange vite pour napper sans cuire les œufs.",
+      "duree_min": 3,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@jow_france/video/7596975348290440470",
+      "titre": "Tagliatelles de poireaux façon carbonara",
+      "auteur": "@jow_france",
+      "verifie_le": "2026-11-10",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@jow_france",
+        "title": "On a LA recette pour vous faire manger plus de poireaux ! Ces tagliatelles façon carbonara. ✨ 💡N’hésitez pas à couper les poireaux en deux p",
+        "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-no1a-p-0037-no/o4DFIIEDANfL12wAwS8bEGoQXAFZArA2XeFeRA~tplv-tiktokx-origin.image?dr=9636&x-expires=1794477600&x-signature=4HxkcZkevLswHzjkSgPnDO1jX18%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      }
+    }
+  ],
+  "adaptation": "Étapes reformulées d'après la vidéo ; la recette complète est dans l'application Jow.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 461,
+    "proteines_g": 30.7,
+    "glucides_g": 11.1,
+    "lipides_g": 31.5,
+    "fibres_g": 4.6,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.54,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-10. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

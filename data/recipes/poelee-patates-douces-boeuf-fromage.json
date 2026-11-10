@@ -1,0 +1,172 @@
+{
+  "id": "poelee-patates-douces-boeuf-fromage",
+  "slug": "poelee-patates-douces-boeuf-fromage",
+  "nom": "Poêlée de patates douces et bœuf haché au fromage",
+  "resume": "Bœuf haché, oignon et dés de patate douce cuits à couvert dans la même poêle, avec de la mozzarella fondue.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 15,
+    "cuisson_min": 20,
+    "total_min": 35,
+    "actif_min": 20
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "cuisine": "française",
+  "proteine_principale": "boeuf",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "poelee",
+  "ingredients": [
+    {
+      "ingredient": "boeuf-hache-5",
+      "nom_affiche": "bœuf haché",
+      "quantite": 500,
+      "unite": "g",
+      "poids_g": 500,
+      "optionnel": false,
+      "ciqual_code": "6250",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "patate-douce",
+      "nom_affiche": "patates douces",
+      "quantite": 600,
+      "unite": "g",
+      "poids_g": 600,
+      "optionnel": false,
+      "ciqual_code": "4101",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "mozzarella",
+      "nom_affiche": "mozzarella râpée",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "19590",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 13.7,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "paprika",
+      "nom_affiche": "paprika fumé",
+      "quantite": 2,
+      "unite": "g",
+      "poids_g": 2,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11049",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail-poudre",
+      "nom_affiche": "ail en poudre",
+      "quantite": 1,
+      "unite": "g",
+      "poids_g": 1,
+      "optionnel": false,
+      "mesure_affichee": "½ c. à café",
+      "ciqual_code": "11023",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Pèle les patates douces et taille-les en cubes d'1 cm. Émince l'oignon.",
+      "duree_min": 10,
+      "actif": true
+    },
+    {
+      "texte": "Fais fondre l'oignon dans l'huile, puis ajoute le bœuf haché et laisse-le dorer 5 minutes. Assaisonne avec paprika, ail, sel et poivre.",
+      "duree_min": 7,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Ajoute les patates douces et 12 cl d'eau, couvre et laisse cuire environ 15 minutes jusqu'à ce qu'elles soient tendres (ajoute un peu d'eau si besoin).",
+      "duree_min": 15,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 900
+    },
+    {
+      "texte": "Rectifie l'assaisonnement, parsème de mozzarella et laisse fondre avant de servir ou de mettre en boîtes.",
+      "duree_min": 2,
+      "actif": true,
+      "equipement": "plaques"
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/one-pot-de-patates-douces-et-viande-hachee-au-fromage-une-recette-rapide-et-delicieuse/",
+      "titre": "Poêlée de patates douces et viande hachée au fromage",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-10"
+    }
+  ],
+  "adaptation": "Fèves surgelées (facultatives dans la source) non comptées. « Viande hachée » comptée en bœuf haché 5 % ; paprika et ail « à votre goût » comptés 2 g et 1 g (estimation).",
+  "kcal_annoncees_par_part": 407,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 384,
+    "proteines_g": 34.3,
+    "glucides_g": 28,
+    "lipides_g": 13.9,
+    "fibres_g": 5.1,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.81,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-10. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

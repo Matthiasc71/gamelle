@@ -1,4 +1,4 @@
-# Nutrition recalculée avec Ciqual 2025 (2026-11-09)
+# Nutrition recalculée avec Ciqual 2025 (2026-11-10)
 
 Source : Anses. Table de composition nutritionnelle des aliments Ciqual 2025 (doi:10.57745/RDMHWY).
 Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15 %.
@@ -26,6 +26,7 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 - **salade-riz-mais-thon-poivron** : la source annonce 424 kcal/part, Ciqual donne 573 (écart 26 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
 - **salade-saumon-mais-tomate** : la source annonce 425 kcal/part, Ciqual donne 514 (écart 17 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
 - **sandwich-poulet-laitue-tomate-sechee** : la source annonce 555 kcal/part, Ciqual donne 419 (écart 32 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
+- **soupe-pois-casses-chorizo-oeuf** : la source annonce 386 kcal/part, Ciqual donne 608 (écart 37 %). Vérifié : Quantités relevées dans la source le 2026-11-10. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
 - **tuna-bowl** : la source annonce 413 kcal/part, Ciqual donne 500 (écart 17 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
 
 ## Détail
@@ -40,6 +41,7 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 | bowl-pois-chiches-champignons-oeuf | 1 | 535 | 23 | 66 | 17.7 | 8 | 481 (10 %) |
 | bowl-poulet-quinoa-tzatziki | 1 | 634 | 51.7 | 50.5 | 22.4 | 8.1 | 516 (19 %) |
 | burritos-boeuf-mais | 4 | 410 | 28.5 | 41.5 | 13.5 | 4.5 | 430 (5 %) |
+| butter-chicken-express | 2 | 534 | 34.9 | 27.9 | 29.8 | 4.3 | — |
 | butternut-gorgonzola-lentilles-quinoa | 3 | 646 | 26.5 | 57.5 | 30.5 | 16.4 | 418 (35 %) |
 | chakchouka-feta | 2 | 481 | 25.1 | 37.8 | 23.5 | 9.8 | — |
 | chili-con-carne | 4 | 586 | 44 | 72.9 | 10.1 | 14.1 | — |
@@ -47,6 +49,7 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 | curry-boeuf-hache | 4 | 553 | 42.9 | 64.6 | 12 | 6.7 | — |
 | curry-brocoli-lentilles-corail | 3 | 452 | 25.6 | 42.2 | 15.4 | 19.4 | — |
 | curry-cabillaud-potimarron-riz | 3 | 601 | 33.1 | 65.9 | 21 | 8.2 | 535 (11 %) |
+| curry-legumes-hiver | 4 | 585 | 22.4 | 78.1 | 14.7 | 23 | 528 (10 %) |
 | dahl-lentilles-corail-epinards | 4 | 597 | 26.3 | 47.3 | 29.5 | 17.5 | 378 (37 %) |
 | dahl-lentilles-vertes-patate-douce | 3 | 580 | 21.6 | 60.6 | 24 | 17.9 | — |
 | enchiladas-boeuf-poivrons | 4 | 543 | 34.4 | 57.7 | 17.8 | 9.6 | 431 (21 %) |
@@ -59,6 +62,7 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 | gratin-aubergines-ricotta | 4 | 479 | 23.7 | 17.5 | 32.2 | 11.4 | 438 (9 %) |
 | gratin-dinde-legumes-jaunes | 4 | 580 | 48.6 | 57.6 | 15.1 | 9.1 | — |
 | gratin-dinde-patates-douces | 3 | 455 | 42.9 | 26.9 | 18.3 | 5 | — |
+| gratin-pates-chili | 4 | 612 | 40.7 | 69.2 | 16.9 | 8.5 | 576 (6 %) |
 | gratin-pates-thon | 4 | 531 | 37.1 | 63.8 | 12.9 | 4.8 | 432 (19 %) |
 | gratin-pdt-brocoli-chorizo | 4 | 646 | 22.9 | 37.6 | 42.2 | 7.3 | 313 (52 %) |
 | gratin-pdt-carottes-bacon | 3 | 636 | 31.1 | 49.2 | 32.9 | 9.2 | — |
@@ -78,6 +82,7 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 | pates-tomates-crevettes | 1 | 531 | 33.8 | 77.7 | 7.4 | 6 | 457 (14 %) |
 | penne-thon-aubergines | 4 | 589 | 28.7 | 79.3 | 15.1 | 8.2 | 486 (17 %) |
 | poelee-haricots-blancs-toscane | 3 | 465 | 22.3 | 24.6 | 27.7 | 14.4 | — |
+| poelee-patates-douces-boeuf-fromage | 4 | 384 | 34.3 | 28 | 13.9 | 5.1 | 407 (6 %) |
 | poelee-pois-chiches-oeuf | 1 | 580 | 26.7 | 54.9 | 24.9 | 13.5 | — |
 | porc-caramelise-oignons | 4 | 455 | 31.2 | 59.6 | 9.3 | 2.8 | 532 (17 %) |
 | poulet-creme-epinards-tomates-sechees | 4 | 406 | 37.8 | 8.3 | 23.4 | 4.1 | — |
@@ -115,7 +120,9 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 | sandwich-thon-joe | 1 | 523 | 40.6 | 34.6 | 22.2 | 9.5 | — |
 | sandwich-thon-oeufs-crudites | 2 | 501 | 29.3 | 43.2 | 22.1 | 4.9 | — |
 | soupe-lentilles-corail | 4 | 410 | 29.7 | 54.7 | 3.9 | 19.3 | — |
+| soupe-pois-casses-chorizo-oeuf | 4 | 608 | 35.6 | 37.1 | 30.9 | 18 | 386 (37 %) |
 | spaghettis-tomates-olives-feta | 4 | 616 | 20.8 | 77.5 | 22.9 | 6.2 | — |
+| tagliatelles-poireaux-carbonara | 2 | 461 | 30.7 | 11.1 | 31.5 | 4.6 | — |
 | tagliatelles-poulet-champignons | 1 | 531 | 46.3 | 54.5 | 12.5 | 3.7 | 534 (1 %) |
 | tartine-thon-radis-concombre | 1 | 388 | 24.1 | 24.3 | 20.8 | 3.1 | 383 (1 %) |
 | tartines-oeufs-mollets-dinde-comte | 1 | 482 | 37.4 | 31.8 | 21.2 | 5.8 | — |

@@ -1,0 +1,266 @@
+{
+  "id": "curry-legumes-hiver",
+  "slug": "curry-legumes-hiver",
+  "nom": "Curry de légumes d'hiver, pois chiches et boulgour",
+  "resume": "Courge, navets, carottes et brocoli mijotés au lait de coco avec pois chiches et lentilles corail, servis sur du boulgour.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 20,
+    "cuisson_min": 25,
+    "total_min": 45,
+    "actif_min": 25
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "cuisine": "indienne",
+  "proteine_principale": "legumineuses",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "curry-bol",
+  "ingredients": [
+    {
+      "ingredient": "butternut",
+      "nom_affiche": "courge (chair)",
+      "quantite": 600,
+      "unite": "g",
+      "poids_g": 600,
+      "optionnel": false,
+      "mesure_affichee": "600 g de chair (environ ¾ de butternut)",
+      "ciqual_code": "20138",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "navet",
+      "nom_affiche": "navets",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "20064",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "carotte",
+      "nom_affiche": "carottes",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 200,
+      "optionnel": false,
+      "mesure_affichee": "2 carottes",
+      "ciqual_code": "20009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "brocoli",
+      "nom_affiche": "brocoli",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "20057",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pois-chiches",
+      "nom_affiche": "pois chiches égouttés",
+      "quantite": 250,
+      "unite": "g",
+      "poids_g": 250,
+      "optionnel": false,
+      "mesure_affichee": "1 boîte",
+      "ciqual_code": "20532",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "lentilles-corail",
+      "nom_affiche": "lentilles corail",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "20535",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lait-coco",
+      "nom_affiche": "lait de coco",
+      "quantite": 200,
+      "unite": "ml",
+      "poids_g": 200,
+      "optionnel": false,
+      "mesure_affichee": "20 cl",
+      "ciqual_code": "18041",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignons",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "2 gousses",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "curry",
+      "nom_affiche": "curry en poudre",
+      "quantite": 6,
+      "unite": "g",
+      "poids_g": 6,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11005",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "curcuma",
+      "nom_affiche": "curcuma",
+      "quantite": 6,
+      "unite": "g",
+      "poids_g": 6,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11089",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "boulgour",
+      "nom_affiche": "boulgour",
+      "quantite": 240,
+      "unite": "g",
+      "poids_g": 240,
+      "optionnel": false,
+      "ciqual_code": "9690",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Épluche et émince les oignons et l'ail. Épluche les légumes : carottes en rondelles, courge et navets en cubes, brocoli en petits bouquets.",
+      "duree_min": 15,
+      "actif": true
+    },
+    {
+      "texte": "Dans une cocotte, fais revenir oignons et ail 2 minutes dans l'huile, puis ajoute curry, curcuma, sel et poivre.",
+      "duree_min": 3,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Ajoute tous les légumes et laisse-les prendre couleur 2 minutes en remuant.",
+      "duree_min": 2,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Verse les pois chiches égouttés, les lentilles corail, le lait de coco et 20 cl d'eau. Couvre et laisse mijoter 20 minutes.",
+      "duree_min": 20,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 1200
+    },
+    {
+      "texte": "Pendant la cuisson, prépare le boulgour comme indiqué sur le paquet sur le second feu.",
+      "duree_min": 12,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Répartis le curry et le boulgour dans 4 boîtes.",
+      "duree_min": 3,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/curry-de-legumes-dhiver/",
+      "titre": "Curry de légumes d'hiver",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-10"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/DUGQZhPDcln/",
+      "titre": "Menu de batch cooking – Hiver #7",
+      "auteur": "@cuisineaddict",
+      "verifie_le": "2026-11-10",
+      "quantites_depuis": "article-meme-createur",
+      "oembed": {
+        "author_name": "@cuisineaddict",
+        "title": "☃️ Menu de batch cooking – Hiver #7 ☃️",
+        "thumbnail_url": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/624727512_18553975117050969_3771659722537109871_n.heic?stp=dst-jpg_e35_sh2.08_tt6&_nc_cat=102&ig_cache_key=MzgyMDgxMjg4NzA2MTc2NzU3MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=TI9rlFaj9NAQ7kNvwGfaM8b&_nc_oc=AdpH86WXwi5FS_v0iVUU2G64h6DRtUZIRc3YQ3cxcQLhPiBjp4a5eupubpKDJucOAWI&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_gid=HgTM8fN030DjTxBHYY_ddw&_nc_ss=7c689&oh=00_AQRkCFm7_4TcdczxqP3O1LvhxYWiEWxxpmoEa_yX3hxrkA&oe=6AF8A946"
+      }
+    }
+  ],
+  "adaptation": "Huile de coco remplacée par de l'huile d'olive. La source indique « cuillère à soupe » de curcuma sans nombre : comptée 1 (estimation).",
+  "kcal_annoncees_par_part": 528,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 585,
+    "proteines_g": 22.4,
+    "glucides_g": 78.1,
+    "lipides_g": 14.7,
+    "fibres_g": 23,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.02,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-10. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

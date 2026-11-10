@@ -1,0 +1,192 @@
+{
+  "id": "butter-chicken-express",
+  "slug": "butter-chicken-express",
+  "nom": "Butter chicken express et riz",
+  "resume": "Escalopes de poulet au paprika et curcuma dans une sauce tomate, beurre et yaourt grec, avec du riz.",
+  "type": "express",
+  "portions_base": 2,
+  "conservation": {
+    "frigo_jours": 2,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 15,
+    "total_min": 20,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques",
+    "rice-cooker"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "indienne",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "curry-bol",
+  "ingredients": [
+    {
+      "ingredient": "riz-basmati",
+      "nom_affiche": "riz",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "mesure_affichee": "140 g de riz cuit (environ 50 g cru)",
+      "ciqual_code": "9119",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "escalopes de poulet",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 260,
+      "optionnel": false,
+      "mesure_affichee": "2 escalopes (260 g)",
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "paprika",
+      "nom_affiche": "paprika",
+      "quantite": 6,
+      "unite": "g",
+      "poids_g": 6,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11049",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "curcuma",
+      "nom_affiche": "curcuma",
+      "quantite": 2,
+      "unite": "g",
+      "poids_g": 2,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11089",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "yaourt-grec",
+      "nom_affiche": "yaourt à la grecque",
+      "quantite": 45,
+      "unite": "g",
+      "poids_g": 45,
+      "optionnel": false,
+      "mesure_affichee": "3 c. à soupe",
+      "ciqual_code": "19860",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomates-concassees",
+      "nom_affiche": "tomates concassées",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "mesure_affichee": "½ boîte",
+      "ciqual_code": "20137",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "beurre",
+      "nom_affiche": "beurre",
+      "quantite": 60,
+      "unite": "g",
+      "poids_g": 60,
+      "optionnel": false,
+      "ciqual_code": "16400",
+      "rayon": "frais",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Lance le riz au rice cooker. Émince l'oignon et coupe le poulet en morceaux.",
+      "duree_min": 5,
+      "actif": true,
+      "equipement": "rice-cooker"
+    },
+    {
+      "texte": "Fais fondre le beurre dans une sauteuse, fais-y dorer l'oignon puis le poulet avec le paprika et le curcuma.",
+      "duree_min": 7,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Ajoute les tomates, laisse mijoter 5 minutes, puis hors du feu incorpore le yaourt grec. Sers avec le riz.",
+      "duree_min": 7,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 300
+    }
+  ],
+  "sources": [
+    {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@jow_france/video/7615294573358746902",
+      "titre": "Le butter chicken & riz des soirs de flemme",
+      "auteur": "@jow_france",
+      "verifie_le": "2026-11-10",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@jow_france",
+        "title": "LA recette des soirs de flemme, c'est le butter chicken & riz ! ➡️ À retrouver sur l'application Jow. Ingrédients pour 2 portions : - 140g d",
+        "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-no1a-p-0037-no/o0IdWeCBmIQAJAWK6KuLdFvIQmGA2EAtjAenfe~tplv-tiktokx-origin.image?dr=9636&x-expires=1794477600&x-signature=wozms1PkFeHzouMfOg9ZUAjAREc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      }
+    }
+  ],
+  "adaptation": "La légende donne 140 g de riz cuit : compté 50 g de riz cru (le riz triple environ de poids à la cuisson, estimation). Escalope comptée 130 g (estimation).",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 534,
+    "proteines_g": 34.9,
+    "glucides_g": 27.9,
+    "lipides_g": 29.8,
+    "fibres_g": 4.3,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.83,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-10. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

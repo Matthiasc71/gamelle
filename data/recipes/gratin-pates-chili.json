@@ -1,0 +1,203 @@
+{
+  "id": "gratin-pates-chili",
+  "slug": "gratin-pates-chili",
+  "nom": "Gratin de pâtes façon chili con carne",
+  "resume": "Penne, bœuf haché, haricots rouges, maïs et tomates, gratinés au fromage râpé.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 2,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 15,
+    "cuisson_min": 25,
+    "total_min": 40,
+    "actif_min": 20
+  },
+  "equipement": [
+    "plaques",
+    "four"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "tex-mex",
+  "proteine_principale": "boeuf",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "gratin",
+  "ingredients": [
+    {
+      "ingredient": "boeuf-hache-5",
+      "nom_affiche": "bœuf haché",
+      "quantite": 350,
+      "unite": "g",
+      "poids_g": 350,
+      "optionnel": false,
+      "ciqual_code": "6250",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomates-concassees",
+      "nom_affiche": "tomates concassées",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "mesure_affichee": "1 boîte",
+      "ciqual_code": "20137",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pates",
+      "nom_affiche": "penne",
+      "quantite": 300,
+      "unite": "g",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "9810",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "haricots-rouges",
+      "nom_affiche": "haricots rouges égouttés",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20524",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "emmental-rape",
+      "nom_affiche": "fromage râpé",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "12118",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "mais",
+      "nom_affiche": "maïs doux égoutté",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20066",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 13.7,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "herbes-provence",
+      "nom_affiche": "herbes de Provence",
+      "quantite": 1,
+      "unite": "g",
+      "poids_g": 1,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11060",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cuis les penne dans beaucoup d'eau salée 2 minutes de moins que le temps du paquet. Égoutte et rince à l'eau froide.",
+      "duree_min": 10,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Pendant ce temps, fais dorer le bœuf haché dans l'huile, dans une grande poêle.",
+      "duree_min": 6,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Ajoute haricots rouges et maïs égouttés, puis les tomates. Sale, poivre, ajoute les herbes et mélange avec les pâtes.",
+      "duree_min": 3,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Verse dans un plat à gratin, couvre de fromage râpé et enfourne 15 minutes à 190 °C. Couvre de papier cuisson s'il dore trop vite.",
+      "duree_min": 15,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 900
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/gratin-de-pates-facon-chili-con-carne/",
+      "titre": "Gratin de pâtes façon chili con carne",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-10"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/Cmdx-jHIKQn/",
+      "titre": "Menu de batch cooking hiver 1",
+      "auteur": "@cuisineaddict",
+      "verifie_le": "2026-11-10",
+      "quantites_depuis": "article-meme-createur",
+      "oembed": {
+        "author_name": "@cuisineaddict",
+        "title": "MENU DE BATCH COOKING HIVER 1 ➡️ Pense à l'enregistrer pour le retrouver facilement !",
+        "thumbnail_url": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/651562944_18096789676978720_8109573706271317162_n.webp?_nc_cat=101&ig_cache_key=Mjk5ODc3MjcxOTQ2MTM0Nzg5Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=UH99UToWv8cQ7kNvwEbBST1&_nc_oc=AdpsI7Zk_1o45QBgXLRZr-NQB1j1mai1z1_bka95a1OL0ZApLapPZz-P3o9A2ITI2XI&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&_nc_gid=gbpkM42HibRkE2uj3rchcA&_nc_ss=7c689&oh=00_AQSluKBWQNop-aBxKsOilgnmg8hEXuQGS8zZNdU-LEgYfQ&oe=6AF8AC0C"
+      }
+    }
+  ],
+  "adaptation": "« Viande hachée » comptée en bœuf haché 5 % ; fromage râpé compté en emmental. Huile comptée 1 c. à soupe (estimation).",
+  "kcal_annoncees_par_part": 576,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 612,
+    "proteines_g": 40.7,
+    "glucides_g": 69.2,
+    "lipides_g": 16.9,
+    "fibres_g": 8.5,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.46,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-10. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

@@ -54,7 +54,8 @@ Cahier des charges complet : `docs/cahier-des-charges.md`. Maquettes de référe
 - `courses.ts` (paquets, stock, placard de base, prix corrigés), `timeline.ts` (session batch en parallèle),
   `remplacement.ts` (3 alternatives), `echange.ts` (favori → créneaux, avertissements), `frigo.ts` (événements).
 - `npm run simuler` : 52 semaines avec stock et historique → `reports/simulation.md`.
-- Budget (simulé avec 92 recettes, `npm run simuler -- 52 2026-W47`) : ~32,1 € en caisse / semaine en moyenne, 39/52 dans le budget.
+- Budget (simulé avec 98 recettes, `npm run simuler -- 52 2026-W47`) : ~31,5 € en caisse / semaine en moyenne, 45/52 dans le budget.
+  Simulation à graine unique, donc bruitée : tester chaque ajout de recette (retirer celles qui font monter la moyenne).
   Le tirage favorise les recettes qui partagent les paquets déjà prévus ou en stock (`poids` : ×(1 + 1,2·partagés),
   ÷(1 + 0,2·nouveaux)). Priorité de la base : recettes à moins de 2 € la part, qui réutilisent les mêmes paquets.
 - `frigo.ts` : `ideesRestes` propose les recettes qui finissent le mieux le stock (hors placard de base).

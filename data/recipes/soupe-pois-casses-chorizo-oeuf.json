@@ -1,0 +1,179 @@
+{
+  "id": "soupe-pois-casses-chorizo-oeuf",
+  "slug": "soupe-pois-casses-chorizo-oeuf",
+  "nom": "Soupe de pois cassés et poireaux, chorizo grillé et œuf poché",
+  "resume": "Une soupe épaisse de pois cassés et poireaux, servie avec des chips de chorizo et un œuf poché.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 15,
+    "cuisson_min": 45,
+    "total_min": 60,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cuisine": "française",
+  "proteine_principale": "legumineuses",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "soupe",
+  "ingredients": [
+    {
+      "ingredient": "pois-casses",
+      "nom_affiche": "pois cassés",
+      "quantite": 250,
+      "unite": "g",
+      "poids_g": 250,
+      "optionnel": false,
+      "ciqual_code": "20515",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poireau",
+      "nom_affiche": "poireaux",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "20039",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "bouillon-legumes",
+      "nom_affiche": "bouillon de légumes",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 20,
+      "optionnel": false,
+      "mesure_affichee": "2 cubes",
+      "ciqual_code": "11041",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "chorizo",
+      "nom_affiche": "chorizo doux",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 225,
+      "optionnel": false,
+      "mesure_affichee": "1 chorizo (environ 225 g)",
+      "ciqual_code": "30316",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oeuf",
+      "nom_affiche": "œufs",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 220,
+      "optionnel": false,
+      "mesure_affichee": "4 œufs",
+      "ciqual_code": "22000",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "vinaigre",
+      "nom_affiche": "vinaigre",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe, pour l'eau de pochage",
+      "ciqual_code": "11018",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Lave les poireaux et coupe-les en rondelles, émince l'oignon.",
+      "duree_min": 8,
+      "actif": true
+    },
+    {
+      "texte": "Dans une grande casserole, mets poireaux, oignon, pois cassés et cubes de bouillon, poivre et couvre de 1,2 L d'eau. Laisse cuire à couvert 40 minutes à petits frémissements, en remuant de temps en temps.",
+      "duree_min": 40,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 2400
+    },
+    {
+      "texte": "Écrase la soupe au presse-purée pour la rendre lisse. Elle se garde 3 jours au frigo ou se congèle, sans les œufs.",
+      "duree_min": 3,
+      "actif": true
+    },
+    {
+      "texte": "Au moment de servir, fais griller le chorizo en demi-rondelles dans une poêle sans matière grasse, puis égoutte-le sur du papier absorbant.",
+      "duree_min": 4,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Poche l'œuf 3 minutes dans de l'eau frémissante salée et vinaigrée, puis pose-le sur la soupe chaude avec le chorizo.",
+      "duree_min": 4,
+      "actif": true,
+      "equipement": "plaques",
+      "minuteur_s": 180
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://cuisine-addict.com/soupe-pois-casses-poireaux-chorizo-oeuf-poche/",
+      "titre": "Soupe de pois cassés et poireaux au chorizo & oeuf poché",
+      "auteur": "Sandra Thomann (Cuisine Addict)",
+      "verifie_le": "2026-11-10"
+    }
+  ],
+  "adaptation": "Adaptée de la source (cuite au robot) : cuisson en casserole sur les plaques et écrasée au presse-purée, sans mixeur. L'œuf est poché à chaque repas.",
+  "kcal_annoncees_par_part": 386,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 608,
+    "proteines_g": 35.6,
+    "glucides_g": 37.1,
+    "lipides_g": 30.9,
+    "fibres_g": 18,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.32,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-10. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}
