@@ -1,4 +1,4 @@
-# Rapport de couverture des prix (2026-11-09)
+# Rapport de couverture des prix (2026-11-10)
 
 Ville : Lyon (rayon 25 km). Open Prices : médiane des 12 derniers mois, prix non remisés,
 enseignes discount d'abord, au moins 3 relevés. Lidl : 539 relevés Open Prices dans
@@ -7,12 +7,12 @@ enseignes discount d'abord, au moins 3 relevés. Lidl : 539 relevés Open Prices
 | Méthode | Ingrédients |
 |---|---|
 | Ticket (saisie manuelle) | 0 |
-| Lidl (relevés en magasin) | 44 |
-| Open Prices Lyon | 44 |
-| Site enseigne (Aldi) | 44 |
+| Lidl (relevés en magasin) | 47 |
+| Open Prices Lyon | 45 |
+| Site enseigne (Aldi) | 46 |
 | Open Prices France (estimation) | 26 |
 | **Sans prix** | **7** |
-| Total | 165 |
+| Total | 171 |
 
 Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de relevés).
 
@@ -24,7 +24,6 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | aubergine | Aubergine (au détail) | — | 0,77 € (3) | — | — | **0,77 €** · open-prices-lyon |
 | avocat | Avocat (à la pièce) | 0,99 € (1) | 1,14 € (4) | — | — | **0,99 €** · lidl |
 | bacon-des | Dés de bacon, 2 × 75 g | — | — | — | 12,20 € (17) | **1,83 €** · open-prices-france |
-| bagel | Pains bagels, 4 × 85 g | — | — | — | — | **aucun prix** |
 | baguette | Baguette, 250 g | — | 5,92 € (12) | — | — | **1,48 €** · open-prices-lyon |
 | basilic | Basilic, botte | — | — | — | — | **aucun prix** |
 | beurre | Beurre doux, 250 g | 11,52 € (3) | 13,42 € (16) | 2,35 € | — | **2,88 €** · lidl |
@@ -50,6 +49,7 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | chorizo | Chorizo doux, 225 g | — | — | 1,89 € | 8,44 € (57) | **1,89 €** · site-enseigne |
 | chou-rave | Chou-rave (à la pièce) | — | — | — | 1,90 € (5) | **1,90 €** · open-prices-france |
 | ciboulette | Ciboulette, botte | — | — | — | 1,95 € (3) | **1,95 €** · open-prices-france |
+| cidre-brut | Cidre brut, 75 cl | — | 4,56 € (3) | — | — | **3,42 €** · open-prices-lyon |
 | citron | Citron jaune (à la pièce) | 0,37 € (4) | 0,50 € (6) | — | — | **0,37 €** · lidl |
 | citron-vert | Citron vert (à la pièce) | 1,79 € (1) | 1,40 € (2) | — | — | **1,79 €** · lidl |
 | colin-filet | Filets de colin d'Alaska surgelés, 1 kg | — | — | 5,85 € | — | **5,85 €** · site-enseigne |
@@ -67,6 +67,7 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | cresson | Cresson, botte | — | — | — | — | **aucun prix** |
 | crevettes-cuites | Crevettes cuites décortiquées, 200 g | — | — | 3,59 € | 25,32 € (10) | **3,59 €** · site-enseigne |
 | croutons | Croûtons nature, 90 g | — | 16,14 € (31) | — | — | **1,45 €** · open-prices-lyon |
+| cuisse-poulet | Cuisses de poulet surgelées, 2 kg | — | — | 7,99 € | 4,14 € (4) | **7,99 €** · site-enseigne |
 | cumin | Cumin moulu, 40 g | 18,44 € (1) | 79,46 € (16) | — | — | **0,74 €** · lidl |
 | curcuma | Curcuma, 40 g | — | 41,10 € (8) | — | — | **1,64 €** · open-prices-lyon |
 | curry | Curry en poudre, 45 g | — | 63,54 € (12) | — | — | **2,86 €** · open-prices-lyon |
@@ -114,6 +115,7 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | miel | Miel, 500 g | — | 17,40 € (53) | — | — | **8,70 €** · open-prices-lyon |
 | moutarde | Moutarde de Dijon, 370 g | — | 8,17 € (46) | — | — | **3,02 €** · open-prices-lyon |
 | mozzarella | Mozzarella, 125 g | 7,66 € (4) | — | 0,69 € | 8,32 € (99) | **0,96 €** · lidl |
+| navet | Navets, 1 kg | 1,99 € (1) | 2,30 € (4) | — | — | **1,99 €** · lidl |
 | noix-cajou | Noix de cajou nature, 200 g | — | 24,04 € (6) | — | — | **4,81 €** · open-prices-lyon |
 | nouilles-oeufs | Nouilles façon asiatique, 250 g | — | 5,65 € (4) | 1,19 € | — | **1,19 €** · site-enseigne |
 | oeuf | Œufs plein air, boîte de 12 | — | — | 3,39 € | — | **3,39 €** · site-enseigne |
@@ -121,7 +123,9 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | oignon-rouge | Oignons rouges, filet 500 g | 1,99 € (3) | — | — | 3,09 € (16) | **1,00 €** · lidl |
 | olives-noires | Olives noires en saumure, 150 g égouttées | 6,60 € (1) | 14,86 € (18) | — | — | **0,99 €** · lidl |
 | olives-vertes | Olives vertes dénoyautées, 200 g | — | 13,93 € (63) | 1,99 € | — | **1,99 €** · site-enseigne |
+| orange | Oranges, filet 2 kg | 1,65 € (3) | 2,79 € (12) | — | — | **3,30 €** · lidl |
 | origan | Origan séché, 15 g | — | 128,72 € (6) | — | — | **1,93 €** · open-prices-lyon |
+| orzo | Orzo, 500 g | — | — | — | — | **aucun prix** |
 | pain-campagne | Pain de campagne tranché, 500 g | — | 8,56 € (4) | — | — | **4,28 €** · open-prices-lyon |
 | pain-complet | Pain complet tranché, 500 g | 3,47 € (4) | 4,92 € (17) | — | — | **1,74 €** · lidl |
 | pain-de-mie-complet | Pain de mie complet, 500 g | 2,13 € (1) | 4,92 € (8) | — | — | **1,07 €** · lidl |
@@ -137,11 +141,13 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | petits-pois | Petits pois extra fins surgelés, 1 kg | — | — | 1,89 € | — | **1,89 €** · site-enseigne |
 | pignons | Pignons de pin, 70 g | — | — | — | 81,80 € (9) | **5,73 €** · open-prices-france |
 | poireau | Poireaux, botte de 3 | — | 0,57 € (4) | — | — | **1,70 €** · open-prices-lyon |
+| pois-casses | Pois cassés, 500 g | — | 3,62 € (4) | 0,99 € | — | **0,99 €** · site-enseigne |
 | pois-chiches | Pois chiches en conserve, 265 g égouttés | — | 6,33 € (19) | 0,59 € | — | **0,59 €** · site-enseigne |
 | poivron-jaune | Poivron jaune (au détail) | — | — | — | 0,81 € (9) | **0,81 €** · open-prices-france |
 | poivron-rouge | Poivron rouge (au détail) | — | 0,90 € (3) | — | — | **0,90 €** · open-prices-lyon |
 | poivron-vert | Poivron vert (à la pièce) | — | — | — | 0,67 € (9) | **0,67 €** · open-prices-france |
 | poivrons-grilles | Poivrons grillés marinés, bocal 280 g (180 g égouttés) | — | 16,93 € (4) | — | — | **3,05 €** · open-prices-lyon |
+| pomme | Pommes, sachet 1 kg | 1,99 € (7) | — | — | 2,98 € (40) | **1,99 €** · lidl |
 | pomme-de-terre | Pommes de terre, filet 2 kg | 1,55 € (10) | 2,29 € (3) | — | — | **3,11 €** · lidl |
 | porc-filet-mignon | Filet mignon de porc, environ 500 g | — | — | — | 9,97 € (3) | **4,98 €** · open-prices-france |
 | potimarron | Potimarron (à la pièce) | 2,39 € (1) | — | — | 2,86 € (4) | **2,39 €** · lidl |

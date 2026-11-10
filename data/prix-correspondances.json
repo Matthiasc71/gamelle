@@ -1898,5 +1898,26 @@
     "open_prices": {
       "categorie_produit": "en:cured-hams"
     }
+  },
+  "navet": {
+    "produit": "Navets, 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "open_prices": {
+      "category_tag": "en:turnip"
+    }
+  },
+  "pois-casses": {
+    "produit": "Pois cassés, 500 g",
+    "conditionnement": {
+      "quantite": 500,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:dried-split-peas"
+    },
+    "aldi": "5017554"
   }
 }

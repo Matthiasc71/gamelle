@@ -1686,5 +1686,26 @@
     "conservation_jours": 21,
     "legume": false,
     "note": "Une tranche pèse environ 20 g (estimation)."
+  },
+  "navet": {
+    "nom": "navet",
+    "ciqual_code": "20064",
+    "ciqual_nom": "Navet, pelé, cru",
+    "rayon": "fruits-legumes",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 14,
+    "legume": true,
+    "note": "Un navet moyen pèse environ 150 g (estimation)."
+  },
+  "pois-casses": {
+    "nom": "pois cassés",
+    "ciqual_code": "20515",
+    "ciqual_nom": "Pois cassé, sec",
+    "rayon": "epicerie",
+    "etat": "cru",
+    "rangement": "placard",
+    "conservation_jours": 365,
+    "legume": false
   }
 }
