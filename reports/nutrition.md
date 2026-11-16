@@ -17,8 +17,10 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 - **gratin-poireaux-bacon** : la source annonce 474 kcal/part, Ciqual donne 565 (écart 16 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
 - **penne-thon-aubergines** : la source annonce 486 kcal/part, Ciqual donne 589 (écart 17 %). Vérifié : Écart de 17 % avec les 486 kcal annoncées : le calcul Ciqual compte les 3 c. à soupe d'huile et les 10 filets d'anchois. Valeur Ciqual retenue.
 - **porc-caramelise-oignons** : la source annonce 532 kcal/part, Ciqual donne 455 (écart 17 %). Vérifié : Écart de 17 % avec les 532 kcal annoncées : la source ne donne pas le poids du filet mignon (estimé à 450 g). Valeur Ciqual retenue.
+- **poulet-salade-tomates-cerises-avocat** : la source annonce 469 kcal/part, Ciqual donne 628 (écart 25 %). Vérifié : Quantités relevées dans la source le 2026-11-16. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
 - **rougail-saucisses** : la source annonce 414 kcal/part, Ciqual donne 551 (écart 25 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
 - **salade-aubergines-poulet-quinoa** : la source annonce 426 kcal/part, Ciqual donne 525 (écart 19 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
+- **salade-cobb-poulet-oeuf-avocat** : la source annonce 477 kcal/part, Ciqual donne 407 (écart 17 %). Vérifié : Quantités relevées dans la source le 2026-11-16. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
 - **salade-mais-jambon-feta** : la source annonce 312 kcal/part, Ciqual donne 464 (écart 33 %). Vérifié : Écart avec les 312 kcal annoncées : la vinaigrette (4 c. à soupe d'huile pour 4) et la feta pèsent lourd dans le calcul Ciqual. Valeur Ciqual retenue.
 - **salade-pates-macedoine-thon** : la source annonce 464 kcal/part, Ciqual donne 594 (écart 22 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
 - **salade-pates-provencale-thon** : la source annonce 425 kcal/part, Ciqual donne 587 (écart 28 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
@@ -98,6 +100,7 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 | poulet-creme-epinards-tomates-sechees | 4 | 406 | 37.8 | 8.3 | 23.4 | 4.1 | — |
 | poulet-pommes-de-terre-petits-pois | 4 | 414 | 38.7 | 32.7 | 11.5 | 8.9 | 432 (4 %) |
 | poulet-riz-guerrier | 3 | 586 | 43.1 | 70.5 | 12.8 | 4 | — |
+| poulet-salade-tomates-cerises-avocat | 1 | 628 | 34.4 | 8.3 | 48.9 | 5 | 469 (25 %) |
 | poulet-tikka-masala | 4 | 513 | 39.5 | 18.6 | 28.8 | 6.1 | — |
 | quiche-sans-pate-courgettes-tomates | 3 | 493 | 28.2 | 45.3 | 21.2 | 3.9 | — |
 | quiche-sans-pate-epinards-feta | 3 | 420 | 33 | 8.9 | 26.6 | 6.2 | — |
@@ -111,6 +114,7 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 | salade-boulgour-automnale | 3 | 605 | 27.6 | 64.7 | 22.5 | 14.8 | — |
 | salade-boulgour-brocoli-oeuf | 1 | 420 | 22.6 | 38.9 | 16.6 | 9.9 | 474 (13 %) |
 | salade-bowl-poulet-courge-chevre | 3 | 534 | 39.4 | 67.7 | 9.9 | 5.2 | 575 (8 %) |
+| salade-cobb-poulet-oeuf-avocat | 1 | 407 | 29.5 | 6.3 | 27.7 | 4.3 | 477 (17 %) |
 | salade-haricots-rouges-thon | 1 | 532 | 52.7 | 43 | 11.9 | 19.8 | — |
 | salade-lentilles-grecque | 4 | 463 | 22.2 | 28.3 | 25.8 | 13.2 | — |
 | salade-mais-jambon-feta | 4 | 464 | 22.4 | 22.5 | 30.4 | 5.2 | 312 (33 %) |
@@ -144,6 +148,7 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 | tartines-sardines-concombre-radis | 1 | 425 | 21.4 | 45.4 | 16.5 | 5.1 | 423 (0 %) |
 | tofu-brouille-tomates-cerises | 1 | 512 | 30.3 | 21.8 | 31.7 | 4.5 | — |
 | tuna-bowl | 1 | 500 | 22.8 | 82.1 | 7.4 | 5.2 | 413 (17 %) |
+| udon-creme-curry-champignons-oeuf | 1 | 547 | 26.1 | 51.2 | 24.6 | 5.6 | 485 (11 %) |
 | udon-tofu-cremeux | 2 | 616 | 33.7 | 56.2 | 25.6 | 6.3 | — |
 | veloute-petits-pois-lard-oeuf | 1 | 539 | 27.6 | 23.8 | 34.1 | 13.3 | 475 (12 %) |
 | wrap-thon-avocat | 1 | 453 | 29 | 32.3 | 20.8 | 7.6 | — |

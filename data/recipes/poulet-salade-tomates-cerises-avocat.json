@@ -1,0 +1,166 @@
+{
+  "id": "poulet-salade-tomates-cerises-avocat",
+  "slug": "poulet-salade-tomates-cerises-avocat",
+  "nom": "Poulet poêlé, salade de tomates cerises et avocat",
+  "resume": "Escalope poêlée avec une salade de roquette, tomates cerises et avocat au citron vert.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 8,
+    "total_min": 13,
+    "actif_min": 13
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "cuisine": "française",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "salade",
+  "ingredients": [
+    {
+      "ingredient": "tomates-cerises",
+      "nom_affiche": "tomates cerises",
+      "quantite": 130,
+      "unite": "g",
+      "poids_g": 130,
+      "optionnel": false,
+      "ciqual_code": "20172",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "avocat",
+      "nom_affiche": "avocat",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 70,
+      "optionnel": false,
+      "mesure_affichee": "½ avocat",
+      "ciqual_code": "13004",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "escalope de poulet",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 130,
+      "optionnel": false,
+      "mesure_affichee": "1 escalope",
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "citron-vert",
+      "nom_affiche": "citron vert",
+      "quantite": 0.25,
+      "unite": "pièce",
+      "poids_g": 6,
+      "optionnel": false,
+      "mesure_affichee": "¼ de citron vert",
+      "ciqual_code": "13067",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "roquette",
+      "nom_affiche": "roquette",
+      "quantite": 40,
+      "unite": "g",
+      "poids_g": 40,
+      "optionnel": false,
+      "mesure_affichee": "2 poignées",
+      "ciqual_code": "20217",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "basilic",
+      "nom_affiche": "basilic",
+      "quantite": 0.1,
+      "unite": "pièce",
+      "poids_g": 3,
+      "optionnel": true,
+      "mesure_affichee": "quelques feuilles",
+      "ciqual_code": "11033",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 35,
+      "unite": "ml",
+      "poids_g": 32,
+      "optionnel": false,
+      "mesure_affichee": "un filet + 2 c. à soupe",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cuis le poulet 4 minutes par face dans un filet d'huile à feu moyen.",
+      "duree_min": 8,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Pendant ce temps, coupe les tomates en deux ou en quatre et l'avocat en cubes. Mélange le jus de citron vert, 2 c. à soupe d'huile, sel et poivre.",
+      "duree_min": 5,
+      "actif": true
+    },
+    {
+      "texte": "Assaisonne tomates et avocat avec la moitié de la sauce, la roquette avec l'autre, sale et poivre le poulet et sers.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/poulet-et-salade-tomates-avocat-8cci65rsd43n1aag018j",
+      "titre": "Poulet & salade tomates avocat",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-16"
+    }
+  ],
+  "adaptation": "Poignée de salade comptée 20 g (estimation). « Un filet » d'huile compté 1 c. à café (5 ml), estimation.",
+  "kcal_annoncees_par_part": 469,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 628,
+    "proteines_g": 34.4,
+    "glucides_g": 8.3,
+    "lipides_g": 48.9,
+    "fibres_g": 5,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 4.85,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-16. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

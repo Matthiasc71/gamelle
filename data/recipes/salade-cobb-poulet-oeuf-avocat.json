@@ -1,0 +1,178 @@
+{
+  "id": "salade-cobb-poulet-oeuf-avocat",
+  "slug": "salade-cobb-poulet-oeuf-avocat",
+  "nom": "Salade cobb : poulet, œuf, avocat, lard et bleu",
+  "resume": "Romaine, tomates cerises, poulet grillé, œuf dur, avocat, lard croustillant et un peu de bleu.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 6,
+    "cuisson_min": 12,
+    "total_min": 18,
+    "actif_min": 12
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "cuisine": "américaine",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "salade",
+  "ingredients": [
+    {
+      "ingredient": "laitue",
+      "nom_affiche": "romaine",
+      "quantite": 40,
+      "unite": "g",
+      "poids_g": 40,
+      "optionnel": false,
+      "mesure_affichee": "2 poignées",
+      "ciqual_code": "20031",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "escalope de poulet",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 65,
+      "optionnel": false,
+      "mesure_affichee": "½ escalope",
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomates-cerises",
+      "nom_affiche": "tomates cerises",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20172",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oeuf",
+      "nom_affiche": "œuf",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 55,
+      "optionnel": false,
+      "ciqual_code": "22000",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "avocat",
+      "nom_affiche": "avocat",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 70,
+      "optionnel": false,
+      "mesure_affichee": "½ avocat",
+      "ciqual_code": "13004",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lardons",
+      "nom_affiche": "lard",
+      "quantite": 15,
+      "unite": "g",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "1 tranche",
+      "ciqual_code": "28502",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "gorgonzola",
+      "nom_affiche": "bleu",
+      "quantite": 10,
+      "unite": "g",
+      "poids_g": 10,
+      "optionnel": false,
+      "ciqual_code": "12524",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "vinaigre",
+      "nom_affiche": "vinaigre de vin",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11018",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cuis l'œuf 10 minutes à l'eau bouillante, refroidis-le et écale-le.",
+      "duree_min": 10,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 600
+    },
+    {
+      "texte": "Pendant ce temps, grille le lard 2 minutes à feu vif, puis cuis le poulet 4 à 5 minutes par face dans la même poêle et tranche-le.",
+      "duree_min": 10,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Coupe la salade, les tomates et l'avocat, dispose tout en rangées avec l'œuf, le lard émietté et le bleu, et arrose de vinaigre.",
+      "duree_min": 4,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/salade-cobb-8zot5naqc8vk02ru0dmx",
+      "titre": "Salade cobb",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-16"
+    }
+  ],
+  "adaptation": "Poignée de salade comptée 20 g (estimation). Tranche de lard comptée 15 g en lardons ; bleu compté en gorgonzola (estimations).",
+  "kcal_annoncees_par_part": 477,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 407,
+    "proteines_g": 29.5,
+    "glucides_g": 6.3,
+    "lipides_g": 27.7,
+    "fibres_g": 4.3,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 3.12,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-16. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}
