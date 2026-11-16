@@ -3,7 +3,7 @@
  * Toutes les fonctions sont pures : elles renvoient un nouveau menu (l'ancien sert à « Annuler »).
  */
 import { moisDeSemaine } from './dates';
-import { coutsMenu, estBatch, verifierMenu, type ContexteMenu, type Violation } from './regles';
+import { coutsMenu, estBatch, verifierMenu, violationsDures, type ContexteMenu, type Violation } from './regles';
 import type { Recette } from './schema';
 import { jourDe, momentDe, type Cuisson, type Menu, type Repas } from './types';
 
@@ -100,4 +100,61 @@ export function alternatives(menu: Menu, creneau: number, ctx: ContexteMenu, n =
     .sort((a, b) => a.penalite - b.penalite || a.recette.nom.localeCompare(b.recette.nom, 'fr'))
     .slice(0, n)
     .map(({ penalite: _p, ...alt }) => alt);
+}
+
+/**
+ * Une autre recette tirée au hasard pour ce repas.
+ * - Repas d'un batch (plusieurs parts) : tout le batch change de recette (mêmes jours, mêmes parts).
+ * - Repas rapide : une autre recette rapide du même moment (midi ou soir).
+ * Seules les recettes compatibles avec les réglages (calories, protéines, appareils, exclusions, avis) sont tirées,
+ * jamais une recette déjà au menu ; on préfère celles qui n'ajoutent aucun avertissement et qui sont de saison.
+ */
+export function auHasard(menu: Menu, creneau: number, ctx: ContexteMenu, alea: () => number = Math.random, dejaVues: string[] = []): (Alternative & { lot: number }) | null {
+  const actuel = menu.repas.find((r) => r.creneau === creneau);
+  if (!actuel) return null;
+  const cuisson = menu.cuissons.find((c) => c.id === actuel.cuissonId);
+  if (!cuisson || cuisson.stock) return null;
+  const g = ctx.reglages;
+  const mois = moisDeSemaine(menu.lundi);
+  const avant = verifierMenu(menu, ctx, mois);
+  const coutAvant = coutsMenu(menu, ctx).totalCaisse;
+  const dansMenu = new Set(menu.repas.map((r) => r.recetteId));
+  const recentes = new Set((ctx.historique ?? []).slice(0, g.historiqueSemaines).flat());
+  const repasDuLot = menu.repas.filter((r) => r.cuissonId === cuisson.id);
+  const lot = estBatch(ctx.base.parId[cuisson.recetteId]) && repasDuLot.length > 1;
+
+  const candidats = ctx.base.recettes.filter(
+    (r) =>
+      !dansMenu.has(r.id) &&
+      !dejaVues.includes(r.id) &&
+      (lot ? estBatch(r) && repasDuLot.every((x) => r.creneaux.includes(momentDe(x.creneau))) : !estBatch(r) && r.creneaux.includes(momentDe(creneau))) &&
+      r.nutrition_par_part.kcal >= g.kcalRepas[0] &&
+      r.nutrition_par_part.kcal <= g.kcalRepas[1] &&
+      r.nutrition_par_part.proteines_g >= g.protRepasMin &&
+      r.equipement.every((e) => g.equipement.includes(e)) &&
+      ctx.avis?.[r.id] !== 'bof' &&
+      !r.ingredients.some((i) => !i.optionnel && g.exclus.includes(i.ingredient)),
+  );
+
+  const notes = candidats.map((r) => {
+    let m: Menu;
+    if (lot) {
+      const id = idCuisson(menu, `${r.id}@hasard`);
+      m = {
+        ...menu,
+        cuissons: menu.cuissons.map((c) => (c.id === cuisson.id ? { ...c, id, recetteId: r.id } : c)),
+        repas: menu.repas.map((x) => (x.cuissonId === cuisson.id ? { ...x, cuissonId: id, recetteId: r.id } : x)),
+      };
+    } else m = remplacerRepas(menu, creneau, r.id);
+    const avert = nouvellesViolations(avant, verifierMenu(m, ctx, mois));
+    return { recette: r, menu: m, avertissements: avert, deltaCout: Math.round((coutsMenu(m, ctx).totalCaisse - coutAvant) * 100) / 100 };
+  });
+  // d'abord les menus sans nouvel avertissement, puis de saison et pas servis récemment
+  const sans = notes.filter((n) => n.avertissements.length === 0);
+  const pool0 = sans.length ? sans : notes.filter((n) => violationsDures(n.avertissements).length === 0);
+  const mieux = pool0.filter((n) => n.recette.saison.includes(mois) && !recentes.has(n.recette.id));
+  const pool = mieux.length ? mieux : pool0;
+  if (!pool.length) return null;
+  const choix = pool[Math.floor(alea() * pool.length)];
+  return { ...choix, lot: lot ? repasDuLot.length : 1 };
 }

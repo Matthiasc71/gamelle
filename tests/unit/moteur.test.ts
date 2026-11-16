@@ -5,7 +5,7 @@ import { creneauxBatch, planEchange, proposerCreneaux } from '../../src/domain/e
 import { appliquer, aUtiliserVite, etatCourses, evenementCuisson, finDeSemaine, FRIGO_VIDE, rejouer, stockDisponible } from '../../src/domain/frigo';
 import { genererMenu } from '../../src/domain/planner';
 import { detailsRepas, frigoJours, verifierMenu, violationsDures } from '../../src/domain/regles';
-import { alternatives, remplacerRepas } from '../../src/domain/remplacement';
+import { alternatives, auHasard, remplacerRepas } from '../../src/domain/remplacement';
 import { jourDe, momentDe, REGLAGES_DEFAUT, type Menu } from '../../src/domain/types';
 import { baseReelle, ctxDefaut } from '../helpers';
 
@@ -240,5 +240,33 @@ describe('idées pour finir les restes', () => {
     expect(idees[0].utilise.length).toBeGreaterThanOrEqual(2);
     for (const i of idees) expect(i.utilise.every((x) => ['lentilles-corail', 'lait-coco', 'epinards-pousses'].includes(x))).toBe(true);
     expect(ideesRestes({ articles: [], boites: [] }, base, '2026-11-15')).toEqual([]);
+  });
+});
+
+describe('une autre recette au hasard', () => {
+  const graine = (k: number) => () => ((k * 9301 + 49297) % 233280) / 233280;
+
+  it('remplace tout un batch (mêmes parts, mêmes créneaux) sans règle dure enfreinte', () => {
+    const c = menu.cuissons.find((x) => base.parId[x.recetteId].type === 'batch' && x.parts > 1)!;
+    const creneau = menu.repas.find((r) => r.cuissonId === c.id)!.creneau;
+    const alt = auHasard(menu, creneau, ctx, graine(1))!;
+    expect(alt).not.toBeNull();
+    expect(alt.recette.type).toBe('batch');
+    expect(alt.recette.id).not.toBe(c.recetteId);
+    expect(alt.lot).toBe(menu.repas.filter((r) => r.cuissonId === c.id).length);
+    structureOk(alt.menu);
+    const avant = menu.repas.filter((r) => r.cuissonId === c.id).map((r) => r.creneau);
+    expect(alt.menu.repas.filter((r) => r.recetteId === alt.recette.id).map((r) => r.creneau)).toEqual(avant);
+    expect(violationsDures(verifierMenu(alt.menu, ctx, moisDeSemaine(menu.lundi)))).toEqual([]);
+  });
+
+  it('remplace un repas rapide par une autre recette rapide, jamais une déjà au menu', () => {
+    const r = menu.repas.find((x) => base.parId[x.recetteId].type !== 'batch')!;
+    for (let k = 1; k < 6; k++) {
+      const alt = auHasard(menu, r.creneau, ctx, graine(k))!;
+      expect(alt.recette.type).not.toBe('batch');
+      expect(menu.repas.map((x) => x.recetteId)).not.toContain(alt.recette.id);
+      structureOk(alt.menu);
+    }
   });
 });
