@@ -344,7 +344,7 @@ export async function viserBudget(semaine: string, reglages: Reglages, vise: num
   const r: Reglages = { ...reglages, budgetCible: vise, budget: [Math.min(reglages.budget[0], vise), vise] };
   const ctx = await contexteMenu(semaine, r);
   const { base: _b, ...params } = ctx;
-  const menu = await calculer({ ...params, semaine, essais: 500 });
+  const menu = await calculer({ ...params, semaine, essais: 900 });
   const cout = coutsMenu(menu, ctx).totalCaisse;
   const coutAvant = avant ? coutsMenu(avant.menu, ctx).totalCaisse : null;
   // la recherche est aléatoire : on ne remplace jamais un menu par un plus cher

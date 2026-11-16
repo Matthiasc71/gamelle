@@ -19,7 +19,7 @@ const args = process.argv.slice(2);
 const essai = args.includes('--essai');
 const iSans = args.indexOf('--sans');
 const sans = new Set(iSans >= 0 ? args[iSans + 1].split(',') : []);
-const positionnels = args.filter((a, i) => !a.startsWith('--') && (iSans < 0 || i !== iSans + 1));
+const positionnels = args.filter((a, i) => !a.startsWith('--') && (iSans < 0 || i !== iSans + 1) && (args.indexOf('--essais') < 0 || i !== args.indexOf('--essais') + 1));
 const n = Number(positionnels[0] ?? 52);
 const depart = positionnels[1] ?? semaineIso(ajouterJours(aujourdhui(), 7)).cle;
 const recettes = readdirSync(join(ROOT, 'data/recipes'))
@@ -27,7 +27,8 @@ const recettes = readdirSync(join(ROOT, 'data/recipes'))
   .filter((r) => !sans.has(r.id));
 const base = creerBase(recettes, lireJson('data/ciqual-map.json'), lireJson('data/prix-reference.json'));
 const t0 = Date.now();
-const semaines = simuler(base, REGLAGES_DEFAUT, depart, n);
+const iEssais = args.indexOf('--essais');
+const semaines = simuler(base, REGLAGES_DEFAUT, depart, n, iEssais >= 0 ? Number(args[iEssais + 1]) : undefined);
 const eur = (x: number) => x.toFixed(2).replace('.', ',') + ' €';
 const moy = (xs: number[]) => xs.reduce((s, x) => s + x, 0) / xs.length;
 const caisses = semaines.map((s) => s.caisse);

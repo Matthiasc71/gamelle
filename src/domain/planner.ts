@@ -189,7 +189,8 @@ export function genererMenu(p: ParamsGeneration): Menu {
   const mois = moisDeSemaine(lundi);
   const graine = empreinte(`${p.semaine}|${JSON.stringify(g)}`);
   const rng = hasard(graine);
-  const essais = p.essais ?? 160;
+  // 500 essais : le budget moyen simulé passe de ~31,9 € à ~30,3 € et ne dépend plus de la taille de la base (~3 s par menu).
+  const essais = p.essais ?? 500;
   const favoris = new Set(g.favorisInclus ? p.favoris ?? [] : []);
   const compatibles = p.base.recettes.filter(
     (r) =>
