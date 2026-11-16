@@ -1,0 +1,166 @@
+{
+  "id": "cabillaud-beurre-citron-riz-haricots",
+  "slug": "cabillaud-beurre-citron-riz-haricots",
+  "nom": "Cabillaud au beurre citronné, riz et haricots verts",
+  "resume": "Filet de cabillaud poêlé dans un beurre fondu au citron, avec du riz et des haricots verts.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 2,
+    "cuisson_min": 12,
+    "total_min": 14,
+    "actif_min": 8
+  },
+  "equipement": [
+    "plaques",
+    "rice-cooker"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "française",
+  "proteine_principale": "poisson-blanc",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "poisson",
+  "ingredients": [
+    {
+      "ingredient": "cabillaud",
+      "nom_affiche": "filet de cabillaud",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 130,
+      "optionnel": false,
+      "ciqual_code": "26043",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "riz-basmati",
+      "nom_affiche": "riz",
+      "quantite": 70,
+      "unite": "g",
+      "poids_g": 70,
+      "optionnel": false,
+      "ciqual_code": "9119",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "haricots-verts",
+      "nom_affiche": "haricots verts surgelés",
+      "quantite": 150,
+      "unite": "g",
+      "poids_g": 150,
+      "optionnel": false,
+      "ciqual_code": "20070",
+      "rayon": "surgeles",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "beurre",
+      "nom_affiche": "beurre",
+      "quantite": 15,
+      "unite": "g",
+      "poids_g": 15,
+      "optionnel": false,
+      "ciqual_code": "16400",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "persil",
+      "nom_affiche": "persil",
+      "quantite": 0.1,
+      "unite": "pièce",
+      "poids_g": 2,
+      "optionnel": true,
+      "mesure_affichee": "1 brin",
+      "ciqual_code": "11014",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "citron",
+      "nom_affiche": "citron",
+      "quantite": 0.25,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "1 quartier",
+      "ciqual_code": "13009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Lance le riz au rice cooker. Décongèle le cabillaud si besoin.",
+      "duree_min": 2,
+      "actif": true,
+      "equipement": "rice-cooker"
+    },
+    {
+      "texte": "Cuis les haricots verts 3 minutes à l'eau bouillante et égoutte.",
+      "duree_min": 4,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Fais fondre le beurre avec le jus et le zeste du citron 1 à 2 minutes à feu doux, sale, poivre.",
+      "duree_min": 2,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Cuis le cabillaud 2 à 3 minutes par face dans ce beurre en l'arrosant, puis sers avec riz, haricots et persil.",
+      "duree_min": 6,
+      "actif": true,
+      "equipement": "plaques"
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/cabillaud-au-beurre-citronne-riz-et-haricots-verts-8t2a9s2s2errlycn0dfu",
+      "titre": "Cabillaud au beurre citronné, riz & haricots verts",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-16"
+    }
+  ],
+  "adaptation": "Filet de cabillaud compté 130 g (estimation).",
+  "kcal_annoncees_par_part": 504,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 511,
+    "proteines_g": 31.3,
+    "glucides_g": 62.3,
+    "lipides_g": 14,
+    "fibres_g": 4.8,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 3.08,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-16. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

@@ -54,10 +54,10 @@ Cahier des charges complet : `docs/cahier-des-charges.md`. Maquettes de référe
 - `courses.ts` (paquets, stock, placard de base, prix corrigés), `timeline.ts` (session batch en parallèle),
   `remplacement.ts` (3 alternatives), `echange.ts` (favori → créneaux, avertissements), `frigo.ts` (événements).
 - `npm run simuler` : 52 semaines avec stock et historique → `reports/simulation.md`.
-- Budget (simulé avec 98 recettes, `npm run simuler -- 52 2026-W47`) : ~31,5 € en caisse / semaine en moyenne, 45/52 dans le budget.
-  Une simulation dépend beaucoup de la semaine de départ : tester un ajout sur 3 départs en parallèle,
-  `npx tsx scripts/simuler.ts 52 <semaine> --essai [--sans id1,id2]` (2026-W47, 2027-W10, 2027-W24), et ne garder
-  que les recettes neutres ou qui font baisser la moyenne. Avec / sans les 6 recettes d'hiver : 31,87 € / 31,81 €.
+- Budget (113 recettes, 500 essais par menu, 3 départs 2026-W47 / 2027-W10 / 2027-W24) : ~30,6 € en caisse / semaine,
+  140/156 semaines dans le budget. Avec 160 essais, le budget montait avec la taille de la base (tirage trop court) :
+  depuis 500 essais, ajouter des recettes ne le change presque plus (+0,4 € pour 15 recettes). ~3 s par menu.
+  Tester un lot : `npx tsx scripts/simuler.ts 52 <semaine> --essai [--sans id1,id2] [--essais N]` sur les 3 départs.
 - Avis (`ctx.avis`) : « aime » ×2 au tirage, « bof » exclu du menu et des remplacements.
   Le tirage favorise les recettes qui partagent les paquets déjà prévus ou en stock (`poids` : ×(1 + 1,2·partagés),
   ÷(1 + 0,2·nouveaux)). Priorité de la base : recettes à moins de 2 € la part, qui réutilisent les mêmes paquets.
@@ -111,7 +111,11 @@ Dans une session cloud, le `fetch` de Node passe par le proxy seulement avec `ex
 ## Sources de recettes qui marchent
 - Cuisine Addict (cuisine-addict.com, JSON-LD avec kcal et protéines) + ses posts Instagram de menus de batch cooking
   ou « La recette du jour » (@cuisineaddict) → `quantites_depuis: article-meme-createur`.
-- Jow (jow.fr, JSON-LD par portion) + vidéos TikTok @jow_france (lunchbox : quantités dans la légende).
+- Jow (jow.fr, JSON-LD par portion) + ses reels Instagram @jow_fr (même recette, souvent quantités en légende) :
+  vérifiés par la page d'intégration Instagram. Recette pour 1 multipliée par 3 ou 4 quand elle dépasse 20 min (batch).
+- TikTok : depuis novembre 2026, la page d'intégration `/embed/v2/` ne contient plus les données (chargées par un script
+  anti-robot qu'on ne contourne pas) et l'oEmbed ne prouve rien. `npm run links` classe ces sources « à revérifier »
+  (ni mortes ni confirmées) ; aucune nouvelle source TikTok tant qu'on n'a pas de moyen honnête de la vérifier.
 - Tri rapide d'une liste d'URL par kcal/protéines annoncées : `.cache/tri.mjs` (outil local, non versionné).
 
 ## Ajouter des recettes (« ajoute 20 recettes d'hiver », « ajoute cette vidéo TikTok »)

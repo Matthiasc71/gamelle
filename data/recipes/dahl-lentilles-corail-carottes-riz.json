@@ -1,0 +1,201 @@
+{
+  "id": "dahl-lentilles-corail-carottes-riz",
+  "slug": "dahl-lentilles-corail-carottes-riz",
+  "nom": "Dahl de lentilles corail, carottes et riz",
+  "resume": "Lentilles corail au curry avec carottes, oignon, tomate et lait de coco, servies avec du riz.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 20,
+    "total_min": 30,
+    "actif_min": 12
+  },
+  "equipement": [
+    "plaques",
+    "rice-cooker"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "indienne",
+  "proteine_principale": "legumineuses",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "curry-bol",
+  "ingredients": [
+    {
+      "ingredient": "lentilles-corail",
+      "nom_affiche": "lentilles corail",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20535",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "carotte",
+      "nom_affiche": "carottes",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignons",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "riz-basmati",
+      "nom_affiche": "riz",
+      "quantite": 280,
+      "unite": "g",
+      "poids_g": 280,
+      "optionnel": false,
+      "ciqual_code": "9119",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "2 gousses",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomates-concassees",
+      "nom_affiche": "chair de tomate",
+      "quantite": 320,
+      "unite": "g",
+      "poids_g": 320,
+      "optionnel": false,
+      "ciqual_code": "20137",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "curry",
+      "nom_affiche": "curry en poudre",
+      "quantite": 8,
+      "unite": "g",
+      "poids_g": 8,
+      "optionnel": false,
+      "mesure_affichee": "4 c. à café",
+      "ciqual_code": "11005",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lait-coco",
+      "nom_affiche": "lait de coco",
+      "quantite": 200,
+      "unite": "ml",
+      "poids_g": 200,
+      "optionnel": false,
+      "mesure_affichee": "20 cl",
+      "ciqual_code": "18041",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 20,
+      "unite": "ml",
+      "poids_g": 18.3,
+      "optionnel": false,
+      "mesure_affichee": "4 filets",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Lance le riz au rice cooker. Émince les oignons, coupe les carottes en petits cubes, râpe l'ail.",
+      "duree_min": 8,
+      "actif": true,
+      "equipement": "rice-cooker"
+    },
+    {
+      "texte": "Fais dorer oignons, carottes et ail 2 minutes à feu vif dans l'huile, ajoute le curry et laisse 2 minutes de plus.",
+      "duree_min": 4,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Ajoute les lentilles et deux fois leur volume d'eau, couvre et laisse cuire 10 à 12 minutes à feu doux.",
+      "duree_min": 12,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 720
+    },
+    {
+      "texte": "Incorpore la tomate et le lait de coco, sale, poivre, puis répartis avec le riz en 4 boîtes.",
+      "duree_min": 3,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/dahl-de-lentilles-corail-7ve6ie0parb403dj0nsk",
+      "titre": "Dahl de lentilles corail",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-16"
+    }
+  ],
+  "adaptation": "Recette pour 1 multipliée par 4 pour en faire un batch. « Un filet » d'huile compté 1 c. à café (5 ml), estimation.",
+  "kcal_annoncees_par_part": 593,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 611,
+    "proteines_g": 21.8,
+    "glucides_g": 88.2,
+    "lipides_g": 15.9,
+    "fibres_g": 13.8,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.3,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-16. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

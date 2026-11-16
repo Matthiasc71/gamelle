@@ -1,0 +1,157 @@
+{
+  "id": "one-pot-coquillettes-butternut-feta-lardons",
+  "slug": "one-pot-coquillettes-butternut-feta-lardons",
+  "nom": "Coquillettes au four, butternut, feta et lardons",
+  "resume": "Coquillettes, cubes de butternut, oignon rouge, lardons et feta entière cuits ensemble au four dans un peu de bouillon.",
+  "type": "batch",
+  "portions_base": 3,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 30,
+    "total_min": 40,
+    "actif_min": 10
+  },
+  "equipement": [
+    "four"
+  ],
+  "saison": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2
+  ],
+  "cuisine": "française",
+  "proteine_principale": "porc",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "pates",
+  "ingredients": [
+    {
+      "ingredient": "pates",
+      "nom_affiche": "coquillettes",
+      "quantite": 160,
+      "unite": "g",
+      "poids_g": 160,
+      "optionnel": false,
+      "ciqual_code": "9810",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "feta",
+      "nom_affiche": "feta",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "mesure_affichee": "1 bloc",
+      "ciqual_code": "12066",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "butternut",
+      "nom_affiche": "butternut (chair)",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20138",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon-rouge",
+      "nom_affiche": "oignon rouge",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20238",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lardons",
+      "nom_affiche": "lardons",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "28502",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "bouillon-legumes",
+      "nom_affiche": "bouillon de légumes",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "20 cl de bouillon",
+      "ciqual_code": "11041",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Allume le four à 200 °C. Coupe la butternut en petits cubes et l'oignon rouge en lamelles.",
+      "duree_min": 8,
+      "actif": true
+    },
+    {
+      "texte": "Dans un plat, mélange les coquillettes crues, la butternut, l'oignon, les lardons et le bouillon, pose la feta au centre.",
+      "duree_min": 2,
+      "actif": true
+    },
+    {
+      "texte": "Enfourne 30 minutes à 200 °C, puis écrase la feta et mélange. Ajoute du parmesan si tu veux.",
+      "duree_min": 30,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 1800
+    }
+  ],
+  "sources": [
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/reel/DRZ4q99iE7l/",
+      "titre": "One pot coquillettes, butternut, feta & oignons rouges",
+      "auteur": "@chez.paulinette",
+      "verifie_le": "2026-11-16",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@chez.paulinette",
+        "title": "One pot coquillettes, butternut, feta oignons rouges",
+        "thumbnail_url": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/584981282_18033788243733248_8520038836031121115_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=Mzc3MjI5NTQwNjI1Mjc0MDMyNTE4MDMzNzg4MjQwNzMzMjQ4.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMyJ9&_nc_ohc=vK6v-tZdkOcQ7kNvwFFtI-A&_nc_oc=Ado-ru3lOu1hpaAlSgRnnkTNyPCpTW22GbFxU_WIRaA9FrZoXS9YvD3luP1WU57OhxM&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&_nc_gid=r6rI53VHEks9A2Tv2ukoZg&_nc_ss=7c689&_nc_ct=RQosPBUIFQQlBAAAAA&oh=00_AQRzFFWuwNQl8aoWcq5-CRvXvQPWizOZCOfv-TSjvpoeLg&oe=6B00C232"
+      }
+    }
+  ],
+  "adaptation": "Bouillon de 20 cl compté ½ cube (estimation). Parmesan facultatif, non compté.",
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 521,
+    "proteines_g": 22.9,
+    "glucides_g": 45.2,
+    "lipides_g": 26.2,
+    "fibres_g": 4.2,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.45,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-16. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

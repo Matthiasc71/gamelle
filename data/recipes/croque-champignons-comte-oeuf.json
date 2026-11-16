@@ -1,0 +1,184 @@
+{
+  "id": "croque-champignons-comte-oeuf",
+  "slug": "croque-champignons-comte-oeuf",
+  "nom": "Croque champignons au pesto, comté et œuf au plat",
+  "resume": "Pain de mie au fromage frais garni de champignons poêlés au pesto, de comté et d'un œuf au plat.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 4,
+    "cuisson_min": 10,
+    "total_min": 14,
+    "actif_min": 12
+  },
+  "equipement": [
+    "plaques",
+    "four"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "française",
+  "proteine_principale": "oeufs",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "wrap",
+  "ingredients": [
+    {
+      "ingredient": "pain-de-mie-complet",
+      "nom_affiche": "pain de mie",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 50,
+      "optionnel": false,
+      "mesure_affichee": "2 tranches",
+      "ciqual_code": "7111",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "champignons",
+      "nom_affiche": "champignons de Paris",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20056",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "comte-rape",
+      "nom_affiche": "comté",
+      "quantite": 30,
+      "unite": "g",
+      "poids_g": 30,
+      "optionnel": false,
+      "ciqual_code": "12110",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oeuf",
+      "nom_affiche": "œuf",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 55,
+      "optionnel": false,
+      "ciqual_code": "22000",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pesto",
+      "nom_affiche": "pesto",
+      "quantite": 5,
+      "unite": "g",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11179",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "fromage-frais",
+      "nom_affiche": "fromage frais",
+      "quantite": 10,
+      "unite": "g",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à café",
+      "ciqual_code": "12068",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "un filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "beurre",
+      "nom_affiche": "beurre",
+      "quantite": 5,
+      "unite": "g",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 noisette",
+      "ciqual_code": "16400",
+      "rayon": "frais",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Émince les champignons et fais-les dorer 4 à 5 minutes à feu vif dans l'huile, sale, poivre ; ajoute le pesto et un filet d'eau 1 à 2 minutes.",
+      "duree_min": 7,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Dans une seconde poêle, cuis l'œuf au plat 2 à 3 minutes dans le beurre et fais griller le pain au four en position gril.",
+      "duree_min": 4,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Tartine le fromage frais, garnis de champignons, de comté en lamelles et de l'œuf, puis referme.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/croq-champignons-comte-et-oeuf-8zxq7idw1rkg02rq0gyx",
+      "titre": "Croq' champignons, comté & œuf",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-16"
+    }
+  ],
+  "adaptation": "Pain grillé au four en position gril (pas de grille-pain). Comté compté en comté râpé. « Un filet » d'huile compté 1 c. à café (5 ml), estimation.",
+  "kcal_annoncees_par_part": 551,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 470,
+    "proteines_g": 22,
+    "glucides_g": 23.5,
+    "lipides_g": 30.5,
+    "fibres_g": 4.8,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.76,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-16. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

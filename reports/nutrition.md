@@ -1,4 +1,4 @@
-# Nutrition recalculée avec Ciqual 2025 (2026-11-10)
+# Nutrition recalculée avec Ciqual 2025 (2026-11-16)
 
 Source : Anses. Table de composition nutritionnelle des aliments Ciqual 2025 (doi:10.57745/RDMHWY).
 Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15 %.
@@ -8,6 +8,7 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 - **bowl-poulet-quinoa-tzatziki** : la source annonce 516 kcal/part, Ciqual donne 634 (écart 19 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
 - bowl-poulet-quinoa-tzatziki : fibres absentes de Ciqual pour Tzatziki à base de yaourt, préemballé : comptées 0
 - **butternut-gorgonzola-lentilles-quinoa** : la source annonce 418 kcal/part, Ciqual donne 646 (écart 35 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
+- **croque-champignons-comte-oeuf** : la source annonce 551 kcal/part, Ciqual donne 470 (écart 17 %). Vérifié : Quantités relevées dans la source le 2026-11-16. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
 - **dahl-lentilles-corail-epinards** : la source annonce 378 kcal/part, Ciqual donne 597 (écart 37 %). Vérifié : Écart avec les 378 kcal annoncées : les 50 cl de lait de coco (199 kcal/100 g selon Ciqual) apportent à eux seuls environ 250 kcal par part. Valeur Ciqual retenue.
 - **enchiladas-boeuf-poivrons** : la source annonce 431 kcal/part, Ciqual donne 543 (écart 21 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
 - **gnocchis-poireaux-poulet** : la source annonce 444 kcal/part, Ciqual donne 554 (écart 20 %). Vérifié : Quantités relevées dans la source le 2026-11-09. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json.
@@ -36,20 +37,26 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 | assiette-oeufs-avocat-crudites | 1 | 591 | 28.2 | 39.3 | 31.4 | 14.2 | — |
 | boeuf-hache-coreenne | 4 | 526 | 35.8 | 73.6 | 9.1 | 2.7 | 504 (4 %) |
 | boeuf-legumes-sautes-pesto | 1 | 504 | 27.5 | 14 | 36.8 | 5.5 | 437 (13 %) |
+| boeuf-saute-chou-riz | 1 | 461 | 29.5 | 60.5 | 10.3 | 4.6 | 488 (6 %) |
 | bouillon-nouilles-riz-poulet | 1 | 574 | 46.9 | 73.3 | 8.4 | 6.3 | 529 (8 %) |
 | boulettes-boeuf-caramelisees | 3 | 474 | 44.5 | 39.1 | 14.2 | 5.1 | — |
 | bowl-pois-chiches-champignons-oeuf | 1 | 535 | 23 | 66 | 17.7 | 8 | 481 (10 %) |
 | bowl-poulet-quinoa-tzatziki | 1 | 634 | 51.7 | 50.5 | 22.4 | 8.1 | 516 (19 %) |
+| buddha-bowl-poulet-patates-douces | 3 | 519 | 39.7 | 44.2 | 18 | 7.1 | 472 (9 %) |
 | burritos-boeuf-mais | 4 | 410 | 28.5 | 41.5 | 13.5 | 4.5 | 430 (5 %) |
 | butter-chicken-express | 2 | 534 | 34.9 | 27.9 | 29.8 | 4.3 | — |
 | butternut-gorgonzola-lentilles-quinoa | 3 | 646 | 26.5 | 57.5 | 30.5 | 16.4 | 418 (35 %) |
+| cabillaud-beurre-citron-riz-haricots | 1 | 511 | 31.3 | 62.3 | 14 | 4.8 | 504 (1 %) |
 | chakchouka-feta | 2 | 481 | 25.1 | 37.8 | 23.5 | 9.8 | — |
 | chili-con-carne | 4 | 586 | 44 | 72.9 | 10.1 | 14.1 | — |
 | colin-curry-coco | 4 | 470 | 26.2 | 55.9 | 14.8 | 5.1 | — |
+| croque-champignons-comte-oeuf | 1 | 470 | 22 | 23.5 | 30.5 | 4.8 | 551 (17 %) |
+| curry-boeuf-hache-thai | 4 | 541 | 34.3 | 27 | 30.8 | 8.9 | 530 (2 %) |
 | curry-boeuf-hache | 4 | 553 | 42.9 | 64.6 | 12 | 6.7 | — |
 | curry-brocoli-lentilles-corail | 3 | 452 | 25.6 | 42.2 | 15.4 | 19.4 | — |
 | curry-cabillaud-potimarron-riz | 3 | 601 | 33.1 | 65.9 | 21 | 8.2 | 535 (11 %) |
 | curry-legumes-hiver | 4 | 585 | 22.4 | 78.1 | 14.7 | 23 | 528 (10 %) |
+| dahl-lentilles-corail-carottes-riz | 4 | 611 | 21.8 | 88.2 | 15.9 | 13.8 | 593 (3 %) |
 | dahl-lentilles-corail-epinards | 4 | 597 | 26.3 | 47.3 | 29.5 | 17.5 | 378 (37 %) |
 | dahl-lentilles-vertes-patate-douce | 3 | 580 | 21.6 | 60.6 | 24 | 17.9 | — |
 | enchiladas-boeuf-poivrons | 4 | 543 | 34.4 | 57.7 | 17.8 | 9.6 | 431 (21 %) |
@@ -74,6 +81,8 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 | omelette-epinards-feta-avocat | 1 | 511 | 21.8 | 0.9 | 45.1 | 4.8 | 555 (9 %) |
 | one-pan-poulet-legumes | 3 | 458 | 47.6 | 32 | 12.6 | 8.6 | — |
 | one-pan-poulet-miel-moutarde | 3 | 499 | 49.4 | 29.6 | 17.9 | 7.4 | — |
+| one-pot-coquillettes-butternut-feta-lardons | 3 | 521 | 22.9 | 45.2 | 26.2 | 4.2 | — |
+| one-pot-riz-legumes-poulet | 4 | 493 | 37.9 | 64.8 | 7.5 | 5.8 | 466 (5 %) |
 | parmentier-patate-douce | 4 | 546 | 39 | 40.2 | 23.9 | 7.2 | 478 (12 %) |
 | pates-carottes-bacon | 4 | 575 | 28.5 | 99.1 | 5.2 | 7.3 | — |
 | pates-cremeuses-tofu-fume-brocoli | 4 | 592 | 31.1 | 73.7 | 16.3 | 5.9 | 573 (3 %) |
@@ -83,9 +92,11 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 | penne-thon-aubergines | 4 | 589 | 28.7 | 79.3 | 15.1 | 8.2 | 486 (17 %) |
 | poelee-haricots-blancs-toscane | 3 | 465 | 22.3 | 24.6 | 27.7 | 14.4 | — |
 | poelee-patates-douces-boeuf-fromage | 4 | 384 | 34.3 | 28 | 13.9 | 5.1 | 407 (6 %) |
+| poelee-pois-chiches-epinards-oeufs-feta | 1 | 507 | 35.4 | 18.4 | 29.3 | 13.4 | 495 (2 %) |
 | poelee-pois-chiches-oeuf | 1 | 580 | 26.7 | 54.9 | 24.9 | 13.5 | — |
 | porc-caramelise-oignons | 4 | 455 | 31.2 | 59.6 | 9.3 | 2.8 | 532 (17 %) |
 | poulet-creme-epinards-tomates-sechees | 4 | 406 | 37.8 | 8.3 | 23.4 | 4.1 | — |
+| poulet-pommes-de-terre-petits-pois | 4 | 414 | 38.7 | 32.7 | 11.5 | 8.9 | 432 (4 %) |
 | poulet-riz-guerrier | 3 | 586 | 43.1 | 70.5 | 12.8 | 4 | — |
 | poulet-tikka-masala | 4 | 513 | 39.5 | 18.6 | 28.8 | 6.1 | — |
 | quiche-sans-pate-courgettes-tomates | 3 | 493 | 28.2 | 45.3 | 21.2 | 3.9 | — |
@@ -99,16 +110,19 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 | salade-aubergines-poulet-quinoa | 4 | 525 | 30.4 | 39.9 | 23.3 | 14.6 | 426 (19 %) |
 | salade-boulgour-automnale | 3 | 605 | 27.6 | 64.7 | 22.5 | 14.8 | — |
 | salade-boulgour-brocoli-oeuf | 1 | 420 | 22.6 | 38.9 | 16.6 | 9.9 | 474 (13 %) |
+| salade-bowl-poulet-courge-chevre | 3 | 534 | 39.4 | 67.7 | 9.9 | 5.2 | 575 (8 %) |
 | salade-haricots-rouges-thon | 1 | 532 | 52.7 | 43 | 11.9 | 19.8 | — |
 | salade-lentilles-grecque | 4 | 463 | 22.2 | 28.3 | 25.8 | 13.2 | — |
 | salade-mais-jambon-feta | 4 | 464 | 22.4 | 22.5 | 30.4 | 5.2 | 312 (33 %) |
 | salade-pates-macedoine-thon | 4 | 594 | 33.1 | 79.3 | 14.2 | 5.9 | 464 (22 %) |
 | salade-pates-pesto-jambon-cru | 1 | 487 | 23.6 | 67.8 | 12 | 4.4 | 530 (9 %) |
+| salade-pates-poulet-parmesan-yaourt | 1 | 575 | 39 | 61.4 | 17.7 | 3.8 | 500 (13 %) |
 | salade-pates-provencale-thon | 1 | 587 | 27 | 76.4 | 17.7 | 4.4 | 425 (28 %) |
 | salade-pates-thon-haricots-verts | 1 | 604 | 26.1 | 65.9 | 24 | 7.7 | 435 (28 %) |
 | salade-pois-chiches-haricots-verts-quinoa | 1 | 459 | 21 | 48 | 17.6 | 9.7 | 473 (3 %) |
 | salade-poulet-avocat-lard | 1 | 504 | 43.6 | 6.3 | 32.1 | 4.6 | 496 (2 %) |
 | salade-poulet-petits-pois-tzatziki | 1 | 472 | 48.2 | 24.4 | 18 | 6.5 | 417 (12 %) |
+| salade-poulet-tomates-pois-chiches-jambon | 1 | 450 | 48.2 | 15.3 | 20.3 | 4.8 | 400 (11 %) |
 | salade-riz-mais-thon-poivron | 1 | 573 | 25.8 | 53.9 | 27 | 5.6 | 424 (26 %) |
 | salade-riz-thon-tomate | 1 | 539 | 34.4 | 53.4 | 19.8 | 4.9 | — |
 | salade-saumon-mais-tomate | 1 | 514 | 30.9 | 33 | 27.7 | 6.6 | 425 (17 %) |
@@ -121,6 +135,7 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 | sandwich-thon-oeufs-crudites | 2 | 501 | 29.3 | 43.2 | 22.1 | 4.9 | — |
 | soupe-lentilles-corail | 4 | 410 | 29.7 | 54.7 | 3.9 | 19.3 | — |
 | soupe-pois-casses-chorizo-oeuf | 4 | 608 | 35.6 | 37.1 | 30.9 | 18 | 386 (37 %) |
+| soupe-tortellini-saucisse | 1 | 629 | 24.6 | 46.7 | 37.3 | 4.4 | 586 (7 %) |
 | spaghettis-tomates-olives-feta | 4 | 616 | 20.8 | 77.5 | 22.9 | 6.2 | — |
 | tagliatelles-poireaux-carbonara | 2 | 461 | 30.7 | 11.1 | 31.5 | 4.6 | — |
 | tagliatelles-poulet-champignons | 1 | 531 | 46.3 | 54.5 | 12.5 | 3.7 | 534 (1 %) |
@@ -130,4 +145,5 @@ Valeurs par part, ingrédients optionnels exclus. Écart signalé au-delà de 15
 | tofu-brouille-tomates-cerises | 1 | 512 | 30.3 | 21.8 | 31.7 | 4.5 | — |
 | tuna-bowl | 1 | 500 | 22.8 | 82.1 | 7.4 | 5.2 | 413 (17 %) |
 | udon-tofu-cremeux | 2 | 616 | 33.7 | 56.2 | 25.6 | 6.3 | — |
+| veloute-petits-pois-lard-oeuf | 1 | 539 | 27.6 | 23.8 | 34.1 | 13.3 | 475 (12 %) |
 | wrap-thon-avocat | 1 | 453 | 29 | 32.3 | 20.8 | 7.6 | — |

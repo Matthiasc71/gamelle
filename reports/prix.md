@@ -1,4 +1,4 @@
-# Rapport de couverture des prix (2026-11-10)
+# Rapport de couverture des prix (2026-11-16)
 
 Ville : Lyon (rayon 25 km). Open Prices : médiane des 12 derniers mois, prix non remisés,
 enseignes discount d'abord, au moins 3 relevés. Lidl : 539 relevés Open Prices dans
@@ -7,12 +7,12 @@ enseignes discount d'abord, au moins 3 relevés. Lidl : 539 relevés Open Prices
 | Méthode | Ingrédients |
 |---|---|
 | Ticket (saisie manuelle) | 0 |
-| Lidl (relevés en magasin) | 45 |
+| Lidl (relevés en magasin) | 48 |
 | Open Prices Lyon | 44 |
 | Site enseigne (Aldi) | 45 |
-| Open Prices France (estimation) | 27 |
+| Open Prices France (estimation) | 29 |
 | **Sans prix** | **6** |
-| Total | 167 |
+| Total | 172 |
 
 Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de relevés).
 
@@ -42,11 +42,13 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | carotte | Carottes, sachet 1 kg | 1,47 € (2) | 1,96 € (6) | — | — | **1,48 €** · lidl |
 | cebette | Cébettes (oignons nouveaux), botte | — | — | — | — | **aucun prix** |
 | celeri-branche | Céleri branche, pied | — | — | — | 2,14 € (8) | **2,14 €** · open-prices-france |
+| chair-saucisse | Chair à saucisse, 400 g | — | — | — | 8,16 € (12) | **3,26 €** · open-prices-france |
 | champignons | Champignons de Paris, barquette 500 g | 7,16 € (2) | — | — | 5,99 € (9) | **3,58 €** · lidl |
 | chapelure | Chapelure, 400 g | — | — | 0,85 € | — | **0,85 €** · site-enseigne |
 | cheddar-rape | Cheddar râpé, 200 g | — | — | 2,39 € | — | **2,39 €** · site-enseigne |
 | chevre-frais | Fromage de chèvre frais, 200 g | — | — | 1,89 € | 15,95 € (7) | **1,89 €** · site-enseigne |
 | chorizo | Chorizo doux, 225 g | — | — | 1,89 € | 8,44 € (57) | **1,89 €** · site-enseigne |
+| chou-blanc | Chou blanc (à la pièce, ~1,2 kg) | — | — | — | 1,29 € (7) | **1,55 €** · open-prices-france |
 | chou-rave | Chou-rave (à la pièce) | — | — | — | 1,90 € (5) | **1,90 €** · open-prices-france |
 | ciboulette | Ciboulette, botte | — | — | — | 1,95 € (3) | **1,95 €** · open-prices-france |
 | citron | Citron jaune (à la pièce) | 0,37 € (4) | 0,50 € (6) | — | — | **0,37 €** · lidl |
@@ -78,6 +80,7 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | farine | Farine de blé T65, 1 kg | — | 1,51 € (18) | 0,65 € | — | **0,65 €** · site-enseigne |
 | fecule-mais | Fécule de maïs, 400 g | — | — | — | 3,87 € (11) | **1,55 €** · open-prices-france |
 | feta | Feta AOP, 200 g | — | — | 2,45 € | 13,28 € (33) | **2,45 €** · site-enseigne |
+| fromage-ail-fines-herbes | Fromage frais ail & fines herbes, 150 g | — | — | — | 12,45 € (22) | **1,87 €** · open-prices-france |
 | fromage-blanc-0 | Fromage blanc 0 %, 1 kg | — | — | 1,79 € | 9,23 € (11) | **1,79 €** · site-enseigne |
 | fromage-fondu | Fromage fondu, 200 g | 7,80 € (1) | 12,64 € (5) | 1,19 € | — | **1,56 €** · lidl |
 | fromage-frais | Fromage frais à tartiner, 150 g | 6,76 € (2) | 14,60 € (9) | — | — | **1,01 €** · lidl |
@@ -132,7 +135,6 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | patate-douce | Patate douce, au kilo | 2,79 € (3) | 2,89 € (3) | — | — | **2,79 €** · lidl |
 | pate-curry | Pâte de curry rouge, 50 g | — | 22,30 € (15) | — | — | **1,12 €** · open-prices-lyon |
 | pates | Penne ou spaghetti, 500 g | — | 3,96 € (48) | 0,55 € | — | **0,55 €** · site-enseigne |
-| pdt-rissolees | Pommes rissolées surgelées, 450 g | — | — | — | 3,39 € (4) | **1,53 €** · open-prices-france |
 | persil | Persil plat, botte | — | — | — | 1,95 € (3) | **1,95 €** · open-prices-france |
 | pesto | Pesto vert, 190 g | — | — | 1,29 € | — | **1,29 €** · site-enseigne |
 | petits-pois | Petits pois extra fins surgelés, 1 kg | — | — | 1,89 € | — | **1,89 €** · site-enseigne |
@@ -144,6 +146,7 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | poivron-rouge | Poivron rouge (au détail) | — | 0,90 € (3) | — | — | **0,90 €** · open-prices-lyon |
 | poivron-vert | Poivron vert (à la pièce) | — | — | — | 0,67 € (9) | **0,67 €** · open-prices-france |
 | poivrons-grilles | Poivrons grillés marinés, bocal 280 g (180 g égouttés) | — | 16,93 € (4) | — | — | **3,05 €** · open-prices-lyon |
+| pomme | Pommes, sachet 1 kg | 1,99 € (7) | — | — | 2,98 € (40) | **1,99 €** · lidl |
 | pomme-de-terre | Pommes de terre, filet 2 kg | 1,55 € (10) | 2,29 € (3) | — | — | **3,11 €** · lidl |
 | porc-filet-mignon | Filet mignon de porc, environ 500 g | — | — | — | 9,97 € (3) | **4,98 €** · open-prices-france |
 | potimarron | Potimarron (à la pièce) | 2,39 € (1) | — | — | 2,86 € (4) | **2,39 €** · lidl |
@@ -152,6 +155,7 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | pulpe-tomate | Pulpe de tomates, 400 g | — | 5,98 € (6) | — | — | **2,39 €** · open-prices-lyon |
 | quinoa | Quinoa, 500 g | 5,12 € (1) | 10,96 € (12) | — | — | **2,56 €** · lidl |
 | radis | Radis, botte (250 g) | — | — | — | 2,98 € (5) | **0,75 €** · open-prices-france |
+| ravioles | Ravioles du Dauphiné, 4 plaques (240 g) | 12,46 € (1) | 15,38 € (9) | — | — | **2,99 €** · lidl |
 | ricotta | Ricotta, 250 g | — | — | — | 8,80 € (19) | **2,20 €** · open-prices-france |
 | riz-basmati | Riz basmati, 1 kg | — | 3,56 € (11) | 1,95 € | — | **1,95 €** · site-enseigne |
 | riz-long | Riz long grain, 1 kg | — | 3,91 € (27) | 1,65 € | — | **1,65 €** · site-enseigne |
@@ -176,6 +180,7 @@ Colonnes Lidl, Lyon et France : prix au kg, au litre ou à la pièce (nombre de 
 | tomates-cerises | Tomates cerises, barquette 250 g | — | 11,96 € (3) | — | — | **2,99 €** · open-prices-lyon |
 | tomates-concassees | Tomates concassées en conserve, 400 g | — | 4,71 € (6) | — | — | **1,88 €** · open-prices-lyon |
 | tomates-sechees | Tomates séchées à l'huile, bocal 280 g (égoutté 180 g) | — | 19,61 € (3) | — | — | **3,53 €** · open-prices-lyon |
+| tortellini | Tortellini frais au fromage, 300 g | 6,76 € (3) | 9,60 € (7) | — | — | **2,03 €** · lidl |
 | tortilla-ble | Tortillas de blé, 8 × 40 g | — | 17,74 € (3) | — | — | **5,68 €** · open-prices-lyon |
 | tzatziki | Tzatziki, 200 g | — | 13,89 € (5) | — | — | **2,78 €** · open-prices-lyon |
 | udon | Udon frais précuits, 2 × 200 g | — | — | — | 10,07 € (7) | **4,03 €** · open-prices-france |

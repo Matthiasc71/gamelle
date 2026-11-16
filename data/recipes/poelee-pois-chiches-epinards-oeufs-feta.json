@@ -1,0 +1,173 @@
+{
+  "id": "poelee-pois-chiches-epinards-oeufs-feta",
+  "slug": "poelee-pois-chiches-epinards-oeufs-feta",
+  "nom": "Poêlée d'épinards et pois chiches, œufs et feta",
+  "resume": "Épinards à l'ail et au paprika fumé, pois chiches, deux œufs cuits dans la poêle et feta émiettée.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 2,
+    "cuisson_min": 13,
+    "total_min": 15,
+    "actif_min": 8
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "méditerranéenne",
+  "proteine_principale": "oeufs",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "omelette",
+  "ingredients": [
+    {
+      "ingredient": "epinards-surgeles",
+      "nom_affiche": "épinards surgelés",
+      "quantite": 250,
+      "unite": "g",
+      "poids_g": 250,
+      "optionnel": false,
+      "ciqual_code": "20083",
+      "rayon": "surgeles",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pois-chiches",
+      "nom_affiche": "pois chiches égouttés",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20532",
+      "rayon": "epicerie",
+      "etat": "égoutté"
+    },
+    {
+      "ingredient": "feta",
+      "nom_affiche": "feta",
+      "quantite": 40,
+      "unite": "g",
+      "poids_g": 40,
+      "optionnel": false,
+      "ciqual_code": "12066",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oeuf",
+      "nom_affiche": "œufs",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 110,
+      "optionnel": false,
+      "mesure_affichee": "2 œufs",
+      "ciqual_code": "22000",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 2.5,
+      "optionnel": false,
+      "mesure_affichee": "½ gousse",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "paprika",
+      "nom_affiche": "paprika fumé",
+      "quantite": 1,
+      "unite": "g",
+      "poids_g": 1,
+      "optionnel": false,
+      "mesure_affichee": "½ c. à café",
+      "ciqual_code": "11049",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "un filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Fais cuire les épinards avec l'ail râpé et le paprika 6 à 7 minutes dans l'huile, à feu moyen.",
+      "duree_min": 7,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Ajoute les pois chiches égouttés, assaisonne et laisse 2 à 3 minutes.",
+      "duree_min": 3,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Creuse deux puits, casse-y les œufs, sale, poivre, couvre et laisse 3 à 4 minutes à feu doux. Émiette la feta par-dessus.",
+      "duree_min": 4,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 210
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/poelee-pois-chiches-epinards-et-oeuf-8lc63scn8rcicviq0o0f",
+      "titre": "Poêlée pois chiches, épinards & œuf",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-16"
+    }
+  ],
+  "adaptation": "« Un filet » d'huile compté 1 c. à café (5 ml), estimation.",
+  "kcal_annoncees_par_part": 495,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 507,
+    "proteines_g": 35.4,
+    "glucides_g": 18.4,
+    "lipides_g": 29.3,
+    "fibres_g": 13.4,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.01,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-16. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

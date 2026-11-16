@@ -19,7 +19,7 @@
     },
     "prix_eur": 4.61,
     "enseigne": "médiane toutes enseignes, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "3 relevés Open Prices sur 12 mois ; 92,22 €/kg"
   },
@@ -45,7 +45,7 @@
     "poids_piece_g": 300,
     "prix_eur": 0.77,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "3 relevés Open Prices sur 12 mois ; 0,77 €/pièce"
   },
@@ -70,7 +70,7 @@
     },
     "prix_eur": 1.83,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 17 relevés Open Prices France sur 12 mois ; 12,20 €/kg"
   },
@@ -82,7 +82,7 @@
     },
     "prix_eur": 1.48,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "12 relevés Open Prices sur 12 mois ; 5,92 €/kg"
   },
@@ -106,7 +106,7 @@
     },
     "prix_eur": 2.41,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 4 relevés Open Prices France sur 12 mois ; 20,08 €/kg"
   },
@@ -130,7 +130,7 @@
     },
     "prix_eur": 5.1,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 21 relevés Open Prices France sur 12 mois ; 20,39 €/kg"
   },
@@ -142,7 +142,7 @@
     },
     "prix_eur": 2.13,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "119 relevés Open Prices sur 12 mois ; 17,77 €/kg"
   },
@@ -154,7 +154,7 @@
     },
     "prix_eur": 2.13,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "119 relevés Open Prices sur 12 mois ; 17,77 €/kg"
   },
@@ -179,7 +179,7 @@
     "poids_piece_g": 400,
     "prix_eur": 1.29,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "3 relevés Open Prices sur 12 mois ; 1,29 €/pièce"
   },
@@ -205,7 +205,7 @@
     "poids_piece_g": 1000,
     "prix_eur": 2.69,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 3 relevés Open Prices France sur 12 mois ; 2,69 €/pièce"
   },
@@ -255,9 +255,21 @@
     "poids_piece_g": 500,
     "prix_eur": 2.14,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 8 relevés Open Prices France sur 12 mois ; 2,14 €/pièce"
+  },
+  "chair-saucisse": {
+    "produit": "Chair à saucisse, 400 g",
+    "conditionnement": {
+      "quantite": 400,
+      "unite": "g"
+    },
+    "prix_eur": 3.26,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-16",
+    "methode": "open-prices-france",
+    "note": "Estimation : 12 relevés Open Prices France sur 12 mois ; 8,16 €/kg"
   },
   "champignons": {
     "produit": "Champignons de Paris, barquette 500 g",
@@ -323,6 +335,18 @@
     "methode": "site-enseigne",
     "note": "CHORIZO QUALITÉ SUPÉRIEURE 225 g"
   },
+  "chou-blanc": {
+    "produit": "Chou blanc (à la pièce, ~1,2 kg)",
+    "conditionnement": {
+      "quantite": 1200,
+      "unite": "g"
+    },
+    "prix_eur": 1.55,
+    "enseigne": "médiane France",
+    "releve_le": "2026-11-16",
+    "methode": "open-prices-france",
+    "note": "Estimation : 7 relevés Open Prices France sur 12 mois ; 1,29 €/kg"
+  },
   "chou-rave": {
     "produit": "Chou-rave (à la pièce)",
     "conditionnement": {
@@ -332,7 +356,7 @@
     "poids_piece_g": 400,
     "prix_eur": 1.9,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 5 relevés Open Prices France sur 12 mois ; 1,90 €/pièce"
   },
@@ -345,7 +369,7 @@
     "poids_piece_g": 25,
     "prix_eur": 1.95,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 3 relevés Open Prices France sur 12 mois ; 1,95 €/pièce"
   },
@@ -436,7 +460,7 @@
     "poids_piece_g": 30,
     "prix_eur": 1.95,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 3 relevés Open Prices France sur 12 mois ; 1,95 €/pièce"
   },
@@ -513,7 +537,7 @@
     },
     "prix_eur": 0.89,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 71 relevés Open Prices France sur 12 mois ; 4,47 €/L"
   },
@@ -525,7 +549,7 @@
     },
     "prix_eur": 2.35,
     "enseigne": "médiane toutes enseignes, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "4 relevés Open Prices sur 12 mois ; 11,73 €/L"
   },
@@ -550,7 +574,7 @@
     },
     "prix_eur": 1.45,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "31 relevés Open Prices sur 12 mois ; 16,14 €/kg"
   },
@@ -574,7 +598,7 @@
     },
     "prix_eur": 1.64,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "8 relevés Open Prices sur 12 mois ; 41,10 €/kg"
   },
@@ -586,7 +610,7 @@
     },
     "prix_eur": 2.86,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "12 relevés Open Prices sur 12 mois ; 63,54 €/kg"
   },
@@ -636,7 +660,7 @@
     },
     "prix_eur": 2.99,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 6 relevés Open Prices France sur 12 mois ; 2,98 €/kg"
   },
@@ -648,7 +672,7 @@
     },
     "prix_eur": 1.65,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 9 relevés Open Prices France sur 12 mois ; 6,60 €/kg"
   },
@@ -660,7 +684,7 @@
     },
     "prix_eur": 2.25,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 29 relevés Open Prices France sur 12 mois ; 2,25 €/kg"
   },
@@ -685,7 +709,7 @@
     },
     "prix_eur": 1.55,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 11 relevés Open Prices France sur 12 mois ; 3,87 €/kg"
   },
@@ -821,7 +845,7 @@
     },
     "prix_eur": 1.37,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "6 relevés Open Prices sur 12 mois ; 5,48 €/kg"
   },
@@ -882,7 +906,7 @@
     },
     "prix_eur": 4.46,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "5 relevés Open Prices sur 12 mois ; 17,84 €/L"
   },
@@ -919,7 +943,7 @@
     },
     "prix_eur": 1.53,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 48 relevés Open Prices France sur 12 mois ; 10,18 €/kg"
   },
@@ -944,7 +968,7 @@
     },
     "prix_eur": 3.13,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "17 relevés Open Prices sur 12 mois ; 7,63 €/kg"
   },
@@ -1008,7 +1032,7 @@
     },
     "prix_eur": 2.2,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "4 relevés Open Prices sur 12 mois ; 8,32 €/kg"
   },
@@ -1083,7 +1107,7 @@
     },
     "prix_eur": 8.7,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "53 relevés Open Prices sur 12 mois ; 17,40 €/kg"
   },
@@ -1095,7 +1119,7 @@
     },
     "prix_eur": 3.02,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "46 relevés Open Prices sur 12 mois ; 8,17 €/kg"
   },
@@ -1131,7 +1155,7 @@
     },
     "prix_eur": 4.81,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "6 relevés Open Prices sur 12 mois ; 24,04 €/kg"
   },
@@ -1219,7 +1243,7 @@
     },
     "prix_eur": 1.93,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "6 relevés Open Prices sur 12 mois ; 128,72 €/kg"
   },
@@ -1231,7 +1255,7 @@
     },
     "prix_eur": 4.28,
     "enseigne": "médiane toutes enseignes, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "4 relevés Open Prices sur 12 mois ; 8,56 €/kg"
   },
@@ -1267,7 +1291,7 @@
     },
     "prix_eur": 2.06,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "3 relevés Open Prices sur 12 mois ; 5,72 €/kg"
   },
@@ -1279,7 +1303,7 @@
     },
     "prix_eur": 4.79,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 3 relevés Open Prices France sur 12 mois ; 4,79 €/kg"
   },
@@ -1291,7 +1315,7 @@
     },
     "prix_eur": 3.55,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "10 relevés Open Prices sur 12 mois ; 78,85 €/kg"
   },
@@ -1328,7 +1352,7 @@
     },
     "prix_eur": 1.12,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "15 relevés Open Prices sur 12 mois ; 22,30 €/kg"
   },
@@ -1354,7 +1378,7 @@
     "poids_piece_g": 30,
     "prix_eur": 1.95,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 3 relevés Open Prices France sur 12 mois ; 1,95 €/pièce"
   },
@@ -1392,7 +1416,7 @@
     },
     "prix_eur": 5.73,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 9 relevés Open Prices France sur 12 mois ; 81,80 €/kg"
   },
@@ -1405,7 +1429,7 @@
     "poids_piece_g": 200,
     "prix_eur": 1.7,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "4 relevés Open Prices sur 12 mois ; 0,57 €/pièce"
   },
@@ -1444,7 +1468,7 @@
     "poids_piece_g": 180,
     "prix_eur": 0.81,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 9 relevés Open Prices France sur 12 mois ; 0,81 €/pièce"
   },
@@ -1457,7 +1481,7 @@
     "poids_piece_g": 180,
     "prix_eur": 0.9,
     "enseigne": "médiane toutes enseignes, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "3 relevés Open Prices sur 12 mois ; 0,90 €/pièce"
   },
@@ -1470,7 +1494,7 @@
     "poids_piece_g": 150,
     "prix_eur": 0.67,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 9 relevés Open Prices France sur 12 mois ; 0,67 €/pièce"
   },
@@ -1482,9 +1506,21 @@
     },
     "prix_eur": 3.05,
     "enseigne": "médiane toutes enseignes, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "4 relevés Open Prices sur 12 mois ; 16,93 €/kg"
+  },
+  "pomme": {
+    "produit": "Pommes, sachet 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "prix_eur": 1.99,
+    "enseigne": "Lidl",
+    "releve_le": "2026-11-09",
+    "methode": "lidl",
+    "note": "7 relevés Open Prices en magasin Lidl (12 mois) ; 1,99 €/kg"
   },
   "pomme-de-terre": {
     "produit": "Pommes de terre, filet 2 kg",
@@ -1506,7 +1542,7 @@
     },
     "prix_eur": 4.98,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 3 relevés Open Prices France sur 12 mois ; 9,97 €/kg"
   },
@@ -1555,7 +1591,7 @@
     },
     "prix_eur": 2.39,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "6 relevés Open Prices sur 12 mois ; 5,98 €/kg"
   },
@@ -1579,7 +1615,7 @@
     },
     "prix_eur": 0.75,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 5 relevés Open Prices France sur 12 mois ; 2,98 €/kg"
   },
@@ -1591,7 +1627,7 @@
     },
     "prix_eur": 2.2,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 19 relevés Open Prices France sur 12 mois ; 8,80 €/kg"
   },
@@ -1629,7 +1665,7 @@
     },
     "prix_eur": 1.59,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 10 relevés Open Prices France sur 12 mois ; 12,72 €/kg"
   },
@@ -1654,7 +1690,7 @@
     },
     "prix_eur": 1.99,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "19 relevés Open Prices sur 12 mois ; 6,62 €/kg"
   },
@@ -1666,7 +1702,7 @@
     },
     "prix_eur": 3.62,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "5 relevés Open Prices sur 12 mois ; 14,50 €/L"
   },
@@ -1678,7 +1714,7 @@
     },
     "prix_eur": 4.87,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "45 relevés Open Prices sur 12 mois ; 19,48 €/L"
   },
@@ -1703,7 +1739,7 @@
     },
     "prix_eur": 5.53,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 10 relevés Open Prices France sur 12 mois ; 18,42 €/kg"
   },
@@ -1753,7 +1789,7 @@
     },
     "prix_eur": 6.99,
     "enseigne": "médiane toutes enseignes, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "3 relevés Open Prices sur 12 mois ; 21,18 €/kg"
   },
@@ -1765,7 +1801,7 @@
     },
     "prix_eur": 5.4,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "5 relevés Open Prices sur 12 mois ; 5,40 €/kg"
   },
@@ -1777,7 +1813,7 @@
     },
     "prix_eur": 6.19,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "4 relevés Open Prices sur 12 mois ; 24,76 €/kg"
   },
@@ -1801,7 +1837,7 @@
     },
     "prix_eur": 4.42,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "11 relevés Open Prices sur 12 mois ; 11,04 €/kg"
   },
@@ -1813,7 +1849,7 @@
     },
     "prix_eur": 3.43,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "4 relevés Open Prices sur 12 mois ; 17,13 €/kg"
   },
@@ -1825,7 +1861,7 @@
     },
     "prix_eur": 2.25,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 4 relevés Open Prices France sur 12 mois ; 7,50 €/kg"
   },
@@ -1849,7 +1885,7 @@
     },
     "prix_eur": 2.99,
     "enseigne": "médiane toutes enseignes, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "3 relevés Open Prices sur 12 mois ; 11,96 €/kg"
   },
@@ -1861,7 +1897,7 @@
     },
     "prix_eur": 1.88,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "6 relevés Open Prices sur 12 mois ; 4,71 €/kg"
   },
@@ -1873,9 +1909,21 @@
     },
     "prix_eur": 3.53,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "3 relevés Open Prices sur 12 mois ; 19,61 €/kg"
+  },
+  "tortellini": {
+    "produit": "Tortellini frais au fromage, 300 g",
+    "conditionnement": {
+      "quantite": 300,
+      "unite": "g"
+    },
+    "prix_eur": 2.03,
+    "enseigne": "Lidl",
+    "releve_le": "2026-11-09",
+    "methode": "lidl",
+    "note": "3 relevés Open Prices en magasin Lidl (12 mois) ; 6,76 €/kg"
   },
   "tortilla-ble": {
     "produit": "Tortillas de blé, 8 × 40 g",
@@ -1885,7 +1933,7 @@
     },
     "prix_eur": 5.68,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "3 relevés Open Prices sur 12 mois ; 17,74 €/kg"
   },
@@ -1897,7 +1945,7 @@
     },
     "prix_eur": 2.78,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "5 relevés Open Prices sur 12 mois ; 13,89 €/kg"
   },
@@ -1909,7 +1957,7 @@
     },
     "prix_eur": 4.03,
     "enseigne": "médiane France",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-france",
     "note": "Estimation : 7 relevés Open Prices France sur 12 mois ; 10,07 €/kg"
   },
@@ -1921,7 +1969,7 @@
     },
     "prix_eur": 2.52,
     "enseigne": "médiane toutes enseignes, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "3 relevés Open Prices sur 12 mois ; 10,08 €/kg"
   },
@@ -1933,7 +1981,7 @@
     },
     "prix_eur": 7.45,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "8 relevés Open Prices sur 12 mois ; 9,93 €/L"
   },
@@ -1945,7 +1993,7 @@
     },
     "prix_eur": 9.26,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "6 relevés Open Prices sur 12 mois ; 12,34 €/L"
   },
@@ -1957,7 +2005,7 @@
     },
     "prix_eur": 1.09,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "17 relevés Open Prices sur 12 mois ; 1,09 €/L"
   },
@@ -1969,7 +2017,7 @@
     },
     "prix_eur": 3.99,
     "enseigne": "médiane enseignes discount, Lyon",
-    "releve_le": "2026-11-10",
+    "releve_le": "2026-11-16",
     "methode": "open-prices-lyon",
     "note": "27 relevés Open Prices sur 12 mois ; 7,98 €/L"
   },

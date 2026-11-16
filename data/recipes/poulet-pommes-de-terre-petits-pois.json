@@ -1,0 +1,191 @@
+{
+  "id": "poulet-pommes-de-terre-petits-pois",
+  "slug": "poulet-pommes-de-terre-petits-pois",
+  "nom": "Poulet, pommes de terre et petits pois au citron",
+  "resume": "Escalopes dorées, pommes de terre et petits pois repassés à la poêle avec ail, citron et crème.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 15,
+    "total_min": 25,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "française",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "poelee",
+  "ingredients": [
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "escalopes de poulet",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 520,
+      "optionnel": false,
+      "mesure_affichee": "4 escalopes (520 g)",
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pomme-de-terre",
+      "nom_affiche": "pommes de terre",
+      "quantite": 600,
+      "unite": "g",
+      "poids_g": 600,
+      "optionnel": false,
+      "ciqual_code": "4008",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "petits-pois",
+      "nom_affiche": "petits pois surgelés",
+      "quantite": 320,
+      "unite": "g",
+      "poids_g": 320,
+      "optionnel": false,
+      "ciqual_code": "20084",
+      "rayon": "surgeles",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "2 gousses",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "citron",
+      "nom_affiche": "citron",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 40,
+      "optionnel": false,
+      "mesure_affichee": "le jus d'un citron",
+      "ciqual_code": "13009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "creme-fraiche",
+      "nom_affiche": "crème fraîche",
+      "quantite": 60,
+      "unite": "ml",
+      "poids_g": 60,
+      "optionnel": false,
+      "mesure_affichee": "4 c. à soupe",
+      "ciqual_code": "19410",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 20,
+      "unite": "ml",
+      "poids_g": 18.3,
+      "optionnel": false,
+      "mesure_affichee": "4 filets",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Coupe les pommes de terre en deux ou en quatre. Dore les escalopes 4 à 5 minutes par face dans un filet d'huile, sale, poivre et réserve.",
+      "duree_min": 12,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "En parallèle, cuis les pommes de terre 6 à 7 minutes à l'eau bouillante salée, ajoute les petits pois 3 minutes, puis égoutte.",
+      "duree_min": 10,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Dans la poêle, fais colorer l'ail émincé dans un filet d'huile, ajoute pommes de terre, petits pois, jus de citron et crème. Sale, poivre et laisse 3 minutes.",
+      "duree_min": 4,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Tranche le poulet et répartis le tout en 4 boîtes.",
+      "duree_min": 3,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/poulet-pomme-de-terre-et-petits-pois-8s0c2t7jlb9h3smm0nfb",
+      "titre": "Poulet, pomme de terre & petits pois",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-16"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/reel/CqbOuaxo97O/",
+      "titre": "Poulet, pomme de terre & petits pois : ingrédients pour 4",
+      "auteur": "@jow_fr",
+      "verifie_le": "2026-11-16",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@jow_fr",
+        "title": "Un repas complet & rassasiant pour toute la famille 😋",
+        "thumbnail_url": "https://scontent-ord5-1.cdninstagram.com/v/t51.71878-15/498608434_621938324196703_4041251532146464435_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ig_cache_key=MzA3MDExMjMzMzQ4MDMyMDcxOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjE2MDAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=QllmSLfI5XQQ7kNvwGFyvvN&_nc_oc=AdqzolrJA-jI38HLHlFu9T1ilUowhx4vrYcRhF1FltQOkW4ZrYkYnAgSwx402Fo2xps&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&_nc_gid=GcYYjbcLTajJtDTXk_Hbkg&_nc_ss=7c689&_nc_ct=RQosPBUIFQQlBAAAAA&oh=00_AQQeegL2D4uh6Yhor_1yFAIXdhSUoNXao-hTAr6ZH2FR5A&oe=6B00C321"
+      }
+    }
+  ],
+  "adaptation": "Quantités de la vidéo (pour 4). Escalope comptée 130 g ; « filets » d'huile comptés 1 c. à café chacun (estimations).",
+  "kcal_annoncees_par_part": 432,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 414,
+    "proteines_g": 38.7,
+    "glucides_g": 32.7,
+    "lipides_g": 11.5,
+    "fibres_g": 8.9,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.12,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-16. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

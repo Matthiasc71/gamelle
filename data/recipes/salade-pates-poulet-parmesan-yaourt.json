@@ -1,0 +1,170 @@
+{
+  "id": "salade-pates-poulet-parmesan-yaourt",
+  "slug": "salade-pates-poulet-parmesan-yaourt",
+  "nom": "Salade de pâtes, poulet, laitue et parmesan, sauce yaourt-moutarde",
+  "resume": "Pâtes, poulet émincé, laitue croquante et copeaux de parmesan, avec une sauce yaourt, moutarde et citron.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 10,
+    "total_min": 15,
+    "actif_min": 6
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "française",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "pates",
+  "ingredients": [
+    {
+      "ingredient": "pates",
+      "nom_affiche": "pâtes",
+      "quantite": 80,
+      "unite": "g",
+      "poids_g": 80,
+      "optionnel": false,
+      "ciqual_code": "9810",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "laitue",
+      "nom_affiche": "laitue iceberg",
+      "quantite": 0.25,
+      "unite": "pièce",
+      "poids_g": 125,
+      "optionnel": false,
+      "mesure_affichee": "¼ de laitue",
+      "ciqual_code": "20031",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poulet-cuit",
+      "nom_affiche": "poulet émincé cuit",
+      "quantite": 70,
+      "unite": "g",
+      "poids_g": 70,
+      "optionnel": false,
+      "ciqual_code": "36005",
+      "rayon": "viandes-poissons",
+      "etat": "cuit"
+    },
+    {
+      "ingredient": "yaourt-grec",
+      "nom_affiche": "yaourt",
+      "quantite": 30,
+      "unite": "g",
+      "poids_g": 30,
+      "optionnel": false,
+      "mesure_affichee": "2 c. à soupe",
+      "ciqual_code": "19860",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "moutarde",
+      "nom_affiche": "moutarde",
+      "quantite": 5,
+      "unite": "g",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café",
+      "ciqual_code": "11013",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "citron",
+      "nom_affiche": "citron",
+      "quantite": 0.25,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "1 quartier",
+      "ciqual_code": "13009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "parmesan",
+      "nom_affiche": "parmesan",
+      "quantite": 20,
+      "unite": "g",
+      "poids_g": 20,
+      "optionnel": false,
+      "ciqual_code": "12120",
+      "rayon": "frais",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cuis les pâtes dans l'eau bouillante salée le temps du paquet et égoutte.",
+      "duree_min": 10,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Pendant ce temps, émince la laitue et mélange yaourt, moutarde, jus de citron, sel et poivre.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Dresse laitue, pâtes et poulet, nappe de sauce et parsème de copeaux de parmesan.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/salade-pates-poulet-et-parmesan-8stnleco1u0w2lme16ea",
+      "titre": "Salade pâtes, poulet & parmesan",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-16"
+    }
+  ],
+  "adaptation": "Yaourt grec à la place du yaourt nature ; ¼ de laitue iceberg compté 125 g (estimation).",
+  "kcal_annoncees_par_part": 500,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 575,
+    "proteines_g": 39,
+    "glucides_g": 61.4,
+    "lipides_g": 17.7,
+    "fibres_g": 3.8,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 1.59,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-16. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

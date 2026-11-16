@@ -1919,5 +1919,45 @@
       "categorie_produit": "en:dried-split-peas"
     },
     "aldi": "5017554"
+  },
+  "tortellini": {
+    "produit": "Tortellini frais au fromage, 300 g",
+    "conditionnement": {
+      "quantite": 300,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:tortellini"
+    }
+  },
+  "chair-saucisse": {
+    "produit": "Chair à saucisse, 400 g",
+    "conditionnement": {
+      "quantite": 400,
+      "unite": "g"
+    },
+    "open_prices": {
+      "categorie_produit": "en:sausage-meat"
+    }
+  },
+  "chou-blanc": {
+    "produit": "Chou blanc (à la pièce, ~1,2 kg)",
+    "conditionnement": {
+      "quantite": 1200,
+      "unite": "g"
+    },
+    "open_prices": {
+      "category_tag": "en:cabbages"
+    }
+  },
+  "pomme": {
+    "produit": "Pommes, sachet 1 kg",
+    "conditionnement": {
+      "quantite": 1000,
+      "unite": "g"
+    },
+    "open_prices": {
+      "category_tag": "en:apples"
+    }
   }
 }

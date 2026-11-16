@@ -1,0 +1,202 @@
+{
+  "id": "soupe-tortellini-saucisse",
+  "slug": "soupe-tortellini-saucisse",
+  "nom": "Soupe de tortellini, chair à saucisse et tomate",
+  "resume": "Un bouillon tomaté à la chair à saucisse où cuisent des tortellini, avec une touche de crème et du parmesan.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 1,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 3,
+    "cuisson_min": 9,
+    "total_min": 12,
+    "actif_min": 8
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "cuisine": "italienne",
+  "proteine_principale": "porc",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "soupe",
+  "ingredients": [
+    {
+      "ingredient": "tortellini",
+      "nom_affiche": "tortellini",
+      "quantite": 110,
+      "unite": "g",
+      "poids_g": 110,
+      "optionnel": false,
+      "ciqual_code": "25181",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "chair-saucisse",
+      "nom_affiche": "chair à saucisse",
+      "quantite": 50,
+      "unite": "g",
+      "poids_g": 50,
+      "optionnel": false,
+      "ciqual_code": "30050",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "tomates-concassees",
+      "nom_affiche": "chair de tomate",
+      "quantite": 80,
+      "unite": "g",
+      "poids_g": 80,
+      "optionnel": false,
+      "ciqual_code": "20137",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "creme-liquide",
+      "nom_affiche": "crème liquide",
+      "quantite": 20,
+      "unite": "ml",
+      "poids_g": 20,
+      "optionnel": false,
+      "mesure_affichee": "2 cl",
+      "ciqual_code": "19417",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "epinards-pousses",
+      "nom_affiche": "pousses d'épinards",
+      "quantite": 30,
+      "unite": "g",
+      "poids_g": 30,
+      "optionnel": true,
+      "mesure_affichee": "1 poignée",
+      "ciqual_code": "20270",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon",
+      "quantite": 0.25,
+      "unite": "pièce",
+      "poids_g": 25,
+      "optionnel": false,
+      "mesure_affichee": "¼ d'oignon",
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "bouillon-volaille",
+      "nom_affiche": "bouillon de volaille",
+      "quantite": 0.25,
+      "unite": "pièce",
+      "poids_g": 2.5,
+      "optionnel": false,
+      "mesure_affichee": "¼ de cube",
+      "ciqual_code": "11174",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "parmesan",
+      "nom_affiche": "parmesan râpé",
+      "quantite": 10,
+      "unite": "g",
+      "poids_g": 10,
+      "optionnel": false,
+      "ciqual_code": "12120",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "un filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Émince l'oignon et fais-le revenir 1 minute dans l'huile, puis ajoute la chair à saucisse 1 à 2 minutes à feu vif.",
+      "duree_min": 3,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Ajoute la tomate, 25 cl d'eau et le bouillon, porte à ébullition et plonge les tortellini. Sale, poivre, couvre et laisse 4 minutes à feu doux.",
+      "duree_min": 7,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 240
+    },
+    {
+      "texte": "Hors du feu, ajoute la crème (et les épinards si tu en as), puis le parmesan.",
+      "duree_min": 1,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/soupe-de-tortellini-83x4fct25i9ck5bo0rfo",
+      "titre": "Soupe de Tortellini",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-16"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/reel/C1y_c9yIXlp/",
+      "titre": "Série soupes, épisode 5 : soupe de tortellinis",
+      "auteur": "@jow_fr",
+      "verifie_le": "2026-11-16",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@jow_fr",
+        "title": "Série soupes - Épisode 5 🍜",
+        "thumbnail_url": "https://scontent-ord5-1.cdninstagram.com/v/t51.71878-15/503735919_680241701450756_5374102068280080071_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ig_cache_key=MzI3NDk1ODk0NjQ2NjYyNTg5Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjIyNjguc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=ubkWevVZBp0Q7kNvwGjRAq0&_nc_oc=AdrLrmWue1qrEjkvkrPiTXsvZpmu5idqwyM1XwdK8FG0K9YZ8_g8I-pDdlwIYSo2gnc&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&_nc_gid=WgLIIU5izx7_46ctZsQGyQ&_nc_ss=7c689&_nc_ct=RQosPBUIFQQlBAAAAA&oh=00_AQS31rt6UfAaCHmVUVMQ3XZuD6KNuVhWKgdAvLrFSmPcMQ&oe=6B00A08B"
+      }
+    }
+  ],
+  "adaptation": "Tortellini comptés au fromage (Ciqual) ; épinards facultatifs dans la source, non comptés. « Un filet » d'huile compté 1 c. à café (5 ml), estimation.",
+  "kcal_annoncees_par_part": 586,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 629,
+    "proteines_g": 24.6,
+    "glucides_g": 46.7,
+    "lipides_g": 37.3,
+    "fibres_g": 4.4,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.17,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-16. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

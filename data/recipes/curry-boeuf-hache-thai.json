@@ -1,0 +1,201 @@
+{
+  "id": "curry-boeuf-hache-thai",
+  "slug": "curry-boeuf-hache-thai",
+  "nom": "Curry de bœuf haché, carottes et pommes de terre au lait de coco",
+  "resume": "Bœuf haché, dés de carotte et de pomme de terre mijotés dans un bouillon à la pâte de curry et au lait de coco.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 10,
+    "cuisson_min": 27,
+    "total_min": 37,
+    "actif_min": 12
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "thaïe",
+  "proteine_principale": "boeuf",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "curry-bol",
+  "ingredients": [
+    {
+      "ingredient": "boeuf-hache-5",
+      "nom_affiche": "bœuf haché",
+      "quantite": 500,
+      "unite": "g",
+      "poids_g": 500,
+      "optionnel": false,
+      "mesure_affichee": "4 steaks hachés",
+      "ciqual_code": "6250",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "carotte",
+      "nom_affiche": "carottes",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "20009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pomme-de-terre",
+      "nom_affiche": "pommes de terre",
+      "quantite": 400,
+      "unite": "g",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "4008",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pate-curry",
+      "nom_affiche": "pâte de curry",
+      "quantite": 20,
+      "unite": "g",
+      "poids_g": 20,
+      "optionnel": false,
+      "mesure_affichee": "4 c. à café",
+      "ciqual_code": "11005",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "lait-coco",
+      "nom_affiche": "lait de coco",
+      "quantite": 400,
+      "unite": "ml",
+      "poids_g": 400,
+      "optionnel": false,
+      "mesure_affichee": "40 cl",
+      "ciqual_code": "18041",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "sauce-soja",
+      "nom_affiche": "sauce soja",
+      "quantite": 60,
+      "unite": "ml",
+      "poids_g": 60,
+      "optionnel": false,
+      "mesure_affichee": "4 c. à soupe",
+      "ciqual_code": "11104",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "bouillon-volaille",
+      "nom_affiche": "bouillon de volaille",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "1 cube dans 40 cl d'eau",
+      "ciqual_code": "11174",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "citron-vert",
+      "nom_affiche": "citron vert",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 25,
+      "optionnel": false,
+      "ciqual_code": "13067",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 20,
+      "unite": "ml",
+      "poids_g": 18.3,
+      "optionnel": false,
+      "mesure_affichee": "4 filets",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Épluche pommes de terre et carottes et coupe-les en petits dés.",
+      "duree_min": 10,
+      "actif": true
+    },
+    {
+      "texte": "Fais revenir la pâte de curry 30 secondes dans l'huile, puis ajoute le bouillon dilué dans 40 cl d'eau chaude, la sauce soja et un peu de zeste de citron vert.",
+      "duree_min": 2,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Ajoute les légumes et laisse cuire 4 à 5 minutes, puis le bœuf émietté. Couvre et laisse mijoter 15 à 20 minutes à feu doux.",
+      "duree_min": 20,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 1080
+    },
+    {
+      "texte": "Termine avec le lait de coco et un trait de jus de citron vert, puis répartis en 4 boîtes.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/curry-de-boeuf-thai-83kb7ej4ha0iactg03ns",
+      "titre": "Curry de bœuf thaï",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-16"
+    }
+  ],
+  "adaptation": "Recette pour 1 multipliée par 4 pour en faire un batch. Pâte de curry rouge à la place de la verte (déjà dans la base) ; steak haché compté 125 g. « Un filet » d'huile compté 1 c. à café (5 ml), estimation.",
+  "kcal_annoncees_par_part": 530,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 541,
+    "proteines_g": 34.3,
+    "glucides_g": 27,
+    "lipides_g": 30.8,
+    "fibres_g": 8.9,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 3.65,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-16. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

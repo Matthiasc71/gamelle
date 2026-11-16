@@ -1,65 +1,65 @@
-# Simulation de 52 semaines (2026-11-10)
+# Simulation de 52 semaines (2026-11-16)
 
-Départ : Du 16 au 22 novembre. 98 recettes, réglages par défaut
+Départ : Du 16 au 22 novembre. 113 recettes, réglages par défaut
 (budget 25–35 €, placard de base : 18 ingrédients).
 Les restes de paquets passent à la semaine suivante ; la viande crue restante est congelée.
 
-- Coût en caisse moyen : **31,54 €** (31,14 € hors 4 premières semaines, quand le placard est rempli).
-- Coût des portions mangées moyen : **23,98 €**.
+- Coût en caisse moyen : **30,97 €** (30,64 € hors 4 premières semaines, quand le placard est rempli).
+- Coût des portions mangées moyen : **24,57 €**.
 - Semaines dans le budget (≤ 35 € en caisse) : **45 / 52**.
 - Règles dures enfreintes : **0**.
 
 | Semaine | En caisse | Mangé | Session dim. | Règles assouplies |
 |---|---|---|---|---|
-| 2026-W47 | 49,05 € | 27,49 € | 60 min | budget |
-| 2026-W48 | 32,16 € | 24,88 € | 55 min | saison, historique |
-| 2026-W49 | 32,86 € | 22,54 € | 60 min | saison, historique |
-| 2026-W50 | 30,87 € | 27,35 € | 53 min | saison, historique |
-| 2026-W51 | 34,38 € | 26,50 € | 42 min | saison, historique |
-| 2026-W52 | 29,54 € | 21,14 € | 60 min | saison, historique |
-| 2026-W53 | 32,11 € | 22,13 € | 62 min | saison, historique |
-| 2027-W01 | 31,96 € | 20,17 € | 47 min | saison, historique |
-| 2027-W02 | 26,41 € | 22,84 € | 60 min | saison, historique |
-| 2027-W03 | 25,11 € | 17,94 € | 59 min | saison, historique |
-| 2027-W04 | 30,39 € | 23,79 € | 47 min | saison, historique |
-| 2027-W05 | 33,44 € | 26,37 € | 61 min | saison |
-| 2027-W06 | 31,36 € | 23,40 € | 47 min | saison, historique |
-| 2027-W07 | 31,81 € | 27,49 € | 44 min | saison |
-| 2027-W08 | 24,12 € | 22,03 € | 47 min | saison, historique |
-| 2027-W09 | 30,30 € | 24,49 € | 59 min | saison, historique |
-| 2027-W10 | 34,35 € | 22,10 € | 60 min | saison, historique |
-| 2027-W11 | 29,15 € | 23,08 € | 55 min | saison, historique |
-| 2027-W12 | 34,17 € | 28,70 € | 57 min | saison, historique |
-| 2027-W13 | 32,77 € | 23,85 € | 59 min | saison, historique |
-| 2027-W14 | 36,54 € | 31,37 € | 48 min | budget |
-| 2027-W15 | 34,02 € | 30,25 € | 55 min | saison |
-| 2027-W16 | 32,85 € | 23,21 € | 49 min | saison, historique |
-| 2027-W17 | 34,02 € | 24,83 € | 62 min | saison, historique |
-| 2027-W18 | 30,84 € | 20,63 € | 62 min | saison, historique |
-| 2027-W19 | 30,75 € | 28,30 € | 44 min | saison, historique |
-| 2027-W20 | 36,15 € | 31,53 € | 55 min | budget |
-| 2027-W21 | 25,21 € | 20,94 € | 47 min | saison, historique |
-| 2027-W22 | 36,13 € | 22,83 € | 59 min | saison, budget, historique |
-| 2027-W23 | 30,47 € | 20,94 € | 62 min | saison, historique |
-| 2027-W24 | 31,65 € | 24,76 € | 52 min | saison, historique |
-| 2027-W25 | 32,62 € | 27,57 € | 60 min | saison, historique |
-| 2027-W26 | 31,86 € | 21,18 € | 53 min | saison, historique |
-| 2027-W27 | 26,63 € | 22,03 € | 60 min | saison, historique |
-| 2027-W28 | 30,35 € | 22,44 € | 43 min | saison, historique |
-| 2027-W29 | 33,15 € | 23,11 € | 58 min | historique |
-| 2027-W30 | 30,19 € | 25,20 € | 53 min | historique |
-| 2027-W31 | 29,39 € | 20,55 € | 62 min | saison, historique |
-| 2027-W32 | 32,12 € | 22,10 € | 47 min | historique |
-| 2027-W33 | 41,45 € | 31,76 € | 55 min | budget, historique |
-| 2027-W34 | 35,32 € | 21,38 € | 62 min | saison, budget, historique |
-| 2027-W35 | 27,37 € | 20,19 € | 47 min | saison, historique |
-| 2027-W36 | 39,71 € | 24,83 € | 49 min | saison, budget, historique |
-| 2027-W37 | 32,98 € | 25,29 € | 61 min | saison |
-| 2027-W38 | 32,90 € | 20,93 € | 44 min | saison, historique |
-| 2027-W39 | 30,91 € | 25,99 € | 55 min | saison, historique |
-| 2027-W40 | 24,93 € | 22,58 € | 62 min | saison, historique |
-| 2027-W41 | 26,34 € | 24,31 € | 55 min | saison, historique |
-| 2027-W42 | 24,18 € | 20,27 € | 47 min | saison, historique |
-| 2027-W43 | 33,95 € | 25,69 € | 55 min | saison, historique |
-| 2027-W44 | 25,95 € | 21,26 € | 62 min | saison, historique |
-| 2027-W45 | 22,62 € | 20,63 € | 47 min | saison, historique |
+| 2026-W47 | 39,37 € | 20,46 € | 47 min | saison, budget |
+| 2026-W48 | 35,64 € | 25,38 € | 55 min | saison, budget, historique |
+| 2026-W49 | 31,31 € | 25,47 € | 55 min | saison, historique |
+| 2026-W50 | 33,37 € | 25,26 € | 63 min | saison |
+| 2026-W51 | 29,76 € | 20,76 € | 47 min | saison, historique |
+| 2026-W52 | 29,36 € | 22,06 € | 47 min | saison, historique |
+| 2026-W53 | 17,41 € | 24,28 € | 55 min | saison, historique |
+| 2027-W01 | 35,66 € | 22,74 € | 60 min | saison, budget, historique |
+| 2027-W02 | 30,01 € | 26,08 € | 51 min | saison, historique |
+| 2027-W03 | 23,45 € | 21,43 € | 62 min | saison, historique |
+| 2027-W04 | 34,42 € | 27,00 € | 55 min | saison, historique |
+| 2027-W05 | 18,28 € | 20,76 € | 47 min | saison, historique |
+| 2027-W06 | 33,36 € | 26,00 € | 69 min | saison, historique |
+| 2027-W07 | 28,93 € | 20,49 € | 62 min | saison, historique |
+| 2027-W08 | 24,87 € | 27,11 € | 59 min | saison, historique |
+| 2027-W09 | 22,38 € | 20,56 € | 47 min | saison, historique |
+| 2027-W10 | 28,13 € | 25,36 € | 58 min | historique |
+| 2027-W11 | 39,41 € | 27,61 € | 51 min | saison, budget, historique |
+| 2027-W12 | 30,61 € | 24,29 € | 47 min | saison, historique |
+| 2027-W13 | 30,04 € | 22,00 € | 47 min | saison, historique |
+| 2027-W14 | 27,88 € | 24,68 € | 57 min | saison, historique |
+| 2027-W15 | 34,81 € | 34,32 € | 61 min | — |
+| 2027-W16 | 35,93 € | 22,37 € | 47 min | saison, budget, historique |
+| 2027-W17 | 34,13 € | 31,03 € | 67 min | saison, historique |
+| 2027-W18 | 32,86 € | 21,92 € | 59 min | saison, historique |
+| 2027-W19 | 30,56 € | 25,00 € | 50 min | saison, historique |
+| 2027-W20 | 34,87 € | 22,95 € | 44 min | saison, historique |
+| 2027-W21 | 28,83 € | 30,39 € | 50 min | saison, historique |
+| 2027-W22 | 30,68 € | 23,06 € | 60 min | saison, historique |
+| 2027-W23 | 31,71 € | 21,04 € | 47 min | — |
+| 2027-W24 | 34,04 € | 31,27 € | 50 min | historique |
+| 2027-W25 | 33,05 € | 32,08 € | 48 min | saison, historique |
+| 2027-W26 | 27,64 € | 24,09 € | 55 min | historique |
+| 2027-W27 | 34,49 € | 24,91 € | 57 min | saison, historique |
+| 2027-W28 | 32,71 € | 28,19 € | 50 min | saison, historique |
+| 2027-W29 | 37,58 € | 28,00 € | 47 min | budget, historique |
+| 2027-W30 | 33,28 € | 27,05 € | 59 min | saison, historique |
+| 2027-W31 | 31,32 € | 23,22 € | 60 min | saison, historique |
+| 2027-W32 | 28,90 € | 24,16 € | 49 min | saison, historique |
+| 2027-W33 | 31,33 € | 23,37 € | 37 min | — |
+| 2027-W34 | 28,41 € | 24,35 € | 47 min | historique |
+| 2027-W35 | 33,66 € | 24,10 € | 59 min | saison, historique |
+| 2027-W36 | 33,49 € | 19,72 € | 47 min | saison, historique |
+| 2027-W37 | 31,82 € | 22,76 € | 59 min | saison, historique |
+| 2027-W38 | 27,99 € | 25,52 € | 60 min | saison, historique |
+| 2027-W39 | 25,75 € | 23,69 € | 55 min | historique |
+| 2027-W40 | 36,11 € | 26,39 € | 39 min | saison, budget, historique |
+| 2027-W41 | 34,31 € | 24,53 € | 60 min | historique |
+| 2027-W42 | 34,99 € | 22,23 € | 47 min | saison, historique |
+| 2027-W43 | 21,62 € | 20,95 € | 62 min | saison, historique |
+| 2027-W44 | 25,17 € | 22,70 € | 58 min | saison, historique |
+| 2027-W45 | 34,93 € | 22,72 € | 60 min | saison, historique |

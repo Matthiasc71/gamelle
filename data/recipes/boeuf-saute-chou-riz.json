@@ -1,0 +1,181 @@
+{
+  "id": "boeuf-saute-chou-riz",
+  "slug": "boeuf-saute-chou-riz",
+  "nom": "Bœuf haché sauté au chou, gingembre et riz",
+  "resume": "Chou blanc émincé et bœuf haché sautés à la sauce soja, au gingembre et à l'ail, sur du riz.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 2,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 5,
+    "cuisson_min": 13,
+    "total_min": 18,
+    "actif_min": 10
+  },
+  "equipement": [
+    "plaques",
+    "rice-cooker"
+  ],
+  "saison": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cuisine": "asiatique",
+  "proteine_principale": "boeuf",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "poelee",
+  "ingredients": [
+    {
+      "ingredient": "riz-basmati",
+      "nom_affiche": "riz",
+      "quantite": 70,
+      "unite": "g",
+      "poids_g": 70,
+      "optionnel": false,
+      "ciqual_code": "9119",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "boeuf-hache-5",
+      "nom_affiche": "bœuf haché",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "6250",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "sauce-soja",
+      "nom_affiche": "sauce soja",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à soupe",
+      "ciqual_code": "11104",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "gingembre-frais",
+      "nom_affiche": "gingembre frais",
+      "quantite": 5,
+      "unite": "g",
+      "poids_g": 5,
+      "optionnel": false,
+      "mesure_affichee": "1 cm",
+      "ciqual_code": "11074",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "chou-blanc",
+      "nom_affiche": "chou blanc",
+      "quantite": 100,
+      "unite": "g",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20116",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "coriandre",
+      "nom_affiche": "coriandre",
+      "quantite": 0.1,
+      "unite": "pièce",
+      "poids_g": 3,
+      "optionnel": true,
+      "mesure_affichee": "quelques brins",
+      "ciqual_code": "11094",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 0.25,
+      "unite": "pièce",
+      "poids_g": 1.25,
+      "optionnel": false,
+      "mesure_affichee": "¼ de gousse",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "un filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Lance le riz au rice cooker et émince très finement le chou.",
+      "duree_min": 4,
+      "actif": true,
+      "equipement": "rice-cooker"
+    },
+    {
+      "texte": "Fais cuire le chou 5 minutes à feu moyen dans l'huile.",
+      "duree_min": 5,
+      "actif": false,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Ajoute le bœuf, le gingembre râpé, l'ail, la sauce soja, sel et poivre, et fais griller 5 minutes à feu vif. Sers sur le riz, avec un peu de coriandre si tu en as.",
+      "duree_min": 6,
+      "actif": true,
+      "equipement": "plaques"
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/boeuf-saute-au-chou-8a1bec1kbyf7ipvn05r0",
+      "titre": "Bœuf sauté au chou",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-16"
+    }
+  ],
+  "adaptation": "« Un filet » d'huile compté 1 c. à café (5 ml), estimation. Coriandre facultative, non comptée.",
+  "kcal_annoncees_par_part": 488,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 461,
+    "proteines_g": 29.5,
+    "glucides_g": 60.5,
+    "lipides_g": 10.3,
+    "fibres_g": 4.6,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.28,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-16. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

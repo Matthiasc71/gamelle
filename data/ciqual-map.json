@@ -1707,5 +1707,48 @@
     "rangement": "placard",
     "conservation_jours": 365,
     "legume": false
+  },
+  "tortellini": {
+    "nom": "tortellini au fromage (frais)",
+    "ciqual_code": "25181",
+    "ciqual_nom": "Pâtes fraîches farcies (ex : raviolis, tortellinis, ravioles du Dauphiné), au fromage, préemballées, crues",
+    "rayon": "frais",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 21,
+    "legume": false,
+    "note": "Ciqual : pâtes fraîches farcies au fromage, crues."
+  },
+  "chair-saucisse": {
+    "nom": "chair à saucisse",
+    "ciqual_code": "30050",
+    "ciqual_nom": "Chair à saucisse crue",
+    "rayon": "viandes-poissons",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 2,
+    "legume": false
+  },
+  "chou-blanc": {
+    "nom": "chou blanc",
+    "ciqual_code": "20116",
+    "ciqual_nom": "Chou blanc, cru",
+    "rayon": "fruits-legumes",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 14,
+    "legume": true,
+    "note": "Un chou blanc pèse environ 1,2 kg (estimation)."
+  },
+  "pomme": {
+    "nom": "pomme",
+    "ciqual_code": "13039",
+    "ciqual_nom": "Pomme, chair et peau, crue",
+    "rayon": "fruits-legumes",
+    "etat": "cru",
+    "rangement": "frigo",
+    "conservation_jours": 30,
+    "legume": false,
+    "note": "Une pomme pèse environ 150 g (estimation)."
   }
 }

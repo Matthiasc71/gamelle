@@ -1,0 +1,181 @@
+{
+  "id": "veloute-petits-pois-lard-oeuf",
+  "slug": "veloute-petits-pois-lard-oeuf",
+  "nom": "Velouté de petits pois, lard grillé et œuf mollet",
+  "resume": "Petits pois mijotés à la crème avec échalote et bacon, écrasés en velouté, servis avec un œuf mollet et du bacon croustillant.",
+  "type": "express",
+  "portions_base": 1,
+  "conservation": {
+    "frigo_jours": 2,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 4,
+    "cuisson_min": 12,
+    "total_min": 16,
+    "actif_min": 12
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "cuisine": "française",
+  "proteine_principale": "oeufs",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "soupe",
+  "ingredients": [
+    {
+      "ingredient": "petits-pois",
+      "nom_affiche": "petits pois surgelés",
+      "quantite": 200,
+      "unite": "g",
+      "poids_g": 200,
+      "optionnel": false,
+      "ciqual_code": "20084",
+      "rayon": "surgeles",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "echalote",
+      "nom_affiche": "échalote",
+      "quantite": 0.5,
+      "unite": "pièce",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "½ échalote",
+      "ciqual_code": "20097",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "bacon-des",
+      "nom_affiche": "bacon",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 30,
+      "optionnel": false,
+      "mesure_affichee": "2 tranches",
+      "ciqual_code": "28727",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "creme-liquide",
+      "nom_affiche": "crème liquide",
+      "quantite": 75,
+      "unite": "ml",
+      "poids_g": 75,
+      "optionnel": false,
+      "mesure_affichee": "7,5 cl",
+      "ciqual_code": "19417",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oeuf",
+      "nom_affiche": "œuf",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 55,
+      "optionnel": false,
+      "ciqual_code": "22000",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 5,
+      "unite": "ml",
+      "poids_g": 4.6,
+      "optionnel": false,
+      "mesure_affichee": "un filet",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Cuis l'œuf 6 minutes à l'eau bouillante, refroidis-le à l'eau froide et écale-le.",
+      "duree_min": 7,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 360
+    },
+    {
+      "texte": "Pendant ce temps, émince l'échalote et fais-la revenir 1 à 2 minutes dans l'huile avec la moitié du bacon, puis ajoute les petits pois 2 à 3 minutes.",
+      "duree_min": 5,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Verse la crème, sale, poivre, couvre et laisse mijoter 8 minutes à feu doux. Pendant ce temps, grille le reste du bacon à sec 3 à 4 minutes.",
+      "duree_min": 8,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 480
+    },
+    {
+      "texte": "Écrase le tout au presse-purée, détends avec un peu d'eau, puis sers avec l'œuf coupé en deux et le bacon émietté.",
+      "duree_min": 3,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/veloute-de-petit-pois-et-lard-8xnpfbh9awhs02vz0qqs",
+      "titre": "Velouté de petit pois & lard",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-16"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/reel/C4aVMx3oWnw/",
+      "titre": "Velouté de petit pois & lard : quantités pour 1",
+      "auteur": "@jow_fr",
+      "verifie_le": "2026-11-16",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@jow_fr",
+        "title": "Une soupe pleine de vitamines, sans jamais lésiner sur la gourmandise 👀",
+        "thumbnail_url": "https://scontent-ord5-1.cdninstagram.com/v/t51.71878-15/503261721_1045862541072270_3361996900608086560_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=MzMyMjA2MDkxMjI5NjI5MDgwMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=3pq8VAa-LxwQ7kNvwHlJc8j&_nc_oc=AdplbHJxKpnhUNRVMVB_zSAVkCbE8D1J_g__FnYJu55C8fSbn1sY3scL7Hkw65rgv-w&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&_nc_gid=OnSj0M3gTYFoyiyxHnoscg&_nc_ss=7c689&_nc_ct=RQosPBUIFQQlBAAAAA&oh=00_AQTA4Qfs1UzWuGMnyWjL0LU8vp8kz-O1ObJ9vVusIKcluw&oe=6B009ED5"
+      }
+    }
+  ],
+  "adaptation": "Adaptée de la source : écrasé au presse-purée au lieu d'être mixé (pas de mixeur). Tranche de bacon comptée 15 g (estimation).",
+  "kcal_annoncees_par_part": 475,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 539,
+    "proteines_g": 27.6,
+    "glucides_g": 23.8,
+    "lipides_g": 34.1,
+    "fibres_g": 13.3,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.01,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-16. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "id": "salade-bowl-poulet-courge-chevre",
+  "slug": "salade-bowl-poulet-courge-chevre",
+  "nom": "Bowl poulet, butternut rôtie, épinards, pomme et chèvre",
+  "resume": "Butternut rôtie, poulet doré, riz, pousses d'épinards, dés de pomme et chèvre frais émietté.",
+  "type": "batch",
+  "portions_base": 3,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 15,
+    "cuisson_min": 35,
+    "total_min": 50,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques",
+    "four"
+  ],
+  "saison": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2
+  ],
+  "cuisine": "française",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "salade",
+  "ingredients": [
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "escalopes de poulet",
+      "quantite": 3,
+      "unite": "pièce",
+      "poids_g": 390,
+      "optionnel": false,
+      "mesure_affichee": "3 escalopes",
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "butternut",
+      "nom_affiche": "butternut (chair)",
+      "quantite": 240,
+      "unite": "g",
+      "poids_g": 240,
+      "optionnel": false,
+      "ciqual_code": "20138",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "epinards-pousses",
+      "nom_affiche": "pousses d'épinards",
+      "quantite": 180,
+      "unite": "g",
+      "poids_g": 180,
+      "optionnel": false,
+      "mesure_affichee": "6 poignées",
+      "ciqual_code": "20270",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "riz-long",
+      "nom_affiche": "riz",
+      "quantite": 210,
+      "unite": "g",
+      "poids_g": 210,
+      "optionnel": false,
+      "ciqual_code": "9100",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "chevre-frais",
+      "nom_affiche": "chèvre frais",
+      "quantite": 45,
+      "unite": "g",
+      "poids_g": 45,
+      "optionnel": false,
+      "mesure_affichee": "3 c. à soupe",
+      "ciqual_code": "12805",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "pomme",
+      "nom_affiche": "pomme",
+      "quantite": 1.5,
+      "unite": "pièce",
+      "poids_g": 225,
+      "optionnel": false,
+      "mesure_affichee": "1 pomme et demie",
+      "ciqual_code": "13039",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 13.7,
+      "optionnel": false,
+      "mesure_affichee": "un filet par personne",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "vinaigre",
+      "nom_affiche": "vinaigre",
+      "quantite": 15,
+      "unite": "ml",
+      "poids_g": 15,
+      "optionnel": false,
+      "mesure_affichee": "pour la vinaigrette",
+      "ciqual_code": "11018",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Allume le four à 200 °C. Épluche et vide la courge, coupe-la en cubes, arrose d'un filet d'huile, sale, poivre et enfourne 30 à 35 minutes.",
+      "duree_min": 35,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 1980
+    },
+    {
+      "texte": "Pendant ce temps, cuis le riz et dore le poulet 4 à 5 minutes par face dans un filet d'huile.",
+      "duree_min": 15,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Coupe les pommes en dés et le poulet en morceaux.",
+      "duree_min": 4,
+      "actif": true
+    },
+    {
+      "texte": "Répartis épinards, riz, courge, poulet et pommes en 3 boîtes ; ajoute le chèvre émietté et la vinaigrette au moment de manger.",
+      "duree_min": 4,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/salade-bowl-poulet-courge-et-chevre-frais-9365av1nhir4030u0ujh",
+      "titre": "Salade bowl poulet, courge & chèvre frais",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-16"
+    }
+  ],
+  "adaptation": "Recette pour 1 multipliée par 3. Cuillère de chèvre comptée 15 g ; « vinaigrette de votre choix » comptée 1 c. à soupe d'huile et de vinaigre par part (estimations).",
+  "kcal_annoncees_par_part": 575,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 534,
+    "proteines_g": 39.4,
+    "glucides_g": 67.7,
+    "lipides_g": 9.9,
+    "fibres_g": 5.2,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.57,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-16. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

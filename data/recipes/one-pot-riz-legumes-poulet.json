@@ -1,0 +1,185 @@
+{
+  "id": "one-pot-riz-legumes-poulet",
+  "slug": "one-pot-riz-legumes-poulet",
+  "nom": "One pot riz, poulet, carottes et poireaux",
+  "resume": "Riz, poulet, carottes et poireaux cuits ensemble dans un bouillon de volaille, dans une seule casserole.",
+  "type": "batch",
+  "portions_base": 4,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": true
+  },
+  "temps": {
+    "prepa_min": 12,
+    "cuisson_min": 22,
+    "total_min": 34,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques"
+  ],
+  "saison": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cuisine": "française",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "ragout",
+  "ingredients": [
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "escalopes de poulet",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 520,
+      "optionnel": false,
+      "mesure_affichee": "4 escalopes (520 g)",
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "oignon",
+      "nom_affiche": "oignon",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 100,
+      "optionnel": false,
+      "ciqual_code": "20034",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "carotte",
+      "nom_affiche": "carottes",
+      "quantite": 4,
+      "unite": "pièce",
+      "poids_g": 400,
+      "optionnel": false,
+      "ciqual_code": "20009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "poireau",
+      "nom_affiche": "poireaux (blancs)",
+      "quantite": 2,
+      "unite": "pièce",
+      "poids_g": 300,
+      "optionnel": false,
+      "ciqual_code": "20039",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "riz-long",
+      "nom_affiche": "riz",
+      "quantite": 280,
+      "unite": "g",
+      "poids_g": 280,
+      "optionnel": false,
+      "ciqual_code": "9100",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "bouillon-volaille",
+      "nom_affiche": "bouillon de volaille",
+      "quantite": 1,
+      "unite": "pièce",
+      "poids_g": 10,
+      "optionnel": false,
+      "mesure_affichee": "1 cube dans 88 cl d'eau",
+      "ciqual_code": "11174",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "beurre",
+      "nom_affiche": "beurre",
+      "quantite": 20,
+      "unite": "g",
+      "poids_g": 20,
+      "optionnel": false,
+      "mesure_affichee": "4 noisettes",
+      "ciqual_code": "16400",
+      "rayon": "frais",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Épluche les carottes et taille-les en biseaux, coupe l'oignon en dés et le blanc des poireaux en tronçons bien rincés. Coupe le poulet en gros morceaux.",
+      "duree_min": 12,
+      "actif": true
+    },
+    {
+      "texte": "Dans une grande casserole, fais fondre le beurre et revenir l'oignon 3 à 4 minutes, puis les carottes et les poireaux 3 à 4 minutes. Sale légèrement et poivre.",
+      "duree_min": 8,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Ajoute le riz et 88 cl de bouillon, porte à ébullition, puis baisse le feu, ajoute le poulet, couvre et laisse mijoter 10 à 12 minutes (un peu d'eau si besoin).",
+      "duree_min": 12,
+      "actif": false,
+      "equipement": "plaques",
+      "minuteur_s": 660
+    },
+    {
+      "texte": "Répartis en 4 boîtes.",
+      "duree_min": 2,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/one-pot-riz-aux-legumes-et-poulet-8wgvhg6yh3vk02r70uvl",
+      "titre": "One pot riz aux légumes & poulet",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-16"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/reel/C2KMRZcIrzW/",
+      "titre": "One pot riz aux légumes & poulet : quantités pour 4",
+      "auteur": "@jow_fr",
+      "verifie_le": "2026-11-16",
+      "quantites_depuis": "legende",
+      "oembed": {
+        "author_name": "@jow_fr",
+        "title": "Un plat réconfortant tout-en-un pour les soirs de semaine 🧑‍🍳",
+        "thumbnail_url": "https://scontent-ord5-2.cdninstagram.com/v/t51.71878-15/503268713_4337666919846797_4046599709253749675_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ig_cache_key=MzI4MTQ4OTI1MDU5NzY0OTYyMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=-Do9aJNuugQQ7kNvwEbRrGM&_nc_oc=AdrTNMRygnpLw0Lscpx_mFUDG6uX739Uhaof4EiGRkPGR89ZADDmm1aKOtvXzmAQlgk&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_gid=rQCAf24NW2A5yhSwgmYILQ&_nc_ss=7c689&_nc_ct=RQosPBUIFQQlBAAAAA&oh=00_AQThfHN2zw9LZ0KwzKz2_LGSaCp0L42ycjwA9spO3fW8aA&oe=6B0090DD"
+      }
+    }
+  ],
+  "adaptation": "Quantités de la vidéo (pour 4). Bouillon : 22 cl par personne selon la fiche Jow ; beurre « une noisette » par personne compté 5 g (estimation).",
+  "kcal_annoncees_par_part": 466,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 493,
+    "proteines_g": 37.9,
+    "glucides_g": 64.8,
+    "lipides_g": 7.5,
+    "fibres_g": 5.8,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.22,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-16. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "id": "buddha-bowl-poulet-patates-douces",
+  "slug": "buddha-bowl-poulet-patates-douces",
+  "nom": "Buddha bowl poulet, patates douces rôties et sauce yaourt",
+  "resume": "Quinoa, patates douces rôties au paprika fumé, poulet poêlé, sauce yaourt-citron-ail, feta et persil.",
+  "type": "batch",
+  "portions_base": 3,
+  "conservation": {
+    "frigo_jours": 3,
+    "congelable": false
+  },
+  "temps": {
+    "prepa_min": 15,
+    "cuisson_min": 25,
+    "total_min": 40,
+    "actif_min": 15
+  },
+  "equipement": [
+    "plaques",
+    "four"
+  ],
+  "saison": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "cuisine": "méditerranéenne",
+  "proteine_principale": "poulet",
+  "creneaux": [
+    "midi",
+    "soir"
+  ],
+  "illustration": "salade",
+  "ingredients": [
+    {
+      "ingredient": "poulet-filet",
+      "nom_affiche": "escalopes de poulet",
+      "quantite": 3,
+      "unite": "pièce",
+      "poids_g": 390,
+      "optionnel": false,
+      "mesure_affichee": "3 escalopes",
+      "ciqual_code": "36017",
+      "rayon": "viandes-poissons",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "patate-douce",
+      "nom_affiche": "patates douces",
+      "quantite": 450,
+      "unite": "g",
+      "poids_g": 450,
+      "optionnel": false,
+      "ciqual_code": "4101",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "quinoa",
+      "nom_affiche": "quinoa",
+      "quantite": 90,
+      "unite": "g",
+      "poids_g": 90,
+      "optionnel": false,
+      "mesure_affichee": "225 g cuit",
+      "ciqual_code": "9340",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "ail",
+      "nom_affiche": "ail",
+      "quantite": 0.375,
+      "unite": "pièce",
+      "poids_g": 2,
+      "optionnel": false,
+      "mesure_affichee": "un petit bout de gousse",
+      "ciqual_code": "11000",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "yaourt-grec",
+      "nom_affiche": "yaourt à la grecque",
+      "quantite": 45,
+      "unite": "g",
+      "poids_g": 45,
+      "optionnel": false,
+      "mesure_affichee": "3 c. à soupe",
+      "ciqual_code": "19860",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "citron",
+      "nom_affiche": "citron",
+      "quantite": 0.75,
+      "unite": "pièce",
+      "poids_g": 30,
+      "optionnel": false,
+      "mesure_affichee": "3 quartiers",
+      "ciqual_code": "13009",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "feta",
+      "nom_affiche": "feta",
+      "quantite": 45,
+      "unite": "g",
+      "poids_g": 45,
+      "optionnel": false,
+      "ciqual_code": "12066",
+      "rayon": "frais",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "paprika",
+      "nom_affiche": "paprika fumé",
+      "quantite": 3,
+      "unite": "g",
+      "poids_g": 3,
+      "optionnel": false,
+      "mesure_affichee": "1 c. à café ½",
+      "ciqual_code": "11049",
+      "rayon": "epicerie",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "persil",
+      "nom_affiche": "persil",
+      "quantite": 0.3,
+      "unite": "pièce",
+      "poids_g": 6,
+      "optionnel": true,
+      "mesure_affichee": "3 brins",
+      "ciqual_code": "11014",
+      "rayon": "fruits-legumes",
+      "etat": "cru"
+    },
+    {
+      "ingredient": "huile-olive",
+      "nom_affiche": "huile d'olive",
+      "quantite": 30,
+      "unite": "ml",
+      "poids_g": 27.5,
+      "optionnel": false,
+      "mesure_affichee": "2 filets par personne",
+      "ciqual_code": "17270",
+      "rayon": "epicerie",
+      "etat": "cru"
+    }
+  ],
+  "etapes": [
+    {
+      "texte": "Allume le four à 200 °C. Épluche les patates douces, coupe-les en cubes, arrose d'huile, ajoute paprika, sel et poivre et enfourne 20 à 25 minutes.",
+      "duree_min": 25,
+      "actif": false,
+      "equipement": "four",
+      "minuteur_s": 1380
+    },
+    {
+      "texte": "Pendant ce temps, cuis le quinoa et poêle le poulet en cubes 4 à 5 minutes dans un filet d'huile, puis 3 à 4 minutes à couvert à feu doux.",
+      "duree_min": 12,
+      "actif": true,
+      "equipement": "plaques"
+    },
+    {
+      "texte": "Mélange le yaourt, l'ail râpé, le zeste et le jus de citron, un filet d'huile, sel et poivre.",
+      "duree_min": 3,
+      "actif": true
+    },
+    {
+      "texte": "Répartis quinoa, patates douces et poulet en 3 boîtes, avec la sauce à part, la feta émiettée et le persil.",
+      "duree_min": 3,
+      "actif": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "article",
+      "url": "https://jow.fr/recipes/buddha-bowl-au-poulet-et-patates-douces-92psm48n0b9s02zx1391",
+      "titre": "Buddha bowl au poulet & patates douces",
+      "auteur": "Jow",
+      "verifie_le": "2026-11-16"
+    }
+  ],
+  "adaptation": "Recette pour 1 multipliée par 3. Yaourt grec à la place du skyr ; 75 g de quinoa cuit comptés 30 g cru (le quinoa gonfle environ 2,5 fois, estimation). « Filets » d'huile comptés 1 c. à café.",
+  "kcal_annoncees_par_part": 472,
+  "image": null,
+  "nutrition_par_part": {
+    "kcal": 519,
+    "proteines_g": 39.7,
+    "glucides_g": 44.2,
+    "lipides_g": 18,
+    "fibres_g": 7.1,
+    "methode": "ciqual-2025"
+  },
+  "cout_par_part_eur": 2.57,
+  "verifications": {
+    "source_ok": true,
+    "nutrition_ok": true,
+    "prix_ok": true,
+    "notes": "Quantités relevées dans la source le 2026-11-16. Poids des pièces (légumes, œufs) : moyennes estimées, voir data/ciqual-map.json."
+  }
+}
