@@ -18,6 +18,8 @@ export type ResultatVerif = {
   /** Page HTML (articles) pour l'extraction, non stockée. */
   html?: string;
   erreur?: string;
+  /** La page répond mais ne permet plus de vérifier (changement de format) : ni morte ni confirmée. */
+  illisible?: boolean;
 };
 
 const decoder = (s: string) =>
@@ -43,7 +45,9 @@ async function verifierTiktok(url: string): Promise<ResultatVerif> {
   const r = await getText(`https://www.tiktok.com/embed/v2/${id}`);
   if (r.status !== 200) return { ok: false, statut: r.status, erreur: `page d'intégration HTTP ${r.status}` };
   const m = r.text.match(/<script id="__FRONTITY_CONNECT_STATE__"[^>]*>([\s\S]*?)<\/script>/);
-  if (!m) return { ok: false, statut: r.status, erreur: "page d'intégration sans données" };
+  // Depuis novembre 2026, la page d'intégration ne contient plus les données : elles arrivent par un script
+  // protégé contre les robots, qu'on ne contourne pas. La vidéo n'est alors ni confirmée ni réfutée.
+  if (!m) return { ok: false, statut: r.status, illisible: true, erreur: "page d'intégration sans données (format TikTok changé)" };
   type VD = {
     itemInfos?: { text?: string; covers?: string[] };
     authorInfos?: { uniqueId?: string; nickName?: string };

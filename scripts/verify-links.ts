@@ -6,7 +6,8 @@
  *   npm run links -- --seulement a,b      (seulement ces slugs ; le rapport ne couvre alors qu'elles)
  *
  * Un refus 429 (limite de débit, fréquent chez TikTok) n'est pas un lien mort : on réessaie
- * deux fois après 45 s, puis on le classe « à revérifier » sans toucher à verifie_le.
+ * deux fois après 45 s, puis on le classe « à revérifier » sans toucher à verifie_le. Même chose pour une page
+ * d'intégration TikTok qui répond sans données (format changé côté TikTok) : ni morte, ni confirmée.
  */
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -35,6 +36,12 @@ for (const { fichier, data } of recettesBrutes()) {
       aRevoir.push(`${data.slug} → ${s.url} (limite de débit, dernière vérification réussie : ${s.verifie_le})`);
       lignes.push(`| ${data.slug} | ${s.type} | à revérifier (429) | ${s.url} |`);
       await pause(8000);
+      continue;
+    }
+    if (r.illisible) {
+      aRevoir.push(`${data.slug} → ${s.url} (page d'intégration illisible, dernière vérification réussie : ${s.verifie_le})`);
+      lignes.push(`| ${data.slug} | ${s.type} | à revérifier (illisible) | ${s.url} |`);
+      await pause(2000);
       continue;
     }
     if (r.ok) {
