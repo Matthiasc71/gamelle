@@ -2974,3 +2974,117 @@ textarea.champ-texte {
   flex: none;
   margin-top: 2px;
 }
+
+/* ───────────── Accueil épuré : résumé, dé, carte du repas ───────────── */
+
+.resume {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 4px 0 14px;
+  padding: 12px 2px;
+  border-top: 1px dashed var(--filet-fort);
+  border-bottom: 1px dashed var(--filet-fort);
+}
+.resume__texte {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+.resume__libelle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+}
+.resume__libelle .icone {
+  opacity: 0.7;
+}
+.resume small {
+  font-size: 13px;
+  color: var(--encre-douce);
+}
+.resume--alerte small {
+  justify-self: start;
+  padding: 2px 8px;
+  border-radius: var(--r-puce);
+  background: var(--rose);
+  color: var(--sur-couleur);
+  font-weight: 700;
+}
+.resume__toucher {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+.resume__toucher:focus-visible {
+  outline: 2px solid var(--encre);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+.repas-ligne {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.repas-ligne > .repas {
+  flex: 1;
+  min-width: 0;
+}
+.repas__de {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  color: var(--encre-douce);
+  cursor: pointer;
+}
+.repas__de:active {
+  background: var(--sauge-pale);
+  transform: rotate(-18deg);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .repas__de {
+    transition: transform 160ms ease;
+  }
+}
+
+.ce-repas__plat {
+  flex: 1 1 0;
+}
+.ce-repas__actions {
+  flex-basis: auto;
+  align-self: center;
+}
+.ce-repas__mange {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: var(--trait) solid var(--encre);
+  background: none;
+  color: var(--encre);
+  cursor: pointer;
+}
+.ce-repas__mange--fait {
+  background: var(--menthe);
+  color: var(--sur-couleur);
+}
+.ce-repas__conseil {
+  padding-top: 0;
+  border-top: 0;
+  font-size: 13.5px;
+}
+.replie--discret summary {
+  font-size: 14px;
+  color: var(--encre-douce);
+}

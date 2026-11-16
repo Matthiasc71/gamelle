@@ -15,7 +15,7 @@ test('semaine → recette → + favoris → remplacer → courses → cocher →
   });
   await ouvrir(page);
   const avant = await repasDe(page);
-  await expect(page.locator('.totaux')).toContainText('€');
+  await expect(page.locator('.resume')).toContainText('€');
 
   // ouvrir une recette et la garder
   await page.locator('.repas').first().click();
@@ -67,7 +67,7 @@ test('semaine → recette → + favoris → remplacer → courses → cocher →
 test('Favoris → mettre un favori dans ma semaine → tout se met à jour → annuler', async ({ page }) => {
   await ouvrir(page);
   const avant = await repasDe(page);
-  const totalAvant = await page.locator('.totaux__case').nth(1).innerText();
+  const totalAvant = await page.locator('.resume .chiffre').first().innerText();
   await page.getByRole('link', { name: 'Courses' }).click();
   const coursesAvant = await page.locator('.article__nom').allInnerTexts();
   await page.getByRole('link', { name: 'Semaine' }).click();
@@ -100,7 +100,7 @@ test('Favoris → mettre un favori dans ma semaine → tout se met à jour → a
   const apres = await repasDe(page);
   expect(apres).toContain(nom);
   expect(apres.filter((x) => x === retire).length).toBeLessThan(avant.filter((x) => x === retire).length);
-  const totalApres = await page.locator('.totaux__case').nth(1).innerText();
+  const totalApres = await page.locator('.resume .chiffre').first().innerText();
   expect(totalApres).not.toBe(totalAvant);
 
   await page.getByRole('link', { name: 'Courses' }).click();
@@ -112,7 +112,7 @@ test('Favoris → mettre un favori dans ma semaine → tout se met à jour → a
   await page.getByRole('link', { name: 'Semaine' }).click();
   await page.locator('.note--ligne').getByRole('button', { name: 'Annuler' }).click();
   await expect.poll(() => repasDe(page)).toEqual(avant);
-  await expect.poll(() => page.locator('.totaux__case').nth(1).innerText()).toBe(totalAvant);
+  await expect.poll(() => page.locator('.resume .chiffre').first().innerText()).toBe(totalAvant);
 });
 
 test('ajouter ma propre recette : calcul Ciqual et prix sur le téléphone, rangée dans les favoris', async ({ page }) => {
@@ -135,4 +135,14 @@ test('ajouter ma propre recette : calcul Ciqual et prix sur le téléphone, rang
   await expect(page.locator('#titre-recette')).toHaveText('Omelette feta épinards de test');
   await page.getByRole('link', { name: 'Favoris' }).click();
   await expect(page.locator('section[aria-labelledby="mes-favoris"] .carte-recette__nom')).toContainText(['Omelette feta épinards de test']);
+});
+
+test('Semaine → le dé remplace un repas au hasard, « Annuler » le remet', async ({ page }) => {
+  await ouvrir(page);
+  const avant = await repasDe(page);
+  await page.locator('.repas__de').first().click();
+  await expect(page.getByRole('status')).toContainText('Annuler');
+  await expect.poll(() => repasDe(page)).not.toEqual(avant);
+  await page.getByRole('status').getByRole('button', { name: 'Annuler' }).click();
+  await expect.poll(() => repasDe(page)).toEqual(avant);
 });

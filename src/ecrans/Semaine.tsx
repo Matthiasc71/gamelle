@@ -2,12 +2,13 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { useMemo, useState } from 'react';
 import { BASE } from '../app/base';
 import { db } from '../app/db';
-import { annulerEchange, aujourdhui, maintenant, marquerMange, regenerer, useContexte, useEvenements, useMenu, useReglages, useSemaines, useSemaineVue, useTickets, viserBudget } from '../app/etat';
+import { annulerEchange, appliquerMenu, aujourdhui, maintenant, marquerMange, regenerer, useContexte, useEvenements, useMenu, useReglages, useSemaines, useSemaineVue, useTickets, viserBudget } from '../app/etat';
 import { badge, MOMENT, nombre } from '../app/presentation';
 import { lien } from '../app/routeur';
 import { ajouterJours, ecartJours, libelleJour, libelleSemaine, lundiDeSemaine, versDate } from '../domain/dates';
 import { euros } from '../domain/format';
-import { coutsMenu, detailsRepas, sessionDimanche, type DetailRepas } from '../domain/regles';
+import { coutsMenu, detailsRepas, sessionDimanche, type ContexteMenu, type DetailRepas } from '../domain/regles';
+import { auHasard } from '../domain/remplacement';
 import type { Menu, Reglages } from '../domain/types';
 import { annoncer, BoutonIcone, Brin, Chargement, Chiffre, Feuille, Fleuron, Illustration } from '../ui/composants';
 import { Icone } from '../ui/Icone';
@@ -32,7 +33,7 @@ export default function Semaine() {
             <BoutonIcone icone="reglages" label="Réglages" href={lien('reglages')} variante="nu" />
           </span>
         </div>
-        <h1 id="titre-semaine" className="titre-page">
+        <h1 id="titre-semaine" className="titre-page titre-page--moyen">
           {libelleSemaine(lundiDeSemaine(semaine))}
         </h1>
         {(suivanteDebloquee || semaine !== courante) && (
@@ -91,28 +92,21 @@ function ContenuSemaine({ menu, reglages, anciensReglages }: { menu: Menu; regla
         </div>
       )}
 
-      <section className="totaux" aria-label="Totaux de la semaine">
-        <div className="totaux__case">
-          <Chiffre taille="m">{nombre(kcalMoyen)}</Chiffre>
-          <span>kcal / jour</span>
-          <small>+{reglages.kcalLibres} libres</small>
-        </div>
-        <div className={`totaux__case totaux__case--bouton ${horsBudget ? 'totaux__case--alerte' : ''}`}>
-          <Chiffre taille="m">{couts ? euros(couts.totalCaisse) : '…'}</Chiffre>
-          <span className="totaux__libelle">
+      <section className={`resume ${horsBudget ? 'resume--alerte' : ''}`} aria-label="Totaux de la semaine">
+        <Chiffre taille="m">{couts ? euros(couts.totalCaisse) : '…'}</Chiffre>
+        <span className="resume__texte">
+          <span className="resume__libelle">
             de courses <Icone nom="crayon" taille={13} />
           </span>
-          {horsBudget ? (
-            <small>budget {reglages.budget[1]} €</small>
-          ) : tickets?.ratio && couts ? (
-            <small className="totaux__ticket">≈ {euros(couts.totalCaisse * tickets.ratio)} d’après tes tickets</small>
-          ) : null}
-          <button type="button" className="totaux__toucher" onClick={() => setBudgetOuvert(true)} aria-label="Viser un autre budget de courses" />
-        </div>
-        <div className="totaux__case">
-          <Chiffre taille="m">{couts ? euros(couts.totalUtilise / 14 / reglages.personnes) : '…'}</Chiffre>
-          <span>par repas</span>
-        </div>
+          <small>
+            {horsBudget
+              ? `au-dessus du budget de ${reglages.budget[1]} €`
+              : tickets?.ratio && couts
+                ? `≈ ${euros(couts.totalCaisse * tickets.ratio)} d’après tes tickets`
+                : `${couts ? euros(couts.totalUtilise / 14 / reglages.personnes) : '…'} le repas · ${nombre(kcalMoyen)} kcal/j`}
+          </small>
+        </span>
+        <button type="button" className="resume__toucher" onClick={() => setBudgetOuvert(true)} aria-label="Viser un autre budget de courses" />
       </section>
 
       <Feuille titre="Viser un budget" ouverte={budgetOuvert} fermer={() => setBudgetOuvert(false)}>
@@ -132,16 +126,7 @@ function ContenuSemaine({ menu, reglages, anciensReglages }: { menu: Menu; regla
         </a>
       )}
 
-      {menu.relachements.length > 0 && (
-        <details className="replie">
-          <summary>Menu assoupli cette semaine ({menu.relachements.length})</summary>
-          <ul>
-            {menu.relachements.map((r) => (
-              <li key={r}>{r}</li>
-            ))}
-          </ul>
-        </details>
-      )}
+
 
       {dernierEchange && Date.now() - Date.parse(dernierEchange.quand) < 2 * 864e5 && (
         <div className="note note--tirets note--ligne">
@@ -172,37 +157,66 @@ function ContenuSemaine({ menu, reglages, anciensReglages }: { menu: Menu; regla
               <div className="jour__repas">
                 <h3 className="sr-only">{libelleJour(menu.lundi, j)}</h3>
                 {ds.map((d) => (
-                  <LigneRepas key={d.creneau} d={d} semaine={menu.semaine} mange={manges.has(d.creneau)} cuisine={cuisines.has(d.cuisson.id)} />
+                  <LigneRepas key={d.creneau} d={d} menu={menu} ctx={ctx} mange={manges.has(d.creneau)} cuisine={cuisines.has(d.cuisson.id)} />
                 ))}
               </div>
             </li>
           );
         })}
       </ol>
+      {menu.relachements.length > 0 && (
+        <details className="replie replie--discret">
+          <summary>Menu assoupli cette semaine ({menu.relachements.length})</summary>
+          <ul>
+            {menu.relachements.map((r) => (
+              <li key={r}>{r}</li>
+            ))}
+          </ul>
+        </details>
+      )}
       <Fleuron />
     </>
   );
 }
 
-function LigneRepas({ d, semaine, mange, cuisine }: { d: DetailRepas; semaine: string; mange: boolean; cuisine: boolean }) {
+function LigneRepas({ d, menu, ctx, mange, cuisine }: { d: DetailRepas; menu: Menu; ctx?: ContexteMenu; mange: boolean; cuisine: boolean }) {
   const r = d.recette;
+  const [vues, setVues] = useState<string[]>([]);
+  const fige = mange || (cuisine && !d.cuisson.stock) || !!d.cuisson.stock;
+  const relancer = async () => {
+    if (!ctx) return;
+    if (fige) return annoncer(mange ? 'Ce repas est déjà mangé.' : 'Ce plat est déjà cuisiné ou au congélateur : il reste au menu.');
+    const alt = auHasard(menu, d.creneau, ctx, Math.random, [...vues, r.id]);
+    if (!alt) return annoncer('Aucune autre recette ne colle à ce créneau avec tes réglages.');
+    setVues((v) => [...v, r.id]);
+    const id = await appliquerMenu(menu, alt.menu, `${r.nom} → ${alt.recette.nom}`);
+    const cout = alt.deltaCout === 0 ? '' : ` · courses ${alt.deltaCout > 0 ? '+' : '−'}${euros(Math.abs(alt.deltaCout))}`;
+    annoncer(`${alt.recette.nom}${alt.lot > 1 ? ` (les ${alt.lot} parts)` : ''}${cout}`, { libelle: 'Annuler', faire: () => annulerEchange(id) });
+  };
   return (
-    <a className={`repas ${mange ? 'repas--mange' : ''}`} href={lien('recette', r.id, { s: semaine, c: d.creneau })}>
-      <span className="repas__vignette">
-        <Illustration nom={r.illustration} taille={46} />
-      </span>
-      <span className="repas__texte">
-        <span className="repas__nom">{r.nom}</span>
-        <span className="repas__detail">
-          {MOMENT[d.moment]} · {nombre(r.nutrition_par_part.kcal)} kcal · {d.statut === 'congele' ? 'congelée, à sortir la veille' : badge(d)}
+    <div className="repas-ligne">
+      <a className={`repas ${mange ? 'repas--mange' : ''}`} href={lien('recette', r.id, { s: menu.semaine, c: d.creneau })}>
+        <span className="repas__vignette">
+          <Illustration nom={r.illustration} taille={46} />
         </span>
-      </span>
-      {(mange || (cuisine && d.statut === 'cuisine')) && (
-        <span className="repas__fait" aria-label={mange ? 'mangé' : 'cuisiné'}>
-          <Icone nom="coche" taille={18} />
+        <span className="repas__texte">
+          <span className="repas__nom">{r.nom}</span>
+          <span className="repas__detail">
+            {MOMENT[d.moment]} · {d.statut === 'congele' ? 'congélateur' : badge(d)}
+          </span>
         </span>
+        {(mange || (cuisine && d.statut === 'cuisine')) && (
+          <span className="repas__fait" aria-label={mange ? 'mangé' : 'cuisiné'}>
+            <Icone nom="coche" taille={18} />
+          </span>
+        )}
+      </a>
+      {!fige && (
+        <button className="repas__de" onClick={relancer} aria-label={`Une autre recette au hasard à la place de ${r.nom}`}>
+          <Icone nom="de" taille={20} />
+        </button>
       )}
-    </a>
+    </div>
   );
 }
 
@@ -229,7 +243,6 @@ function CeRepas({ details, menu, auj, manges }: { details: DetailRepas[]; menu:
           <small>{d.statut === 'congele' ? 'boîte du congélateur' : badge(d)}</small>
         </span>
       </a>
-      {!aCuisiner && !mange && <p className="ce-repas__conseil">{conseilBoite(d)}</p>}
       <div className="ce-repas__actions">
         {aCuisiner && !mange && (
           <a className="btn btn--plein btn--petit" href={lien('cuisine', r.id, { parts: d.cuisson.parts })}>
@@ -237,16 +250,18 @@ function CeRepas({ details, menu, auj, manges }: { details: DetailRepas[]; menu:
           </a>
         )}
         <button
-          className={`btn btn--petit ${mange ? 'btn--fait' : 'btn--contour'}`}
+          className={`ce-repas__mange ${mange ? 'ce-repas__mange--fait' : ''}`}
           aria-pressed={mange}
+          aria-label={mange ? 'Mangé' : 'Marquer mangé'}
           onClick={async () => {
             await marquerMange(menu.semaine, d.creneau, d.cuisson.id, !mange);
-            if (!mange) annoncer('Bon appétit ! Donne ton avis sur la fiche si tu veux le revoir (ou pas).');
+            if (!mange) annoncer('Bon appétit !');
           }}
         >
-          <Icone nom="coche" taille={16} /> {mange ? 'Mangé' : 'Marquer mangé'}
+          <Icone nom="coche" taille={20} />
         </button>
       </div>
+      {!aCuisiner && !mange && <p className="ce-repas__conseil">{conseilBoite(d)}</p>}
       {aSortir.length > 0 && (
         <p className="ce-repas__rappel">
           <Icone nom="flocon" taille={16} /> À sortir ce soir : {aSortir.map((x) => x.recette.nom).join(', ')}
@@ -259,10 +274,9 @@ function CeRepas({ details, menu, auj, manges }: { details: DetailRepas[]; menu:
 /** Conseils de service d'une boîte : conseils d'usage généraux, pas des temps tirés de la recette. */
 function conseilBoite(d: DetailRepas): string {
   const froid = d.recette.illustration === 'salade' || d.recette.illustration === 'wrap';
-  if (froid) return 'Se mange froid : sors la boîte du frigo un peu avant.';
-  if (d.statut === 'congele')
-    return 'Décongelée au frigo depuis hier soir ? Sinon, programme décongélation du micro-ondes, puis réchauffe jusqu’à ce que ce soit bien chaud à cœur.';
-  return 'Au micro-ondes, couvercle entrouvert : réchauffe en remuant à mi-chemin, jusqu’à ce que ce soit bien chaud à cœur.';
+  if (froid) return 'Se mange froid.';
+  if (d.statut === 'congele') return 'Décongèle au frigo (ou au micro-ondes), puis réchauffe bien chaud à cœur.';
+  return 'Micro-ondes, couvercle entrouvert, jusqu’à bien chaud à cœur.';
 }
 
 /** Feuille « Viser un budget » : refait le menu de la semaine pour un plafond donné (annulable). */

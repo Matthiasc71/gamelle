@@ -72,6 +72,9 @@ Cahier des charges complet : `docs/cahier-des-charges.md`. Maquettes de référe
   Courses : le stock compté exclut les achats cochés de la semaine (sinon les lignes disparaîtraient).
 - Semaine : carte « Ce midi / Ce soir » (repas du moment, rappel « À sortir ce soir » pour le congélateur).
   `#/historique` : semaines passées (Dexie), « Refaire la semaine prochaine » (annulable). Réglages en sections repliées.
+- Semaine épurée : titre moyen, carte du repas compacte (coche ronde « mangé »), résumé sur une ligne (courses, € le repas,
+  kcal/j), menu assoupli replié en bas. Dé sur chaque repas → `auHasard` (remplacement.ts) : batch → tout le lot change
+  (mêmes parts et créneaux), rapide → autre recette rapide du même moment ; jamais une recette déjà au menu ; annulable.
 - Semaine : toucher le total des courses → « Viser un budget » (`viserBudget`, 500 essais, ne remplace jamais par plus cher,
   annulable). Carte du repas : conseils de service d'une boîte (généraux, pas de temps inventés), « Marquer mangé ».
 - Fiche : « J'en reveux / Pas pour moi » (table Dexie `avis`). Courses : ticket de caisse (table `tickets`) ; la moyenne
