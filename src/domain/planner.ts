@@ -1,5 +1,5 @@
 /**
- * Générateur de menu hebdomadaire, local et déterministe (graine = semaine ISO + réglages).
+ * Générateur de menu hebdomadaire, local et déterministe (graine = semaine ISO + réglages + tirage du téléphone).
  *
  * Structure : 2 plats batch cuisinés à la session du dimanche + 1 plat batch un soir de semaine,
  * 3 ou 4 parts chacun (10 à 12 repas), complétés par 2 à 4 repas express ou assemblage.
@@ -15,7 +15,12 @@ import { coutsMenu, estBatch, frigoJours, sessionDimanche, verifierMenu, violati
 import type { Recette } from './schema';
 import { jourDe, momentDe, NB_CRENEAUX, type Cuisson, type Menu, type Repas } from './types';
 
-export type ParamsGeneration = ContexteMenu & { semaine: string; essais?: number };
+export type ParamsGeneration = ContexteMenu & {
+  semaine: string;
+  essais?: number;
+  /** Tirage propre au téléphone (créé au premier lancement) : deux personnes aux mêmes réglages n'ont pas le même menu. */
+  graineAppareil?: string;
+};
 
 type Niveau = { saison: boolean; historique: number; libelle?: string };
 
@@ -187,7 +192,7 @@ export function genererMenu(p: ParamsGeneration): Menu {
   const g = p.reglages;
   const lundi = lundiDeSemaine(p.semaine);
   const mois = moisDeSemaine(lundi);
-  const graine = empreinte(`${p.semaine}|${JSON.stringify(g)}`);
+  const graine = empreinte(`${p.semaine}|${JSON.stringify(g)}${p.graineAppareil ? `|${p.graineAppareil}` : ''}`);
   const rng = hasard(graine);
   // 500 essais : le budget moyen simulé passe de ~31,9 € à ~30,3 € et ne dépend plus de la taille de la base (~3 s par menu).
   const essais = p.essais ?? 500;

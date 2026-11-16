@@ -10,6 +10,8 @@ import { genererMenu, recettesDuMenu, type ParamsGeneration } from '../domain/pl
 import { coutsMenu, type ContexteMenu } from '../domain/regles';
 import { empreinte } from '../domain/rng';
 import { REGLAGES_DEFAUT, type Cuisson, type Menu, type Reglages } from '../domain/types';
+import { RAYONS } from '../domain/constantes';
+import type { Rayon } from '../domain/schema';
 import { BASE, estPerso } from './base';
 import { db, type EvenementStocke, type Origine } from './db';
 
@@ -29,8 +31,8 @@ export const aujourdhui = () => aujourdhuiLocal(maintenant());
 // ───────────────────────────── Réglages et préférences ─────────────────────────────
 
 export type Theme = 'auto' | 'clair' | 'sombre';
-export type Preferences = { grain: boolean; accueilFait: boolean; theme: Theme };
-const PREFS_DEFAUT: Preferences = { grain: true, accueilFait: false, theme: 'auto' };
+export type Preferences = { grain: boolean; accueilFait: boolean; theme: Theme; ordreRayons: Rayon[] };
+const PREFS_DEFAUT: Preferences = { grain: true, accueilFait: false, theme: 'auto', ordreRayons: [...RAYONS] };
 
 export function useReglages(): Reglages | undefined {
   return useLiveQuery(async () => {
@@ -261,6 +263,19 @@ export async function contexteMenu(semaine: string, reglages: Reglages): Promise
   };
 }
 
+/**
+ * Tirage propre à ce téléphone, créé au premier lancement et gardé dans les données locales (et la sauvegarde) :
+ * deux personnes aux mêmes réglages n'ont pas le même menu.
+ */
+export async function graineAppareil(): Promise<string> {
+  const g = (await db.kv.get('graineAppareil'))?.valeur;
+  if (typeof g === 'string' && g) return g;
+  const octets = crypto.getRandomValues(new Uint8Array(8));
+  const nouvelle = Array.from(octets, (x) => x.toString(16).padStart(2, '0')).join('');
+  await db.kv.put({ cle: 'graineAppareil', valeur: nouvelle });
+  return nouvelle;
+}
+
 const enCours = new Map<string, Promise<void>>();
 
 export function generer(semaine: string, reglages: Reglages): Promise<void> {
@@ -271,7 +286,7 @@ export function generer(semaine: string, reglages: Reglages): Promise<void> {
       (async () => {
         const ctx = await contexteMenu(semaine, reglages);
         const { base: _b, ...params } = ctx;
-        const menu = await calculer({ ...params, semaine });
+        const menu = await calculer({ ...params, semaine, graineAppareil: await graineAppareil() });
         await db.menus.put({ semaine, menu, cle: cleReglages(reglages), modifie: false, genere_le: new Date().toISOString() });
       })().finally(() => enCours.delete(cle)),
     );
@@ -344,7 +359,7 @@ export async function viserBudget(semaine: string, reglages: Reglages, vise: num
   const r: Reglages = { ...reglages, budgetCible: vise, budget: [Math.min(reglages.budget[0], vise), vise] };
   const ctx = await contexteMenu(semaine, r);
   const { base: _b, ...params } = ctx;
-  const menu = await calculer({ ...params, semaine, essais: 900 });
+  const menu = await calculer({ ...params, semaine, essais: 900, graineAppareil: await graineAppareil() });
   const cout = coutsMenu(menu, ctx).totalCaisse;
   const coutAvant = avant ? coutsMenu(avant.menu, ctx).totalCaisse : null;
   // la recherche est aléatoire : on ne remplace jamais un menu par un plus cher

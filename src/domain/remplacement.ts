@@ -109,7 +109,14 @@ export function alternatives(menu: Menu, creneau: number, ctx: ContexteMenu, n =
  * Seules les recettes compatibles avec les réglages (calories, protéines, appareils, exclusions, avis) sont tirées,
  * jamais une recette déjà au menu ; on préfère celles qui n'ajoutent aucun avertissement et qui sont de saison.
  */
-export function auHasard(menu: Menu, creneau: number, ctx: ContexteMenu, alea: () => number = Math.random, dejaVues: string[] = []): (Alternative & { lot: number }) | null {
+export function auHasard(
+  menu: Menu,
+  creneau: number,
+  ctx: ContexteMenu,
+  alea: () => number = Math.random,
+  dejaVues: string[] = [],
+  seulement?: Recette['type'],
+): (Alternative & { lot: number }) | null {
   const actuel = menu.repas.find((r) => r.creneau === creneau);
   if (!actuel) return null;
   const cuisson = menu.cuissons.find((c) => c.id === actuel.cuissonId);
@@ -122,11 +129,13 @@ export function auHasard(menu: Menu, creneau: number, ctx: ContexteMenu, alea: (
   const recentes = new Set((ctx.historique ?? []).slice(0, g.historiqueSemaines).flat());
   const repasDuLot = menu.repas.filter((r) => r.cuissonId === cuisson.id);
   const lot = estBatch(ctx.base.parId[cuisson.recetteId]) && repasDuLot.length > 1;
+  if (lot && seulement && seulement !== 'batch') return null;
 
   const candidats = ctx.base.recettes.filter(
     (r) =>
       !dansMenu.has(r.id) &&
       !dejaVues.includes(r.id) &&
+      (!seulement || r.type === seulement) &&
       (lot ? estBatch(r) && repasDuLot.every((x) => r.creneaux.includes(momentDe(x.creneau))) : !estBatch(r) && r.creneaux.includes(momentDe(creneau))) &&
       r.nutrition_par_part.kcal >= g.kcalRepas[0] &&
       r.nutrition_par_part.kcal <= g.kcalRepas[1] &&
@@ -158,3 +167,7 @@ export function auHasard(menu: Menu, creneau: number, ctx: ContexteMenu, alea: (
   const choix = pool[Math.floor(alea() * pool.length)];
   return { ...choix, lot: lot ? repasDuLot.length : 1 };
 }
+
+/** « Pas le temps ce soir » : une recette sans cuisson à la place d'un repas rapide (pas d'un batch). */
+export const sansCuisson = (menu: Menu, creneau: number, ctx: ContexteMenu, alea: () => number = Math.random, dejaVues: string[] = []) =>
+  auHasard(menu, creneau, ctx, alea, dejaVues, 'assemblage');

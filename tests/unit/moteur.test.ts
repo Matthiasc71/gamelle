@@ -5,7 +5,7 @@ import { creneauxBatch, planEchange, proposerCreneaux } from '../../src/domain/e
 import { appliquer, aUtiliserVite, etatCourses, evenementCuisson, finDeSemaine, FRIGO_VIDE, rejouer, stockDisponible } from '../../src/domain/frigo';
 import { genererMenu } from '../../src/domain/planner';
 import { detailsRepas, frigoJours, verifierMenu, violationsDures } from '../../src/domain/regles';
-import { alternatives, auHasard, remplacerRepas } from '../../src/domain/remplacement';
+import { alternatives, auHasard, remplacerRepas, sansCuisson } from '../../src/domain/remplacement';
 import { jourDe, momentDe, REGLAGES_DEFAUT, type Menu } from '../../src/domain/types';
 import { baseReelle, ctxDefaut } from '../helpers';
 
@@ -268,5 +268,38 @@ describe('une autre recette au hasard', () => {
       expect(menu.repas.map((x) => x.recetteId)).not.toContain(alt.recette.id);
       structureOk(alt.menu);
     }
+  });
+});
+
+describe('tirage propre au téléphone et « pas le temps »', () => {
+  it('deux téléphones aux mêmes réglages n’ont pas le même menu, chacun reste stable', () => {
+    const a = genererMenu({ ...ctx, semaine: SEMAINE, graineAppareil: 'telephone-a' });
+    const b = genererMenu({ ...ctx, semaine: SEMAINE, graineAppareil: 'telephone-b' });
+    expect(a.repas.map((r) => r.recetteId)).not.toEqual(b.repas.map((r) => r.recetteId));
+    expect(genererMenu({ ...ctx, semaine: SEMAINE, graineAppareil: 'telephone-a' })).toEqual(a);
+    structureOk(a);
+    expect(violationsDures(verifierMenu(a, ctx, moisDeSemaine(a.lundi)))).toEqual([]);
+  });
+
+  it('remplace un repas rapide par une recette sans cuisson, jamais un batch', () => {
+    const r = menu.repas.find((x) => base.parId[x.recetteId].type !== 'batch')!;
+    const alt = sansCuisson(menu, r.creneau, ctx, () => 0.3)!;
+    expect(alt.recette.type).toBe('assemblage');
+    structureOk(alt.menu);
+    const b = menu.repas.find((x) => menu.repas.filter((y) => y.cuissonId === x.cuissonId).length > 1)!;
+    expect(sansCuisson(menu, b.creneau, ctx)).toBeNull();
+  });
+});
+
+describe('rappels calendrier', () => {
+  it('un rappel la veille à 20 h par soir où sortir des boîtes', async () => {
+    const { fichierRappels } = await import('../../src/app/rappels');
+    const det = detailsRepas(menu, base);
+    const { contenu } = fichierRappels(menu, det, new Date('2026-11-16T10:00:00Z'));
+    const veilles = new Set(det.filter((d) => d.statut === 'congele').map((d) => d.jour - 1));
+    expect(contenu.match(/BEGIN:VEVENT/g)?.length ?? 0).toBe(veilles.size);
+    expect(contenu).toMatch(/^BEGIN:VCALENDAR\r\n/);
+    expect(contenu).toContain('T200000');
+    expect(contenu).toContain('BEGIN:VALARM');
   });
 });
