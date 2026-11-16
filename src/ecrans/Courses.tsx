@@ -2,7 +2,7 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { useMemo, useState } from 'react';
 import { BASE } from '../app/base';
 import { db } from '../app/db';
-import { cocher, corrigerPrix, declarerDejaAuFrigo, enregistrerTicket, useContexte, useEvenements, useMenu, useReglages, useSemaineVue, useTickets } from '../app/etat';
+import { cocher, corrigerPrix, declarerDejaAuFrigo, enregistrerTicket, useContexte, useEvenements, useMenu, usePreferences, useReglages, useSemaineVue, useTickets } from '../app/etat';
 import { majuscule, nombre } from '../app/presentation';
 import { libelleConditionnement, NOMS_RAYONS, texteListe, type LigneCourses } from '../domain/courses';
 import { libelleSemaine } from '../domain/dates';
@@ -51,7 +51,14 @@ function Liste({ menu }: { menu: Menu }) {
   const ctx = useContexte(menu.semaine, reglages);
   const evs = useEvenements();
   const coches = useLiveQuery(async () => new Set((await db.coches.where('semaine').equals(menu.semaine).toArray()).map((c) => c.ingredient)), [menu.semaine]);
-  const liste = useMemo(() => (ctx ? coutsMenu(menu, ctx) : null), [menu, ctx]);
+  const prefs = usePreferences();
+  const liste = useMemo(() => {
+    if (!ctx || !prefs) return null;
+    const l = coutsMenu(menu, ctx);
+    // rayons dans l'ordre du magasin choisi dans les réglages
+    const rang = (r: string) => (prefs.ordreRayons.indexOf(r as never) + 100) % 100;
+    return { ...l, parRayon: [...l.parRayon].sort((a, b) => rang(a.rayon) - rang(b.rayon)) };
+  }, [menu, ctx, prefs]);
   const [detail, setDetail] = useState<LigneCourses | null>(null);
   if (!liste || !coches || !evs || !reglages) return <Chargement />;
 
@@ -102,6 +109,11 @@ function Liste({ menu }: { menu: Menu }) {
           <Icone nom="copier" />
         </button>
       </div>
+
+      <DejaChezToi
+        lignes={aAcheter.filter((l) => !coches.has(l.ingredient) && BASE.catalogue[l.ingredient]?.rayon === 'epicerie')}
+        semaine={menu.semaine}
+      />
 
       {coches.size > 0 && aAcheter.some((l) => !coches.has(l.ingredient)) && aUtiliser.length > 0 && (
         <p className="note">Menu modifié : les articles non cochés sont à racheter.</p>
@@ -206,6 +218,38 @@ function Liste({ menu }: { menu: Menu }) {
         {detail && <DetailLigne l={detail} pour={recettesPour(detail.ingredient)} semaine={menu.semaine} fermer={() => setDetail(null)} />}
       </Feuille>
     </>
+  );
+}
+
+/**
+ * Produits de placard de la liste (riz, pâtes, conserves, épices…) : un tap sur « J'en ai » les déclare chez toi.
+ * Ils sortent de la liste, entrent dans le stock et ne sont plus comptés dans le total.
+ */
+function DejaChezToi({ lignes, semaine }: { lignes: LigneCourses[]; semaine: string }) {
+  if (!lignes.length) return null;
+  return (
+    <details className="placard-deja">
+      <summary>
+        Déjà dans tes placards ? <span className="texte-doux">· {lignes.length}</span>
+      </summary>
+      <p className="texte-doux petit">Touche ce que tu as déjà : l'article sort de la liste et du total.</p>
+      <ul className="liste-simple">
+        {lignes.map((l) => (
+          <li key={l.ingredient}>
+            <span>{nomProduit(l.produit)}</span>
+            <button
+              className="btn btn--contour btn--petit"
+              onClick={async () => {
+                await declarerDejaAuFrigo(semaine, l.ingredient, l.besoin, true);
+                annoncer(`${nomProduit(l.produit)} : noté, tu en as déjà.`);
+              }}
+            >
+              J'en ai
+            </button>
+          </li>
+        ))}
+      </ul>
+    </details>
   );
 }
 

@@ -3,6 +3,7 @@ import { BASE, PRIX_RELEVES_LE } from '../app/base';
 import { exporter, importer } from '../app/db';
 import { enregistrerPreferences, enregistrerReglages, usePreferences, useReglages } from '../app/etat';
 import { NOM_EQUIPEMENT, nombre } from '../app/presentation';
+import { NOMS_RAYONS } from '../domain/courses';
 import { aller, lien, retour } from '../app/routeur';
 import { EQUIPEMENTS } from '../domain/constantes';
 import { REGLAGES_DEFAUT, type Reglages as TReglages } from '../domain/types';
@@ -204,6 +205,25 @@ export default function Reglages() {
 
       <details className="groupe groupe-replie">
         <summary>
+          <span>Courses</span>
+          <small>ordre des rayons</small>
+        </summary>
+        <p className="texte-doux petit">Range les rayons dans l'ordre où tu les traverses dans ton magasin.</p>
+        <ol className="ordre-rayons">
+          {prefs.ordreRayons.map((r, i) => (
+            <li key={r}>
+              <span>{NOMS_RAYONS[r]}</span>
+              <span className="ordre-rayons__boutons">
+                <BoutonIcone icone="monter" label={`Monter ${NOMS_RAYONS[r]}`} onClick={() => enregistrerPreferences({ ordreRayons: deplacer(prefs.ordreRayons, i, -1) })} />
+                <BoutonIcone icone="descendre" label={`Descendre ${NOMS_RAYONS[r]}`} onClick={() => enregistrerPreferences({ ordreRayons: deplacer(prefs.ordreRayons, i, 1) })} />
+              </span>
+            </li>
+          ))}
+        </ol>
+      </details>
+
+      <details className="groupe groupe-replie">
+        <summary>
           <span>Sauvegarde</span>
           <small>Exporter, restaurer</small>
         </summary>
@@ -282,4 +302,13 @@ export default function Reglages() {
       </details>
     </main>
   );
+}
+
+/** Échange un rayon avec son voisin (sens -1 : monter, +1 : descendre). */
+function deplacer<T>(liste: T[], i: number, sens: number): T[] {
+  const j = i + sens;
+  if (j < 0 || j >= liste.length) return liste;
+  const l = [...liste];
+  [l[i], l[j]] = [l[j], l[i]];
+  return l;
 }

@@ -60,7 +60,8 @@ Cahier des charges complet : `docs/cahier-des-charges.md`. Maquettes de référe
   Tester un lot : `npx tsx scripts/simuler.ts 52 <semaine> --essai [--sans id1,id2] [--essais N]` sur les 3 départs.
 - Avis (`ctx.avis`) : « aime » ×2 au tirage, « bof » exclu du menu et des remplacements.
   Le tirage favorise les recettes qui partagent les paquets déjà prévus ou en stock (`poids` : ×(1 + 1,2·partagés),
-  ÷(1 + 0,2·nouveaux)). Priorité de la base : recettes à moins de 2 € la part, qui réutilisent les mêmes paquets.
+  ÷(1 + 0,2·nouveaux)). Priorité de la base : recettes à moins de 2 € la part, qui réutilisent les mêmes paquets ; quelques plats plus chers
+  (poisson, avocat) acceptés pour la variété (choix de l'utilisateur).
 - `frigo.ts` : `ideesRestes` propose les recettes qui finissent le mieux le stock (hors placard de base).
 ## Interface (src/app, src/ui, src/ecrans)
 - `app/base.ts` : recettes, catalogue et prix lus au build (validés par Zod au démarrage).
@@ -75,6 +76,13 @@ Cahier des charges complet : `docs/cahier-des-charges.md`. Maquettes de référe
 - Semaine épurée : titre moyen, carte du repas compacte (coche ronde « mangé »), résumé sur une ligne (courses, € le repas,
   kcal/j), menu assoupli replié en bas. Dé sur chaque repas → `auHasard` (remplacement.ts) : batch → tout le lot change
   (mêmes parts et créneaux), rapide → autre recette rapide du même moment ; jamais une recette déjà au menu ; annulable.
+- Tirage propre au téléphone : `graineAppareil` (kv, créé au premier lancement, inclus dans la sauvegarde) entre dans la
+  graine du menu ; sans lui (tests, simulation), le menu reste celui de la semaine + réglages.
+- « Pas le temps » sur la carte du repas (repas express) → `sansCuisson` : une recette d'assemblage à la place, annulable.
+- Rappels : `app/rappels.ts` écrit un .ics (veille à 20 h, une alarme par soir où sortir des boîtes) partagé ou
+  téléchargé ; le Calendrier de l'iPhone notifie, sans serveur (iOS ne programme pas de notification locale depuis une PWA).
+- Courses : ordre des rayons dans Réglages → Courses (`prefs.ordreRayons`) ; encart « Déjà dans tes placards ? »
+  (rayon épicerie) : « J'en ai » déclare le besoin au stock (`declarerDejaAuFrigo`).
 - Semaine : toucher le total des courses → « Viser un budget » (`viserBudget`, 500 essais, ne remplace jamais par plus cher,
   annulable). Carte du repas : conseils de service d'une boîte (généraux, pas de temps inventés), « Marquer mangé ».
 - Fiche : « J'en reveux / Pas pour moi » (table Dexie `avis`). Courses : ticket de caisse (table `tickets`) ; la moyenne
@@ -115,7 +123,7 @@ Dans une session cloud, le `fetch` de Node passe par le proxy seulement avec `ex
   vérifiés par la page d'intégration Instagram. Recette pour 1 multipliée par 3 ou 4 quand elle dépasse 20 min (batch).
 - TikTok : depuis novembre 2026, la page d'intégration `/embed/v2/` ne contient plus les données (chargées par un script
   anti-robot qu'on ne contourne pas) et l'oEmbed ne prouve rien. `npm run links` classe ces sources « à revérifier »
-  (ni mortes ni confirmées) ; aucune nouvelle source TikTok tant qu'on n'a pas de moyen honnête de la vérifier.
+  (ni mortes ni confirmées) ; plus de nouvelle source TikTok (décision de l'utilisateur, 16/11/2026).
 - Tri rapide d'une liste d'URL par kcal/protéines annoncées : `.cache/tri.mjs` (outil local, non versionné).
 
 ## Ajouter des recettes (« ajoute 20 recettes d'hiver », « ajoute cette vidéo TikTok »)

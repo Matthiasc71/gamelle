@@ -8,7 +8,8 @@ import { lien } from '../app/routeur';
 import { ajouterJours, ecartJours, libelleJour, libelleSemaine, lundiDeSemaine, versDate } from '../domain/dates';
 import { euros } from '../domain/format';
 import { coutsMenu, detailsRepas, sessionDimanche, type ContexteMenu, type DetailRepas } from '../domain/regles';
-import { auHasard } from '../domain/remplacement';
+import { auHasard, sansCuisson } from '../domain/remplacement';
+import { fichierRappels } from '../app/rappels';
 import type { Menu, Reglages } from '../domain/types';
 import { annoncer, BoutonIcone, Brin, Chargement, Chiffre, Feuille, Fleuron, Illustration } from '../ui/composants';
 import { Icone } from '../ui/Icone';
@@ -81,7 +82,7 @@ function ContenuSemaine({ menu, reglages, anciensReglages }: { menu: Menu; regla
 
   return (
     <>
-      <CeRepas details={details} menu={menu} auj={auj} manges={manges} />
+      <CeRepas details={details} menu={menu} auj={auj} manges={manges} ctx={ctx} />
 
       {anciensReglages && (
         <div className="note">
@@ -174,9 +175,32 @@ function ContenuSemaine({ menu, reglages, anciensReglages }: { menu: Menu; regla
           </ul>
         </details>
       )}
+      {details.some((d) => d.statut === 'congele') && (
+        <button className="lien-calendrier" onClick={() => partagerRappels(menu, details)}>
+          <Icone nom="flocon" taille={16} /> Ajouter les rappels « à sortir du congélateur » au calendrier
+        </button>
+      )}
       <Fleuron />
     </>
   );
+}
+
+/** Exporte un fichier calendrier (.ics) : l'iPhone le propose au Calendrier, qui notifie sans serveur ni compte. */
+async function partagerRappels(menu: Menu, details: DetailRepas[]) {
+  const { nom, contenu } = fichierRappels(menu, details);
+  const fichier = new File([contenu], nom, { type: 'text/calendar' });
+  const nav = navigator as Navigator & { canShare?: (d: { files: File[] }) => boolean };
+  try {
+    if (nav.canShare?.({ files: [fichier] })) return await navigator.share({ files: [fichier], title: 'Rappels Gamelle' });
+  } catch {
+    /* partage annulé : on télécharge */
+  }
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(fichier);
+  a.download = nom;
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+  annoncer('Fichier calendrier prêt : ouvre-le pour ajouter les rappels.');
 }
 
 function LigneRepas({ d, menu, ctx, mange, cuisine }: { d: DetailRepas; menu: Menu; ctx?: ContexteMenu; mange: boolean; cuisine: boolean }) {
@@ -221,7 +245,7 @@ function LigneRepas({ d, menu, ctx, mange, cuisine }: { d: DetailRepas; menu: Me
 }
 
 /** Le repas du moment (midi avant 14 h, soir ensuite), comment le servir, et les boîtes à sortir du congélateur pour demain. */
-function CeRepas({ details, menu, auj, manges }: { details: DetailRepas[]; menu: Menu; auj: string; manges: Set<number> }) {
+function CeRepas({ details, menu, auj, manges, ctx }: { details: DetailRepas[]; menu: Menu; auj: string; manges: Set<number>; ctx?: ContexteMenu }) {
   const j = ecartJours(menu.lundi, auj);
   if (j < 0 || j > 6) return null;
   const moment = maintenant().getHours() < 14 ? 'midi' : 'soir';
@@ -244,6 +268,19 @@ function CeRepas({ details, menu, auj, manges }: { details: DetailRepas[]; menu:
         </span>
       </a>
       <div className="ce-repas__actions">
+        {d.statut === 'express' && !mange && ctx && (
+          <button
+            className="btn btn--contour btn--petit"
+            onClick={async () => {
+              const alt = sansCuisson(menu, d.creneau, ctx);
+              if (!alt) return annoncer('Aucune recette sans cuisson ne colle à ce repas avec tes réglages.');
+              const id = await appliquerMenu(menu, alt.menu, `${r.nom} → ${alt.recette.nom}`);
+              annoncer(`Sans cuisson : ${alt.recette.nom}`, { libelle: 'Annuler', faire: () => annulerEchange(id) });
+            }}
+          >
+            Pas le temps
+          </button>
+        )}
         {aCuisiner && !mange && (
           <a className="btn btn--plein btn--petit" href={lien('cuisine', r.id, { parts: d.cuisson.parts })}>
             Cuisiner
